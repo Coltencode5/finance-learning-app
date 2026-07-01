@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "global.schema.json",
+  "title": "GlobalConcept",
+  "description": "A canonical glossary node. Written once, owned by one module/zone, referenced everywhere else by ID. The shared glossary is the app's connective spine.",
+  "type": "object",
+  "required": ["id", "term", "quick_definition", "home_module", "home_zone", "contributed_by", "category"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^G[1-9][0-9]*$",
+      "description": "Sequential global ID, e.g. G1. Assigned once, never reused or renumbered."
+    },
+    "term": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical display name, e.g. 'IRR (Internal Rate of Return)'."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Alternative names/abbreviations used for duplicate detection and search, e.g. ['Internal Rate of Return']."
+    },
+    "quick_definition": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One sentence, inline-able. The hover/tap definition."
+    },
+    "home_module": {
+      "type": "string",
+      "description": "Module slug that owns the deep explainer, e.g. 'private-equity'."
+    },
+    "home_zone": {
+      "type": ["string", "null"],
+      "pattern": "^Z[1-5](\\.[0-9]+)?$",
+      "description": "Zone (or zone node) within the home module where the deep explainer lives, e.g. 'Z5' or 'Z1.5'."
+    },
+    "contributed_by": {
+      "type": "string",
+      "description": "Module slug that first minted this global (usually equals home_module)."
+    },
+    "category": {
+      "type": "string",
+      "description": "Thematic grouping within the contributing module's glossary layer, e.g. 'Returns & Performance metrics'."
+    },
+    "appears_in": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Zones/modules where this global is referenced (informational; the authoritative edge list is derived from node connects_to)."
+    },
+    "disambiguate_with": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^G[1-9][0-9]*$" },
+      "default": [],
+      "description": "Globals this term is commonly confused with; each pair gets an explicit 'this vs. that' cross-link in the app."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["mapped", "expanded", "reviewed", "published"],
+      "default": "mapped",
+      "description": "Content lifecycle state."
+    }
+  }
+}

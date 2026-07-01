@@ -1,0 +1,67 @@
+{
+  "slug": "private-credit",
+  "title": "Private Credit",
+  "kind": "role",
+  "build_order": 2,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Private Credit Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Types of Private Credit",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "Originating & Structuring Deals",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Portfolio Management, Monitoring, Workouts & Recovery",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Fund Management & the LP Relationship",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 25,
+    "global_range": "G58–G82",
+    "zone_node_count": 78,
+    "globals_reused": [
+      "G1",
+      "G2",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G12",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G24",
+      "G25",
+      "G28",
+      "G29",
+      "G33",
+      "G34",
+      "G37",
+      "G40"
+    ],
+    "gap_count": 0
+  },
+  "status": "mapped"
+}

@@ -1,0 +1,637 @@
+[
+  {
+    "id": "equity-research.z1.1",
+    "local_id": "Z1.1",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Equity Research?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Equity research is the discipline of analyzing publicly-traded companies to form and communicate a judgment about whether their shares are mis-priced.",
+    "explainer_covers": [
+      "The one-sentence job: take a company, figure out what it's worth and where its stock is going, and tell people — with a rating and a price target attached.",
+      "The product is a view, not a fact: research is fundamentally an argument about the future, made under uncertainty, that can be and often is wrong.",
+      "The recurring theme that organizes everything downstream (Valentine): generating alpha is all about finding where the consensus is wrong. Knowing what a company will earn is worthless if everyone already knows it; the value is in a differentiated, correct view.",
+      "Why it exists at all: markets aggregate information, but (Koller) they can only price information they actually have — so there is a permanent economic role for someone who digs up, organizes, and interprets what isn't yet in the price.",
+      "The distinction from adjacent crafts: not accounting (which records the past), not investment banking (which transacts), not portfolio management (which owns). Research judges."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.5",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (the outputs) · Z1.5 (the workflow) · ★G125 market efficiency *(AM Z2.3 — why an edge is possible at all)* · ★G106 alpha *(HF — the goal)* · ★G136 the edge *(HF Z5.1)* · ★G184 consensus *(the thing you're trying to beat)* · HF Z3.1 *(the buy-side analyst doing the same cognitive work)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.2",
+    "local_id": "Z1.2",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Research Product & the Five Outputs",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Every piece of equity research ultimately delivers five linked things: a set of estimates, a valuation, a price target, a rating, and the written report that carries them.",
+    "explainer_covers": [
+      "The five concrete outputs and how they chain: the earnings model (★G183) produces the estimates (★G184); the estimates feed a valuation that yields a price target (★G185); the gap between target and price produces the rating (★G186); all of it is packaged in the research report (★G187, ★G182).",
+      "The model is the engine, but the rating is what the firm is selling and what the client acts on — everything exists to support the call.",
+      "Why the chain is auditable: a good analyst can be challenged at any link, and a sophisticated client reads the model and the assumptions, not just the headline.",
+      "The two report formats this resolves into: the initiation of coverage (the long, foundational launch) and the note (the short, frequent update) — both are ★G182, taught in Z3.12 and Z4.",
+      "The honest caveat: the five outputs are the form; whether they contain alpha depends entirely on whether the view inside them is differentiated and right (back to Z1.1)."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z3.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.11",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G183",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      },
+      {
+        "ref": "G185",
+        "note": null
+      },
+      {
+        "ref": "G186",
+        "note": null
+      },
+      {
+        "ref": "G182",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.4 (model → ★G183) · Z3.6 (estimates → ★G184) · Z3.10 (target → ★G185) · Z3.11 (rating → ★G186) · Z3.12 (report → ★G182) · ★G94 the football field *(IB Z3.6 — how the valuation range is shown)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.3",
+    "local_id": "Z1.3",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Sell-Side vs. Buy-Side vs. Independent Research",
+    "tag": "global",
+    "global_id": "G83",
+    "quick_definition": "Research splits into three worlds by who produces it and who pays: the sell-side (brokers/banks, published to clients), the buy-side (asset managers/hedge funds, kept in-house), and independents (sold directly, conflict-free).",
+    "explainer_covers": [
+      "The inherited frame: ★G83 is the sell-side/buy-side divide from Investment Banking — the sell-side sells services and products to the buy-side, which buys and owns securities. Research sits on both sides plus a third.",
+      "Sell-side research (the spine of this module, Z2.4): produced by investment banks and brokers, distributed to institutional clients, historically paid via trading commissions — and carrying the banking conflict (★G199).",
+      "Buy-side research (★G194, Z2.5): produced inside an asset manager or hedge fund for its own decisions, never published, judged only by returns — invisible but conflict-free.",
+      "Independent research (★G195, Z2.6): sold directly to investors by firms with no banking or brokerage arm, increasingly built on alternative data.",
+      "The defining question across all three — who pays, and what conflict does that create? — is the thread that runs through Zone 5."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G194",
+        "note": null
+      },
+      {
+        "ref": "G195",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4 (sell-side branch) · Z2.5 (★G194) · Z2.6 (★G195) · Z1.7 (★G197 — who pays) · Z5.4 (★G199 — the conflict) · IB Z1.2 *(the original sell-side/buy-side definition)* · AM Z1.1 *(the buy-side as asset owner's agent)* · HF Z1.1 *(the buy-side as absolute-return seeker)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.4",
+    "local_id": "Z1.4",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "Who Consumes Research & Why",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Sell-side research is consumed mainly by professional buy-side investors, who use it for ideas, for models, for access to the analyst, and for access to company management.",
+    "explainer_covers": [
+      "The primary reader is not the retail investor — it is the institutional buy-side: the portfolio managers and analysts at asset managers and hedge funds (AM Z2.4, HF Z3.1).",
+      "The four things the buy-side actually buys (Valentine, Ch6): (1) the idea and the differentiated view; (2) the model and the data work they'd otherwise do themselves; (3) access to the analyst — the ability to call and pressure-test; (4) corporate access — the analyst's relationships and conferences that get the PM in front of management.",
+      "The asymmetry: the best buy-side shops use the sell-side as one input and do their own work (★G194); the point of sell-side research is to be a high-quality input, not the final answer.",
+      "Why corporate access has historically been so valuable — and why MiFID II's unbundling (★G197) attacked exactly this, by forcing it to be priced separately.",
+      "A second audience: corporate-issuer management teams themselves read the research written about them, and (carefully) the sell-side covering their competitors."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G194",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (★G197 — and why unbundling reprices all four) · Z4.7 (managing the client relationship) · Z5.1 (★G196 — rankings come from these clients' votes) · ★G194 buy-side research *(the consumer who also produces)* · AM Z2.4 *(active managers as the core client)* · HF Z3.1 *(hedge-fund analysts as the most demanding client)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.5",
+    "local_id": "Z1.5",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "The Analyst's Workflow — The Five Tasks",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Valentine frames the entire job as five recurring tasks: find the critical factors, build the forecast, value the company, make the call, and communicate it.",
+    "explainer_covers": [
+      "The five tasks in order (Valentine, Exhibit I.1), which structure Zones 3 and 4: (1) identify and monitor the critical factors (★G191) that actually move the stock; (2) build and continually update the financial forecast / model (★G183); (3) use valuation to translate the forecast into a price target (★G185); (4) make the stock recommendation (★G186); (5) communicate the idea persuasively (★G182, ★G187).",
+      "Why the order matters: each task feeds the next, but task 1 — finding what matters — is the one that separates good analysts from spreadsheet operators, because most of a model's line items are noise.",
+      "The loop never closes: maintaining coverage (Zone 4) means running all five tasks again every quarter as new information arrives.",
+      "The \"2% that matters\" principle (Valentine): a company has hundreds of measurable attributes, but only a handful are critical factors that swing the stock — and the analyst's edge is in identifying and forecasting those.",
+      "How this maps to the buy-side: the in-house analyst (★G194) runs the same five tasks minus the \"communicate to clients\" step — they communicate to one PM instead."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.11",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      },
+      {
+        "ref": "G183",
+        "note": null
+      },
+      {
+        "ref": "G186",
+        "note": null
+      },
+      {
+        "ref": "G182",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2 (task 1 → ★G191) · Z3.4 (task 2 → ★G183) · Z3.7 (task 3 valuation) · Z3.11 (task 4 → ★G186) · Z3.12 (task 5 → ★G182) · ★G114 breadth *(HF — applying the process across the coverage universe)* · ★G124 second-level thinking *(HF Z3.2 — what \"find where consensus is wrong\" demands cognitively)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.6",
+    "local_id": "Z1.6",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "The Research Team & the Analyst's Role",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A sell-side research team is a senior analyst (the named, ranked decision-maker) supported by associates who build and maintain the models, organized by sector.",
+    "explainer_covers": [
+      "The structure: the senior/lead analyst owns the coverage, the calls, and the franchise (★G196); associates/junior analysts build models, write first drafts, and do the channel-check legwork; the senior analyst's name is on the note and the reputation.",
+      "The sector organization: teams are built around a coverage universe (★G189) — almost always a single sector — because the critical factors and the relationships are sector-specific.",
+      "The career path this implies (taught in Z5.6): associate → senior analyst on the sell-side, or a jump to the buy-side, where the same analytical skill is rewarded with returns rather than rankings.",
+      "The supporting cast around the analyst: the sales force that distributes the research (Z1.8), the editors and compliance officers who vet every published word (Z5.5), and the corporate-access team.",
+      "The tension built into the role: the analyst is simultaneously a researcher (who must be right), a salesperson (whose ideas must be used), and a franchise (whose reputation must be maintained) — and these pull in different directions."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G198",
+        "note": null
+      },
+      {
+        "ref": "G189",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.8 (★G198 — the desk structure around the analyst) · Z2.2 (★G189 — the universe the team covers) · Z5.1 (★G196 — what the senior analyst is building) · Z5.6 (the career) · IB Z1.4 *(the analogous deal-team hierarchy)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.7",
+    "local_id": "Z1.7",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "How Research Is Paid For",
+    "tag": "global",
+    "global_id": "G197",
+    "quick_definition": "Sell-side research was historically never sold directly — it was bundled into the trading commissions the buy-side paid, until MiFID II forced European managers to pay for it as a separate line item.",
+    "explainer_covers": [
+      "The historical model: research was \"free\" — the buy-side paid inflated trading commissions, and a slice of those commissions (soft dollars) implicitly compensated the broker for the research and access. No invoice, no explicit price.",
+      "Why that was fragile: it bundled a research payment inside a trading payment, obscured the true cost, and let mediocre research ride along on order flow.",
+      "MiFID II (2018) detonated the bundle in Europe: asset managers must now pay for research with hard dollars, separately from execution, and budget for it explicitly — collapsing research budgets and forcing a brutal consolidation of who gets paid.",
+      "The consequences (Zone 5.2): fewer analysts, fewer covered stocks (especially small-caps), pressure on the franchise model, and a opening for independents (★G195) who were always priced separately.",
+      "GAP / recency flag. No source in the folder covers the post-MiFID-II economics — Valentine (2011) predates it entirely. This node is grounded in general knowledge of the regulation and its aftermath; the quantitative picture of the modern research business (budgets, headcount, survival economics) is a genuine source gap, flagged again at Z5.2."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z1.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G198",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      },
+      {
+        "ref": "G195",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.8 (★G198 — commissions flow through the trading desk) · Z5.2 (the economics in depth) · Z5.4 (★G199 — unbundling as a conflict remedy) · Z2.6 (★G195 — independents as beneficiaries) · ★G83 sell-side/buy-side *(the payment crosses this divide)* · AM Z5.x *(the manager's cost base that research budgets sit in)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.8",
+    "local_id": "Z1.8",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "The Sales / Trading / Research Triangle",
+    "tag": "global",
+    "global_id": "G198",
+    "quick_definition": "A sell-side equities division has three desks — research (makes the ideas), sales (distributes them), and trading (executes the orders) — bound together because the trading commissions pay for the research.",
+    "explainer_covers": [
+      "The three desks and their jobs: research produces the views and models; sales (the salesforce) carries those views to buy-side clients and gathers their feedback; trading executes the buy/sell orders the clients place.",
+      "The circular economics (why it's a triangle): research generates ideas → sales gets clients to act → clients trade through the firm → commissions fund research. Break any leg and the model wobbles.",
+      "The analyst's daily reality: a meaningful share of an analyst's time is spent on the morning call and on the phone with the salesforce and clients, not building models — communication (task 5) is a job, not an afterthought.",
+      "How unbundling (★G197) strained the triangle: once research must be paid for separately, the commission-funds-research leg is cut, and the three desks' economics decouple.",
+      "The conflict-management overlay: the information wall (IB Z1.10) must separate research from banking, but research, sales, and trading sit together — which is exactly why selective-disclosure and front-running rules (Z5.5) matter so much."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G200",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (★G197 — the commissions that bind the triangle) · Z4.7 (working with the salesforce) · Z5.3 (the triangle in depth) · Z5.5 (★G200 — the rules governing the desks) · IB Z1.10 *(the banking-vs-public-side wall)* · HF Z1.x *(the prime-brokerage/trading relationship on the other side)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.9",
+    "local_id": "Z1.9",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "The Regulatory & Conflict Frame",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Equity research operates inside a cage of rules built largely in response to scandal: a wall against banking influence, a certification requirement, and bans on selective disclosure and trading on inside information.",
+    "explainer_covers": [
+      "The two foundational conflicts research is regulated to contain: research being bent to win banking business (★G199), and research being used to traffic in information the public doesn't have (the MNPI line, Z3.3).",
+      "The post-Spitzer Global Research Settlement (2003) — the regulatory earthquake that walled research off from investment banking after analysts were caught publicly touting stocks they privately disparaged (★G199, Z5.4).",
+      "Regulation AC (Analyst Certification): every published report must contain the analyst's personal certification that the views are genuinely their own and that their pay isn't tied to the specific recommendation (★G200, Z5.5).",
+      "Regulation FD (Fair Disclosure): companies may not selectively feed material information to favored analysts — everyone gets it at once, which is why the lawful mosaic (★G190) became the edge (Valentine, Ch9).",
+      "Quiet periods: research must go silent around the firm's own banking deals (around an IPO especially), tying this frame directly to IB's ECM process (IB Z2.8).",
+      "GAP / recency flag. No securities-law source sits in the folder; this frame is grounded in Valentine's treatment of Reg FD and the Spitzer settlement plus the IB module's wall plus general knowledge. MiFID II's conflict provisions (distinct from its unbundling) are part of the same gap."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      },
+      {
+        "ref": "G200",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.3 (★G190 vs. MNPI) · Z5.4 (★G199) · Z5.5 (★G200) · IB Z1.10 *(the information wall)* · IB Z2.8 *(the IPO quiet period)* · ★G83 *(the conflict lives at the sell-side/banking seam)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z1.10",
+    "local_id": "Z1.10",
+    "module": "equity-research",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Where Equity Research Sits — The Cross-Module Map",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Equity research is the sell-side analytical engine that feeds every other module: it produces the views the buy-side consumes, using the toolkit investment banking built, judged by the skill metrics hedge funds live by.",
+    "explainer_covers": [
+      "Upstream from the buy-side: ER is the largest external input into active management (AM Z2.4) and hedge-fund stock-picking (HF Z3.1–3.3). The sell-side analyst researches; the buy-side decides and owns.",
+      "Sharing IB's toolkit: the valuation machinery (★G87–G95) was built in Investment Banking; ER reuses it wholesale, reframed from pricing-a-deal to publishing-a-view (Z3.7–3.8).",
+      "Judged by HF's metrics: an analyst's track record is measured by the same skill statistics the buy-side is — the information ratio (★G112) and the hit rate / information coefficient (★G113) apply to a sequence of published calls exactly as to a sequence of trades.",
+      "Meeting banking at the IPO: research and banking collide most visibly in equity capital markets (IB Z2.8–2.9, ★G102) — the analyst must stay walled off from the deal the bankers are doing, the tension the whole regulatory frame (Z1.9) exists to manage.",
+      "The map forward: the modules still unbuilt (Venture Capital, Real Estate, Equity Research's own depth layers, and the macro/derivatives primitives) will plug into this same shared glossary; ER's contribution is the view-making vocabulary the others can now reference."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G95",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G113",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "*(this is the hub node — it links outward to)* AM Z2.4 · HF Z3.1 · IB Z2.8 · IB Z3.x *(the toolkit's home)* · ★G87–G95 *(the inherited methods)* · ★G112, ★G113 *(the skill metrics)* · ★G102 the IPO *(where research and banking meet)*. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

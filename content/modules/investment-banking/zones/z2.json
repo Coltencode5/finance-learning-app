@@ -1,0 +1,728 @@
+[
+  {
+    "id": "investment-banking.z2.1",
+    "local_id": "Z2.1",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Investment Banking Product Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of the five core product lines by what they do — advise on ownership change (M&A, Restructuring) versus raise capital (ECM, DCM, LevFin) — and how risk, fees, and market cycle differ across them.",
+    "explainer_covers": [
+      "The two families: advisory (M&A, Restructuring — paid on success, capital-light) and capital markets (ECM, DCM, LevFin — paid on the spread, distribution-driven).",
+      "The cyclicality split: M&A and ECM boom in good markets; Restructuring booms in bad ones; DCM is the steady base; LevFin tracks the credit cycle.",
+      "How the required skillset differs across branches (negotiation/process vs. markets/distribution vs. structuring/credit).",
+      "Which buy-side clients each branch serves (strategics, sponsors, institutional investors, creditors)."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, `★ G87` valuation toolkit, Z1.4 (product groups), Z1.1. ## Branch 2A — Mergers & Acquisitions (M&A) Advisory",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.2",
+    "local_id": "Z2.2",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "M&A Advisory Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Advising a company on buying, selling, or combining with another — the flagship advisory product, split into sell-side (representing a seller) and buy-side (representing an acquirer).",
+    "explainer_covers": [
+      "Sell-side vs. buy-side mandates (distinct from the industry-wide ★ G83 sell-side/buy-side split — here it means which party in the deal the bank represents).",
+      "What the advisor delivers: valuation, positioning, process management, negotiation, and the path to close.",
+      "Strategic acquirers vs. financial sponsors as buyers, and how that shapes price and process.",
+      "The core analytics the branch runs: the valuation toolkit, accretion/dilution, and the merger model."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G96",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.3, Z3.3 (the sell-side process, deep), `★ G87` valuation toolkit, `★ G96` accretion/dilution, `★ G99` control premium, PE Z4.13 (the sponsor sale a banker runs).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.3",
+    "local_id": "Z2.3",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Buy-Side vs. Sell-Side M&A Mandates",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The two roles a bank can play in a deal — running a sale for an owner (sell-side) or hunting and negotiating a purchase for an acquirer (buy-side).",
+    "explainer_covers": [
+      "Sell-side: prepare the asset, run the auction, maximize price and certainty (the bulk of fee revenue).",
+      "Buy-side: source targets, value them, structure the offer, negotiate, arrange financing.",
+      "Why sell-side mandates are more common and more lucrative (a motivated seller and a defined timeline).",
+      "How the same deal looks different from each chair."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2, Z3.3 (sell-side process), Z3.4 (buy-side process), `★ G84` mandate, PE Z3.1 (the sponsor's buy-side deal sourcing).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.4",
+    "local_id": "Z2.4",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Accretion / Dilution & the Merger Model",
+    "tag": "global",
+    "global_id": "G96",
+    "quick_definition": "The first-pass test of whether an acquisition increases or decreases the buyer's earnings per share, built inside an integrated merger model.",
+    "explainer_covers": [
+      "The mechanics: combine the two companies' net income, add the new financing cost and forgone interest, divide by the new share count.",
+      "The intuition: a deal is accretive if the target's earnings yield exceeds the after-tax cost of funding it (cheap debt = accretive; expensive stock = dilutive).",
+      "The consideration mix (G100) as the driver — cash vs. stock vs. debt changes the answer.",
+      "The full merger model (G97): purchase-price allocation, synergies, combined projections, pro-forma credit stats.",
+      "(BIWS M&A guide: the 60-minute and 3-hour merger-model builds, the contribution analysis.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G97",
+        "note": null
+      },
+      {
+        "ref": "G98",
+        "note": null
+      },
+      {
+        "ref": "G100",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2, `★ G97` merger model, `★ G98` synergies, `★ G100` consideration mix, `★ G42` dilution, Z3.6 (valuation feeds the model).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.5",
+    "local_id": "Z2.5",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Synergies, Premiums & Value Creation in M&A",
+    "tag": "global",
+    "global_id": "G98",
+    "quick_definition": "The analysis of what combining two companies creates (synergies) against what the buyer pays away to get the deal done (the control premium) — the heart of whether a deal makes sense.",
+    "explainer_covers": [
+      "Cost synergies (headcount, facilities, procurement) vs. revenue synergies (cross-sell, pricing) — and why cost synergies are credited and revenue synergies discounted.",
+      "The control premium (G99): why an acquirer must pay above the unaffected price, and the 10–30% norm.",
+      "Value creation test: synergies (net of integration cost) must exceed the premium for the deal to add value.",
+      "How synergies are modeled, phased, and (often) over-promised."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.23",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      },
+      {
+        "ref": "G89",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4, `★ G99` control premium, `★ G89` precedent transactions (premiums embedded), PE Z2.23 (a sponsor's value-creation logic), `★ G94` football field.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.6",
+    "local_id": "Z2.6",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "M&A Deal Structures & Consideration",
+    "tag": "global",
+    "global_id": "G100",
+    "quick_definition": "The menu of ways a deal is legally and financially structured — stock vs. asset purchase, merger forms, and the cash/stock/debt funding mix.",
+    "explainer_covers": [
+      "Stock purchase vs. asset purchase vs. statutory merger — tax and liability consequences.",
+      "Cash-free/debt-free deals and the role of net debt and working-capital pegs (ties to ★ G30, ★ G31).",
+      "Consideration mix (G100): cash, acquirer stock, assumed/new debt — and the accretion/dilution and risk trade-offs.",
+      "Earn-outs, escrows, and contingent value as bridges over valuation gaps."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      },
+      {
+        "ref": "G31",
+        "note": null
+      },
+      {
+        "ref": "G35",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4, `★ G36` SPA, `★ G30` net debt, `★ G31` working capital, `★ G35` SPV, Z3.9 (documentation). ## Branch 2B — Equity Capital Markets (ECM)",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.7",
+    "local_id": "Z2.7",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Equity Capital Markets Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The product line that raises equity for companies — IPOs, follow-on offerings, and equity-linked securities — and advises on the timing, structure, and pricing of selling stock.",
+    "explainer_covers": [
+      "What ECM does: take companies public, raise more equity from public companies, and structure convertibles.",
+      "The underwriting role (G101): committing to sell the shares and bearing placement risk for the gross spread.",
+      "Where ECM sits between the issuer and the buy-side investors who buy the offering.",
+      "The product menu: IPO, follow-on/secondary, block trade, rights issue, convertible."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.9",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.8, Z2.9, `★ G101` underwriting, `★ G102` IPO process, `★ G103` underwriting spread, Z1.2.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.8",
+    "local_id": "Z2.8",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "The IPO (Issuer & Process View)",
+    "tag": "global",
+    "global_id": "G102",
+    "quick_definition": "A company's first sale of shares to the public — and the registration, marketing, pricing, and allocation machine a bank runs to get there.",
+    "explainer_covers": [
+      "The process: organizational meeting → due diligence → registration statement (S-1) → SEC review → roadshow → pricing → allocation → first trade → stabilization.",
+      "Bookbuilding: gauging demand, setting the range, and pricing (and why IPOs are often deliberately underpriced for a first-day \"pop\").",
+      "The players: lead-left bookrunner, co-managers, underwriters' counsel, the syndicate.",
+      "Lockups, the greenshoe (over-allotment), and aftermarket support.",
+      "The disambiguation: this is the same event as PE's \"IPO as exit\" (★ G53), seen from the issuer/banker's chair rather than the selling shareholder's."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7, `★ G53` IPO as exit (cross-link), `★ G101` underwriting, `★ G103` spread, `★ G105` fairness opinion (for related transactions), PE Z4.14 (the exit decision).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.9",
+    "local_id": "Z2.9",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Follow-Ons, Converts & Other Equity Products",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The post-IPO equity toolkit — follow-on offerings, secondary block sales, rights issues, and convertible/equity-linked securities.",
+    "explainer_covers": [
+      "Follow-on (primary, raising new money) vs. secondary (existing holders selling) offerings.",
+      "Block trades and accelerated bookbuilds (ABBs) — fast, large, often bought-deal placements.",
+      "Convertibles and equity-linked notes: debt with an equity option, and why issuers use them.",
+      "How sponsors use follow-ons and block trades to sell down post-IPO stakes (the staged exit)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7, Z2.8, `★ G37` preferred equity, `★ G42` dilution, PE Z4.14 (selling down after listing), `★ G101` underwriting. ## Branch 2C — Debt Capital Markets (DCM)",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.10",
+    "local_id": "Z2.10",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Debt Capital Markets Defined",
+    "tag": "global",
+    "global_id": "G103",
+    "quick_definition": "The product line that raises debt for primarily investment-grade issuers in the public bond markets — advising on timing, structure, ratings, and pricing, and underwriting the issue.",
+    "explainer_covers": [
+      "What DCM does: investment-grade corporate bonds, and the steady \"base-load\" of capital-markets revenue.",
+      "The underwriting spread (G103) on a bond deal and how it's split.",
+      "Ratings advisory: positioning an issuer with the agencies to optimize cost of capital.",
+      "The contrast with LevFin (Z2.11): DCM is investment-grade and rate-driven; LevFin is sub-investment-grade and credit-driven."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.11 (LevFin — the high-yield sibling), `★ G101` underwriting, `★ G103` (deep here), `★ G69` floating rate/SOFR, Credit Z1.7 (the public-market alternative to private credit). ## Branch 2D — Leveraged Finance (LevFin) — *the bridge to Private Credit*",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.11",
+    "local_id": "Z2.11",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "Leveraged Finance Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The product line that arranges sub-investment-grade (\"leveraged\") debt — leveraged loans and high-yield bonds — most often to fund buyouts, recaps, and acquisitions for sponsor-owned and high-yield corporate borrowers.",
+    "explainer_covers": [
+      "What LevFin does: structure, underwrite, and syndicate leveraged loans (Term Loan B) and high-yield bonds.",
+      "The buyout connection: LevFin is the desk that finances the LBO — the debt side of the PE deal.",
+      "The bridge to Private Credit: the leveraged loan a LevFin desk syndicates to institutional investors is the same instrument a direct lender holds privately. The two markets now compete head-to-head (broadly syndicated vs. private/direct).",
+      "The arranger's role and risk: commitment letters, the \"flex,\" and syndication risk (getting stuck with un-sold paper)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.12",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.13",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.12, Z2.13, PE Z2.21 (the LBO it funds), Credit Z1.7 (private credit vs. the BSL market), Credit Z2.2 (direct lending — the private-market mirror), `★ G33` debt stack, `★ G29` leverage.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.12",
+    "local_id": "Z2.12",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 12,
+    "title": "The Leveraged Debt Toolkit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The instruments a LevFin desk arranges — leveraged loans (Term Loan B), high-yield bonds, bridge loans, and unitranche — ranked by seniority and tailored to the deal.",
+    "explainer_covers": [
+      "Leveraged loans / Term Loan B: senior secured, floating-rate (★ G69 SOFR + ★ G70 spread), the staple of buyout financing.",
+      "High-yield bonds: junior, often fixed-rate, longer-dated, with incurrence covenants and call protection (★ G72).",
+      "Bridge loans: short-term financing that \"bridges\" to a permanent bond/loan takeout — a classic underwriting commitment.",
+      "Unitranche (★ G68): the single blended instrument — here arranged/distributed by the bank, vs. held by a direct lender in the Credit module.",
+      "Pricing levers shared with private credit: spread (★ G70), OID (★ G71), call protection (★ G72), PIK (★ G73)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G68",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G73",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.11, `★ G68` unitranche, `★ G69` SOFR, `★ G70` spread, `★ G71` OID, `★ G72` call protection, `★ G73` PIK, `★ G33` debt stack, Credit Z2.3 (unitranche held), Credit Z2.4 (second lien).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.13",
+    "local_id": "Z2.13",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 13,
+    "title": "Syndication, Covenants & Documentation in LevFin",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How arranged leveraged debt is sold down to investors, and the credit-agreement terms — covenants, security, and intercreditor ranking — that govern it.",
+    "explainer_covers": [
+      "The syndication process: underwrite/commit → launch → book the loan with institutional investors (CLOs, credit funds, BDCs) → allocate → close.",
+      "Covenants: maintenance vs. incurrence, and the \"cov-lite\" drift in the syndicated market (ties to ★ G34).",
+      "Security, lien priority, and intercreditor terms (★ G78, ★ G79) — the same documents the Credit module's lender side negotiates.",
+      "The credit/facility agreement (★ G80) as the master contract — the debt analogue of the SPA.",
+      "(Recency/coverage flag: modern liability-management — uptiers, drop-downs — and the post-2020 doc-protection arms race sit at the edge of the source spine; shared gap with the Credit map — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.16",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.12",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      },
+      {
+        "ref": "G80",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.12, `★ G34` covenant, `★ G78` security/lien, `★ G79` intercreditor, `★ G80` credit agreement, Credit Z3.x (the lender's documentation view), Credit Z2.16 (CLOs as the buyer base). ## Branch 2E — Restructuring (RX)",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.14",
+    "local_id": "Z2.14",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 14,
+    "title": "Restructuring Advisory Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Advising financially distressed companies — or their creditors — on fixing an unsustainable balance sheet, in or out of bankruptcy; the counter-cyclical advisory product that booms when M&A slows.",
+    "explainer_covers": [
+      "The two sides: company-side (debtor advisory) vs. creditor-side (representing lenders/bondholders).",
+      "Out-of-court (amend-and-extend, exchanges, new money) vs. in-court (Chapter 11) restructuring.",
+      "The toolkit: liability management, debt-for-equity swaps, distressed exchanges, 363 sales, DIP financing.",
+      "Why RX is a specialist, valuation-intensive practice (recoveries hinge on enterprise value and seniority).",
+      "The fee model: monthly retainers + a completion fee, regardless of market direction."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.15",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.15, Credit Z4.7 (workouts — the lender's side of the same table), Credit Z2.5 (distressed credit), `★ G61` recovery/LGD (where the value lands), `★ G81` workout.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z2.15",
+    "local_id": "Z2.15",
+    "module": "investment-banking",
+    "zone": 2,
+    "ordinal": 15,
+    "title": "Restructuring Analytics & the Distressed Toolkit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The analytical core of RX — valuing a distressed enterprise, mapping recoveries across the capital structure, and structuring the fix.",
+    "explainer_covers": [
+      "The valuation waterfall: enterprise value flows down the debt stack by seniority, determining who recovers and who's impaired (the \"fulcrum security\").",
+      "Liquidation/NAV valuation as the floor (ties to the asset-based method in Z3.8).",
+      "Modeling recoveries, the plan of reorganization, and new-money/DIP structures.",
+      "How the same ★ G87 valuation toolkit is repurposed for distress (DCF and comps under going-concern doubt).",
+      "(Recency/coverage flag: the modern creditor-on-creditor / LME era post-dates much of the standard source material — shared gap with the Credit map, item flagged in Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.9",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.14",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.14, `★ G87` valuation toolkit, `★ G61` recovery/LGD, `★ G62` default/PD, `★ G78` lien priority, Credit Z4.8 (recovery analysis), Credit Z4.9 (bankruptcy/Chapter 11), `★ G33` debt stack. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

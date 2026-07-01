@@ -1,0 +1,431 @@
+[
+  {
+    "id": "equity-research.z2.1",
+    "local_id": "Z2.1",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Coverage by Sector & the Coverage Universe",
+    "tag": "global",
+    "global_id": "G189",
+    "quick_definition": "An analyst covers a defined set of companies — almost always within a single sector — and that coverage universe is both the basis of their expertise and the limit of their authority.",
+    "explainer_covers": [
+      "Why coverage is sector-bound: the critical factors (★G191) that move a bank are nothing like those that move a biotech or an oil major, so depth requires specialization — an analyst is a sector expert first.",
+      "What \"covering\" a stock actually means (Valentine, Ch2): to closely cover a name is to publish a price target derived from a maintained forecast — not merely to comment on it. Coverage is a standing commitment to a model, a rating, and regular notes.",
+      "The size of a universe: a sell-side analyst (with their team) typically covers on the order of 5–7 stocks per team member; a buy-side analyst may be responsible for a far wider list (35–50 names) because they don't have to publish on each.",
+      "The boundary it creates: an analyst has authority — and rateable reputation (★G196) — only within their universe; outside it they're just another reader.",
+      "How a universe is chosen: by sector importance, client demand, the firm's banking relationships (carefully, given ★G199), and the analyst's edge — which is the subject of the next node."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (how the universe is built) · Z2.3 (sector frameworks) · Z3.2 (★G191 — the factors within the sector) · Z1.6 (the team that covers it) · Z5.1 (★G196 — reputation is universe-specific) · AM Z2.4 *(the active manager who relies on this coverage)* · HF Z3.1 *(the buy-side analyst's wider universe)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.2",
+    "local_id": "Z2.2",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Building the Coverage Universe",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Choosing which companies to cover is a deliberate analytical exercise — mapping a sector's value chain, grouping comparable companies, and deciding where an edge is possible.",
+    "explainer_covers": [
+      "Food-chain analysis (Valentine): map the sector as a value chain — suppliers, producers, distributors, customers — so that covering one company illuminates its neighbors, and a data point about one (a supplier's order book) informs the whole universe.",
+      "Homogeneity: a good universe is internally comparable, so the same critical factors and the same comps (★G88) apply across it — which makes relative valuation (Z3.8) and cross-reads tractable.",
+      "The trade-off in universe size: more names mean more breadth (★G114) and more client touchpoints, but less depth per name; fewer names mean deeper edge but a narrower franchise.",
+      "Where coverage gets initiated and dropped: launching coverage of a new name is a major event (the initiation report, Z3.12); dropping coverage is a quiet but meaningful signal, often driven by the post-MiFID-II economics (★G197) that made covering small-caps uneconomic.",
+      "The link to breadth and the Fundamental Law: covering more names well multiplies the chances to be right — but only if the per-name skill (the information coefficient, ★G113) holds up across the wider list."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z2.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G189",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.1 (★G189 — the universe being built) · Z3.2 (★G191) · Z3.8 (relative valuation across the universe) · ★G88 comps *(IB — the comparable set the universe maps to)* · ★G114 breadth *(HF Z5.x)* · ★G115 the Fundamental Law of Active Management *(HF — breadth × skill)* · ★G197 *(the economics that shrink universes)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.3",
+    "local_id": "Z2.3",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Sector Frameworks — How the Critical Factors Differ",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Each sector has its own analytical framework — the specific drivers, metrics, and KPIs that matter — so that the universal \"find the critical factors\" task takes a different concrete shape in every sector.",
+    "explainer_covers": [
+      "The principle (Valentine, Ch7): critical factors (★G191, taught in Z3.2) are sector-specific. The analyst's first job in any sector is to learn which handful of variables the stocks actually trade on.",
+      "Worked contrasts: a bank trades on net interest margin, credit losses, and capital ratios (and is valued on a DDM/book basis, per Damodaran's special cases); a retailer on same-store sales, traffic, and margin; a commodity/cyclical producer on the commodity price and the cycle (valued on normalized earnings, Damodaran); a software company on net revenue retention, bookings, and the growth-vs-margin trade.",
+      "Why the valuation method follows the sector: the choice between DCF, multiples, and a sector-specific method (Z3.7–3.8) is driven by the sector's economics — banks and financials break the standard enterprise-value frame, young/high-growth names defy multiples, cyclicals defy spot earnings.",
+      "The KPI layer beneath the financials: every sector has operating metrics (subscribers, load factors, rig counts, daily active users) that lead the reported financials — and the analyst's edge is often in forecasting the KPI before it shows up in EPS.",
+      "The link to channel checks: the sector framework tells you which operating metrics to go check (Z3.3) — you can't build a useful mosaic without knowing what's material."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.4",
+    "local_id": "Z2.4",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Branch — Sell-Side Research",
+    "tag": "global",
+    "global_id": "G83",
+    "quick_definition": "Sell-side research is the published, client-distributed product made by banks and brokers — the version of the job this whole module takes as its spine, and the version that carries the banking conflict.",
+    "explainer_covers": [
+      "The defining features: research is published (attributed, rated, distributed to all clients), paid for via commissions (★G197), and conflicted by the firm's banking and trading interests (★G199).",
+      "What the sell-side analyst optimizes for: a differentiated, correct, and well-communicated view that wins client votes and builds the franchise (★G196) — being right is necessary but not sufficient; being used is the currency.",
+      "The structural pressures: the buy-rating bias (Damodaran — analysts issue far more buys than sells, to preserve management access and under employer pressure, Z3.11), the quiet periods (★G200), and the constant tension between the research call and the firm's banking pipeline.",
+      "Why it's the spine: the sell-side analyst's workflow is the fullest version of the five tasks (all five, including communication), so the process zone (Z3) is written from the sell-side chair and the other branches are described as variations.",
+      "The reader: the institutional buy-side (Z1.4) — which means the sell-side product is shaped by what PMs and buy-side analysts will pay attention to and vote for."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.11",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3 (★G83) · Z3.x *(the full process, written sell-side)* · Z3.11 (the buy-rating bias) · Z5.1 (★G196 — the franchise this builds) · Z5.4 (★G199 — the conflict) · IB Z1.2 *(sell-side origin)* · ★G197 *(how it's paid)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.5",
+    "local_id": "Z2.5",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Branch — Buy-Side Research",
+    "tag": "global",
+    "global_id": "G194",
+    "quick_definition": "Buy-side research is produced inside an asset manager or hedge fund, purely for that firm's own portfolio decisions — never published, never sold, and judged by one thing only: returns.",
+    "explainer_covers": [
+      "The defining contrast with the sell-side: no publication, no rating to defend, no franchise to build, no banking conflict — and no audience but the firm's own portfolio managers.",
+      "What changes about the job: the buy-side analyst runs the same five tasks minus communication-to-clients — they make the case to one PM (or run the book themselves), so the output is a decision, not a note.",
+      "How the two relate: the buy-side analyst consumes sell-side research (Z1.4) as one input — using the sell-side model and access — but forms an independent, often contrarian view (★G124 second-level thinking).",
+      "Why it's invisible but often better: freed of the buy-rating bias and the need to maintain management relationships, buy-side research can issue the conviction sell the sell-side rarely will — and its only scoreboard is P&L (the information ratio, ★G112).",
+      "The career flow: the most common destination for a strong sell-side analyst is the buy-side (Z5.6), trading rankings for returns and publication for privacy."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3 (★G83) · Z1.4 (the buy-side as consumer) · Z5.6 (the career path) · ★G124 second-level thinking *(HF Z3.2)* · ★G112 information ratio *(HF — the only scoreboard)* · ★G121 the internal thesis *(HF Z3 — the buy-side's unpublished call)* · AM Z2.4 *(the active manager's in-house team)* · HF Z3.1 *(the hedge-fund analyst)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.6",
+    "local_id": "Z2.6",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Branch — Independent & Alternative Research",
+    "tag": "global",
+    "global_id": "G195",
+    "quick_definition": "Independent research is sold directly to investors by firms with no banking or brokerage arm — and increasingly, \"alternative\" research built on novel datasets and machine analysis rather than the traditional analyst note.",
+    "explainer_covers": [
+      "The conflict-free pitch: with no investment bank to please and no order flow to chase, independent research can be genuinely objective — its only product is the research, so it lives or dies on being right (and on being priced separately, which MiFID II made the norm).",
+      "Two flavors: traditional independents (boutiques selling deep fundamental work directly) and alternative-data providers (firms selling credit-card panels, satellite imagery, web-scraped pricing, app-download data — the raw mosaic, productized).",
+      "How alt-data changes the edge: it industrializes the channel check (★G190) — what an analyst once gathered by phone, a vendor now sells as a dataset, compressing the informational advantage and pushing the edge toward interpretation rather than gathering.",
+      "The AI frontier: machine reading of filings, earnings-call transcripts, and unstructured data is beginning to automate parts of the model-build and the first-pass analysis — a potential disruption of the research product, not just an input to it.",
+      "GAP / recency flag. Koller (2020) is the most recent source and does not reach the alt-data/AI disruption of the research business; Valentine predates it entirely. This node's forward-looking content is grounded in general knowledge, and the \"where it's heading\" question is flagged again at Z5.7."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z1.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3 (★G83) · Z3.3 (★G190 — alt-data as industrialized channel checks) · Z5.2 (★G197 — independents as unbundling beneficiaries) · Z5.7 (the AI/alt-data future) · HF Z3.x *(quant and data-driven hedge funds as the core buyers of alt-data)* · ★G125 market efficiency *(AM — alt-data compresses the inefficiency the edge feeds on)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z2.7",
+    "local_id": "Z2.7",
+    "module": "equity-research",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "The Style Lens on Coverage",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The same value/growth/quality lenses that sort active managers also sort how an analyst frames a stock — because a \"buy\" only means something relative to why a stock is attractive.",
+    "explainer_covers": [
+      "The reused frame (Asset Management Z2.4–2.7): value, growth, and quality are the three dominant lenses (★G149 style) — and an analyst implicitly adopts one when they argue a thesis, because the reason a stock is cheap differs by lens.",
+      "How the lens shapes the call: a value-framed buy says \"the market overweights the bad news, the multiple is too low for the companion variable\" (Damodaran, Z3.8); a growth-framed buy says \"the market underestimates the durability of the growth\"; a quality-framed buy says \"the market underpays for the ROIC and the moat\" (Koller's ROIC-drives-value, Z3.5).",
+      "Why this matters for the buy-side reader: a value PM and a growth PM want different research on the same stock, and the best analysts know which lens their differentiated view lives in.",
+      "The connection to the companion variable: each style lens pairs a multiple with the fundamental it should be read against — value watches P/E vs. growth and P/B vs. ROE, growth watches the growth rate's durability, quality watches the ROIC-vs-WACC spread.",
+      "The honest limit: style is a framing device, not a substitute for being right — a correctly-identified cheap stock in the wrong style framing is still a good call; the framing just determines which clients buy it."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.8 (Damodaran's multiples + companion variable) · Z3.9 (forming the thesis within a lens) · ★G149 style *(AM Z2.4 — the home of the style concept)* · AM Z2.5 *(value)* · AM Z2.6 *(growth)* · AM Z2.7 *(quality)* · ★G125 market efficiency *(the inefficiency each lens exploits)*. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

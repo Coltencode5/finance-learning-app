@@ -1,0 +1,622 @@
+[
+  {
+    "id": "private-credit.z5.1",
+    "local_id": "Z5.1",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "Private Credit Fund Formation & Vehicles  (deepens ★ G20)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a credit fund is assembled — the drawdown or evergreen vehicle, BDCs, SMAs, and rated structures, all governed by an LPA tuned for an income product.",
+    "explainer_covers": [
+      "Drawdown LP funds vs. evergreen/perpetual funds vs. BDCs vs. SMAs.",
+      "Rated-note feeders and insurance-dedicated vehicles; CLOs as fund financing.",
+      "How the LPA differs from a PE LPA (distribution mechanics, leverage provisions, redemption in evergreens)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G20` LPA (*shared — credit-fund nuance added*), Z1.8, Z5.3 (leverage), `★ G19` Blind pool (shared), PE Z5.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.2",
+    "local_id": "Z5.2",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "Private Credit Fund Economics & Fees  (deepens ★ G8/★ G9/★ G10)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The fee model of a credit fund — lighter than PE's \"2 and 20,\" with management fees often on invested or gross assets and an incentive fee on income above a hurdle.",
+    "explainer_covers": [
+      "The lower load: ~1% management fee, incentive ~10–15% — often on income (not just gains) above a hurdle (≈6–7%).",
+      "The BDC twist: management fee on gross assets (including leverage) — and the misalignment critique that it rewards levering up.",
+      "Why a yield product carries different economics than a capital-gains product."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.12",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G8` Management fee / `★ G9` \"2 and 20\" / `★ G10` Carried interest (*shared nodes — credit-fee nuance lives here*), `★ G12` Hurdle, Z5.3, Z5.12.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.3",
+    "local_id": "Z5.3",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "Fund-Level Leverage & Financing Lines",
+    "tag": "global",
+    "global_id": "G67",
+    "quick_definition": "The borrowing a fund does on top of its loan book — subscription lines, asset facilities, and BDC debt — that converts a single-digit asset yield into a double-digit equity return.",
+    "explainer_covers": [
+      "The leverage layers: subscription/capital-call lines, asset-level facilities, CLO financing, BDC debt.",
+      "The return mechanic: ~6–9% asset yield + modest-cost leverage → ~10–12% equity return.",
+      "The risk it adds (and the asset-coverage limits that cap it).",
+      "This is the credit-side counterpart to PE's use of deal leverage — same idea, fund level."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.10",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.14",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G29` Leverage, Z1.10 (BDC asset coverage), Z2.14 (NAV/fund finance), Z5.13 (leverage risk), `★ G16` Committed capital (sub lines).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.4",
+    "local_id": "Z5.4",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Fundraising & the LP Base in Private Credit  (deepens PE Z5.4)",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How credit managers raise capital — and why the insurance/annuity investor has become the defining LP of the modern asset class.",
+    "explainer_covers": [
+      "The investor mix: pensions, endowments, sovereigns, insurers, and (increasingly) private wealth.",
+      "Perpetual-capital fundraising and the always-open evergreen model.",
+      "The insurance tie-up (the asset-manager-owns-an-insurer model) as a permanent capital engine."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.12",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.4 (the ecosystem), `★ G18` Vintage year, PE Z5.4 (the fundraising template), Z5.12 (the wealth channel), Z5.10.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.5",
+    "local_id": "Z5.5",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Performance Measurement in Private Credit  (deepens ★ G1/★ G2)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How credit-fund performance is measured — yield, IRR, and MOIC all appear, but loss-adjusted net return is the number that matters most for an income product.",
+    "explainer_covers": [
+      "Cash yield and total yield; gross vs. net IRR; MOIC/multiple.",
+      "Why net-of-losses return (gross yield − loss rate − fees) is the truest measure.",
+      "Income vs. realized/unrealized appreciation in the total-return split.",
+      "The role of marks (Z4.11) in interim performance."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G1` IRR / `★ G2` MOIC (*shared nodes — credit measures them but leads with yield/loss*), `★ G58` Yield, `★ G60` Loss rate, Z5.6, Z5.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.6",
+    "local_id": "Z5.6",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Yield & Income Metrics",
+    "tag": "global",
+    "global_id": "G58",
+    "quick_definition": "The family of income-return measures that headline a credit investment — cash yield, yield-to-maturity, and yield-to-3-year (assuming early take-out).",
+    "explainer_covers": [
+      "Cash yield (current income) vs. yield-to-maturity (income to full term) vs. yield-to-3-year (the realistic average-life assumption).",
+      "How OID and fees lift yield above the coupon; how call protection defends it.",
+      "Why yield is to credit what IRR is to PE — the headline, with the same need for a \"net of losses\" caveat."
+    ],
+    "connects_to": [
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G69` Floating rate, `★ G70` Spread, `★ G71` OID, `★ G72` Call protection, `★ G60` Loss rate (the offset), `★ G1` IRR (the cousin metric).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.7",
+    "local_id": "Z5.7",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 7,
+    "title": "The Cliffwater Direct Lending Index (CDLI)",
+    "tag": "global",
+    "global_id": "G59",
+    "quick_definition": "The benchmark — built by Cliffwater (Stephen Nesbitt's firm) — tracking the total return of U.S. middle-market directly-originated loans held by BDCs, serving as the asset class's published track record.",
+    "explainer_covers": [
+      "What it measures: a large universe of U.S. MM direct loans sourced from BDC holdings.",
+      "Total-return decomposition: income vs. realized vs. unrealized gains/losses.",
+      "How it's used to evidence the asset class's yield and (low) loss experience over time.",
+      "Its limits: BDC-sourced (a survivorship/selection question), U.S.-only, direct-lending-only."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` Yield, `★ G60` Loss rate, Z5.8 (comparisons), Z5.5, Z1.3 (the growth story it documents).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.8",
+    "local_id": "Z5.8",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 8,
+    "title": "Benchmarking & Index Comparisons",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Placing private-credit returns against public alternatives — leveraged loans, high-yield bonds, and the BSL market — including public-market-equivalent-style comparisons.",
+    "explainer_covers": [
+      "The CDLI vs. leveraged-loan indices (Morningstar/LSTA) vs. high-yield.",
+      "PME-style comparison: what the same cash flows would have earned in public credit.",
+      "Reading the illiquidity/complexity premium out of the spread."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G59",
+        "note": null
+      },
+      {
+        "ref": "G5",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G59` CDLI, `★ G5` PME (*shared PE node — applied to credit here*), `★ G1` IRR, Z1.7 (the BSL comparator), Z5.5.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.9",
+    "local_id": "Z5.9",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 9,
+    "title": "Manager Selection & GP Due Diligence (Credit)  (deepens PE Z5.8)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How LPs evaluate credit managers — judging them on loss experience through a cycle and workout capability, not just headline yield.",
+    "explainer_covers": [
+      "The diligence focus: track record through a downturn, realized loss rates, origination edge, and restructuring capability.",
+      "Why a high yield with hidden losses is worse than a modest yield with none.",
+      "Platform scale, sourcing reach, and the persistence-of-returns debate."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.17",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G60` Loss rate, `★ G61` Recovery, Z1.17 (workout capability), PE Z5.8 (the GP-DD template), Z5.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.10",
+    "local_id": "Z5.10",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 10,
+    "title": "LP Allocation to Private Credit  (deepens PE Z5.6)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How institutions decide how much to allocate to private credit — and whether it belongs in the fixed-income bucket, the alternatives sleeve, or its own category.",
+    "explainer_covers": [
+      "The rationale: yield premium over public credit, floating-rate protection, diversification.",
+      "Fixed-income substitution vs. an alternatives allocation; the illiquidity budget.",
+      "The natural fit for insurance and long-horizon capital."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G7` LP (shared), PE Z5.6 (the allocation template), `★ G58` Yield, Z5.4, Z5.13.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.11",
+    "local_id": "Z5.11",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 11,
+    "title": "Portfolio Construction & Diversification (Lender Side)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a credit fund builds a granular portfolio — many small loans diversified across borrowers, sectors, sponsors, and vintages — the opposite of PE's few concentrated bets.",
+    "explainer_covers": [
+      "Diversification by borrower, sector, sponsor, geography, and vintage; concentration limits.",
+      "Granularity as the core risk-management tool (no single loss sinks the fund).",
+      "The contrast with PE's high-conviction, concentrated portfolio."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G62` Default (diversifying it away), PE Z5.7 (the LP portfolio-construction parallel), Z5.13, Z2.1 (strategy mix).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.12",
+    "local_id": "Z5.12",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 12,
+    "title": "BDC Structure, Economics & the Public Market  (deepens ★ G64)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a BDC works as an investment — its price-to-NAV behavior, fee model, dividend coverage, and the non-traded/perpetual variant powering the private-wealth channel.",
+    "explainer_covers": [
+      "Traded BDC valuation: price-to-NAV premiums/discounts and what drives them.",
+      "The BDC fee model (gross-asset fees + income/gains incentive) and dividend coverage.",
+      "Non-traded/perpetual BDCs and the retail/wealth distribution wave."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "G64",
+        "note": null
+      },
+      {
+        "ref": "G67",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G64` BDC (*shared node — the investor's-eye view*), `★ G67` Fund leverage, Z5.2 (fees), Z5.4 (the wealth channel), Z4.11 (NAV).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.13",
+    "local_id": "Z5.13",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 13,
+    "title": "Private Credit Risk Management  (deepens PE Z5.21)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Identifying and managing the distinct risks of private credit — credit/default, leverage (both borrower and fund), liquidity/redemption, rate, and concentration.",
+    "explainer_covers": [
+      "Credit/default risk (mitigated by diligence, seniority, covenants, diversification).",
+      "Leverage risk on two levels — the borrower's and the fund's (G67).",
+      "Liquidity/redemption risk in evergreen vehicles; rate risk (floating-rate mitigates); concentration risk.",
+      "The cycle risk that matters most now: spread compression in a capital-flooded market."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.15",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G29` Leverage, `★ G60` Loss rate, `★ G69` Floating rate, PE Z5.21 (the risk-framework parallel), Z5.11, Z1.15.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z5.14",
+    "local_id": "Z5.14",
+    "module": "private-credit",
+    "zone": 5,
+    "ordinal": 14,
+    "title": "The Evolution & Future of Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where private credit came from and the forces shaping where it's going — scale, the move up-market, insurance capital, retail democratization, asset-based finance, and the first real cycle test.",
+    "explainer_covers": [
+      "The arc: post-GFC niche → mainstream pillar; the move up-market and convergence with the BSL market.",
+      "The insurance-capital engine and the asset-based-finance (ABF) frontier.",
+      "Democratization through evergreen/perpetual vehicles and the private-wealth channel.",
+      "The open questions: can returns persist as the industry scales, is there systemic risk, and how does it hold up through a full default cycle? — the capstone debate.",
+      "(Recency-heavy: much of this post-dates the source books — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.9",
+        "note": null
+      },
+      {
+        "ref": "G64",
+        "note": null
+      },
+      {
+        "ref": "G59",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (where it began), `★ G64` BDC, `★ G59` CDLI, Z2.9 (ABF), **capstone — links back to all zones**, PE Z5.22 (the equity-side \"future of\" node). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

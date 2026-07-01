@@ -1,0 +1,398 @@
+[
+  {
+    "id": "wealth-management.z3.1",
+    "local_id": "Z3.1",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Discovery & the Financial Plan",
+    "tag": "global",
+    "global_id": "G159",
+    "quick_definition": "Every engagement begins not with a portfolio but with discovery — gathering the household's full financial picture, goals, constraints, and balance sheet — and translating it into a written financial plan that sets what \"success\" means before a single security is chosen.",
+    "explainer_covers": [
+      "Discovery / data-gathering: assets and liabilities (the full balance sheet, including human capital, G162), income and spending, existing accounts and their tax types (G168), insurance, prior estate documents, and — most importantly — the family's goals, their priorities, and their hard vs. soft deadlines.",
+      "Goal definition and prioritization (G160): turning vague wishes (\"retire comfortably,\" \"help the grandkids\") into specific, dated, dollar-quantified, ranked goals — the raw material the whole plan is optimized against, and the individual's substitute for an institution's return target and liability stream.",
+      "The plan as the deliverable (G159): the written financial plan / personal IPS — objectives, constraints, risk capacity (G163), target allocation, and the tax, retirement, and estate strategies — the analogue of the institution's investment policy statement (AM Z3.1) and the document every later step traces back to.",
+      "The \"know your client\" and fiduciary frame (G181): discovery is also where the suitability/best-interest obligation is grounded — you cannot act in a client's interest without understanding their whole situation, which is why thorough discovery is the substance of fiduciary care.",
+      "Why this front-loads the value: the largest outcomes are set here — how much to save, when to retire, how to insure and structure the estate — long before allocation and selection, which is why the plan, not the portfolio, is the product (G159)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G162",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G159` financial planning, `G160` goals-based investing, `G162` human capital, `G163` risk capacity, `G168` tax-advantaged accounts, `G181` fiduciary vs. suitability, Z3.2 (risk-profiling and allocation follow), AM Z3.1 (setting the mandate & benchmark — *the institutional analogue of building the plan*), PE Z1.2 (the fund mandate — *the private-markets analogue*). **GAP: a financial-planning-process (CFP-curriculum) source for the integrated discovery-to-monitoring loop.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a financial-planning-process (CFP-curriculum) source for the integrated discovery-to-monitoring loop",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z3.2",
+    "local_id": "Z3.2",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Goals, Risk-Profiling & the Allocation Decision",
+    "tag": "global",
+    "global_id": "G163",
+    "quick_definition": "With the plan in hand, the advisor profiles the client's risk tolerance and capacity, then makes the single most consequential investment decision — the asset allocation — building a goal-aligned policy mix the household will hold and rebalance toward.",
+    "explainer_covers": [
+      "Risk-profiling done right (G163, Berns): measure tolerance (risk aversion, loss aversion, reflection — ideally via lottery-style questions, not a crude single-score questionnaire) and compute capacity (via discretionary wealth / standard-of-living risk), then govern the portfolio by the binding one — moderating tolerance upward when goals are barely funded, letting it govern when they're over-funded.",
+      "Asset allocation, the individual version (★ G143): the same decision that drives ~90% of return variability for institutions drives it for individuals too (Swensen) — set the strategic mix across equities, bonds, and (for some) real assets and alternatives, built from the same MPT/efficient-frontier logic (★ G145) and diversification (★ G146), but anchored to goals and capacity rather than to a benchmark.",
+      "Core asset classes for individuals (Swensen): domestic and foreign equities, real-estate securities (REITs), and inflation-protected and nominal government bonds — the \"core\" classes that deliver market-driven, differentiated returns; with a sharp warning to avoid the high-cost, conflict-ridden \"non-core\" products (private retail REITs, high-fee active funds) that enrich the seller, not the saver.",
+      "The glide-path dimension (G164): the individual's allocation is not static — it rides a glide path that de-risks as goals approach, the policy portfolio that moves with age and funding status (Z2.3).",
+      "The equity-orientation-with-discipline tension: individuals need equity's growth to fund long goals (Swensen's equity bias), but must size it to their capacity and horizon and hold it through volatility — which is why allocation and behavioral coaching (G161) are inseparable."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G145",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G163` risk capacity, `★ G143` asset allocation, `G164` glide path, `G160` goals-based investing, `★ G145` MPT/efficient frontier, `★ G146` diversification, `★ G144` policy portfolio, `G161` behavioral coaching, Z3.3 (selection within the allocation), Z2.2 (goals-based structuring), **AM Z3.2** (the institutional allocation step — *the same decision, individual seat*). *Real-world layer: Berns Ch. 2–5 (risk profile to optimization); Swensen,* Unconventional Success *Ch. 1–4 (allocation, core classes).*",
+    "gaps": [],
+    "real_world_layer": "Berns Ch. 2–5 (risk profile to optimization); Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z3.3",
+    "local_id": "Z3.3",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "Product & Manager Selection (for a Household)",
+    "tag": "global",
+    "global_id": "G156",
+    "quick_definition": "Choosing the actual vehicles that fill each slice of the allocation — overwhelmingly low-cost index funds and ETFs, occasionally a vetted active manager, and for the wealthy a curated set of alternatives — the individual's version of manager selection, where the dominant lesson is cost and the active-vs-passive verdict.",
+    "explainer_covers": [
+      "The default answer — index it (★ G137/★ G138): because the average active manager underperforms after fees (Sharpe's arithmetic, ★ G150/★ G158) and individuals are worse than institutions at picking winners and pay taxes on active turnover, the right default for nearly all households is low-cost, tax-efficient index funds and ETFs — Swensen's core prescription and the AM↔WM through-line.",
+      "Selecting the vehicle: choose by cost (expense ratio first — the one reliable predictor of fund returns, ★ G150), tracking fidelity (★ G141), tax efficiency (ETFs over mutual funds in taxable accounts, ★ G139), and fit to the allocation slice — and prefer not-for-profit / low-cost providers over the high-fee, conflicted ones Swensen indicts.",
+      "Manager selection when active is used (★ G156): the same discipline an institution applies (judge process, people, edge, fees, and persistence — AM Z5.5) — but applied by or for a household, with an even higher bar, since the individual pays taxes on the manager's turnover and rarely has the resources to identify rare persistent skill. This is the same node as the institutional allocator's manager selection, one rung down.",
+      "Vehicle selection by account type (the location interaction, G166): which product to use depends on which account it goes in — tax-inefficient strategies belong in tax-sheltered accounts, tax-efficient index equities in taxable ones — so selection and location (Z3.2/Z3.4) are decided together.",
+      "Alternatives for the wealthy: for HNW/UHNW clients, selection extends to PE, private credit, and hedge funds (★ G9, ★ G56) — accessed through feeders, funds-of-funds, or now semi-liquid/evergreen vehicles — where the institutional manager-selection and due-diligence discipline (and its costs and illiquidity) fully apply."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G156` manager selection, `★ G137` passive vs. active, `★ G138` index fund / `★ G139` ETF, `★ G150` cost/fee drag, `★ G158` the active-vs-passive debate, `G166` tax-aware investing (location decides the vehicle), `G179` direct indexing (a selection option), `★ G9` \"2 and 20\" (alternatives for the wealthy), Z3.4 (implementation), **AM Z5.5** (manager selection — *the same node, institutional seat*), AM Z2.2 (the index-fund case). *Real-world layer: Swensen,* Unconventional Success *(cost, indexing, the for-profit-fund critique).*",
+    "gaps": [],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z3.4",
+    "local_id": "Z3.4",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Tax-Aware Implementation",
+    "tag": "global",
+    "global_id": "G166",
+    "quick_definition": "Putting the plan into the market in the way that maximizes after-tax return — placing each asset in the right account (asset location), harvesting losses, managing turnover and capital gains, and handling concentrated low-basis positions — the individual's single biggest source of guaranteed, risk-free value.",
+    "explainer_covers": [
+      "Asset location (G166) — the core move: place tax-inefficient assets (taxable bonds, REITs, high-turnover and income-producing strategies) inside tax-sheltered accounts (G168), and tax-efficient assets (broad index equities, which throw off little taxable income and defer gains) in taxable accounts — a pure-arithmetic improvement to after-tax return that an institution (tax-exempt) never has to make. Distinct from asset allocation (★ G143) — same word, different decision.",
+      "Tax-loss harvesting (G167): systematically realize losses to offset gains and a limited amount of ordinary income, reinvesting in a close-but-not-identical substitute to stay invested — turning volatility into a recurring tax benefit, bounded by the wash-sale rule (no repurchase of a \"substantially identical\" security within 30 days), which is exactly why direct indexing (G179) supercharges it.",
+      "Managing realizations and turnover: favor long-term over short-term gains (lower rates), avoid unnecessary turnover (every sale is a taxable event), use specific-lot identification to sell high-basis shares first, and time realizations across tax years and brackets — the discipline that closes Swensen's multi-percentage-point pre-tax/after-tax gap.",
+      "Concentrated, low-basis positions (the liquidity-event problem): the client who comes in with a huge low-basis stake (from a company sale, IPO ★ G102, or decades of holding) faces a tax-vs-diversification dilemma — diversifying triggers a big gain — addressed with staged sales, borrowing against the position (private banking, G176), exchange funds, charitable gifting of appreciated shares (G175/Z2.6), and hedging.",
+      "The location/selection/rebalancing knot: tax-aware implementation is decided jointly with product selection (Z3.3) and rebalancing (Z3.5) — e.g., rebalance with new contributions and inside sheltered accounts to avoid triggering taxable gains — because in taxable wealth management, every transaction has a tax consequence."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      },
+      {
+        "ref": "G176",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G166` asset location, `G167` tax-loss harvesting, `G168` tax-advantaged accounts, `G179` direct indexing (harvesting at the single-stock level), `★ G143` asset allocation (the contrast — *location vs. allocation*), `★ G139` ETF (the tax-efficient wrapper), `G176` private banking (borrow-don't-sell on concentrated stock), `★ G102` the IPO process (the source of concentrated low-basis stock), Z3.5 (tax-aware rebalancing), AM Z1.7 (the institution's tax exemption — *why it skips all of this*). *Real-world layer: Swensen,* Unconventional Success *(tax sensitivity, asset location, tax-deferred accounts).*",
+    "gaps": [],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z3.5",
+    "local_id": "Z3.5",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Rebalancing",
+    "tag": "global",
+    "global_id": "G147",
+    "quick_definition": "Periodically trading the household's portfolio back toward its target allocation — and along its glide path — selling what has outgrown its target and buying what has fallen below, the discipline that controls risk drift and quietly enforces \"buy low, sell high,\" done tax-aware for a taxable investor.",
+    "explainer_covers": [
+      "The discipline and its premium (★ G147, Swensen): as markets move, winners grow into oversized positions and portfolio risk drifts above target; rebalancing pulls it back, harvests a small \"rebalancing bonus,\" and is the structural opposite of the performance-chasing that sinks individual investors. The same node as AM Z3.6/Z4.1, here with the individual's two twists.",
+      "Twist one — the glide path (G164): the individual rebalances not to a fixed policy mix but to a moving target that de-risks with age — so rebalancing and the lifecycle glide path are the same machinery (Z2.3).",
+      "Twist two — taxes (G166): for a taxable investor, naive rebalancing triggers capital gains, so the individual rebalances tax-aware — preferentially using new contributions and dividends to buy underweight assets, rebalancing inside tax-sheltered accounts (no tax consequence), and pairing rebalancing sales with loss harvesting (G167) — the location/rebalancing knot from Z3.4.",
+      "The methods: calendar (rebalance on a schedule) vs. threshold/band (act when an asset drifts more than X% from target) rebalancing, traded off against transaction costs and — for individuals especially — taxes.",
+      "The behavioral hardness (G161): rebalancing means selling this year's winners and buying its losers exactly when it feels wrong — which for an emotional individual investor (more than a dispassionate institution) is the single hardest discipline to maintain, and the clearest place an advisor earns the \"advisor's alpha.\""
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G147` rebalancing, `G164` glide path (the moving target), `G166` tax-aware investing (tax-aware rebalancing), `G167` tax-loss harvesting (paired with rebalancing sales), `G161` behavioral coaching (the hard part), `★ G144` policy portfolio (what it maintains), `★ G127` cycles (rebalancing is contrarian to the pendulum), Z4.1 (the managing-discipline view), **AM Z3.6 / AM Z4.1** (the institutional rebalancing nodes — *the same discipline, individual + tax twists*). *Real-world layer: Swensen,* Unconventional Success *(rebalancing); Swensen,* Pioneering Portfolio Management *Ch. 6 (the discipline).*",
+    "gaps": [],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z3.6",
+    "local_id": "Z3.6",
+    "module": "wealth-management",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Progress-to-Goal Review",
+    "tag": "global",
+    "global_id": "G111",
+    "quick_definition": "The household's version of performance review — judging the portfolio and plan not (only) by risk-adjusted return against a benchmark but by progress toward the family's goals, and feeding that back into the plan, the allocation, and the savings rate.",
+    "explainer_covers": [
+      "The right scorecard (the AM↔WM contrast): an institution measures relative return and the information ratio against a benchmark (AM Z3.7); a household measures whether it is on track to fund its goals (G160) — am I saving enough, is the plan still funded, has my standard-of-living risk (G163) changed? The benchmark is the plan, not an index.",
+      "Risk-adjusted return still matters (★ G111): the Sharpe ratio and the portfolio's volatility are still used to sanity-check the portfolio's efficiency — but as inputs to the goals question, not as the objective itself; \"we beat the S&P\" is not success if the client is off-track, and \"we trailed it\" is not failure if every goal is funded.",
+      "Re-profiling and re-planning: review re-measures risk tolerance (which drifts with markets and life events — the break-even/house-money effects, G163) and capacity (which changes as human capital depletes, goals near, and wealth grows or shrinks), and updates the glide path, allocation, and savings rate accordingly — the monitoring step that closes the planning loop (G159).",
+      "The levers when off-track: unlike an institution (which mostly adjusts the portfolio), a household has planning levers — save more, spend less, work longer, retire later, adjust goals, take more (or less) risk within capacity — and review is where those trade-offs are revisited (Berns's flexibility-of-goals discussion).",
+      "Behavioral framing of review (G161): how results are presented is itself coaching — framing a down year against the still-safe near-term bucket and the long horizon keeps a client invested, where presenting it as a raw loss vs. a benchmark invites panic-selling."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G111",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G111` Sharpe ratio, `G160` goals-based investing (the scorecard), `G163` risk capacity (re-profiling), `G159` financial planning (closing the loop), `G161` behavioral coaching (framing the review), `G164` glide path (updated at review), Z4.1 (ongoing managing), **AM Z3.7** (performance measurement & attribution — *the institutional scorecard this contrasts with*). *Real-world layer: Berns (re-profiling and goal flexibility); the goals-based-reporting literature.* ---",
+    "gaps": [],
+    "real_world_layer": "Berns (re-profiling and goal flexibility); the goals-based-reporting literature.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

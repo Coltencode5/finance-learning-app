@@ -1,0 +1,4051 @@
+[
+  {
+    "id": "G1",
+    "term": "IRR (Internal Rate of Return)",
+    "aliases": [
+      "Internal Rate of Return"
+    ],
+    "quick_definition": "The annualized, time-weighted rate that discounts a fund's or deal's cash flows to zero — PE's headline return number.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Returns & Performance metrics",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G2",
+    "term": "MOIC / Multiple of Money",
+    "aliases": [],
+    "quick_definition": "The absolute multiple capital returns — total value ÷ capital invested (e.g., 2.5×); ignores time.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Returns & Performance metrics",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G3",
+    "term": "DPI / RVPI / TVPI",
+    "aliases": [],
+    "quick_definition": "The three multiples splitting fund value into cash already returned (DPI), value still held (RVPI), and the sum (TVPI).",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Returns & Performance metrics",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G4",
+    "term": "J-curve",
+    "aliases": [],
+    "quick_definition": "The shape of an LP's cumulative net cash flow — negative early (fees + drawdowns), turning positive as exits return capital.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Returns & Performance metrics",
+    "appears_in": [
+      "Z1",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G5",
+    "term": "PME (Public Market Equivalent)",
+    "aliases": [
+      "Public Market Equivalent"
+    ],
+    "quick_definition": "A benchmark comparing a fund's return to what the same cash flows would have earned in a public index.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Returns & Performance metrics",
+    "appears_in": [
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G6",
+    "term": "GP (General Partner)",
+    "aliases": [
+      "General Partner"
+    ],
+    "quick_definition": "The fund's manager — makes all investment decisions, owes a fiduciary duty to LPs, and bears unlimited liability.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "all zones"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G7",
+    "term": "LP (Limited Partner)",
+    "aliases": [
+      "Limited Partner"
+    ],
+    "quick_definition": "A passive investor in the fund whose liability is capped at its committed capital.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "all zones"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G8",
+    "term": "Management fee",
+    "aliases": [],
+    "quick_definition": "The annual fee (~1.3–2.5% of committed, then invested, capital) paid to the manager to run the fund.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G9",
+    "term": "\"2 and 20\"",
+    "aliases": [],
+    "quick_definition": "The standard PE comp model: ~2% management fee + 20% of profits (carry) to the GP.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G10",
+    "term": "Carried interest (\"carry\")",
+    "aliases": [
+      "\"carry\""
+    ],
+    "quick_definition": "The GP's ~20% share of net fund profits — the main performance incentive.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G11",
+    "term": "Distribution waterfall",
+    "aliases": [],
+    "quick_definition": "The contractual order proceeds flow back: return capital → preferred return → GP catch-up → split profits.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G12",
+    "term": "Hurdle rate / Preferred return",
+    "aliases": [],
+    "quick_definition": "The minimum annual return (typically 8%) LPs must get before the GP earns carry.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G13",
+    "term": "Catch-up",
+    "aliases": [],
+    "quick_definition": "The waterfall step letting the GP collect profits until it holds its full ~20% once the hurdle is met.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G14",
+    "term": "Clawback",
+    "aliases": [],
+    "quick_definition": "An LPA provision forcing the GP to return any carry it was overpaid across the fund's life.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G15",
+    "term": "Capital call / Drawdown",
+    "aliases": [],
+    "quick_definition": "The GP's demand for a portion of committed capital as deals and fees arise.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G16",
+    "term": "Committed / Contributed / Invested capital",
+    "aliases": [],
+    "quick_definition": "Capital pledged vs. capital actually called (paid-in) vs. capital deployed into deals.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G17",
+    "term": "Dry powder",
+    "aliases": [],
+    "quick_definition": "Committed-but-not-yet-invested capital available to deploy (fund-level or industry-wide).",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G18",
+    "term": "Vintage year",
+    "aliases": [],
+    "quick_definition": "The year a fund first closes and starts investing — the basis for peer benchmarking.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G19",
+    "term": "Blind pool",
+    "aliases": [],
+    "quick_definition": "A fund whose investors commit before knowing which companies it will buy, trusting the mandate.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G20",
+    "term": "LPA (Limited Partnership Agreement)",
+    "aliases": [
+      "Limited Partnership Agreement"
+    ],
+    "quick_definition": "The fund's governing contract — mandate, economics, governance, and LP–GP rights.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G21",
+    "term": "Commitment / Investment period",
+    "aliases": [],
+    "quick_definition": "The ~4–5-year window during which the GP can call capital for new investments.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G22",
+    "term": "Holding period",
+    "aliases": [],
+    "quick_definition": "The ~3–7 years a fund owns a company, working to create value before exit.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G23",
+    "term": "GP commitment (\"skin in the game\")",
+    "aliases": [
+      "\"skin in the game\""
+    ],
+    "quick_definition": "The GP's own capital in the fund (typically 1–5%) that aligns it with LPs.",
+    "home_module": "private-equity",
+    "home_zone": "Z1",
+    "contributed_by": "private-equity",
+    "category": "Fund economics & structure",
+    "appears_in": [
+      "Z1",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G24",
+    "term": "EBITDA",
+    "aliases": [],
+    "quick_definition": "Earnings before interest, taxes, depreciation & amortization — the cash-earnings proxy PE prices and lends against.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Valuation primitives",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G25",
+    "term": "Enterprise Value (EV)",
+    "aliases": [
+      "EV"
+    ],
+    "quick_definition": "The value of the whole business — what you'd pay to own its operations free of its capital structure.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Valuation primitives",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G26",
+    "term": "Equity Value",
+    "aliases": [],
+    "quick_definition": "What's left for shareholders after subtracting net debt from enterprise value.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Valuation primitives",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G27",
+    "term": "Valuation multiples",
+    "aliases": [],
+    "quick_definition": "Shorthand pricing ratios (EV/EBITDA, EV/Sales, P/E) that value a company relative to peers or precedents.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Valuation primitives",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G28",
+    "term": "Due diligence",
+    "aliases": [],
+    "quick_definition": "The systematic investigation of a target's business, finances, legal standing, and risks before committing.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Valuation primitives",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G29",
+    "term": "Leverage",
+    "aliases": [],
+    "quick_definition": "Borrowed money used alongside equity to fund a deal, amplifying both returns and risk.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G30",
+    "term": "Net debt",
+    "aliases": [],
+    "quick_definition": "Total debt minus cash — the figure that bridges enterprise value to equity value.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G31",
+    "term": "Working capital",
+    "aliases": [],
+    "quick_definition": "The cash tied up in day-to-day operations; its \"normal\" level is pegged at closing.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G32",
+    "term": "Sources & uses",
+    "aliases": [],
+    "quick_definition": "The deal-funding table showing where money comes from (debt + equity) and what it pays for.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G33",
+    "term": "Debt stack / Funding instruments",
+    "aliases": [],
+    "quick_definition": "The layered mix of debt instruments ranked by seniority and risk (senior → mezzanine → PIK).",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G34",
+    "term": "Covenant",
+    "aliases": [],
+    "quick_definition": "A condition in a loan agreement that protects lenders and constrains the borrower.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G35",
+    "term": "SPV (Special Purpose Vehicle)",
+    "aliases": [
+      "Special Purpose Vehicle"
+    ],
+    "quick_definition": "A holding company created to ring-fence a deal, house debt, and hold equity.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z1",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G36",
+    "term": "SPA (Sale & Purchase Agreement)",
+    "aliases": [
+      "Sale & Purchase Agreement"
+    ],
+    "quick_definition": "The master contract governing a company's sale — price, conditions, warranties, remedies.",
+    "home_module": "private-equity",
+    "home_zone": "Z3",
+    "contributed_by": "private-equity",
+    "category": "Capital structure & deal mechanics",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G37",
+    "term": "Preferred equity",
+    "aliases": [],
+    "quick_definition": "Shares that rank ahead of common stock for distributions and carry special rights.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G38",
+    "term": "Liquidation preference",
+    "aliases": [],
+    "quick_definition": "Preferred holders' right to get their money back (sometimes a multiple) before common in an exit.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G39",
+    "term": "Anti-dilution",
+    "aliases": [],
+    "quick_definition": "Protections adjusting earlier investors' price if a later round is raised at a lower valuation.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G40",
+    "term": "Cap table",
+    "aliases": [],
+    "quick_definition": "The ledger of who owns what — shares, options, and ownership percentages.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G41",
+    "term": "Pre-money / Post-money",
+    "aliases": [],
+    "quick_definition": "A company's value before vs. after new investment (post = pre + new money).",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G42",
+    "term": "Dilution",
+    "aliases": [],
+    "quick_definition": "The drop in existing owners' percentage stake when new shares are issued.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G43",
+    "term": "Drag-along / Tag-along",
+    "aliases": [],
+    "quick_definition": "Rights letting a majority force, or a minority join, a sale of shares.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G44",
+    "term": "Minority shareholder rights",
+    "aliases": [],
+    "quick_definition": "The protections a non-controlling investor negotiates to safeguard its stake and influence.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G45",
+    "term": "Sweet equity / Management equity",
+    "aliases": [],
+    "quick_definition": "The outsized-upside equity package given to portfolio-company management.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G46",
+    "term": "Term sheet",
+    "aliases": [],
+    "quick_definition": "The non-binding document setting the headline economic and control terms of an investment.",
+    "home_module": "private-equity",
+    "home_zone": "Z2",
+    "contributed_by": "private-equity",
+    "category": "Equity & shareholder terms",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G47",
+    "term": "Active ownership",
+    "aliases": [],
+    "quick_definition": "PE's hands-on, urgency-driven involvement in a company during the holding period.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G48",
+    "term": "Alignment of interest",
+    "aliases": [],
+    "quick_definition": "Structuring incentives so management, GP, and LPs all win from the same outcome.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G49",
+    "term": "Operational value creation",
+    "aliases": [],
+    "quick_definition": "Growing returns by improving the actual business — revenue, margins, operations — not just leverage.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G50",
+    "term": "100-Day Plan / Value Creation Plan",
+    "aliases": [],
+    "quick_definition": "The urgent post-close action plan setting priorities, metrics, and quick wins from day one.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G51",
+    "term": "Corporate governance",
+    "aliases": [],
+    "quick_definition": "The board-level control and oversight structures PE uses to steer a portfolio company.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G52",
+    "term": "Exit",
+    "aliases": [],
+    "quick_definition": "The sale or listing through which a fund realizes its investment and returns capital.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G53",
+    "term": "IPO (as exit)",
+    "aliases": [
+      "as exit"
+    ],
+    "quick_definition": "Listing the company publicly to sell the stake down over time.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G54",
+    "term": "Trade sale",
+    "aliases": [],
+    "quick_definition": "Selling the company to a strategic (corporate) buyer.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G55",
+    "term": "Secondary buyout (SBO)",
+    "aliases": [
+      "SBO"
+    ],
+    "quick_definition": "Selling a portfolio company to another PE fund.",
+    "home_module": "private-equity",
+    "home_zone": "Z4",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G56",
+    "term": "Co-investment",
+    "aliases": [],
+    "quick_definition": "LPs investing directly alongside a GP in a specific deal, usually fee-free.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G57",
+    "term": "Secondaries",
+    "aliases": [],
+    "quick_definition": "The market for buying/selling existing fund stakes and portfolios.",
+    "home_module": "private-equity",
+    "home_zone": "Z5",
+    "contributed_by": "private-equity",
+    "category": "Value creation & exit",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G58",
+    "term": "Yield",
+    "aliases": [],
+    "quick_definition": "A loan's income return — cash coupon plus fees, expressed as cash yield, yield-to-maturity, or yield-to-3-year (assuming early take-out); credit's headline number, the way IRR is PE's.",
+    "home_module": "private-credit",
+    "home_zone": "Z5",
+    "contributed_by": "private-credit",
+    "category": "Returns, yield & loss metrics",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G59",
+    "term": "Cliffwater Direct Lending Index (CDLI)",
+    "aliases": [
+      "CDLI"
+    ],
+    "quick_definition": "The benchmark tracking the total return of U.S. middle-market directly-originated loans (BDC-sourced) — the asset class's published track record.",
+    "home_module": "private-credit",
+    "home_zone": "Z5",
+    "contributed_by": "private-credit",
+    "category": "Returns, yield & loss metrics",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G60",
+    "term": "Credit loss rate",
+    "aliases": [],
+    "quick_definition": "Annualized losses on a portfolio = default rate × loss-given-default; the drag that turns gross yield into net return.",
+    "home_module": "private-credit",
+    "home_zone": "Z4",
+    "contributed_by": "private-credit",
+    "category": "Returns, yield & loss metrics",
+    "appears_in": [
+      "Z1",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G61",
+    "term": "Recovery rate / Loss Given Default (LGD)",
+    "aliases": [
+      "LGD"
+    ],
+    "quick_definition": "How many cents on the dollar a lender recovers when a borrower defaults — driven by seniority, security, and enterprise value.",
+    "home_module": "private-credit",
+    "home_zone": "Z4",
+    "contributed_by": "private-credit",
+    "category": "Returns, yield & loss metrics",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G62",
+    "term": "Default rate / Probability of Default (PD)",
+    "aliases": [
+      "PD"
+    ],
+    "quick_definition": "The share of borrowers that breach or fail to pay over a period — distinct from loss, since a default with full recovery costs nothing.",
+    "home_module": "private-credit",
+    "home_zone": "Z4",
+    "contributed_by": "private-credit",
+    "category": "Returns, yield & loss metrics",
+    "appears_in": [
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G63",
+    "term": "Non-bank lending / Disintermediation",
+    "aliases": [],
+    "quick_definition": "The structural shift of corporate lending from regulated banks to asset managers — the force that created the asset class.",
+    "home_module": "private-credit",
+    "home_zone": "Z1",
+    "contributed_by": "private-credit",
+    "category": "Lenders, vehicles & the asset class",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G64",
+    "term": "Business Development Company (BDC)",
+    "aliases": [
+      "BDC"
+    ],
+    "quick_definition": "A U.S.-regulated, tax-pass-through (RIC) vehicle built to lend to private middle-market companies — the dominant access point for direct lending.",
+    "home_module": "private-credit",
+    "home_zone": "Z1",
+    "contributed_by": "private-credit",
+    "category": "Lenders, vehicles & the asset class",
+    "appears_in": [
+      "Z1",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G65",
+    "term": "Middle market",
+    "aliases": [],
+    "quick_definition": "The band of companies (segmented lower / core / upper by EBITDA) that private credit principally serves — too big for bank relationships, too small for the bond market.",
+    "home_module": "private-credit",
+    "home_zone": "Z1",
+    "contributed_by": "private-credit",
+    "category": "Lenders, vehicles & the asset class",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G66",
+    "term": "Sponsored vs. non-sponsored lending",
+    "aliases": [],
+    "quick_definition": "Whether a loan backs a PE-owned (\"sponsored\") company or is made direct to an independent borrower — the split that shapes sourcing, diligence, and pricing.",
+    "home_module": "private-credit",
+    "home_zone": "Z1",
+    "contributed_by": "private-credit",
+    "category": "Lenders, vehicles & the asset class",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G67",
+    "term": "Fund leverage & asset coverage",
+    "aliases": [],
+    "quick_definition": "Borrowing at the fund level (subscription lines, asset facilities, BDC debt) to lift a low-single-digit asset yield into a double-digit equity return — governed by asset-coverage limits.",
+    "home_module": "private-credit",
+    "home_zone": "Z5",
+    "contributed_by": "private-credit",
+    "category": "Lenders, vehicles & the asset class",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G68",
+    "term": "Unitranche",
+    "aliases": [],
+    "quick_definition": "A single blended loan that fuses senior and subordinated debt into one instrument at one blended rate — private credit's signature product, often split first-out/last-out behind the scenes.",
+    "home_module": "private-credit",
+    "home_zone": "Z2",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G69",
+    "term": "Floating rate / Reference rate (SOFR)",
+    "aliases": [
+      "SOFR"
+    ],
+    "quick_definition": "The base rate (SOFR, post-LIBOR) over which a loan's spread is set, usually with a floor — why private credit income rises with interest rates.",
+    "home_module": "private-credit",
+    "home_zone": "Z1",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G70",
+    "term": "Spread / Credit margin",
+    "aliases": [],
+    "quick_definition": "The fixed premium over the reference rate that compensates the lender for credit risk and illiquidity (e.g., SOFR + 550 bps).",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G71",
+    "term": "Original Issue Discount (OID)",
+    "aliases": [
+      "OID"
+    ],
+    "quick_definition": "Funding a loan below par (e.g., at 98) so the lender earns the gap to par as extra yield — a routine pricing lever.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z1",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G72",
+    "term": "Call protection / Prepayment economics",
+    "aliases": [],
+    "quick_definition": "Terms (non-call periods, make-wholes, soft-call 101, prepayment fees) that protect a lender's yield if the borrower repays early.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z1",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G73",
+    "term": "PIK (Payment-in-Kind)",
+    "aliases": [
+      "Payment-in-Kind"
+    ],
+    "quick_definition": "Interest paid by adding to the loan balance instead of in cash — an upside feature in mezzanine, a stress signal when a healthy loan flips to PIK.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Instruments & pricing",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G74",
+    "term": "Coverage ratios",
+    "aliases": [],
+    "quick_definition": "Tests of a borrower's ability to service debt from cash flow — interest coverage, fixed-charge coverage (FCCR), debt-service coverage (DSCR).",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Credit metrics & underwriting",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G75",
+    "term": "Loan-to-Value (LTV)",
+    "aliases": [
+      "LTV"
+    ],
+    "quick_definition": "A loan sized as a percentage of an asset's value — the core risk gauge for asset-based and real-estate credit, where the asset, not cash flow, is the source of repayment.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Credit metrics & underwriting",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G76",
+    "term": "Borrowing base",
+    "aliases": [],
+    "quick_definition": "The dynamically-sized pool of eligible collateral (receivables, inventory, equipment) against which an asset-based revolver may draw, set by advance rates.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Credit metrics & underwriting",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G77",
+    "term": "Internal credit rating / Risk rating",
+    "aliases": [],
+    "quick_definition": "A lender's own scorecard grading each loan's risk — the engine behind watch-lists, pricing, reserves, and (mapped to agency scales) BDC/insurance reporting.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Credit metrics & underwriting",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G78",
+    "term": "Security & collateral / Lien priority",
+    "aliases": [],
+    "quick_definition": "The assets pledged to a lender and the rank of its claim — first lien, second lien, unsecured — which sets who gets paid first in a default.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Security, seniority & documentation",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G79",
+    "term": "Intercreditor agreement",
+    "aliases": [],
+    "quick_definition": "The contract ranking different lenders against each other — payment and lien subordination, standstills, and the Agreement Among Lenders that splits a unitranche.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Security, seniority & documentation",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G80",
+    "term": "Credit / facility agreement",
+    "aliases": [],
+    "quick_definition": "The master loan contract — the credit analogue of the SPA — setting drawdown terms, covenants, representations, and events of default.",
+    "home_module": "private-credit",
+    "home_zone": "Z3",
+    "contributed_by": "private-credit",
+    "category": "Security, seniority & documentation",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G81",
+    "term": "Workout / Out-of-court restructuring",
+    "aliases": [],
+    "quick_definition": "The negotiated repair of a troubled loan outside bankruptcy — forbearance, amend-and-extend, new money, or debt-for-equity.",
+    "home_module": "private-credit",
+    "home_zone": "Z4",
+    "contributed_by": "private-credit",
+    "category": "Workout & recovery",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G82",
+    "term": "Non-accrual & Watch-list",
+    "aliases": [],
+    "quick_definition": "The downgrade machinery for deteriorating credits — moving a loan onto a watch-list and stopping income recognition when repayment is in doubt.",
+    "home_module": "private-credit",
+    "home_zone": "Z4",
+    "contributed_by": "private-credit",
+    "category": "Workout & recovery",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G83",
+    "term": "Sell-side vs. buy-side",
+    "aliases": [],
+    "quick_definition": "The two sides of every Wall Street transaction — the sell-side (banks, brokers) that advises, structures, and distributes, versus the buy-side (PE, hedge funds, asset managers) that invests; the line that defines a banking career.",
+    "home_module": "investment-banking",
+    "home_zone": "Z1",
+    "contributed_by": "investment-banking",
+    "category": "The franchise, the product & the mandate",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G84",
+    "term": "The advisory mandate / engagement",
+    "aliases": [],
+    "quick_definition": "A bank's signed appointment to act for a client on a transaction, defining scope, the success fee, and exclusivity — the thing a pitch competes to win.",
+    "home_module": "investment-banking",
+    "home_zone": "Z1",
+    "contributed_by": "investment-banking",
+    "category": "The franchise, the product & the mandate",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G85",
+    "term": "The pitch / pitchbook",
+    "aliases": [],
+    "quick_definition": "The presentation a bank builds to win a mandate — market read, strategic options, a valuation view, and \"why us.\"",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The franchise, the product & the mandate",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G86",
+    "term": "Coverage vs. product groups",
+    "aliases": [],
+    "quick_definition": "How a bank is organized — industry \"coverage\" bankers who own the client relationship versus \"product\" bankers (M&A, ECM, DCM, LevFin) who execute the deal type.",
+    "home_module": "investment-banking",
+    "home_zone": "Z1",
+    "contributed_by": "investment-banking",
+    "category": "The franchise, the product & the mandate",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G87",
+    "term": "The valuation toolkit / \"the three methodologies\"",
+    "aliases": [],
+    "quick_definition": "The banker's standard trio for valuing a company — comparable companies, precedent transactions, and DCF — run together because each checks the others.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G88",
+    "term": "Comparable companies analysis (\"comps\")",
+    "aliases": [
+      "\"comps\""
+    ],
+    "quick_definition": "Valuing a company off the trading multiples of similar public companies — a market-based, relative valuation.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G89",
+    "term": "Precedent transactions analysis (\"deal comps\")",
+    "aliases": [
+      "\"deal comps\""
+    ],
+    "quick_definition": "Valuing a company off the multiples paid in prior M&A deals for similar companies — relative valuation that bakes in a control premium.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G90",
+    "term": "Discounted Cash Flow (DCF)",
+    "aliases": [
+      "DCF"
+    ],
+    "quick_definition": "Valuing a company by projecting its unlevered free cash flow and discounting it to present value at WACC — the intrinsic, cash-flow-based method.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G91",
+    "term": "WACC (Weighted Average Cost of Capital)",
+    "aliases": [
+      "Weighted Average Cost of Capital"
+    ],
+    "quick_definition": "The blended after-tax cost of a company's debt and equity, weighted by capital structure — the discount rate that pairs with unlevered free cash flow.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G92",
+    "term": "Unlevered Free Cash Flow (UFCF)",
+    "aliases": [
+      "UFCF"
+    ],
+    "quick_definition": "Cash flow from the core business available to all investors before financing — NOPAT + D&A ± change in working capital − CapEx; the numerator in a DCF.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G93",
+    "term": "Terminal value",
+    "aliases": [],
+    "quick_definition": "The lump-sum value of a company's cash flows beyond the explicit forecast, via perpetuity-growth or an exit multiple — usually most of a DCF's value.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G94",
+    "term": "Valuation football field",
+    "aliases": [],
+    "quick_definition": "The summary chart stacking the value range from each methodology side by side, framing where a company is \"worth\" — the banker's headline output.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G95",
+    "term": "Equity Value ↔ Enterprise Value bridge",
+    "aliases": [],
+    "quick_definition": "The walk between what the whole business is worth (EV) and what the shareholders' stake is worth (equity value) — adding cash, subtracting debt and other claims.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "The valuation toolkit (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G96",
+    "term": "Accretion / dilution analysis",
+    "aliases": [],
+    "quick_definition": "The test of whether an acquisition raises (accretive) or lowers (dilutive) the buyer's earnings per share — M&A's first-pass scorecard.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "M&A analytics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G97",
+    "term": "Merger model",
+    "aliases": [],
+    "quick_definition": "The integrated model combining buyer and target, the financing, and the synergies to project the combined company's EPS and returns.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "M&A analytics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G98",
+    "term": "Synergies",
+    "aliases": [],
+    "quick_definition": "The added value from combining two companies — cost savings and revenue gains — that justifies paying a premium.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "M&A analytics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G99",
+    "term": "Control premium",
+    "aliases": [],
+    "quick_definition": "The extra amount above a target's unaffected share price an acquirer must pay to take control — typically 10–30%, and the reason deal comps run rich.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "M&A analytics",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G100",
+    "term": "Consideration mix (cash / stock / debt)",
+    "aliases": [
+      "cash / stock / debt"
+    ],
+    "quick_definition": "How a buyer funds a purchase — its blend of cash on hand, new debt, and its own stock — which drives accretion/dilution and risk.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "M&A analytics",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G101",
+    "term": "Underwriting",
+    "aliases": [],
+    "quick_definition": "A bank's commitment to raise capital for an issuer — buying the securities to resell, taking on placement risk for a fee.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "Capital raising & the franchise",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G102",
+    "term": "The IPO (issuer/process view)",
+    "aliases": [
+      "issuer/process view"
+    ],
+    "quick_definition": "A company's first sale of shares to the public — the registration, pricing, and allocation process a bank runs (distinct from G53, the PE exit view of the same event).",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "Capital raising & the franchise",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G103",
+    "term": "The underwriting spread / gross spread",
+    "aliases": [],
+    "quick_definition": "The discount underwriters take between the price paid to the issuer and the price sold to investors — the bank's fee on a securities offering.",
+    "home_module": "investment-banking",
+    "home_zone": "Z2",
+    "contributed_by": "investment-banking",
+    "category": "Capital raising & the franchise",
+    "appears_in": [
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G104",
+    "term": "League tables",
+    "aliases": [],
+    "quick_definition": "The published rankings of banks by deal volume and fees — the scoreboard that drives the franchise, pitches, and banker prestige.",
+    "home_module": "investment-banking",
+    "home_zone": "Z5",
+    "contributed_by": "investment-banking",
+    "category": "Capital raising & the franchise",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G105",
+    "term": "Fairness opinion",
+    "aliases": [],
+    "quick_definition": "A bank's formal letter that a deal's price is fair to shareholders from a financial point of view — a board's due-diligence and litigation shield.",
+    "home_module": "investment-banking",
+    "home_zone": "Z3",
+    "contributed_by": "investment-banking",
+    "category": "Capital raising & the franchise",
+    "appears_in": [
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G106",
+    "term": "Alpha",
+    "aliases": [],
+    "quick_definition": "The return a manager earns above what market exposure alone would deliver — the skill-based excess return that is the entire point of a hedge fund, and the thing it charges 20% of.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G107",
+    "term": "Beta / market exposure",
+    "aliases": [],
+    "quick_definition": "The portion of a portfolio's return that simply comes from moving with the market — the cheap, passive exposure a hedge fund tries to strip out so that what's left is alpha.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G108",
+    "term": "The hedge / long–short construction",
+    "aliases": [],
+    "quick_definition": "Holding offsetting long and short positions so that broad market moves cancel and the bet is on relative performance — the structural innovation (A.W. Jones, 1949) that named the industry.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G109",
+    "term": "Short selling",
+    "aliases": [],
+    "quick_definition": "Borrowing a security to sell it now and buy it back later, profiting if the price falls — the tool that lets a fund express negative views and hedge, with uniquely asymmetric risk.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G110",
+    "term": "Net & gross exposure",
+    "aliases": [],
+    "quick_definition": "Two readings of how a book is positioned: net (longs minus shorts) measures directional market bet; gross (longs plus shorts) measures total capital at work and thus leverage.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G111",
+    "term": "Sharpe ratio",
+    "aliases": [],
+    "quick_definition": "A fund's excess return (over the risk-free rate) divided by its volatility — the headline risk-adjusted return number, the way IRR is PE's and yield is private credit's.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z5",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G112",
+    "term": "Information ratio (IR)",
+    "aliases": [
+      "IR"
+    ],
+    "quick_definition": "Active return divided by active risk — the ratio of how much a manager beats their benchmark to how much tracking risk they take; the central statistic of active management.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z5",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G113",
+    "term": "Information coefficient (IC) / skill",
+    "aliases": [
+      "IC"
+    ],
+    "quick_definition": "The correlation between a manager's forecasts and what actually happens — a direct measure of skill; even a great IC is only ~0.1 (being right ~53% of the time).",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G114",
+    "term": "Breadth",
+    "aliases": [],
+    "quick_definition": "The number of independent investment decisions a manager makes per year — a rate, not a holding count; the diversification term that lets a small edge compound into a high information ratio.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G115",
+    "term": "The Fundamental Law of Active Management",
+    "aliases": [],
+    "quick_definition": "Grinold's relation IR ≈ IC · √BR · TC — that consistent outperformance requires skill × breadth × implementation efficiency; the equation behind every active strategy's design.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G116",
+    "term": "Drawdown & volatility",
+    "aliases": [],
+    "quick_definition": "The two faces of hedge-fund risk: volatility (how much returns swing) and drawdown (the peak-to-trough loss) — the latter being what triggers redemptions and ends careers.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "Risk & performance metrics (the analytical core)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G117",
+    "term": "Prime brokerage",
+    "aliases": [],
+    "quick_definition": "The bank service bundle a hedge fund runs on — trade execution, securities lending (to enable shorting), financing/margin (to enable leverage), custody, and capital introduction.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "Structure, financing & liquidity",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G118",
+    "term": "High-water mark",
+    "aliases": [],
+    "quick_definition": "The peak NAV a fund must exceed before charging performance fees again — so investors never pay 20% twice on the same dollar of gains; the key nuance bolted onto the \"2 and 20.\"",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "Structure, financing & liquidity",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G119",
+    "term": "Liquidity terms (lock-ups, gates, redemptions)",
+    "aliases": [
+      "lock-ups, gates, redemptions"
+    ],
+    "quick_definition": "The contractual rules governing when investors can pull money out — lock-up periods, redemption notice and windows, gates, and side pockets — which must match the liquidity of what the fund trades.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z5",
+    "contributed_by": "hedge-funds",
+    "category": "Structure, financing & liquidity",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G120",
+    "term": "Capacity & crowding",
+    "aliases": [],
+    "quick_definition": "The limit on how much capital a strategy can absorb before its own size erodes its returns — worsened when many managers crowd the same trade and must share that capacity.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z5",
+    "contributed_by": "hedge-funds",
+    "category": "Structure, financing & liquidity",
+    "appears_in": [
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G121",
+    "term": "The investment thesis / variant perception",
+    "aliases": [],
+    "quick_definition": "The specific, falsifiable argument for why a security is mispriced — and crucially why the consensus is wrong (the \"variant perception\"); the unit of work a hedge fund produces.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G122",
+    "term": "Catalyst",
+    "aliases": [],
+    "quick_definition": "The identifiable event expected to close the gap between price and value — earnings, a merger, a spin-off, a refinancing, a restructuring — that turns a cheap security into a realized gain.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G123",
+    "term": "Position sizing & portfolio construction",
+    "aliases": [],
+    "quick_definition": "The discipline of deciding how much to bet on each idea given conviction, risk, and correlation — where edge is converted into return and where most blow-ups actually happen.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G124",
+    "term": "Second-level thinking",
+    "aliases": [],
+    "quick_definition": "Marks's idea that superior returns require thinking differently and better than the consensus — not \"this is a good company\" but \"this is better than the market thinks, and that view isn't yet priced.\"",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G125",
+    "term": "Market efficiency (and its limits)",
+    "aliases": [
+      "and its limits"
+    ],
+    "quick_definition": "The theory that prices already reflect all information — the proposition hedge funds bet against; alpha exists only to the degree markets are inefficient, which they are, partially and unevenly.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G126",
+    "term": "Risk as permanent loss of capital",
+    "aliases": [],
+    "quick_definition": "Marks's reframing of risk away from \"volatility\" toward the probability of a permanent, unrecoverable loss — the definition that actually governs how thoughtful investors size and hedge.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "Risk philosophy & cycles",
+    "appears_in": [
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G127",
+    "term": "Market cycles & the pendulum",
+    "aliases": [],
+    "quick_definition": "The recurring swing of markets between greed and fear, cheap and dear — never a straight line; recognizing where the pendulum sits is, for Marks, the closest thing to an edge in timing.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "Risk philosophy & cycles",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G128",
+    "term": "Long/short equity",
+    "aliases": [],
+    "quick_definition": "The flagship hedge-fund strategy: buy undervalued stocks, short overvalued ones, and earn the spread between them with reduced market exposure — the direct descendant of A.W. Jones.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G129",
+    "term": "Global macro",
+    "aliases": [],
+    "quick_definition": "Top-down investing on the direction of whole economies — expressed across currencies, rates, equity indices, and commodities — the strategy of Soros's sterling trade and the macro \"rock stars.\"",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G130",
+    "term": "Event-driven",
+    "aliases": [],
+    "quick_definition": "Investing around specific corporate events — mergers (merger arbitrage), activism, spin-offs, bankruptcies (distressed) — where the return comes from the event resolving, not the market rising.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G131",
+    "term": "Quantitative / systematic investing",
+    "aliases": [],
+    "quick_definition": "Using models, data, and code rather than discretionary judgment to find and trade many small edges at scale — the Renaissance/D.E. Shaw approach; breadth as the engine.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G132",
+    "term": "Multi-strategy / the platform (pod) model",
+    "aliases": [
+      "pod"
+    ],
+    "quick_definition": "Running many small, independently-managed teams (\"pods\") under one risk umbrella and one financing arrangement — the Citadel/Millennium model that now dominates the industry's capital.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G133",
+    "term": "Merger (risk) arbitrage",
+    "aliases": [
+      "risk"
+    ],
+    "quick_definition": "Buying the target and (often) shorting the acquirer after a deal is announced, to capture the spread between the current price and the deal price — paid for bearing the risk the deal breaks.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G134",
+    "term": "Activist investing",
+    "aliases": [],
+    "quick_definition": "Taking a meaningful stake in a public company and using it to push for change — board seats, strategy, capital return, a sale — to force the value gap closed rather than waiting for it.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z2",
+    "contributed_by": "hedge-funds",
+    "category": "The strategy families (each opens a Zone 2 branch)",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G135",
+    "term": "Absolute return",
+    "aliases": [],
+    "quick_definition": "The hedge-fund mandate of making money in any market environment, measured against zero (or cash), rather than beating a benchmark index — the promise that distinguishes it from long-only.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z1",
+    "contributed_by": "hedge-funds",
+    "category": "The objective: alpha, beta & the hedge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G136",
+    "term": "The edge / informational advantage",
+    "aliases": [],
+    "quick_definition": "The durable reason a manager can profit where others can't — better information, better analysis, better behavior, or better structure; without an articulable edge, returns are just luck or beta.",
+    "home_module": "hedge-funds",
+    "home_zone": "Z3",
+    "contributed_by": "hedge-funds",
+    "category": "The craft: thesis, sizing & the edge",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G137",
+    "term": "Passive vs. active investing",
+    "aliases": [],
+    "quick_definition": "The split that defines the discipline: passive investing buys and holds the whole market (an index) at minimal cost and accepts the market return; active investing tries to beat a benchmark by selecting securities or timing, and charges more for the attempt.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "The defining split: passive, the index fund & the ETF",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G138",
+    "term": "The index fund",
+    "aliases": [],
+    "quick_definition": "A fund that mechanically holds every security in a market index in its exact weights, delivering the index's return minus a tiny fee — the vehicle that turned \"buy the market\" from a theory into the dominant product.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "The defining split: passive, the index fund & the ETF",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G139",
+    "term": "The ETF & creation/redemption (the AP)",
+    "aliases": [
+      "the AP"
+    ],
+    "quick_definition": "An exchange-traded fund: an index (or active) portfolio that trades intraday like a stock, kept in line with its underlying value by authorized participants who create and redeem shares in-kind against the basket — the mechanism behind its low cost and tax efficiency.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "The defining split: passive, the index fund & the ETF",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G140",
+    "term": "The benchmark",
+    "aliases": [],
+    "quick_definition": "The index a portfolio is measured against — the yardstick that defines \"the market\" for a given mandate, sets the manager's neutral starting weights, and turns return into relative return.",
+    "home_module": "asset-management",
+    "home_zone": "Z3",
+    "contributed_by": "asset-management",
+    "category": "The benchmark, tracking & active share",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G141",
+    "term": "Tracking error (& tracking difference)",
+    "aliases": [
+      "& tracking difference"
+    ],
+    "quick_definition": "How far a portfolio's returns swing away from its benchmark: tracking error is the volatility of the return gap (the active-risk budget a manager spends), while tracking difference is the realized gap itself (mostly fees, for an index fund).",
+    "home_module": "asset-management",
+    "home_zone": "Z3",
+    "contributed_by": "asset-management",
+    "category": "The benchmark, tracking & active share",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G142",
+    "term": "Active share",
+    "aliases": [],
+    "quick_definition": "The percentage of a portfolio that differs from its benchmark's holdings — a measure of how genuinely active a manager is, and the tool that exposes the \"closet indexer\" who charges active fees for near-benchmark holdings.",
+    "home_module": "asset-management",
+    "home_zone": "Z3",
+    "contributed_by": "asset-management",
+    "category": "The benchmark, tracking & active share",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G143",
+    "term": "Asset allocation (strategic vs. tactical)",
+    "aliases": [
+      "strategic vs. tactical"
+    ],
+    "quick_definition": "The decision of how much to put in each asset class — strategic (the long-run policy mix that drives most of a portfolio's return and risk) versus tactical (short-run tilts away from it) — the single most consequential choice an investor makes.",
+    "home_module": "asset-management",
+    "home_zone": "Z3",
+    "contributed_by": "asset-management",
+    "category": "Allocation & modern portfolio theory",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G144",
+    "term": "The policy portfolio",
+    "aliases": [],
+    "quick_definition": "The written long-term target allocation to each asset class that an institution commits to and rebalances back toward — the anchor that turns an investment philosophy into a disciplined, repeatable portfolio.",
+    "home_module": "asset-management",
+    "home_zone": "Z3",
+    "contributed_by": "asset-management",
+    "category": "Allocation & modern portfolio theory",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G145",
+    "term": "Modern Portfolio Theory & the efficient frontier",
+    "aliases": [],
+    "quick_definition": "Markowitz's framework: by combining assets that don't move together, an investor can build portfolios that maximize expected return for a given level of risk — the set of those best portfolios is the efficient frontier.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "Allocation & modern portfolio theory",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G146",
+    "term": "Diversification",
+    "aliases": [],
+    "quick_definition": "Holding many imperfectly-correlated assets so that idiosyncratic risks cancel and only systematic risk remains — \"the only free lunch in investing,\" and the engine that makes a multi-asset portfolio less risky than its parts.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "Allocation & modern portfolio theory",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G147",
+    "term": "Rebalancing",
+    "aliases": [],
+    "quick_definition": "Periodically selling what has risen and buying what has fallen to bring a portfolio back to its policy weights — the discipline that enforces \"buy low, sell high,\" controls risk drift, and harvests a small return premium.",
+    "home_module": "asset-management",
+    "home_zone": "Z4",
+    "contributed_by": "asset-management",
+    "category": "Allocation & modern portfolio theory",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G148",
+    "term": "Smart beta / factor investing",
+    "aliases": [],
+    "quick_definition": "Rules-based strategies that tilt a portfolio toward documented return factors — value, size, momentum, quality, low-volatility — packaged as cheap, transparent index-like products; the middle ground between passive and active.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "Factors & style",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G149",
+    "term": "Style & the style box",
+    "aliases": [],
+    "quick_definition": "The classification of equity managers and funds by what kind of stocks they hold — growth vs. value on one axis, large- vs. mid- vs. small-cap on the other — the grid (popularized by Morningstar) that organizes the active-equity world.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "Factors & style",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G150",
+    "term": "The cost/fee drag (Bogle's arithmetic)",
+    "aliases": [
+      "Bogle's arithmetic"
+    ],
+    "quick_definition": "The compounding insight at the heart of indexing: because active management is a zero-sum game before costs, the average active dollar must underperform the index by the amount of its fees and trading costs — and that gap, compounded over decades, is enormous.",
+    "home_module": "asset-management",
+    "home_zone": "Z5",
+    "contributed_by": "asset-management",
+    "category": "Cost, fees & the manager as a business",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G151",
+    "term": "AUM-based fee economics & scale",
+    "aliases": [],
+    "quick_definition": "The asset manager's business model: revenue is a small percentage of assets under management, so profit is driven by gathering and retaining scale rather than by performance — a fundamentally different engine from the hedge fund's 2-and-20.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "Cost, fees & the manager as a business",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G152",
+    "term": "The mutual fund (open-end)",
+    "aliases": [
+      "open-end"
+    ],
+    "quick_definition": "The classic retail vehicle: an open-end fund that issues and redeems shares daily at net asset value (NAV), pools money from many small investors, and is heavily regulated for investor protection — the workhorse of mass-market asset management.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "Vehicles & mandates",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G153",
+    "term": "Separately managed account / institutional mandate",
+    "aliases": [],
+    "quick_definition": "A portfolio a manager runs for a single large client (a pension, an endowment, an insurer) under a negotiated mandate — the client owns the underlying securities directly, with custom guidelines, fees, and reporting; the institutional counterpart to a pooled fund.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "Vehicles & mandates",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G154",
+    "term": "The endowment model",
+    "aliases": [],
+    "quick_definition": "Swensen's approach to running perpetual institutional capital: an equity-oriented, heavily-diversified policy portfolio that leans into illiquid alternatives (private equity, hedge funds, real assets) to harvest an illiquidity premium, executed through carefully-selected external managers — the seat of the allocator who funds every other module.",
+    "home_module": "asset-management",
+    "home_zone": "Z2",
+    "contributed_by": "asset-management",
+    "category": "The institutional allocator",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G155",
+    "term": "Fiduciary duty / the prudent investor",
+    "aliases": [],
+    "quick_definition": "The legal and ethical obligation to manage other people's money solely in their interest, with the care a prudent professional would use — the constraint that shapes everything a long-only manager does, from diversification requirements to the ban on reckless concentration.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "The institutional allocator",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G156",
+    "term": "Manager selection (the allocator's manager due diligence)",
+    "aliases": [
+      "the allocator's manager due diligence"
+    ],
+    "quick_definition": "How an institution decides which external managers to hire — judging track record, process, team, edge, and fees to identify rare persistent skill ex ante; the public-markets sibling of GP due diligence, and the allocator's hardest problem given Sharpe's arithmetic.",
+    "home_module": "asset-management",
+    "home_zone": "Z5",
+    "contributed_by": "asset-management",
+    "category": "The institutional allocator",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G157",
+    "term": "Relative (benchmark-relative) return",
+    "aliases": [
+      "benchmark-relative"
+    ],
+    "quick_definition": "The long-only mandate's definition of success: beating (or matching) a benchmark index, measured against the market rather than against zero — the structural opposite of the hedge fund's absolute-return promise, and the reason tracking error, not drawdown, is the operative risk.",
+    "home_module": "asset-management",
+    "home_zone": "Z1",
+    "contributed_by": "asset-management",
+    "category": "The capstone: relative return & the debate",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G158",
+    "term": "The active-vs-passive debate",
+    "aliases": [],
+    "quick_definition": "The defining argument of modern asset management: whether paying for active management is worth it, given that most active managers underperform their benchmark after fees — the capstone question that fee compression, the rise of indexing, and the survival of genuine skill all turn on.",
+    "home_module": "asset-management",
+    "home_zone": "Z5",
+    "contributed_by": "asset-management",
+    "category": "The capstone: relative return & the debate",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G159",
+    "term": "Financial planning / the financial plan",
+    "aliases": [],
+    "quick_definition": "The comprehensive, ongoing process of organizing a household's whole financial life — cash flow, saving, investing, insurance, taxes, retirement, and estate — into a single coordinated plan aimed at the family's goals, of which investing is only one part.",
+    "home_module": "wealth-management",
+    "home_zone": "Z1",
+    "contributed_by": "wealth-management",
+    "category": "The planning core",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G160",
+    "term": "Goals-based investing & bucketing",
+    "aliases": [],
+    "quick_definition": "Structuring a portfolio around a household's specific, dated goals (retirement, a home, education, legacy) rather than around beating a benchmark — often by carving wealth into separate \"buckets,\" each with its own time horizon, risk level, and asset mix.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "The planning core",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G161",
+    "term": "The advisor–client relationship & behavioral coaching (\"advisor's alpha\")",
+    "aliases": [
+      "\"advisor's alpha\""
+    ],
+    "quick_definition": "The core of the wealth-management product: a trusted advisor who plans, allocates, and — crucially — coaches the client through fear and greed, where the largest measurable value an advisor adds is often behavioral (stopping the client from buying high and selling low), not investment selection.",
+    "home_module": "wealth-management",
+    "home_zone": "Z5",
+    "contributed_by": "wealth-management",
+    "category": "The planning core",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G162",
+    "term": "Human capital",
+    "aliases": [],
+    "quick_definition": "The present value of a person's future earnings — the largest asset on most households' balance sheets early in life, usually bond-like in risk, which depletes as it is converted into financial capital over a working life and reshapes how much investment risk a person can bear.",
+    "home_module": "wealth-management",
+    "home_zone": "Z1",
+    "contributed_by": "wealth-management",
+    "category": "Capital, horizon & the lifecycle",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G163",
+    "term": "Risk capacity vs. risk tolerance",
+    "aliases": [],
+    "quick_definition": "Two distinct things often conflated: risk tolerance is how much volatility a client can emotionally stomach (a preference); risk capacity is how much risk their goals and balance sheet can actually withstand (a constraint) — and a prudent plan is governed by the lower of the two.",
+    "home_module": "wealth-management",
+    "home_zone": "Z1",
+    "contributed_by": "wealth-management",
+    "category": "Capital, horizon & the lifecycle",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G164",
+    "term": "Time horizon & the glide path",
+    "aliases": [],
+    "quick_definition": "An individual's finite, shifting investment horizon — and the glide path that follows from it: a planned schedule that reduces portfolio risk as a goal (usually retirement) approaches, the individual's policy portfolio that moves with age.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Capital, horizon & the lifecycle",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G165",
+    "term": "Lifecycle investing",
+    "aliases": [],
+    "quick_definition": "The framework that treats investing as a multi-decade arc shaped by age, human capital, and goals — accumulate aggressively when young and human-capital-rich, de-risk and decumulate in retirement — the theory beneath target-date funds and glide paths.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Capital, horizon & the lifecycle",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G166",
+    "term": "Tax-aware investing & asset location",
+    "aliases": [],
+    "quick_definition": "Managing a portfolio for after-tax return — the only return a taxable household actually keeps — most importantly by asset location: placing tax-inefficient assets (bonds, REITs, high-turnover strategies) in tax-sheltered accounts and tax-efficient assets (index equities) in taxable ones.",
+    "home_module": "wealth-management",
+    "home_zone": "Z3",
+    "contributed_by": "wealth-management",
+    "category": "Tax — the individual's structural edge",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G167",
+    "term": "Tax-loss harvesting",
+    "aliases": [],
+    "quick_definition": "Deliberately realizing investment losses to offset taxable gains (and a limited amount of ordinary income), then reinvesting in a similar-but-not-identical holding to stay invested — a systematic way to convert market volatility into a recurring tax benefit.",
+    "home_module": "wealth-management",
+    "home_zone": "Z3",
+    "contributed_by": "wealth-management",
+    "category": "Tax — the individual's structural edge",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G168",
+    "term": "Tax-advantaged accounts (the wrappers)",
+    "aliases": [
+      "the wrappers"
+    ],
+    "quick_definition": "The account types that shelter investment growth from tax — traditional (tax-deferred) and Roth (tax-free) IRAs and 401(k)s, plus 529s, HSAs, and others — whose contribution limits, tax treatment, and withdrawal rules shape the entire household saving-and-decumulation plan.",
+    "home_module": "wealth-management",
+    "home_zone": "Z1",
+    "contributed_by": "wealth-management",
+    "category": "Tax — the individual's structural edge",
+    "appears_in": [
+      "Z1",
+      "Z3",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G169",
+    "term": "Retirement decumulation",
+    "aliases": [],
+    "quick_definition": "The under-studied second half of investing: turning an accumulated nest egg into a reliable lifetime income — deciding how much to withdraw, from which accounts, in what order, without running out of money or leaving too much unspent.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Retirement & decumulation",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G170",
+    "term": "The 4% rule / safe withdrawal rate",
+    "aliases": [],
+    "quick_definition": "The planning heuristic that a retiree can withdraw roughly 4% of the initial portfolio (inflation-adjusted thereafter) with a high probability of not outliving the money over ~30 years — a rule of thumb, fiercely debated, that anchors decumulation planning.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Retirement & decumulation",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G171",
+    "term": "Sequence-of-returns risk",
+    "aliases": [],
+    "quick_definition": "The danger, unique to decumulation, that the order of returns matters: poor returns in the early retirement years — while withdrawals are draining the portfolio — can exhaust it even if the long-run average return is fine, because there is less capital left to recover.",
+    "home_module": "wealth-management",
+    "home_zone": "Z4",
+    "contributed_by": "wealth-management",
+    "category": "Retirement & decumulation",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G172",
+    "term": "Annuitization & longevity risk",
+    "aliases": [],
+    "quick_definition": "Longevity risk is the risk of outliving one's money; annuitization is the main tool against it — converting a lump sum into a guaranteed lifetime income stream (a personal pension), trading liquidity and bequest for the certainty of never running out.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Retirement & decumulation",
+    "appears_in": [
+      "Z2",
+      "Z4"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G173",
+    "term": "Estate planning",
+    "aliases": [],
+    "quick_definition": "Arranging in advance how a person's assets and affairs will be managed at incapacity and transferred at death — through wills, trusts, powers of attorney, healthcare directives, and beneficiary designations — to direct the transfer, minimize tax and probate, and prevent family conflict.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Estate & generational transfer",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G174",
+    "term": "The trust",
+    "aliases": [],
+    "quick_definition": "A legal arrangement in which a trustee holds and manages assets for beneficiaries under the terms a grantor sets — the central instrument of estate planning, used to avoid probate, control how and when wealth passes, protect assets, and reduce transfer taxes.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Estate & generational transfer",
+    "appears_in": [
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G175",
+    "term": "Generational wealth transfer",
+    "aliases": [],
+    "quick_definition": "The movement of wealth from one generation to the next — the gift-and-estate-tax system, the generation-skipping transfer tax, the strategies (gifting, trusts, valuation discounts) used to pass more of it intact, and the family-governance work of preparing heirs to receive it.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "Estate & generational transfer",
+    "appears_in": [
+      "Z2",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G176",
+    "term": "Private banking",
+    "aliases": [],
+    "quick_definition": "The bundled, relationship-based service banks offer wealthy clients — combining banking, bespoke lending (against securities, art, or property), and investment management under one dedicated relationship manager — the high-touch channel for high-net-worth households.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "The channels, clients & vehicles",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G177",
+    "term": "The family office",
+    "aliases": [],
+    "quick_definition": "A private organization that manages the entire financial life of a single ultra-wealthy family (a single-family office) or several families (a multi-family office) — investments, taxes, estate, philanthropy, governance, and concierge needs — the most bespoke and integrated form of wealth management.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "The channels, clients & vehicles",
+    "appears_in": [
+      "Z1",
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G178",
+    "term": "The robo-advisor / digital advice",
+    "aliases": [],
+    "quick_definition": "An automated platform that builds and maintains a diversified, low-cost portfolio for an individual algorithmically — onboarding, allocation, rebalancing, and tax-loss harvesting with little or no human advisor — the technology-driven democratization of basic wealth management.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "The channels, clients & vehicles",
+    "appears_in": [
+      "Z2",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G179",
+    "term": "Direct indexing",
+    "aliases": [],
+    "quick_definition": "Owning the individual securities of an index directly in a separately managed account (rather than via a fund), so the holdings can be personalized and — most importantly — tax-loss-harvested at the single-stock level, bringing institutional tax techniques down to the individual.",
+    "home_module": "wealth-management",
+    "home_zone": "Z2",
+    "contributed_by": "wealth-management",
+    "category": "The channels, clients & vehicles",
+    "appears_in": [
+      "Z2",
+      "Z3",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G180",
+    "term": "Wealth-management fee models",
+    "aliases": [],
+    "quick_definition": "How advice is paid for — a percentage of assets under management (the dominant model), flat or hourly fee-only planning, commission on products sold, or a fee-based hybrid — each carrying different incentives and conflicts that the client must understand.",
+    "home_module": "wealth-management",
+    "home_zone": "Z5",
+    "contributed_by": "wealth-management",
+    "category": "The fee & fiduciary frame",
+    "appears_in": [
+      "Z1",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G181",
+    "term": "Fiduciary vs. suitability",
+    "aliases": [],
+    "quick_definition": "The defining standard-of-care question in advice: a fiduciary must act in the client's best interest, while a (historically lower) suitability standard required only that a product be \"suitable\" — the distinction that determines whose interest comes first when advisor and client incentives diverge.",
+    "home_module": "wealth-management",
+    "home_zone": "Z5",
+    "contributed_by": "wealth-management",
+    "category": "The fee & fiduciary frame",
+    "appears_in": [
+      "Z1",
+      "Z4",
+      "Z5"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G182",
+    "term": "The research report (the note & the initiation)",
+    "aliases": [
+      "the note & the initiation"
+    ],
+    "quick_definition": "The written, distributed artifact in which an analyst states a rating, a price target, and the reasoning — the unit in which sell-side research is actually delivered.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group A — The published research product",
+    "appears_in": [
+      "IB",
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G183",
+    "term": "The earnings model",
+    "aliases": [],
+    "quick_definition": "The analyst's living spreadsheet that projects a company's financial statements forward to produce the numbers every other output depends on.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group B — The analyst's linked outputs (the five-task chain made concrete)",
+    "appears_in": [
+      "IB",
+      "PE",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G184",
+    "term": "The estimate & the consensus",
+    "aliases": [],
+    "quick_definition": "A specific forward forecast (EPS, revenue, EBITDA) for a company, and the average of all analysts' estimates against which surprise and revision are measured.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group B — The analyst's linked outputs (the five-task chain made concrete)",
+    "appears_in": [
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G185",
+    "term": "The price target",
+    "aliases": [],
+    "quick_definition": "A published, time-bounded estimate of where a stock's price should go, derived from the model and the chosen valuation method.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group B — The analyst's linked outputs (the five-task chain made concrete)",
+    "appears_in": [
+      "IB",
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G186",
+    "term": "The rating (buy / hold / sell)",
+    "aliases": [
+      "buy / hold / sell"
+    ],
+    "quick_definition": "The discrete, published recommendation that translates the gap between price target and current price into an instruction.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group B — The analyst's linked outputs (the five-task chain made concrete)",
+    "appears_in": [
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G187",
+    "term": "The published thesis (the reputation-staked call)",
+    "aliases": [
+      "the reputation-staked call"
+    ],
+    "quick_definition": "The analyst's reasoned, named-and-distributed argument for why a stock will move — the same logical object as the internal thesis, but published, attributed, and career-bearing.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group B — The analyst's linked outputs (the five-task chain made concrete)",
+    "appears_in": [
+      "HF",
+      "AM",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G188",
+    "term": "Earnings revisions & the estimate-revision cycle",
+    "aliases": [],
+    "quick_definition": "The continual process of raising or lowering estimates as new information arrives — itself one of the most-watched signals in markets.",
+    "home_module": "equity-research",
+    "home_zone": "Z4",
+    "contributed_by": "equity-research",
+    "category": "Group C — Coverage & the information edge",
+    "appears_in": [
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G189",
+    "term": "Sector coverage & the coverage universe",
+    "aliases": [],
+    "quick_definition": "The defined set of companies an analyst follows (typically one sector), the basis of the analyst's expertise and the boundary of their authority.",
+    "home_module": "equity-research",
+    "home_zone": "Z2",
+    "contributed_by": "equity-research",
+    "category": "Group C — Coverage & the information edge",
+    "appears_in": [
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G190",
+    "term": "Channel checks & the mosaic theory",
+    "aliases": [],
+    "quick_definition": "The practice of building an information edge from many individually-immaterial, lawful data points — the legitimate counterpart to trading on inside information.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group C — Coverage & the information edge",
+    "appears_in": [
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G191",
+    "term": "Critical factors (the stock's swing factors)",
+    "aliases": [
+      "the stock's swing factors"
+    ],
+    "quick_definition": "The few variables that actually determine a stock's performance — Valentine's signature idea that an analyst's whole job is finding and monitoring the 2% that matters.",
+    "home_module": "equity-research",
+    "home_zone": "Z3",
+    "contributed_by": "equity-research",
+    "category": "Group C — Coverage & the information edge",
+    "appears_in": [
+      "HF",
+      "AM",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G192",
+    "term": "The quarterly earnings cycle (the print, the call, the update)",
+    "aliases": [
+      "the print, the call, the update"
+    ],
+    "quick_definition": "The recurring rhythm — results release, management call, model update, note — around which the entire research calendar is organized.",
+    "home_module": "equity-research",
+    "home_zone": "Z4",
+    "contributed_by": "equity-research",
+    "category": "Group D — The earnings cadence",
+    "appears_in": [
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G193",
+    "term": "The earnings surprise & company guidance",
+    "aliases": [],
+    "quick_definition": "The gap between reported results and consensus, and the forward expectations management itself sets — the twin events that move stocks at the print.",
+    "home_module": "equity-research",
+    "home_zone": "Z4",
+    "contributed_by": "equity-research",
+    "category": "Group D — The earnings cadence",
+    "appears_in": [
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G194",
+    "term": "Buy-side (in-house) research",
+    "aliases": [
+      "in-house"
+    ],
+    "quick_definition": "Research produced inside an asset manager or hedge fund for its own portfolio decisions, never published, judged only by returns.",
+    "home_module": "equity-research",
+    "home_zone": "Z2",
+    "contributed_by": "equity-research",
+    "category": "Group E — The branches (who else does this, and who pays)",
+    "appears_in": [
+      "AM",
+      "HF",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G195",
+    "term": "Independent & alternative research (incl. alt-data & AI)",
+    "aliases": [
+      "incl. alt-data & AI"
+    ],
+    "quick_definition": "Research from providers with no banking or brokerage conflict, increasingly built on alternative datasets and machine analysis rather than the traditional analyst note.",
+    "home_module": "equity-research",
+    "home_zone": "Z2",
+    "contributed_by": "equity-research",
+    "category": "Group E — The branches (who else does this, and who pays)",
+    "appears_in": [
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G196",
+    "term": "The research franchise & analyst rankings (the II survey)",
+    "aliases": [
+      "the II survey"
+    ],
+    "quick_definition": "The reputational capital of a sell-side analyst — historically measured by the Institutional Investor poll — that determines client access, compensation, and influence.",
+    "home_module": "equity-research",
+    "home_zone": "Z5",
+    "contributed_by": "equity-research",
+    "category": "Group F — The franchise & the economics",
+    "appears_in": [
+      "IB",
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G197",
+    "term": "How research is paid for (the bundle, soft dollars & MiFID II unbundling)",
+    "aliases": [
+      "the bundle, soft dollars & MiFID II unbundling"
+    ],
+    "quick_definition": "The economics of the research product: historically bundled into trading commissions and soft dollars, then forcibly unbundled in Europe by MiFID II.",
+    "home_module": "equity-research",
+    "home_zone": "Z1",
+    "contributed_by": "equity-research",
+    "category": "Group F — The franchise & the economics",
+    "appears_in": [
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G198",
+    "term": "The sales / trading / research triangle",
+    "aliases": [],
+    "quick_definition": "The three-desk structure of a sell-side equities division and the flows of ideas, orders, and commissions that bind research to the rest of the firm.",
+    "home_module": "equity-research",
+    "home_zone": "Z1",
+    "contributed_by": "equity-research",
+    "category": "Group F — The franchise & the economics",
+    "appears_in": [
+      "IB",
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G199",
+    "term": "The research/banking conflict & the Global Research Settlement (post-Spitzer)",
+    "aliases": [
+      "post-Spitzer"
+    ],
+    "quick_definition": "The structural conflict between objective research and investment-banking revenue, and the 2003 settlement that walled them apart.",
+    "home_module": "equity-research",
+    "home_zone": "Z5",
+    "contributed_by": "equity-research",
+    "category": "Group G — The regulatory & conflict frame",
+    "appears_in": [
+      "IB",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G200",
+    "term": "Regulation AC & the disclosure regime (Reg AC + Reg FD + quiet periods)",
+    "aliases": [
+      "Reg AC + Reg FD + quiet periods"
+    ],
+    "quick_definition": "The rules requiring analysts to certify their own views, barring selective corporate disclosure, and silencing research around deals.",
+    "home_module": "equity-research",
+    "home_zone": "Z5",
+    "contributed_by": "equity-research",
+    "category": "Group G — The regulatory & conflict frame",
+    "appears_in": [
+      "IB",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G201",
+    "term": "The power law",
+    "aliases": [],
+    "quick_definition": "The venture return distribution in which a tiny number of investments produce nearly all of a fund's returns — the empirical law that dictates how VC is sourced, sized, and managed.",
+    "home_module": "venture-capital",
+    "home_zone": "Z1.2",
+    "contributed_by": "venture-capital",
+    "category": "Group A — VC's organizing logic & returns",
+    "appears_in": [
+      "PE",
+      "HF",
+      "AM",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G202",
+    "term": "Power-law portfolio construction & the \"return-the-fund\" test",
+    "aliases": [],
+    "quick_definition": "The discipline of building a portfolio of bets each sized to be capable of returning the entire fund on its own, using ownership targets rather than diversification logic.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.3",
+    "contributed_by": "venture-capital",
+    "category": "Group A — VC's organizing logic & returns",
+    "appears_in": [
+      "PE",
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G203",
+    "term": "The venture markup & mark-to-market",
+    "aliases": [],
+    "quick_definition": "The convention of carrying a holding at its most recent round price, producing paper gains (TVPI) that may diverge sharply from realized cash (DPI) until exit actually occurs.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.5",
+    "contributed_by": "venture-capital",
+    "category": "Group A — VC's organizing logic & returns",
+    "appears_in": [
+      "PE",
+      "AM",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G204",
+    "term": "The funding stages & the round",
+    "aliases": [],
+    "quick_definition": "The sequence of discrete financing events (pre-seed → seed → Series A/B/C → growth) that take a startup from idea to scale, each funding the company to its next value-creating milestone.",
+    "home_module": "venture-capital",
+    "home_zone": "Z2.1",
+    "contributed_by": "venture-capital",
+    "category": "Group B — The financing structure (the round)",
+    "appears_in": [
+      "PE",
+      "IB",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G205",
+    "term": "Pre-money & post-money valuation",
+    "aliases": [],
+    "quick_definition": "The round-pricing identity (post-money = pre-money + new investment) that determines how much ownership new capital buys — the single most consequential arithmetic in a venture financing.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.7",
+    "contributed_by": "venture-capital",
+    "category": "Group B — The financing structure (the round)",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G206",
+    "term": "The SAFE & the convertible note",
+    "aliases": [],
+    "quick_definition": "Early-stage instruments that accept money now and defer pricing to a future priced round, bridged by a valuation cap and/or a discount rate.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.11",
+    "contributed_by": "venture-capital",
+    "category": "Group B — The financing structure (the round)",
+    "appears_in": [
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G207",
+    "term": "The option pool & the pre-money shuffle",
+    "aliases": [],
+    "quick_definition": "The employee equity reserve (ESOP), and the VC convention of expanding it inside the pre-money valuation so that the dilution falls on existing shareholders rather than new investors.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.9",
+    "contributed_by": "venture-capital",
+    "category": "Group B — The financing structure (the round)",
+    "appears_in": [
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G208",
+    "term": "The 409A valuation",
+    "aliases": [],
+    "quick_definition": "The independent third-party valuation of a private company's common stock that sets the strike price for employee options — typically well below the preferred-share round price.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.12",
+    "contributed_by": "venture-capital",
+    "category": "Group B — The financing structure (the round)",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G209",
+    "term": "Pro-rata rights, reserves & follow-on strategy",
+    "aliases": [],
+    "quick_definition": "The contractual right to invest in later rounds to maintain ownership percentage, combined with the fund-level discipline of reserving capital to double down on the portfolio's winners.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.4",
+    "contributed_by": "venture-capital",
+    "category": "Group C — Rights & ongoing participation",
+    "appears_in": [
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G210",
+    "term": "The down round & the recap",
+    "aliases": [],
+    "quick_definition": "A financing priced below the prior round, triggering anti-dilution protections, reordering the liquidation-preference stack, and often damaging morale and the cap table simultaneously.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.7",
+    "contributed_by": "venture-capital",
+    "category": "Group C — Rights & ongoing participation",
+    "appears_in": [
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G211",
+    "term": "VC governance: board seats, information rights & protective provisions",
+    "aliases": [],
+    "quick_definition": "The minority-investor control toolkit — influence exercised through board representation and veto rights rather than through the majority-control ownership of a buyout.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.2",
+    "contributed_by": "venture-capital",
+    "category": "Group C — Rights & ongoing participation",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G212",
+    "term": "Deal flow & sourcing",
+    "aliases": [],
+    "quick_definition": "The top of the venture funnel — generating and accessing investable opportunities — where the power law makes seeing the best deals as decisive as picking well among average ones.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.2",
+    "contributed_by": "venture-capital",
+    "category": "Group D — Sourcing, the founder & the company's clock",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G213",
+    "term": "The founder bet",
+    "aliases": [],
+    "quick_definition": "Underwriting the team over the financials at the earliest stages — \"the jockey, not the horse\" — as the central and often dominant judgment of early-stage venture investing.",
+    "home_module": "venture-capital",
+    "home_zone": "Z3.3",
+    "contributed_by": "venture-capital",
+    "category": "Group D — Sourcing, the founder & the company's clock",
+    "appears_in": [
+      "PE",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G214",
+    "term": "Burn rate & runway",
+    "aliases": [],
+    "quick_definition": "The startup's cash-consumption rate and the number of months of survival that current cash buys — the company's clock, driving every financing decision and every milestone target.",
+    "home_module": "venture-capital",
+    "home_zone": "Z4.6",
+    "contributed_by": "venture-capital",
+    "category": "Group D — Sourcing, the founder & the company's clock",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G215",
+    "term": "Crossover & growth-stage investing",
+    "aliases": [],
+    "quick_definition": "Late-stage pre-IPO venture in which public-market investors (hedge funds, mutual funds) cross into private financing rounds, blurring the boundary between private and public capital.",
+    "home_module": "venture-capital",
+    "home_zone": "Z2.7",
+    "contributed_by": "venture-capital",
+    "category": "Group E — Growth-stage & the firm",
+    "appears_in": [
+      "HF",
+      "AM",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G216",
+    "term": "The venture platform & the partnership",
+    "aliases": [],
+    "quick_definition": "The VC firm as institution — the partnership structure, its principals, scouts, and platform team that source, win, and support deals beyond the check itself.",
+    "home_module": "venture-capital",
+    "home_zone": "Z1.8",
+    "contributed_by": "venture-capital",
+    "category": "Group E — Growth-stage & the firm",
+    "appears_in": [
+      "PE",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G217",
+    "term": "The four quadrants of real estate",
+    "aliases": [],
+    "quick_definition": "The 2×2 map of the investable universe — public vs. private × debt vs. equity — that organizes every way capital touches real estate (REITs, CMBS, private funds, commercial mortgages).",
+    "home_module": "real-estate",
+    "home_zone": "Z1.2",
+    "contributed_by": "real-estate",
+    "category": "Group A — The asset and how it is valued (the foundational frame)",
+    "appears_in": [
+      "PE",
+      "PC",
+      "IB",
+      "AM",
+      "HF",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G218",
+    "term": "Net operating income (NOI)",
+    "aliases": [
+      "NOI"
+    ],
+    "quick_definition": "A property's annual income after operating expenses but before debt service, capital expenditures, and income tax — the cash-earnings engine that every real-estate valuation runs on.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.2",
+    "contributed_by": "real-estate",
+    "category": "Group A — The asset and how it is valued (the foundational frame)",
+    "appears_in": [
+      "PE",
+      "PC",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G219",
+    "term": "The capitalization rate (cap rate) & direct capitalization",
+    "aliases": [
+      "cap rate"
+    ],
+    "quick_definition": "The ratio of NOI to value (cap rate = NOI ÷ value) that prices income property the way a P/E multiple prices a stock — the central real-estate valuation metric.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.3",
+    "contributed_by": "real-estate",
+    "category": "Group A — The asset and how it is valued (the foundational frame)",
+    "appears_in": [
+      "PE",
+      "IB",
+      "AM",
+      "HF",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G220",
+    "term": "The three appraisal approaches",
+    "aliases": [],
+    "quick_definition": "The three lenses for valuing a property — income (cap rate/DCF), sales comparison (comps), and cost (replacement cost less depreciation) — the real-estate counterpart to IB's three methodologies.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.4",
+    "contributed_by": "real-estate",
+    "category": "Group A — The asset and how it is valued (the foundational frame)",
+    "appears_in": [
+      "IB",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G221",
+    "term": "The property sectors",
+    "aliases": [],
+    "quick_definition": "The classification of real estate by use — office, retail, industrial, multifamily, hospitality, plus the alternative/specialty sectors — each with its own demand drivers, lease structure, and cycle.",
+    "home_module": "real-estate",
+    "home_zone": "Z2.1",
+    "contributed_by": "real-estate",
+    "category": "Group B — Sectors, styles and vehicles",
+    "appears_in": [
+      "AM",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G222",
+    "term": "The risk-return styles (core → opportunistic)",
+    "aliases": [
+      "core → opportunistic"
+    ],
+    "quick_definition": "The four-point spectrum — core, core-plus, value-add, opportunistic — that sorts real-estate strategies by leverage, the income-vs.-appreciation mix, and how much work the business plan requires.",
+    "home_module": "real-estate",
+    "home_zone": "Z2.4",
+    "contributed_by": "real-estate",
+    "category": "Group B — Sectors, styles and vehicles",
+    "appears_in": [
+      "PE",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G223",
+    "term": "The REIT (real estate investment trust)",
+    "aliases": [
+      "real estate investment trust"
+    ],
+    "quick_definition": "The tax-pass-through vehicle that owns income property and must distribute ≥90% of taxable income, paying no entity-level tax — the public-equity quadrant of real estate.",
+    "home_module": "real-estate",
+    "home_zone": "Z2.5",
+    "contributed_by": "real-estate",
+    "category": "Group B — Sectors, styles and vehicles",
+    "appears_in": [
+      "AM",
+      "HF",
+      "ER",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G224",
+    "term": "Open-end vs. closed-end real estate funds",
+    "aliases": [],
+    "quick_definition": "The structural split between perpetual-life core funds (open-end, with queues and redemptions) and finite-life value-add/opportunistic funds (closed-end, the PE structure) — a distinction unique to real estate among private-capital vehicles.",
+    "home_module": "real-estate",
+    "home_zone": "Z2.6",
+    "contributed_by": "real-estate",
+    "category": "Group B — Sectors, styles and vehicles",
+    "appears_in": [
+      "PE",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G225",
+    "term": "The sponsor & the joint venture (JV)",
+    "aliases": [
+      "JV"
+    ],
+    "quick_definition": "The deal-level partnership between an operating partner (the sponsor, who finds and manages the deal) and a capital partner (who provides most of the equity), aligned by the promote.",
+    "home_module": "real-estate",
+    "home_zone": "Z2.7",
+    "contributed_by": "real-estate",
+    "category": "Group B — Sectors, styles and vehicles",
+    "appears_in": [
+      "PE",
+      "PC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G226",
+    "term": "The capital stack",
+    "aliases": [],
+    "quick_definition": "The layered financing of a real-estate deal — senior debt, mezzanine, preferred equity, common equity — ranked by priority of payment and inverse to risk and return.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.6",
+    "contributed_by": "real-estate",
+    "category": "Group C — Financing and underwriting",
+    "appears_in": [
+      "PE",
+      "PC",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G227",
+    "term": "The commercial mortgage & CMBS",
+    "aliases": [],
+    "quick_definition": "The senior loan secured by income property (amortization, balloon, recourse vs. non-recourse), and the securitization of those loans into commercial mortgage-backed securities sold to bond investors.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.8",
+    "contributed_by": "real-estate",
+    "category": "Group C — Financing and underwriting",
+    "appears_in": [
+      "PC",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G228",
+    "term": "The pro forma & the reversion",
+    "aliases": [],
+    "quick_definition": "The multi-year hold model that projects NOI, capital expenditure, debt service, and cash flow, ending in the reversion (exit value = stabilized NOI ÷ exit cap rate) — the document where the exit-cap assumption dominates the return.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.5",
+    "contributed_by": "real-estate",
+    "category": "Group C — Financing and underwriting",
+    "appears_in": [
+      "PE",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G229",
+    "term": "The lease & net-lease structures",
+    "aliases": [],
+    "quick_definition": "The contract that converts a building into an income stream — gross vs. net (single/double/triple-net) vs. modified-gross — defining who pays which expenses and therefore what NOI actually is.",
+    "home_module": "real-estate",
+    "home_zone": "Z4.2",
+    "contributed_by": "real-estate",
+    "category": "Group D — Operations, leasing and development",
+    "appears_in": [
+      "PC",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G230",
+    "term": "Leasing & occupancy",
+    "aliases": [],
+    "quick_definition": "The operational health of a property — occupancy, vacancy, absorption, the rent roll, lease rollover, and the tenant-improvement and leasing-commission (TI/LC) costs that sit below NOI — the asset manager's core dashboard.",
+    "home_module": "real-estate",
+    "home_zone": "Z4.3",
+    "contributed_by": "real-estate",
+    "category": "Group D — Operations, leasing and development",
+    "appears_in": [
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G231",
+    "term": "The real estate development process",
+    "aliases": [],
+    "quick_definition": "Ground-up creation of property — site acquisition → entitlement → design → construction (financed by loan-to-cost draws) → lease-up → stabilization — the highest-risk, highest-return real-estate activity.",
+    "home_module": "real-estate",
+    "home_zone": "Z4.5",
+    "contributed_by": "real-estate",
+    "category": "Group D — Operations, leasing and development",
+    "appears_in": [
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G232",
+    "term": "The real estate cycle",
+    "aliases": [],
+    "quick_definition": "The physical property cycle — recovery → expansion → hypersupply → recession — driven by the lag between demand and the construction pipeline, distinct from (and interacting with) the capital-markets cycle.",
+    "home_module": "real-estate",
+    "home_zone": "Z1.7",
+    "contributed_by": "real-estate",
+    "category": "Group E — Cycle, tax and the public-market lens",
+    "appears_in": [
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G233",
+    "term": "The real estate tax shield",
+    "aliases": [],
+    "quick_definition": "The tax machinery that lifts after-tax real-estate returns — depreciation (and accelerated cost segregation), the 1031 like-kind exchange, opportunity zones, and the depreciation-recapture cost at sale.",
+    "home_module": "real-estate",
+    "home_zone": "Z3.10",
+    "contributed_by": "real-estate",
+    "category": "Group E — Cycle, tax and the public-market lens",
+    "appears_in": [
+      "PE",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G234",
+    "term": "FFO & AFFO (the REIT earnings metric)",
+    "aliases": [
+      "the REIT earnings metric"
+    ],
+    "quick_definition": "Funds from operations — net income with real-estate depreciation added back — and its capex-adjusted refinement AFFO; the cash-earnings measures used to value REITs because GAAP net income is distorted by depreciation.",
+    "home_module": "real-estate",
+    "home_zone": "Z5.2",
+    "contributed_by": "real-estate",
+    "category": "Group E — Cycle, tax and the public-market lens",
+    "appears_in": [
+      "ER",
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G235",
+    "term": "NAV & the public-private valuation gap",
+    "aliases": [],
+    "quick_definition": "The net asset value of a REIT's underlying property less its debt, and the premium or discount at which the REIT's traded shares diverge from that value — the arbitrage signal linking public and private real-estate pricing.",
+    "home_module": "real-estate",
+    "home_zone": "Z5.3",
+    "contributed_by": "real-estate",
+    "category": "Group E — Cycle, tax and the public-market lens",
+    "appears_in": [
+      "HF",
+      "ER",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  }
+]

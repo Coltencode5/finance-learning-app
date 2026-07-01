@@ -1,0 +1,522 @@
+[
+  {
+    "id": "private-credit.z4.1",
+    "local_id": "Z4.1",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Portfolio Monitoring & Credit Surveillance",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The ongoing work of tracking a loan after funding — financial reporting, covenant testing, KPI triggers, and the relationship with the borrower and its sponsor.",
+    "explainer_covers": [
+      "The reporting cadence (monthly/quarterly financials, compliance certificates).",
+      "Tracking covenants, KPIs, and early-warning triggers.",
+      "The information edge of a private, relationship lender vs. a public bondholder."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.13",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G34` Covenant, `★ G77` Internal rating, Z4.2, Z4.3, Z3.13 (borrowing-base monitoring).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.2",
+    "local_id": "Z4.2",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Covenant Compliance, Headroom & Amendments  (deepens ★ G34)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Testing a borrower against its covenants, tracking headroom, and managing the requests for waivers and amendments that breaches trigger.",
+    "explainer_covers": [
+      "Covenant testing and the difference between a technical (covenant) and a payment breach.",
+      "Amendment and waiver requests; amend-and-extend; the fees lenders charge for consent.",
+      "How shrinking headroom is an early-warning signal, not just a paperwork event."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G80",
+        "note": null
+      },
+      {
+        "ref": "G73",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G34` Covenant, `★ G80` Credit agreement, Z4.1, Z4.4 (when amendments fail), `★ G73` PIK (amendments often add it).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.3",
+    "local_id": "Z4.3",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Risk-Rating Migration & the Watch-List",
+    "tag": "global",
+    "global_id": "G82",
+    "quick_definition": "The downgrade machinery for deteriorating credits — moving a loan to a watch-list, escalating monitoring, and ultimately stopping income recognition.",
+    "explainer_covers": [
+      "Internal rating downgrades and the watch-list process.",
+      "Early-warning indicators (covenant erosion, liquidity stress, missed plan).",
+      "The non-accrual decision and its income/NAV impact (links to Z4.12)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.12",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G77` Internal rating, `★ G62` Default/PD, Z4.4, Z4.12 (non-accrual), Z4.11 (valuation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.4",
+    "local_id": "Z4.4",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Default & Events of Default",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The triggers that put a loan formally in default — missed payments, covenant breaches, cross-defaults — and the decision tree that follows.",
+    "explainer_covers": [
+      "Payment default vs. covenant default vs. cross-default; acceleration rights.",
+      "The lender's options at default: waive, amend, forbear, restructure, or enforce.",
+      "How the decision depends on recovery prospects and the borrower's viability."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G80",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G80` Credit agreement, `★ G34` Covenant, Z4.5 (workout), Z4.6 (in-court), `★ G61` Recovery.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.5",
+    "local_id": "Z4.5",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "Workouts & Out-of-Court Restructuring",
+    "tag": "global",
+    "global_id": "G81",
+    "quick_definition": "The negotiated repair of a troubled loan outside bankruptcy — forbearance, amend-and-extend, new money, or a debt-for-equity swap.",
+    "explainer_covers": [
+      "The workout process and the goals (preserve value, avoid costly bankruptcy).",
+      "Tools: forbearance, maturity extensions, covenant resets, rescue/new-money financing, debt-for-equity.",
+      "The \"amend-extend-and-pretend\" critique and when forbearance just defers a loss.",
+      "Why workout capability is a core competitive edge for a lender (Z1.17)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G82",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G61` Recovery, `★ G82` Watch-list, Z4.6 (the in-court alternative), Z2.6 (distressed), PE Z2.26 (distressed PE).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.6",
+    "local_id": "Z4.6",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "In-Court Restructuring & Bankruptcy (Chapter 11)",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The formal court-supervised restructuring of a defaulted company — DIP financing, asset sales, and a plan of reorganization that re-cuts the capital structure.",
+    "explainer_covers": [
+      "The Chapter 11 frame (U.S.): the automatic stay, DIP financing, the 363 sale, the plan of reorganization.",
+      "Cramdown, the absolute priority rule, and creditor-class voting.",
+      "How the fulcrum security (Z2.8) converts to equity through the plan.",
+      "(The Moyer spine; note insolvency regimes differ by country.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.8 (fulcrum), `★ G61` Recovery, Z4.5, `★ G25` Enterprise Value (the valuation fight), Z2.7 (loan-to-own).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.7",
+    "local_id": "Z4.7",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "The Modern Restructuring Toolkit & Liability Management",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The aggressive, post-2020 playbook of liability-management exercises (LMEs) — uptier/priming exchanges and drop-down financings — that pit creditors against each other.",
+    "explainer_covers": [
+      "Uptier (priming) transactions and non-pro-rata drop-down financings.",
+      "\"Creditor-on-creditor violence\" and how loose documentation (Z3.18) enables it.",
+      "Landmark precedents (e.g., J.Crew, Serta, TriMark, Envision) and the doc-protection arms race.",
+      "(Major recency gap: Moyer (2005) predates the entire LME era — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.18",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      },
+      {
+        "ref": "G80",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G79` Intercreditor (what LMEs exploit), `★ G80` Credit agreement, Z3.18 (doc leverage), Z4.5, Z4.8.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.8",
+    "local_id": "Z4.8",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 8,
+    "title": "Recovery Analysis & Loss Given Default",
+    "tag": "global",
+    "global_id": "G61",
+    "quick_definition": "Estimating how many cents on the dollar a lender recovers in a default — driven by seniority, security, and enterprise value.",
+    "explainer_covers": [
+      "The enterprise-valuation approach to recovery; walking value down the capital stack to the fulcrum.",
+      "Recovery by seniority and security (first lien vs. second lien vs. unsecured).",
+      "Historical recovery rates by instrument and why senior secured fares best.",
+      "LGD = 1 − recovery, and how it feeds loss-rate math."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G62` Default/PD, `★ G60` Loss rate, `★ G33` Debt stack, Z2.8 (fulcrum), `★ G25` Enterprise Value.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.9",
+    "local_id": "Z4.9",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 9,
+    "title": "Default Rates & Probability of Default",
+    "tag": "global",
+    "global_id": "G62",
+    "quick_definition": "The frequency with which borrowers breach or fail to pay over a period — and crucially, why a high default rate need not mean high losses.",
+    "explainer_covers": [
+      "Measuring default rates; sponsored vs. non-sponsored and by vintage/sector.",
+      "Probability of default in internal ratings and pricing.",
+      "The default-vs-loss distinction: a default with strong recovery (G61) costs little."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G61` Recovery, `★ G60` Loss rate, `★ G77` Internal rating, Z4.4, Z5.7 (the historical record).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.10",
+    "local_id": "Z4.10",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 10,
+    "title": "Credit Loss Rates & Loss Experience",
+    "tag": "global",
+    "global_id": "G60",
+    "quick_definition": "The annualized losses on a loan portfolio — default rate × loss-given-default — the figure that turns gross yield into the net return LPs actually earn.",
+    "explainer_covers": [
+      "The arithmetic: loss rate = PD × LGD; gross yield − loss rate − fees = net return.",
+      "The historically low loss experience of senior direct lending across cycles.",
+      "Realized vs. unrealized losses and why marks lag reality."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G61` Recovery, `★ G62` Default, `★ G58` Yield, Z5.5 (net performance), Z5.7 (CDLI loss data).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.11",
+    "local_id": "Z4.11",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 11,
+    "title": "Valuation & Fair Value of Private Credit Assets",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The quarterly marking of illiquid private loans to fair value — a board-level obligation for BDCs and the source of the \"are the marks real?\" debate.",
+    "explainer_covers": [
+      "Fair-value measurement (ASC 820) and the valuation-committee process.",
+      "Why private-credit marks are smoother (and slower) than public prices — and the credibility questions that raises.",
+      "The link from internal ratings and non-accruals to carrying value."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.12",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G64",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G64` BDC (its fair-value duty), `★ G77` Internal rating, Z4.3, Z4.12, Z5.5.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z4.12",
+    "local_id": "Z4.12",
+    "module": "private-credit",
+    "zone": 4,
+    "ordinal": 12,
+    "title": "Non-Accrual Loans & PIK in Stress  (deepens ★ G73)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Two stress signals on a lender's books — moving a loan to non-accrual (stopping income recognition) and a healthy loan flipping to PIK (paying interest in kind rather than cash).",
+    "explainer_covers": [
+      "Non-accrual: when repayment is doubtful, income stops being recognized — hitting reported yield and NAV.",
+      "PIK as upside (mezzanine) vs. PIK as a red flag (a struggling borrower conserving cash).",
+      "The portfolio-level warning when PIK income rises as a share of total income."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.10",
+        "note": null
+      },
+      {
+        "ref": "G73",
+        "note": null
+      },
+      {
+        "ref": "G82",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G73` PIK (*shared node — the stress-signal nuance lives here*), `★ G82` Watch-list, Z4.3, Z4.11, Z4.10. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

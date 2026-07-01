@@ -1,0 +1,764 @@
+[
+  {
+    "id": "private-credit.z3.1",
+    "local_id": "Z3.1",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "The Credit Origination Funnel & Value Chain",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The funnel narrowing many sourced lending opportunities down to the few loans actually closed — and the end-to-end value chain of a private-credit transaction.",
+    "explainer_covers": [
+      "The stages: source → screen → indicative term sheet → credit committee → diligence → documentation → close → fund.",
+      "Sponsored vs. direct channels feeding the top of the funnel.",
+      "Conversion economics and why origination volume and selectivity both matter."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G66",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2, `★ G28` Due diligence, all Zone 3 nodes, `★ G66` Sponsored lending, PE Z3.1 (*the equity-side funnel*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.2",
+    "local_id": "Z3.2",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Deal Sourcing & Origination Channels",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How private lenders originate loans — through sponsor coverage, agented/club deals, proprietary direct relationships, and incumbency in existing portfolios.",
+    "explainer_covers": [
+      "Channels: sponsor coverage (the dominant one), agented/club deals, proprietary/direct, and add-ons to existing borrowers (incumbency).",
+      "Why relationships and scale are the real origination edge.",
+      "Sourcing differences between sponsored and non-sponsored markets."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.6",
+        "note": null
+      },
+      {
+        "ref": "G66",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.1, `★ G66` Sponsored lending, Z3.3 (what comes next), PE Z3.2 (the sponsor's own sourcing), Z1.6.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.3",
+    "local_id": "Z3.3",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "Credit Due Diligence & Underwriting  (deepens ★ G28)",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The lender's systematic investigation of a borrower — focused on ability to repay and downside recovery rather than upside — culminating in a credit memo and committee decision.",
+    "explainer_covers": [
+      "The domains: business/market, financial (quality of earnings), legal, and sponsor diligence.",
+      "The lender's distinct lens vs. PE's: can they service and repay the debt, and what do we recover if not?",
+      "The credit memo, the downside/recovery case, and the role of third-party advisors.",
+      "How diligence findings drive structure, covenants, and pricing."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G28` Due diligence (*shared node — credit-underwriting nuance added here*), Z3.4, `★ G24` EBITDA, `★ G61` Recovery, PE Z3.4 (the equity-side DD).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.4",
+    "local_id": "Z3.4",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Credit Analysis: Cash Flow, Leverage & Coverage",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The analytical core of underwriting — testing whether a borrower can pay interest, repay principal, and what a lender recovers if it can't.",
+    "explainer_covers": [
+      "The three questions: interest serviceability (coverage), principal repayment (deleveraging / free cash flow), and downside (recovery).",
+      "Key metrics: Debt/EBITDA, FCCR, DSCR, and free-cash-flow conversion.",
+      "Building the base, downside, and recovery cases.",
+      "Leverage seen as the lender's risk gauge, not the sponsor's return amplifier."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G74",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G29` Leverage (*shared node — the credit-metric lens*), `★ G74` Coverage ratios, `★ G24` EBITDA, Z3.5, `★ G61` Recovery.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.5",
+    "local_id": "Z3.5",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "EBITDA, Add-Backs & Adjusted EBITDA in Credit  (deepens ★ G24)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The contested practice of \"adjusting\" a borrower's EBITDA upward — through add-backs and pro-forma synergies — which directly inflates how much debt a deal can carry.",
+    "explainer_covers": [
+      "Why EBITDA is the denominator of every leverage and coverage test, so its definition is a battleground.",
+      "Add-back types: run-rate, pro-forma, synergy, \"one-time\" costs — and the erosion of standards in hot markets.",
+      "How aggressive add-backs understate true leverage and overstate covenant headroom.",
+      "The lender's discipline: haircutting management's adjusted EBITDA."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.18",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G24` EBITDA (*shared node — the add-back controversy is the credit nuance*), `★ G34` Covenant, Z3.11, Z3.18 (doc leverage), `★ G29` Leverage.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.6",
+    "local_id": "Z3.6",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Structuring the Facility",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Assembling the loan itself — facility types, tranching, amortization, tenor, and the leverage decision — to balance return against risk.",
+    "explainer_covers": [
+      "Facility types: Term Loan A/B, revolving credit, delayed-draw term loans, accordion/incremental.",
+      "Tranching (1L/2L vs. unitranche), amortization profiles, and tenor.",
+      "Setting leverage and the size of the equity cushion required beneath."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G68",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G33` Debt stack, `★ G68` Unitranche, Z3.7 (pricing it), `★ G29` Leverage, Z2.2.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.7",
+    "local_id": "Z3.7",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Loan Pricing & Economics",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a loan's all-in return is built — spread over the reference rate, plus OID, upfront fees, and call protection — and the yield/IRR math that results.",
+    "explainer_covers": [
+      "The components: spread (G70), base rate + floor (G69), OID (G71), arrangement/upfront fees, and call protection (G72).",
+      "Translating those into cash yield, yield-to-maturity, and yield-to-3-year.",
+      "How competition compresses spreads and erodes OID and call protection."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` Yield, `★ G70` Spread, `★ G71` OID, `★ G72` Call protection, `★ G69` Floating rate, Z5.6.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.8",
+    "local_id": "Z3.8",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Original Issue Discount (OID)",
+    "tag": "global",
+    "global_id": "G71",
+    "quick_definition": "Funding a loan below par (e.g., at 98) so the lender earns the difference to par as additional yield on top of the coupon.",
+    "explainer_covers": [
+      "The mechanic and how OID converts into incremental yield over the loan's life.",
+      "Why lenders use it (yield enhancement, downside buffer) and borrowers accept it.",
+      "How OID widens or compresses with market conditions."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.12",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` Yield, Z3.7, `★ G70` Spread, Z1.12.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.9",
+    "local_id": "Z3.9",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "Call Protection & Prepayment Economics",
+    "tag": "global",
+    "global_id": "G72",
+    "quick_definition": "Terms that protect a lender's expected yield if a borrower repays early — non-call periods, make-wholes, soft-call (101), and prepayment fees.",
+    "explainer_covers": [
+      "The toolkit: hard non-call periods, make-whole premiums, soft-call step-downs (e.g., 101 in year one), and prepayment penalties.",
+      "Why early repayment is the lender's enemy (loans rarely run to maturity — hence yield-to-3-year).",
+      "How call protection erodes in competitive markets."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.12",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` Yield, Z3.7, Z5.6 (yield-to-3-year), Z1.12.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.10",
+    "local_id": "Z3.10",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "Spread, Reference Rates & Floors",
+    "tag": "global",
+    "global_id": "G70",
+    "quick_definition": "The pricing engine of a floating-rate loan — a credit spread set over a base rate (SOFR), usually with a floor that protects income when rates fall.",
+    "explainer_covers": [
+      "The build: reference rate + credit spread; the role and level of base-rate floors.",
+      "The LIBOR→SOFR transition and its mechanics.",
+      "What drives the spread (credit quality, leverage, seniority, market supply/demand)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.14",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G69` Floating rate, `★ G58` Yield, Z1.14, Z5.13 (rate risk), Z3.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.11",
+    "local_id": "Z3.11",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "Financial Covenants  (deepens ★ G34)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The contractual financial tests — leverage, coverage, FCCR, capex limits — that act as the lender's early-warning and control system, distinguishing covenanted private loans from cov-lite syndicated debt.",
+    "explainer_covers": [
+      "Maintenance covenants (tested every period) vs. incurrence covenants (tested only on actions).",
+      "Setting covenant levels and headroom/cushion against the base case.",
+      "The cov-lite debate: private credit's tighter-covenant advantage vs. the erosion of that edge in large deals.",
+      "How a covenant breach hands the lender a seat at the table early."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.15",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G74",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G34` Covenant (*shared node — financial-covenant detail and the cov-lite debate are the credit nuance*), `★ G74` Coverage ratios, `★ G29` Leverage, Z4.2 (compliance), Z3.15.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.12",
+    "local_id": "Z3.12",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "Security, Collateral & Lien Priority",
+    "tag": "global",
+    "global_id": "G78",
+    "quick_definition": "The package of assets pledged to a lender and the rank of its claim — first lien, second lien, or unsecured — which determines who gets paid first if the borrower fails.",
+    "explainer_covers": [
+      "The security package: all-asset pledges, guarantees from group companies, and perfection.",
+      "Lien ranking (first vs. second vs. unsecured) and structural subordination.",
+      "Why security and seniority are the foundation of recovery."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G33` Debt stack, `★ G79` Intercreditor, Z1.13, Z4.8 (recovery), Z2.4.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.13",
+    "local_id": "Z3.13",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 13,
+    "title": "The Borrowing Base (ABL structuring)",
+    "tag": "global",
+    "global_id": "G76",
+    "quick_definition": "The dynamically-sized pool of eligible collateral against which an asset-based revolver may draw, set by advance rates on each asset class.",
+    "explainer_covers": [
+      "Eligible collateral and advance rates (e.g., 85% of eligible receivables, 50% of inventory).",
+      "The borrowing-base certificate and how availability flexes with the assets.",
+      "Reserves, ineligibles, and field exams."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.10",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G75` LTV, Z2.10 (ABL), `★ G78` Security, Z4.1 (monitoring).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.14",
+    "local_id": "Z3.14",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 14,
+    "title": "Loan-to-Value & Asset Coverage in Structuring",
+    "tag": "global",
+    "global_id": "G75",
+    "quick_definition": "Sizing a loan as a percentage of an underlying asset's value — the master risk lever for asset-based and real-estate credit, where the asset is the source of repayment.",
+    "explainer_covers": [
+      "LTV mechanics and the equity cushion it implies.",
+      "How LTV (asset value) differs from leverage (cash flow) as a sizing tool.",
+      "LTV in real estate, infrastructure, and asset-based deals."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.12",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G76",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G76` Borrowing base, Z2.12 (RE debt), Z2.10 (ABL), `★ G29` Leverage (the cash-flow alternative).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.15",
+    "local_id": "Z3.15",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 15,
+    "title": "The Credit / Facility Agreement",
+    "tag": "global",
+    "global_id": "G80",
+    "quick_definition": "The master loan contract — private credit's analogue of the SPA — setting drawdown terms, covenants, representations, and the events of default.",
+    "explainer_covers": [
+      "Structure: conditions precedent, representations, affirmative/negative/financial covenants, baskets, and events of default.",
+      "How diligence findings and structuring decisions become contractual terms.",
+      "Negotiation flashpoints: EBITDA definitions, baskets, MFN, and portability."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.18",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.16",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G34` Covenant, Z3.11, Z3.16, Z4.4 (events of default), PE Z3.18 (*the buyout debt-doc node it parallels*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.16",
+    "local_id": "Z3.16",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 16,
+    "title": "The Intercreditor Agreement",
+    "tag": "global",
+    "global_id": "G79",
+    "quick_definition": "The contract that ranks different lenders against one another — payment and lien subordination, standstills, and the Agreement Among Lenders that internally splits a unitranche.",
+    "explainer_covers": [
+      "Ranking first vs. second lien; payment vs. lien subordination; standstill periods.",
+      "The Agreement Among Lenders (AAL) and first-out/last-out mechanics inside a unitranche.",
+      "Why intercreditor terms decide outcomes in a restructuring."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.7",
+        "note": null
+      },
+      {
+        "ref": "G68",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G68` Unitranche, `★ G33` Debt stack, `★ G78` Security, Z2.4 (second lien), Z4.7 (LME exploits these).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.17",
+    "local_id": "Z3.17",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 17,
+    "title": "Internal Credit Rating & Risk Assessment",
+    "tag": "global",
+    "global_id": "G77",
+    "quick_definition": "A lender's own scorecard grading each loan's risk — the engine behind pricing, reserves, watch-lists, and (mapped to agency scales) BDC and insurance reporting.",
+    "explainer_covers": [
+      "Internal scorecards and rating scales; the inputs (leverage, coverage, sector, sponsor).",
+      "Estimating probability of default and loss-given-default per credit.",
+      "Private ratings from agencies for BDC/insurance capital; mapping internal to external scales."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G62` Default/PD, `★ G61` Recovery/LGD, Z4.3 (rating migration), Z4.11 (valuation), Z5.13 (risk).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z3.18",
+    "local_id": "Z3.18",
+    "module": "private-credit",
+    "zone": 3,
+    "ordinal": 18,
+    "title": "Sponsor Dynamics & Documentation Leverage",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a borrower's PE sponsor — and competition among lenders — shapes loan terms, pushing toward looser documentation in hot markets.",
+    "explainer_covers": [
+      "Sponsor-driven doc trends: generous EBITDA definitions, large baskets, portability, MFN sunsets.",
+      "The negotiation balance of power and how it shifts with the cycle.",
+      "The erosion of lender protections in competitive, capital-flooded markets."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.15",
+        "note": null
+      },
+      {
+        "ref": "G66",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G66` Sponsored lending, `★ G34` Covenant, Z3.5 (EBITDA add-backs), Z3.15, PE Z1.3 (the sponsor is a PE GP). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

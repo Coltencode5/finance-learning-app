@@ -1,0 +1,564 @@
+[
+  {
+    "id": "venture-capital.z3.1",
+    "local_id": "Z3.1",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "The Venture Process Overview",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The venture investment process runs sourcing → selection → diligence → term sheet → structuring → close, shaped at every step by the power law's demand for picking the rare company capable of an outsized outcome.",
+    "explainer_covers": [
+      "The funnel shape: a firm may see thousands of companies per year and invest in a handful. The funnel is very wide at the top (cold inbound, warm intro, conference, scout network) and very narrow at the bottom (check written, board seat taken).",
+      "How the power law reshapes process: the standard investment discipline of \"minimize downside\" partially inverts in venture. The worst investment mistake is not making a bad bet on a loser (you lose the check); it is failing to back a winner (you lose the entire asymmetric upside). So the VC's error function is asymmetric: false positives (investing in a loser) are survivable; false negatives (passing on the next Google) are career-defining failures.",
+      "Speed vs. diligence: competitive rounds, especially at seed, can close in days. Later-stage rounds take weeks to months. Speed-diligence trade-off is an active tension.",
+      "The steps:"
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.12",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2 → Z3.12, Z1.2 (G201, the power law shapes the process), Z4.1 (post-close). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.2",
+    "local_id": "Z3.2",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Deal Flow & Sourcing",
+    "tag": "global",
+    "global_id": "G212",
+    "quick_definition": "The top of the venture funnel — generating and accessing investable opportunities — where the power law makes seeing the best deals as decisive as picking well among average ones.",
+    "explainer_covers": [
+      "Why sourcing is existential: if the power law is true (a few companies produce almost all the returns), then missing the best deals is the primary risk. The VC who never saw Google or Facebook couldn't have invested, regardless of skill. Sourcing is not just operational; it is competitive.",
+      "The sourcing channels: warm introductions from trusted founders and operators; proprietary networks built through content, events, and thought leadership; platform advantages (Z1.8, G216); scout networks; accelerator relationships (YC, Techstars); cold inbound (less useful; most top firms don't invest heavily from cold inbound alone).",
+      "Proprietary vs. competitive: proprietary deal flow — seeing and winning a deal before others — is the VC's most valuable operational advantage. It comes from reputation, relationship depth, and platform resources.",
+      "The signal problem: at early stages, there are few objective metrics to assess deal quality. Investors rely heavily on signal-from-referral (who is recommending this founder?) and signal-from-credibility (does this founder have a track record?). Both signals are imperfect and systematically biased toward familiar networks.",
+      "The power-law argument for sourcing discipline: because the return on missing the best deal (a zero return, versus a 100× return) is so asymmetric, a VC who wants to invest in the best companies should invest time and reputation in being the first call for the best founders, not in developing a better filter for average deals."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z1.9",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.8",
+        "note": null
+      },
+      {
+        "ref": "G216",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.9, Z2.1, Z3.3, Z1.8 (G216, platform as sourcing edge), ★G201 (the power law as the reason sourcing is decisive). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.3",
+    "local_id": "Z3.3",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Founder Bet",
+    "tag": "global",
+    "global_id": "G213",
+    "quick_definition": "Underwriting the team over the financials at the earliest stages — \"the jockey, not the horse\" — as the central and often dominant judgment of early-stage venture investing.",
+    "explainer_covers": [
+      "Why team dominates early: at the seed and Series A stage, there are no financials to model, no proven product-market fit, and often no revenue. The VC is buying the founder's judgment, resilience, and ability to attract talent and capital. The business plan will change; the person executing it matters most.",
+      "Founder-market fit (Kupor's concept): the specific link between this founder's background, experience, and insight and the market problem she is attacking. The most defensible founders are those for whom this particular idea is not just plausible but inevitable given their biography — Martin Casado inventing software-defined networking because his entire career led there.",
+      "The founder evaluation framework (Kupor): three axes — people (track record, unique insight, leadership and recruiting ability, the will to walk through walls), product (whether the product will be 10× better or cheaper than existing solutions, not merely marginally better), and market (is the TAM large enough to sustain a power-law outcome?).",
+      "\"Egomaniacal\" vs. \"strong convictions weakly held\": founders need sufficient self-belief to ignore the inevitable stream of doubters, but must also incorporate market feedback and pivot. The combination — conviction + adaptability — is the hardest combination to identify in advance.",
+      "The jockey/horse tension: investing in a great team in a small market is a canonical VC mistake. The founder bet requires a believable large market too."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G121 (variant perception — the founder has a non-consensus view of the market), Z3.4 (market and product evaluation), Z2.2, Mallaby (the history of founder bets) and Kupor (the evaluation framework) grounding. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.4",
+    "local_id": "Z3.4",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Evaluating the Opportunity: Market, Product & Traction",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Alongside the founder assessment, the VC sizes the market (must be large enough to produce a power-law return), tests product-market fit, and reads the early traction metrics that signal whether the product is pulling customers or being pushed.",
+    "explainer_covers": [
+      "Market size: the fundamental filter. A company that executes perfectly but in a small market cannot return a venture fund (G202). VCs require large addressable markets (TAM) — typically $1B+ to justify a Series A bet, much larger for later stages. Market size is hardest to estimate for genuinely new markets (the Airbnb case: did it expand the travel market or substitute for hotels?).",
+      "Product-market fit: the state in which a product is so compelling to its target customers that they feel compelled to use it, return to it, and tell others. Evidence includes low churn, strong net promoter scores, organic growth, and customer retention curves that flatten (rather than decay). Paul Graham's characterization: \"People are buying your product even though you have a buggy MVP and terrible customer service.\"",
+      "Traction metrics by stage: at seed, evidence might be 100 active users or a single passionate customer cohort. At Series A, a VC might look for $100K–$500K ARR, strong growth rates (doubling monthly or better), and early cohort retention. At growth stage, revenue, growth rate, and unit economics matter.",
+      "The 10× rule (Kupor): for a product to overcome customer inertia and institutional resistance, it typically needs to be 10× better or 10× cheaper than the current best alternative. Marginal improvements do not displace entrenched behavior."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G214",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G212",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.3 (the founder must be in a big enough market), Z3.2 (deal flow), Z4.6 (G214, burn and the runway-to-next-milestone), ★G201, G212. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.5",
+    "local_id": "Z3.5",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Venture Due Diligence (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture diligence is faster and lighter early-stage than PE diligence and heavier later, but follows the same evidence-gathering logic: verifying what the founder claims and identifying the risks that aren't in the pitch deck.",
+    "explainer_covers": [
+      "Reuse ★G28 (due diligence): the same systematic investigation logic — financial, operational, legal, market — applied with different evidence sources and different time constraints.",
+      "The speed tension: seed-stage rounds can close in a week; a VC that requires six months of diligence will lose the deal. Diligence depth scales with stage: seed is almost purely reference-based and conversation-based; growth-stage diligence is much closer to PE diligence with financial models, customer interviews, and legal review.",
+      "Reference calls and founder background: at early stages, reference calls on the founder — from prior employers, co-founders, customers, and investors — are among the most valuable diligence inputs available.",
+      "Customer and technical diligence: at Series B and beyond, a serious VC will call customers to verify usage, retention, and NPS claims, and may bring in a technical advisor to assess the engineering team's work.",
+      "What diligence cannot answer: at early stages, no amount of diligence can tell you whether the product will find a market. This is why ★G213 (the founder bet) takes precedence over quantitative analysis at seed and Series A."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G28 (the global, contributed by PE), Z3.4, Z3.6, PE Z3.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.6",
+    "local_id": "Z3.6",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "The Term Sheet (inherited, venture lens)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The venture term sheet is the same non-binding document as in PE but splits into two buckets the founder must read together — economics (how the money is made) and control (who makes decisions) — and getting either wrong has lasting consequences.",
+    "explainer_covers": [
+      "Reuse ★G46 (term sheet, contributed by PE): a non-binding document setting the headline terms of an investment. In venture, it is typically four to ten pages.",
+      "The Feld & Mendelson organizing principle: the term sheet has only two things that actually matter — economics (valuation, option pool, liquidation preference, anti-dilution, pay-to-play) and control (board composition, protective provisions, drag-along). Everything else is a second-order term.",
+      "Economic terms: set the price (G205), the option pool (G207), the liquidation preference and participation (★G38), the anti-dilution mechanism (★G39), vesting schedules, and pay-to-play provisions.",
+      "Control terms: board composition (G211), protective provisions (G211, the veto rights), drag-along rights (★G43), information rights, right of first refusal.",
+      "Founder-friendly vs. investor-friendly: the market cycle determines which side has more leverage. In a hot market, founders negotiate away board seats, eliminate liquidation preference participation, and set large pre-money valuations. In a down market, investors demand more protection and more control. The 2022 reset sharply shifted leverage back toward investors."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.12",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G211",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G43",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G46, Z3.7 → Z3.12 (each key economic/control term in detail), Z4.2 (G211, governance), ★G38, ★G39, ★G43, Z1.2 (how the power law makes this the moment of maximum leverage for the VC if the deal is competitive).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.7",
+    "local_id": "Z3.7",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Pre-Money & Post-Money Valuation",
+    "tag": "global",
+    "global_id": "G205",
+    "quick_definition": "The round-pricing identity (post-money = pre-money + new investment) that determines how much ownership new capital buys — the single most consequential arithmetic in a venture financing, and the source of the most common early negotiation miscommunication.",
+    "explainer_covers": [
+      "The identity: post-money valuation = pre-money valuation + amount of new investment. New investor ownership % = new investment ÷ post-money. This is simple but routinely misunderstood.",
+      "The verbal trap (Feld & Mendelson): when a VC says \"I'll invest $5M at a $20M valuation,\" she almost always means $20M post-money — implying a $15M pre-money and 25% ownership. A founder who hears \"$20M pre-money\" calculates 20% dilution. The five-point gap is real and compounds through subsequent rounds.",
+      "Why there is no model: at early stages, the pre-money valuation is negotiated, not derived from a DCF or from comps in any rigorous sense. There are no cash flows to discount. Comparables are loose. The number reflects market conditions, the GP's conviction, and the founder's leverage.",
+      "The relationship to dilution (★G42): each round's pre-money sets the denominator that determines how much of the company each prior investor retains. A lower pre-money at any round shrinks prior holders' stakes.",
+      "The relationship to the option pool (G207): the option pool expansion happens inside the pre-money, making the effective pre-money lower than the stated pre-money. This is the pre-money shuffle."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G207",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G40 (cap table), ★G42 (dilution), Z3.8 (cap table mechanics), Z3.9 (G207, option pool shuffle), ★G205. Cross-module: PE Z2.x uses the pre/post identity too (★G41 in PE, which covers the same concept from the buyout side — venture is the dominant context for this arithmetic). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.8",
+    "local_id": "Z3.8",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "The Cap Table & Dilution (inherited, venture lens)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The cap table is the evolving ledger of who owns what — shares, options, warrants, and ownership percentages — and each venture round dilutes existing holders pro-rata to make room for new capital.",
+    "explainer_covers": [
+      "Reuse ★G40 (cap table, contributed by PE): the master ledger of equity ownership. In venture, the cap table grows dramatically more complex round over round, as each new series adds a new class of preferred stock with its own liquidation preference.",
+      "The dilution mechanism (★G42): when new shares are issued, every existing holder's percentage ownership falls proportionally — this is dilution. If the company is worth more at each round, dilution is acceptable (you own less of a bigger pie). If the company is flat or down, dilution is damaging.",
+      "Round-by-round evolution: at founding, the cap table is clean — founders hold common stock. After seed, a SAFE holder or note holder is added. After Series A, preferred Series A shares appear, with their own rights. After Series B, another preferred class. The table grows until the exit, when it determines the distribution (Z5.3).",
+      "Founder dilution across stages: a typical founder starts at ~80% (the rest to a co-founder and initial employees), drops to ~60% after seed, ~45% after Series A, ~30% after Series B, ~20% by Series C. By IPO, founders may hold 10–20%. The dollar value of that stake can still be enormous if the company is worth $10B.",
+      "SAFE mechanics in the cap table: SAFEs (G206) appear on the cap table only when they convert at the next priced round. Prior to conversion, they are not equity — but their conversion terms determine how much they will dilute existing holders."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.9",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G207",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G40, ★G42, Z3.7 (G205, the pre/post-money sets the price), Z3.9 (G207, option pool), Z5.3 (exit waterfall). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.9",
+    "local_id": "Z3.9",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "The Option Pool & the Pre-Money Shuffle",
+    "tag": "global",
+    "global_id": "G207",
+    "quick_definition": "The employee equity reserve (ESOP), and the VC convention of requiring the option pool to be expanded inside the pre-money valuation — the \"pre-money shuffle\" — so that the dilution falls on existing shareholders rather than on new investors.",
+    "explainer_covers": [
+      "The option pool: equity reserved for employees, advisors, and contractors, typically 10–20% of fully diluted shares at Series A. Options incentivize the team that will build the company between financing rounds.",
+      "The shuffle mechanic (Feld & Mendelson): VCs typically insist that the option pool be expanded (or created) as part of the Series A before the new investment is priced. This means the option pool shares reduce the pre-money, not the post-money. Example: a $20M pre-money with a required 20% option pool that needs to be created from scratch effectively gives the founders a $16M pre-money (the 20% comes out of the existing holders). This reduces what founders were told they were getting.",
+      "The negotiation: founders should understand the effective pre-money (pre-money minus the new-option-pool creation) and try to minimize the size of the option pool required at closing. VCs, conversely, want a large option pool so future hires don't require additional dilution before the next round.",
+      "Issued vs. unissued options: Feld & Mendelson make explicit that the pool the VCs are discussing is unissued options — not the options already granted. Adding existing grants to the required pool is a trap to watch for.",
+      "The 409A connection: the option pool determines how many options will be issued; the 409A valuation (G208) sets the strike price of those options."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G208",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G42 (dilution), Z3.7 (G205, pre-money), Z3.8 (cap table), Z3.12 (G208, 409A). Source: *Venture Deals*, Chapter 5 (employee option pool section). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.10",
+    "local_id": "Z3.10",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "Economic Terms: Liquidation Preference & the Stack (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The liquidation preference grants preferred shareholders their investment back (sometimes more) before common holders receive anything, and across multiple rounds these preferences stack into a structure that can dominate the exit outcome in weak scenarios.",
+    "explainer_covers": [
+      "Reuse ★G38 (liquidation preference, contributed by PE) and ★G37 (preferred equity): the two globals that carry the core concept. In venture, preferred stock is the standard instrument for every priced round (G204).",
+      "The two components (Feld & Mendelson, Chapter 5): the preference (how much preferred holders get back: typically 1×, meaning they recover their investment before common gets anything) and participation (do preferred holders also share in the remaining proceeds alongside common, after their preference is returned?). Non-participating preferred holders choose between taking their preference or converting to common; participating preferred holders take both.",
+      "The multi-round stack: a company that has raised five priced rounds has five layers of preferred stock, each with its own liquidation preference. In a weak exit, the preferences are paid out in reverse chronological order (most recent first, in a senior/subordinate structure), and common holders — founders and employees — may receive nothing.",
+      "Pay-to-play: a provision (Feld & Mendelson, Chapter 5) requiring existing investors to participate in a down round (G210) or lose some or all of their preferred-stock protections. Pay-to-play provisions are friendly to founders in difficult financings because they prevent investors from sitting on their preferences without supporting the company.",
+      "When the stack is invisible vs. decisive: at a $2B exit for a company that raised $50M, every preferred series converts to common because the per-share value is so high. At a $40M exit for the same company, the $50M in preferences means common gets nothing. The disambiguation callout in Part 1 covers this."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z5.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.7",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G210",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G38, ★G37, ★G39 (anti-dilution), Z5.3 (exit waterfall, where the stack resolves), Z4.7 (G210, the down round triggers the stack acutely). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.11",
+    "local_id": "Z3.11",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "The SAFE & the Convertible Note",
+    "tag": "global",
+    "global_id": "G206",
+    "quick_definition": "Early-stage instruments that accept an investor's money today and defer pricing to a future priced round, bridged by a valuation cap and/or a discount rate — the standard instruments of pre-seed and seed investing.",
+    "explainer_covers": [
+      "The convertible note: a debt instrument with an interest rate, a maturity date (when the company must either repay or convert), a discount rate (the percentage below the next round's price at which the note converts), and often a valuation cap (the maximum valuation at which the note converts, regardless of how high the next round's pre-money is). It is debt until it converts; if the company fails before a priced round, noteholders are creditors.",
+      "The SAFE (Simple Agreement for Future Equity, introduced by Y Combinator ~2013): similar economic terms (cap, discount) but not debt — no interest, no maturity. The investor receives no rights until conversion. SAFEs convert at the next priced round automatically. If the company fails, SAFE holders receive nothing because they are not creditors.",
+      "The cap and discount bridge: a $1M SAFE with a $10M valuation cap will convert into as many shares as a $1M investment at $10M pre-money — regardless of what the Series A pre-money actually is. If the Series A is at $20M pre-money, the SAFE holder gets twice as many shares as someone investing $1M in the round at the round price. The cap protects early investors from having their early risk diluted away by a high subsequent round price.",
+      "Why they exist: at pre-seed and seed, negotiating a full priced round (legal costs, valuation debate, preferred-stock terms) is disproportionately burdensome. SAFEs and notes are simple (a few pages), fast, and defer the hard conversation to when there is more information.",
+      "The risk of stacking SAFEs: a company that raises multiple SAFEs before a priced round can find that the conversion at Series A creates substantial dilution for founders — all the SAFE holders convert at their capped prices and the resulting cap table can be surprising. This was a meaningful issue in 2020–22 for companies that raised large pre-seed and seed rounds on SAFEs."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z2.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (seed stage, where SAFEs/notes are the norm), Z3.7 (G205, the priced round that SAFEs convert into), ★G205. Disambiguation: SAFE/note vs. priced round — covered in Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z3.12",
+    "local_id": "Z3.12",
+    "module": "venture-capital",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "The 409A Valuation",
+    "tag": "global",
+    "global_id": "G208",
+    "quick_definition": "The independent third-party valuation of a private company's common stock required by the IRS under section 409A to set a fair-market-value strike price for employee stock options — and the reason the option strike price is always far below the preferred round price.",
+    "explainer_covers": [
+      "Why it exists: IRS section 409A requires that options be granted at or above the fair market value of the underlying stock to avoid adverse tax treatment for the employee. If options are granted below fair market value, the holder owes taxes immediately on grant (not on exercise), plus penalties.",
+      "Why common is worth far less than preferred: preferred stock carries liquidation preferences (★G38), conversion rights, and other protections that make it more valuable per share than common. The 409A valuation applies a discount to reflect the subordinate economic and control rights of common stock. A Series B preferred-stock round at a $500M post-money may yield a 409A common-stock value of $2–5 per share versus a preferred price of $10 per share.",
+      "The independence requirement: 409A valuations must be conducted by a qualified, independent third-party appraiser. Common service providers include Carta and other cap-table-management platforms.",
+      "Refresh cadence: companies typically refresh the 409A valuation every 12 months or after a material event (a new financing round, an M&A transaction, a significant change in business fundamentals). Options granted between a round close and the next 409A use the last 409A's common-stock value.",
+      "The preferred/common gap and its effect on employee perception: employees who receive options priced at $1 per share while the company has a $50-per-share preferred round price may not intuitively understand the value of their equity. Communicating the gap — and what it means at various exit scenarios — is a governance and retention challenge."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.9",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.10",
+        "note": null
+      },
+      {
+        "ref": "G207",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.9 (G207, options are struck at the 409A price), Z3.7 (G205, the round price that the 409A sits below), Z3.10 (the preferred/common gap is the same economics as the liq-pref vs. common gap). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

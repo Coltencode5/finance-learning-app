@@ -1,0 +1,76 @@
+{
+  "slug": "asset-management",
+  "title": "Asset Management",
+  "kind": "role",
+  "build_order": 5,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Asset Management Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Types of Asset Management (Strategy Branches)",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Investment Process (from the Long-Only Seat)",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Managing the Portfolio (the Ongoing Long-Only Hold)",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "The Firm & the Client",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 22,
+    "global_range": "G137–G158",
+    "zone_node_count": 38,
+    "globals_reused": [
+      "G8",
+      "G9",
+      "G24",
+      "G27",
+      "G47",
+      "G51",
+      "G56",
+      "G57",
+      "G58",
+      "G61",
+      "G62",
+      "G69",
+      "G77",
+      "G83",
+      "G87",
+      "G88",
+      "G90",
+      "G93",
+      "G102",
+      "G106",
+      "G107",
+      "G111",
+      "G112",
+      "G115",
+      "G116",
+      "G120",
+      "G121",
+      "G123",
+      "G124",
+      "G125",
+      "G127",
+      "G135",
+      "G136"
+    ],
+    "gap_count": 14
+  },
+  "status": "mapped"
+}

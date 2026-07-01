@@ -1,0 +1,639 @@
+[
+  {
+    "id": "wealth-management.z1.1",
+    "local_id": "Z1.1",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Wealth Management?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The business of managing the whole financial life of an individual or family — planning, investing, tax, retirement, and estate — on their behalf and in their interest, organized around the family's goals over a finite human lifetime rather than around beating a market benchmark.",
+    "explainer_covers": [
+      "The simple model: a household has goals (retire comfortably, send kids to college, leave a legacy), a finite and shifting time horizon, a tax bill, and limited capacity to bear loss — and wealth management coordinates everything (not just the portfolio) toward those goals.",
+      "What makes it wealth management and not asset management: it is goal-relative, not benchmark-relative (G160 vs. ★ G157); it is comprehensive (investing is one piece of a plan that also covers tax, insurance, retirement, and estate — G159); it is finite-horizon and tax-paying (an individual dies, decumulates, and pays taxes, where an endowment is perpetual and tax-exempt); and it is relationship-driven (the advisor coaches a person through fear and greed — G161).",
+      "The spectrum of who is served: from mass-affluent households (served by advisors, platforms, and increasingly robo-advisors) through high-net-worth (HNW, served by private banks and full-service advisors) to ultra-high-net-worth (UHNW, served by family offices) — one continuum by complexity and assets.",
+      "What the advisor actually delivers: a financial plan, an asset allocation built from low-cost products, ongoing rebalancing and tax management, retirement-income and estate coordination, and — most valuable and least visible — behavioral coaching.",
+      "The size and centrality of the industry: the channel through which the products of every other module reach households — the retail demand side for the funds asset managers run, the IPOs and bonds banks underwrite, and (for the wealthy) the PE, credit, and hedge funds the alternatives world produces."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.9",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.3",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z1.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (the contrast with AM), Z1.3 (`G159` financial planning), `G160` goals-based investing, `G161` the advisor relationship, `★ G155` fiduciary duty, and across the aisle: AM Z1.1 (the institutional buy-side it mirrors), AM Z1.9 (where AM flags this very module), AM Z5.3 (the advisor channel as AM's distribution), `★ G138` index fund (the core product it sells). **GAP: a current source for industry size, the advice-channel landscape, and the mass-affluent/HNW/UHNW segmentation.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a current source for industry size, the advice-channel landscape, and the mass-affluent/HNW/UHNW segmentation",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.2",
+    "local_id": "Z1.2",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Individual vs. the Institution: Wealth Management vs. Asset Management",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Wealth management and asset management are the two halves of the money-management world split by whose money and what objective — asset management runs institutions' (and pooled retail) money against a benchmark at scale; wealth management runs a family's money against that family's goals over a human life — the same products and analytics, opposite seats.",
+    "explainer_covers": [
+      "The shared ground: both invest in (mostly) the same liquid securities, both use the same allocation and product toolkit (★ G143–★ G149), both are fiduciary disciplines, and wealth management is in large part the distribution channel that buys what asset managers build (AM Z5.3).",
+      "The divide, axis by axis: objective (a goal/liability for a specific family, G160, vs. a benchmark-relative return, ★ G157); horizon (finite and shifting, ending in death and bequest, vs. perpetual or rolling); taxes (an individual pays real taxes on every gain and dividend — G166 — where the index, the endowment, and the 401(k) do not, making tax the individual's defining problem); the balance sheet (a household's biggest early asset is human capital, G162, which no institution has); decumulation (an individual must eventually turn the portfolio into lifetime income, G169 — an institution rarely \"spends down\" to zero); and the relationship (a person needs coaching, G161, where an institution's board does not).",
+      "The unifying reframe, in Swensen's own words and books: Pioneering Portfolio Management is the institutional manual (the endowment model, ★ G154); Unconventional Success is its individual sibling — and its conclusion is that the endowment model does not transfer to individuals (who lack elite manager-selection resources), so the right answer for nearly all households is the opposite of the endowment's active-alternatives tilt: low-cost, broadly-diversified, equity-oriented, tax-aware indexing.",
+      "Where the line blurs: the wealthiest individuals (UHNW, family offices, G177) can access the endowment model's alternatives (★ G9, ★ G56), and the giant asset managers now build wealth-channel and direct-indexing products — so the two worlds increasingly converge at the top and through technology (Z5)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G162",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G160` goals-based investing, `★ G157` relative return (the contrast), `★ G154` endowment model (the institutional seat), `G162` human capital, `G166` tax-aware investing, `G169` decumulation, `G161` the advisor relationship, **AM Z1.1 / AM Z1.2** (the asset-management side of this map), **AM Z2.11** (the endowment model this contrasts with), AM Z1.9 (AM's flag to WM). *This is the spine of the whole module — build it as a featured cross-module node, the AM↔WM counterpart to the HF↔AM buy-side spine.*",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.3",
+    "local_id": "Z1.3",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Financial Planning: The Whole-Life Lens",
+    "tag": "global",
+    "global_id": "G159",
+    "quick_definition": "The comprehensive, ongoing process of organizing a household's entire financial life — cash flow, saving, debt, insurance, investments, taxes, retirement, and estate — into one coordinated plan aimed at the family's goals, of which managing the portfolio is only a single component.",
+    "explainer_covers": [
+      "The scope that separates planning from investing: a financial plan covers cash-flow and budgeting, debt management, emergency reserves, insurance and risk protection (life, disability, liability), investment management, tax planning (G166), retirement planning (G169), and estate planning (G173) — the portfolio is one chapter, not the book.",
+      "The planning process (the CFP-style loop): establish the relationship and goals → gather data → analyze the current state → develop recommendations → implement → monitor and revise — a repeating cycle, not a one-time document.",
+      "Goals as the organizing principle (G160): every recommendation traces back to a specific, dated, prioritized goal; the plan's job is to make the trade-offs among goals explicit (save more now vs. retire later vs. leave a legacy) and fund them in priority order.",
+      "The investment policy statement, individual version: the household's written objectives, constraints, risk capacity (G163), and target allocation — the personal analogue of the institution's IPS (AM Z3.1) and policy portfolio (★ G144).",
+      "Why the plan, not the portfolio, is the product: the largest financial outcomes for most households come from planning decisions — how much to save, when to retire, how to insure, how to structure the estate, how to manage taxes — not from squeezing extra basis points out of security selection."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.1",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G159` (this node), `G160` goals-based investing, `G163` risk capacity, `G166` tax-aware investing, `G169` retirement decumulation, `G173` estate planning, `G161` the advisor relationship, Z3.1 (the planning process as the front of the WM \"deal\" flow), AM Z3.1 (the institutional IPS — *the same document, individual seat*). **GAP: a CFP-curriculum or financial-planning-process text — Monroe and Berns cover pieces, but not the integrated professional planning standard.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a CFP-curriculum or financial-planning-process text — Monroe and Berns cover pieces, but not the integrated professional planning standard",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.4",
+    "local_id": "Z1.4",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "Client Segments & Channels",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Wealth management serves a spectrum of households — from mass-affluent to ultra-high-net-worth — through a matching spectrum of channels, from low-cost robo-advisors and platforms up to bespoke single-family offices, with service intensity and customization rising with assets and complexity.",
+    "explainer_covers": [
+      "The segments: mass-market / mass-affluent (modest to a few million in investable assets — served by advisors, broker-dealers, fund platforms, and robo-advisors); high-net-worth (HNW, roughly single-digit millions and up — full-service advisors and private banks); very-high and ultra-high-net-worth (VHNW/UHNW, tens of millions and up — private banks' top tier, multi-family and single-family offices).",
+      "The channels, low- to high-touch: the robo-advisor (G178, automated, cheapest, mass-market); the independent RIA / financial advisor (fee-based planning and investment management); the wirehouse / broker-dealer (the traditional brokerage channel, historically commission-driven); private banking (G176, the bank's bundled HNW service); the multi-family office and single-family office (G177, the UHNW pinnacle).",
+      "How needs change up the spectrum: mass-affluent clients need low-cost allocation, planning, and behavioral discipline; HNW clients add tax complexity, concentrated-stock and liquidity-event management, and estate planning; UHNW families add bespoke alternatives access (★ G9), multi-generational governance, philanthropy, and operating-business and direct-investment complexity.",
+      "The economics of service intensity: low-asset clients are served profitably only at scale and through technology (the robo and platform model); high-asset clients support the cost of a dedicated team — which is why the industry is barbelling into cheap digital advice at one end and high-touch family-office service at the other.",
+      "The liquidity-event pipeline: many wealth-management clients are created by an event — a company sale, an IPO (★ G102), an inheritance, a large equity-comp vesting — which is where concentrated-stock management and the whole planning apparatus first engage."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G176",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G176` private banking, `G177` the family office, `G178` robo-advisor, `G161` the advisor relationship, `★ G9` \"2 and 20\" (the alternatives UHNW clients reach), `★ G102` the IPO process (the liquidity event that creates clients), Z2 (the channels as strategy branches), Z5.3 (distribution, from the AM side). **GAP: current segmentation data and the advice-channel competitive landscape.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "current segmentation data and the advice-channel competitive landscape",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.5",
+    "local_id": "Z1.5",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "Human Capital & the Individual's Balance Sheet",
+    "tag": "global",
+    "global_id": "G162",
+    "quick_definition": "The largest asset most people own early in life is not their portfolio but their human capital — the present value of their future earnings — and treating it as a (usually bond-like) balance-sheet asset that depletes over a working life is the key to sizing how much investment risk a person can actually take.",
+    "explainer_covers": [
+      "The concept (Berns): human capital = the PV of future labor income. For a young worker it dwarfs financial capital; over a career it is steadily converted into financial capital (you sell your labor, save the proceeds), so it shrinks toward zero by retirement.",
+      "Why it reshapes risk-taking: if your large human-capital \"asset\" is bond-like and stable (a tenured professor, a civil servant), your total balance sheet is already heavily \"in bonds,\" so your financial portfolio can hold more equity early on; if your human capital is equity-like and volatile (a commission trader, a startup founder, someone whose income tracks the market), your financial portfolio should hold less. The portfolio's job is to balance the whole balance sheet, not just the investable part.",
+      "The lifecycle implication (G165): young → human-capital-rich and financial-capital-poor → take more financial risk and save aggressively; old → human-capital-poor → de-risk, because there is no longer a long earnings stream to recover from a market loss. This is the theoretical engine under the glide path (G164) and target-date funds.",
+      "The connection to risk capacity (G163): a big slug of safe human capital raises a household's capacity to bear portfolio risk; as human capital depletes, capacity falls — which is why a sensible glide path de-risks with age.",
+      "The frontier and the simplification Berns makes: ideally the volatility and market-correlation of human capital would drive the allocation directly; in practice most planning (and Berns's own model) treats human capital as bond-like and instead anchors on whether the household is saving enough to fund its goals (standard-of-living risk / discretionary wealth, Z1.6)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G162",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G165",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G162` (this node), `G163` risk capacity, `G164` glide path, `G165` lifecycle investing, `G169` decumulation (human capital ≈ 0 by here), `★ G143` asset allocation (human capital is the hidden asset class), `★ G146` diversification (job + portfolio should diversify each other — don't load the 401(k) with employer stock), Z2.10 (target-date funds), AM Z2.10 (the institutional life-cycle/glide-path note). **GAP: human-capital modeling depth (volatility, correlation, labor flexibility) — Berns flags this as a simplification.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "human-capital modeling depth (volatility, correlation, labor flexibility) — Berns flags this as a simplification",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.6",
+    "local_id": "Z1.6",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Risk Capacity vs. Risk Tolerance",
+    "tag": "global",
+    "global_id": "G163",
+    "quick_definition": "Two different things the industry constantly conflates: risk tolerance is how much volatility a client can emotionally stomach (a psychological preference); risk capacity is how much risk their goals and balance sheet can actually withstand (a financial constraint) — and a prudent portfolio is governed by the lower of the two.",
+    "explainer_covers": [
+      "The distinction (Berns's core idea): tolerance is subjective (a feeling, measurable but irrational — Berns measures it with three lottery-style questionnaires for risk aversion, loss aversion, and reflection); capacity is objective (set by the goals, the time horizon, the savings rate, and the balance sheet). The two are independent and frequently in conflict.",
+      "Standard-of-living risk and discretionary wealth (Berns's engine): capacity is made concrete through discretionary wealth (assets minus the present value of the liabilities/goals) and standard-of-living risk (SLR, an inverse measure of the probability of meeting goals). When SLR is high (goals barely funded), risk aversion must be moderated upward — the client can't afford to take the risk they might emotionally want; when SLR is low (goals over-funded), the client's natural risk tolerance can govern.",
+      "The \"use the lower of the two\" rule: you never run a portfolio at a risk level above the client's capacity, no matter how high their tolerance (a thrill-seeker near a hard goal must still de-risk); and you generally don't run far below capacity if that would fail to fund the goals (an over-cautious client with under-saved goals may need more equity, paired with coaching). Berns frames this as deploying the higher of subjective and objective risk aversion.",
+      "Time-varying tolerance: risk tolerance itself drifts — clients feel more risk-averse after losses (the \"break-even effect\") and less after gains (the \"house-money effect\") — so the advisor should measure it periodically and anchor on the average-environment level, a core behavioral-coaching task (G161).",
+      "Why this is the heart of suitability: matching the portfolio to capacity (not just stated tolerance) is the substance of acting in the client's best interest (G181) — and the most common planning error is letting a client's high tolerance override their low capacity, or vice versa."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G162",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G163` (this node), `G162` human capital (raises capacity), `G160` goals-based investing (each goal sets a capacity), `G164` glide path (capacity falls with horizon), `G161` behavioral coaching (managing time-varying tolerance), `G181` fiduciary vs. suitability (matching to capacity *is* the best-interest test), `★ G116` drawdown/volatility (what tolerance is a tolerance *for*), Z3.2 (allocation under capacity). *Real-world layer: Berns Ch. 2 (the client risk profile; SLR; discretionary wealth).*",
+    "gaps": [],
+    "real_world_layer": "Berns Ch. 2 (the client risk profile; SLR; discretionary wealth).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.7",
+    "local_id": "Z1.7",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Tax-Advantaged Accounts: The Wrappers",
+    "tag": "global",
+    "global_id": "G168",
+    "quick_definition": "The account types that shelter investment growth from tax — tax-deferred and tax-free retirement accounts plus targeted vehicles for education and health — whose contribution limits, tax treatment, and withdrawal rules frame the entire household saving-and-decumulation plan.",
+    "explainer_covers": [
+      "The two big tax treatments: tax-deferred (traditional IRA / 401(k): contributions may be pre-tax, growth is untaxed, withdrawals are taxed as ordinary income) vs. tax-free (Roth IRA / Roth 401(k): contributions are after-tax, growth and qualified withdrawals are tax-free) — the central \"pay tax now or later?\" decision, driven by whether you expect a higher tax rate now or in retirement.",
+      "The account menagerie (Swensen's \"alphanumeric soup\"): IRAs, 401(k)/403(b)/457 employer plans, SEP and SIMPLE IRAs for the self-employed, 529 education-savings accounts (tax-free for qualified education), and HSAs (the triple-tax-advantaged health account) — each with its own limits, rules, and ideal use.",
+      "Why the wrapper matters as much as the investment: sheltering high-tax assets inside these accounts is the single most powerful lever an individual has to close the gap between pre-tax and after-tax return (Swensen: taxes can cost a taxable equity investor multiple percentage points a year) — which is why asset location (G166) decides what goes in which wrapper.",
+      "The contribution-and-withdrawal rules that shape the plan: annual contribution limits, early-withdrawal penalties, required minimum distributions (RMDs) that force taxable withdrawals from traditional accounts in later life, and the Roth's absence of RMDs — all of which drive both the accumulation plan and the decumulation order (Z4).",
+      "The estate angle: retirement accounts pass by beneficiary designation (outside the will), and inherited-account rules (the \"see-through trust,\" the 10-year payout) make them a distinct estate-planning problem (G173)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G168` (this node), `G166` tax-aware investing & asset location, `G167` tax-loss harvesting (a *taxable*-account technique — the wrappers are where you *don't* need it), `G169` decumulation (withdrawal order across wrappers), `G159` financial planning, `G173` estate planning (beneficiary designations, inherited accounts), Z4.1 (decumulation sequencing), AM Z1.7 (the institution's tax-exemption — *the wrapper an endowment gets for free*). **GAP: a current tax-code/account-rules reference — limits and rules change yearly and are jurisdiction-specific (US-centric here).**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a current tax-code/account-rules reference — limits and rules change yearly and are jurisdiction-specific (US-centric here",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.8",
+    "local_id": "Z1.8",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "How Advisors Get Paid: Fee Models",
+    "tag": "global",
+    "global_id": "G180",
+    "quick_definition": "Advice is paid for in a few distinct ways — a percentage of assets under management, flat or hourly fee-only planning, commissions on products sold, or a fee-based hybrid — and each model embeds different incentives and conflicts the client must understand to know whose interest is being served.",
+    "explainer_covers": [
+      "The AUM model (dominant): the advisor charges an annual percentage of assets managed (often ~1%, declining for larger accounts) — aligning the advisor with growing the portfolio, but charging the same whether or not advice adds value, and creating conflicts around advice that reduces AUM (paying off a mortgage, buying an annuity, gifting to heirs).",
+      "Fee-only / flat / hourly planning: the advisor is paid directly by the client for advice (a retainer, a project fee, an hourly rate) and sells no products — the model with the fewest product conflicts, and the one most cleanly aligned with planning (G159) rather than asset-gathering.",
+      "Commission: the advisor (historically a broker) is paid by the product provider when the client buys a fund, annuity, or insurance policy — the model with the sharpest conflict, since it rewards selling the highest-commission product rather than the best one (the abuse Swensen documents in the for-profit fund industry).",
+      "Fee-based (hybrid): a mix — an AUM or planning fee plus commissions on some products — common and legitimate but requiring disclosure, because the conflicts of both models coexist.",
+      "Why the model is inseparable from the fiduciary question (G181): how someone is paid shapes whose interest they serve — which is exactly why the fiduciary-vs-suitability distinction (Z1.9) matters most where commissions and product sales are involved. The cost-drag arithmetic (★ G150) applies to advice fees too: a 1% AUM fee, compounded over decades, is a large share of lifetime return — so the fee must buy commensurate planning and behavioral value (G161)."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G180` (this node), `G181` fiduciary vs. suitability, `G161` the advisor's value (what the fee must buy), `★ G150` cost/fee drag (advice fees compound too), `★ G151` AUM economics (the advisor's business is an AUM business), `★ G8` management fee (the *product* fee layered under the advice fee — the \"fee on a fee\" problem), `★ G158` the active-vs-passive debate (cheap products make the advice fee more visible), Z5.1 (the WM firm as a business). *Real-world layer: Swensen,* Unconventional Success *(the for-profit-fund conflict).*",
+    "gaps": [],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.9",
+    "local_id": "Z1.9",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Fiduciary vs. Suitability",
+    "tag": "global",
+    "global_id": "G181",
+    "quick_definition": "The defining standard-of-care question in advice: a fiduciary must act in the client's best interest and put the client first; a (historically lower) suitability standard required only that a recommendation be \"suitable\" — a distinction that decides whose interest wins when advisor and client incentives diverge.",
+    "explainer_covers": [
+      "The two standards: a fiduciary (a registered investment adviser, a true financial planner) owes duties of loyalty and care — act solely in the client's interest, disclose and manage conflicts, control costs; a suitability standard (historically the broker-dealer world) required only that a product fit the client's situation, even if a cheaper or better one existed and even if the broker earned more on the one sold.",
+      "Why it matters in dollars: under suitability, a broker could sell a high-commission, high-fee fund that was \"suitable\" but inferior — the precise mechanism by which, in Swensen's account, the for-profit fund industry extracted wealth from individuals. The fiduciary standard is meant to close that gap.",
+      "The same duty, two seats (the cross-module link): this is the individual-facing version of the fiduciary duty an asset manager owes its fund (★ G155) and a GP owes its LPs (PE Z1.20) — the same legal and ethical concept, here owed by an advisor to a person rather than by a manager to a pool.",
+      "The regulatory patchwork and its motion: the standard varies by who the advisor is (RIA vs. broker-dealer), by jurisdiction, and over time (the US has moved toward — and partly back from — a uniform best-interest standard; Reg BI; the on-again/off-again fiduciary rules for retirement advice) — a live, contested area.",
+      "The practical client takeaway: ask how the advisor is paid (G180) and what standard they're held to — the two questions that, together, reveal whose interest comes first."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.20",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G181` (this node), `G180` fee models, `★ G155` fiduciary duty (the institutional/GP version — *the same duty*), `G161` the advisor relationship, `★ G150` cost/fee drag (the cost the duty obliges controlling), Z4.4 (acting in the client's interest through life events), **PE Z1.20** (the GP's fiduciary duty to LPs), **AM Z1.7** (the manager's fiduciary duty — *the same node, fund seat*). **GAP: jurisdiction- and regulation-specific advice law (Reg BI, the DOL fiduciary saga, the global patchwork) — recency.**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "jurisdiction- and regulation-specific advice law (Reg BI, the DOL fiduciary saga, the global patchwork) — recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z1.10",
+    "local_id": "Z1.10",
+    "module": "wealth-management",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Where Wealth Management Sits Among the Modules",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The map of where wealth management touches the five sibling modules — as the individual-client counterpart to Asset Management, the retail (and HNW) demand for the products every other module builds, the place the institutional allocator's seat gets a private-client mirror, and the channel through which households reach public markets, funds, and (for the wealthy) alternatives.",
+    "explainer_covers": [
+      "WM ↔ Asset Management: the two halves of the money-management world (Z1.2) — same products and analytics, split by individual-vs-institutional objective; wealth management is also AM's distribution channel (AM Z5.3) and the buyer of its funds. The densest seam in this module.",
+      "WM ↔ the institutional allocator (the LP-side mirror): the endowment/pension/foundation seat (AM Z5.4, ★ G154, and the LP-side nodes of PE Z5, HF Z5, Credit Z5) has a private-client mirror — the family office (G177) and the HNW investor who, like a mini-endowment, sets a policy portfolio, selects managers, and (uniquely) plans around taxes, a finite horizon, and an estate. The endowment model is the contrast that defines the individual's problem.",
+      "WM ↔ Investment Banking: wealth-management clients are often created by IB events — the founder whose company is sold or taken public (★ G102), the executive with concentrated equity comp — and the resulting liquidity event is where concentrated-stock management and the whole planning apparatus engage; the wealthy also buy the IPOs and bond deals IB underwrites.",
+      "WM ↔ Private Equity, Private Credit & Hedge Funds: for HNW/UHNW clients, wealth management is the retail-and-private-wealth demand for alternatives — the PE, private-credit, and hedge-fund products (★ G9, ★ G56, ★ G57) that the democratization/evergreen-vehicle trend (PE Z5.22, AM Z5.6) is pushing down into the wealth channel; the individual is the ultimate LP (★ G7), reaching these funds through advisors, feeders, and now semi-liquid vehicles.",
+      "The unifying lesson: one capital market, now six seats — the bank advises and finances, PE owns private companies, private credit lends and holds, the hedge fund trades for absolute return, the asset manager holds for a benchmark at scale, and the wealth manager plans, allocates, and coaches a family's money across a human life — assembling the products of all five into one household's goals."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.9",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G160` goals-based investing, `G177` the family office, `★ G154` endowment model (the allocator mirror), `★ G102` the IPO process (the client-creating event), `★ G7` LP (the individual as ultimate LP), `★ G9` \"2 and 20\" (alternatives in the wealth channel), **AM Z1.9** (the asset-management side of this map — *where AM names WM*), **AM Z5.4** (the institutional allocator the family office mirrors), **PE Z5.22** (retail democratization of PE), **AM Z5.6** (the wealth-channel push). *This is the module's \"how it all connects\" hub — build it as the WM counterpart to AM Z1.9.* ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

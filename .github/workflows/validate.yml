@@ -1,0 +1,23 @@
+name: validate-content
+on:
+  push:
+    paths: ["content/**", "schemas/**", "pipeline/**"]
+  pull_request:
+    paths: ["content/**", "schemas/**", "pipeline/**"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema
+      - name: Validate canonical content
+        run: python pipeline/validate/validate.py
+      - name: Graph builds cleanly and is committed fresh
+        run: |
+          python pipeline/build/build_graph.py
+          git diff --exit-code graph/graph.json \
+            || (echo "graph.json is stale — run build_graph.py and commit" && exit 1)

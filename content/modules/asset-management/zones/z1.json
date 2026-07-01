@@ -1,0 +1,528 @@
+[
+  {
+    "id": "asset-management.z1.1",
+    "local_id": "Z1.1",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Asset Management?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The business of investing other people's money in public, mostly liquid securities — stocks and bonds — on their behalf, for a fee, under a fiduciary duty, with the goal of meeting a benchmark or a long-term objective rather than chasing absolute returns at any cost.",
+    "explainer_covers": [
+      "The simple model: a manager pools money from many investors (or runs it for one big one), buys a diversified portfolio of securities, and charges a fee measured as a slice of the assets — the opposite of the performance-fee, absolute-return hedge-fund model.",
+      "What makes it \"asset management\" and not hedge-fund investing: long-only (mostly no shorting or leverage), benchmark-relative (judged against an index), diversified and fiduciary (legally bound to client interests), and scale-driven (a business of gathering assets).",
+      "The size and centrality of the industry: the largest managers (BlackRock, Vanguard, Fidelity, State Street) run tens of trillions — the plumbing of global retirement and savings, and the dominant owners of public companies.",
+      "Who the clients are: retail savers (through mutual funds and ETFs and their 401(k)s), and institutions (pensions, endowments, foundations, insurers, sovereign wealth funds) through pooled funds and separate mandates.",
+      "The two big questions that organize everything downstream: active or passive? and what's the benchmark?"
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (the buy-side split with hedge funds), Z1.3 (`★ G137` active vs. passive), `★ G157` relative return, `★ G151` AUM economics, `★ G155` fiduciary duty, and across the aisle: HF Z1.1 (the absolute-return buy-side it contrasts with), IB Z1.3 (`★ G83` the sell-side that serves it), PE Z1.1 (the private-markets buy-side), the future Wealth Management module (private-client advisory — *the sibling that allocates to these products*). **GAP: a current source for the modern scale, the Big Three, and the passive tipping point (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "a current source for the modern scale, the Big Three, and the passive tipping point (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.2",
+    "local_id": "Z1.2",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Buy-Side's Two Halves: Asset Management vs. Hedge Funds",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Asset management and hedge funds are the two halves of the buy-side — both invest capital in (mostly public) securities and both use the same analytical toolkit, but they sit on opposite sides of a philosophical divide: cheap, diversified, benchmark-relative beta versus expensive, concentrated, absolute-return alpha.",
+    "explainer_covers": [
+      "The shared ground: both are the buy-side (they own positions, vs. the sell-side that advises and distributes — ★ G83); both consume sell-side research and trade through the same banks; both value securities with the same toolkit (★ G87–★ G95) and the same performance mathematics (★ G106–★ G116).",
+      "The divide, axis by axis: objective (relative return ★ G157 vs. absolute return ★ G135), fees (a fee on assets ★ G151 vs. 2-and-20 ★ G9), tools (long-only and unlevered vs. short, leverage, derivatives), risk metric (tracking error ★ G141 vs. drawdown ★ G116), constraint (fiduciary/diversified ★ G155 vs. lightly-regulated/concentrated), and business (gather assets at scale vs. generate scarce alpha).",
+      "The unifying reframe: hedge funds strip out beta to sell pure alpha; asset managers mostly sell beta cheaply and well, or chase benchmark-relative alpha under tight constraints. Same primitives, different seat.",
+      "Where the line blurs: \"active\" asset managers genuinely hunt alpha (just under tighter constraints), smart-beta products sell what was once \"alpha\" as cheap beta, and the giant managers now run hedge-fund-like and private strategies too."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G157` relative return, `★ G135` absolute return, `★ G151` AUM economics, `★ G9` \"2 and 20\", `★ G137` active vs. passive, HF Z1.1 / HF Z1.3 (the hedge-fund side of this map), HF Z1.10 (how HFs connect to the rest), Z5.x (the fee debate). *This is the spine of the whole module — build it as a featured cross-module node.*",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.3",
+    "local_id": "Z1.3",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Active vs. Passive Investing — The Defining Split",
+    "tag": "global",
+    "global_id": "G137",
+    "quick_definition": "The choice that organizes the entire discipline: passive investing buys and holds the whole market at minimal cost and accepts the market's return; active investing tries to beat a benchmark through security selection or timing, and charges more for the attempt.",
+    "explainer_covers": [
+      "The passive case in one line: since the market return is, by arithmetic, the average return of all investors before costs, the cheapest way to capture it is to own the whole index and pay almost nothing — and that reliably beats the average active manager after fees (deep version of the cost argument in Z5, ★ G150).",
+      "The active case in one line: markets are not perfectly efficient (★ G125), so a skilled manager can find mispriced securities and beat the benchmark — if their skill exceeds their fees, which the evidence says is rare and hard to identify ex ante.",
+      "The spectrum between them: pure index funds → smart-beta/factor tilts (★ G148) → benchmark-aware active → high-active-share concentrated active → unconstrained. Most \"active\" money sits closer to the benchmark than its fees imply (the closet-indexer problem, ★ G142).",
+      "Why this is the question: it determines the fee you pay, the tracking error you accept, and the entire economics of the manager you hire — and the decades-long shift of money from active to passive is the dominant structural story in the industry.",
+      "The key subtlety: passive isn't \"no decisions\" — which index, which asset allocation (★ G143), and when to rebalance (★ G147) are all active choices. Passive at the security level still requires active choices at the portfolio level."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G142",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G138` index fund, `★ G150` cost/fee drag, `★ G125` market efficiency, `★ G158` the active-vs-passive debate, `★ G148` smart beta (the middle ground), `★ G142` active share, Z2.1 (the strategy spectrum), HF Z1.3 (alpha vs. beta — *the hedge-fund framing of the same idea*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.4",
+    "local_id": "Z1.4",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "Relative Return & the Benchmark",
+    "tag": "global",
+    "global_id": "G157",
+    "quick_definition": "The long-only mandate measures success not against zero but against a benchmark index — beating or matching the market, not making money in all weather — which makes the benchmark the gravitational center of everything a manager does.",
+    "explainer_covers": [
+      "Relative vs. absolute return (G157): a long-only manager who loses 8% against a benchmark down 10% has succeeded; the same result would be a failure for a hedge fund. The mandate, not the manager's preference, sets the scorecard.",
+      "The benchmark (G140) as the neutral starting point: it defines \"the market\" for the mandate, sets the manager's default weights (overweight a stock only if you think it'll beat the index), and converts raw return into the active return that skill is judged on.",
+      "How the benchmark shapes behavior: it sets the tracking-error budget (★ G141), defines what \"risk\" means (deviating from the index, not losing money), and creates the central tension of active management — conviction (bet away from the benchmark) vs. career risk (hug it).",
+      "Benchmark choice and its pitfalls: the index must match the mandate (a small-cap manager judged against the S&P 500 will look skilled or hopeless for the wrong reasons); benchmark-relative thinking can also entrench bubbles (you must hold the expensive index darlings or risk underperforming).",
+      "The honest tension: benchmark-relative investing is what fiduciary, scale-driven management requires, but it also produces the \"closet indexing\" and short-termism that the active-management critique (★ G158) attacks."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.8",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G142",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G140",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G135` absolute return (the contrast), `★ G141` tracking error, `★ G142` active share, `★ G112` information ratio (active return ÷ active risk — *the benchmark-relative skill metric*), `★ G140` benchmark, Z3.1 (setting the mandate), Z5.5 (the fee debate), HF Z1.8 (the absolute-return mandate it mirrors).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.5",
+    "local_id": "Z1.5",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "Fund & Firm Structures",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The legal vehicles asset management runs through — the open-end mutual fund, the ETF, the separately managed account, and the institutional mandate — and the firm (the management company) that operates them.",
+    "explainer_covers": [
+      "The mutual fund (★ G152): open-end, daily NAV pricing, issues and redeems shares on demand, heavily regulated (in the US, the 1940 Act) for retail investor protection — the mass-market workhorse.",
+      "The ETF (★ G139): an exchange-listed fund that trades intraday and stays near its underlying value through in-kind creation/redemption by authorized participants — cheaper and more tax-efficient than a mutual fund, and the vehicle driving the passive boom.",
+      "The separately managed account / institutional mandate (★ G153): a portfolio run for one large client who owns the securities directly, with custom guidelines, fees, and reporting — the institutional counterpart to a pooled fund.",
+      "The firm: the management company (the asset manager itself) vs. the funds it sponsors; the role of the board and the custodian; how a firm runs hundreds of funds and mandates off one investment platform.",
+      "Other wrappers in brief: collective investment trusts (CITs) for retirement plans, UCITS funds (the European cross-border standard), closed-end funds, and interval/evergreen vehicles (the frontier — see Z5)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.9",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G152",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      },
+      {
+        "ref": "G153",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G152` mutual fund, `★ G139` ETF, `★ G153` SMA/mandate, `★ G138` index fund, Z1.6 (the economics these vehicles run on), Z2.1 (vehicles map to strategy types), Credit Z1.9 (the BDC — *a different fund wrapper for a different asset class*), the future Wealth Management module (the channel that sells these). **GAP: fund operations, transfer agency, and the 40-Act/UCITS regulatory detail.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "fund operations, transfer agency, and the 40-Act/UCITS regulatory detail",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.6",
+    "local_id": "Z1.6",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "How Asset Managers Make Money: AUM-Based Fees & Scale",
+    "tag": "global",
+    "global_id": "G151",
+    "quick_definition": "The asset manager's revenue is a small annual percentage of the assets under management it runs — so its business is fundamentally about gathering and keeping scale, a completely different engine from the hedge fund's share-of-profits model.",
+    "explainer_covers": [
+      "The model: a fee of anywhere from ~3–5 basis points (a broad index ETF) to ~50–100+ bps (active equity) on AUM, charged whether the fund wins or loses — predictable, recurring revenue that scales with assets, not performance.",
+      "Why scale is everything: costs are largely fixed (one research team, one platform), so each incremental dollar of AUM is high-margin — which drives relentless consolidation, the race to cut fees, and the dominance of the largest players (the ★ G150 cost-drag story is the flip side of this).",
+      "The contrast with 2-and-20 (★ G9): the hedge fund/PE firm shares profits (asymmetric, performance-driven, capacity-constrained); the asset manager takes a slice of assets (symmetric, scale-driven, capacity-loving). Reuse ★ G9 here purely as the contrast — do not rebuild it.",
+      "The fee-compression spiral: passive's low fees drag the whole industry's fees down, squeezing the undifferentiated active middle and forcing managers toward either ultra-cheap scale (index) or genuinely scarce active skill — the barbell.",
+      "The economics of the firm: management fees fund the business and the profits; distribution (getting into 401(k) menus, advisor platforms, and model portfolios) is as decisive as investment skill."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G151` AUM economics, `★ G9` \"2 and 20\" (the contrast), `★ G8` management fee (the PE/HF node, here as the *whole* fee not a base on top of carry), `★ G150` cost/fee drag, `★ G158` the active-vs-passive debate, Z5.1 (the firm as a business), Z5.5 (fee compression), HF Z1.5 (the performance-fee model it contrasts with).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.7",
+    "local_id": "Z1.7",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Fiduciary Duty & the Prudent Investor",
+    "tag": "global",
+    "global_id": "G155",
+    "quick_definition": "The legal and ethical obligation to manage other people's money solely in their interest, with the care, skill, and diversification a prudent professional would use — the constraint that shapes every decision a long-only manager makes.",
+    "explainer_covers": [
+      "The core duties: loyalty (act solely in the client's interest, no self-dealing) and care (the diligence of a prudent expert) — the bedrock of the entire relationship, and the reason asset management is regulated as it is.",
+      "The prudent investor rule: the modern standard judges prudence at the portfolio level, not security by security — diversification is effectively required, and reckless concentration or un-hedged speculation is a breach. This is why long-only managers diversify and avoid the concentrated, levered bets a hedge fund is free to make.",
+      "Where it bites: suitability of investments to the mandate, the duty to control costs (a high-fee closet indexer can be a fiduciary problem), conflicts of interest (proprietary products, soft dollars), and the duty to monitor.",
+      "The institutional layer: ERISA for US pensions, UPMIFA for endowments, and the trustee's duties — the legal scaffolding behind the policy portfolio and manager-selection discipline of Zone 5.",
+      "The contrast that illuminates it: the hedge fund's lighter regulatory perimeter exists precisely because its investors are sophisticated and can fend for themselves; the asset manager's fiduciary weight exists because it runs the retirement savings of ordinary people."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.20",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G155` fiduciary duty, `★ G146` diversification (effectively mandated by prudence), `★ G143` asset allocation (the prudent-investor portfolio decision), `★ G150` cost/fee drag (the duty to control costs), Z4.4 (stewardship — fiduciary duty extended to *owned* companies), Z5.6 (manager selection as a fiduciary act), PE Z1.20 (the GP's fiduciary duty to LPs — *the same duty, private-markets seat*). **GAP: jurisdiction-specific fiduciary law (ERISA, UPMIFA, the global patchwork).**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "jurisdiction-specific fiduciary law (ERISA, UPMIFA, the global patchwork",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.8",
+    "local_id": "Z1.8",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Market Efficiency & Why Most Active Managers Lag",
+    "tag": "global",
+    "global_id": "G125",
+    "quick_definition": "The efficient-market hypothesis says prices already reflect available information, so beating the market is hard — and the long-only data bears out a humbling version of this: after fees, the majority of active managers underperform their benchmark, persistently.",
+    "explainer_covers": [
+      "The EMH in one line and Malkiel's verdict: markets are mostly efficient most of the time, so the blindfolded-chimp-with-darts portfolio is hard to beat — but not perfectly efficient, leaving room (in pockets, and unevenly) for genuine skill. This is the same node as HF Z1.9 — here read for what it means for long-only active management.",
+      "Sharpe's arithmetic, the AM version: active management is a zero-sum game before costs (every overweight is someone's underweight), so the average active dollar must, after costs, underperform the index it's drawn from — the mathematical floor under the active-vs-passive debate (★ G150, ★ G158).",
+      "The evidence Malkiel marshals: more than two-thirds of active managers are beaten by a low-cost index fund over time, and the few who win this year rarely repeat — making persistent skill the rare and valuable thing manager selection (★ G156) hunts for.",
+      "The implication for strategy: efficient corners (large-cap US equities) reward cost discipline and indexing; less-efficient corners (small-cap, emerging markets, distressed) reward depth and may justify active fees — the same inefficiency-map the hedge-fund module uses, read from the long-only seat.",
+      "The behavioral counterpoint (Malkiel Ch. 10, Graham throughout): markets are moved by crowds and emotion (bubbles, the pendulum ★ G127), so inefficiency is real — but exploiting it consistently, net of fees, is what almost no one does."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.9",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G125` market efficiency, `★ G150` cost/fee drag, `★ G158` the active-vs-passive debate, `★ G124` second-level thinking, `★ G115` Fundamental Law (why skill is so hard to scale), `★ G127` cycles, Z1.3 (active vs. passive), Z5.6 (manager selection — finding the persistent winners), HF Z1.9 (the hedge-fund framing of efficiency).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z1.9",
+    "local_id": "Z1.9",
+    "module": "asset-management",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Where Asset Management Sits on the Buy-Side",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The map of where asset management touches the four sibling modules — as the other half of the buy-side alongside hedge funds, the demand side for what investment banks underwrite, the public-markets cousin of private equity and credit, and the funder (through the institutional channel) of all of them.",
+    "explainer_covers": [
+      "AM ↔ Hedge Funds: the two halves of the buy-side, sharing the analytical toolkit but split on philosophy (Z1.2) — the densest seam in the app.",
+      "AM ↔ Investment Banking: asset managers are the buy-side demand for the securities IB underwrites — they buy the IPOs (★ G102) and the bond deals the ECM/DCM desks bring (the demand side of IB Z2), and they consume sell-side research; cross-reference IB Z1.2 and ★ G83.",
+      "AM ↔ Private Equity & Private Credit: public-markets management is the liquid cousin of PE's and Credit's illiquid private investing — and the institutional allocator (Z2's endowment branch, ★ G154) funds all three out of one portfolio; cross-reference PE Z5.6 and Credit Z5.x.",
+      "AM ↔ Wealth Management (the sibling not built here): wealth management / private-client advisory is the retail distribution and allocation layer that packages asset-management products for individuals — flag the connection, build it later.",
+      "The unifying lesson: one capital market, now five seats — the bank advises and finances, PE owns private companies, private credit lends and holds, the hedge fund trades public securities for absolute return, and the asset manager holds public securities for a benchmark-relative return at scale, as a fiduciary."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G83` sell-side/buy-side, `★ G102` the IPO process (the demand side), `★ G154` endowment model (the allocator across modules), HF Z1.10 (the hedge-fund side of this map), IB Z1.2 (the franchise it buys from), PE Z5.6 (the allocator's PE seat), Credit Z5.x (the allocator's credit seat), the future Wealth Management module. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

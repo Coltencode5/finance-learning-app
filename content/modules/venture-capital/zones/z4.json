@@ -1,0 +1,365 @@
+[
+  {
+    "id": "venture-capital.z4.1",
+    "local_id": "Z4.1",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "The Portfolio After the Check",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Once invested, the VC shifts from picking to helping — taking a board seat, providing strategic support, and accompanying the company through the long road to exit while monitoring whether the power-law bet is playing out.",
+    "explainer_covers": [
+      "The pick-to-help transition: the investment decision is binary (invest or pass); the post-investment relationship is continuous. The VC's role changes from evaluator to partner, with a board seat (G211) as the formal mechanism.",
+      "What \"help\" looks like: recruiting (the most common request from portfolio companies, per Kupor — VCs with large networks can open doors to executives, engineers, and early customers); strategic advice (framing the next round, navigating a pivot); business development (introductions to potential customers, partners, and acquirers); follow-on financing (exercising pro-rata rights and reserves, G209).",
+      "The monitoring obligation: the VC also monitors. At each board meeting, she reviews financial performance against plan, headcount against budget, burn and runway (G214), and the company's progress toward the next financing milestone.",
+      "The power law again: not all portfolio companies get the same time and attention. The best-performing companies attract the most support (and more capital via follow-on). This is rational given the power law — the few winners deserve the most help. The underperformers may be triage'd.",
+      "The founder relationship: the VC-founder relationship can span 8–12 years. The quality of this relationship — built on trust and candor — often matters more than any specific tactical input."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z4.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G211",
+        "note": null
+      },
+      {
+        "ref": "G216",
+        "note": null
+      },
+      {
+        "ref": "G209",
+        "note": null
+      },
+      {
+        "ref": "G214",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.2 (G211, board/governance), Z5.1 (exit, the end of the relationship), Z1.8 (G216, platform support), Z4.4 (G209, follow-on), Z4.6 (G214, monitoring burn). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.2",
+    "local_id": "Z4.2",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "VC Governance: Board Seats, Information Rights & Protective Provisions",
+    "tag": "global",
+    "global_id": "G211",
+    "quick_definition": "The minority-investor control toolkit — influence exercised through board representation and veto rights rather than through the majority-control ownership of a buyout — the mechanism by which a VC shapes a company without owning it.",
+    "explainer_covers": [
+      "The board of directors: a VC typically takes one board seat at Series A (often as part of a five-person board: two founders, two investors, one independent). The board seat is the formal channel for oversight, strategy, and — in extremis — management changes.",
+      "Information rights: the contractual right (in the term sheet, Z3.6) to receive regular financial statements, board observer status, and access to audited financials. These rights matter most when things go wrong and the VC needs to monitor a company she doesn't control.",
+      "Protective provisions (vetoes): contractual rights granted to preferred shareholders that require their consent before the company can take certain major actions — selling the company, issuing new securities, incurring debt above a threshold, changing the certificate of incorporation. These provisions let a minority investor block decisions that would damage its position.",
+      "VC governance vs. PE control: the PE buyout investor owns a majority and decides; the VC minority investor persuades and vetoes. The critical consequence: a VC cannot force a founder to sell (unless drag-along rights apply, ★G43), cannot unilaterally replace the CEO (unless board dynamics allow it), and cannot set strategy over the founder's objection in most cases.",
+      "The fiduciary complexity (Kupor, Chapter 13 — \"In Trados We Trust\"): board members owe fiduciary duties to all shareholders, including common holders (founders and employees). When a company is sold at a price that returns the preferred preferences but gives common nothing, board members face potential liability. The Trados case is the canonical VC governance cautionary tale."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.6",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.7",
+        "note": null
+      },
+      {
+        "ref": "G210",
+        "note": null
+      },
+      {
+        "ref": "G43",
+        "note": null
+      },
+      {
+        "ref": "G44",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z4.x (control contrast), Z3.6 (the term sheet provisions that create these rights), Z4.7 (G210, down round, where governance is tested), ★G43, ★G44. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.3",
+    "local_id": "Z4.3",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Power-Law Portfolio Construction & the \"Return-the-Fund\" Test",
+    "tag": "global",
+    "global_id": "G202",
+    "quick_definition": "The discipline of building a portfolio in which every bet is sized and targeted to be capable of returning the entire fund on its own — using ownership targets rather than diversification to allocate capital.",
+    "explainer_covers": [
+      "The return-the-fund test: for a $500M fund, each investment should have a plausible path to generating $500M+ in returns to the fund. This does not mean every investment will; it means that the analysis at the time of investment should make that outcome believable — otherwise the bet cannot be a power-law winner, and the VC is essentially making a diversified allocation that cannot justify the illiquidity or the fees.",
+      "Ownership targets: the test is a function of ownership. If the VC needs a $500M return and the portfolio company is expected to be worth $2B at exit, the VC needs to own ~25% of the company at exit. This sets the minimum ownership target at investment, which in turn sets the check size relative to the round (you need to buy enough ownership to reach the target after dilution from future rounds).",
+      "Portfolio concentration vs. diversification: this logic inverts the standard diversification argument. A VC running a $500M fund cannot afford to make fifty equal-sized $10M bets and call it diversification — no single investment can return the fund at $10M. The portfolio construction is concentrated in terms of conviction, even if there are many positions.",
+      "The implication for follow-on: if the return-the-fund test passes at Series A, the VC should maintain ownership through subsequent rounds (pro-rata, G209) to ensure the stake hasn't been diluted away by the time the winner is worth enough to return the fund.",
+      "The Fundamental Law of Active Management (★G115) — inverted: in quantitative and long-only active management, the Fundamental Law says returns scale with breadth (more bets × higher IC). Venture inverts this: the power law makes breadth a trap (spreading capital too thin can't produce fund-returners). Extreme low breadth + extreme high required skill-per-bet is the right framing."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G209",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (★G201, the power law is the reason for this discipline), Z4.4 (G209, reserves and follow-on to maintain ownership), ★G115 (the Fundamental Law, inverted), HF Z3.2, AM Z4.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.4",
+    "local_id": "Z4.4",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Pro-Rata Rights, Follow-On Strategy & Reserves",
+    "tag": "global",
+    "global_id": "G209",
+    "quick_definition": "The contractual right to invest in later rounds to maintain ownership percentage, combined with the fund-level discipline of reserving capital to double down on the portfolio's winners.",
+    "explainer_covers": [
+      "Pro-rata rights: a contractual term (often in the original term sheet, Z3.6) giving a VC the right — but not the obligation — to invest in the company's next financing round at the same terms as new investors, in an amount sufficient to maintain its ownership percentage. Without pro-rata, every subsequent round dilutes the early investor.",
+      "The reserve ratio: a fund's reserve ratio is the proportion of its committed capital set aside for follow-on investments (vs. new investments). Typical VC funds hold reserves of 50–70% of committed capital for follow-on into existing portfolio companies. The reserve allocation depends on the fund's strategy, stage focus, and expected company capital needs.",
+      "The winners-only discipline: the key strategic decision is which companies to follow into subsequent rounds. A VC who follows every investment proportionally is not exercising judgment — they are passively maintaining dilution protection. The power law says: reserve your follow-on capital for the companies showing signs of being the rare winner. Doubling down on losers to recover cost is a trap.",
+      "Reserves and fund timing: late-vintage investments (made in years 4–5 of the investment period) leave less time for the company to develop and require less reserve because there are fewer rounds remaining before the fund's harvest period. Kupor discusses this at length — for founders, understanding where the fund is in its lifecycle matters for predicting the VC's follow-on capacity.",
+      "The pro-rata right and its market: in hot markets, pro-rata rights are often exercised and honored; in competitive rounds, companies sometimes exclude existing investors to add new strategic ones. The pro-rata right is a negotiated term, not an absolute guarantee."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z4.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G202",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.3 (G202, portfolio construction — reserves enable maintaining ownership in winners), ★G39 (anti-dilution is a different protection: adjusting price, not maintaining percentage), Z2.1 (G204, each new round triggers pro-rata considerations). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.5",
+    "local_id": "Z4.5",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "The Venture Markup & Mark-to-Market",
+    "tag": "global",
+    "global_id": "G203",
+    "quick_definition": "The convention of carrying a venture holding at its most recent round price, producing paper gains (TVPI) that may diverge sharply from realized cash (DPI) — the source of venture's distinctive reporting complexity and the reason \"paper unicorn\" and \"realized returns\" require separate tracking.",
+    "explainer_covers": [
+      "The convention: when a VC-backed company raises a new round at a higher valuation, the VC marks up all its holdings in that company to the new price. A firm that invested $5M for 20% of a company that is now worth $500M (in a new round) marks its position to $100M — even if no shares have been sold.",
+      "The paper vs. cash distinction (★G3): TVPI (total value to paid-in) counts both realized cash and marked-up unrealized holdings. DPI (distributions to paid-in) counts only realized cash. In PE, this gap is moderated by regular exits and audited valuations. In venture, the gap can be enormous: a fund with several \"unicorn\" holdings may show a 5× TVPI and a 0.1× DPI for years.",
+      "Why markups matter to LPs: LPs report their portfolios to their own beneficiaries (university boards, pension fund trustees) using the marked-up valuations. A high TVPI is useful for reporting — but only DPI pays the university's operating budget. The 2021 vintage of VC funds saw massive TVPIs based on inflated late-stage round prices; when those companies' implied valuations collapsed in 2022–24, TVPIs compressed sharply.",
+      "The markup game: critics argue that aggressive markups — carried at the most recent round price even when the company's trajectory has worsened — inflate apparent fund performance and assist in fundraising for subsequent funds. This is an incentive misalignment between the GP (who benefits from high TVPI for fundraising) and the LP (who needs DPI).",
+      "Connecting to the J-curve (★G4): the markup convention makes the reported J-curve shallower than the cash J-curve. The trough is narrowed because marked-up positions look positive before any cash is returned. This can give LPs a false sense of how well the fund is doing in early years."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z1.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.9",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (the J-curve), Z1.9 (return metrics), Z5.4 (DPI vs. TVPI at the fund level), ★G1/G2/G3, AM Z5.x (LPs use these marks). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.6",
+    "local_id": "Z4.6",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Burn Rate & Runway",
+    "tag": "global",
+    "global_id": "G214",
+    "quick_definition": "The startup's cash-consumption rate and the number of months of survival that current cash buys — the company's clock, driving every financing decision, every milestone target, and every conversation with its board and investors.",
+    "explainer_covers": [
+      "Burn rate defined: the net amount of cash a company spends each month — gross cash out minus any cash in from revenues. A pre-revenue company burning $300K/month has a gross burn equal to its net burn. A company with $100K of monthly revenue burning $400K gross has a net burn of $300K.",
+      "Runway: burn rate ÷ cash on hand = months of runway (time to zero). A company with $3M in the bank burning $300K/month has 10 months of runway. This is the clock.",
+      "Why runway to the next milestone matters more than runway to zero: a company that runs to zero is dead. But a company that raises its next round after a good milestone has a much better chance of survival than one that raises in desperation with three months left. The rule of thumb: start raising at 12–18 months of runway. By the time a round closes (typically 3–6 months), the company has 6–12 months left.",
+      "The financing treadmill: if each new round buys only 12–18 months of runway, the company is perpetually on the treadmill — close a round, deploy, raise again. This is expected and normal; the question is whether each round's milestone justifies a higher valuation.",
+      "Burn rate as a governance signal: the board (G211) monitors burn relative to plan. A company burning faster than planned without proportional progress is a warning signal that requires either a strategic change or an earlier-than-planned raise.",
+      "The relationship to the down round (G210): a company that runs out of runway without achieving its next milestone must raise a flat or down round (G210), which is damaging to cap table and morale."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      },
+      {
+        "ref": "G210",
+        "note": null
+      },
+      {
+        "ref": "G211",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.1 (G204, runway determines when the next round must happen), Z3.4 (milestone achievement justifies a higher round price), Z4.7 (G210, what happens when burn exceeds plan), Z4.2 (G211, board monitors burn). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z4.7",
+    "local_id": "Z4.7",
+    "module": "venture-capital",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "The Down Round & the Recap",
+    "tag": "global",
+    "global_id": "G210",
+    "quick_definition": "A financing priced below the prior round, triggering anti-dilution protections for existing preferred holders, potentially reordering the liquidation-preference stack, and damaging morale and the cap table simultaneously — venture's most painful event.",
+    "explainer_covers": [
+      "Definition: a round in which the pre-money valuation (G205) is lower than the post-money valuation of the previous round. If a company raised a Series B at a $200M post-money and now raises a Series C at a $150M pre-money, that is a down round.",
+      "Anti-dilution triggers (★G39): most preferred stock includes anti-dilution protection — when a down round occurs, the formula (weighted-average, or in extreme cases full-ratchet) adjusts earlier investors' effective price per share downward, issuing them additional shares. This protects their percentage ownership but further dilutes common holders (founders, employees).",
+      "The preference stack reordering: new investors in a down round typically demand senior liquidation preferences (ahead of existing preferred series), further subordinating common holders. The cap table in a down round often leaves founders with little or no value in all but the most optimistic exit scenarios.",
+      "Pay-to-play provisions (★G38 context): if the company included pay-to-play in its prior term sheets (Z3.10), investors who don't participate in the down round may lose some or all of their anti-dilution protections and convert from preferred to common — a forced conversion that can rebalance the cap table.",
+      "Human consequences: down rounds are demoralizing. They signal that the company failed to achieve its projected growth, reset options (employee options are now often underwater — struck above the current common price), and can trigger founder vesting resets. The Kupor chapter on \"difficult financings\" (Chapter 14: \"When Bad Things Happen to Good People\") covers the dynamics in detail.",
+      "GAP / recency: the 2022–24 down-round wave — following the peak-2021 valuations — is the largest cluster of venture down rounds in a decade. No primary source covers this cycle."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G209",
+        "note": null
+      },
+      {
+        "ref": "G214",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G39 (anti-dilution, the mechanism triggered), ★G38 (liquidation preference, which reorders), Z3.10 (the full preference stack discussion), Z4.4 (G209, existing investors must decide whether to exercise pro-rata in a down round), Z4.6 (G214, running out of runway creates the down-round situation). ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "recency:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

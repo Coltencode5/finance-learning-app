@@ -1,0 +1,897 @@
+[
+  {
+    "id": "private-equity.z5.1",
+    "local_id": "Z5.1",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "Fund Formation & Vehicles",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a PE fund is legally assembled — the partnership vehicle, parallel/feeder structures, and the governing LPA.",
+    "explainer_covers": [
+      "Setting up a fund; the main fund plus complementary vehicles (parallel funds, feeders, co-invest vehicles, AIVs).",
+      "Jurisdictions (Delaware, Cayman, Luxembourg) and the carry/GP vehicle.",
+      "The LPA as the constitution of the fund."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G20 LPA, ★ G19 Blind pool (Z1), Z1.3 (structure), ★ G11 Waterfall, Z5.4.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.2",
+    "local_id": "Z5.2",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "The Limited Partnership Agreement (LPA)",
+    "tag": "global",
+    "global_id": "G20",
+    "quick_definition": "The governing contract of a PE fund — setting the mandate, economics, governance, and the rights of LPs and GP.",
+    "explainer_covers": [
+      "Key terms: term & extensions, investment period, fees, carry, waterfall, hurdle, GP commit, key-man, no-fault divorce, LPAC, recycling, default remedies.",
+      "ILPA principles as the LP-side standard.",
+      "Negotiation, side letters, and MFN clauses."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.1, ★ G11 Waterfall, ★ G10 Carried interest, ★ G12 Hurdle, key-man, Z5.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.3",
+    "local_id": "Z5.3",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Distribution Waterfall (deep) ★ GLOBAL — deep home of G11",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The detailed mechanics and worked math of how proceeds are split between LPs and the GP.",
+    "explainer_covers": [
+      "European / whole-fund vs. American / deal-by-deal waterfalls, step by step.",
+      "A full worked example: return capital → preferred return → catch-up → 80/20 carry split.",
+      "Loss carry-forward, make-whole, and interim clawback."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G14",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G10 Carried interest, ★ G12 Hurdle, ★ G13 Catch-up, ★ G14 Clawback (all Z1), ★ G20 LPA, Z5.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.4",
+    "local_id": "Z5.4",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "The Fundraising Process",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How GPs raise a new fund — the roadshow, the documentation, the closings, and securing LP commitments.",
+    "explainer_covers": [
+      "Fundraising timeline and success factors; the placement agent's role.",
+      "First vs. final closing; re-ups; first-time-fund challenges.",
+      "LP due diligence on the GP (the other side of Z5.8)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G18 Vintage year (Z1), ★ G19 Blind pool, Z5.5, Z5.8, ★ G46 Term sheet (fund-level).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.5",
+    "local_id": "Z5.5",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Fundraising Documentation",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The documents GPs present to prospective LPs — the PPM, the DDQ, the fund term sheet, and the track record.",
+    "explainer_covers": [
+      "PPM (private placement memorandum) contents; the fund term sheet.",
+      "Track record and performance attribution; the DDQ.",
+      "ILPA templates and standardization."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.4, ★ G20 LPA, Z5.10 (performance), Z5.8.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.6",
+    "local_id": "Z5.6",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "LP Allocation to PE",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How institutional investors decide how much of their portfolio to put into PE, and why.",
+    "explainer_covers": [
+      "The rationale: historical return premium and diversification.",
+      "Target allocation by investor type; the illiquidity budget.",
+      "The denominator effect and strategic asset allocation."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G7 LP (Z1), Z5.7, Z5.21 (risk), ★ G4 J-curve.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.7",
+    "local_id": "Z5.7",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 7,
+    "title": "LP Portfolio Construction & Commitment Pacing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How LPs build and balance a PE portfolio across vintages, strategies, and managers while managing the cash-flow timing.",
+    "explainer_covers": [
+      "Diversification by vintage, strategy, geography, and manager.",
+      "Commitment pacing and over-commitment; the denominator effect.",
+      "Portfolio-level J-curves; managing a \"ballooning\" portfolio."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G18 Vintage year, ★ G4 J-curve, over-commitment, Z5.8, ★ G57 Secondaries.",
+    "gaps": [],
+    "real_world_layer": "PE in Action Case #4 (Hitting the Target: optimizing a PE portfolio with Partners Group).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.8",
+    "local_id": "Z5.8",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 8,
+    "title": "PE Fund Manager Selection (GP Due Diligence)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How LPs evaluate and pick GPs — on track record, team, strategy, and the persistence of returns.",
+    "explainer_covers": [
+      "The manager-selection process and operational due diligence on GPs.",
+      "Track record and quartiles by vintage; the persistence debate.",
+      "The access problem (getting into top-quartile funds)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G18 Vintage year, Z5.10, Z5.4, ★ G19 Blind pool, Z5.21 (manager risk).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.9",
+    "local_id": "Z5.9",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 9,
+    "title": "Managing an Existing PE Portfolio",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The ongoing work of monitoring funds, managing cash flows, and rebalancing exposure over time.",
+    "explainer_covers": [
+      "Monitoring and reporting; cash-flow management.",
+      "Re-ups vs. new managers; using secondaries to rebalance; NAV management."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G4 J-curve, ★ G57 Secondaries, Z5.10, ★ G56 Co-investment.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.10",
+    "local_id": "Z5.10",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 10,
+    "title": "Performance Reporting & Measurement ★ GLOBAL — deep home of G1, G2, G3",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The metrics and conventions used to measure and compare PE fund performance, net of fees.",
+    "explainer_covers": [
+      "Gross vs. net; interim vs. final performance.",
+      "IRR; MOIC/TVPI; DPI (realized) and RVPI (unrealized).",
+      "The \"IRR conundrum\" (reinvestment assumptions, early-distribution distortion, manipulation) and MIRR as a partial fix.",
+      "Benchmarking, vintage quartiles, and PME."
+    ],
+    "connects_to": [
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      },
+      {
+        "ref": "G5",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, ★ G2 MOIC, ★ G3 DPI/RVPI/TVPI, ★ G5 PME, MIRR, ★ G4 J-curve, ★ G18 Vintage year.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.11",
+    "local_id": "Z5.11",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 11,
+    "title": "IRR",
+    "tag": "global",
+    "global_id": "G1",
+    "quick_definition": "The annualized, time-weighted discount rate that sets a fund's cash flows to zero — PE's headline return number.",
+    "explainer_covers": [
+      "Definition; gross vs. net.",
+      "Sensitivity to timing and early distributions; the conundrum and manipulation tactics.",
+      "MIRR; since-inception vs. point-to-point IRR."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G2 MOIC, MIRR, ★ G4 J-curve, Z5.10, ★ G18 Vintage year.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.12",
+    "local_id": "Z5.12",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 12,
+    "title": "MOIC / Multiple of Money",
+    "tag": "global",
+    "global_id": "G2",
+    "quick_definition": "The absolute multiple an investment returns — total value ÷ capital invested (e.g., 2.5×); time-blind by design.",
+    "explainer_covers": [
+      "Gross vs. net MOIC; \"cash-on-cash.\"",
+      "Relation to TVPI/DPI/RVPI.",
+      "Why it complements IRR (and where it misleads)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, ★ G3 DPI/RVPI/TVPI, Z5.10.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.13",
+    "local_id": "Z5.13",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 13,
+    "title": "DPI, RVPI & TVPI",
+    "tag": "global",
+    "global_id": "G3",
+    "quick_definition": "The three \"multiple\" ratios splitting fund value into cash already returned (DPI), value still held (RVPI), and the two combined (TVPI).",
+    "explainer_covers": [
+      "Definitions on a paid-in basis; DPI = realized, RVPI = NAV/unrealized, TVPI = DPI + RVPI.",
+      "How they evolve over a fund's life (RVPI converts to DPI as exits happen)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G2 MOIC, ★ G4 J-curve, Z5.10, NAV.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.14",
+    "local_id": "Z5.14",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 14,
+    "title": "PME (Public Market Equivalent)",
+    "tag": "global",
+    "global_id": "G5",
+    "quick_definition": "A benchmark that compares a PE fund's return to what the same cash flows would have earned in a public-market index.",
+    "explainer_covers": [
+      "Why public benchmarking matters (opportunity cost).",
+      "PME methods (Long-Nickels, Kaplan-Schoar, Direct Alpha).",
+      "What the PE-vs-public-market record actually shows."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, Z5.10, Z5.21 (risk), Z5.6 (allocation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.15",
+    "local_id": "Z5.15",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 15,
+    "title": "Winding Down a Fund",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The end-of-life process of liquidating remaining assets, returning capital, and closing a fund.",
+    "explainer_covers": [
+      "Liquidating a fund; tail-end / end-of-life options and extensions.",
+      "GP-led secondaries and continuation funds as a wind-down tool.",
+      "The transition into zombie-fund territory."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      },
+      {
+        "ref": "G22",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.16, ★ G57 Secondaries (GP-led), ★ G22 Holding period, Z1.4 (lifecycle).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.16",
+    "local_id": "Z5.16",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 16,
+    "title": "Zombie Funds & Tail-end Solutions",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Funds stuck past their life with unexited assets and no new fund — plus the tools (secondaries, restructurings) used to resolve them.",
+    "explainer_covers": [
+      "The zombie-fund lifecycle and tail-end assets.",
+      "GP-led restructurings and continuation vehicles."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.15, ★ G57 Secondaries, Z5.10 (stuck NAV).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.17",
+    "local_id": "Z5.17",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 17,
+    "title": "Co-investment",
+    "tag": "global",
+    "global_id": "G56",
+    "quick_definition": "LPs investing directly alongside a GP in a specific deal, usually fee-free, on top of their fund commitment.",
+    "explainer_covers": [
+      "What co-investment is and the LP attractions (lower blended fees, return enhancement, selection).",
+      "GP motivations and risks; implementation challenges.",
+      "The relative-value approach to using co-invest."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.18",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.18, ★ G9 Fund economics (fee reduction), Z5.21 (direct-investment risk), ★ G57 Secondaries.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.18",
+    "local_id": "Z5.18",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 18,
+    "title": "LP Direct Investment (\"Going Direct\")",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Large LPs building in-house teams to invest directly in companies, bypassing GPs and their fees.",
+    "explainer_covers": [
+      "Going direct vs. co-investing; the CPPIB / Teachers' model.",
+      "Attractions and risks; the talent/governance implementation challenge."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G56 Co-investment, ★ G9 Fund economics, Z5.21, G51 Governance.",
+    "gaps": [],
+    "real_world_layer": "PE in Action Case #2 (Going Direct: Teachers' Private Capital).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.19",
+    "local_id": "Z5.19",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 19,
+    "title": "PE Secondaries",
+    "tag": "global",
+    "global_id": "G57",
+    "quick_definition": "The market for buying and selling existing fund stakes and portfolios, giving otherwise-illiquid LPs an exit.",
+    "explainer_covers": [
+      "Why secondaries exist; LP-led vs. GP-led.",
+      "Transaction types: LP stake sale, direct secondary, structured secondary, total-return-swap, continuation funds.",
+      "Deal structuring and pricing (discount/premium to NAV); execution."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.15",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G55",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G15 Capital call / ★ G4 J-curve (liquidity), NAV, Z5.15 (GP-led/continuation), ★ G56 Co-investment, ★ G55 SBO (**clarify the difference**). **GAP: post-2017 continuation-fund boom (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "post-2017 continuation-fund boom (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.20",
+    "local_id": "Z5.20",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 20,
+    "title": "Listed Private Equity",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "PE accessed through public markets — either listed PE firms (the manager) or listed PE funds/vehicles.",
+    "explainer_covers": [
+      "Listed PE firms (GP/management-company IPOs) vs. listed PE funds.",
+      "How listed-PE vehicles generate revenue; discount-to-NAV dynamics.",
+      "Pros/cons for retail and LP access."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G6 GP, Z1.3 (structure), NAV/discount, ★ G53 IPO.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.21",
+    "local_id": "Z5.21",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 21,
+    "title": "PE Risk Management",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Identifying and managing the distinct risks of PE — asset-class, portfolio, manager, and direct-investment risk — for both LPs and GPs.",
+    "explainer_covers": [
+      "Asset-class risk (illiquidity, valuation lag, range of returns).",
+      "Portfolio/idiosyncratic risk; fund-manager risk; direct-investment risk.",
+      "FX risk (\"hedge or hope\"); risk management from the GP's side."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G5",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G4 J-curve, ★ G18 Vintage year, Z5.8, ★ G56 Co-investment, ★ G5 PME, ★ G29 Leverage.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z5.22",
+    "local_id": "Z5.22",
+    "module": "private-equity",
+    "zone": 5,
+    "ordinal": 22,
+    "title": "The Evolution & Future of PE",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where PE came from and the forces — scale, competition, diversity, returns sustainability, democratization — shaping where it's going.",
+    "explainer_covers": [
+      "The history (from \"barbarians\" to \"industrialists\").",
+      "AUM growth and maturation; can returns persist as the industry scales?",
+      "Democratization/retail access; diversity; \"quo vadis.\""
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.20",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1 (what is PE), Z5.20, ★ G56 Co-investment, ★ G57 Secondaries, **capstone — links back to all zones**. **GAP: post-2017 developments (NAV lending, evergreen/semi-liquid vehicles, private-wealth channel).** ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "post-2017 developments (NAV lending, evergreen/semi-liquid vehicles, private-wealth channel",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

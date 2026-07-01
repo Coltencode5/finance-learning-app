@@ -1,0 +1,307 @@
+[
+  {
+    "id": "venture-capital.z5.1",
+    "local_id": "Z5.1",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Exit: Why Everything Points Here",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture returns are realized only at exit — often 8–12+ years from the initial investment — and the power law means that a single exit can define a fund, a firm, and a career.",
+    "explainer_covers": [
+      "Reuse ★G52 (exit, contributed by PE): the sale or listing through which a fund realizes its investment and returns capital to LPs.",
+      "The illiquidity until exit: unlike public-market investments, a venture stake cannot be sold in the open market. From the day of the first check to the day of the exit, the investor holds an illiquid, unmarketable position (subject to lock-up and transfer restrictions). This is the fundamental illiquidity risk of the asset class.",
+      "The power-law exit: the expected value of a venture portfolio is often dominated by one or two exits. The fund economics (carry, DPI, fund reputation) can turn on a single company's outcome. Kupor: the fund that backs Airbnb, even if 40 other portfolio companies fail, is likely a top-quartile fund.",
+      "The time to exit: the median time from first investment to liquidity event has lengthened from roughly four years in the dot-com era to ten-plus years in the 2010s. Private companies are staying private longer (for complex reasons: more private capital available, regulatory burden of being public, founder control desire). This extends the J-curve (★G4) and tests LP patience.",
+      "The exit as the moment of truth for the markup (G203): paper TVPI becomes DPI only at exit. The markup that looked like a 5× on paper may produce a 2× in cash if the exit price is below the last round's implied valuation."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z5.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      },
+      {
+        "ref": "G203",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G52, Z5.2 (exit routes), Z5.3 (exit waterfall), Z4.5 (G203, the markup turns to cash), ★G4 (J-curve). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z5.2",
+    "local_id": "Z5.2",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "Exit Routes: IPO, M&A & Secondaries",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A venture stake is realized through an IPO (the company lists publicly), an acquisition (a buyer purchases the company), or increasingly a secondary sale (the VC sells its stake directly before either of those events).",
+    "explainer_covers": [
+      "The IPO (★G53 — the VC/PE exit lens; ★G102 — the bank's issuer/process lens): reuse both globals. For the VC, an IPO is the realization event — the company lists, lockup periods apply (typically 180 days), and the VC then sells its stake on the public market over time. For the bank (IB Z2.8), the IPO is the transaction. Equity Research (ER Z1.10) covers the newly public stock. All three perspectives are linked at this node.",
+      "The M&A exit (★G97 — merger model, IB): acquisition by a strategic buyer or a financial buyer. Acquisitions tend to generate cleaner, faster cash — the deal closes, the preference stack is resolved (Z5.3), and cash is distributed. M&A exits can be at any valuation: a distress acquisition may yield near zero; a strategic acquisition of a category winner may yield billions.",
+      "The secondary market: VC funds and individual founders can sell their stakes to secondary buyers (institutional investors and funds-of-funds that specialize in buying private equity stakes before exit). The secondary market has grown substantially since 2015 and provides an additional liquidity option before IPO or M&A. Secondaries allow LPs to rebalance, allow VCs to early-return capital, and allow founders to receive partial liquidity. GAP / recency: the post-2021 growth of the venture secondary market — driven by the exit drought — is significant and not covered in the primary sources.",
+      "Route choice: driven by company performance, market conditions (public market receptiveness to IPO), buyer demand, and the preference stack. In a strong exit, the VC prefers IPO (higher valuation, public-market premium) or a strategic acquisition at a premium. In a weak exit, secondaries and distress M&A become more important."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G97",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "IB Z2.8, ER Z1.10, ★G53, ★G102, ★G97, Z5.3 (exit waterfall follows the route). Disambiguation: the two IPO globals (★G53 vs. ★G102) — covered in Part 1. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "the post-2021 growth of the venture secondary market — driven by the exit drought — is significant and not covered in the primary sources",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z5.3",
+    "local_id": "Z5.3",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Exit Waterfall: Who Gets What",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "At exit, the stacked liquidation preferences and participation rights determine the payout order — preferred shareholders are paid first according to their terms, and common holders (founders, employees) receive only what remains.",
+    "explainer_covers": [
+      "The waterfall mechanics: in a company that has raised multiple rounds of preferred stock, the distribution at exit follows the contractual seniority of each series. Typically, the most recent round's preferred is senior to earlier rounds (Series C senior to Series B, which is senior to Series A). Each series receives its liquidation preference (★G38) before the next in line receives anything.",
+      "Participating preferred vs. non-participating: non-participating preferred holders choose at exit between taking their preference or converting to common (they take the better outcome). Participating preferred holders take their preference and then participate in the remaining proceeds as if they had converted. In a strong exit, non-participating preferred almost always converts to common. In a mediocre exit, participating preferred extracts maximum value at the expense of common.",
+      "Common holders last: founders, employees, and any investors holding common stock are paid after all preferred preferences are exhausted. If the exit price is less than the total liquidation preferences, common holders receive nothing. A company sold for $50M after raising $60M in preferred equity (with 1× non-participating preferences) returns $50M to preferred holders and nothing to common — even the most senior employee options are worthless.",
+      "The employee option pool at exit: options that have vested give employees the right to buy stock at the strike price. If the exit price per share (after preference satisfaction) exceeds the 409A strike price (G208), options are \"in the money.\" If the preferences consume all exit proceeds before common stock is reached, vested options expire worthless.",
+      "Modeling the exit at signing: Feld & Mendelson's key advice for founders: model the term sheet's economic terms across a range of exit scenarios — $20M, $50M, $100M, $500M. The picture at each value reveals when the stack is advantageous and when it is devastating."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.7",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G210",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.10 (★G38, the preference stack as negotiated), Z3.7 (G205, the round prices that set preference amounts), Z4.7 (G210, down rounds make the stack worse), ★G11 (distribution waterfall — the PE concept; the venture exit waterfall is the same logic applied at the portfolio-company level), ★G40 (cap table determines who holds what at exit). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z5.4",
+    "local_id": "Z5.4",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Fund Returns: DPI, TVPI & the Power Law (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture funds report the same DPI/TVPI/IRR metrics as PE funds, but the gap between paper TVPI and realized DPI is wider here than anywhere, the return distribution is more extreme, and a handful of exits drives virtually the entire result.",
+    "explainer_covers": [
+      "Reuse ★G1 (IRR), ★G2 (MOIC), ★G3 (DPI/RVPI/TVPI): the three return languages of all private funds. The mechanics are identical to PE; the interpretation differs.",
+      "The DPI/TVPI gap in venture (via G203): a venture fund's TVPI rises with every up-round markup; its DPI rises only when exits close. The 2021 vintage of many VC funds showed spectacular TVPI numbers as late-stage valuations peaked; the 2022–24 correction compressed TVPI sharply, and DPI remained thin because the IPO and M&A markets largely closed.",
+      "Return benchmarking (vintage-controlled): ★G18 (vintage year) is the foundation of fair comparison. A 2015-vintage fund should be compared with other 2015-vintage funds — comparing a 2015 fund to a 2019 fund during the boom year of 2021 would be misleading. The Cambridge Associates VC index and PitchBook/NVCA benchmarks are the standard references. GAP: recency data is thin in the sources.",
+      "The top/bottom quartile gap: the difference between a top-quartile and a bottom-quartile venture fund can be 2,000–3,000 basis points (20–30 percentage points) in annual returns. No asset class has wider return dispersion. This makes the LP's fund-selection decision the most impactful variable in the asset class.",
+      "The persistence finding (Kupor): unlike hedge funds and mutual funds, where past performance does not reliably predict future performance, VC shows meaningful persistence — top-quartile firms in one fund cycle tend to remain top-quartile in the next. This is because brand and reputation drive deal flow (G212), which drives returns, which reinforces the brand — the flywheel of the best franchise."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G203",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.5 (G203, markups drive TVPI), Z1.9 (return metrics in the ecosystem context), PE Z5.10 (same metrics, different dynamics), ★G156 (manager selection, the LP's response to dispersion and persistence), WM Z3.x. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "recency data is thin in the sources",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z5.5",
+    "local_id": "Z5.5",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Raising the Next Fund & the GP Franchise",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A VC firm renews itself by raising successor funds on the strength of its realized track record, its brand among the best founders, and LPs' confidence in the partnership's continued deal-flow access.",
+    "explainer_covers": [
+      "The fundraising cycle: most successful VC firms raise a new fund every three to four years — roughly aligned with the investment period of the prior fund. Fund I → Fund II → Fund III, each typically larger than the last if the strategy is working.",
+      "What LPs evaluate (★G156 — manager selection): the LP's due diligence on a VC fund is one of the most judgment-intensive processes in institutional investing. Key factors: track record (DPI of realized investments, TVPI of portfolio), team stability (has the partnership that generated the track record stayed together?), deal-flow access (is the firm seeing the best deals?), portfolio construction (does the firm understand the power law?), and ownership discipline.",
+      "The DPI imperative: LPs who are deploying into VC Fund II are often doing so with capital that they expect Fund I to eventually return. If Fund I has high TVPI but low DPI, LPs have paper profits and no cash. This can create pressure on the GP to exit prematurely, or conversely, can make LP re-up decisions difficult if DPI hasn't materialized. The exit drought of 2022–24 created acute fundraising difficulty for firms that had strong 2018–21 vintage paper returns but had not yet realized them in cash.",
+      "The brand franchise: the best VC firms have a self-reinforcing brand. Sequoia's track record means the best founders want Sequoia's backing; Sequoia's access to the best founders produces better returns; better returns reinforce the brand. Getting into this flywheel is the hardest task for a first-time fund.",
+      "The GP transition risk: when a successful VC partnership retires or splinters, the franchise can deteriorate rapidly. LPs watch partnership stability closely. The departure of a founding partner who is the source of the deal flow can fundamentally change what a firm is."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G216",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G156 (manager selection), PE Z5.4 (fund-raising from the PE context), Z1.8 (G216, the platform and partnership), Z1.9 (return metrics that LPs evaluate). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z5.6",
+    "local_id": "Z5.6",
+    "module": "venture-capital",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "The Venture Career & Where VC Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The venture career path runs analyst → associate → principal → general partner, with a constant revolving door between operating roles and investing, and the industry is being reshaped by the post-2021 reset and by AI's dual presence as both the dominant investment thesis and a tool disrupting how companies are built and funded.",
+    "explainer_covers": [
+      "The career ladder: analyst or associate (2–4 years, sourcing support, diligence, board preparation) → principal or VP (deal-sourcing with some investment authority) → general partner (full investment decision-making authority, carry participation). The path from entry to GP typically takes 8–12 years in a traditional firm, though operators who join as \"venture partners\" or \"EIR\" (entrepreneurs-in-residence) may move faster.",
+      "The founder ↔ VC revolving door: the most reliable path into a senior VC role is a successful exit as a founder or a high-profile operating role at a venture-backed company. Many GPs at top firms are former founders. Conversely, many GPs eventually spin out to start companies. The two roles are complementary and the careers blend.",
+      "Compensation: junior VC salaries are significantly below banking or management consulting peers; the prize is carry participation. A junior investor who joins a fund in its early vintage and earns carry on a top-quartile fund can make career-defining money in year eight when exits arrive. Until then, the total comp is modest relative to Wall Street alternatives.",
+      "The post-2021 reset: the 2021 venture boom (record capital raised, record valuations, crossover surge) was followed by a sharp 2022–24 contraction: fewer deals, lower valuations, almost no IPOs, cross-over retreat, staff reductions at several large firms. The industry is recalibrating to a more disciplined capital environment. GAP / recency — the module's largest: the 2021 boom and 2022–24 reset (including the exit drought, the down-round wave, and the AI thesis displacement of all other investment narratives) are not covered by any primary source and represent the largest gap in this map.",
+      "AI as a dual disruptor: AI is simultaneously (1) the dominant investment thesis — virtually all early-stage capital is now flowing toward AI-application and foundation-model companies — and (2) a tool reshaping how venture itself operates (AI-assisted diligence, AI for sourcing, AI for portfolio monitoring) and how startups are built (smaller teams, faster product development, cheaper infrastructure). Neither dimension is covered in the sources. GAP / recency — flagged here and in Part 9."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z5.6",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "ER Z5.6/Z5.7 (career comparisons across the financial ecosystem). *GAP flags:* the 2021 boom, the 2022–24 reset, AI's dual role — all flagged for depth layers. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "— the module's largest:",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "— flagged here and in Part 9",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flags:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

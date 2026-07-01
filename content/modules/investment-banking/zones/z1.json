@@ -1,0 +1,548 @@
+[
+  {
+    "id": "investment-banking.z1.1",
+    "local_id": "Z1.1",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Investment Banking?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A financial intermediary that helps companies, governments, and investors raise capital, buy and sell businesses, and value assets — advising on and executing the largest financial transactions rather than lending its own balance sheet long-term.",
+    "explainer_covers": [
+      "The simple model: a bank sells advice and access to capital markets, earning fees rather than holding assets to maturity.",
+      "The three core franchises: advisory (M&A and restructuring), capital markets (raising equity and debt), and the supporting markets/sales & trading and research businesses.",
+      "Investment banking (the advisory + capital-raising business) vs. the broader \"investment bank\" (which also houses trading, research, and asset management).",
+      "Bulge-bracket vs. elite-boutique vs. middle-market banks — who competes for what.",
+      "Why companies hire bankers at all: specialized expertise, market access, a credible third-party valuation, and bandwidth at a transaction's peak."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, Z1.3 (`★ G83` sell-side/buy-side), Z2.1 (the product spectrum), `★ G87` valuation toolkit, and across the aisle: PE Z1.1 (the buy-side client) and Credit Z1.1 (the lender the LevFin desk syndicates to).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.2",
+    "local_id": "Z1.2",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "What Banks Actually Do: The Three Franchises",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The division of an investment bank into advisory, capital markets, and markets/research businesses — and how a \"deal\" flows across them.",
+    "explainer_covers": [
+      "Advisory: sell-side and buy-side M&A, restructuring, fairness opinions — paid on success.",
+      "Capital markets: equity capital markets (ECM) and debt capital markets (DCM) — raising money by issuing securities, paid via the underwriting spread.",
+      "Sales & trading and research: the secondary-market machine that prices, distributes, and supports the securities the bank underwrites (the bridge to the buy-side).",
+      "How one client need (e.g., \"we want to grow\") can touch all three (buy a competitor via M&A, fund it via DCM, support the stock via research)."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G86",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1, Z2.1, Z1.7 (the fee model), `★ G86` coverage vs. product, `★ G101` underwriting.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.3",
+    "local_id": "Z1.3",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Sell-Side vs. Buy-Side",
+    "tag": "global",
+    "global_id": "G83",
+    "quick_definition": "The defining split of the industry — the sell-side (banks and brokers) that advises, structures, and distributes securities, versus the buy-side (PE, hedge funds, asset managers, pensions) that invests capital.",
+    "explainer_covers": [
+      "Who sits on each side and what each is paid for (fees and spreads vs. investment returns and carry).",
+      "Why the same person's skills transfer across the line — and why the classic career path runs sell-side analyst → buy-side associate.",
+      "The information and incentive differences: the sell-side serves a transaction; the buy-side owns a position.",
+      "How the two sides need each other: the sell-side originates and distributes what the buy-side buys."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1, Z1.2, Z5.1 (the franchise), PE Z1.1 (a buy-side client), Credit Z1.1 (a buy-side lender), `★ G84` mandate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.4",
+    "local_id": "Z1.4",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "Coverage Groups vs. Product Groups",
+    "tag": "global",
+    "global_id": "G86",
+    "quick_definition": "The two-axis way a bank is organized — industry \"coverage\" bankers who own the client relationship, and \"product\" bankers (M&A, ECM, DCM, LevFin, Restructuring) who execute a given transaction type.",
+    "explainer_covers": [
+      "Coverage (a.k.a. industry groups): healthcare, TMT, industrials, FIG, etc. — relationship owners and sector experts.",
+      "Product groups: M&A, ECM, DCM, Leveraged Finance, Restructuring — deep transactional specialists.",
+      "How the two collaborate on a live deal (coverage brings the client and the strategic view; product brings the execution).",
+      "Why this matters for a career: generalist relationship skills vs. specialist technical depth."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, Z2.1 (the product groups *are* Zone 2's branches), Z3.1 (the pitch), `★ G84` mandate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.5",
+    "local_id": "Z1.5",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "The Client: Who Hires a Bank, and Why",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The range of entities that retain investment banks — public and private corporations, financial sponsors (PE), founders and families, governments, and other institutions — and the needs that bring them in.",
+    "explainer_covers": [
+      "Corporates: sell a division, buy a competitor, raise growth capital, defend against a raider.",
+      "Financial sponsors (PE firms): a bank's most repeat-heavy client — buying platforms, financing buyouts, and selling portfolio companies. (The sponsor relationship is a franchise unto itself.)",
+      "Founders/families: succession, liquidity, a first institutional raise.",
+      "The trigger events: growth, succession, distress, opportunism, activist pressure, going public."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3, Z3.1 (winning the work), PE Z4.13 (the sponsor exit a banker runs), PE Z2.21 (the buyout a LevFin desk funds), `★ G84` mandate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.6",
+    "local_id": "Z1.6",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "The Financial Sponsors Coverage Relationship",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The dedicated effort banks make to serve PE firms — the single most transaction-dense client type, generating M&A, financing, and exit mandates in a repeating cycle.",
+    "explainer_covers": [
+      "Why sponsors are prized clients: they transact constantly and predictably across the fund lifecycle.",
+      "The full sponsor wallet: buy-side advisory on acquisitions, LevFin to fund them, sell-side advisory on exits, IPOs as an exit route, dividend-recap financings.",
+      "The \"sponsor coverage\" group and how it sits across product teams.",
+      "The flywheel: win the buy-side, then the financing, then the eventual sell-side or IPO."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.17",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.5",
+        "note": null
+      },
+      {
+        "ref": "G55",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.5, Z2.4 (LevFin), Z2.5 (Restructuring), PE Z1.4 (the fund lifecycle that generates the deal flow), PE Z4.17 (dividend recaps), `★ G55` secondary buyout.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.7",
+    "local_id": "Z1.7",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "How Banks Make Money: Advisory Fees & Underwriting Spreads",
+    "tag": "global",
+    "global_id": "G103",
+    "quick_definition": "The two engines of investment-banking revenue — success-based advisory fees on M&A/restructuring, and the underwriting spread earned on capital raised.",
+    "explainer_covers": [
+      "Advisory (M&A) fees: success fees scaled to deal size (often with retainers and \"Lehman formula\"-style tiers); paid only if the deal closes.",
+      "Underwriting spread (G103): the gross spread between what the bank pays the issuer and what it sells to investors — split into management fee, underwriting fee, and selling concession.",
+      "Restructuring fees (monthly + completion); financing fees on arranged debt.",
+      "Why advisory is capital-light and high-margin, and how league-table position drives pricing power."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, `★ G101` underwriting, `★ G103` underwriting spread (deep in Z2.10), `★ G104` league tables, Z5.2.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.8",
+    "local_id": "Z1.8",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "The Pitch and the Mandate",
+    "tag": "global",
+    "global_id": "G84",
+    "quick_definition": "The competitive process by which a bank wins the right to advise — pitching its market read, strategic options, and valuation view to earn a signed engagement.",
+    "explainer_covers": [
+      "The pitchbook (G85): situation analysis, strategic alternatives, a preliminary valuation (the football field), and credentials.",
+      "The \"bake-off\"/beauty parade where banks compete for the mandate.",
+      "The engagement letter: scope, the success fee, exclusivity, indemnification, tail provisions.",
+      "Why a pitch is mostly judgment and relationship wrapped around analysis."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G85",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.5, Z3.1 (deep on the pitch), `★ G85` pitchbook, `★ G94` football field, `★ G87` valuation toolkit, Z5.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.9",
+    "local_id": "Z1.9",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "The Deal Team & the Analyst's Role",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The staffing pyramid of a live deal — analyst, associate, VP, director, MD — and who does what from model to close.",
+    "explainer_covers": [
+      "The hierarchy and the division of labor (analysts build, associates check, VPs manage, MDs originate).",
+      "The analyst's core outputs: the model, the pitchbook, the comps, the data room, the buyer/lender outreach.",
+      "The culture, hours, and the \"two-year analyst program → buy-side or business school\" path.",
+      "How deal teams interface with coverage, product, legal, and the client."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.4, Z3.x (every process step the analyst executes), Z1.3 (the exit to the buy-side), `★ G87` valuation toolkit.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.10",
+    "local_id": "Z1.10",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "The Regulatory & Reputational Frame",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The rules and conflicts that govern banking — securities-law underwriting liability, the research/banking \"wall,\" conflict management, and the reputational capital a franchise runs on.",
+    "explainer_covers": [
+      "Underwriting due-diligence and liability under the securities laws (why the diligence is real).",
+      "The information barrier (\"Chinese wall\") between banking and research/trading, post-Global-Settlement.",
+      "Conflicts: stapled financing, advising both buyer relationships, fairness-opinion independence.",
+      "Reputation as the asset — why league-table credibility and a clean record win mandates.",
+      "(Recency/coverage flag: post-2008 structural reforms and the modern conflict regime are sketched in the source spine — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      },
+      {
+        "ref": "G101",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7, `★ G105` fairness opinion, Z3.13 (fairness opinions in process), Z5.4 (the franchise & regulation), `★ G101` underwriting.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.11",
+    "local_id": "Z1.11",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 11,
+    "title": "League Tables & the Franchise (intro)",
+    "tag": "global",
+    "global_id": "G104",
+    "quick_definition": "The published rankings of banks by deal volume and fees — the industry scoreboard that shapes pitches, pay, prestige, and the pecking order.",
+    "explainer_covers": [
+      "How league tables are compiled (by value and by count; by product and region) and gamed.",
+      "Why position matters: credibility in pitches, pricing power, talent attraction.",
+      "The gap between \"bulge-bracket scale\" and \"boutique advisory quality\" league positions.",
+      "Pointer to the deep franchise node in Zone 5."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7, `★ G104` (deep in Z5.2), Z5.1, Z1.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z1.12",
+    "local_id": "Z1.12",
+    "module": "investment-banking",
+    "zone": 1,
+    "ordinal": 12,
+    "title": "How IB Connects to PE and Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The map of where investment banking touches the two sibling modules — as advisor, financier, and valuation engine to the buy-side.",
+    "explainer_covers": [
+      "IB → PE: sell-side advisor on the deals PE buys and sells; the IPO route for exits; the LBO/valuation toolkit PE borrows wholesale.",
+      "IB → Private Credit: the LevFin desk originates and syndicates the very loans direct lenders compete to hold (and increasingly lose share to).",
+      "The shared analytical spine: EBITDA, EV/equity value, the debt stack, comps, the LBO model — one glossary across all three modules.",
+      "Why studying all three together reveals one deal seen from three seats (advisor, owner, lender)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3, Z2.4 (LevFin — the bridge), PE Z2.21 (the LBO), PE Z4.13 (exits), Credit Z1.7 (private credit vs. the syndicated market IB runs), `★ G87` valuation toolkit. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

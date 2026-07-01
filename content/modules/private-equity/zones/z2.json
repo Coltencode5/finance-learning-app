@@ -1,0 +1,1108 @@
+[
+  {
+    "id": "private-equity.z2.1",
+    "local_id": "Z2.1",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The PE Strategy Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of PE strategies by company maturity, control, and leverage — from minority early-stage VC to majority mature-company buyouts to special situations.",
+    "explainer_covers": [
+      "The axes: company stage · risk/return profile · minority vs. control · use of leverage.",
+      "How required skillsets differ across the spectrum (financial vs. operational vs. process).",
+      "Capital deployed by strategy (buyouts historically dominate; VC/growth rising)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, ★ G29 Leverage, Z3.6 (valuation differs by strategy), Z1.1. ## Branch 2A — Venture Capital",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.2",
+    "local_id": "Z2.2",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Venture Capital Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Minority investment in pre-profit, often pre-revenue start-ups, betting on outsized growth from innovation.",
+    "explainer_covers": [
+      "Defining characteristics: minority but highly active; vertical/stage specialization.",
+      "The power-law return model and high deal-level target IRRs (40–80%).",
+      "Why VCs diversify across many companies and fund in stages."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.15",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.3, Z2.5, ★ G46 Term sheet, ★ G38 Liquidation preference, ★ G1 IRR, ★ G2 MOIC, Z2.15.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.3",
+    "local_id": "Z2.3",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Start-up Development Stages",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The path a start-up travels — proof-of-concept → commercialization → scaling up — with different capital needs at each step.",
+    "explainer_covers": [
+      "The three stages and the milestones that gate each.",
+      "Burn rate and runway; why most start-ups never reach scale.",
+      "Who funds each stage (seed → early → mid/late VC → growth)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.16",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4, Z2.6, Z2.16 (growth equity picks up at scaling), burn rate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.4",
+    "local_id": "Z2.4",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "The VC Investor Ecosystem",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The range of early-stage backers — angels, incubators, accelerators, seed/early/late VC funds, and corporate VC.",
+    "explainer_covers": [
+      "Business angels; incubators vs. accelerators (the real differences).",
+      "Seed vs. early vs. late-stage VC funds and their specialization.",
+      "Corporate VC (CVC) motives (strategic access over pure return).",
+      "Crowdfunding and the \"lean start-up\" alternative path."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.5",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2, Z2.3, Z2.5 (syndication).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.5",
+    "local_id": "Z2.5",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "The VC Investment Process",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How VCs source, value, structure, and support deals — a process distinct from buyouts at every step.",
+    "explainer_covers": [
+      "Reputation-driven deal sourcing (demo days, networks, inbound).",
+      "Subjective valuation (revenue/KPI multiples, team, addressable market).",
+      "Staged funding as buying options; momentum signaling.",
+      "Hands-on mentorship and syndicated/\"club\" deals with a lead investor."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G47",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G41 Pre/post-money, ★ G42 Dilution, ★ G40 Cap table, ★ G46 Term sheet, G47 Active ownership (Z4), Z3.9 (early-stage valuation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.6",
+    "local_id": "Z2.6",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Funding in Rounds & Staged Financing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "VC capital deployed in discrete rounds tied to milestones, each a fresh decision to double down or walk away.",
+    "explainer_covers": [
+      "Round mechanics and milestone gating; progressively larger preferred rounds.",
+      "\"Buying an option\" and momentum as proof of value.",
+      "Up rounds vs. down rounds and their knock-on effects."
+    ],
+    "connects_to": [
+      {
+        "ref": "G41",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G41 Pre/post-money, ★ G42 Dilution, ★ G39 Anti-dilution, ★ G40 Cap table.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.7",
+    "local_id": "Z2.7",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "VC Term Sheet — Economic Terms ★ GLOBAL (part of G46)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The part of a VC term sheet that sets price, amount, and the economic rights of the newly created preferred share class.",
+    "explainer_covers": [
+      "Share price and pre-money valuation; amount, shares, price per share; series naming.",
+      "Liquidation preference (incl. participating vs. non-participating, and multiples).",
+      "ESOP: pool size (~20%), vesting, strike price, dilution impact.",
+      "Anti-dilution (full-ratchet vs. weighted-average) and conversion rights."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.14",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G46 Term sheet, ★ G38 Liquidation preference, ★ G39 Anti-dilution, Z2.14 ESOP, ★ G37 Preferred equity, ★ G41 Pre/post-money.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.8",
+    "local_id": "Z2.8",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "VC Term Sheet — Control Terms ★ GLOBAL (part of G46)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The governance rights VCs secure despite holding a minority stake.",
+    "explainer_covers": [
+      "Board representation and observer rights; founder board planning.",
+      "Protective/veto provisions on key corporate actions.",
+      "Drag-along/tag-along; transfer rights, pre-emption, ROFR; information rights."
+    ],
+    "connects_to": [
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G43",
+        "note": null
+      },
+      {
+        "ref": "G44",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G46 Term sheet, ★ G43 Drag/tag, ★ G44 Minority rights, G51 Governance (Z4).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.9",
+    "local_id": "Z2.9",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Liquidation Preference",
+    "tag": "global",
+    "global_id": "G38",
+    "quick_definition": "Preferred shareholders' right to get their money back — sometimes a multiple of it — before common shareholders in an exit or liquidation.",
+    "explainer_covers": [
+      "Definition; 1× vs. multiple; participating vs. non-participating.",
+      "Stacking/seniority across successive rounds.",
+      "The effect on founder and common-shareholder payouts at exit."
+    ],
+    "connects_to": [
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G37 Preferred equity, ★ G40 Cap table, G52 Exit, ★ G46 Term sheet, (analogy) ★ G11 Waterfall.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.10",
+    "local_id": "Z2.10",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Anti-dilution Provisions",
+    "tag": "global",
+    "global_id": "G39",
+    "quick_definition": "Protections that adjust earlier investors' conversion price downward if a later round is raised at a lower valuation (a down round).",
+    "explainer_covers": [
+      "Full-ratchet vs. broad/narrow weighted-average mechanics.",
+      "Why founders resist and how to negotiate severity.",
+      "Interaction with the cap table and ESOP."
+    ],
+    "connects_to": [
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G42 Dilution, ★ G40 Cap table, ★ G41 Pre/post-money, ★ G46 Term sheet, down round.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.11",
+    "local_id": "Z2.11",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "Capitalization Table (Cap Table)",
+    "tag": "global",
+    "global_id": "G40",
+    "quick_definition": "The ledger of who owns what — shares, options, and ownership percentages — across all stakeholders.",
+    "explainer_covers": [
+      "Common vs. preferred vs. options/ESOP; fully-diluted ownership.",
+      "How each round changes it; the option-pool shuffle.",
+      "The exit waterfall as read off the cap table."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.15",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G41 Pre/post-money, ★ G42 Dilution, Z2.14 ESOP, ★ G38 Liquidation preference, Z2.15.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.12",
+    "local_id": "Z2.12",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 12,
+    "title": "Pre-money / Post-money Valuation",
+    "tag": "global",
+    "global_id": "G41",
+    "quick_definition": "A company's value before (pre) and after (post) new investment; post-money = pre-money + new money.",
+    "explainer_covers": [
+      "Definitions and how they set ownership percentages.",
+      "Round dynamics and the option-pool-before-vs-after wrinkle."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.9",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.5",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G40 Cap table, ★ G42 Dilution, Z3.9 (valuing early-stage), Z2.5.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.13",
+    "local_id": "Z2.13",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 13,
+    "title": "Dilution",
+    "tag": "global",
+    "global_id": "G42",
+    "quick_definition": "The reduction in existing owners' percentage stake when new shares are issued.",
+    "explainer_covers": [
+      "Mechanics; per-round dilution as valuations rise.",
+      "Anti-dilution protection; ESOP-driven dilution; cumulative founder dilution."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.14",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G41 Pre/post-money, ★ G39 Anti-dilution, ★ G40 Cap table, Z2.14.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.14",
+    "local_id": "Z2.14",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 14,
+    "title": "ESOP & Employee Equity",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A reserved pool of shares/options used to attract and retain start-up talent.",
+    "explainer_covers": [
+      "Pool sizing (~20%), vesting schedules, strike price.",
+      "Dilution impact and option-pool timing in negotiations."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G42 Dilution, ★ G40 Cap table, ★ G46 Term sheet, Z4.5 (management comp — the buyout analogue).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.15",
+    "local_id": "Z2.15",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 15,
+    "title": "VC Economics & the Power Law",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The return math of venture — a few \"home runs\" returning 10–100× must carry a portfolio in which most investments fail.",
+    "explainer_covers": [
+      "The \"two-thirds lose money\" reality and home-run dependence.",
+      "Fund-level vs. deal-level target returns; portfolio sizing as risk management.",
+      "The Kauffman Foundation critique of venture's contribution to LP portfolios."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, ★ G2 MOIC, Z2.2, Z5.10 (fund returns). ## Branch 2B — Growth Equity",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.16",
+    "local_id": "Z2.16",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 16,
+    "title": "Growth Equity Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Minority investment in established, fast-growing, often profitable companies that need capital to scale — without taking control.",
+    "explainer_covers": [
+      "Defining characteristics; the space between VC and buyout.",
+      "Primary (into the company) vs. secondary (to founders) capital.",
+      "Minority but influential; emerging-markets relevance."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.20",
+        "note": null
+      },
+      {
+        "ref": "G44",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2, Z2.20, ★ G44 Minority rights, G49 Operational value creation (Z4).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.17",
+    "local_id": "Z2.17",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 17,
+    "title": "Growth Equity Targets",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The profile of companies growth funds back — proven model, strong growth, capital-constrained, often founder-led.",
+    "explainer_covers": [
+      "Target characteristics and founder/owner motivations.",
+      "Primary capital for expansion vs. founder partial liquidity.",
+      "Why emerging markets are a natural hunting ground."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.16, Z3.2 (sourcing), emerging markets.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.18",
+    "local_id": "Z2.18",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 18,
+    "title": "The Growth Equity Investment Process",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How growth investors win, structure, and add value in minority deals where they can't dictate terms.",
+    "explainer_covers": [
+      "Sourcing proprietary deals; valuation on revenue/EBITDA multiples.",
+      "Structuring minority protections; partnering with founders.",
+      "Operational support without control."
+    ],
+    "connects_to": [
+      {
+        "ref": "G44",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G44 Minority rights, ★ G27 Valuation multiples, ★ G46 Term sheet, G49 Operational value creation.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.19",
+    "local_id": "Z2.19",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 19,
+    "title": "Minority Shareholder Rights",
+    "tag": "global",
+    "global_id": "G44",
+    "quick_definition": "The contractual protections a non-controlling investor negotiates to safeguard its stake and influence key decisions.",
+    "explainer_covers": [
+      "Board seats; veto/protective provisions; information rights.",
+      "Anti-dilution; tag-along; exit rights and redemption.",
+      "How these differ from a control investor's levers."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G43",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.8 (VC control terms), ★ G43 Drag/tag, G51 Governance (Z4), ★ G46 Term sheet, G52 Exit. ## Branch 2C — Buyouts",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.20",
+    "local_id": "Z2.20",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 20,
+    "title": "Buyouts Defined",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Acquisition of a controlling (usually majority) stake in a mature company, often using significant debt — a leveraged buyout (LBO).",
+    "explainer_covers": [
+      "Defining characteristics; control vs. minority; mature, cash-generative targets.",
+      "The LBO concept in one breath.",
+      "The skillset: financial + process + operational value creation."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.25",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.21, ★ G29 Leverage, Z2.25 (types), G49 Value creation (Z4), ★ G32 Sources & uses.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.21",
+    "local_id": "Z2.21",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 21,
+    "title": "Leveraged Buyout (LBO) Mechanics",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Buying a company with a mix of equity and borrowed money, using the target's own cash flows to service and repay the debt.",
+    "explainer_covers": [
+      "Why leverage amplifies equity returns (and risk).",
+      "Sources & uses; debt capacity and cash-flow coverage; the equity cheque.",
+      "Deleveraging over the hold; the three return drivers (deleveraging, EBITDA growth, multiple expansion)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.23",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G29 Leverage, ★ G32 Sources & uses, ★ G30 Net debt, ★ G24 EBITDA, Z3.14 (debt instruments), Z2.23, Z3.11 (LBO analysis).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.22",
+    "local_id": "Z2.22",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 22,
+    "title": "Sources & Uses of Funds",
+    "tag": "global",
+    "global_id": "G32",
+    "quick_definition": "The deal-funding table showing where the acquisition money comes from (debt tranches + sponsor equity + management equity) and what it pays for (price, fees, refinancing).",
+    "explainer_covers": [
+      "Structure of the table and how it must balance.",
+      "The funding mix and where each layer sits in risk terms.",
+      "Uses: equity purchase, existing-debt repayment, transaction fees, minimum cash."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.15",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.21, Z3.14 (debt stack), ★ G45 Sweet equity, Z3.15 (SPV structure).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.23",
+    "local_id": "Z2.23",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 23,
+    "title": "Buyout Value Drivers & Returns",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The three engines of LBO returns — paying down debt, growing EBITDA, and exiting at a higher multiple.",
+    "explainer_covers": [
+      "Deleveraging; operational/EBITDA growth; multiple expansion.",
+      "How leverage magnifies the equity return on each.",
+      "The value-attribution bridge (which engine did the work)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G29 Leverage, ★ G24 EBITDA, ★ G27 Valuation multiples, G49 Value creation (Z4), Z4.8 (measuring it), ★ G1 IRR/★ G2 MOIC.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.24",
+    "local_id": "Z2.24",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 24,
+    "title": "Management Teams in a Buyout",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How buyout funds assess, retain, incentivize, and align the executives who'll run the company after the deal.",
+    "explainer_covers": [
+      "Assessing management; rollover vs. replacement.",
+      "Introducing sweet equity and management co-investment (full detail in Z4.5).",
+      "Why alignment with management is the founding PE principle."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G45 Sweet equity, Z4.5 (management comp), G51 Governance (Z4), G48 Alignment.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.25",
+    "local_id": "Z2.25",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 25,
+    "title": "Types of Buyout Transactions",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The deal situations buyouts arise from — public-to-private, carve-outs, privatizations, family successions, secondary buyouts, and management buyouts/buy-ins.",
+    "explainer_covers": [
+      "Public-to-private (P2P); corporate carve-out/divestiture; privatization (state asset).",
+      "Family-business succession; secondary buyout.",
+      "MBO vs. MBI vs. BIMBO — who's driving the deal.",
+      "The distinct PE value-add angle for each."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G55",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G55 Secondary buyout (Z4 exit), Z3.2 (sourcing), Z3.12 (P2P pricing), G49 Value creation (Z4). ## Branch 2D — Alternative Strategies",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.26",
+    "local_id": "Z2.26",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 26,
+    "title": "Distressed Private Equity",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Investing in troubled companies — either to turn around operations or to gain control through their distressed debt (\"loan-to-own\").",
+    "explainer_covers": [
+      "Turnaround investing (operational fix) vs. distressed-debt-to-control.",
+      "The typical turnaround process.",
+      "Why Europe differs from the US; the specialist skillset."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.18",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.18 (debt docs/covenants), ★ G34 Covenant, ★ G33 Debt stack, G49 Value creation (Z4), **GAP: restructuring depth**.",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "restructuring depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z2.27",
+    "local_id": "Z2.27",
+    "module": "private-equity",
+    "zone": 2,
+    "ordinal": 27,
+    "title": "Real Assets PE",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Applying the PE operating model to real estate, infrastructure, and natural resources rather than to operating companies.",
+    "explainer_covers": [
+      "Real estate PE; infrastructure (long-life, yield-oriented); natural resources.",
+      "Project-stage risk: greenfield → brownfield → operating.",
+      "How the fund model and return profile adapt to each vertical."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.3 (fund structure), Z5.1 (fund formation), **GAP: real-estate & infrastructure texts**.",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "real-estate & infrastructure texts",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "PE in Action Case #3 (Pro-invest: launching a PE real-estate fund).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

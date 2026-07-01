@@ -1,0 +1,64 @@
+# Migration Defect Register
+
+Generated during Milestone 1 migration (legacy markdown → canonical JSON).
+These are defects **in the legacy content itself**, verified against the source
+files — not parser artifacts. They are deliberately NOT auto-fixed: each needs a
+human (or Opus architecture-pass) decision, because the right fix is a judgment
+call about what the reference *meant*.
+
+**Status legend:** OPEN → DECIDED → FIXED (fix lands in canonical JSON, never in legacy/).
+
+---
+
+## A. Broken graph references (validation errors — block `--strict` CI)
+
+| # | Where | Reference | Problem | Likely intent | Status |
+|---|---|---|---|---|---|
+| 1 | asset-management.z2.3 | AM Z5.7 | AM Zone 5 ends at Z5.6 | Z5.6 "Where AM Is Heading" (source text says "Z5.7 (where AM is heading)") | OPEN |
+| 2 | asset-management.z4.4 | AM Z5.7 | same | Z5.6 (context: "the giants' stewardship power" — confirm) | OPEN |
+| 3 | asset-management.z5.2 | AM Z5.7 | same | Z5.6 | OPEN |
+| 4 | asset-management.z5.4 | AM Z5.7 | same | PE Z5.7 (context is the PE allocator seat — may be a dropped "PE" prefix) | OPEN |
+| 5 | asset-management.z5.4 | AM Z5.8 | same | PE Z5.8 (same pattern as #4) | OPEN |
+| 6 | investment-banking.z3.13 | PE Z3.20 | PE Zone 3 ends at Z3.19 | PE Z3.17 (SPA) or Z3.19 (equity documentation) — "transaction documentation" | OPEN |
+| 7 | investment-banking.z3.14 | PE Z3.20 | same | same as #6 | OPEN |
+| 8 | venture-capital.z5.6 | VC Z5.7 | VC Zone 5 ends at Z5.6 | self-reference intent unclear — inspect source line | OPEN |
+| 9 | wealth-management.z2.8 | WM Z5.7 | WM Zone 5 ends at Z5.5 | inspect source line | OPEN |
+| 10 | wealth-management.z5.4 | WM Z5.7 | same | possibly PE Z5.7 (dropped prefix, same as AM pattern) | OPEN |
+| 11 | wealth-management.z5.4 | WM Z5.8 | same | possibly PE Z5.8 | OPEN |
+
+**Pattern note:** defects 1–5 and 9–11 cluster in AM and WM Zone-5 references,
+suggesting a renumbering pass during authoring that didn't update inbound refs —
+the exact failure mode a validator prevents going forward.
+
+## B. Known-intentional term collision (warning — needs confirmation)
+
+| Term | IDs | Note |
+|---|---|---|
+| IPO | G53, G102 | G53 = IPO **as exit** (PE lens); G102 = IPO **process** (IB lens). VC module Part 7 explicitly treats these as an intentional dual-lens pair. Confirm and record in each global's `disambiguate_with`, then suppress. |
+
+## C. Globals without a hosting zone node (45 warnings)
+
+45 of 235 globals have no zone node carrying their `global_id` (e.g. G6 GP,
+G7 LP, G24 EBITDA). In the legacy maps these globals' deep explainers live
+*inside* a broader zone node (G6/G7 inside PE Z1.3 "Fund Structure & Key
+Players") without a `★ GLOBAL` tag on that node.
+
+**Decision needed (Milestone 2):** either (a) assign each orphan global a host
+node explicitly via a `hosts_globals` field, or (b) accept that some globals
+are "sectioned" rather than "hosted" and model that state. Recommendation: (a) —
+one canonical URL per global is the stated product architecture.
+
+## D. Legacy schema drift (informational — absorbed by the parser, normalize on render)
+
+- Real Estate uses `# ZONE 1 —` headers; all others use `# PART n · Zone n —`.
+- PC Z1.1 uses `**Quick definition (basic → technical).**` variant.
+- HF Z2.8 uses non-standard tag `★ GLOBAL (G127-adjacent)` — parsed as a plain
+  node (correctly: it is not G127's home). Confirm.
+- GAP flags exist in two formats (inline `GAP:` tags vs. consolidated Part 9
+  sections). Canonical JSON uses the structured `gaps` field only; consolidated
+  Part 9 gaps in ER/VC/RE were NOT parsed node-level (they aren't attached to
+  nodes in the source) — they need a one-time manual attachment pass in
+  Milestone 2 (~12 gap items total across the three modules).
+- Hedge Funds' own prose says "29 new global nodes (G106–G136)"; the actual
+  table (and now `derived.globals_contributed`) is 31. Derived counts are the
+  fix: module summaries are now generated, never hand-written.

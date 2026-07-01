@@ -1,0 +1,275 @@
+[
+  {
+    "id": "investment-banking.z4.1",
+    "local_id": "Z4.1",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Managing a Live Transaction",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The project-management spine of execution — running the workstreams, timeline, and stakeholders that take a deal from signed mandate to close.",
+    "explainer_covers": [
+      "The deal calendar and critical path; coordinating legal, accounting, tax, and financing advisors.",
+      "Managing the client, the counterparty, and (in an auction) multiple bidders simultaneously.",
+      "The analyst/associate workflow: keeping the model, the materials, and the data room current as facts change.",
+      "Risk management: anticipating diligence findings, financing wobbles, and regulatory friction."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z3.12",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.9",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.12, Z3.14, Z1.9 (the deal team), Z4.2 (the model), `★ G84` mandate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z4.2",
+    "local_id": "Z4.2",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Building & Maintaining the Model Through the Deal",
+    "tag": "global",
+    "global_id": "G97",
+    "quick_definition": "The living analytical model — valuation, merger/LBO, and financing — that's continuously updated as the transaction evolves.",
+    "explainer_covers": [
+      "The merger model (G97) end-to-end: purchase-price allocation, combined projections, synergies, accretion/dilution, pro-forma credit stats.",
+      "Keeping valuation (the football field) and the model in sync as diligence and negotiation shift assumptions.",
+      "Sensitivity and scenario updates for client and committee decisions.",
+      "Hand-offs between the model and the financing/credit committee materials.",
+      "(BIWS M&A guide: the full merger-model construction and the contribution analysis.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G97",
+        "note": null
+      },
+      {
+        "ref": "G96",
+        "note": null
+      },
+      {
+        "ref": "G98",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4, `★ G97`, `★ G96` accretion/dilution, `★ G98` synergies, Z3.5 (the valuation feeding it), PE Z3.10 (the LBO model variant).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z4.3",
+    "local_id": "Z4.3",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Managing the Financing",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Coordinating the debt and equity that funds a transaction — from commitment to syndication to funding at close — the seam where M&A meets LevFin/ECM/DCM.",
+    "explainer_covers": [
+      "Committed financing: the commitment letter, the \"flex,\" and certainty of funds for an acquirer.",
+      "Syndicating the debt (ties to Z2.13) and placing any equity (ties to Z2.7) to fund the deal.",
+      "Managing financing risk: market windows, ratings, and the arranger's exposure to un-sold paper.",
+      "The interplay with the merger model's pro-forma capital structure and credit stats."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.14",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.11 (LevFin), Z2.13 (syndication), Z2.7 (ECM), Z3.14 (funding the close), Credit Z2.2 (private credit as the competing/complementary funding source), `★ G33` debt stack.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z4.4",
+    "local_id": "Z4.4",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Coordinating Advisors & Workstreams",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The bank's role orchestrating the full advisor cast — legal, accounting, tax, consultants, and other banks — across a complex transaction.",
+    "explainer_covers": [
+      "Who does what: M&A counsel, financing counsel, auditors, tax structurers, commercial-diligence consultants.",
+      "Managing co-advisors and the syndicate (multiple banks on one deal).",
+      "Information flow, the data room, and keeping workstreams synchronized to the critical path.",
+      "Where the lead bank adds value as conductor vs. where it executes directly."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z4.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.1, Z3.11 (diligence), Z3.13 (documentation), Z1.10 (conflicts across roles), `★ G36` SPA.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z4.5",
+    "local_id": "Z4.5",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "Post-Announcement: Integration Support, Stabilization & Follow-On",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The bank's continuing role after a deal is announced or priced — supporting integration thinking, stabilizing a new issue, and lining up the next mandate.",
+    "explainer_covers": [
+      "M&A: high-level integration and synergy-tracking support; the (limited) banker role post-close.",
+      "ECM: aftermarket stabilization, the greenshoe, research initiation, and follow-on planning.",
+      "The franchise flywheel: a closed deal seeds the next one (refinancing, bolt-ons, the eventual sale).",
+      "Why the relationship — not the single deal — is the real asset (ties to Zone 5)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.6",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.8 (IPO stabilization), Z2.5 (synergies realized), Z1.6 (the sponsor relationship), Z5.1 (the franchise), PE Z4.13 (the next exit).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z4.6",
+    "local_id": "Z4.6",
+    "module": "investment-banking",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "When Deals Break or Restructure",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "What happens when a transaction fails, is renegotiated, or the underlying company later distresses — and how the bank's role shifts.",
+    "explainer_covers": [
+      "Deal breaks: failed conditions, financing falling through, regulatory blocks, walk-aways — and break/reverse-break fees.",
+      "Renegotiation under a material adverse change or financing gap.",
+      "The hand-off to Restructuring when a financed company later distresses (ties to Z2.14).",
+      "Reputational and league-table consequences of broken deals."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z4.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.14 (conditions/break fees), Z2.14 (Restructuring), Z4.3 (financing risk), Credit Z4.7 (the lender's workout side), `★ G81` workout. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

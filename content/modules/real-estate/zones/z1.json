@@ -1,0 +1,534 @@
+[
+  {
+    "id": "real-estate.z1.1",
+    "local_id": "Z1.1",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is (Commercial) Real Estate Investing?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Commercial real estate (CRE) investing is the buying, financing, operating, and selling of income-producing property — office buildings, apartment complexes, industrial warehouses, retail centers, hotels — as a financial investment, generating returns from rental income plus appreciation.",
+    "explainer_covers": [
+      "The asset: income-producing property — a building or land that generates cash by charging rent; the investor owns a physical asset tied to geography, not shares in a company.",
+      "The institutional CRE lens: this module covers professionally-managed investment in commercial properties; residential homeownership and the consumer-mortgage experience are out of scope — a different topic (consumer finance, not institutional investing).",
+      "The two organizing axes: equity vs. debt (do you own the property or lend against it?) and public vs. private (is your stake traded on an exchange?); these two binary dimensions create the four-quadrant structure that organizes the entire module.",
+      "Why real estate is its own asset class: tangible (unlike stocks), income-producing (unlike gold), leveraged (unlike bonds), tax-advantaged (depreciation, 1031 exchanges), and cyclical in a way driven by physical supply-and-demand lags distinct from corporate earnings cycles.",
+      "The institutional footprint: pension funds, endowments, sovereign wealth funds, insurance companies, and family offices all hold real estate as a distinct allocation — typically 5–15% of total assets — for income, diversification, and inflation protection."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G217",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G217 (the four-quadrant organizing frame), ★G218 (NOI — the cash-earnings core of every property), Z1.2 (four quadrants in depth), Z1.9 (why institutions own it), PE Z1.1 (the PE parallel), PC Z1.1 (the debt parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.2",
+    "local_id": "Z1.2",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Four Quadrants",
+    "tag": "global",
+    "global_id": "G217",
+    "quick_definition": "The four quadrants are the 2×2 map of the real-estate investable universe — public vs. private on one axis, debt vs. equity on the other — organizing every form of capital that touches real estate into four distinct cells with different liquidity, control, transparency, and pricing dynamics.",
+    "explainer_covers": [
+      "The four cells: (1) Public equity — REITs (★G223), traded on stock exchanges, daily liquidity, no direct control; (2) Public debt — CMBS (commercial mortgage-backed securities, within ★G227), traded in bond markets, daily liquidity, senior claim; (3) Private equity — direct ownership, closed-end funds, JVs (★G225), illiquid, maximum control; (4) Private debt — commercial mortgages originated by banks, debt funds, life companies (★G227), illiquid, current income with downside protection.",
+      "The same building, four doors: a Class A office tower can be owned by a REIT (public equity), financed by a CMBS conduit loan (public debt), held inside a closed-end fund (private equity), or lent against by a commercial mortgage fund (private debt) — the quadrant chosen matters as much as the property itself.",
+      "Why the quadrant determines liquidity and price discovery: public quadrants reprice daily on market sentiment; private quadrants reprice quarterly on appraisals, with a well-documented smoothing and lag effect.",
+      "Geltner et al. (Ch. 2) model the space and asset market as linked by two cycles — supply/demand in the space market, and capital flows in the asset market — that together determine rents and values.",
+      "The quadrant as a cross-module organizing insight: the four cells directly map to the prior modules — private equity is PE's real-asset sibling, private debt is Private Credit's collateral cousin, public equity is ER/AM/HF territory, and public debt is IB/PC territory."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.10",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G223",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G223 (REIT — public equity quadrant), ★G227 (CMBS — public debt quadrant; commercial mortgage — private debt), ★G225 (JV/fund — private equity), PC Z1.x (private debt lenders), Z1.10 (the cross-module map), Z2.8 (access routes by quadrant), IB Z2.8 (the securitization parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.3",
+    "local_id": "Z1.3",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "The Players",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A real-estate deal links owners and operators (sponsors) who find and manage assets, investors (LPs or shareholders) who fund the equity, lenders who provide the debt, and a service layer of brokers, appraisers, and property managers — with the tenant as the ultimate cash-generating anchor of the whole system.",
+    "explainer_covers": [
+      "The sponsor / operating partner (★G225): the entity that originates the deal, underwrites the business plan, manages the asset, and earns the promote — ranges from small owner-operators to large institutional platforms.",
+      "Equity investors: LP investors in closed-end funds (the same base as PE, ★G7) or open-end fund participants (★G224) or REIT shareholders (★G223); their capital funds the equity; they receive returns after debt service and the promote waterfall.",
+      "Lenders: banks (construction and bridge loans), debt funds (bridge, mezzanine), life insurance companies (core fixed-rate), agencies (Fannie/Freddie for multifamily), CMBS conduits (★G227); they occupy the PC module's seat in the RE deal.",
+      "The service layer: investment-sales brokers (market transactions, earn a commission); leasing brokers (tenant representation and landlord representation); property managers (day-to-day operations); appraisers (independent valuation opinions for lenders and transactions).",
+      "The tenant: the counterparty to the lease (★G229) whose rent payment is the source of NOI (★G218) and therefore the source of every investor's return; tenant credit quality and lease term are the two most critical underwriting variables."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.1",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G223",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G225 (sponsor), ★G7 LP, ★G223 (REIT shareholders), ★G227 (lender types), ★G229 (the lease — connecting tenant to NOI), PC Z1.x (lenders' perspective), Z4.1 (asset management — the sponsor's ongoing role), Z2.7. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.4",
+    "local_id": "Z1.4",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "The Four Return Drivers: Income, Appreciation, Leverage & Tax",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A real-estate investment's total return is assembled from four distinct sources — current income (the cap-rate yield on the property), appreciation (NOI growth and cap-rate movement), leverage (which amplifies both the income return and any gain or loss), and the tax shield — that combine to produce the levered IRR and equity multiple.",
+    "explainer_covers": [
+      "Income return: the going-in cap rate (★G219) approximates the unlevered current yield — the NOI the property generates divided by what you paid for it; this is the \"bond-like\" component.",
+      "Appreciation return: driven by two forces — NOI growth (rents rising with inflation and demand) and cap-rate compression (the market paying a higher price per dollar of income, i.e., a lower cap rate); cap-rate movement alone can make or break a deal that pencils on income.",
+      "Leverage as the amplifier (★G29): when the going-in cap rate exceeds the after-tax cost of debt (\"positive leverage\"), borrowing magnifies the equity return; when cap rates compress below borrowing costs (\"negative leverage\"), adding debt destroys equity return.",
+      "The tax shield (★G233): depreciation deductions shelter rental income from current taxation; the 1031 exchange defers capital-gains tax on sale; these are real return drivers, not bookkeeping.",
+      "How they combine: the Technical Topics PDF illustrates — a $100 property at 10% cap rate, 50% LTV at 5% interest, produces a 10% unlevered return but a 15% levered return; NOI growth and cap-rate change layer on top."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.8",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G233",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G218 (NOI is the income engine), ★G219 (cap rate is the income-return and appreciation driver), ★G29 (leverage), ★G233 (the tax shield), ★G1 (levered IRR), ★G2 (equity multiple), Z1.8 (how the four combine into reported returns), Z3.11 (underwriting the return in the pro forma). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.5",
+    "local_id": "Z1.5",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "Real Estate Fund Structures (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Most institutional real estate is held through closed-end LP/GP funds structurally identical to PE buyout funds, but real estate uniquely also offers large perpetual-life open-end core funds and deal-by-deal joint ventures — making the vehicle menu broader than any other private-capital asset class.",
+    "explainer_covers": [
+      "The closed-end fund (the PE structure): finite life (typically 10 years), ★G19 blind pool, capital called via ★G15, ★G18 vintage, ★G21 investment period, ★G22 holding period — inherited wholesale from PE Z1.2–Z1.4; used for value-add and opportunistic strategies.",
+      "The open-end core fund (★G224 in depth): perpetual life, continuous subscriptions and redemptions at NAV, the NCREIF Fund Index-ODCE universe; investors join via contributions and exit via quarterly redemption queues — the structural anomaly unique to real estate among private funds.",
+      "The joint venture / separate account (★G225 in depth): a single-asset or programmatic deal-level partnership rather than a blind-pool fund; the dominant structure for large institutional investors transacting directly with sponsors.",
+      "Why real estate's vehicle menu is broader: stabilized income-producing assets support perpetual open-end vehicles; development and value-add require finite business plans and the closed-end structure; institutional size allows separate accounts.",
+      "Fund mechanics inheritance: ★G6 GP, ★G7 LP, ★G20 LPA, ★G23 GP commitment — the same mechanics apply."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.6",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G224",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.2–Z1.4 (closed-end fund mechanics — the heavy inheritance), ★G19 blind pool, ★G15/16 capital calls and commitments, ★G224 (open-end vs. closed-end in depth), ★G225 (JV structure), Z1.6 (economics), Z2.6 (the open/closed decision by style). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.6",
+    "local_id": "Z1.6",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Fund & Deal Economics: The Promote, the Pref & Fees (inherited, RE lens)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real estate uses the same carried-interest-and-fee structure as PE, but the GP's profit share is called the promote, the LP's hurdle is the pref, and the waterfall typically escalates the GP split across multiple IRR hurdles rather than PE's common single-hurdle structure — and all of this plays out at both the fund level and the deal level (in a JV).",
+    "explainer_covers": [
+      "The promote = carry (★G10): the GP/sponsor's share of profits above the pref hurdle, typically 20% or rising to a higher share at higher IRR tiers — reuses ★G10 exactly, with \"promote\" as the RE vocabulary.",
+      "The pref = hurdle rate (★G12): the LP's or capital partner's preferred return threshold (commonly 8–9%) that must be paid before the sponsor earns any promote — \"pref\" is the RE vocabulary for ★G12.",
+      "The multi-tier IRR waterfall (★G11): return of capital → pref → first promote tier (e.g., 80/20 split to a 12% IRR) → second tier (70/30 to 18% IRR) → third tier (60/40 above 18%) — more tiers than standard PE, increasing the sponsor's upside above the first hurdle.",
+      "The catch-up (★G13) and clawback (★G14): same mechanics as PE — the catch-up accelerates the GP into its split after the pref is paid; the clawback returns excess promote if early deals outperformed and later ones disappointed.",
+      "Fee structures: the management fee (★G8) — typically 1–1.5% on committed or invested equity — and the promote; deal-level fees (acquisition, asset management, disposition) are common in JVs and sometimes rebated against the fund management fee."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.11",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.17",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G14",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G10 (carry/promote), ★G11 (waterfall), ★G12 (hurdle/pref), ★G13 (catch-up), ★G14 (clawback), ★G8 (management fee), ★G225 (deal-level JV where the promote lives), PE Z1.10–Z1.17 (the full fund-economics inheritance). *Disambiguation anchors:* the promote vs. carry (same global, different name and structure); the pref vs. preferred equity (see Part 1 disambiguations). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.7",
+    "local_id": "Z1.7",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "The Real Estate Cycle",
+    "tag": "global",
+    "global_id": "G232",
+    "quick_definition": "The real estate cycle is the recurring four-phase movement of the physical property market — recovery → expansion → hypersupply → recession — driven by the structural lag between demand and the construction-supply pipeline, and operating alongside (but distinct from) the capital-markets cycle of debt availability and cap-rate movement.",
+    "explainer_covers": [
+      "The Mueller/DiPasquale-Wheaton cycle framework: recovery (vacancy falling, rents rising but below long-run equilibrium), expansion (occupancy peaks, rents above equilibrium, new construction triggered), hypersupply (construction completions outrun demand, vacancy rises), recession (oversupply, falling rents, construction stops, values decline).",
+      "The demand/supply lag as the structural cause: construction takes 2–4 years from feasibility to delivery; by the time supply arrives, the demand that justified it may have already peaked — this is why markets chronically overshoot in both directions.",
+      "Occupancy and rent as the cycle's observable signals: net absorption (space leased minus space vacated — the demand signal) vs. deliveries (the supply signal); rent concessions and TI/LC packages signal where the market sits.",
+      "The capital-markets cycle as the second overlay: debt availability, credit spreads (★G70), and cap-rate compression/expansion (★G219) can amplify or offset the physical cycle — cheap debt in 2005–07 drove values far above fundamentals even as the physical cycle was softening.",
+      "Sector differentiation: different property types cycle at different speeds — hotels recycle annually, office space often has 5–10-year leases that mute the short-term signal, industrial/logistics moves faster than retail."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.7",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G230 (occupancy/absorption — the cycle's operating signals), ★G219 (cap-rate compression/expansion across the cycle), Z4.7 (managing leverage through the cycle), HF ★G127 (navigating cycles — the hedge-fund parallel), Z5.1 (timing the exit to the cycle), AM Z3.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.8",
+    "local_id": "Z1.8",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Real Estate Returns: IRR, Equity Multiple & Cash-on-Cash (inherited + RE lens)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real estate is judged on the same IRR and equity-multiple metrics as PE, with the critical addition of a current-income metric (cash-on-cash) and an insistence on distinguishing levered from unlevered returns — the latter because RE's use of leverage is so central that conflating them produces meaningless comparisons.",
+    "explainer_covers": [
+      "IRR (★G1) reused: the levered IRR incorporates debt service and the timing of equity cash flows; the unlevered IRR (also called the property yield or going-in yield) measures the return as if the property were purchased with all-equity — the pure property return.",
+      "Equity multiple (★G2): the ratio of total equity distributed to total equity invested, including the reversion proceeds; the simple \"how much did $1 become?\" metric, the RE counterpart of MOIC.",
+      "★G3 (DPI/RVPI/TVPI): same mechanics as PE — distributions paid, residual value, and total value relative to paid-in capital — used in fund reporting.",
+      "Cash-on-cash yield: annual pre-tax cash flow ÷ equity invested; the RE-specific current-income metric that tells the LP how much income is being generated each year without waiting for the exit; distinct from the cap rate (which is unlevered and uses value, not equity as denominator).",
+      "Income vs. appreciation decomposition: property indices (NCREIF NPI) report total return as the sum of income return and appreciation return, helping investors understand where their return came from.",
+      "Levered > unlevered when leverage is positive: the Technical Topics PDF example illustrates — 10% unlevered becomes 15% levered with 50% LTV at 5% interest."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.18",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.11",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G1 (IRR), ★G2 (equity multiple), ★G3 (DPI/RVPI/TVPI), Z1.4 (the return drivers), Z3.11 (the pro forma produces these outputs), Z5.4 (benchmarking), PE Z1.18 (the PE return-metrics parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.9",
+    "local_id": "Z1.9",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Why Institutions Own Real Estate",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Institutions hold real estate for three durable reasons — current income (a bond-like yield with equity-like upside potential), portfolio diversification (historically low correlation to equities and fixed income), and inflation protection (rents and values reprice with inflation) — making it the standard real-assets sleeve of the endowment model.",
+    "explainer_covers": [
+      "The income return: a stabilized core property earning a 4–6% cap rate provides a running yield competitive with investment-grade bonds, but with potential for NOI growth and appreciation — a hybrid bond-and-equity risk-return profile.",
+      "Diversification (★G146): over long time horizons, private real estate has historically shown low correlation to public equities and fixed income, smoothing portfolio volatility; the caveat is that in severe crises (2008), correlations spike as forced selling hits all asset classes simultaneously.",
+      "The inflation hedge: commercial leases typically include annual rent escalations (CPI-linked or fixed percentage); property values tend to rise with the general price level over long horizons because construction costs also rise — the inflation pass-through that fixed coupons lack.",
+      "The endowment model (★G154): Swensen's Yale model allocates 10–20% to real estate as part of the \"real assets\" category, alongside timberland and infrastructure; the theoretical basis is the illiquidity premium, diversification, and inflation protection in a long-horizon portfolio.",
+      "The policy portfolio and real estate (★G143/★G144): how strategic allocation is set, and what real estate's role is relative to equities and fixed income in the total portfolio."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G146 (diversification), ★G143 (asset allocation), ★G144 (policy portfolio), ★G154 (endowment model — the real-assets allocation), AM Z3.x (the allocator's portfolio view), WM Z2.x (how individuals access real estate), Z1.10. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z1.10",
+    "local_id": "Z1.10",
+    "module": "real-estate",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Where Real Estate Sits — The Cross-Module Map",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real estate is the only asset class that spans all four quadrants of public/private × debt/equity, making it the structural connective tissue between the private-capital modules (PE, Private Credit) and the public-market modules (AM, HF, ER) — and the most cross-inheritance module in the series.",
+    "explainer_covers": [
+      "The four-quadrant hub: the same building is simultaneously relevant to PE (as a private-equity asset), PC (as collateral for a mortgage), AM/HF (as a publicly-traded REIT), and ER (as a REIT covered by a research analyst) — no other module sits at this intersection.",
+      "RE equity as PE's real-asset sibling: shared fund mechanics (★G1–G23), the promote (★G10), and the same LP/GP structure (★G6/★G7); the primary difference is the asset (a building rather than an operating company), the valuation metric (the cap rate ★G219 rather than the EBITDA multiple ★G27), and the addition of the open-end core vehicle.",
+      "RE debt as Private Credit's collateral cousin: LTV (★G75), DSCR (★G74), lien priority (★G78), and the workout (★G81) are all inherited from PC without modification; the mortgage (★G227) is simply a collateral-backed direct loan where the collateral is real property.",
+      "The IB valuation toolkit reframed: the three appraisal approaches (★G220) parallel IB's three methodologies (★G87); the RE DCF reuses ★G90 with NOI in place of EBITDA; the reversion parallels terminal value (★G93); REIT IPOs and M&A run the full IB process (★G102).",
+      "RE as the allocator's real-asset sleeve: the endowment model (★G154) allocates to real assets; real estate supplies income, diversification (★G146), and inflation protection in the policy portfolio (★G143); for individual investors, REITs are a key but tax-inefficient real-estate holding (asset location, ★G166).",
+      "The REIT as a public-equity security: once public, a REIT is covered by equity research (★G189), valued on FFO (★G234) and NAV (★G235), and the public-private NAV gap (★G235) is a signal some hedge funds trade."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G217",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G217 (the four-quadrant organizing frame), PE Z1.x (fund mechanics inheritance), PC Z1.x (credit-metrics inheritance), IB Z2.8 (valuation toolkit inheritance), AM Z3.x (allocator's lens), HF Z3.x (NAV gap as a tradable signal), ER Z2.x (REIT coverage), WM Z2.x (individual allocation). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,707 @@
+[
+  {
+    "id": "investment-banking.z3.1",
+    "local_id": "Z3.1",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Equity Value vs. Enterprise Value & the Bridge",
+    "tag": "global",
+    "global_id": "G95",
+    "quick_definition": "The foundational distinction underneath all valuation — enterprise value (the worth of the operating business to all investors) versus equity value (what's left for shareholders) — and the bridge that walks between them.",
+    "explainer_covers": [
+      "The real definitions: enterprise value = value of core operations to all investors; equity value = value of the shareholders' residual.",
+      "The bridge: equity value + net debt + preferred + noncontrolling interests − non-core assets = enterprise value (and back).",
+      "Why multiples must match: EV multiples pair with pre-interest metrics (EBITDA, EBIT, revenue); equity multiples pair with post-interest metrics (net income, EPS) — never cross them.",
+      "How events (raising debt, buying back stock, issuing shares) move each — the single most-tested mechanic in banking.",
+      "(BIWS Equity/Enterprise Value guide: the 14 \"key rules,\" the dilution and bridge mechanics.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z3.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      },
+      {
+        "ref": "G26",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G25` EV, `★ G26` equity value, `★ G30` net debt, `★ G27` multiples, `★ G42` dilution, Z3.2 (all three methods rest on this), Z2.4 (M&A uses the bridge).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.2",
+    "local_id": "Z3.2",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "The Three Methodologies (overview)",
+    "tag": "global",
+    "global_id": "G87",
+    "quick_definition": "The banker's standard valuation trio — comparable companies, precedent transactions, and DCF — run together because relative and intrinsic methods cross-check each other.",
+    "explainer_covers": [
+      "Relative valuation (comps, precedents): value off the market's pricing of similar companies/deals — fast, market-grounded, but \"the market can be wrong.\"",
+      "Intrinsic valuation (DCF): value off the company's own projected cash flows — rigorous, but assumption-sensitive.",
+      "Why you always triangulate: each method's weakness is another's strength.",
+      "How the outputs converge into the football field (Z3.9)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G89",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.3, Z3.4, Z3.5, `★ G88` comps, `★ G89` precedents, `★ G90` DCF, `★ G94` football field, PE Z3.6 (the sponsor's valuation), Credit Z3.x (credit's valuation needs).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.3",
+    "local_id": "Z3.3",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "Comparable Companies Analysis",
+    "tag": "global",
+    "global_id": "G88",
+    "quick_definition": "Valuing a company off the trading multiples of similar public companies — selecting a peer set, calculating their multiples, and applying them to the target.",
+    "explainer_covers": [
+      "The four steps: select the peer set (industry, geography, size) → spread the financials → calculate multiples (EV/EBITDA, EV/Revenue, P/E) → apply the median/percentiles to the target.",
+      "Screening discipline: 5–10 truly comparable companies with similar discount rates; avoid conflicting screens.",
+      "LTM vs. forward metrics, calendarization, and non-recurring add-backs.",
+      "Why comps reflect no control premium (they're un-acquired public companies) — the key contrast with precedents.",
+      "(BIWS Valuation guide: the full Steel Dynamics worked comps set.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G89",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.1, Z3.2, `★ G24` EBITDA, `★ G27` multiples, `★ G89` precedents (the contrast), Z3.4, PE Z3.6.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.4",
+    "local_id": "Z3.4",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Precedent Transactions Analysis",
+    "tag": "global",
+    "global_id": "G89",
+    "quick_definition": "Valuing a company off the multiples acquirers actually paid in prior M&A deals for similar companies — relative valuation that bakes in a control premium.",
+    "explainer_covers": [
+      "The method: screen comparable deals (by seller industry/size and time) → gather purchase multiples → apply to the target.",
+      "Why it runs richer than comps: the control premium (G99) embedded in every acquisition price.",
+      "Data challenges: historical-only metrics, deal-structure noise (earn-outs, stock vs. cash), finding the data (fairness opinions, filings).",
+      "When it's most useful: thin comps, hard-to-forecast cash flows, M&A context.",
+      "(BIWS Valuation guide: the precedents set and the control-premium discussion.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.5",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      },
+      {
+        "ref": "G89",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.3, `★ G99` control premium, `★ G89`, Z2.5 (premiums in M&A), `★ G105` fairness opinion (a common data source), PE Z4.11 (exit valuation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.5",
+    "local_id": "Z3.5",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Discounted Cash Flow Analysis",
+    "tag": "global",
+    "global_id": "G90",
+    "quick_definition": "Valuing a company intrinsically — projecting its unlevered free cash flow, discounting it at WACC, adding a terminal value, and bridging to equity value.",
+    "explainer_covers": [
+      "The build: project UFCF (G92) over an explicit 5–10 year horizon → estimate WACC (G91) → calculate terminal value (G93) → discount and sum → bridge EV to equity value and per-share.",
+      "Unlevered FCF defined: NOPAT + D&A ± Δ working capital − CapEx; why SBC is not added back; why it's capital-structure-neutral.",
+      "Sensitivities and scenarios (discount rate vs. terminal growth) — why a DCF is a range, not a point.",
+      "Mid-year convention, stub periods, and the normalized terminal year (the refinements).",
+      "(BIWS Valuation guide: the full Steel Dynamics UFCF → WACC → TV → football field build, plus APV and DDM variants.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.6",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G92",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G93",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G92` UFCF, `★ G91` WACC, `★ G93` terminal value, Z3.6, Z3.7, Z3.1 (the bridge), PE Z3.10 (the LBO/DCF the sponsor runs).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.6",
+    "local_id": "Z3.6",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Unlevered Free Cash Flow",
+    "tag": "global",
+    "global_id": "G92",
+    "quick_definition": "The cash flow from the core business available to all investors before financing effects — the numerator a DCF discounts.",
+    "explainer_covers": [
+      "The line items: revenue → EBIT → NOPAT (taxes on EBIT, not pre-tax income) → + D&A → ± change in working capital → − CapEx.",
+      "Why \"unlevered\": it ignores interest and the capital structure, so it's consistent regardless of how the company is financed.",
+      "What's deliberately excluded (net interest, most non-cash items, financing flows) and why.",
+      "Projecting the drivers (revenue build, margin assumptions, CapEx vs. D&A discipline)."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G31",
+        "note": null
+      },
+      {
+        "ref": "G92",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.5, `★ G91` WACC (its partner), `★ G24` EBITDA, `★ G31` working capital, `★ G92`, Credit Z3.x (cash-flow lending shares this logic).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.7",
+    "local_id": "Z3.7",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "WACC & Terminal Value",
+    "tag": "global",
+    "global_id": "G91",
+    "quick_definition": "The two hardest inputs to a DCF — the blended discount rate (WACC) and the value of all cash flows beyond the forecast (terminal value).",
+    "explainer_covers": [
+      "WACC: cost of equity (CAPM: risk-free + β × equity risk premium) × %equity + after-tax cost of debt × %debt; un-levering and re-levering beta off the peer set.",
+      "Terminal value (G93): perpetuity-growth (Gordon) method vs. exit-multiple method; cross-checking one against the other.",
+      "Why terminal value is usually the majority of a DCF's value — and the discipline of keeping terminal growth below GDP.",
+      "The sensitivity grid: WACC vs. terminal growth as the standard two-way table.",
+      "(BIWS Valuation guide: the full WACC build, beta un-levering, and both terminal-value methods.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G93",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.5, Z3.6, `★ G93` terminal value, `★ G29` leverage (capital-structure weights), `★ G91`, PE Z3.11 (ability-to-pay analysis).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.8",
+    "local_id": "Z3.8",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Supplemental Valuation Methods",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The valuations beyond the core three — the LBO/ability-to-pay analysis, asset-based/liquidation (NAV), the dividend discount model, and M&A premiums analysis.",
+    "explainer_covers": [
+      "LBO analysis as a valuation: what a financial sponsor could pay given a target IRR and available leverage — the floor under many M&A processes (ties directly to PE Z3.10–Z3.11).",
+      "Liquidation / NAV: market-valuing assets minus liabilities — the floor for distressed companies and a key RX tool (ties to Z2.15).",
+      "Dividend Discount Model: for banks, insurers, REITs — where FCF and EV multiples don't apply.",
+      "M&A premiums analysis: valuing off premiums paid over unaffected share prices.",
+      "(BIWS Valuation guide: liquidation, DDM, future-share-price, and premiums analyses.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.15",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.5, PE Z3.10 (the LBO model), PE Z3.11 (ability to pay), Z2.15 (RX/liquidation), `★ G1` IRR, Credit Z3.x (asset-based lending shares the NAV lens).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.9",
+    "local_id": "Z3.9",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "The Valuation Football Field",
+    "tag": "global",
+    "global_id": "G94",
+    "quick_definition": "The summary chart that stacks the value range from each methodology side by side — the banker's headline output and the anchor of every pitch and fairness opinion.",
+    "explainer_covers": [
+      "Construction: plot the 25th–75th percentile range from comps, precedents, DCF, and LBO on one bar chart.",
+      "How to read it: where the ranges overlap is the defensible value; outliers (precedents high on control premium) are explained, not hidden.",
+      "How it frames the advice — \"what's it worth,\" \"is now a good time to sell,\" \"what premium to expect.\"",
+      "Why it's the single most-reproduced slide in banking.",
+      "(BIWS Valuation guide: the Steel Dynamics football field and the board-advice framing.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.8",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.10",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2, Z3.3, Z3.4, Z3.5, Z3.8, `★ G94`, `★ G105` fairness opinion, Z3.10 (it anchors the pitch), PE Z4.11 (exit valuation). ## Sub-zone 3B — The Execution Process",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.10",
+    "local_id": "Z3.10",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "The Pitch & Winning the Mandate",
+    "tag": "global",
+    "global_id": "G85",
+    "quick_definition": "The competitive process of winning the right to advise — building the pitchbook, presenting the strategic and valuation view, and signing the engagement.",
+    "explainer_covers": [
+      "The pitchbook anatomy: situation analysis → strategic alternatives → valuation (the football field) → credentials/\"why us.\"",
+      "The bake-off and the relationship dimension (mandates are won on trust as much as analysis).",
+      "The engagement letter: scope, success fee, exclusivity, tail.",
+      "How the pitch sets up the entire execution that follows."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.8",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G85",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.8, `★ G85`, `★ G84` mandate, `★ G94` football field, Z3.11 (what comes after the win), `★ G87` valuation toolkit.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.11",
+    "local_id": "Z3.11",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "Due Diligence & the Data Room",
+    "tag": "global",
+    "global_id": "G28",
+    "quick_definition": "The systematic investigation of a target's business, financials, legal standing, and risk — organized through a (virtual) data room — that underpins valuation, the offering, and liability protection.",
+    "explainer_covers": [
+      "Buy-side/commercial, financial, legal, and tax diligence workstreams.",
+      "The data room: how information is staged, controlled, and tracked between seller and bidders.",
+      "Underwriting due diligence and securities-law liability (why diligence is legally load-bearing, not box-ticking).",
+      "How diligence findings feed price, structure, and reps & warranties.",
+      "(This is the same ★ G28 due-diligence node as PE Z3.4 and Credit Z3.5 — here seen from the advisor/underwriter's seat; cross-link all three.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.12",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G28` due diligence (shared), Z3.12 (marketing), Z1.10 (underwriting liability), PE Z3.4 (the sponsor's DD), Credit Z3.5 (the lender's credit DD), `★ G36` SPA.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.12",
+    "local_id": "Z3.12",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "Marketing the Deal: Auctions, CIMs & Buyer Outreach",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How a sell-side advisor markets an asset to the right buyers — the teaser, the CIM, the auction structure, and managing competitive tension to maximize price and certainty.",
+    "explainer_covers": [
+      "The sell-side auction: broad vs. targeted vs. negotiated process; one-stage vs. two-stage.",
+      "The marketing materials: the teaser (anonymous), the NDA, the Confidential Information Memorandum (CIM), the management presentation.",
+      "The bid rounds: indicative bids → management meetings & data room → final binding bids.",
+      "Creating and sustaining competitive tension — the core sell-side value-add.",
+      "(This is the bank-run mirror of PE Z3.1 deal sourcing and PE Z4.13 exits — the sponsor is on the other side of this process.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.13",
+        "note": null
+      },
+      {
+        "ref": "G84",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.3 (sell-side mandate), Z3.11 (the data room), Z3.13 (negotiation), PE Z3.1 (sponsor sourcing), PE Z4.13 (sponsor exit), `★ G84` mandate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.13",
+    "local_id": "Z3.13",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 13,
+    "title": "Negotiation, Documentation & the Fairness Opinion",
+    "tag": "global",
+    "global_id": "G105",
+    "quick_definition": "The end-game of a deal — negotiating price and terms, papering the definitive agreement, and (for boards) delivering a fairness opinion that the price is fair from a financial point of view.",
+    "explainer_covers": [
+      "Negotiating price, structure, consideration mix, and risk allocation (reps, warranties, indemnities, MAC clauses).",
+      "The definitive agreement (★ G36 SPA / merger agreement) and the path from signing to closing.",
+      "The fairness opinion (G105): what it is, the analysis behind it (anchored on the football field), and why boards require it (fiduciary and litigation protection).",
+      "Conflicts and independence in fairness opinions (ties to Z1.10)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.20",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.12",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.12, `★ G105`, `★ G36` SPA, `★ G94` football field, Z1.10 (conflicts/independence), `★ G99` control premium, PE Z3.20 (transaction documentation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z3.14",
+    "local_id": "Z3.14",
+    "module": "investment-banking",
+    "zone": 3,
+    "ordinal": 14,
+    "title": "Signing, Closing & Announcement",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The mechanics that take a negotiated deal from signed agreement to completed transaction — conditions, approvals, financing, and the public announcement.",
+    "explainer_covers": [
+      "Signing vs. closing: the gap, and the conditions that must clear (regulatory/antitrust, shareholder vote, financing).",
+      "Financing the close: how committed financing (a LevFin commitment letter) backstops a buyer's certainty of funds.",
+      "Announcement, the stock reaction, and integration planning kickoff.",
+      "Break fees, reverse break fees, and deal-protection devices."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.20",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z3.13",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G100",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.13, Z2.11 (LevFin commitment financing), Z4.1 (post-signing execution), `★ G100` consideration mix, PE Z3.20 (documentation/close). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

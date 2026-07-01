@@ -1,0 +1,289 @@
+[
+  {
+    "id": "asset-management.z4.1",
+    "local_id": "Z4.1",
+    "module": "asset-management",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Rebalancing Discipline",
+    "tag": "global",
+    "global_id": "G147",
+    "quick_definition": "The ongoing discipline of holding the portfolio to its policy weights through market moves — the single most important managing activity, and the one that quietly enforces buying low and selling high.",
+    "explainer_covers": [
+      "The managing view of rebalancing (the process node is Z3.6): not a one-time trade but a standing discipline — the commitment to act on drift consistently, year in and year out, especially when it's psychologically hardest.",
+      "Why it's the heart of \"managing\" (Swensen): \"maintaining policy asset-allocation targets stands near the top of the list\" of important activities — far too many investors build a policy portfolio and then let it drift with the market, surrendering the risk control and the rebalancing premium.",
+      "The contrarian core: rebalancing forces you to sell this year's winners and buy its losers — mechanically counter-cyclical (★ G127), and the structural antidote to the performance-chasing that sinks most investors.",
+      "The frictions managed: transaction costs, taxes (in taxable accounts), and the discipline to not \"let winners run\" past the point of prudence — the balance between discipline and cost.",
+      "The link to risk: without rebalancing, an equity-heavy drift quietly raises portfolio risk exactly when markets are euphoric — so rebalancing is risk management (Z4.2)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G147` (this node), `★ G144` policy portfolio, `★ G143` asset allocation, `★ G127` cycles, Z3.6 (the process view), Z4.2 (risk management), `★ G124` second-level thinking. *Real-world layer: Swensen Ch. 6.*",
+    "gaps": [],
+    "real_world_layer": "Swensen Ch. 6.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z4.2",
+    "local_id": "Z4.2",
+    "module": "asset-management",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Risk & Tracking-Error Management",
+    "tag": "global",
+    "global_id": "G141",
+    "quick_definition": "Monitoring and controlling the portfolio's risk — for a long-only manager, primarily its tracking error against the benchmark and its exposures, rather than the absolute drawdown that governs a hedge fund.",
+    "explainer_covers": [
+      "The operative risk is tracking error (★ G141), not drawdown (★ G116): because the mandate is benchmark-relative (★ G157), the long-only manager's job is to keep active risk within budget — how far the portfolio can stray from the index — which is the structural opposite of the hedge fund's drawdown-centric, absolute-return risk management. Build this as the explicit contrast to HF Z3.5 / Z4.4.",
+      "The toolkit: ex-ante tracking-error models, exposure monitoring (sector, country, factor, and single-name active weights), and ensuring the realized active bets match the intended ones (no accidental factor tilts).",
+      "The unwanted-factor problem: a portfolio can drift into an unintended style or factor exposure (e.g., an all-value book becomes an accidental bet on interest rates) — risk management catches the bets the manager didn't mean to make (★ G148).",
+      "The absolute-risk floor that still matters: even a benchmark-relative manager owes clients prudence about total loss in a crash — the fiduciary duty (★ G155) means tracking the benchmark down 40% is \"success\" by mandate but still demands honesty with clients.",
+      "Liquidity and capacity risk (★ G120): the risk that the portfolio (or the fund's own redemptions) can't be traded at scale without moving prices — the long-only echo of the HF liquidity-mismatch lesson."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.5",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G141` tracking error, `★ G116` drawdown/volatility, `★ G157` relative return, `★ G148` smart beta (unwanted factor exposure), `★ G120` capacity & crowding, `★ G155` fiduciary duty, Z4.1 (rebalancing as risk control), Z4.3 (style drift), HF Z3.5 / HF Z4.4 (drawdown-centric risk — *the contrast*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z4.3",
+    "local_id": "Z4.3",
+    "module": "asset-management",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Drift & Style Integrity",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The ongoing fight to keep a portfolio true to its stated style and mandate — preventing the style drift and benchmark creep that erode the very thing a client hired the manager to deliver.",
+    "explainer_covers": [
+      "Style drift: a value manager quietly buying growth names (often to chase a hot market), or a small-cap manager letting winners grow it into a mid-cap fund — which breaks the client's asset-allocation plan (the manager is no longer the building block they were hired to be) and corrupts performance attribution.",
+      "Closet indexing as drift toward the benchmark (★ G142): the most common drift of all — an \"active\" manager hugging the index to protect their career, collecting active fees for near-passive holdings; active share is the metric that catches it.",
+      "Why integrity matters to the allocator: the institutional investor (Z2.11) builds a policy portfolio out of style-pure building blocks (★ G143); a manager who drifts ruins the diversification the allocator engineered — so style discipline is a fiduciary and a portfolio-construction issue, not just a marketing one.",
+      "The discipline that prevents it: a clear philosophy consistently applied (Swensen's first theme — \"casual commitments invite casual reversal\"), and the willingness to underperform the style's down-cycle rather than abandon it.",
+      "The honest tension: genuine evolution vs. drift — a thoughtful manager can adapt, but must be transparent that they have, so the client can re-underwrite the mandate."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G142",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G142` active share, `★ G149` style, `★ G143` asset allocation, `★ G156` manager selection (drift is what the allocator monitors for), `★ G155` fiduciary duty, Z2.4 (the styles), Z4.2 (risk), Z5.6 (the allocator's monitoring). *Real-world layer: Swensen on discipline; the active-equity style literature.*",
+    "gaps": [],
+    "real_world_layer": "Swensen on discipline; the active-equity style literature.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z4.4",
+    "local_id": "Z4.4",
+    "module": "asset-management",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Stewardship: Proxy Voting & ESG",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Because long-only managers own the companies they hold — often for years and in size — they carry a stewardship responsibility: voting proxies, engaging management, and integrating environmental, social, and governance (ESG) factors, all as an extension of the fiduciary duty to clients.",
+    "explainer_covers": [
+      "Why stewardship falls to asset managers: index funds can't sell (they must hold every index member), and active managers hold for years — so unlike a trader, the long-only manager is a quasi-permanent owner with both the standing and (arguably) the duty to influence the companies it owns. The Big Three index managers are now the largest shareholders in most public companies, concentrating this power enormously.",
+      "Proxy voting: the mechanics of voting on directors, executive pay, mergers, and shareholder proposals; the outsized role of proxy advisors (ISS, Glass Lewis); and the live debate over whether passive managers vote thoughtfully or rubber-stamp.",
+      "ESG integration: using environmental, social, and governance factors as inputs to risk and value (governance especially is plain fundamental analysis); the spectrum from integration (ESG as one input) to exclusion (screening out sectors) to impact (investing for a non-financial outcome) — and the tension with the fiduciary duty to maximize risk-adjusted return.",
+      "The standardization story (shared with PE Z4.10): the field has standardized fast since the canonical texts — PRI, SFDR, the ISSB/SASB consolidation, anti-greenwashing rules — and is now politically contested (the ESG backlash). This node is the natural place to give ESG real depth and to cross-link to the PE map's flagged ESG node.",
+      "The fiduciary frame (★ G155): stewardship is justified as a way to protect and grow client value — engagement and voting are tools of the prudent owner, not a separate agenda."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.10",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G47",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G155` fiduciary duty, `★ G51` corporate governance (the PE node — *governance from the owner's seat*), `★ G47` active ownership (the PE concept — *here exercised through voting and engagement, not control*), Z2.11 (the allocator's ESG demands), Z5.7 (the giants' stewardship power), **PE Z4.10** (the ESG node flagged for recency — *the densest cross-link*). **GAP: post-2017 ESG/stewardship standardization (SFDR, ISSB, the stewardship codes) and the ESG backlash — recency; shared live gap with PE Z4.10.**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "post-2017 ESG/stewardship standardization (SFDR, ISSB, the stewardship codes) and the ESG backlash — recency; shared live gap with PE Z4.10",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z4.5",
+    "local_id": "Z4.5",
+    "module": "asset-management",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "Navigating Cycles as a Long-Horizon Holder",
+    "tag": "global",
+    "global_id": "G127",
+    "quick_definition": "The patient management of a portfolio through the market's recurring swings between greed and fear — where the long-only holder's edge is temperament: staying invested, rebalancing into weakness, and refusing to chase the pendulum.",
+    "explainer_covers": [
+      "Cycles and the pendulum (★ G127, reused from the HF map): markets swing between euphoria and despair, never in a straight line — and the long-horizon holder's advantage is the ability to not react, to rebalance contrarily, and to let compounding work (Marks's pendulum, read from the patient-holder seat rather than the trader's).",
+      "The behavioral core (Malkiel Ch. 10, Graham Ch. 8): the investor's worst enemy is themselves — herding, overconfidence, loss aversion, and performance-chasing destroy more value than bad markets do; the disciplines (rebalancing, dollar-cost averaging, a written policy) exist to protect the investor from the investor.",
+      "The bubbles lesson (Malkiel Ch. 2–4): tulips to the South Sea to the dot-coms to housing — the recurring madness of crowds, and why \"this time is different\" is the most expensive phrase in investing; the long-only manager's job is to hold through them, not to time them.",
+      "Dollar-cost averaging and staying the course (Graham, Malkiel): the small-investor disciplines that turn volatility from an enemy into an ally — buying more when prices are low — and the case for time in the market over timing the market.",
+      "The contrast with the hedge fund: the HF trades the cycle (Z3.7, big asymmetric bets at the turns); the long-only manager holds through it — same pendulum, opposite response."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.7",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.8",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G127` cycles & the pendulum, `★ G124` second-level thinking, `★ G125` market efficiency (cycles are where inefficiency appears), `★ G147` rebalancing (the contrarian discipline), Z4.1 (rebalancing), Z1.8 (why most active managers lag), HF Z3.7 / HF Z4.4 (trading the cycle — *the contrast*). *Real-world layer: Malkiel Ch. 2–4 (bubbles); Graham Ch. 8 (Mr. Market); Marks (the pendulum).* ---",
+    "gaps": [],
+    "real_world_layer": "Malkiel Ch. 2–4 (bubbles); Graham Ch. 8 (Mr. Market); Marks (the pendulum).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

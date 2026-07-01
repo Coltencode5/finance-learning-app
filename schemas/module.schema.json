@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "module.schema.json",
+  "title": "Module",
+  "description": "Module-level metadata. Counts and ranges are DERIVED by the build pipeline, never hand-maintained (the Hedge Fund '29 vs 31' miscount is why).",
+  "type": "object",
+  "required": ["slug", "title", "kind", "build_order", "zones"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": ["role", "asset-class", "core-concept", "sector-layer1", "sector-layer2"],
+      "description": "Which home-page category this module belongs to."
+    },
+    "build_order": { "type": "integer", "minimum": 1 },
+    "zones": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["zone", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "zone": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "title": { "type": "string" },
+          "front_door": { "type": ["string", "null"], "description": "Local ID of the zone's designated entry node, e.g. 'Z1.1'." }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "required": ["key", "citation"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string" },
+          "citation": { "type": "string" },
+          "role": { "type": "string", "enum": ["primary", "supplementary", "case-layer", "practitioner"], "default": "primary" },
+          "published": { "type": ["integer", "null"] },
+          "access_ok": { "type": "boolean", "default": true, "description": "False if the source is unreadable/unreachable (e.g. scanned Rosenbaum & Pearl). Build should warn on nodes citing an inaccessible source." }
+        }
+      }
+    },
+    "derived": {
+      "type": "object",
+      "description": "Written by pipeline/build only. Hand edits here are a validation error.",
+      "additionalProperties": false,
+      "properties": {
+        "globals_contributed": { "type": "integer" },
+        "global_range": { "type": ["string", "null"] },
+        "zone_node_count": { "type": "integer" },
+        "globals_reused": { "type": "array", "items": { "type": "string" } },
+        "gap_count": { "type": "integer" }
+      }
+    },
+    "status": { "type": "string", "enum": ["in-progress", "mapped", "expanded", "reviewed", "published"], "default": "mapped" }
+  }
+}

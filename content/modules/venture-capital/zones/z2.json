@@ -1,0 +1,473 @@
+[
+  {
+    "id": "venture-capital.z2.1",
+    "local_id": "Z2.1",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Funding Stages & the Round",
+    "tag": "global",
+    "global_id": "G204",
+    "quick_definition": "The sequence of discrete financing events — pre-seed → seed → Series A → Series B → Series C → growth — each designed to fund the company to its next value-creating milestone and priced to reflect how much has been de-risked since the last round.",
+    "explainer_covers": [
+      "The milestone logic: each round is sized to buy the company enough time (runway, G214) to reach a specific milestone — usually proof of team, then product, then product-market fit, then repeatable growth, then scale. The milestone achieved de-risks the company and justifies a higher valuation at the next round.",
+      "The dilution treadmill: each round issues new shares, diluting all prior holders. Founders who start at 100% ownership typically hold 10–20% by IPO after five or six rounds. This is expected and acceptable if the company is worth vastly more.",
+      "Round sizing: pre-seed ($100K–$2M), seed ($1–5M), Series A ($5–20M), Series B ($15–50M), Series C ($30–100M+), growth ($100M+). These ranges have inflated significantly since 2010 and compressed in 2022–24. GAP / recency: round sizing figures are from the pre-2021 environment; the post-reset landscape is different.",
+      "The pricing event vs. the deferred instrument: most seed rounds and many pre-seed rounds use SAFEs or convertible notes (G206) to avoid setting a price; Series A and beyond are almost always priced rounds that set a valuation (G205), issue preferred stock (★G37), and generate a cap table (★G40).",
+      "The financing treadmill risk: a company that raises on an optimistic round-price assumption must perform well enough to justify an up-round at the next raise. Missing the milestone — raising a flat or down round (G210) — damages the cap table and morale."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z2.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.11",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G206",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G214",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2–Z2.4 (stage details), Z3.11 (G206, SAFEs/notes), Z3.7 (G205, pre/post-money), Z4.6 (G214, burn/runway), ★G40, ★G37, ★G42. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "round sizing figures are from the pre-2021 environment; the post-reset landscape is different",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.2",
+    "local_id": "Z2.2",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Pre-Seed & Seed: The Earliest Capital",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The earliest institutional or near-institutional capital, funding a team and an idea toward initial product and first customers, often on SAFEs or convertible notes rather than priced rounds.",
+    "explainer_covers": [
+      "What is being funded: the team (★G213, the founder bet) and an idea; there may be an MVP but almost never meaningful revenue. The bet is almost entirely on people and market.",
+      "Who invests: angels (high-net-worth individuals investing personal capital), micro-VCs (small professional funds, typically $10–100M), accelerators (Y Combinator, Techstars — provide small checks plus structured mentorship in exchange for equity), and occasionally traditional VCs writing small checks.",
+      "The instrument: most pre-seed and seed rounds use SAFEs (G206) or convertible notes (G206) because valuation negotiation at the idea stage is premature and can damage the relationship. A cap and discount are set instead of a price.",
+      "The failure rate: seed-stage investments fail at the highest rate in the venture lifecycle — 50–70% return nothing. This is not dysfunction; it is the expected cost of funding a large enough sample of early bets to find the power-law winners.",
+      "Check sizes: typically $25K–$2M per investor at pre-seed, $500K–$5M at seed."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.11",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G206",
+        "note": null
+      },
+      {
+        "ref": "G213",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.11 (G206, the SAFE), Z2.5 (angels/micro-VCs), Z3.3 (G213, the founder bet), Z2.1 (G204, the funding stages), ★G1/G2 (at this stage, impossible to compute — noted at depth layer). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.3",
+    "local_id": "Z2.3",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Series A & B: The Classic Venture Round",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The first and second priced institutional rounds, in which a lead VC sets a valuation, negotiates a full term sheet, takes a board seat, and backs a company that has demonstrated enough evidence to price its equity.",
+    "explainer_covers": [
+      "The priced round: unlike seed, Series A is a full negotiated financing — pre-money valuation (G205), option pool expansion (G207), liquidation preference (★G38), board seat (G211), protective provisions (G211), anti-dilution provision (★G39). Feld & Mendelson's Venture Deals is the guide to every term.",
+      "The lead investor: the firm that sets the terms, commits the largest check, and takes the board seat. Other investors participate at the lead's terms (the syndicate). Finding the lead is the most important fundraising task.",
+      "What Series A evidence looks like: product built, early users or customers, some signal of product-market fit, a clear thesis for how the market is large enough (★G201 and the market-size requirement).",
+      "Series B: typically larger, used to scale a business model that has already been proven at Series A. The lead may be the existing VC doubling down (following its pro-rata right, G209) or a new, later-stage firm.",
+      "The time between seed and Series A: often 12–24 months. Companies that cannot raise a Series A (\"die in the Series A crunch\") are a recurring feature of the venture landscape. GAP: the 2022–24 Series A crunch was severe by historical standards; no source covers it."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.6",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G46",
+        "note": null
+      },
+      {
+        "ref": "G211",
+        "note": null
+      },
+      {
+        "ref": "G205",
+        "note": null
+      },
+      {
+        "ref": "G207",
+        "note": null
+      },
+      {
+        "ref": "G38",
+        "note": null
+      },
+      {
+        "ref": "G39",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.6 (★G46, the term sheet), Z4.2 (G211, board/governance), Z3.7 (G205, pre/post-money), Z3.9 (G207, option pool), ★G38, ★G39. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "the 2022–24 Series A crunch was severe by historical standards; no source covers it",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.4",
+    "local_id": "Z2.4",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Series C & Growth Rounds: Scaling the Business",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Later, larger rounds that fund the scaling of a proven business model, taken at higher valuations with lower risk, increasingly involving crossover capital from public-market investors.",
+    "explainer_covers": [
+      "What is being funded: scaling the go-to-market, expanding into new geographies or products, building the management team that will lead the company to an eventual exit. The business model works; the question is how big it can get.",
+      "Valuation dynamics: Series C+ companies are valued on metrics closer to public-company multiples (revenue, ARR, EBITDA growth) than on pure team-and-market judgment. The gap between the approaches to valuation at seed vs. Series C is significant.",
+      "Crossover investors entering: at later stages, hedge funds (★G215) and mutual funds begin to participate in private rounds, providing larger checks but applying public-market return expectations. The 2020–21 surge of crossover capital into late-stage venture created a wave of unicorns ($1B+ private valuations) that struggled in the post-2021 environment.",
+      "The unicorn threshold: \"unicorn\" (company with $1B+ private valuation) became a meaningful concept from roughly 2012; by 2021 there were hundreds. The term has lost some precision. GAP / recency: the 2021–24 cycle dramatically altered what Series C and growth rounds look like; sources predate it."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G215",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7 (G215, crossover), Z5.2 (exit routes), IB Z2.8 (the IPO, the natural next step), ★G102, ★G27 (valuation multiples, now relevant). ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "the 2021–24 cycle dramatically altered what Series C and growth rounds look like; sources predate it",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.5",
+    "local_id": "Z2.5",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Branch: Angel Investors & Micro-VC",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Individual angels and small specialized funds that provide the earliest capital to startups, before or alongside institutional venture, often operating within personal networks and using higher-risk/higher-failure-rate economics.",
+    "explainer_covers": [
+      "The angel: a high-net-worth individual — often a successful entrepreneur or operator — investing personal capital in early-stage companies. Angels may provide the first $25K–$500K into a company, before any institutional VC has looked.",
+      "The micro-VC / nano-fund: small professional funds ($10–100M), often focused on a specific sector, geography, or founder community. Raised from institutional and high-net-worth LPs; make many small, early bets.",
+      "Rolling funds: an innovation (prominent since ~2018) in which the GP raises capital on a rolling annual or quarterly basis from a subscriber base, rather than a traditional fixed-close fund. Allows continuous deployment but complicates vintage benchmarking.",
+      "Scouts: a formal VC firm may extend its sourcing reach by providing capital to trusted individuals (often founders) to invest as \"scouts,\" in exchange for a share of carry. A scout who discovers the next Airbnb gets paid; the firm gets access to a deal it wouldn't have seen.",
+      "The risk profile: angels and micro-VCs have even higher failure rates than institutional venture, because they invest earlier with less evidence. Returns are correspondingly more power-law-skewed: a few early bets on Google, Twitter, or Uber defined angel fortunes."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z2.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G212",
+        "note": null
+      },
+      {
+        "ref": "G216",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (the pre-seed/seed stage), Z3.2 (G212, deal flow), Z1.8 (G216, scouts as a firm strategy), Z2.1 (G204, the funding stages). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.6",
+    "local_id": "Z2.6",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Branch: Multistage & Platform Funds",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Large venture firms that invest at every stage — from seed through growth — out of large flagship funds, competing on brand, platform, and the ability to follow winners with very large checks.",
+    "explainer_covers": [
+      "The multistage model: a firm like Andreessen Horowitz, Sequoia, or Accel invests at seed (small checks, establishing relationship), Series A, B, C, and growth (large checks, exercising pro-rata and follow-on rights). The goal is to own a meaningful stake in a winner from the earliest stage through exit.",
+      "Fund size implications: large multistage funds ($1–15B+) must find companies capable of returning the entire fund (G202) — which means they need to target companies that can reach $5–15B+ valuations. This constrains what multistage funds can responsibly do at seed.",
+      "The platform advantage: described in Z1.8 (G216), large firms offer founders recruiting, BD, PR, and network resources beyond capital. This is the explicit rationale for the platform model (Kupor documents a16z's platform team extensively).",
+      "Concentration risk: large funds making large bets at every stage have high exposure to the same companies across multiple fund vintages. If a portfolio company underperforms dramatically, multiple funds can be marked down simultaneously."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z1.8",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G216",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      },
+      {
+        "ref": "G209",
+        "note": null
+      },
+      {
+        "ref": "G202",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.8 (G216, the platform), Z2.1 (G204, stages), Z4.4 (G209, follow-on and pro-rata), ★G202, ★G156. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.7",
+    "local_id": "Z2.7",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Branch: Crossover & Growth-Stage Investing",
+    "tag": "global",
+    "global_id": "G215",
+    "quick_definition": "Late-stage pre-IPO venture in which public-market investors — hedge funds and mutual funds — cross into private financing rounds, blurring the boundary between private and public capital.",
+    "explainer_covers": [
+      "What crossover is: a hedge fund or long-only mutual fund (Tiger Global being the canonical example) makes an equity investment in a private company, often at Series C or later, expecting to hold through the IPO and into the public stock. The investment is at the intersection of the VC and public-market worlds.",
+      "Why public investors cross over: they have access to large pools of capital, can move quickly, apply public-market valuation methodologies (revenue multiples, comps), and want earlier exposure to companies before they go public — and before the IPO premium is captured by others.",
+      "The 2020–21 surge and the 2022–24 reversal: the crossover boom inflated late-stage private valuations dramatically; when public-market multiples compressed in 2022 (rising rates, risk-off environment), crossover investors withdrew rapidly, contributing to the private market valuation reset and the exit drought. GAP / recency: the post-2021 crossover retreat is the largest source gap in this zone; no source covers it.",
+      "The blur: when hedge funds and mutual funds own large private positions, the distinction between public and private markets partially dissolves. Portfolio managers with both public and private holdings face mark-to-market complexity; their LPs face unexpected illiquidity.",
+      "The link to ER: publicly covered stocks of crossover-funded companies provide the comps that crossover investors use to value the private round; the two valuation disciplines converge."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "HF Z3.x, AM Z2.x, ER Z1.10 (the public side), ★G102 (the IPO the crossover investor is betting on), ★G27 (valuation multiples). ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "the post-2021 crossover retreat is the largest source gap in this zone; no source covers it",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z2.8",
+    "local_id": "Z2.8",
+    "module": "venture-capital",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "The Sector & Thesis Lens",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Venture firms specialize by sector — software, biotech, fintech, deep tech, AI — and invest from an explicit thesis about where in the technology landscape the next power-law outcomes will occur.",
+    "explainer_covers": [
+      "Sector specialization: a generalist early-stage VC sees many industries; a specialist fund (biotech VC, fintech-focused fund, climate-tech fund) trades breadth for depth and can diligence companies more quickly and with more domain insight.",
+      "The investment thesis (★G121): a VC firm's thesis is its structured argument for why a specific set of markets or technologies is about to produce venture-scale companies. It determines what deals the firm sees, how it evaluates them, and what support it can offer portfolio companies.",
+      "Thesis-driven vs. opportunistic sourcing: thesis-driven firms proactively build relationships in their target sector before companies are even seeking capital; opportunistic firms respond to what comes through the door. The power law (G201) argues for thesis-driven sourcing — seeing the best deals in a category before everyone else sees them.",
+      "AI as the current dominant thesis: as of 2022–24, the dominant venture investment thesis is the application of large language models and AI broadly across every sector. This has attracted both a wave of new companies and an enormous influx of capital. GAP / recency: AI's role as both the dominant venture investment thesis and a tool reshaping company-building and diligence is the largest recency gap in this module; none of the sources cover it."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      },
+      {
+        "ref": "G212",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G204",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G121 (investment thesis), Z3.2 (G212, deal flow and sourcing), ★G201, Z2.1 (G204). ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "AI's role as both the dominant venture investment thesis and a tool reshaping company-building and diligence is the largest recency gap in this module; none of the sources cover it",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

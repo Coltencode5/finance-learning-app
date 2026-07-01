@@ -1,0 +1,263 @@
+[
+  {
+    "id": "investment-banking.z5.1",
+    "local_id": "Z5.1",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Franchise: What a Bank Is Really Selling",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The durable asset under a banking business — reputation, relationships, sector credibility, and distribution reach — that wins repeat mandates beyond any single deal.",
+    "explainer_covers": [
+      "Why the franchise (not the deal) is the asset: trust, track record, and the ability to execute at scale.",
+      "The components: brand, league-table credibility, sector expertise, distribution to the buy-side, and balance sheet.",
+      "How a franchise compounds — each deal builds the relationship that wins the next.",
+      "Bulge-bracket franchise (scale, balance sheet, full product) vs. boutique franchise (independence, advice, no conflicts)."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z5.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.2, Z5.3, Z1.11 (league tables intro), Z1.1, `★ G104` league tables.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z5.2",
+    "local_id": "Z5.2",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "League Tables & Competitive Position",
+    "tag": "global",
+    "global_id": "G104",
+    "quick_definition": "The published rankings of banks by deal volume and fees — the scoreboard that signals competitive position and feeds the franchise flywheel.",
+    "explainer_covers": [
+      "How tables are compiled and sliced (by value/count, product, region, sector) — and gamed (credit allocation on multi-bank deals).",
+      "What position buys: pitch credibility, pricing power, and talent.",
+      "The split between \"volume\" league position (balance-sheet-driven) and \"advisory quality\" reputation (boutiques punch above their volume).",
+      "Reading league tables critically — what they reveal and conceal."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.11",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.7",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.11, Z5.1, `★ G104`, Z1.7 (fees), Z5.4.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z5.3",
+    "local_id": "Z5.3",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Client Relationship as the Asset",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The long-horizon relationship between a bank and its recurring clients — especially corporates and financial sponsors — that turns one mandate into a decades-long revenue stream.",
+    "explainer_covers": [
+      "Relationship banking vs. transactional banking; the coverage banker's role as long-term steward.",
+      "The sponsor relationship as the archetype (ties to Z1.6) — repeat M&A, financing, and exit mandates.",
+      "Cross-selling across products (M&A → financing → ECM) over a client's lifecycle.",
+      "Trust, continuity, and conflict management as relationship-preservers."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.20",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.5",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.6",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.5, Z1.6, Z5.1, Z2.1 (the product cross-sell), PE Z1.20 (the GP–LP relationship — the analogous trust bond on the buy-side).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z5.4",
+    "local_id": "Z5.4",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "How Banks Compete: Scale vs. Boutique, and Regulation",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The structural divide in the industry — full-service bulge brackets versus independent advisory boutiques — and the regulation that shapes how each competes.",
+    "explainer_covers": [
+      "Bulge-bracket model: balance sheet, full product suite, financing power, global reach — and the conflicts that come with it.",
+      "Elite-boutique model: conflict-free advice, senior attention, no lending — and why the model has gained share post-2008.",
+      "The regulatory frame: capital rules, the research/banking wall, and conflict management (ties to Z1.10).",
+      "How clients choose between scale and independence for a given mandate."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.2",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G105",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.1, Z5.2, Z1.10 (regulation/conflicts), Z1.1 (bank types), `★ G105` fairness opinion (independence as a selling point).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z5.5",
+    "local_id": "Z5.5",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Talent, the Career & the Buy-Side Exit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The human-capital engine of banking — the analyst-to-MD pyramid, the brutal apprenticeship, and the well-worn path from the sell-side to the buy-side.",
+    "explainer_covers": [
+      "The career ladder and what changes at each rung (execution → management → origination).",
+      "Recruiting and the two-year analyst program as a feeder to PE, hedge funds, and business school.",
+      "Why banking is a training ground the whole buy-side recruits from (ties to ★ G83).",
+      "Compensation structure and the economics of a people business."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.9",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.9 (the deal team), Z1.3 (sell-side → buy-side), PE Z1.3 (where many analysts land), `★ G83` sell-side/buy-side.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "investment-banking.z5.6",
+    "local_id": "Z5.6",
+    "module": "investment-banking",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Where Investment Banking Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The forces reshaping the industry — the rise of private capital, boutique share gains, technology/AI in deal work, and the blurring line between banks and the buy-side.",
+    "explainer_covers": [
+      "Private capital's rise: as sponsors and direct lenders grow, banks both serve them and compete with them (ties to the LevFin-vs-private-credit dynamic).",
+      "Boutique advisory's structural share gains and the \"independence\" premium.",
+      "Technology and AI in modeling, diligence, and origination.",
+      "The blurring boundary: banks building private-capital arms; the buy-side disintermediating fees.",
+      "(Recency/coverage flag: the 2021–2025 private-credit surge and its competition with bank-led LevFin is a live, fast-moving story under-covered by the source spine — shared gap with the Credit map; see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.4",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.4, Z2.11 (LevFin under pressure), Credit Z1.7 (private credit vs. BSL), Credit Z5.14 (private credit's future), `★ G104` league tables. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,673 @@
+[
+  {
+    "id": "wealth-management.z2.1",
+    "local_id": "Z2.1",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Wealth Management Approach Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of how an individual's money is actually run — from a single low-cost goals-based portfolio, through lifecycle glide paths and the decumulation and estate problems unique to a human life, to the channels (robo to family office) that deliver the service at every level of wealth.",
+    "explainer_covers": [
+      "The axes that differentiate the branches: the investing approach (a benchmark-relative product vs. a goals-based, tax-aware, lifecycle-shaped portfolio for this family); the life stage (accumulation → decumulation → transfer); and the service channel and client tier (robo/mass-affluent → advisor/HNW → family office/UHNW).",
+      "How each branch adds value: goals-based investing aligns the portfolio to what the money is for; lifecycle/glide-path management aligns risk to age and human capital; decumulation solves income for life; estate planning and transfer solve passing it on intact; and the channels solve delivery at a viable cost for each wealth tier.",
+      "The reused investment engine: every investing branch here is built from the Asset Management product spine (★ G137–★ G149) — index funds, ETFs, asset allocation, diversification, rebalancing — reused, not rebuilt; what's new is the individual vantage (goals, taxes, horizon, behavior) wrapped around those products.",
+      "Where the branches sit by client tier: mass-affluent households get goals-based allocation and lifecycle products through advisors and robo-advisors; HNW households add tax management, decumulation, and estate planning; UHNW families add bespoke alternatives, multi-generational transfer, and family-office service."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      },
+      {
+        "ref": "G176",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, `G160` goals-based investing (the master approach), `G164` glide path, `G169` decumulation, `G173` estate planning, `G176`/`G177`/`G178` the channels, `★ G143` asset allocation (the reused engine), Z1.4 (the client segments these serve). ## Branch 2A — The Individual's Investing Approach",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.2",
+    "local_id": "Z2.2",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Goals-Based Investing & Bucketing",
+    "tag": "global",
+    "global_id": "G160",
+    "quick_definition": "Structuring a household's portfolio around its specific, dated goals rather than around beating a benchmark — often by dividing wealth into separate \"buckets,\" each goal with its own time horizon, risk level, and asset mix, so the money is managed for what it's for.",
+    "explainer_covers": [
+      "The core reframe (the AM↔WM hinge): success is funding the goals, not beating an index (★ G157). A retiree whose plan funds every goal has won even if a benchmark was missed; an investor who beat the market but can't retire has lost. The benchmark is the family's own life, and the operative risk is failing to meet a goal — a richer idea than tracking error (★ G141) or drawdown (★ G116).",
+      "The bucketing method: carve wealth into goal-buckets by horizon — a near-term safety bucket (cash and short bonds for spending and emergencies), an intermediate bucket (balanced, for goals 5–15 years out), and a long-term growth bucket (equity-heavy, for distant goals and legacy) — each invested to its own capacity (G163) and horizon (G164). Mental-accounting made into portfolio structure.",
+      "How it connects to capacity and human capital: each goal carries its own risk capacity (a hard, near-term goal can bear little risk; a soft, distant one can bear much), and the whole structure is anchored by whether the household is saving enough to fund the goals (Berns's discretionary-wealth/SLR engine, Z1.6).",
+      "The behavioral payoff (G161): bucketing helps clients stay the course — a market crash is easier to endure when the near-term spending bucket is visibly safe and only the long-term bucket is down, which is exactly when behavioral coaching keeps a client from selling.",
+      "The honest tension: goals-based bucketing can be less mean-variance \"efficient\" than a single optimized portfolio (you may hold more cash than a pure optimizer would) — but the behavioral and goal-clarity benefits usually outweigh the small theoretical cost, the same way the policy portfolio's discipline beats tactical cleverness for institutions."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G160` (this node), `★ G157` relative return (the contrast — *the featured AM↔WM disambiguation*), `G163` risk capacity, `G164` time horizon & glide path, `G161` behavioral coaching, `★ G143` asset allocation (applied per bucket), `★ G146` diversification, `★ G144` policy portfolio (the institutional analogue), Z3.2 (allocation under goals), AM Z1.4 (relative return — *the seat this contrasts with*). *Real-world layer: Berns (goals and SLR as the allocation driver); the goals-based-investing literature.*",
+    "gaps": [],
+    "real_world_layer": "Berns (goals and SLR as the allocation driver); the goals-based-investing literature.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.3",
+    "local_id": "Z2.3",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Lifecycle Investing & Target-Date",
+    "tag": "global",
+    "global_id": "G165",
+    "quick_definition": "The framework that treats investing as a multi-decade arc shaped by age, human capital, and goals — aggressive accumulation when young and human-capital-rich, steady de-risking and then decumulation in retirement — operationalized for the masses by the target-date fund's automatic glide path.",
+    "explainer_covers": [
+      "The lifecycle arc (G165): the right portfolio changes predictably over a life — high equity early (long horizon, large bond-like human capital to lean on, G162), declining equity toward and through retirement (shrinking horizon, depleting human capital, rising sequence risk, G171). Investing is not one allocation but a path.",
+      "The glide path (G164) as the engine: the planned schedule of de-risking with age — the individual's policy portfolio that moves. Berns shows the same de-risking can be derived bottom-up from a household's funding status (discretionary wealth/SLR) rather than imposed top-down from age alone, which personalizes it to savers vs. over-spenders.",
+      "Target-date funds (TDFs): the mass-market product that bundles the whole arc — pick a retirement year, and the fund automatically rides the glide path from equity-heavy to bond-heavy — now the default in most 401(k) plans and the single most important vehicle for ordinary retirement savers. (This is the same product the AM map flags at AM Z2.10, here seen from the individual saver's seat.)",
+      "Where TDFs fall short for wealth management: a one-size-fits-a-birth-year glide path ignores the individual's goals, tax situation, human-capital riskiness, and total balance sheet — exactly the personalization a wealth manager (or a sophisticated robo, G178) adds on top.",
+      "The theory-vs-practice debate: aggressive lifecycle theory (e.g., young investors using leverage to diversify across time) is academically interesting but rarely implemented; the practical lifecycle product is the de-risking glide path — and its central insight (de-risk as human capital depletes) is sound and widely adopted."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G165",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G162",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G171",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G165` (this node), `G164` glide path, `G162` human capital (the engine), `G163` risk capacity, `G171` sequence-of-returns risk (why late-career de-risking matters), `G169` decumulation (where the glide path lands), `★ G143` asset allocation, `★ G147` rebalancing (the glide path is rebalancing to a moving target), Z2.10-equivalent AM Z2.10 (the institutional multi-asset/glide-path note). *Real-world layer: Berns (glide path from discretionary wealth); Malkiel's life-cycle chapter (the age-related-allocation logic), reused from AM.* ## Branch 2B — The Life-Stage Problems",
+    "gaps": [],
+    "real_world_layer": "Berns (glide path from discretionary wealth); Malkiel's life-cycle chapter (the age-related-allocation logic), reused from AM.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.4",
+    "local_id": "Z2.4",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Retirement Decumulation",
+    "tag": "global",
+    "global_id": "G169",
+    "quick_definition": "The under-studied second half of investing — turning an accumulated nest egg into a reliable lifetime income — where the questions flip from \"how do I grow this?\" to \"how much can I safely spend, from which accounts, in what order, without running out or dying with too much unspent?\"",
+    "explainer_covers": [
+      "Why decumulation is harder than accumulation: in accumulation, volatility is tolerable (you're adding money and have time to recover); in decumulation, you are withdrawing into volatility, which introduces sequence-of-returns risk (G171) — a bad first decade can ruin a plan that would have worked on average. The goal also shifts from maximize wealth to don't run out, an asymmetric, loss-averse objective.",
+      "The withdrawal-rate question (G170): how much can you take? The 4%-rule heuristic (and its many critiques and refinements — dynamic spending, guardrails, lower rates for longer retirements or lower expected returns) is the anchor of the debate. No fixed rate is safe in all regimes, which is why decumulation is a managed, not a set-and-forget, problem.",
+      "The withdrawal-order question (tax-smart drawdown): from which accounts, in what sequence? Conventional ordering (taxable → tax-deferred → Roth) to manage lifetime taxes, threaded with RMDs (G168) that force traditional-account withdrawals, Roth conversions in low-income years, and Social Security claiming timing (delaying to 70 buys an inflation-adjusted, government-backed longevity hedge) — a multi-account tax-optimization problem unique to the individual.",
+      "The income-flooring approach: cover essential spending with guaranteed income (Social Security, pensions, annuities — G172) and fund discretionary spending from the risk portfolio — a goals-based (G160) structuring of retirement that quarantines sequence risk away from the must-haves.",
+      "Healthcare and long-term-care costs: the large, uncertain late-life liability (Medicare gaps, long-term-care insurance, the cost of care) that decumulation planning must reserve for — often the biggest single risk to a retirement plan."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G170",
+        "note": null
+      },
+      {
+        "ref": "G171",
+        "note": null
+      },
+      {
+        "ref": "G172",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G169` (this node), `G170` the 4% rule, `G171` sequence-of-returns risk, `G172` annuitization & longevity risk, `G168` tax-advantaged accounts (the drawdown order), `G166` tax-aware investing, `G160` goals-based investing (income flooring), `G164` glide path (decumulation is where it lands), Z4.1 (decumulation as an ongoing managing discipline), AM Z2.11 (the endowment's *spending rule* — *the institutional analogue of a withdrawal rate, but perpetual*). **GAP: the safe-withdrawal-rate and sequence-risk academic spine (Bengen, the Trinity study, Milevsky, dynamic-spending research) is absent — Monroe is popular-level; build on best knowledge and flag.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "the safe-withdrawal-rate and sequence-risk academic spine (Bengen, the Trinity study, Milevsky, dynamic-spending research) is absent — Monroe is popular-level; build on best knowledge and flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.5",
+    "local_id": "Z2.5",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Estate Planning & the Trust",
+    "tag": "global",
+    "global_id": "G173",
+    "quick_definition": "Arranging in advance how a person's assets and affairs are managed at incapacity and transferred at death — through wills, trusts, powers of attorney, healthcare directives, and beneficiary designations — to direct the transfer, avoid probate, minimize tax, and prevent family conflict; the trust is its central instrument.",
+    "explainer_covers": [
+      "The core documents (G173): the will (directs asset distribution and names guardians and an executor, but goes through probate); the living trust (holds assets to pass outside probate, privately and immediately); the durable power of attorney (someone to manage finances at incapacity); the healthcare power of attorney / advance directive / living will (medical decisions and end-of-life wishes); and beneficiary designations (which pass retirement accounts and insurance outside the will and override it).",
+      "Probate and why people avoid it: probate is the court-supervised, public, often slow and costly process of validating a will and settling an estate — which living trusts, joint ownership with right of survivorship, and transfer-on-death designations are used to bypass, preserving privacy, speed, and cost.",
+      "The trust, anatomy (G174): a grantor transfers assets to a trustee who manages them for beneficiaries under the trust's terms — the instrument that lets you control how and when wealth passes (staggered distributions, conditions), keep it private, protect it, and reduce transfer taxes. The pivotal split is revocable (changeable, but counted in your taxable estate and exposed to creditors) vs. irrevocable (locked, but removed from your estate and creditor-protected).",
+      "Specialized trusts (zone sub-nodes under G174, not separate globals): the dynasty trust (multi-generational, GST-tax-efficient — the Rockefeller/Walton structure); the special-needs trust (provides for a disabled beneficiary without disqualifying them from means-tested benefits); the QTIP trust (provides for a surviving spouse while preserving principal for children of a prior marriage — the blended-family tool); the charitable-remainder trust (income to you now, remainder to charity — Z2.6); and asset-protection trusts (domestic or offshore, shielding assets from creditors).",
+      "The fiduciary echo: a trustee owes the same fiduciary duties of loyalty, care, and impartiality (★ G155) that run through the whole app — here owed to trust beneficiaries; choosing a trustee (family member vs. corporate trustee) is a governance decision with the same trade-offs as manager selection."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      },
+      {
+        "ref": "G174",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G173` estate planning, `G174` the trust, `G175` generational wealth transfer, `G168` tax-advantaged accounts (beneficiary designations, inherited IRAs), `★ G155` fiduciary duty (the trustee's duty), `G177` the family office (which runs this at the UHNW level), Z4.4 (life events that trigger estate updates), Z2.6 (charitable trusts), AM Z4.4 (the *governance/stewardship* echo — fiduciary duty to those you act for). **GAP: a trusts-and-estates professional/legal source — Monroe is a how-to trade book; estate law is jurisdiction-specific and changes (exemption amounts, GST rules).**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a trusts-and-estates professional/legal source — Monroe is a how-to trade book; estate law is jurisdiction-specific and changes (exemption amounts, GST rules",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.6",
+    "local_id": "Z2.6",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Generational Wealth Transfer & Philanthropy",
+    "tag": "global",
+    "global_id": "G175",
+    "quick_definition": "Moving wealth from one generation to the next (and to charity) as efficiently and harmoniously as possible — navigating the gift-and-estate-tax system, deploying the strategies that pass more of it intact, and doing the family-governance work of preparing heirs to receive it.",
+    "explainer_covers": [
+      "The transfer-tax system: the unified gift-and-estate tax (a lifetime exemption, above which transfers are taxed), the annual gift exclusion (give a set amount per recipient per year tax-free), the generation-skipping transfer (GST) tax (which stops dynasty trusts from skipping a generation's worth of estate tax), and the step-up in basis at death (heirs inherit assets at current value, erasing the embedded capital gain — a powerful, much-debated feature interacting with G166).",
+      "The strategies to pass more intact: lifetime gifting (use the annual exclusion and exemption while alive), irrevocable trusts (G174) to remove assets from the taxable estate, valuation discounts (on minority interests in family entities — FLPs/LLCs), dynasty trusts (multi-generational, GST-efficient), and grantor trusts and other advanced structures — the toolkit by which the wealthy minimize transfer tax.",
+      "Charitable giving as transfer strategy: donor-advised funds (DAFs — an immediate deduction, grant out over time), charitable-remainder trusts (CRTs — income now, charity later, capital-gains-efficient), qualified charitable distributions (QCDs — give from an IRA after 70½, satisfying RMDs tax-free), and bunching contributions to clear the standard-deduction threshold — philanthropy that also reduces tax and estate.",
+      "The \"soft\" side — preparing heirs and family governance: the hardest part of transfer is often not the tax structure but readying the next generation — family meetings, communicating the why of the plan, financial education of heirs, and governance structures (family councils, family-office charters) that keep wealth and family intact across generations (\"shirtsleeves to shirtsleeves in three generations\" is the failure mode this work guards against).",
+      "The estate-conflict dimension: the largest destroyer of transferred wealth is often family conflict and litigation, which clear documents, no-contest clauses, neutral trustees, and transparent communication are designed to prevent (Monroe's recurring theme)."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      },
+      {
+        "ref": "G174",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G175` (this node), `G173` estate planning, `G174` the trust, `G166` tax-aware investing (step-up in basis; gifting low-basis assets), `G177` the family office (the institution that runs multi-generational transfer), `★ G7` LP (the family entity as an investor across generations), Z4.4 (the life events that drive transfer), Z5.4 (the family office as the UHNW channel). **GAP: a transfer-tax/estate-planning professional source and current exemption/GST figures — jurisdiction-specific and frequently changing.** ## Branch 2C — The Service Channels",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a transfer-tax/estate-planning professional source and current exemption/GST figures — jurisdiction-specific and frequently changing",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.7",
+    "local_id": "Z2.7",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Private Banking",
+    "tag": "global",
+    "global_id": "G176",
+    "quick_definition": "The bundled, relationship-based service banks offer wealthy clients — combining everyday and bespoke banking, tailored lending (against securities, art, real estate, or a business), and investment management under one dedicated relationship manager — the high-touch channel for high-net-worth households.",
+    "explainer_covers": [
+      "What's bundled: premium banking and cash management, bespoke credit (securities-backed lines of credit, jumbo and structured mortgages, art and aircraft lending, lending against a concentrated or pre-IPO position), discretionary and advisory investment management, and access to the bank's alternatives, structured products, and capital-markets desks.",
+      "Securities-backed lending — the signature tool: borrowing against a portfolio rather than selling it — which lets a client raise liquidity without triggering capital-gains tax or unwinding a position (the tax-and-liquidity bridge that is core to HNW planning, and a link to G166), at the cost of margin risk if markets fall.",
+      "The relationship-manager model: a single point of contact who coordinates the bank's whole apparatus for the client — the high-touch, high-margin service that distinguishes private banking from a brokerage account or a robo-advisor.",
+      "Where it sits in the channel spectrum (Z1.4): private banking serves the HNW tier above the mass-affluent advisor channel and below the single-family office — and the largest private banks blur into wealth-management and family-office services at the top.",
+      "The conflicts to watch: a bank earns on the products it sells, the credit it extends, and the deposits it holds — so the private-banking relationship carries the fee-and-fiduciary questions (G180/G181) in concentrated form, and the client must know whether their banker is a fiduciary or a salesperson."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G176",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G176` (this node), `G166` tax-aware investing (borrow-don't-sell), `G177` the family office (the tier above), `G180`/`G181` fee models and fiduciary standard (the conflicts), `★ G9` \"2 and 20\" (the alternatives private banks distribute), `★ G29` leverage (securities-backed lending is household leverage), Z1.4 (the client tier it serves), Credit Z2 (the *lending* side — *the bank as lender, here to a wealthy individual*). **GAP: a dedicated private-banking source — Monroe touches it only lightly.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a dedicated private-banking source — Monroe touches it only lightly",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.8",
+    "local_id": "Z2.8",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "The Family Office",
+    "tag": "global",
+    "global_id": "G177",
+    "quick_definition": "A private organization that manages the entire financial life of a single ultra-wealthy family (a single-family office) or several families (a multi-family office) — investments, taxes, estate, philanthropy, governance, and concierge needs — the most bespoke and integrated form of wealth management, and the private-client mirror of the institutional endowment.",
+    "explainer_covers": [
+      "What a family office does: it is a mini-institution for one family — running the investment portfolio (often including direct investments and an endowment-style alternatives allocation), coordinating tax and estate planning, managing the generational-transfer apparatus (G175), administering philanthropy, handling reporting and bill-pay, and providing governance and even concierge/lifestyle services.",
+      "Single- vs. multi-family: a single-family office (SFO) serves one family and is justified only at very large scale (the cost of a dedicated team requires, very roughly, hundreds of millions in assets); a multi-family office (MFO) spreads that cost across several families, extending family-office-style service further down the wealth scale.",
+      "The endowment mirror (the key cross-module link): a family office is the private-client version of the institutional allocator's seat (AM Z5.4, ★ G154) — it sets a policy portfolio, selects external managers (★ G156), accesses PE/credit/hedge-fund alternatives (★ G9, ★ G56, ★ G57), and can adopt much of the endowment model (★ G154) because it has the scale and resources Swensen says the model requires. The decisive differences from an endowment remain the individual ones: taxes, a finite (if multi-generational) horizon, decumulation/spending for living family members, and estate and governance across generations.",
+      "Direct investing and operating businesses: many family offices invest directly in companies and real estate (not just through funds), and often steward the operating business that created the wealth — making them, at the top end, indistinguishable from PE and credit principals (a link to PE Z5 co-investment and direct LP investment).",
+      "Family governance: the SFO is also the institutional home of the \"soft\" transfer work (G175) — family councils, constitutions, next-generation education, and conflict prevention — the machinery that tries to keep both the wealth and the family intact across generations."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G177` (this node), `★ G154` endowment model (the institutional mirror — *the densest cross-module link in the module*), `★ G156` manager selection (the family office as allocator), `★ G56` co-investment / `★ G57` secondaries (the family office going direct and managing its private sleeve), `★ G9` \"2 and 20\" (the alternatives it accesses), `G175` generational transfer, `G173` estate planning, **AM Z5.4** (the institutional allocator's seat it mirrors), **PE Z5.6/Z5.7** (the family office as a PE LP/co-investor), HF Z5.4 (allocating to hedge funds). **GAP: a dedicated family-office/UHNW source — Monroe's treatment is brief and popular.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a dedicated family-office/UHNW source — Monroe's treatment is brief and popular",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.9",
+    "local_id": "Z2.9",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "The Robo-Advisor & Digital Advice",
+    "tag": "global",
+    "global_id": "G178",
+    "quick_definition": "An automated platform that builds and maintains a diversified, low-cost portfolio for an individual algorithmically — onboarding, risk-profiling, allocation, rebalancing, and even tax-loss harvesting with little or no human advisor — the technology-driven democratization of basic wealth management.",
+    "explainer_covers": [
+      "What a robo-advisor automates: a short risk questionnaire → an algorithmic asset allocation built from low-cost index ETFs (★ G138/★ G139) → automatic rebalancing (★ G147) → automated tax-loss harvesting (G167) in taxable accounts → all at a fraction of a traditional advisor's fee (often ~0.25% vs. ~1%). It is the AM product spine wrapped in software and pointed at the individual.",
+      "Why it matters — democratization: it brings disciplined, diversified, tax-aware, rebalanced investing — the things that actually drive individual outcomes — to mass-affluent and even small-balance savers who could never support a human advisor's fee, undercutting the high-fee, conflicted product-sales model Swensen attacks.",
+      "What it does well and poorly: it excels at the mechanical disciplines (allocation, rebalancing, harvesting, low cost) that are most of the value for a straightforward saver; it is weaker at comprehensive planning (G159), complex tax and estate work, and — crucially — behavioral coaching (G161) at the moment of panic, when an app is no substitute for a trusted human voice.",
+      "The hybrid model (where the industry landed): most scaled offerings now pair the robo's automated portfolio with access to human advisors for planning and reassurance — the \"digital + human\" model that captures the cost efficiency while restoring the coaching the pure-robo model lacks.",
+      "The risk-questionnaire critique (the Berns link): robo onboarding leans on exactly the simplistic, qualitative risk questionnaires Berns critiques (Z1.6) — measuring a single \"tolerance\" score and mapping it to a portfolio, without separating tolerance from capacity or grounding it in the household's goals and balance sheet — so the personalization is often shallower than it appears."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G178` (this node), `★ G138` index fund / `★ G139` ETF (the products it uses), `★ G147` rebalancing (automated), `G167` tax-loss harvesting (automated), `G179` direct indexing (the next step in automated personalization), `G161` behavioral coaching (what it struggles to automate), `G163` risk capacity (the questionnaire critique), `G159` financial planning (what hybrids add), Z5.5 (where WM is heading — automation and democratization). **GAP: a current fintech/digital-advice source — the brief predicted this; Berns mentions robo-advisors only in passing and the field has moved fast.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a current fintech/digital-advice source — the brief predicted this; Berns mentions robo-advisors only in passing and the field has moved fast",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z2.10",
+    "local_id": "Z2.10",
+    "module": "wealth-management",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Direct Indexing",
+    "tag": "global",
+    "global_id": "G179",
+    "quick_definition": "Owning the individual securities of an index directly in a separately managed account rather than through a fund — so the holdings can be personalized and, above all, tax-loss-harvested at the single-stock level — bringing techniques once reserved for institutions and the wealthy down to the individual investor.",
+    "explainer_covers": [
+      "The mechanics: instead of buying an S&P 500 fund, you own (a sampled basket of) the 500 stocks in an SMA (★ G153) that tracks the index — same market exposure (★ G138), but you hold the underlying names, which technology and fractional shares now make feasible at modest account sizes.",
+      "The killer feature — single-stock tax-loss harvesting (G167): in any given year some index members are down even when the index is up; owning them directly lets you harvest those individual losers (sell for the tax loss, buy a close substitute to stay invested and avoid the wash-sale rule) — generating a recurring stream of tax savings (\"tax alpha\") a single index fund cannot, because the fund nets winners against losers internally.",
+      "Personalization: direct ownership also lets the investor customize the index — exclude a sector or company (ESG/values screens), avoid over-concentration in an employer's stock, or tilt toward a factor — tailoring the \"index\" to the individual in a way a fund can't.",
+      "Why it's a \"WM-native\" product even though it's old parts: it fuses the exposure of an index fund (★ G138), the wrapper of an institutional SMA (★ G153), and the purpose of individual tax management (G166) — the clearest example in the module of existing components reassembled into a product that exists specifically to serve the individual's tax bill (the problem the index, the endowment, and the 401(k) don't have).",
+      "The limits: it helps only taxable accounts (no benefit in an IRA/401(k), G168), its tax benefit front-loads and decays as the portfolio's embedded gains grow, it adds complexity and tracking error vs. a fund, and it requires the technology and scale that have only recently made it viable for non-UHNW investors."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G153",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G179` (this node), `G167` tax-loss harvesting (the engine), `G166` tax-aware investing & asset location, `★ G138` index fund (the exposure) / `★ G153` SMA (the wrapper) — *the featured \"old parts, new product\" disambiguation*, `★ G148` smart beta (the customization/tilt overlap), `G178` robo-advisor (which increasingly bundles direct indexing), Z3.3 (selection/implementation for the individual), AM Z2.2 (the index fund it disaggregates). **GAP: a current source for direct indexing and personalized-portfolio technology — the brief predicted this; direct indexing appears in none of the Drive sources.** ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a current source for direct indexing and personalized-portfolio technology — the brief predicted this; direct indexing appears in none of the Drive sources",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,705 @@
+[
+  {
+    "id": "private-credit.z2.1",
+    "local_id": "Z2.1",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Private Credit Strategy Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of credit strategies by seniority, security, and target return — from senior secured direct lending (≈8–12%) through mezzanine (≈12–18%) to distressed/opportunistic (≈15–25%+).",
+    "explainer_covers": [
+      "The axes: position in the capital structure · secured vs. unsecured · cash-flow vs. asset-based · sponsored vs. non-sponsored.",
+      "How risk, return, and required skillset rise together down the stack (underwriting → structuring → restructuring).",
+      "Where each strategy's capital comes from and who plays in it."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, `★ G29` Leverage, `★ G78` Seniority, Z1.13, Z1.1. ## Branch 2A — Senior & Core Strategies",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.2",
+    "local_id": "Z2.2",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Direct Lending",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The core strategy: senior secured, first-lien, floating-rate term loans made directly to middle-market companies (mostly PE-sponsored) and held to maturity.",
+    "explainer_covers": [
+      "Defining characteristics: first-lien senior secured, floating rate, 5–7-year tenor, bilateral or small-club.",
+      "The sponsored bias and the relationship/origination flywheel.",
+      "Typical economics (spread + OID + fees + call protection) and the low historical loss rate.",
+      "Why this is the strategy the CDLI measures and the asset class is built on."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.3",
+        "note": null
+      },
+      {
+        "ref": "G65",
+        "note": null
+      },
+      {
+        "ref": "G66",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G59",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.3, `★ G65` Middle market, `★ G66` Sponsored lending, `★ G69` Floating rate, `★ G78` Seniority, `★ G59` CDLI, PE Z2.21 (the LBOs it funds).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.3",
+    "local_id": "Z2.3",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Unitranche",
+    "tag": "global",
+    "global_id": "G68",
+    "quick_definition": "A single blended loan that fuses first-lien and subordinated debt into one instrument at one blended rate, frequently split first-out/last-out among lenders behind the scenes.",
+    "explainer_covers": [
+      "The concept: one facility, one rate, one lender relationship — replacing a senior+sub structure.",
+      "The hidden plumbing: first-out/last-out (FOLO) tranching via an Agreement Among Lenders (AAL).",
+      "The borrower appeal (speed, certainty, simplicity) and why it took share from both syndicated senior and mezzanine.",
+      "Jumbo unitranche and the convergence with the BSL market at the large end."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.16",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2, Z2.5 (the mezzanine it displaced), `★ G79` Intercreditor (the AAL), Z3.6 (structuring), Z3.16, Z1.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.4",
+    "local_id": "Z2.4",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Second Lien Loans",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Junior secured debt that ranks behind a first lien on the same collateral but ahead of unsecured and equity.",
+    "explainer_covers": [
+      "Where it sits: secured but subordinated; higher spread than first lien.",
+      "The intercreditor relationship with the first lien (payment vs. lien subordination, standstills).",
+      "When a borrower uses a 1L/2L structure vs. a unitranche.",
+      "Recovery implications of being second in line on the collateral."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G78` Lien priority, `★ G79` Intercreditor, `★ G33` Debt stack, Z2.3 (the alternative), Z4.8 (recovery). ## Branch 2B — Junior & Subordinated",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.5",
+    "local_id": "Z2.5",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Mezzanine Debt",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Subordinated debt — often unsecured — carrying a cash coupon plus PIK and sometimes warrants, sitting between senior debt and equity in both risk and return.",
+    "explainer_covers": [
+      "The classic structure: cash interest + PIK + an equity kicker (warrants); 12–18% blended target.",
+      "Its role bridging the gap between senior debt and the sponsor's equity cheque.",
+      "Why mezzanine shrank as unitranche absorbed the junior-capital role — and where it persists.",
+      "Subordination, intercreditor terms, and downside in a restructuring."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.15",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G72` PIK, `★ G33` Debt stack, `★ G79` Intercreditor, Z2.3 (its replacement), Z2.15, `★ G29` Leverage. ## Branch 2C — Distressed & Special Situations *(Moyer spine)*",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.6",
+    "local_id": "Z2.6",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Distressed Debt & Special Situations",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Investing in the debt of stressed or distressed companies — buying at a discount to par to earn a high return on recovery, a restructuring, or a control outcome.",
+    "explainer_covers": [
+      "The spectrum: stressed/performing-distressed (mispriced but paying) vs. deep distressed (default likely or underway).",
+      "Trading distressed paper vs. originating rescue capital.",
+      "The Moyer analytical frame: value the enterprise, find where value \"breaks,\" and price the security accordingly.",
+      "Why Europe and the U.S. differ (insolvency regimes) and why this is a specialist skillset."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7, Z2.8, `★ G81` Workout, `★ G61` Recovery, Z4.6 (Chapter 11), PE Z2.26 (*distressed PE — the equity-control cousin*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.7",
+    "local_id": "Z2.7",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Loan-to-Own / Distressed-for-Control",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Using a distressed debt position to take equity control of a company through a restructuring, by holding the security that converts to ownership.",
+    "explainer_covers": [
+      "The strategy: buy the fulcrum debt, drive the restructuring, convert to controlling equity.",
+      "Why it blurs the credit/PE line (a lender becomes an owner).",
+      "Execution risk: the restructuring process, creditor classes, and contested control."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G82",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.8 (the fulcrum), `★ G82` Watch-list, Z4.6 (in-court process), PE Z2.26 (the equity outcome), `★ G61` Recovery.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.8",
+    "local_id": "Z2.8",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "The Fulcrum Security",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The layer of the capital structure where enterprise value runs out — the security that absorbs losses and typically converts to equity in a restructuring.",
+    "explainer_covers": [
+      "How to identify it: estimate enterprise value, walk down the stack, find where value \"breaks.\"",
+      "Why owning the fulcrum is the key to a loan-to-own play.",
+      "How valuation uncertainty makes fulcrum identification the central analytical bet (the core Moyer skill)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7, `★ G61` Recovery / LGD, `★ G33` Debt stack, `★ G25` Enterprise Value (*shared PE node — the valuation it rests on*), Z4.8. ## Branch 2D — Asset-Based & Specialty",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.9",
+    "local_id": "Z2.9",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Specialty Finance",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Niche, often non-corporate lending against specific cash-flowing assets — equipment, receivables, royalties, consumer loans, litigation claims, trade finance, and more.",
+    "explainer_covers": [
+      "The breadth: equipment finance, factoring/receivables, royalty/IP finance, consumer/point-of-sale, litigation finance, trade finance.",
+      "The common thread: lend against a defined asset or cash-flow stream, not a corporate balance sheet.",
+      "Mostly non-sponsored, structurally complex, and the frontier of \"asset-based finance\" (ABF).",
+      "(Source thin — see Part 9; the ABF boom largely post-dates the books.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.10",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G76",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.10 (ABL is its corporate sibling), `★ G75` LTV, `★ G76` Borrowing base, Z5.14 (the ABF frontier), `★ G78` Security.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.10",
+    "local_id": "Z2.10",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Asset-Based Lending (ABL)",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Revolving credit secured by and sized to specific working-capital assets — receivables, inventory, equipment — via a dynamically-measured borrowing base.",
+    "explainer_covers": [
+      "The mechanic: a borrowing base = eligible collateral × advance rates (e.g., 85% of receivables, 50% of inventory).",
+      "Why ABL is lower-risk/lower-yield than cash-flow lending (repayment comes from the assets).",
+      "Monitoring via borrowing-base certificates and field exams.",
+      "When a borrower is an ABL candidate vs. a cash-flow candidate."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.9",
+        "note": null
+      },
+      {
+        "ref": "G76",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G76` Borrowing base, `★ G75` LTV, Z3.13 (ABL structuring), Z2.9, `★ G78` Security. ## Branch 2E — Sector & Specialist Credit",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.11",
+    "local_id": "Z2.11",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "Venture Debt",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Debt extended to venture-backed, often pre-profit start-ups — typically alongside equity, with warrants — to extend runway without further dilution.",
+    "explainer_covers": [
+      "The model: lend against the backing of strong VC investors and growth, not current cash flow.",
+      "Warrants and the equity kicker; runway extension between equity rounds.",
+      "The risk profile (binary, sponsor-of-record-dependent) and why it's a distinct discipline."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.9",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G40",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z2.2 / Z2.5 (*the VC equity it complements*), `★ G72` PIK, `★ G40` Cap table (shared), Z2.9.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.12",
+    "local_id": "Z2.12",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 12,
+    "title": "Real Estate Debt / CRE Lending",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Property-secured lending across the capital stack — senior mortgages, mezzanine, bridge, and construction loans — sized on loan-to-value.",
+    "explainer_covers": [
+      "The property capital stack: senior mortgage → mezz → preferred → equity.",
+      "Bridge, transitional, and construction lending; LTV as the master risk gauge.",
+      "How the cycle, rates, and asset type drive credit risk.",
+      "(Needs a dedicated real-estate-credit source — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.27",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.13",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G75` LTV, `★ G78` Security, PE Z2.27 (*real assets — the equity side*), Z2.13.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.13",
+    "local_id": "Z2.13",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 13,
+    "title": "Infrastructure Debt",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Long-dated lending to infrastructure and project-finance assets, prized for stable, often investment-grade-like, yield.",
+    "explainer_covers": [
+      "Project-finance structures and long tenors; greenfield vs. brownfield vs. operating risk.",
+      "The yield/duration appeal to insurers and long-horizon LPs.",
+      "How the return and risk profile differs from corporate direct lending.",
+      "(Needs a dedicated infrastructure-finance source — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.27",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.12",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z2.27 (real assets), `★ G69` Floating vs. fixed, Z5.4 (insurance capital), Z2.12. ## Branch 2F — Fund-Level & Structured",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.14",
+    "local_id": "Z2.14",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 14,
+    "title": "NAV Lending & Fund Finance",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Lending against the assets or uncalled commitments of investment funds themselves — subscription (capital-call) lines, NAV facilities, and GP financings.",
+    "explainer_covers": [
+      "Subscription lines (secured on LP commitments) vs. NAV facilities (secured on portfolio value) vs. GP/management-company loans.",
+      "Why this market exploded — and how subscription lines flatter reported IRRs by deferring capital calls.",
+      "The risk debate (leverage on leverage at the fund level).",
+      "This node directly fills PE-map gap #10 (fund finance / NAV lending)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G67",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G15` Capital call (*the commitments it lends against*), `★ G4` J-curve / `★ G1` IRR (*the metrics it distorts*), `★ G67` Fund leverage, PE Z5.7 (LP pacing).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.15",
+    "local_id": "Z2.15",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 15,
+    "title": "Opportunistic & Capital-Solutions Credit",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Flexible, all-weather mandates that provide bespoke capital — rescue financing, structured equity, preferred, and hybrid solutions — across the cycle.",
+    "explainer_covers": [
+      "Capital-solutions / \"rescue\" financing for companies shut out of normal markets.",
+      "Hybrid instruments (structured preferred, PIK toggles, warrants) blending debt and equity features.",
+      "Why these mandates flex toward distress in downturns and growth-financing in upturns."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.5",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G72` PIK, `★ G81` Workout, Z2.6 (distressed overlap), `★ G37` Preferred equity (shared), Z2.5.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z2.16",
+    "local_id": "Z2.16",
+    "module": "private-credit",
+    "zone": 2,
+    "ordinal": 16,
+    "title": "Structured Credit & CLOs (as a strategy)",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Investing in — or issuing — collateralized loan obligations and other structured credit, including the equity and mezzanine tranches, and using CLOs to finance a loan book.",
+    "explainer_covers": [
+      "CLO mechanics in brief: a pool of loans tranched into rated debt and an equity residual.",
+      "Investing across the tranches (CLO equity/mezz) vs. issuing a CLO to finance direct lending.",
+      "How structured credit connects private origination to the public/BSL plumbing.",
+      "(Light coverage — a dedicated structured-credit source is flagged in Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G33` Debt stack, Z1.7 (the BSL world), Z5.3 (CLO as fund financing), `★ G77` Credit ratings. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

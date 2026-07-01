@@ -1,0 +1,589 @@
+[
+  {
+    "id": "hedge-funds.z2.1",
+    "local_id": "Z2.1",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Hedge Fund Strategy Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of hedge-fund strategies along the axes that actually differentiate them — directional vs. market-neutral, discretionary vs. systematic, and liquid vs. illiquid — from stock-picking long/short to top-down macro to model-driven quant.",
+    "explainer_covers": [
+      "The axes: direction (net-long vs. neutral vs. net-short), decision style (discretionary judgment vs. systematic models), time horizon (intraday to multi-year), asset class (equity, rates, FX, credit, commodities), and liquidity.",
+      "How each family maps to a source of inefficiency: long/short exploits mispriced stocks, macro exploits mispriced economies, event-driven exploits mispriced corporate events, quant exploits many tiny statistical edges.",
+      "How the required skill differs: deep fundamental research (long/short, event, credit) vs. macro judgment (macro) vs. data and engineering (quant) vs. risk-allocation and manager-selection (multi-strat).",
+      "Where the industry's capital actually sits today (the multi-strategy platforms and quant shops having gathered an outsized share)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, `★ G125` Market efficiency (each strategy hunts a different inefficiency), `★ G115` Fundamental Law (the lens that compares them), Z1.1, `★ G124` Second-level thinking. ## Branch 2A — Long/Short Equity (the flagship)",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.2",
+    "local_id": "Z2.2",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Long/Short Equity Defined",
+    "tag": "global",
+    "global_id": "G128",
+    "quick_definition": "The original and still-largest hedge-fund strategy: buy undervalued stocks (longs), sell short overvalued ones (shorts), and profit from the spread between them while dampening exposure to the overall market.",
+    "explainer_covers": [
+      "The direct descent from A.W. Jones; why it remains the archetypal \"hedge fund.\"",
+      "The two engines of return: long alpha (the longs beat the market) and short alpha (the shorts lag it) — and how the short book both adds return and hedges.",
+      "Net exposure as the dial: from market-neutral (~0% net) to net-long \"directional\" L/S (a long-biased book with a short overlay) — the choice that defines a fund's risk.",
+      "Sub-styles: fundamental L/S, sector-specialist (e.g., TMT, healthcare), and the famous \"Tiger Cub\" lineage out of Julian Robertson.",
+      "Why it scales less well than it looks: the short book is hard, borrow is finite, and crowded longs/shorts move together."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G108",
+        "note": null
+      },
+      {
+        "ref": "G109",
+        "note": null
+      },
+      {
+        "ref": "G110",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G108` The hedge, `★ G109` Short selling, `★ G110` Net & gross exposure, `★ G106` Alpha, Z2.3 (pairs/relative value), `★ G124` Second-level thinking, Z3.3 (the thesis), `★ G87` The valuation toolkit (used to find the longs and shorts).",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 5 (\"Top Cat,\" Julian Robertson/Tiger); Schwager Part 3 (equity traders).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.3",
+    "local_id": "Z2.3",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Pairs Trades & Relative Value",
+    "tag": "global",
+    "global_id": "G124",
+    "quick_definition": "Betting on the relative performance of two related securities — long one, short the other — so the trade pays off on the gap between them regardless of which way the market moves.",
+    "explainer_covers": [
+      "The canonical pair: two similar companies (or a stock vs. its sector), long the cheaper, short the dearer; the market move cancels and the spread is the bet.",
+      "Why relative value is \"purer alpha\": it removes market direction (beta) almost entirely, isolating the relative call.",
+      "Extensions: statistical arbitrage (many pairs at once, systematically — bridges to quant), capital-structure arbitrage (a company's debt vs. its equity — bridges to credit), and convertible arbitrage.",
+      "The risk that defines it: spreads can widen before they converge (the trade is right but you're carried out) — leverage turns a temporary divergence into a permanent loss."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G108",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G131",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G108` The hedge, `★ G124` Pairs/relative value (this node), `★ G131` Quant (stat arb), Z2.8 (capital-structure arb → credit), `★ G29` Leverage (the amplifier and the danger), `★ G116` Drawdown. ## Branch 2B — Global Macro",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.4",
+    "local_id": "Z2.4",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Global Macro Defined",
+    "tag": "global",
+    "global_id": "G129",
+    "quick_definition": "Top-down investing on the direction of whole economies and markets — interest rates, currencies, equity indices, commodities — expressed wherever the view is cleanest, anywhere in the world.",
+    "explainer_covers": [
+      "The macro mindset: start from the big picture (growth, inflation, policy, geopolitics) and find the security that best expresses the view — often in rates or FX, where liquidity is deepest and leverage cheapest.",
+      "Discretionary macro (a PM's judgment — Soros, Druckenmiller, Dalio) vs. systematic macro and managed futures/CTAs (trend-following models — bridges to quant).",
+      "The signature trade: Soros and the British pound, 1992 (\"breaking the Bank of England\") — a one-way bet against an unsustainable policy peg, sized enormously because the downside was capped (deep dive in Z3.7 on conviction sizing).",
+      "Why macro is \"lumpy\": few high-conviction bets per year (low breadth) means it lives or dies on being very right occasionally — the Grinold tension between skill and breadth, made flesh.",
+      "Tools: futures, forwards, options, and swaps across asset classes; expressing views with limited, defined downside."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G131",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G129` (this node), `★ G107` Beta (macro trades *are* big directional bets), `★ G114` Breadth (macro is low-breadth, high-conviction), Z3.7 (conviction & sizing), `★ G127` Cycles, `★ G131` Quant (systematic macro/CTAs).",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 4 & 6–7 (Soros \"The Alchemist,\" \"White Wednesday,\" Druckenmiller); Drobny,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.5",
+    "local_id": "Z2.5",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Expressing a Macro View Across Asset Classes",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The craft of turning a top-down opinion into a concrete position — choosing among rates, FX, equities, and commodities for the cleanest, best-risk/reward way to be right.",
+    "explainer_covers": [
+      "The same view, many expressions: a \"US slowdown\" thesis could be long bonds, short the dollar, short cyclical equities, or short copper — each with different liquidity, carry, and asymmetry.",
+      "Asymmetry and optionality: macro traders prize trades where the downside is defined and the upside is large (options, or pegs that can only break one way) — the 1992 sterling logic.",
+      "Carry, leverage, and time: how the cost of holding a position and the financing available shape which expression wins.",
+      "Risk management in macro: sizing to the pain the position can inflict, cutting losers fast, and the discipline that separates the survivors from the blow-ups (Schwager's recurring theme)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G123",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.4, `★ G123` Position sizing, `★ G116` Drawdown, `★ G29` Leverage, Z3.7 (conviction), `★ G122` Catalyst (the macro event that resolves the view). ## Branch 2C — Event-Driven",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.6",
+    "local_id": "Z2.6",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Merger (Risk) Arbitrage",
+    "tag": "global",
+    "global_id": "G130",
+    "quick_definition": "After a merger is announced, buying the target (and often shorting the acquirer) to capture the spread between the target's current price and the agreed deal price — a return earned for bearing the risk the deal falls through.",
+    "explainer_covers": [
+      "The mechanics: an announced target trades below the offer price (the spread) because the deal might break; the arbitrageur collects that spread if it closes.",
+      "What the spread pays you for: deal-break risk (regulatory, financing, shareholder vote, MAC clauses) and time — it's an insurance-like return, small and steady until a deal breaks and it isn't.",
+      "Long target / short acquirer in a stock deal (to lock the exchange ratio); cash-deal mechanics differ.",
+      "Reuses the IB M&A toolkit from the investor's seat: the same ★ G99 control premium and deal terms the banker structures (IB Z2.x), now handicapped for probability of close.",
+      "Why it's \"picking up nickels in front of a steamroller\": many small gains punctuated by rare large losses — risk management and deal selection are everything."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G130",
+        "note": null
+      },
+      {
+        "ref": "G133",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G130` Event-driven (this branch), `★ G133` Merger arbitrage, `★ G122` Catalyst (the deal close *is* the catalyst), `★ G99` Control premium (IB), IB Z2.2 (the M&A deal being arbitraged), `★ G62` Default/PD-style probability thinking (deal-break odds), `★ G116` Drawdown.",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 10 (\"The Yale Men,\" Farallon's event-driven model).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.7",
+    "local_id": "Z2.7",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Activist Investing",
+    "tag": "global",
+    "global_id": "G134",
+    "quick_definition": "Taking a meaningful minority stake in a public company and using it as leverage to push management and the board for change — strategic, operational, financial, or a sale — to force the value gap closed rather than waiting for it.",
+    "explainer_covers": [
+      "The playbook: build a stake quietly, publish a thesis (the \"white paper\"), agitate for board seats, capital return, a break-up, cost cuts, or a sale; escalate to a proxy fight if resisted.",
+      "The bridge to PE: an activist is a public-market investor behaving like an owner — it uses governance and influence (PE's tools) without taking control or going private. Cross-link to PE Z2 (control) and PE Z4.2 (governance).",
+      "The value-creation logic: the activist supplies the catalyst the market was missing — the reason a cheap stock re-rates.",
+      "The debate: short-termism and balance-sheet engineering vs. genuine accountability and value creation; why the same action draws both critiques.",
+      "Famous campaigns and the rise of activism as an asset class."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.16",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G134",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G134` (this node), `★ G122` Catalyst (the activist *is* the catalyst), `★ G124` Second-level thinking, PE Z4.2 (governance — the shared toolkit), PE Z2.16 (minority influence), Z4.3 (engagement during the hold), `★ G99` Control premium.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.8",
+    "local_id": "Z2.8",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "Credit-Focused & Distressed Hedge Funds",
+    "tag": "global",
+    "global_id": "G127",
+    "quick_definition": "Funds that trade corporate credit — from relative-value bets in healthy bonds and loans to deep-distressed and \"loan-to-own\" plays in defaulted companies — the strategy family that overlaps most with private credit and restructuring.",
+    "explainer_covers": [
+      "The spectrum: long/short credit and capital-structure arbitrage (relative value in a company's bonds vs. loans vs. equity) → stressed credit → distressed debt (buying defaulted or near-default paper) → distressed-for-control (loan-to-own).",
+      "The bridge back to Private Credit: these funds trade the very instruments the credit module's lenders originate and hold — so they reuse the credit glossary wholesale: ★ G61 recovery/LGD, ★ G62 default/PD, ★ G78 security/lien priority, ★ G79 intercreditor, ★ G81 workout, ★ G82 non-accrual/watch-list, ★ G33 debt stack, ★ G34 covenant.",
+      "The distressed analytical core: estimating recovery, modeling the capital structure, and figuring out where in the stack value \"breaks\" (the fulcrum security) — and using the bankruptcy/restructuring process to convert debt into control or a recovery.",
+      "Howard Marks and the Oaktree philosophy as the spine: buying when others must sell, second-level thinking applied to credit, risk as permanent loss, and reading the credit cycle.",
+      "Why distressed is counter-cyclical: its opportunity set explodes exactly when the macro and equity strategies are suffering."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.5",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G79",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      },
+      {
+        "ref": "G82",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G127` Cycles (distressed is a cycle play), `★ G126` Risk as permanent loss, `★ G61`/`★ G62`/`★ G78`/`★ G79`/`★ G81`/`★ G82` (the reused credit nodes), Credit Z2 (the lender's side of the same paper), Credit Z4 (workouts/recovery), PE Z2.26 (distressed PE — the control cousin), IB Z2.5 (restructuring advisory).",
+    "gaps": [],
+    "real_world_layer": "Marks,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.9",
+    "local_id": "Z2.9",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Quantitative & Systematic Investing",
+    "tag": "global",
+    "global_id": "G131",
+    "quick_definition": "Replacing discretionary judgment with models, data, and code — systematically finding many small statistical edges and trading them at scale, so that breadth, not deep conviction in a few names, is the engine of returns.",
+    "explainer_covers": [
+      "The core idea via the Fundamental Law (★ G115): a tiny per-bet edge (a low information coefficient) becomes a high information ratio if you diversify it across thousands of independent bets — quant maximizes breadth (Grinold & Kahn).",
+      "The families: statistical arbitrage (mean-reversion across many pairs), factor/systematic equity (value, momentum, quality, low-vol tilts), managed futures/CTA (trend-following across markets), and high-frequency trading (speed as the edge).",
+      "The pioneers: Renaissance Technologies (Simons, \"The Code Breakers\") and D.E. Shaw — and how secrecy and engineering, not narrative, define the culture.",
+      "The disciplines that keep quant honest: guarding against data mining (a signal that worked in backtest by luck), out-of-sample testing, and the \"sensible, predictive, consistent, additive\" screen for new signals (Grinold & Kahn, \"Data mining is easy\").",
+      "The signature risks: crowding and shared capacity (many quants on the same signals — the August 2007 \"quant quake\"), and model decay as edges get arbitraged away."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G131",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G113",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G131` (this node), `★ G115` Fundamental Law, `★ G114` Breadth, `★ G113` Information coefficient, `★ G120` Capacity & crowding, Z3.6 (systematic portfolio construction), `★ G136` The edge, `★ G129` Macro (systematic macro/CTAs overlap).",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 13 (\"The Code Breakers,\" Renaissance/Simons); Schwager (Jaffray Woodriff, Edward Thorp).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.10",
+    "local_id": "Z2.10",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Factors, Signals & the Quant Research Process",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The engine room of quant — the hunt for factors (broad, persistent return drivers like value or momentum) and signals (specific predictive inputs), and the research discipline that separates real edges from statistical noise.",
+    "explainer_covers": [
+      "Factors vs. alpha signals: factors (value, momentum, quality, size, low-volatility) are now widely known and cheaply accessible (\"smart beta\" — arguably beta, not alpha); true alpha signals are proprietary and decay when discovered.",
+      "Turning raw data into a forecast: the alpha = IC × volatility × score decomposition — controlling a raw signal for skill, volatility, and expectations (Grinold & Kahn).",
+      "The research pipeline: hypothesis → backtest → out-of-sample/cross-validation → paper trading → live, with the four-part screen (sensible, predictive, consistent, additive).",
+      "Alternative data and the modern edge: satellite imagery, credit-card flows, web traffic, NLP on filings — the frontier of finding signals before competitors (GAP: post-2015 alt-data and machine-learning methods are barely covered by the 2020 source).",
+      "Why most backtests disappoint live: data mining, overfitting, transaction costs, and capacity."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.9",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G113",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G131",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G113` Information coefficient, `★ G136` The edge, `★ G107` Beta (factors as cheap beta), Z2.9, Z3.6 (construction), `★ G120` Capacity, `★ G131` Quant. **GAP: alternative data & ML (recency).** ## Branch 2E — Multi-Strategy / Platform",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "post-2015 alt-data and machine-learning methods are barely covered by the 2020 source",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "alternative data & ML (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z2.11",
+    "local_id": "Z2.11",
+    "module": "hedge-funds",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "Multi-Strategy & the Platform (Pod) Model",
+    "tag": "global",
+    "global_id": "G132",
+    "quick_definition": "Running many small, independent investment teams (\"pods\") — each trading its own book under tight risk limits — beneath one centralized risk-management and financing umbrella, so the firm harvests diversified alpha and controls aggregate risk.",
+    "explainer_covers": [
+      "The structure: dozens to hundreds of pods (PMs with their own analysts and capital), each on a leash of strict risk limits and stop-losses; the central risk team allocates capital and cuts underperformers fast.",
+      "Why it works: diversification across many uncorrelated pods produces a smoother return stream (a high Sharpe), and centralized leverage amplifies a modest aggregate edge into an attractive return — the Citadel/Millennium/Point72 model.",
+      "The pass-through fee economics (revisited from Z1.5): investors bear the actual costs, including the intense competition for pod talent, plus a performance cut.",
+      "The risks the model concentrates: crowding (pods across firms in the same trades), deleveraging cascades (a shock forces synchronized cutting — \"the dangers of diversification,\" Grinold & Kahn), and the war for talent inflating costs.",
+      "Why this model now commands an outsized share of industry capital and the best-paid seats."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z4.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G132",
+        "note": null
+      },
+      {
+        "ref": "G123",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G132` (this node), `★ G123` Position sizing (centralized risk budgeting), `★ G120` Capacity & crowding, `★ G116` Drawdown, `★ G29` Leverage (central financing), Z4.1 (risk management — the platform's core competence), Z5.1 (the firm as a business).",
+    "gaps": [],
+    "real_world_layer": "the modern platform era (Citadel, Millennium, Point72) — largely post-dates the narrative sources; see Part 9.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

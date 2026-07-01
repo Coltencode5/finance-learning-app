@@ -1,0 +1,674 @@
+[
+  {
+    "id": "venture-capital.z1.1",
+    "local_id": "Z1.1",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Venture Capital?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture capital is the financing of early-stage, high-risk, high-growth private companies in exchange for an equity stake, structured around the expectation that a handful of extraordinary winners will generate enough return to pay for many failures.",
+    "explainer_covers": [
+      "The basic bargain: a VC provides capital (and often support) in exchange for an equity stake; neither the stake nor the capital is recovered until an exit, which may be years away.",
+      "Why VC finances companies that cannot access debt: no cash flow, no collateral, uncertain survival — the opposite of what banks lend against.",
+      "The risk/return profile: most VC-backed companies fail; the model survives because the winners can return 10×, 100×, or more on a single investment.",
+      "VC as a subset of private equity broadly conceived: the same closed-end fund structure and LP/GP relationship (inherited from PE) but applied to earlier, smaller, higher-risk companies.",
+      "Scale context: the US VC industry invests roughly $60–100B annually — a tiny fraction of global financial markets — yet the venture-backed companies it has produced (Apple, Google, Amazon, Facebook, Cisco) account for a disproportionate share of public-market value and R&D."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G201 (the power law, the reason VC works this way), Z1.2, Z1.4 (VC vs. PE), Z1.5 (fund structure), ★G6 GP, ★G7 LP, Z1.10 (cross-module map), PE Z1.1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.2",
+    "local_id": "Z1.2",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Power Law — Venture's Organizing Logic",
+    "tag": "global",
+    "global_id": "G201",
+    "quick_definition": "The venture return distribution in which a tiny number of investments produce nearly all of a fund's returns — the empirical law that dictates how VC is sourced, sized, and managed.",
+    "explainer_covers": [
+      "The statistical shape: venture returns do not follow a normal (bell-curve) distribution. They follow a power-law (Pareto) distribution in which a small percentage of investments capture a large percentage of total returns. A single investment — Sequoia's Google stake, Accel's Facebook investment — can return more than an entire fund's invested capital.",
+      "Why outliers dominate: in power-law environments, once a winner begins winning, success multiplies success (Mallaby's observation about Jeff Bezos walking out of the cinema — average wealth of remaining people plummets). Network effects, brand, talent attraction, and capital access all accelerate.",
+      "The implication for practice: if a few investments make everything, VC must be practiced very differently from other investment disciplines. Missing the best deal matters more than avoiding the worst. A \"bad\" batting average (losing on 50% of investments) is acceptable — even expected — if the home runs are large enough. The goal is not a good batting average; it is \"at-bats per home run.\"",
+      "Why this single fact organizes everything: sourcing (see every deal, especially the best ones), ownership (hold enough of the winners), reserves (follow the winners with more capital), portfolio construction (size each bet as if it could return the fund), and exits (wait for the outsized outcome).",
+      "The power-law curve applies not just within a single fund's portfolio but also across VC firms: a small set of top-quartile firms captures most of the industry's returns, and those firms' records tend to persist across fund cycles."
+    ],
+    "connects_to": [
+      {
+        "ref": "venture-capital.z4.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G202",
+        "note": null
+      },
+      {
+        "ref": "G212",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.3 (★G202, portfolio construction), Z3.2 (★G212, deal flow), Z1.9 (return metrics), PE (contrast — PE returns are more distributed), ★G115 (Fundamental Law of Active Management, the inverted version), AM Z5.x (manager selection, ★G156). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.3",
+    "local_id": "Z1.3",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "The Players: LPs, GPs, Founders & the Startup",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The venture ecosystem runs on LPs who fund the GPs who back the founders who build the startups — four actors bound by overlapping, sometimes diverging, incentives.",
+    "explainer_covers": [
+      "Reuse ★G6 (GP) and ★G7 (LP): the same legal relationship as PE, with the GP managing a closed-end fund on behalf of passive LPs.",
+      "The founder as the central new actor: unlike PE, where management teams are hired or retained, the VC relationship is built around the founding team — the people who identified the problem, built the initial product, and are asking a VC to bet on their judgment.",
+      "Who LPs are in VC: university endowments (Yale, Stanford, MIT), foundations, pension funds, sovereign wealth funds, family offices, and funds-of-funds — the same LP base as PE, but with a higher tolerance for illiquidity and power-law risk (evidenced by Yale's 16% allocation to VC vs. 5% average, per Kupor).",
+      "The syndicate: most rounds involve a lead investor (who sets terms and takes a board seat) plus co-investors (who participate at the lead's terms). The syndicate assembles quickly in competitive rounds.",
+      "The four-actor tension: LPs want DPI (realized cash); GPs want TVPI (markups that support the next fundraise); founders want to keep building; employees want liquidity. These interests diverge in slow-exit environments."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.6",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G213",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G6, ★G7, Z1.5, Z1.6, Z3.3 (★G213, the founder bet), ★G156 (manager selection, the LP's view), PE Z1.3, WM Z3.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.4",
+    "local_id": "Z1.4",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "VC vs. PE vs. Growth Equity vs. Angel",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture buys minority stakes in unprofitable high-growth companies using equity alone, while PE buys controlling stakes in mature, cash-generative businesses often using leverage — the two most important private capital strategies, and the most commonly conflated.",
+    "explainer_covers": [
+      "The deal spectrum by company maturity: angel/seed (idea + founder) → early venture (product, pre-revenue) → growth equity (revenue, not yet profitable) → buyout (mature, profitable, cash-generative).",
+      "Minority vs. control: VCs almost always hold minority stakes and influence through board seats and protective provisions (★G211); PE buyout funds almost always hold majority stakes and control through board domination. This is the single biggest structural difference.",
+      "Leverage: PE buyouts are powered by debt (★G29, ★G33) amplifying equity returns; VC is almost entirely equity financed at the portfolio-company level (no cash flow to service debt).",
+      "Return construction: PE returns are driven by multiple expansion, leverage, and operational improvement across a diversified portfolio; VC returns are driven by the power law (G201) — the math is different enough that the same word (\"private equity\") causes persistent confusion.",
+      "Growth equity sits in between: it takes minority stakes in companies that have reached revenue but not yet profitability, typically without leverage; it shares features of both. The spectrum is a continuum, not a set of hard-edged boxes."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G215",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.1, Z1.2 (G201), Z2.7 (G215, crossover), ★G83 (sell-side vs. buy-side), ★G29, ★G33, AM Z2.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.5",
+    "local_id": "Z1.5",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "The Venture Fund Structure (inherited from PE)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A venture fund is the same closed-end, ten-year limited-partnership vehicle as a PE fund — raising committed capital it draws down as it invests and returns over its life — with venture-specific nuances in scale and timing.",
+    "explainer_covers": [
+      "The LP/GP structure: reuse ★G6 (GP), ★G7 (LP), ★G19 (blind pool), ★G20 (LPA), ★G15 (capital call), ★G16 (committed/contributed capital), ★G18 (vintage year), ★G21 (investment period).",
+      "The ten-year life with the investment period (typically years 1–5, when new investments are made) and the harvest period (years 5–10, when holdings are managed and exited). Extensions of one to two years are common and more frequent in venture than PE, because startup exits take longer.",
+      "The venture nuance on fund size: VC funds are typically smaller than PE buyout funds (micro-VCs at $10–50M; institutional seed funds at $50–200M; traditional Series A funds at $200–700M; crossover/multistage funds at $1B+). Smaller funds make more of them and diversify more bets.",
+      "Capital calls in venture: called as the GP identifies opportunities and makes investments, usually over the first three to four years. Not called all at once because idle cash drags returns (★G4 J-curve logic).",
+      "The blind-pool principle (★G19): LPs commit to the fund before knowing which companies will be invested in, trusting the GP's mandate."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.8",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.9",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.11",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.17",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.18",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.6",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.7",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G21",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G6, ★G7, ★G19, ★G20, ★G15, ★G16, ★G18, ★G21, Z1.6, Z1.7 (J-curve), Z5.5 (raising the next fund), PE Z1.2–Z1.18. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.6",
+    "local_id": "Z1.6",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Fund Economics: Carry, Fees & GP Commitment (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture funds run on the same \"2 and 20\" economics as PE funds — roughly 2% annual management fee and 20% carried interest — but the power law means that carry from a single portfolio company can dwarf management fees across an entire fund's life.",
+    "explainer_covers": [
+      "Reuse ★G9 (\"2 and 20\"), ★G10 (carried interest), ★G8 (management fee), ★G23 (GP commitment/\"skin in the game\"), ★G12 (hurdle/preferred return), ★G13 (catch-up), ★G14 (clawback), ★G11 (distribution waterfall).",
+      "The management fee in venture: charged on committed capital during the investment period, often stepping down to invested capital in the harvest period. For a $500M fund, the management fee stream over ten years might total $70–90M — meaningful, but dwarfed by carry if the fund generates 3× net.",
+      "Why carry dominates in venture: unlike PE, where carry is spread across many medium-sized wins, venture carry concentrates in the handful of power-law outcomes. A VC firm's carry from one investment in one fund can exceed the management fees earned across the firm's entire history. This is why VC professionals are willing to tolerate lower salaries than banking peers — they're buying lottery tickets on the best companies in the world.",
+      "GP commitment (★G23): typically 1–5% of the fund, demonstrating conviction and aligning interests with LPs. In a $500M fund, a 2% GP commitment is $10M — real skin in the game.",
+      "The waterfall (★G11): same contractual priority-of-distributions structure as PE. European (whole-fund) waterfalls are more common in venture than American deal-by-deal."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.11",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.17",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G23",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G14",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.10–Z1.17, ★G9, ★G10, ★G8, ★G23, ★G12, ★G13, ★G14, ★G11, Z1.2 (why carry matters so much in venture). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.7",
+    "local_id": "Z1.7",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "The J-Curve in Venture (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The venture J-curve is deeper and longer than PE's — more early failures and exits 8–12+ years out — and the markup convention (G203) makes the reported curve look shallower than the cash curve until exits materialize.",
+    "explainer_covers": [
+      "Reuse ★G4 (J-curve): the negative-then-positive net-cash-flow shape that all closed-end fund LPs experience, as management fees and early losses dominate before exits return capital.",
+      "Why venture's J is deeper: a higher fraction of investments go to zero or near-zero in venture than in PE buyouts, pushing the trough lower. Seed and Series A failures are common and expected (part of the model).",
+      "Why venture's J is longer: startups take a long time — often 8–12 years from founding to a liquidity event — compared with PE's typical 5–7 year hold. The harvest phase is pushed further right.",
+      "The markup complication (G203): portfolio companies are marked at their last round price, creating paper TVPI gains that appear before any cash is realized. A fund can look like it's performing well (TVPI rising) while the J-curve in cash terms (DPI) remains negative for years. This is the deepest source of LP anxiety in venture.",
+      "The implication for pacing: LPs who want to invest continuously in VC must tolerate long periods of negative J-curve before earlier-vintage funds begin to generate distributions."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.18",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G203",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.18 (★G4), Z4.5 (★G203, the markup), Z5.4 (DPI vs. TVPI), ★G1/G2/G3 (return metrics), AM Z5.x, WM Z3.x. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.8",
+    "local_id": "Z1.8",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "The Venture Platform & the Partnership",
+    "tag": "global",
+    "global_id": "G216",
+    "quick_definition": "The VC firm as institution — the partnership structure, its principals, scouts, and platform team that source, win, and support deals beyond the check itself.",
+    "explainer_covers": [
+      "The partnership structure: general partners (GPs, senior decision-makers), principals/vice-presidents (deal-sourcing, diligence, board support), associates/analysts, and the growing category of \"platform\" employees who do not invest.",
+      "The platform as competitive moat: at large firms like Andreessen Horowitz (described extensively in Kupor), the platform team provides portfolio companies with recruiting assistance, business development introductions, PR/communications support, and access to a network of potential customers, partners, and future employees. The platform is itself a sourcing edge — founders choose the firm partly for what it does beyond the check.",
+      "Scouts: a network of trusted individuals (often founders or operators) who receive small amounts of capital to invest in early-stage companies in exchange for a carry share; they extend the firm's sourcing reach into networks the GPs don't personally access.",
+      "The partnership decision-making process: investment committee (IC) structures vary, ranging from consensus-required to individual GP discretion; unanimous IC approval can kill contrarian bets.",
+      "The brand as a compounding asset: a firm's track record signals quality to founders, employees, and LPs, creating a positive feedback loop (signaling → better deal flow → better returns → stronger brand → repeat). Mallaby documents this dynamic extensively in the histories of Sequoia and Kleiner Perkins."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G212",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.5 (raising the next fund), Z3.2 (★G212, deal flow as a sourcing advantage), PE Z5.1 (the GP franchise), AM Z5.x, ★G156. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.9",
+    "local_id": "Z1.9",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Venture Returns: IRR, MOIC, DPI/TVPI (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture funds are judged on the same return metrics as PE funds, but the power-law return distribution gives those metrics a distinctive shape — extreme dispersion, late realization, and a persistent gap between paper and cash.",
+    "explainer_covers": [
+      "Reuse ★G1 (IRR), ★G2 (MOIC), ★G3 (DPI/RVPI/TVPI): the three return languages common to all private funds.",
+      "The power-law shape in fund returns: venture fund returns are more dispersed than any other asset class. Kupor cites data showing median ten-year VC returns are 160 basis points below Nasdaq — meaning the average VC investor would have been better off in an index fund. But top-quartile returns are dramatically higher. In Yale's portfolio, VC has returned roughly 18% annualized over ten years and 77% over twenty years (a dot-com-era effect). Dispersion across funds dwarfs dispersion within funds.",
+      "Why manager selection (★G156) is more important in VC than anywhere: because top-quartile returns persist (the same firms that win tend to keep winning, per Kupor), and because the gap between top- and bottom-quartile is so large (as much as 3,000 basis points, per Kupor), picking the right GP is the most important decision an LP can make. This is the most persistence-driven asset class in finance.",
+      "The DPI/TVPI tension (G203): because venture markups are carried at last-round price, TVPI rises with every new up-round but DPI accumulates only when exits close. A fund can show 2.5× TVPI and 0.2× DPI for years."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z1.2",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z4.5",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.4",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      },
+      {
+        "ref": "G201",
+        "note": null
+      },
+      {
+        "ref": "G203",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G1, ★G2, ★G3, Z1.2 (G201, the power law shapes the return distribution), Z4.5 (★G203, the markup), Z5.4, Z5.5, ★G156 (manager selection), PE Z5.10. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "venture-capital.z1.10",
+    "local_id": "Z1.10",
+    "module": "venture-capital",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Where Venture Capital Sits — The Cross-Module Map",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Venture is the headwaters of the corporate lifecycle — it finances the companies that eventually IPO, become covered by equity research, and are held in public investors' portfolios — and its sibling relationship to PE is the densest inheritance link in the series.",
+    "explainer_covers": [
+      "VC as headwaters: the companies venture funds back at the seed stage eventually (if successful) raise growth rounds, prepare for an IPO (★G102, IB's process), list on public markets, receive sell-side equity research coverage (ER Z1.10), and are owned by public market fund managers (AM/HF). The entire public-markets ecosystem inherits from venture's output.",
+      "VC as PE's sibling: the two closest modules in the series. Both use the same closed-end LP/GP fund structure, the same economic terms (carry, fees, waterfall), and a substantial overlap in deal-mechanics vocabulary (term sheet, cap table, liquidation preference, anti-dilution). The differences are control vs. minority, leverage vs. equity-only, and power-law vs. diversified-portfolio return logic.",
+      "VC as an LP's alternative allocation (AM/WM view): for asset managers and wealth managers, VC is an illiquid alternative allocation where the expected return (if the right managers are selected) is high but the dispersion is extreme and the J-curve is long. The LP's framework (★G156) for selecting VC managers is the bridge node.",
+      "VC and the public/private blur (G215): in the 2010s and 2020s, the lines between venture and public markets blurred as hedge funds and mutual funds crossed into late-stage private rounds, creating a zone (crossover investing, G215) that the VC module maps at Z2.7 and that HF and AM modules reference."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.10",
+        "note": null
+      },
+      {
+        "ref": "venture-capital.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G215",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.x, IB Z2.8, ER Z1.10, AM Z2.x, HF Z3.x, WM Z3.x, ★G53 (exit), ★G102 (the bank's IPO), Z2.7 (★G215). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

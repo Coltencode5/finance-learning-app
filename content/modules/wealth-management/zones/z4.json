@@ -1,0 +1,268 @@
+[
+  {
+    "id": "wealth-management.z4.1",
+    "local_id": "Z4.1",
+    "module": "wealth-management",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "The Advisor–Client Relationship & Behavioral Coaching",
+    "tag": "global",
+    "global_id": "G161",
+    "quick_definition": "The ongoing relationship at the center of wealth management — and its highest-value activity, behavioral coaching: keeping the client invested through fear and greed, where the largest measurable value an advisor adds is often stopping the client from buying high and selling low, not picking investments.",
+    "explainer_covers": [
+      "The \"advisor's alpha\" idea (G161): studies that decompose an advisor's value find the biggest, most reliable component is behavioral — preventing the panic-selling and performance-chasing that destroy individual returns — typically dwarfing any value from security selection or even allocation. The advisor's edge is temperament-as-a-service.",
+      "The behavioral problems being coached (the AM/HF behavioral nodes, individual seat): herding, overconfidence, loss aversion, recency bias, and the performance-chasing that the AM and HF maps describe (AM Z4.5, ★ G124, ★ G127) — but here suffered by an emotional individual whose own behavior, as Swensen says, \"administers self-inflicted pain\" more reliably than any bad manager.",
+      "The coaching toolkit: a written plan to point back to in a crisis (G159), goal-bucketing that makes a crash feel survivable (G160), pre-committed rebalancing rules (G147) that force contrarian action, periodic re-measurement of risk tolerance to catch the break-even/house-money drift (G163), and the simple, decisive value of a trusted human voice saying \"stay the course\" at the bottom.",
+      "The relationship as retention and trust: beyond crises, the relationship is built on understanding the family, communicating clearly, coordinating their whole financial life (G159), and earning the trust that makes the coaching work — which is also why a pure robo-advisor (G178), lacking the human bond, struggles at the exact moment coaching matters most.",
+      "Why this is the product: the allocation and products are largely commoditized (cheap index funds anyone can buy); what a household actually pays for — and what justifies the fee (G180) under a fiduciary standard (G181) — is the planning and the coaching that turn good investments into good investor outcomes."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z4.5",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G160",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G163",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G161` (this node), `G159` financial planning, `G160` goals-based investing (bucketing as a coaching tool), `★ G147` rebalancing (forced contrarianism), `G163` risk capacity (tolerance drift), `G180` fee models (what the fee buys), `G178` robo-advisor (what it can't automate), `★ G124` second-level thinking / `★ G127` cycles (the behavioral terrain), **AM Z4.5** (navigating cycles as a long-horizon holder — *the institutional-temperament node, here made personal*), HF Z4.4 (the trader's discipline — *the contrast: coach to hold, not to trade*). *Real-world layer: the \"advisor's alpha\"/behavior-gap research; Swensen and Graham on the investor's worst enemy.*",
+    "gaps": [],
+    "real_world_layer": "the \"advisor's alpha\"/behavior-gap research; Swensen and Graham on the investor's worst enemy.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z4.2",
+    "local_id": "Z4.2",
+    "module": "wealth-management",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Decumulation as a Managing Discipline",
+    "tag": "global",
+    "global_id": "G169",
+    "quick_definition": "The ongoing late-life work of running a portfolio that is being spent down — adjusting withdrawals, managing sequence-of-returns risk, and sequencing account drawdowns year by year so the income lasts a lifetime — the managing-zone counterpart to the decumulation branch (Z2.4).",
+    "explainer_covers": [
+      "The managing view of decumulation (G169): not a one-time withdrawal-rate decision but a standing discipline — each year revisiting how much to withdraw given portfolio performance, spending needs, and remaining horizon, and adjusting (dynamic spending, \"guardrails\" that cut withdrawals after bad years and allow raises after good ones) rather than blindly indexing a 4% rule (G170).",
+      "Managing sequence risk in real time (G171): the live defense against an early-retirement bear market — holding a cash/short-bond buffer to spend from so you don't sell equities into a crash, flexing discretionary spending downward in bad years, and keeping essential spending covered by guaranteed income (G172) so the must-haves are immune to market sequence.",
+      "The drawdown-order discipline (G168): the year-by-year tax sequencing of which account to draw from — generally taxable first, then tax-deferred, then Roth, threaded with RMDs that force traditional withdrawals, Roth conversions in low-bracket years, and Social Security timing — re-optimized annually as brackets, balances, and tax law change.",
+      "The glide path's destination (G164): decumulation is where the lifecycle glide path lands — but the modern view is that risk should not simply keep falling to zero; a modest \"rising equity glide path\" through retirement can actually reduce ruin risk, because the most dangerous moment for sequence risk is early retirement, not late.",
+      "The behavioral dimension (G161): retirees are often too frugal (under-spending from fear of running out) or too rigid — coaching here means giving permission to spend safely, or conversely reining in overspending, both grounded in the plan's funded status (G163)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G170",
+        "note": null
+      },
+      {
+        "ref": "G171",
+        "note": null
+      },
+      {
+        "ref": "G172",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G164",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G169` decumulation, `G170` the 4% rule, `G171` sequence-of-returns risk, `G172` annuitization & longevity risk, `G168` tax-advantaged accounts (drawdown order), `G164` glide path (its destination), `G161` behavioral coaching (spending permission), Z2.4 (the decumulation branch), AM Z2.11 (the endowment *spending rule* — *the perpetual analogue of a withdrawal rate*). **GAP: the dynamic-withdrawal and sequence-risk research (guardrails, rising glide paths, Milevsky on longevity) — absent from the Drive sources; built on best knowledge and flagged.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "the dynamic-withdrawal and sequence-risk research (guardrails, rising glide paths, Milevsky on longevity) — absent from the Drive sources; built on best knowledge and flagged",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z4.3",
+    "local_id": "Z4.3",
+    "module": "wealth-management",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Ongoing Tax Management",
+    "tag": "global",
+    "global_id": "G166",
+    "quick_definition": "The year-round, multi-year discipline of managing a household's tax exposure as life and law change — harvesting losses, managing realizations and brackets, executing Roth conversions, and coordinating the investment plan with the tax return — the individual's recurring, guaranteed source of added value.",
+    "explainer_covers": [
+      "The managing view of tax (vs. the Z3.4 process view): tax-aware implementation is set up once, but tax management is continuous — every year brings new losses to harvest (G167), gains to manage, bracket-filling opportunities (realize gains or convert to Roth cheaply in low-income years), and law changes to adapt to.",
+      "Multi-year tax planning: smoothing income and realizations across years and brackets — accelerating or deferring income, Roth conversions in low-bracket windows (early retirement, before RMDs and Social Security begin), and tax-gain harvesting in 0%-capital-gains years — a chess game an institution (tax-exempt) never plays.",
+      "Coordinating with the whole plan: tax management touches everything — charitable giving timing (DAF funding, bunching, QCDs — G175/Z2.6), the decumulation drawdown order (G169), gifting low-basis assets for transfer (G175), and the location of new assets (G166) — so the tax view must be integrated across the plan, not run in a silo.",
+      "Adapting to changing law: tax rates, brackets, exemption amounts, and account rules change with legislation — so a live plan continuously re-optimizes (and flags the recency risk that any specific rule cited today may change), exactly the \"ever-changing landscape\" Swensen describes.",
+      "The value framing: tax management, like behavioral coaching, is a reliable, risk-free source of added after-tax return — unlike security selection, it doesn't require beating the market, just not paying more tax than necessary — which is why it ranks with coaching as a core justification for the advisor's fee (G180)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G167",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G166` tax-aware investing & asset location, `G167` tax-loss harvesting, `G168` tax-advantaged accounts (Roth conversions, RMDs), `G169` decumulation (drawdown tax sequencing), `G175` generational transfer (gifting low-basis assets; step-up), `G179` direct indexing (the ongoing-harvesting engine), Z3.4 (the implementation view), AM Z1.7 (the institution's tax exemption — *the contrast*). **GAP: a current tax-code reference — rates, brackets, and rules are jurisdiction-specific and change yearly (US-centric, recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "a current tax-code reference — rates, brackets, and rules are jurisdiction-specific and change yearly (US-centric, recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z4.4",
+    "local_id": "Z4.4",
+    "module": "wealth-management",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Life Events & Estate Maintenance",
+    "tag": "global",
+    "global_id": "G173",
+    "quick_definition": "The ongoing work of keeping the plan and the estate current as life happens — marriage, divorce, children, inheritance, business sale, disability, and death — updating documents, beneficiaries, and the plan so the family's wishes stay accurately reflected and conflict is avoided.",
+    "explainer_covers": [
+      "The life events that trigger updates (G173): marriage or partnership, divorce, the birth or adoption of children, a death in the family, a liquidity event (business sale, IPO ★ G102, inheritance), a move across state lines, disability or declining capacity, and the approach of retirement — each requiring the plan, allocation, and estate documents to be revisited.",
+      "Keeping estate documents current: the most common, most damaging estate failure is neglect — outdated beneficiary designations (an ex-spouse still named on a 401(k) or policy, overriding the will — G168), an unfunded living trust, stale guardianship or trustee choices, or documents that no longer match the family — and the discipline of periodic review that prevents the Aretha-Franklin/Brooke-Astor-style disasters Monroe documents.",
+      "Coordinating documents and the plan: ensure the will, trust(s), beneficiary designations, and powers of attorney are mutually consistent and aligned with the current allocation and plan — and that someone (a successor trustee, an executor, an agent under power of attorney) is properly empowered for incapacity and death.",
+      "Planning for incapacity, not just death: durable financial and healthcare powers of attorney and advance directives so that if the client can't act, a trusted agent can — sparing the family costly guardianship/conservatorship proceedings (a core Monroe theme often overlooked in favor of pure death-planning).",
+      "The fiduciary and family-harmony frame (G181, G175): keeping the estate current and the family informed (communicating the why of the plan, using neutral trustees and no-contest clauses) is both an act of fiduciary care for the client and the principal defense against the family conflict that destroys transferred wealth (G175)."
+    ],
+    "connects_to": [
+      {
+        "ref": "wealth-management.z2.5",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G173",
+        "note": null
+      },
+      {
+        "ref": "G174",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G168",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G173` estate planning, `G174` the trust (kept funded and current), `G175` generational transfer (the documents that execute it), `G168` tax-advantaged accounts (beneficiary designations), `G181` fiduciary vs. suitability (keeping the estate current as care), `★ G102` the IPO process (a liquidity-event trigger), `G159` financial planning (the plan updated at each event), Z2.5 (the estate-planning branch), Z5.4 (the family office that runs this at scale). **GAP: a trusts-and-estates professional source and current exemption/rule figures (recency, jurisdiction-specific).** ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "a trusts-and-estates professional source and current exemption/rule figures (recency, jurisdiction-specific",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

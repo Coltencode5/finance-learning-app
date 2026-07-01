@@ -1,0 +1,84 @@
+{
+  "slug": "venture-capital",
+  "title": "Venture Capital",
+  "kind": "role",
+  "build_order": 8,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Venture Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Stages & Types",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Investment Process",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Portfolio & Value-Add",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Exits & the Firm",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 16,
+    "global_range": "G201–G216",
+    "zone_node_count": 43,
+    "globals_reused": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G23",
+      "G27",
+      "G28",
+      "G29",
+      "G33",
+      "G37",
+      "G38",
+      "G39",
+      "G40",
+      "G41",
+      "G42",
+      "G43",
+      "G44",
+      "G46",
+      "G52",
+      "G53",
+      "G83",
+      "G97",
+      "G102",
+      "G115",
+      "G121",
+      "G156"
+    ],
+    "gap_count": 11
+  },
+  "status": "mapped"
+}

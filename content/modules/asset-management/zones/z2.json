@@ -1,0 +1,677 @@
+[
+  {
+    "id": "asset-management.z2.1",
+    "local_id": "Z2.1",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Asset Management Strategy Spectrum",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A map of long-only strategies along the axes that actually differentiate them — passive vs. active, the asset class (equity, fixed income, multi-asset), and the active style — from pure index funds to concentrated stock-picking to the institutional allocator's whole-portfolio seat.",
+    "explainer_covers": [
+      "The axes: active intensity (index → factor/smart beta → benchmark-aware active → high-active-share active), asset class (equity, fixed income, multi-asset, alternatives), style (growth vs. value, large vs. small cap), and client (retail pooled vs. institutional mandate).",
+      "How each family maps to where it adds value: passive harvests beta cheaply where markets are efficient; active equity hunts alpha where they're not; factor strategies sell systematic premia as cheap beta; the endowment model harvests an illiquidity premium through manager selection.",
+      "How the required skill differs: index management is an operational and cost discipline (minimize tracking error and cost); active equity is fundamental research; fixed income is macro and credit; multi-asset is allocation; the endowment model is manager selection and allocation.",
+      "Where the industry's money actually sits today: a massive and growing share in passive and the giant low-cost managers, a shrinking-but-large active middle, and a barbell toward genuinely scarce active skill at the other end."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "All Zone 2 branch nodes, `★ G137` active vs. passive (the master axis), `★ G143` asset allocation, `★ G149` style, Z1.3, `★ G125` market efficiency (each family hunts a different efficiency regime). ## Branch 2A — Passive / Index & ETF (the flagship)",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.2",
+    "local_id": "Z2.2",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "The Index Fund",
+    "tag": "global",
+    "global_id": "G138",
+    "quick_definition": "A fund that mechanically holds every security in a market index in its exact weights, delivering the index's return minus a tiny fee — the vehicle that turned \"buy the market\" from an academic idea into the dominant force in asset management.",
+    "explainer_covers": [
+      "The mechanics: replicate the index (full replication for liquid indices, sampling for broad/illiquid ones), reinvest dividends, and minimize the only thing that matters — tracking difference (★ G141), which for a good index fund is essentially just the fee.",
+      "Why it wins: near-zero cost, broad diversification (★ G146), tax efficiency, and the arithmetic certainty of capturing the market return — which, after fees, beats the average active manager (the ★ G150 Bogle argument).",
+      "The history (Malkiel's spine): from the efficient-market hypothesis (★ G125) to Bogle's launch of the first retail index fund, derided as \"un-American\" and now the industry's center of gravity — Malkiel's $10k-in-1969 example (an index fund grew dramatically more than the average active fund over 45 years).",
+      "What \"passive\" still requires: choosing which index (cap-weighted S&P 500? total market? a factor index?), which embeds real decisions about concentration and exposure — passive at the security level is still active at the index-design level.",
+      "The systemic questions its dominance raises: do index funds distort price discovery, concentrate ownership (the Big Three), and mute corporate governance? — the frontier debate (Z5)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G138` (this node), `★ G125` market efficiency, `★ G150` cost/fee drag, `★ G146` diversification, `★ G141` tracking error, `★ G139` ETF (the other wrapper), Z2.3 (ETFs), Z5.6 (the active-vs-passive debate), HF Z1.3 (the alpha/beta framing — index funds *are* cheap beta). **GAP: a dedicated indexing source (Bogle) and a current source for passive's market share and systemic effects (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "a dedicated indexing source (Bogle) and a current source for passive's market share and systemic effects (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.3",
+    "local_id": "Z2.3",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "The ETF & Creation/Redemption",
+    "tag": "global",
+    "global_id": "G139",
+    "quick_definition": "An exchange-traded fund — an index (or active) portfolio that trades intraday like a stock, kept in line with its net asset value by authorized participants who create and redeem shares in-kind against the underlying basket.",
+    "explainer_covers": [
+      "The creation/redemption mechanism: when the ETF trades above its underlying value, an authorized participant (AP — a large bank/market-maker) buys the basket, delivers it to the fund for new ETF shares, and sells them (and the reverse when it trades cheap) — an arbitrage that keeps price ≈ NAV without the fund ever trading.",
+      "Why the in-kind mechanism matters: it makes ETFs cheaper (the AP, not the fund, bears trading costs) and dramatically more tax-efficient (in-kind redemptions purge low-basis shares without triggering taxable gains) than a mutual fund.",
+      "The explosion of the wrapper: from plain index ETFs to factor/smart-beta ETFs (★ G148), bond ETFs, thematic and active ETFs — the fastest-growing vehicle in asset management, and the format much of the active industry is migrating into.",
+      "The risks and frictions: liquidity mismatch (a liquid ETF wrapper on illiquid underlyings can dislocate in a panic), tracking issues in thin markets, and the proliferation of niche/leveraged products that behave nothing like \"buy the market.\"",
+      "ETF vs. mutual fund (the ★ G138/★ G152 distinction made concrete): same possible exposure, different plumbing — intraday vs. daily NAV, in-kind vs. cash, exchange vs. fund."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G152",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G139` (this node), `★ G138` index fund, `★ G152` mutual fund (the contrast), `★ G148` smart beta (often ETF-wrapped), `★ G141` tracking error, Z2.2, Z5.7 (where AM is heading — the ETF-ization of active). **GAP: ETF market microstructure, the AP/market-maker ecosystem, and bond-ETF liquidity mechanics.** ## Branch 2B — Active Equity (by style)",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "ETF market microstructure, the AP/market-maker ecosystem, and bond-ETF liquidity mechanics",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.4",
+    "local_id": "Z2.4",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Active Equity & the Style Box",
+    "tag": "global",
+    "global_id": "G149",
+    "quick_definition": "The world of managers who pick stocks to beat an equity benchmark, organized by style — growth vs. value on one axis, large- vs. mid- vs. small-cap on the other — the grid that classifies what kind of stocks a manager hunts.",
+    "explainer_covers": [
+      "The style box (G149): the Morningstar-popularized 3×3 grid (value/blend/growth × large/mid/small) that sorts equity funds — the organizing map of the active-equity industry and the basis for benchmark choice and peer comparison.",
+      "Value investing: buying stocks cheap relative to fundamentals with a margin of safety — the Graham tradition (Z2.5). Growth investing: buying companies whose earnings will compound rapidly — the Fisher tradition (Z2.6). Quality: owning durable, high-return businesses for the long term — the Quality Investing tradition (Z2.7).",
+      "Cap tiers: large-cap (efficient, hard to beat, indexing-friendly), small-cap (less efficient, where active research is more likely to pay), and the size factor's documented premium (★ G148).",
+      "Why style matters operationally: it sets the benchmark (a value manager is judged against a value index), drives style-drift risk (Z4.3), and shapes the cyclicality of returns (value and growth take turns leading) — and Buffett's caution (via Rappaport & Mauboussin) that the growth-vs-value split is somewhat artificial, since growth is just a component of value.",
+      "The active-equity research process lives in Zone 3; this branch is about the styles that organize it."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G149` (this node), Z2.5 (value), Z2.6 (growth), Z2.7 (quality), `★ G148` smart beta (style *is* factor exposure), `★ G88` comps (the relative-value tool), Z3.3 (the security-selection thesis), Z4.3 (style drift), HF Z2.2 (long/short equity — *the same stock-picking, with a short book and absolute-return mandate*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.5",
+    "local_id": "Z2.5",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "Value Investing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The Graham tradition: buy stocks trading well below a conservative estimate of their intrinsic value, insist on a margin of safety, and let the gap close — treating a share as a fractional ownership of a business, not a ticker.",
+    "explainer_covers": [
+      "The core ideas (Graham): investment vs. speculation (analysis, safety of principal, an adequate return — not a bet on price); Mr. Market (the manic-depressive partner who offers you prices to take or ignore, not to be led by); and the margin of safety (never overpay — the central concept of investment).",
+      "The defensive vs. enterprising investor: Graham's split between the passive investor who should simply hold a diversified, low-cost list (an index-fund-adjacent prescription) and the enterprising one who does the work to find mispriced securities — and his sober warning that most who try the latter fail.",
+      "The value toolkit: low price relative to earnings, book value, and assets; the search for securities priced below their \"private business value\"; and the discipline to buy from pessimists and sell to optimists.",
+      "The modern frame (Rappaport & Mauboussin): value is really about price-implied expectations — a \"value\" stock is one where the market's embedded expectations are too low, not merely one with a low P/E (a low multiple can be a value trap).",
+      "Value as a factor (★ G148): the documented long-run premium of cheap stocks over expensive ones — once \"alpha,\" now sold as cheap factor beta, and prone to long droughts."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G87` valuation toolkit, `★ G88` comps, `★ G90` DCF, `★ G148` smart beta (the value factor), `★ G124` second-level thinking, `★ G136` the edge, Z2.4 (the style grid), Z3.3 (the thesis), HF Z2.2 (value investing with a short book). *Real-world layer: Graham, The Intelligent Investor, Ch. 8 (Mr. Market) & Ch. 20 (margin of safety).*",
+    "gaps": [],
+    "real_world_layer": "Graham, The Intelligent Investor, Ch. 8 (Mr. Market) & Ch. 20 (margin of safety).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.6",
+    "local_id": "Z2.6",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Growth Investing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The Fisher tradition: buy companies whose revenues and earnings will compound at high rates for years, accept a higher entry multiple, and let superior business growth — not cheapness — drive the return.",
+    "explainer_covers": [
+      "The core ideas (Fisher, Common Stocks and Uncommon Profits): the fifteen points for identifying a superior growth company (research intensity, margins, management depth, a long runway); the \"scuttlebutt\" method (build a mosaic from customers, suppliers, competitors, and ex-employees — fundamental research as investigative work); and a strong bias to hold winners for the very long term.",
+      "What separates growth from speculation: paying up for durable, identifiable growth (a real competitive runway) vs. chasing hot stories — Graham's warning that \"obvious prospects for physical growth don't translate into obvious profits\" (the airline and computer examples) is the discipline that keeps growth honest.",
+      "The valuation challenge: growth investing lives or dies on the terminal value (★ G93) and the durability of the growth — small changes in the assumed runway swing the value enormously (Rappaport & Mauboussin's expectations lens is the antidote).",
+      "Growth as a style and the cycle: growth and value take turns leading; growth dominates in low-rate, innovation-led regimes, value in higher-rate, mean-reversion regimes — the rotation that drives active-equity relative performance."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G93",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G90` DCF, `★ G93` terminal value, `★ G27` valuation multiples, `★ G136` the edge, Z2.4 (the style grid), Z2.7 (quality — the modern heir to growth), Z3.3 (the thesis), HF Z2.2. *Real-world layer: Fisher, Common Stocks and Uncommon Profits (the fifteen points; scuttlebutt).*",
+    "gaps": [],
+    "real_world_layer": "Fisher, Common Stocks and Uncommon Profits (the fifteen points; scuttlebutt).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.7",
+    "local_id": "Z2.7",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Quality Investing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The Quality Investing tradition: own a concentrated portfolio of exceptional businesses — high returns on capital, durable competitive advantages, skilled capital allocators — and hold them for the long term, letting compounding do the work.",
+    "explainer_covers": [
+      "The building blocks (Cunningham/Eide/Hargreaves): capital allocation (how management reinvests cash), return on capital (the engine of compounding), multiple sources of growth, good management, and competitive advantage (the moat that protects returns).",
+      "The recurring patterns of quality: recurring revenue, toll-roads, pricing power, brand strength, innovation dominance, market-share gainers — the qualitative signatures the book teaches investors to recognize.",
+      "Why quality is its own style: it sits between value (which can be a trap) and growth (which can be a story) — buying great businesses at fair prices and relying on the durability of returns rather than on cheapness or on a growth forecast.",
+      "Quality as a factor (★ G148): the documented tendency of high-quality, profitable companies to outperform — a factor tilt that smart-beta products now package, and a bridge to the factor branch.",
+      "The pitfalls the book flags: cyclicality, technological disruption, dependency, and shifting customer preferences — the ways a \"quality\" thesis breaks (the link to Z4's style-integrity and monitoring nodes)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G148` smart beta (the quality factor), `★ G24` EBITDA / return-on-capital metrics, `★ G136` the edge, `★ G124` second-level thinking, Z2.4 (the style grid), Z2.6 (growth — the cousin), Z3.3 (the thesis), Z4.3 (style integrity). *Real-world layer: Quality Investing (building blocks; patterns; pitfalls).* ## Branch 2C — Active Fixed Income",
+    "gaps": [],
+    "real_world_layer": "Quality Investing (building blocks; patterns; pitfalls).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.8",
+    "local_id": "Z2.8",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "Active Fixed Income",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Managing bond portfolios to beat a fixed-income benchmark — through interest-rate positioning, sector and credit selection, and yield-curve and security choices — the large, distinct half of active asset management that runs on macro and credit rather than equity research.",
+    "explainer_covers": [
+      "What a bond manager actually decides: duration (interest-rate sensitivity vs. the benchmark), yield-curve positioning, sector allocation (governments vs. corporates vs. securitized vs. emerging-market debt), and credit selection (which issuers — the bridge to the credit toolkit).",
+      "The benchmark complication: bond indices weight issuers by amount of debt outstanding (you lend most to the most indebted) — a perverse feature that gives active fixed income a more defensible case than active equity, and shapes the whole discipline.",
+      "The reused credit machinery: corporate bond selection reuses the Private Credit toolkit — ★ G77 credit ratings, ★ G62 default/PD, ★ G61 recovery/LGD, ★ G58 yield, ★ G69 floating vs. fixed — from the public-markets, mark-to-market seat rather than the originate-and-hold seat.",
+      "Where it sits vs. private credit and credit hedge funds: the same instruments, three seats — the bond manager holds public bonds against a benchmark, the direct lender originates and holds private loans, the credit hedge fund trades the paper for absolute return.",
+      "The macro overlay: interest-rate cycles, inflation, and central-bank policy drive fixed-income returns more than security selection — the reason this branch leans on macro judgment."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G140",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G77` credit ratings, `★ G62` default/PD, `★ G61` recovery/LGD, `★ G58` yield, `★ G69` floating vs. fixed rate, `★ G140` benchmark (the debt-weighted problem), Credit Z2 (the private-credit seat on the same instruments), HF Z2.8 (credit hedge funds), `★ G127` cycles. **GAP: fixed-income portfolio mechanics (duration/convexity math, curve positioning) and a dedicated bond-management source.** ## Branch 2D — Factor / Smart Beta (the middle ground)",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "fixed-income portfolio mechanics (duration/convexity math, curve positioning) and a dedicated bond-management source",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.9",
+    "local_id": "Z2.9",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Smart Beta / Factor Investing",
+    "tag": "global",
+    "global_id": "G148",
+    "quick_definition": "Rules-based strategies that tilt a portfolio toward documented return factors — value, size, momentum, quality, low-volatility — and package them as cheap, transparent, index-like products: the deliberate middle ground between passive indexing and discretionary active management.",
+    "explainer_covers": [
+      "The factors (Malkiel's \"Is 'Smart Beta' Really Smart?\"): value (cheap beats expensive), size (small beats large), momentum (winners keep winning, for a while), quality/profitability (★ G148 ties to Z2.7), and low-volatility (calmer stocks earn more than they should) — each a historically-documented premium.",
+      "The deliberate tension with the Hedge Fund module: these same factors are sold by a quant hedge fund as proprietary alpha (HF Z2.9, ★ G131, charged at 2-and-20) and by an asset manager as cheap beta (a smart-beta ETF, charged at a few bps). The factor is identical; the framing, the price, and the seat are opposite — build this as a featured cross-module disambiguation node. A factor premium, once discovered and commoditized, migrates from \"alpha you pay 20% for\" to \"beta you pay 0.2% for.\"",
+      "The Fama-French lineage (★ G107/★ G125): the three-factor model that showed \"the market\" plus size and value explained most of the cross-section of returns — recasting much apparent stock-picking alpha as factor exposure.",
+      "The skeptical case Malkiel makes: factor returns are time-varying and can disappear (a premium, once published and crowded, may shrink or invert), factor tilts add risk (smart-beta funds \"flunk the risk test\"), and data-mining manufactures spurious factors — so smart beta is neither a free lunch nor truly passive.",
+      "Why it's a real category anyway: it gives investors cheap, transparent, systematic access to premia that used to require an expensive active manager — squeezing the undifferentiated active middle."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.9",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G148` (this node), `★ G107` beta, `★ G125` market efficiency, `★ G149` style (style *is* factor exposure), `★ G116` drawdown (factor risk), Z2.7 (quality factor), Z5.5 (the fee/debate implications), HF Z2.9 (factors-as-alpha — *the same factors, the opposite seat*), HF Z1.3 (alpha vs. beta). *Real-world layer: Malkiel, Ch. 9 (CAPM, Fama-French) & Ch. 11 (smart beta).* ## Branch 2E — Multi-Asset & Asset Allocation",
+    "gaps": [],
+    "real_world_layer": "Malkiel, Ch. 9 (CAPM, Fama-French) & Ch. 11 (smart beta).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.10",
+    "local_id": "Z2.10",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Multi-Asset & Asset Allocation Strategies",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Funds and mandates that invest across multiple asset classes — equities, bonds, and often alternatives — and whose main decision is the allocation among them rather than security selection within one: balanced funds, target-date funds, and model portfolios.",
+    "explainer_covers": [
+      "The products: balanced funds (a fixed stock/bond mix), target-date funds (a glide path that de-risks as a retirement date approaches — the default of the 401(k) world), risk-parity (allocating by risk contribution, not dollars), and model portfolios (advisor-facing allocation kits).",
+      "Why allocation is the main lever (Swensen, Malkiel): research consistently finds the strategic asset allocation (★ G143) decision — the policy mix — drives the overwhelming majority of a portfolio's return and risk, far more than security selection within any class.",
+      "The MPT foundation (★ G145): combining imperfectly-correlated assets to sit on the efficient frontier — the theory that justifies multi-asset investing and the diversification (★ G146) at its core.",
+      "The life-cycle dimension (Malkiel Ch. 14): risk capacity falls with age and rises with the time horizon, so the right allocation is age-related — the logic behind target-date glide paths.",
+      "Where multi-asset shades into the endowment model: as a multi-asset portfolio adds illiquid alternatives and external managers, it becomes the institutional allocator's seat (Z2.11)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G145",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G143` asset allocation, `★ G144` policy portfolio, `★ G145` MPT/efficient frontier, `★ G146` diversification, `★ G147` rebalancing, Z2.11 (the endowment model), Z3.2 (the allocation process), the future Wealth Management module (target-date and model portfolios are its core products). **GAP: target-date glide-path design and risk-parity mechanics (recency/depth).** ## Branch 2F — The Institutional / Endowment Model",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "target-date glide-path design and risk-parity mechanics (recency/depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z2.11",
+    "local_id": "Z2.11",
+    "module": "asset-management",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "The Endowment Model",
+    "tag": "global",
+    "global_id": "G154",
+    "quick_definition": "Swensen's approach to running perpetual institutional capital: an equity-oriented, heavily-diversified policy portfolio that leans into illiquid alternatives — private equity, hedge funds, real assets — to harvest an illiquidity premium, all executed through carefully-selected external managers. This is the unifying allocator node — the seat of the investor who funds every other module.",
+    "explainer_covers": [
+      "The purpose and the constraint (Swensen Ch. 2–3): an endowment exists to support an institution in perpetuity, balancing today's spending against tomorrow's — intergenerational equity (Tobin) — which justifies a very long horizon and a high tolerance for illiquidity and volatility.",
+      "The investment philosophy (Swensen Ch. 4): returns come from three tools — asset allocation (★ G143, the dominant one), market timing (deviating from policy — used sparingly), and security selection — and the manager should concentrate effort where it pays.",
+      "The model itself: an equity bias (perpetual capital should own growth assets), aggressive diversification across many low-correlation classes, and a heavy tilt to alternatives (private equity, hedge funds / absolute return, real assets) where inefficiency and the illiquidity premium reward skilled active management — executed almost entirely through external managers.",
+      "The two-ended truth (Swensen's central caveat): this model only works for investors with genuine active-management ability and the resources to select top managers; for everyone else — most institutions and nearly all individuals — the correct answer is the opposite end of the spectrum: low-cost passive indexing. \"No middle ground exists. The costly game of active management guarantees failure for the casual participant.\"",
+      "The LP-side convergence: this is the same seat as the LP-side nodes in PE Z5 (allocation, the J-curve, manager selection), HF Z5 (allocating to hedge funds), and Credit Z5 — the allocator who funds private equity, hedge funds, private credit, and public markets out of one policy portfolio. Cross-link all of them heavily so the user sees one portfolio spanning every module."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.18",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G154` (this node), `★ G143` asset allocation, `★ G144` policy portfolio, `★ G146` diversification, `★ G156` manager selection, `★ G135` absolute return (the hedge-fund sleeve), `★ G137` active vs. passive (the two-ended truth), Z2.10 (multi-asset), Z5.6 (manager selection deep), **PE Z5.6 / PE Z5.7 / PE Z5.8** (the PE allocator seat — *same investor*), **HF Z5.4** (allocating to hedge funds), **Credit Z5.x** (the credit allocator seat), PE Z1.18 (the J-curve the allocator funds through). *Real-world layer: Swensen, Pioneering Portfolio Management (the whole book is this node's deep explainer).* **GAP: post-2009 evolution of the endowment model (its crowding, its critics, the \"Yale model\" backlash) — recency.** ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "post-2009 evolution of the endowment model (its crowding, its critics, the \"Yale model\" backlash) — recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Swensen, Pioneering Portfolio Management (the whole book is this node's deep explainer).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

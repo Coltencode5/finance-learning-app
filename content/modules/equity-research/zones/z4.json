@@ -1,0 +1,429 @@
+[
+  {
+    "id": "equity-research.z4.1",
+    "local_id": "Z4.1",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "The Ongoing Job — Coverage as a Standing Commitment",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Once an analyst initiates coverage, they owe the market a continuous stream of maintained estimates, updated targets, and timely notes — coverage is a subscription the analyst keeps paying, not a report they file once.",
+    "explainer_covers": [
+      "What \"maintaining\" means: keeping the model (★G183) live, the estimates (★G184) current, the target (★G185) and rating (★G186) defensible, and the client informed through a steady flow of notes (★G182) — the short-form report that is the daily unit of maintenance.",
+      "The rhythm that organizes it all: the quarterly earnings cycle (★G192, Z4.2) is the metronome — everything in an analyst's calendar is \"before the print,\" \"the print,\" or \"after the print.\"",
+      "The re-running of the five tasks: every new data point (an earnings release, a channel check, a competitor's result, a macro shift) sends the analyst back through factors → model → valuation → call → communicate.",
+      "The maintenance trade-off: an analyst covering more names (Z2.2) has more to maintain, which strains depth — the post-MiFID-II economics (★G197) made maintaining marginal small-cap coverage uneconomic, shrinking universes.",
+      "Why timeliness is a franchise issue: being first with a correct revision after news is part of the value clients pay for and vote on (★G196) — a stale model is a dead franchise."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G192",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G182",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.2 (★G192 — the heartbeat) · Z3.x *(the tasks being re-run)* · Z5.1 (★G196 — timeliness builds the franchise) · ★G182 the note *(the maintenance unit)* · ★G197 *(economics of what's worth maintaining)* · AM Z2.4 *(the client depending on the maintained view)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.2",
+    "local_id": "Z4.2",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "The Quarterly Earnings Cycle",
+    "tag": "global",
+    "global_id": "G192",
+    "quick_definition": "The earnings cycle is the recurring three-beat rhythm — the results print, the management call, and the analyst's model update and note — around which the entire research calendar is built.",
+    "explainer_covers": [
+      "The three beats: (1) the print — the company releases quarterly results (the actuals that get compared to the estimate); (2) the call — management hosts the earnings call, giving color and, crucially, guidance (★G193) about the future; (3) the update — the analyst revises the model, the estimate, and possibly the target/rating, and publishes a note.",
+      "The pre-print ritual: in the run-up, the analyst sharpens the estimate, runs final channel checks (★G190), and often publishes a preview laying out what to watch and where their view differs from consensus.",
+      "Why the call matters as much as the print: the forward guidance management gives on the call often moves the stock more than the backward results — because (Koller's expectations treadmill) the market prices the change in expectations, not the quarter just ended.",
+      "The compressed timeline: earnings season concentrates dozens of prints into a few weeks, and the analyst's value is partly speed — a fast, correct update beats a slow, perfect one (the franchise, ★G196).",
+      "The loop closure: the earnings cycle is what makes the research process (Zone 3) iterative — each quarter delivers the new information that restarts the five tasks."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G193",
+        "note": null
+      },
+      {
+        "ref": "G188",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.1 (the ongoing job) · Z4.3 (★G193 — surprise and guidance happen here) · Z4.4 (★G188 — the cycle triggers revisions) · Z3.1 (the process loop the cycle drives) · ★G184 consensus *(what the print is measured against)* · Koller *(the expectations treadmill — why guidance moves stocks)* · AM Z3.3 *(PMs trading the cycle)* · HF Z3.x *(event-driven funds trading the print)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.3",
+    "local_id": "Z4.3",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Earnings Surprises & Company Guidance",
+    "tag": "global",
+    "global_id": "G193",
+    "quick_definition": "An earnings surprise is the gap between reported results and consensus; guidance is the forward expectation management itself sets — and these twin events, not the absolute results, are what move stocks at the print.",
+    "explainer_covers": [
+      "The surprise: reported EPS/revenue versus the consensus estimate (★G184). A \"beat\" is above consensus, a \"miss\" below — and the magnitude and direction of the surprise, relative to what was already priced, drives the stock reaction.",
+      "Guidance: the company's own forward forecast (next quarter, full year), issued on the call. Raised guidance signals confidence; cut guidance signals trouble; withdrawn guidance signals uncertainty — and guidance often matters more than the quarter reported.",
+      "The expectations-treadmill core (Koller): because returns track performance relative to expectations, a company can beat consensus and fall (if the beat was smaller than the \"whisper\" number, or guidance disappointed) or miss and rise (if the miss was already feared). The analyst's job is to know where the real bar is.",
+      "The earnings-quality overlay (Z3.5): not every beat is real — a beat driven by a low tax rate, a one-time item, or aggressive accruals (conservation of value, Koller) is a low-quality beat the analyst must flag rather than celebrate.",
+      "Why this is dense with edge: having a differentiated, correct view on whether a company will beat/miss and on how guidance will land — before the print — is one of the most direct sources of alpha in the whole job (Z3.2, ★G124)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G192",
+        "note": null
+      },
+      {
+        "ref": "G188",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.2 (★G192 — surprise/guidance occur in the cycle) · Z4.4 (★G188 — a surprise triggers revisions) · Z3.5 (earnings quality — is the beat real?) · Z3.6 (★G184 — surprise = actual vs. estimate) · Koller *(the expectations treadmill, conservation of value)* · ★G124 second-level thinking *(knowing the real bar)* · AM Z3.3 · HF Z3.x *(event-driven trading)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.4",
+    "local_id": "Z4.4",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Estimate Revisions & the Revision Cycle",
+    "tag": "global",
+    "global_id": "G188",
+    "quick_definition": "An estimate revision is the analyst raising or lowering their forecast as new information arrives — and the pattern of revisions across the analyst community is itself one of the most powerful, most-studied signals in markets.",
+    "explainer_covers": [
+      "What a revision is: a change to the published estimate (★G184) — and, often, to the target (★G185) and rating (★G186) — prompted by an earnings surprise, new guidance, a channel check, or a macro shift.",
+      "The direction that matters: revisions tend to cluster and trend — one analyst's cut is often followed by others (the \"revision cycle\"), because new information diffuses gradually and analysts are reluctant to be the lone outlier.",
+      "Why revisions are a tradeable signal (the AM/HF link): estimate-revision momentum is a well-documented factor — stocks with rising estimates tend to outperform — which is why the buy-side watches the revision trend, not just the level (AM Z3.3, HF Z3.x).",
+      "The surprise-revision distinction (the Part 1 disambiguation): a surprise is the company moving relative to the analyst; a revision is the analyst moving relative to reality. A surprise typically triggers a wave of revisions — the two are cause and effect.",
+      "The analyst's franchise stake: being early and right on a major revision (the first to cut before a miss, the first to raise before a beat) is exactly the differentiated, timely call that builds the franchise (★G196) and wins client votes."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G193",
+        "note": null
+      },
+      {
+        "ref": "G192",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.3 (★G193 — surprises trigger revisions) · Z4.2 (★G192 — the cycle's rhythm) · Z4.5 (revisions move targets/ratings) · Z3.6 (★G184 — what's being revised) · ★G125 market efficiency *(AM — gradual information diffusion = the inefficiency)* · AM Z3.3 *(revision momentum as a factor)* · HF Z3.x *(trading the revision trend)* · ★G196 *(early revisions build the franchise)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.5",
+    "local_id": "Z4.5",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "Ratings & Target Changes",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Changing a rating or a price target is the analyst's most visible public act — a discrete, market-moving event that publishes a shift in the view, and that clients and the media watch closely.",
+    "explainer_covers": [
+      "The mechanics: an upgrade/downgrade (a rating change, ★G186) or a target revision (★G185) is published in a note, and because it's a discrete change in a named analyst's public stance, it can move the stock on its own — sometimes more than the underlying news.",
+      "Why changes lag or lead: a brave analyst changes the call ahead of the news (the valuable, franchise-building move); a cautious one waits for confirmation (safer but alpha-free) — and the buy-bias (Damodaran, Z3.11) makes downgrades rarer and therefore more informative.",
+      "The \"double-edged\" nature: a downgrade angers the covered company (straining the access the analyst needs, Z4.6) and may collide with the firm's banking relationship (★G199) — so a rating cut is never only an analytical act.",
+      "How clients read the change, not the level: given rating inflation, the direction and surprise of a change carries more information than the absolute rating — a downgrade from buy to hold is a real signal even though \"hold\" sounds neutral.",
+      "The link to revisions: rating/target changes are usually the published consequence of an estimate revision (Z4.4) — the revision moves the numbers, the changed numbers move the target, the moved target trips the rating."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.11",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G185",
+        "note": null
+      },
+      {
+        "ref": "G186",
+        "note": null
+      },
+      {
+        "ref": "G188",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.10 (★G185 — the target being changed) · Z3.11 (★G186 — the rating being changed) · Z4.4 (★G188 — revisions drive the changes) · Z4.6 (the relationship cost of a downgrade) · Z5.4 (★G199 — the banking-conflict overlay) · Damodaran *(the buy-bias that makes downgrades informative)* · AM Z3.3 · HF Z3.x.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.6",
+    "local_id": "Z4.6",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Managing Company Relationships",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "An analyst's information flow depends on access to the covered company's management — a relationship that must be cultivated without crossing into selective disclosure (Reg FD) or letting access compromise objectivity.",
+    "explainer_covers": [
+      "Why the relationship matters: management is a primary source for understanding the critical factors (Z3.2) — earnings calls, investor days, conference fireside chats, and (compliant) one-on-ones are how the analyst calibrates the model.",
+      "The Regulation FD boundary (Valentine, Ch9): since 2000, companies may not selectively disclose material information to favored analysts — everything material must be public and simultaneous. This is precisely why the lawful mosaic (★G190) became the analyst's edge: the company can no longer just whisper the number.",
+      "The objectivity tension: too-cozy access creates pressure to stay bullish (lose the access if you downgrade), feeding the buy-bias (Z3.11) — the analyst must protect independence against the relationship that feeds them.",
+      "Corporate access as a product (Z1.4): the analyst's management relationships are something the buy-side pays for — getting PMs in front of management — which MiFID II's unbundling (★G197) forced to be priced separately and scrutinized.",
+      "The banking-conflict shadow (★G199): the covered company may also be a banking client of the analyst's firm, which is exactly the conflict the wall (IB Z1.10) and the Global Settlement (Z5.4) exist to manage."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      },
+      {
+        "ref": "G200",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2 (★G191 — management as a factor source) · Z3.3 (★G190 — Reg FD made the mosaic necessary) · Z4.7 (the other relationship — clients) · Z5.4 (★G199 — company as banking client) · Z5.5 (★G200 — Reg FD) · Valentine *(Ch9, managing access)* · IB Z1.10 *(the wall)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z4.7",
+    "local_id": "Z4.7",
+    "module": "equity-research",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "Managing Client & Sales-Force Relationships",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The analyst's research only has value if it's used, so a large part of the job is communicating with the buy-side clients who vote on the franchise and the internal sales force who carry the ideas to them.",
+    "explainer_covers": [
+      "The two audiences: buy-side clients (the PMs and analysts who consume the research, Z1.4) and the firm's own sales force (who distribute it, ★G198) — and the analyst spends real time on both, not just on analysis.",
+      "The daily mechanics: the morning call (pitching the day's ideas to the sales force), client calls and visits, bespoke work for top clients, and conference/corporate-access hosting — communication (task 5) as a continuous activity.",
+      "Why clients matter to the franchise: the buy-side clients are exactly who vote in the II survey (★G196, Z5.1) — so servicing them well is not just helpful, it's how the analyst's reputational capital and compensation are determined.",
+      "The interaction-effort tension (Valentine, Ch6 from the buy-side view): clients are simultaneously demanding the analyst's best ideas, their model, their access, and their time — and the analyst must allocate a scarce resource (attention) across a ranked client list.",
+      "The unbundling pressure (★G197): once research and access must be paid for separately (MiFID II), clients ruthlessly prioritize which analysts they pay for — raising the bar for the client-servicing that sustains the franchise."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G198",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.4 (the clients) · Z1.8 (★G198 — the sales force) · Z5.1 (★G196 — clients vote the franchise) · Z4.1 (servicing as part of maintenance) · ★G197 *(unbundling raises the servicing bar)* · AM Z2.4 *(the client institution)* · HF Z3.1 *(the most demanding clients)*. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

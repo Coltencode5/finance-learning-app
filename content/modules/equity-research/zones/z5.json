@@ -1,0 +1,467 @@
+[
+  {
+    "id": "equity-research.z5.1",
+    "local_id": "Z5.1",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Research Franchise & Analyst Rankings",
+    "tag": "global",
+    "global_id": "G196",
+    "quick_definition": "A sell-side analyst's franchise is their reputational capital — historically measured by the Institutional Investor poll — which determines their client access, their compensation, and their influence over how a stock trades.",
+    "explainer_covers": [
+      "What the franchise is: the analyst's standing with the buy-side — the degree to which clients seek out, trust, and act on their work. It is an intangible asset that the analyst spends a career building and can lose with a few bad calls.",
+      "The Institutional Investor (II) ranking (Valentine): the canonical scoreboard — buy-side clients vote annually for the best analysts in each sector, and a top-ranked (\"II-ranked\") analyst commands access, compensation, and corporate-access pull.",
+      "What builds it: differentiated and correct calls (Z3.9), being early and right on revisions (Z4.4), deep sector expertise (Z2.3), responsive client service (Z4.7), and the corporate access the analyst can broker (Z4.6).",
+      "The franchise-vs-league-table distinction (the Part 1 disambiguation): the II ranking measures whose ideas the buy-side values (★G196); the IB league table (★G104) measures whose deals won. A great analyst can sit at a mediocre bank, and vice versa.",
+      "Why the franchise is the analyst's real product: in a world where the information is increasingly commoditized (alt-data, Z2.6), the durable asset is trust and judgment — the things a ranking actually measures."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.9",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G187",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G104",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.7 (client service builds it) · Z4.4 (early revisions build it) · Z3.9 (★G187 — good theses build it) · Z5.2 (★G197 — the franchise is what gets paid) · ★G104 the league table *(IB Z4.x — the deal-side scoreboard)* · ★G136 the edge *(HF)* · AM Z2.4 *(the clients who vote)* · HF Z3.1 *(the most influential voters)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.2",
+    "local_id": "Z5.2",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "How Research Makes Money",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Research is a cost center that justifies itself indirectly — historically by generating the trading commissions and banking goodwill that paid for it, a model that MiFID II's unbundling has thrown into crisis.",
+    "explainer_covers": [
+      "The historical economics (★G197, Z1.7): research was paid for through bundled trading commissions and soft dollars — the buy-side over-paid on execution, and a slice funded the research and access. Research itself was never invoiced.",
+      "The banking subsidy (the conflicted part): research also justified itself by supporting the bank's equity capital markets franchise (IB Z2.8) — a respected analyst helped win IPO and follow-on mandates, which is exactly the conflict the Global Settlement (Z5.4) attacked.",
+      "The MiFID II unbundling rupture (2018): forcing European asset managers to pay for research separately and explicitly collapsed research budgets, triggered analyst layoffs, and shrank coverage — especially of small- and mid-caps that became uneconomic to follow.",
+      "The survival reshaping: consolidation toward a few top-ranked analysts per sector, the rise of independents (★G195) who were always priced separately, and experiments with per-interaction and subscription pricing.",
+      "GAP / recency flag — the module's largest. No source in the folder covers the post-2018 research economics; Valentine (2011) predates it entirely. The direction (unbundling → budget collapse → consolidation) is well-established general knowledge, but the current quantitative state of the research business model is a genuine gap, to be filled when this module's depth layer is authored."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.7",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G198",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      },
+      {
+        "ref": "G195",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (★G197 — the home of the economics) · Z5.1 (★G196 — the franchise that gets paid) · Z5.3 (★G198 — commissions flow through the triangle) · Z5.4 (★G199 — the banking subsidy as conflict) · Z2.6 (★G195 — independents as beneficiaries) · IB Z2.8 *(the ECM franchise research supports)* · AM Z5.x *(the manager's research budget)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag — the module's largest",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.3",
+    "local_id": "Z5.3",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Sales / Trading / Research Triangle, In Depth",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The sell-side equities division is a triangle of three desks — research makes the ideas, sales distributes them, trading executes the resulting orders — and the commissions from that trading historically funded the whole structure (the global ★G198 is introduced at Z1.8; this node deepens it).",
+    "explainer_covers": [
+      "The three desks in depth (Z1.8 introduced them): research (the analysts and their notes), sales (the salespeople who carry ideas to clients and relay feedback), trading (the desk that executes client orders and provides liquidity).",
+      "The flows that bind them: ideas flow research → sales → client; orders flow client → sales → trading; commissions flow client → firm → (historically) research. Cut any flow and the economics break.",
+      "The morning call as the triangle's daily ritual: analysts pitch the sales force, sales arms itself with the day's ideas, and the best ideas convert into client orders that the trading desk fills.",
+      "How unbundling (★G197) decoupled the triangle: once research must be paid for with hard dollars separately from execution, the \"commissions fund research\" leg is severed, and research's economic link to trading weakens — a structural strain the model is still absorbing.",
+      "The compliance geometry: research, sales, and trading sit together on the public side of the information wall (IB Z1.10), walled off from banking — but selective-disclosure (Reg FD) and front-running rules (Z5.5) still govern how information moves within the triangle."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.7",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G200",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.8 (the triangle introduced) · Z5.2 (★G197 — the economics) · Z5.5 (★G200 — rules within the desks) · Z4.7 (the analyst's work with sales) · IB Z1.10 *(the wall around the triangle)* · HF Z1.x *(prime brokerage — the trading relationship from the buy-side)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.4",
+    "local_id": "Z5.4",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "The Research/Banking Conflict & the Global Research Settlement",
+    "tag": "global",
+    "global_id": "G199",
+    "quick_definition": "The structural conflict at the heart of sell-side research is that investment-banking revenue can corrupt the objectivity of the research — and the 2003 Global Research Settlement, following Eliot Spitzer's investigations, was the regulatory response that walled the two apart.",
+    "explainer_covers": [
+      "The conflict (the core): a bank earns enormous fees from investment banking (IPOs, M&A, IB Z2.x), and a covered company is often a banking client or prospect — creating pressure on the analyst to publish favorable research to win or keep the banking business.",
+      "The scandal (Valentine; general knowledge): in the dot-com era, analysts were found privately disparaging stocks they publicly rated \"buy\" to support their banks' underwriting — the abuse that made the conflict undeniable.",
+      "The Global Research Settlement (2003): the landmark settlement between regulators and the major banks that erected the information wall between research and banking (IB Z1.10), barred banking from influencing analyst pay, prohibited analysts from soliciting banking business, and funded independent research.",
+      "The buy-bias connection (Damodaran, Z3.11): even after the wall, the residual pressure to maintain corporate access and avoid angering banking clients sustains the structural tilt toward buy ratings — the settlement curbed the conflict but did not erase its gravity.",
+      "The link to the rest of the regulatory frame: the settlement is the structural remedy (separation); Reg AC and Reg FD (Z5.5) are the behavioral remedies (certification and disclosure) — together they form the cage around modern research.",
+      "GAP / recency flag. Grounded in Valentine's ethics treatment plus the IB module's wall plus general knowledge; no securities-law source sits in the folder, and the post-settlement evolution (and MiFID II's distinct conflict rules) is part of the same gap."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.9",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.11",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G186",
+        "note": null
+      },
+      {
+        "ref": "G200",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.9 (the regulatory frame) · Z3.11 (★G186 — the buy-bias the conflict drives) · Z5.5 (★G200 — the behavioral remedies) · Z5.2 (★G197 — the banking subsidy the settlement attacked) · IB Z1.10 *(the information wall the settlement built)* · IB Z2.8 *(the ECM business at the conflict's center)* · PE Z1.x *(banks' advisory conflicts more broadly)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.5",
+    "local_id": "Z5.5",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Regulation AC, Reg FD & Compliance",
+    "tag": "global",
+    "global_id": "G200",
+    "quick_definition": "The behavioral rulebook of research: Regulation AC forces analysts to certify their views are genuinely their own, Regulation FD bars companies from selective disclosure, and quiet periods silence research around the firm's own deals.",
+    "explainer_covers": [
+      "Regulation AC (Analyst Certification): every published report must carry the analyst's signed certification that the views expressed are truly their own and that no part of their compensation was tied to the specific recommendation — a direct response to the Spitzer-era abuses (Z5.4).",
+      "Regulation FD (Fair Disclosure): companies must disclose material information to everyone simultaneously, not selectively to favored analysts (Z4.6) — which, as noted throughout, is why the lawful mosaic (★G190) became the analyst's edge.",
+      "Quiet periods: research must go silent on a company around the firm's own underwriting of that company's securities (especially the IPO, IB Z2.8) — preventing research from being used as a marketing arm for the banking deal.",
+      "The publication compliance stack (Valentine, Ch27): every note runs a gauntlet of required conflict disclosures (the firm's banking relationships, the analyst's holdings), editorial review, and legal/compliance sign-off before distribution.",
+      "The MNPI prohibition as the criminal backstop (Z3.3): beyond these civil rules sits the bright line against trading or tipping material non-public information — the doctrine that separates the legitimate mosaic from insider dealing.",
+      "GAP / recency flag. As with Z5.4, grounded in Valentine plus general knowledge; no dedicated securities-law source is in the folder. The rules are stated at the level a learner needs, not at the level of legal practice."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z2.8",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z1.10",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.9",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.12",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z4.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G182",
+        "note": null
+      },
+      {
+        "ref": "G199",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.9 (the regulatory frame) · Z3.3 (★G190 — Reg FD made the mosaic the edge) · Z3.12 (★G182 — the certification/disclosure on every report) · Z4.6 (Reg FD in the company relationship) · Z5.4 (★G199 — the structural remedy this complements) · IB Z2.8 *(the quiet period around the IPO)* · IB Z1.10 *(the wall)*.",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.6",
+    "local_id": "Z5.6",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "The Career & the Sell-Side → Buy-Side Path",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The classic equity-research career runs from associate to ranked senior analyst on the sell-side — and then, very often, across the aisle to the buy-side, where the same analytical skill is rewarded with returns instead of rankings.",
+    "explainer_covers": [
+      "The sell-side ladder: associate/junior analyst (builds models, does channel-check legwork) → senior/lead analyst (owns coverage, makes the calls, builds the franchise, ★G196) — a path measured in II rankings and client votes.",
+      "The defining career move: the jump to the buy-side (★G194) — joining an asset manager or hedge fund as an analyst or PM, trading publication and rankings for privacy and P&L (the information ratio, ★G112, becomes the scoreboard).",
+      "Why the move is so common: the same skills (finding the critical factors, modeling, forming a thesis) transfer directly, and the buy-side offers freedom from the buy-bias, the quiet periods, and the client-servicing grind — plus, often, more money.",
+      "What's lost and gained in the crossing: the sell-side analyst gives up the franchise and the platform but gains the ability to act on conviction (including the conviction short, Z3.11) and to be judged purely on being right.",
+      "The reshaping of the path by economics (★G197): the unbundling-driven shrinkage of sell-side seats has made the sell-side a narrower funnel — intensifying the pull toward the buy-side and toward independents (★G195)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.5",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G194",
+        "note": null
+      },
+      {
+        "ref": "G196",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.6 (the team structure the ladder sits in) · Z2.5 (★G194 — the buy-side destination) · Z5.1 (★G196 — the sell-side scoreboard) · ★G112 information ratio *(HF — the buy-side scoreboard)* · ★G197 *(economics reshaping the path)* · HF Z3.1 *(the buy-side analyst role)* · AM Z2.4 *(the active-management destination)*.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "equity-research.z5.7",
+    "local_id": "Z5.7",
+    "module": "equity-research",
+    "zone": 5,
+    "ordinal": 7,
+    "title": "Where Equity Research Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Equity research is being reshaped by three converging forces — the unbundling aftermath, the rise of alternative data, and the arrival of AI — that together pressure the traditional analyst note and push the edge from information-gathering toward judgment.",
+    "explainer_covers": [
+      "The unbundling aftermath (★G197): MiFID II permanently changed the economics — fewer analysts, shrunken coverage, a premium on the very top of the franchise, and an opening for differentiated independents. The traditional \"research-for-commissions\" model is structurally diminished.",
+      "The alt-data wave (★G195): when the channel check (★G190) is sold as a dataset, the gathering edge erodes and the advantage migrates to interpretation — knowing which data matters (the critical factors, Z3.2) and what it means, rather than being the one who collected it.",
+      "The AI frontier: machine reading of filings and transcripts, automated model-building, and natural-language synthesis threaten to commoditize the mechanical parts of research — raising the question of whether the analyst's durable value is the model or the judgment the model can't supply (echoing AM Z5.6's automation/passive pressures).",
+      "The throughline (Koller): markets price public information well, so as information becomes cheaper and faster to gather, the durable edge is precisely in the things that aren't in the public data yet — original judgment about the critical factors and where the consensus is wrong (Z1.1).",
+      "GAP / recency flag — flagged throughout. Koller (2020) is the most recent source and does not reach the AI disruption; all three forces' current state is beyond the folder's sources. This node frames the direction from first principles and general knowledge, and marks the forward-looking content as a deliberate seam for the depth layer."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z5.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z2.6",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.3",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z3.2",
+        "note": null
+      },
+      {
+        "ref": "equity-research.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G197",
+        "note": null
+      },
+      {
+        "ref": "G195",
+        "note": null
+      },
+      {
+        "ref": "G190",
+        "note": null
+      },
+      {
+        "ref": "G191",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.2 (★G197 — the economics being reshaped) · Z2.6 (★G195 — alt-data and AI) · Z3.3 (★G190 — the gathering edge being commoditized) · Z3.2 (★G191 — judgment about factors as the durable edge) · Z1.1 (what research is *for*, restated) · AM Z5.6 *(the passive/automation pressure on active management)* · Koller *(why judgment outlasts information)* · HF Z3.x *(quant/alt-data funds as the leading edge)*. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "flag — flagged throughout",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

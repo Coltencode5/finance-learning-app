@@ -1,0 +1,430 @@
+[
+  {
+    "id": "hedge-funds.z3.1",
+    "local_id": "Z3.1",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Idea Generation & Sourcing",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Where investable ideas come from — the screening, reading, networking, and pattern-recognition that surface a candidate security worth deep work, before a single dollar is committed.",
+    "explainer_covers": [
+      "The funnel: a universe of thousands of securities narrowed to the handful worth full research — the HF analogue of PE's deal funnel.",
+      "Sources of ideas: quantitative screens (cheap on EBITDA/multiples, high short interest, insider buying), sell-side research (consumed but not trusted at face value — the bank's role, IB Z1.2), industry networks and expert calls, special situations (spin-offs, index changes, forced sellers), and catalysts scanned for in news and filings.",
+      "Where to fish follows from market efficiency (Z1.9): hunt in the inefficient corners (small caps, complex situations, distressed, the under-covered) where an edge is possible.",
+      "The discipline of saying no: most ideas die in screening; the rare survivor earns deep work."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G125` Market efficiency (fish where it's inefficient), `★ G136` The edge, `★ G122` Catalyst, Z3.2 (research), IB Z1.2 (sell-side research as an input), `★ G24` EBITDA / `★ G27` Multiples (screening primitives).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.2",
+    "local_id": "Z3.2",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Fundamental Research & Valuation",
+    "tag": "global",
+    "global_id": "G87",
+    "quick_definition": "The deep-dive analysis of a candidate — its business, financials, industry, and intrinsic value — using the same valuation toolkit the investment bank uses, but to answer a different question: is the market wrong?",
+    "explainer_covers": [
+      "The IB valuation toolkit, reused from the investor's seat: comparable companies (★ G88), precedent transactions (★ G89), and DCF (★ G90) discounted at WACC (★ G91), summarized as a value range (★ G94 football field) and bridged from enterprise to equity value (★ G95). Same tools as IB Z3; opposite purpose — the banker prices to advise, the analyst values to find mispricing.",
+      "Quality of earnings and forensic work: reading the financials for what management isn't saying — the short-seller's specialty (aggressive accounting, channel stuffing, unsustainable margins).",
+      "The variant-perception question: the analysis isn't done when you have a value; it's done when you know why your view differs from the market's and why the market is wrong (sets up Z3.3).",
+      "Building the model: projecting the business, stress-testing assumptions, and identifying the few variables that actually drive the outcome.",
+      "For credit/distressed, the parallel work: recovery analysis and the fulcrum security (ties to Z2.8 and the credit module)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G89",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      },
+      {
+        "ref": "G95",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G87` The valuation toolkit, `★ G88` Comps, `★ G89` Precedents, `★ G90` DCF, `★ G91` WACC, `★ G94` Football field, `★ G95` EV↔EqV bridge, `★ G28` Due diligence, Z3.3 (the thesis this feeds), IB Z3 (the same toolkit, advisor's seat).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.3",
+    "local_id": "Z3.3",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Investment Thesis: Variant Perception & Catalyst",
+    "tag": "global",
+    "global_id": "G121",
+    "quick_definition": "The crystallized argument for a position — why this security is mispriced, why the consensus is wrong (the variant perception), and what catalyst will close the gap — the core unit of work a hedge fund produces.",
+    "explainer_covers": [
+      "The thesis (G121): a specific, falsifiable claim (\"the market is pricing X; the truth is Y; the gap is worth Z%\") — not a vague \"good company.\"",
+      "Variant perception: the heart of ★ G124 second-level thinking — superior returns require a view that is different from and better than consensus, and not yet in the price. If everyone agrees with you, it's already priced.",
+      "The catalyst (G122): the event expected to force re-rating — earnings, a product launch, a merger, a spin-off, a refinancing, an activist campaign, a restructuring. A cheap stock with no catalyst can stay cheap indefinitely (the \"value trap\").",
+      "The pre-mortem: what would make this thesis wrong? Defining the disconfirming evidence and the exit before entering.",
+      "Long vs. short theses and their asymmetry: a short thesis must also answer \"what's the catalyst and what's my borrow?\" (ties to ★ G109)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G121` The thesis, `★ G122` Catalyst, `★ G124` Second-level thinking, `★ G136` The edge, Z3.2 (the research behind it), Z3.4 (sizing the thesis), `★ G126` Risk as permanent loss (the pre-mortem).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.4",
+    "local_id": "Z3.4",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Position Sizing & Portfolio Construction",
+    "tag": "global",
+    "global_id": "G123",
+    "quick_definition": "Deciding how much to bet on each idea — given conviction, risk, correlation, and liquidity — and assembling the individual bets into a coherent portfolio; the step where edge is converted into return and where most blow-ups actually happen.",
+    "explainer_covers": [
+      "Sizing to conviction and risk, not just conviction: the biggest position isn't the best idea, it's the best risk-adjusted idea — and over-sizing a high-conviction bet is the classic path to ruin (Schwager's recurring lesson).",
+      "The quant frame: optimal holdings ∝ alpha ÷ (risk-aversion × variance) — bigger positions for higher edge and lower risk, scaled by correlation (Grinold & Kahn); the Kelly-criterion intuition and why practitioners bet fractional Kelly.",
+      "Portfolio construction: managing net and gross exposure (★ G110), factor and sector tilts, and the correlation between positions — because two \"different\" longs that move together are one bet, not two.",
+      "Breadth and diversification (★ G114): why many independent, well-sized bets beat a few big ones — the Fundamental Law made operational; and the flip side, \"the dangers of diversification\" (over-diversifying into hidden common-factor/tail risk).",
+      "The leverage decision (★ G29): how much gross to run, and the iron constraint that you cannot set risk level and leverage independently (Grinold's \"optimal gearing\")."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.5",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.9",
+        "note": null
+      },
+      {
+        "ref": "G123",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G110",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G123` (this node), `★ G114` Breadth, `★ G110` Net & gross exposure, `★ G29` Leverage, `★ G116` Drawdown, Z3.5 (risk management), Z2.9 (systematic construction), `★ G115` Fundamental Law.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.5",
+    "local_id": "Z3.5",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Risk Management",
+    "tag": "global",
+    "global_id": "G116",
+    "quick_definition": "The discipline of surviving — defining how much can be lost, on each position and in aggregate, and enforcing the limits that keep a bad bet or a bad market from ending the fund.",
+    "explainer_covers": [
+      "Risk as permanent loss, not volatility (★ G126): Marks's reframing — the goal is avoiding the unrecoverable loss, which governs how you size, hedge, and when you refuse a bet despite the apparent edge.",
+      "Drawdown as the operative metric (★ G116): peak-to-trough loss is what triggers redemptions and ends careers, so HF risk management centers on drawdown control, not tracking error — the absolute-return mandate (Z1.8) made concrete.",
+      "The toolkit: stop-losses and risk limits (hard in the platform model), stress testing and scenario analysis, VaR and its limits (it misses the tails), exposure limits (net, gross, single-name, sector, factor), and hedging overlays.",
+      "The two killers the practitioners name: leverage (it converts a temporary loss into a permanent one — forced selling at the bottom) and crowding/liquidity (everyone for the exit at once — the 2008 and Aug-2007 lessons).",
+      "Behavioral risk: the discipline to cut losers, not average down out of ego; the difference between a good decision and a good outcome (Schwager)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      },
+      {
+        "ref": "G111",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G116` Drawdown & volatility, `★ G126` Risk as permanent loss, `★ G29` Leverage (the chief danger), `★ G120` Capacity & crowding, `★ G119` Liquidity terms, Z4.4 (portfolio-level risks), `★ G111` Sharpe ratio (the reward-for-risk scorecard).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.6",
+    "local_id": "Z3.6",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Systematic Portfolio Construction & Execution",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The quant counterpart to Z3.4–3.5 — turning model forecasts into an optimized portfolio while controlling for transaction costs and constraints, where implementation efficiency can quietly destroy a real edge.",
+    "explainer_covers": [
+      "Mean-variance optimization of model alphas into holdings, subject to risk, exposure, and turnover constraints.",
+      "The transfer coefficient (★ G115 component): the correlation between the portfolio you can build (with costs and constraints) and the ideal \"paper\" portfolio — and how the long-only constraint alone can halve a strategy's information ratio (Grinold & Kahn). This is why hedge funds short: relaxing long-only is a massive efficiency gain.",
+      "The long/short efficiency gain: the first ~20% of short positions deliver ~80% of the improvement — the logic behind 130/30 and market-neutral construction.",
+      "Transaction costs and capacity: trading costs rise faster than size; a strategy's capacity is the point where its own market impact eats its edge — worsened when correlated managers share that capacity (★ G120).",
+      "Execution as alpha preservation: getting the trade done without signaling or moving the price."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.9",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G108",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G115` Fundamental Law (transfer coefficient), `★ G108` The hedge (why shorting helps), `★ G120` Capacity & crowding, `★ G114` Breadth, Z2.9 (the quant strategies this serves), Z3.4. **GAP: full execution / market-microstructure mechanics.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "full execution / market-microstructure mechanics",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.7",
+    "local_id": "Z3.7",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Conviction, Asymmetry & the Big Bet",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The other end of the spectrum from breadth — the discretionary art of recognizing the rare, high-conviction, asymmetric opportunity and sizing it enormously, because the downside is capped and the upside is vast.",
+    "explainer_covers": [
+      "The low-breadth, high-skill path (the Grinold tension): macro and concentrated equity managers make few bets, so each must be very right — the opposite of quant's many-small-bets engine.",
+      "Asymmetry as the key: the best bets risk a little to make a lot — Soros and Druckenmiller's sterling trade, sized at multiples of capital precisely because a broken peg could only move one way (ties to Z2.4–2.5).",
+      "\"Bet big when you have an edge\" (Stanley Druckenmiller via Mallaby; echoed across Schwager) — and the discipline to stay small or flat when you don't.",
+      "Why this is hard to teach and harder to repeat: it depends on pattern recognition, temperament, and the willingness to be contrarian at the extremes (★ G127 cycles, ★ G124 second-level thinking)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G114",
+        "note": null
+      },
+      {
+        "ref": "G123",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G114` Breadth (the low-breadth case), `★ G123` Position sizing, `★ G127` Cycles, `★ G124` Second-level thinking, Z2.4 (macro), `★ G126` Risk (the capped downside).",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 6 (\"Rock-and-Roll Cowboy,\" Druckenmiller) & Ch. 7 (\"White Wednesday\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z3.8",
+    "local_id": "Z3.8",
+    "module": "hedge-funds",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Exit & Trade Management",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The end of the lifecycle — deciding when a thesis has played out, been proven wrong, or simply run its course, and getting out; the half of the process that is as hard as the entry and far more neglected.",
+    "explainer_covers": [
+      "Exit triggers: the catalyst resolved (thesis played out), the price reached fair value (the gap closed), the thesis broke (disconfirmed — cut it), or the opportunity cost rose (better idea elsewhere).",
+      "Cutting losers vs. running winners: the behavioral asymmetry — the discipline to take a loss when wrong, and the patience to let a winner compound — that (Schwager) repeatedly names as separating the great from the average.",
+      "Short-covering and the squeeze: exiting a short is uniquely fraught (a crowded short can be squeezed violently — the asymmetry of ★ G109).",
+      "Liquidity at the exit: can you actually get out at scale without moving the price? — the link back to ★ G119 and to the liquidity-matching of the fund's own redemption terms.",
+      "The pre-defined exit (from the Z3.3 pre-mortem) as the antidote to exiting on emotion."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G109",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G122` Catalyst (its resolution triggers exit), `★ G109` Short selling (the squeeze), `★ G119` Liquidity terms, `★ G52` Exit (the PE node, reused), Z3.3 (the pre-defined exit), `★ G126` Risk. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

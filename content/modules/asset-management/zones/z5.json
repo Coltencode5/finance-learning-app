@@ -1,0 +1,382 @@
+[
+  {
+    "id": "asset-management.z5.1",
+    "local_id": "Z5.1",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Asset Manager as a Business",
+    "tag": "global",
+    "global_id": "G151",
+    "quick_definition": "Beyond the portfolios, an asset manager is a scale business — its revenue a slice of assets under management, its profitability driven by gathering and keeping those assets — which makes distribution and operating efficiency as decisive as investment skill.",
+    "explainer_covers": [
+      "The two businesses inside one: the investment business (generating returns / tracking the benchmark) and the asset-gathering business (distribution, brand, client service, operations) — and at scale, the second increasingly dominates the firm's fate.",
+      "The AUM economics (★ G151): fixed costs (one platform, one research team) against a fee on assets means high operating leverage — each incremental dollar of AUM is high-margin, which drives relentless M&A, fee cuts, and the dominance of the largest players.",
+      "The barbell that's emerging: cheap passive scale at one end (Vanguard, BlackRock's iShares, State Street) and genuinely scarce active skill / alternatives at the other — with the undifferentiated active middle being squeezed out (the strategic consequence of fee compression, Z5.2).",
+      "Key-person and capacity dynamics: an active boutique's returns tied to a few people (and capacity-constrained, ★ G120) vs. an index giant's commoditized, infinitely-scalable product — two completely different businesses under one industry label.",
+      "The regulatory and operational backbone (★ G155): fiduciary obligations, fund boards, custody, compliance — the cost of being a trusted manager of the public's retirement savings."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z5.1",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G151` AUM economics, `★ G150` cost/fee drag, `★ G120` capacity & crowding, `★ G155` fiduciary duty, `★ G9` \"2 and 20\" (the contrast model), Z1.6 (the fee model), Z5.2 (fee compression), HF Z5.1 (the hedge-fund firm — *the performance-fee business it contrasts with*), IB Z5.1 (the franchise parallel). **GAP: a current source for industry consolidation, the Big Three's scale, and asset-manager M&A (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "a current source for industry consolidation, the Big Three's scale, and asset-manager M&A (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z5.2",
+    "local_id": "Z5.2",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "The Active-vs-Passive Debate & Fee Compression",
+    "tag": "global",
+    "global_id": "G158",
+    "quick_definition": "The defining argument of the industry — whether active management is worth its fee — anchored by Bogle's cost arithmetic, and the fee compression that argument has unleashed as money pours from active to passive.",
+    "explainer_covers": [
+      "Bogle's arithmetic (★ G150), the spine: active management is a zero-sum game before costs, so the average active dollar must underperform the market by its fees and trading costs — and compounded over an investing lifetime, that drag is enormous (Malkiel's $10k example; Rappaport & Mauboussin's ~75%-of-managers-lag finding). This is the mathematical floor under the whole debate.",
+      "The active-vs-passive debate (★ G158): given the arithmetic, is paying for active worth it? The honest answer — only if you can identify the rare persistent outperformer ex ante (★ G156), which most investors can't — is why the default recommendation for most people is low-cost indexing (Malkiel, and Swensen's \"no middle ground\").",
+      "Fee compression: cheap beta has dragged fees down across the industry — index funds at a few basis points, free ETFs, and relentless pressure on active fees — squeezing margins and the undifferentiated active middle (the Z5.1 barbell).",
+      "The counter-case for active: markets aren't perfectly efficient (★ G125), some managers do persist, and active management provides price discovery and the option to avoid bubbles and overweight conviction — the case that keeps active alive at the high-skill end.",
+      "The reflexive worry: if everyone indexes, who sets prices? Passive free-rides on active's price discovery, so there's a (contested) equilibrium share of active the market needs — the frontier question (Z5.7)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z5.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G158` (this node), `★ G150` cost/fee drag, `★ G125` market efficiency, `★ G156` manager selection, `★ G137` active vs. passive, `★ G148` smart beta (the cheap-beta middle), Z1.6 (AUM fees), Z5.7 (where it's heading), HF Z5.5 (the hedge-fund fee debate — *the same argument, performance-fee version*). *Real-world layer: Malkiel (the index-fund case); Rappaport & Mauboussin Ch. 1 (the cost critique); Bogle (the canonical source — GAP, not in Drive).*",
+    "gaps": [],
+    "real_world_layer": "Malkiel (the index-fund case); Rappaport & Mauboussin Ch. 1 (the cost critique); Bogle (the canonical source — GAP, not in Drive).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z5.3",
+    "local_id": "Z5.3",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "Distribution & the Client Relationship",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How an asset manager actually gathers and keeps assets — through the distribution channels (advisors, platforms, retirement plans, model portfolios) and the client relationships that, at scale, matter as much as performance.",
+    "explainer_covers": [
+      "The channels: direct-to-retail (Vanguard, Fidelity), the financial-advisor and wirehouse channel, defined-contribution retirement plans (getting onto the 401(k) menu and into the target-date default), and model portfolios (where an allocator bundles funds for advisors) — the plumbing through which products reach savers.",
+      "Why distribution is decisive: a mediocre fund with great distribution outsells a great fund with none — which is why asset managers spend enormously on platform relationships, and why scale and brand compound (the rich get richer).",
+      "The institutional vs. retail split: institutions (Z5.4) buy through consultants and RFPs with deep due diligence; retail buys through advisors and platforms — two completely different sales motions.",
+      "The client relationship as retention: transparency, reporting, and service keep assets sticky; performance-chasing clients who pile in after good years and flee after bad ones are the industry's perennial problem (the behavioral cycle of Z4.5, seen from the firm's side).",
+      "The link to wealth management (the sibling module): the advisor channel is wealth management — the layer that selects and allocates these products for individuals — flag the seam, build it later."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G152",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G152` mutual fund / `★ G139` ETF (the products distributed), Z2.10 (target-date and model portfolios), Z5.1 (the firm), Z5.4 (the institutional channel), Z4.5 (the client behavioral cycle), the future Wealth Management module (the advisor channel). **GAP: distribution economics, retirement-plan (DC/401k) mechanics, and the consultant/gatekeeper ecosystem.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "distribution economics, retirement-plan (DC/401k) mechanics, and the consultant/gatekeeper ecosystem",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z5.4",
+    "local_id": "Z5.4",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "The Institutional Allocator's Seat",
+    "tag": "global",
+    "global_id": "G154",
+    "quick_definition": "The buy-side of asset management itself — the pensions, endowments, foundations, insurers, and sovereign wealth funds that allocate capital across managers and asset classes — the seat where this module fuses with the LP-side nodes of every other module.",
+    "explainer_covers": [
+      "The allocator's job: set the policy portfolio (★ G144), choose asset classes, select and monitor managers (★ G156), and balance return against the institution's liabilities and spending needs — the endowment model (★ G154) is the canonical version.",
+      "The LP-side convergence (the densest cross-module thread in the app): this is the same investor as the LP in PE Z5 (allocation, the J-curve, GP due diligence), the allocator to hedge funds in HF Z5.4, and the credit allocator in Credit Z5 — funding private equity, hedge funds, private credit, and public markets out of one portfolio. The endowment model node is the unifying hub; this node is where the user should see the whole allocator portfolio assembled across modules.",
+      "The institutional types and what each wants (echoing PE Z1.3 / HF Z5.3): endowments and foundations (perpetual, long-horizon, alternatives-heavy), pensions (liability-driven, steadier), insurers (yield and capital-rule-driven — the big private-credit buyer), and sovereign wealth funds (scale).",
+      "The consultant ecosystem: investment consultants who advise allocators on policy and manager selection — the gatekeepers of institutional flows, and a key distribution channel (Z5.3).",
+      "Fee-adjusted, net-of-everything thinking: the allocator evaluates managers on net returns and on whether a manager's \"alpha\" is really cheap factor beta (★ G148) — the discipline that drives the active-vs-passive choice at the institutional level."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.8",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G154` endowment model, `★ G144` policy portfolio, `★ G156` manager selection, `★ G143` asset allocation, `★ G56` co-investment (the allocator going direct), `★ G57` secondaries (managing the private sleeve), **PE Z5.6 / Z5.7 / Z5.8** (the PE allocator seat), **HF Z5.4** (allocating to hedge funds), **Credit Z5.x** (the credit allocator seat), Z2.11 (the endowment model branch). *Real-world layer: Swensen (the entire allocator's-seat source).*",
+    "gaps": [],
+    "real_world_layer": "Swensen (the entire allocator's-seat source).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z5.5",
+    "local_id": "Z5.5",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Manager Selection",
+    "tag": "global",
+    "global_id": "G156",
+    "quick_definition": "The discipline by which an allocator decides which external managers to hire — judging track record, process, team, edge, and fees to identify rare persistent skill before it shows up — the public-markets sibling of GP due diligence, and the allocator's hardest problem.",
+    "explainer_covers": [
+      "The core difficulty (Sharpe's arithmetic, ★ G150): since the average active manager underperforms after fees, manager selection only adds value if the allocator can identify persistent skill ex ante — and past returns are a famously weak predictor (this year's winners rarely repeat).",
+      "What to actually judge (Swensen Ch. 10): not the track record alone but the process, the people, the edge (★ G136), the alignment (fees and incentives), and integrity — the qualitative due diligence that separates skill from luck, run with the same rigor Swensen's Yale team applies.",
+      "The behavioral traps: hiring managers at the peak of their performance (after the hot streak) and firing them at the trough (just before mean-reversion) — the value-destroying \"performance-chasing\" that Swensen's long-term, low-turnover manager relationships are built to avoid.",
+      "The mirror of GP due diligence: this is the same skill as PE Z5.8 (selecting a GP) and HF Z5.4 (selecting a hedge fund) — judging an external manager's persistent skill and alignment — applied to public-markets active managers. Cross-link heavily.",
+      "The agency problem (Swensen's second theme): external managers pursue stable fee income (gathering assets, hugging benchmarks, diluting effort across products) while the allocator wants risk-adjusted returns — the conflict manager selection must see through."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G142",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G156` (this node), `★ G150` cost/fee drag, `★ G136` the edge, `★ G142` active share (a selection screen), `★ G112` information ratio (the skill metric), Z5.4 (the allocator's seat), Z3.7 (the performance metrics judged on), **PE Z5.8** (GP due diligence — *the mirror*), **HF Z5.4** (selecting hedge funds — *the mirror*). *Real-world layer: Swensen Ch. 10 (investment process; manager selection).*",
+    "gaps": [],
+    "real_world_layer": "Swensen Ch. 10 (investment process; manager selection).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z5.6",
+    "local_id": "Z5.6",
+    "module": "asset-management",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Where Asset Management Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The forces reshaping the industry — the relentless rise of passive, fee compression toward zero, the dominance of a few giant managers, the push into private markets, and the new questions (stewardship power, direct indexing, AI) that scale and indexing raise.",
+    "explainer_covers": [
+      "Passive's rise and the tipping point: the multi-decade shift of money from active to passive, now past the point where index funds own a majority of some markets — and the (contested) question of whether passive's growth distorts price discovery and the equilibrium share of active the market needs.",
+      "Fee compression toward zero: free ETFs, basis-point index funds, and the squeeze on the active middle — the barbell hardening into cheap scale at one end and scarce alpha/alternatives at the other (Z5.1).",
+      "The giants and concentration of power: the Big Three (BlackRock, Vanguard, State Street) as the largest owners of most public companies — concentrating stewardship power (Z4.4) and raising governance, competition, and systemic-risk questions a generation of texts never contemplated.",
+      "The private-markets push: asset managers building (and acquiring) private-equity, private-credit, and real-asset capabilities, and packaging them in evergreen / interval / semi-liquid vehicles for the wealth channel — the convergence of public and private asset management (the shared \"where is this heading\" thread with PE Z5.22, HF Z5.6, and Credit Z5.14).",
+      "Direct indexing and AI: technology letting investors own a personalized index directly (for tax and customization) rather than through a fund, and AI/data reshaping research and distribution — the frontier of the product itself."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z1.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G137` active vs. passive, `★ G150` cost/fee drag, `★ G158` the active-vs-passive debate, `★ G154` endowment model (alternatives going mainstream), Z1.1 (what asset management is — capstone), Z4.4 (the stewardship-power question), **PE Z5.22** (PE's future / retail democratization), **HF Z5.6** (the convergence from the hedge-fund side), **Credit Z5.14** (private credit's future), the future Wealth Management module. **GAP: the dominant theme of the whole module — passive's tipping point, fee-to-zero, the Big Three's stewardship power, direct indexing, evergreen retail vehicles, and AI in asset management are all *post-source* and need current sources (recency). This is the most heavily gap-flagged node in the map.** ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "the dominant theme of the whole module — passive's tipping point, fee-to-zero, the Big Three's stewardship power, direct indexing, evergreen retail vehicles, and AI in asset management are all",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

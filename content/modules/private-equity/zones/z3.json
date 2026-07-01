@@ -1,0 +1,816 @@
+[
+  {
+    "id": "private-equity.z3.1",
+    "local_id": "Z3.1",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "The PE Deal Funnel & Value Chain",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The funnel narrowing many sourced opportunities down to the few deals actually closed — and the end-to-end value chain of a PE transaction.",
+    "explainer_covers": [
+      "Funnel ratios: sourced → screened → diligenced → IC-approved → closed.",
+      "The PE value chain overview as the spine of this zone.",
+      "Conversion economics and why sourcing volume matters."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2, ★ G28 Due diligence, all Zone 3 nodes, ★ G17 Dry powder.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.2",
+    "local_id": "Z3.2",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Deal Sourcing & Generating Deal Flow",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How PE firms originate opportunities — from proprietary networks to intermediated, competitive auctions.",
+    "explainer_covers": [
+      "Deal sources: proprietary/relationship, intermediated, and auctioned.",
+      "Networks and reputation as the real edge; sourcing in emerging markets.",
+      "Proprietary vs. auctioned trade-offs."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.25",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.1, Z3.3 (auctions), ★ G28 Due diligence, Z2.25 (buyout types as sources), ★ G17 Dry powder.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.3",
+    "local_id": "Z3.3",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Auction Process",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "A structured, competitive sale (often bank-run) in which multiple bidders compete for a target, typically across two stages.",
+    "explainer_covers": [
+      "One- vs. two-stage auctions; indicative (NBO) vs. binding bids.",
+      "The data room and SPA mark-up dynamics.",
+      "Strategic vs. financial buyers; competitive tension and the winner's curse."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.15",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2, Z3.12 (pricing), ★ G36 SPA, ★ G28 Due diligence, Z4.15 (trade sale — the other side).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.4",
+    "local_id": "Z3.4",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Due Diligence",
+    "tag": "global",
+    "global_id": "G28",
+    "quick_definition": "The systematic investigation of a target's business, finances, legal standing, and risks before committing capital.",
+    "explainer_covers": [
+      "Purpose and the DD process; reliance and the role of advisors.",
+      "The \"areas\" (see Z3.5); red flags and deal-breakers.",
+      "Quality of earnings and how DD feeds the model and the SPA warranties."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.10",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.5, Z3.6 (valuation), ★ G24 EBITDA (adjustments), ★ G36 SPA (warranties), Z4.10 (ESG DD).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.5",
+    "local_id": "Z3.5",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Due Diligence Areas",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The specific domains a DD effort covers — commercial, financial, legal, tax, operational, and beyond.",
+    "explainer_covers": [
+      "Commercial/market DD; financial DD and quality of earnings.",
+      "Legal and tax DD; operational and management DD.",
+      "Environmental/ESG, IT, and insurance DD."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.10",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G28 Due diligence, Z3.6, quality of earnings, Z4.10 (ESG).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.6",
+    "local_id": "Z3.6",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "The Valuation Toolkit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The core methods PE uses to value targets — DCF, comparable companies, precedent transactions, and LBO/ability-to-pay analysis.",
+    "explainer_covers": [
+      "Intrinsic (DCF) vs. relative (comps, precedents) vs. LBO analysis.",
+      "The \"football field\" of overlapping value ranges.",
+      "When each method applies and its limits."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.8",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.9",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      },
+      {
+        "ref": "G26",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.7, Z3.8, Z3.9, Z3.10, Z3.11, ★ G25 EV, ★ G26 Equity value, ★ G27 Multiples.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.7",
+    "local_id": "Z3.7",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Enterprise Value vs Equity Value",
+    "tag": "global",
+    "global_id": "G25",
+    "quick_definition": "Enterprise value is the value of the whole business; equity value is what's left for shareholders after subtracting net debt.",
+    "explainer_covers": [
+      "EV = equity value + net debt (+ minorities − associates, etc.); the EV→equity bridge.",
+      "Why valuation multiples are usually built on EV.",
+      "The classic mistakes (mixing EV and equity metrics)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.13",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G30 Net debt, ★ G27 Multiples, Z3.6, Z3.13 (pricing adjustments), ★ G32 Sources & uses.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.8",
+    "local_id": "Z3.8",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Valuation Multiples",
+    "tag": "global",
+    "global_id": "G27",
+    "quick_definition": "Shorthand valuation ratios (e.g., EV/EBITDA) that price a company relative to peers or precedent deals.",
+    "explainer_covers": [
+      "EV/EBITDA, EV/EBIT, EV/Sales, P/E; revenue/KPI multiples for early-stage.",
+      "Choosing and normalizing the multiple; what drives it (growth, margins, sector, cycle).",
+      "Reading historical multiple ranges."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.23",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G24 EBITDA, ★ G25 EV, Z3.6, Z2.23 (multiple expansion), Z4.8.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.9",
+    "local_id": "Z3.9",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "Valuing Early-stage vs Mature Companies",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Early-stage firms are valued on potential (revenue/KPI multiples and the VC method); mature firms on cash flows and earnings multiples.",
+    "explainer_covers": [
+      "The VC method: target return → implied post-money.",
+      "Growth/buyout valuation: DCF plus multiples.",
+      "Why early-stage valuation is irreducibly subjective."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.10",
+        "note": null
+      },
+      {
+        "ref": "G41",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.6, ★ G41 Pre/post-money, Z2.5 (VC process), Z3.10 (DCF).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.10",
+    "local_id": "Z3.10",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "DCF & Cost of Capital",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Valuing a business as the present value of its future cash flows, discounted at its cost of capital.",
+    "explainer_covers": [
+      "Free-cash-flow projection; WACC; terminal value.",
+      "APV for leveraged structures; sensitivity analysis.",
+      "(Covered lightly in Mastering PE; modeling depth from Ippolito Ch. 7 / Rosenbaum & Pearl.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G25",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.6, ★ G25 EV, Z3.11 (LBO analysis), ★ G29 Leverage. **GAP: full modeling mechanics.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "full modeling mechanics",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.11",
+    "local_id": "Z3.11",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "LBO Analysis / Ability-to-Pay",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Working backward from a target equity return and the available leverage to the maximum price a buyout investor can pay.",
+    "explainer_covers": [
+      "Entry leverage → debt capacity; required equity return; exit assumptions.",
+      "How leverage sets the price ceiling; LBO as a valuation method, not just a financing plan."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.6",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.21 (LBO mechanics), ★ G29 Leverage, ★ G32 Sources & uses, Z3.6, Z3.12.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.12",
+    "local_id": "Z3.12",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "Deal Pricing Dynamics",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How the headline price actually gets set and competed for, and how leverage and auction tension shape it.",
+    "explainer_covers": [
+      "Bidding strategy; leverage's effect on the price you can justify.",
+      "Pricing \"outside the model\" — qualitative and relationship factors.",
+      "Strategic vs. financial-buyer pricing; the winner's curse."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.11",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.25",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.3 (auctions), Z3.11 (LBO analysis), ★ G29 Leverage, Z2.25 (P2P).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.13",
+    "local_id": "Z3.13",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 13,
+    "title": "Pricing Adjustments & Closing Mechanisms",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The mechanisms that adjust the final price between signing and closing — locked-box vs. completion accounts, plus net-debt and working-capital adjustments.",
+    "explainer_covers": [
+      "Locked-box vs. completion-accounts mechanisms.",
+      "The net-debt adjustment and the target/normalized working-capital peg.",
+      "Cash-free/debt-free convention; earn-outs; post-closing disputes and remedies."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      },
+      {
+        "ref": "G31",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G30 Net debt, ★ G31 Working capital, Z3.7 (EV→equity bridge), ★ G36 SPA.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.14",
+    "local_id": "Z3.14",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 14,
+    "title": "Buyout Funding Instruments / The Debt Stack",
+    "tag": "global",
+    "global_id": "G33",
+    "quick_definition": "The layered mix of debt and equity instruments used to fund a buyout, ranked by seniority and risk.",
+    "explainer_covers": [
+      "Senior debt (Term Loan A/B, RCF); second lien; mezzanine; PIK.",
+      "High-yield bonds; unitranche; vendor loan/notes.",
+      "Sponsor equity, shareholder loans, and preferred — the bottom of the stack.",
+      "The risk-return ladder and who holds each layer."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G29 Leverage, ★ G32 Sources & uses, ★ G34 Covenant, Z3.15 (SPV), Z2.26 (distressed). **GAP: private-credit depth (partly covered by Ippolito Ch. 2 & 11).**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "private-credit depth (partly covered by Ippolito Ch. 2 & 11",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.15",
+    "local_id": "Z3.15",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 15,
+    "title": "Investment Structures & SPVs",
+    "tag": "global",
+    "global_id": "G35",
+    "quick_definition": "The stack of holding companies (TopCo / MidCo / BidCo) used to ring-fence the deal, place debt at the right level, and house the equity.",
+    "explainer_covers": [
+      "Why SPVs are used; simple vs. complex structures.",
+      "TopCo / MidCo / BidCo layering and where debt vs. equity sits.",
+      "Tax and jurisdiction considerations; structural subordination.",
+      "Equity vehicles within the structure (institutional strip + sweet equity)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.16",
+        "note": null
+      },
+      {
+        "ref": "G35",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G35 SPV, ★ G32 Sources & uses, ★ G33 Debt stack, ★ G45 Sweet equity, Z3.16 (docs), **GAP: tax structuring**.",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "tax structuring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.16",
+    "local_id": "Z3.16",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 16,
+    "title": "PE Transaction Documentation",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The suite of legal agreements that execute a deal — the SPA, the shareholders' agreement, the disclosure letter, and more.",
+    "explainer_covers": [
+      "The key-documents map for a buyout.",
+      "\"Clean exit\" vs. purchaser-protection tension between seller and buyer.",
+      "How DD findings flow into warranties and disclosure."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.17",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.18",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.19",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.17, Z3.18, Z3.19, ★ G28 Due diligence, G52 Exit (Z4).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.17",
+    "local_id": "Z3.17",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 17,
+    "title": "Sale & Purchase Agreement (SPA)",
+    "tag": "global",
+    "global_id": "G36",
+    "quick_definition": "The master contract governing a company's sale — price, conditions, representations, warranties, and remedies.",
+    "explainer_covers": [
+      "Structure; price and adjustment mechanism; conditions precedent.",
+      "Reps & warranties, indemnities, and warranty & indemnity (W&I) insurance.",
+      "Restrictive covenants; seller vs. buyer protections."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.15",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.13 (pricing adjustments), ★ G28 Due diligence, Z3.16, Z4.15 (trade sale uses it again).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.18",
+    "local_id": "Z3.18",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 18,
+    "title": "Buyout Debt Documentation & Covenants",
+    "tag": "global",
+    "global_id": "G34",
+    "quick_definition": "The loan agreements — and the covenants — that govern the deal's debt and protect its lenders.",
+    "explainer_covers": [
+      "The facility/loan agreement and the intercreditor agreement.",
+      "Maintenance vs. incurrence covenants; the rise of cov-lite.",
+      "Cash-flow cover / debt service; the security package; events of default."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.26",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G30",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G33 Debt stack, ★ G29 Leverage, ★ G30 Net debt, Z2.26 (distressed), **GAP: private-credit & restructuring depth**.",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "private-credit & restructuring depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z3.19",
+    "local_id": "Z3.19",
+    "module": "private-equity",
+    "zone": 3,
+    "ordinal": 19,
+    "title": "Equity Documentation",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The shareholders' agreement and articles that set ownership, governance, and the management-equity (sweet-equity) terms.",
+    "explainer_covers": [
+      "Shareholders' agreement and articles of association.",
+      "Key provisions: board, reserved matters, transfers, leaver provisions, drag/tag.",
+      "The management-equity package: institutional strip + sweet equity + ratchets."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      },
+      {
+        "ref": "G43",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G44",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G45 Sweet equity, ★ G43 Drag/tag, G51 Governance (Z4), Z4.5 (management comp), ★ G44 Minority rights. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

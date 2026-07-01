@@ -1,0 +1,68 @@
+{
+  "slug": "hedge-funds",
+  "title": "Hedge Funds",
+  "kind": "role",
+  "build_order": 4,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Hedge Fund Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Types of Hedge Fund (Strategy Branches)",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Hedge Fund Process (From Idea to Trade)",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Managing the Book & the Live Portfolio",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "The Firm, Performance & the Investor Relationship",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 31,
+    "global_range": "G106–G136",
+    "zone_node_count": 40,
+    "globals_reused": [
+      "G1",
+      "G2",
+      "G6",
+      "G7",
+      "G9",
+      "G24",
+      "G27",
+      "G28",
+      "G29",
+      "G52",
+      "G61",
+      "G62",
+      "G78",
+      "G79",
+      "G81",
+      "G82",
+      "G83",
+      "G87",
+      "G88",
+      "G89",
+      "G90",
+      "G91",
+      "G94",
+      "G95",
+      "G99"
+    ],
+    "gap_count": 5
+  },
+  "status": "mapped"
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "investment-banking",
+  "title": "Investment Banking",
+  "kind": "role",
+  "build_order": 3,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Investment Banking Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "The Product Groups (Types of Investment Banking Work)",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "Doing Deals: The Valuation Toolkit & Execution Process",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Executing & Managing the Transaction",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "The Franchise, the Business & the Relationship",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 23,
+    "global_range": "G83–G105",
+    "zone_node_count": 53,
+    "globals_reused": [
+      "G1",
+      "G24",
+      "G25",
+      "G26",
+      "G27",
+      "G28",
+      "G29",
+      "G30",
+      "G31",
+      "G33",
+      "G34",
+      "G35",
+      "G36",
+      "G37",
+      "G42",
+      "G53",
+      "G55",
+      "G61",
+      "G62",
+      "G68",
+      "G69",
+      "G70",
+      "G71",
+      "G72",
+      "G73",
+      "G78",
+      "G79",
+      "G80",
+      "G81"
+    ],
+    "gap_count": 0
+  },
+  "status": "mapped"
+}

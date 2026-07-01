@@ -1,0 +1,337 @@
+[
+  {
+    "id": "real-estate.z4.1",
+    "local_id": "Z4.1",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "The Asset Management Mandate",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Once a property is acquired, the asset manager executes the business plan — budgeting, directing leasing and capital expenditures, managing the property manager, and reporting to investors — converting the underwriting assumptions into realized NOI and, ultimately, into realized returns.",
+    "explainer_covers": [
+      "The transition from acquisition to operations: closing is not the value creation event — it is the starting gun; the business plan (rent leased-up, renovations executed, expenses rationalized) is what generates the return.",
+      "Asset management vs. property management: the property manager handles day-to-day operations (maintenance requests, rent collection, vendor management) and is often a third-party firm; the asset manager handles strategy and capital allocation (leasing decisions, capex approvals, hold/sell/refinance decisions, investor reporting) — the strategic principal/operational agent structure.",
+      "The annual budget and business-plan tracking: setting and approving the annual operating budget; tracking NOI performance against underwriting; identifying leasing opportunities and capital needs; the budget feeds the investor's quarterly reporting.",
+      "The hold/sell/refinance decision: throughout the hold, the asset manager evaluates whether to execute the business plan and sell (exit, ★G52), refinance and hold longer (Z4.6), or recapitalize the equity (Z4.6); this decision is driven by market conditions (★G232), the state of the business plan, and investor preferences.",
+      "Difference from PE operational value creation: PE (Z4.x) typically works on operational efficiency, revenue growth, and management — functions inside the company; RE asset management works on leasing (filling space, renewing tenants, marking rents to market) and capital (renovation, TI, capex) — functions at the asset level rather than the corporate level."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G230 (leasing — the asset manager's core lever), Z4.4 (value-add execution — the asset management mandate in action), Z4.6 (capital events — the refinance/recap decision), PE Z4.x (the PE operational parallel — different function, same value-creation logic), ★G225 (the sponsor who runs this mandate). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.2",
+    "local_id": "Z4.2",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "The Lease & Net-Lease Structures",
+    "tag": "global",
+    "global_id": "G229",
+    "quick_definition": "The lease is the contract that converts a building into an income stream — setting base rent, term, escalations, and expense responsibility — with the gross-to-net spectrum (who pays which expenses) determining what NOI actually is and who bears operating-cost risk.",
+    "explainer_covers": [
+      "The gross lease: the landlord pays all or most operating expenses (property taxes, insurance, utilities, maintenance); the tenant pays a fixed rent; NOI = base rent minus all operating expenses; the landlord bears all expense-inflation risk; common in multifamily and some older office buildings.",
+      "The net-lease spectrum: single-net (tenant pays property taxes); double-net or NN (tenant pays taxes + insurance); triple-net or NNN (tenant pays taxes + insurance + maintenance and repairs — the landlord's net rent is NOI, truly); NNN to an investment-grade credit tenant on a 15–20-year lease is the closest real-estate instrument to a bond.",
+      "Modified gross (the middle ground): tenant pays base operating expenses up to a base-year stop; the landlord and tenant share expense growth above the stop; standard in Class A office markets.",
+      "Base rent plus CAM (common-area maintenance) reimbursements: in retail and commercial properties, the tenant pays base rent plus a pro-rata share of operating expenses (CAM) and sometimes property taxes; the total rent is \"NNN\" in economic effect even if not contractually NNN.",
+      "Lease term, escalations, and optionality: term (shorter = more frequent rent resets to market; longer = income certainty but mark-to-market risk on rollover); fixed annual escalations (1–3% CPI or fixed bumps); renewal options (the tenant's right to extend — optionality for the tenant, uncertainty for the landlord); termination options (particularly in office leases)."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z2.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      },
+      {
+        "ref": "G221",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G218 (the lease determines what NOI is — expense treatment is the decisive variable), ★G230 (lease rollover — what happens when leases expire), ★G221 (lease structure varies by sector — NNN is retail/industrial, gross is multifamily), Z2.2 (traditional sector lease structures), Z4.3 (occupancy and the operational mechanics of managing leases). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.3",
+    "local_id": "Z4.3",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Leasing & Occupancy",
+    "tag": "global",
+    "global_id": "G230",
+    "quick_definition": "Leasing and occupancy captures the operational health of a property — the occupancy rate, the rent roll, net absorption in the market, the cost of signing tenants (TI and leasing commissions), and the mark-to-market risk on lease rollover — constituting the asset manager's central monitoring dashboard and primary value lever.",
+    "explainer_covers": [
+      "Occupancy and vacancy: physical occupancy (what percentage of the space is leased and legally occupied) vs. economic occupancy (what percentage of potential rent is being collected, net of concessions); the vacancy rate is the inverse.",
+      "Net absorption: total space leased minus total space vacated, across a market, over a period — the fundamental demand signal; positive net absorption in a market means more space is being occupied than given back; negative means the market is softening; Geltner et al. (Ch. 1) discuss absorption as the mechanism linking employment growth to space demand.",
+      "The rent roll: the tenant-by-tenant schedule of lease expirations, base rents, renewal options, and outstanding obligations — the asset manager's operational bible; a rent roll with many near-term expirations (\"rollover\") is a risk (must re-lease) and an opportunity (mark stale rents to market).",
+      "Mark-to-market on rollover: when a lease expires, the landlord can either renew the tenant (at market rent — higher if the market has risen, lower if it has softened) or release the space (at a cost in TI and leasing commissions); below-market leases rolling to market are an NOI-growth opportunity.",
+      "TI/LC (tenant improvements and leasing commissions): the capital cost of signing a tenant — TI is the landlord's build-out allowance for the tenant's space ($30–$100+/SF in office markets); LC is the broker's commission (typically 3–6% of the lease value); these items sit below NOI (★G218) but are real cash expenditures that reduce equity cash flow and must be in the pro forma (★G228)."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G229 (the lease — the contract that determines occupancy), ★G218 (occupancy/expenses drive NOI directly), ★G232 (absorption signals where the physical cycle is), ★G228 (TI/LC appear in the pro forma below NOI), Z4.4 (value-add centers on leasing strategy to lift occupancy and rents). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.4",
+    "local_id": "Z4.4",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Value Creation: The Value-Add Playbook",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Value-add real estate earns its return by doing work — renovating the physical asset, releasing vacant space, marking below-market rents to current rates, cutting operating expenses, or repositioning the asset class entirely — transforming an underperforming property to stabilized status and selling at a lower (compressed) cap rate.",
+    "explainer_covers": [
+      "The value-add levers: (1) physical renovation (lobby, amenities, unit upgrades in multifamily, building-systems modernization) that enables higher rent; (2) leasing up vacancy (filling dark space — the most direct NOI lift); (3) mark-to-market (renewing or replacing tenants at current market rent when below-market leases expire); (4) expense reduction (renegotiating contracts, improving property management, eliminating redundant costs); (5) use repositioning (converting an underutilized office to multifamily or a retail strip to medical office).",
+      "The path from unstabilized to stabilized: the business plan has a time-line — \"we expect to achieve 92% occupancy and stabilized NOI of $X in year 2\" — and the performance against that timeline is what the asset manager tracks; stabilization is the moment the business plan is \"proven out.\"",
+      "The cap-rate compression at stabilization: if a value-add property is purchased at a 7% going-in cap (on current depressed NOI) and stabilizes at an occupancy and rent level that implies a 5.5% cap at current market pricing, the return is driven by both NOI growth and cap-rate compression — the \"buy at a discount, fix, stabilize, sell at a premium\" thesis.",
+      "The risk: value-add carries execution risk — lease-up takes longer than expected, TI costs overrun, the market softens during the hold period; the pro forma (★G228) sensitivity table shows where the deal breaks.",
+      "The Technical Topics PDF is explicit: \"you purchase it at a discount to replacement cost, lease it up, stabilize the asset, and then sell it\" — the practitioner's concise description of the value-add thesis."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G222",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G222 (value-add and opportunistic — the styles where this playbook is deployed), ★G230 (leasing is the central execution lever), ★G218 (NOI growth is the target), ★G219 (cap-rate compression at stabilization generates appreciation), Z4.5 (development — the extreme end of value creation), PE Z4.x (PE operational value creation — the corporate parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.5",
+    "local_id": "Z4.5",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "The Real Estate Development Process",
+    "tag": "global",
+    "global_id": "G231",
+    "quick_definition": "The real estate development process is the ground-up creation of new property — from site acquisition through entitlement, design, construction (financed by loan-to-cost draws), and lease-up to stabilization — the highest-risk, highest-return real-estate activity and the mechanism by which new supply enters the market to meet demand.",
+    "explainer_covers": [
+      "The stages of development: (1) site acquisition and feasibility; (2) entitlement and zoning (obtaining the government approvals to build — often the longest and most unpredictable stage); (3) design, permitting, and pre-leasing; (4) construction (financed by a construction loan drawing on a loan-to-cost budget); (5) lease-up (filling the building as it is completed); (6) stabilization (reaching underwritten occupancy and NOI — the point at which a permanent take-out loan replaces the construction loan).",
+      "The construction loan and LTC: the construction lender extends credit based on loan-to-cost (LTC), not loan-to-value; draws are disbursed as construction progresses against an inspector-certified draw schedule; the developer contributes equity first (\"equity in first\") before the lender disburses; the construction loan is typically floating-rate (★G69) and short-term (18–36 months).",
+      "Development risk vs. acquisition risk: development carries entitlement risk (will the city approve?), construction risk (schedule overruns, cost overruns), and lease-up risk (will tenants come at the rents underwritten?) — three layers of uncertainty absent in a stabilized acquisition; this is why development carries the highest target return (opportunistic IRR, ★G222).",
+      "The development spread (yield-on-cost vs. market cap rate): a developer underwrites a deal by comparing the projected stabilized NOI ÷ total cost (the yield on cost) to the market cap rate for stabilized properties; if yield-on-cost = 7% and market cap rate = 5.5%, there is a 150-bps development spread — the reward for construction risk; if the spread is thin or negative, development does not pencil.",
+      "Geltner et al. (Chs. 27–29) model development as a real option — the right but not the obligation to build — and analyze when and how the development spread must exceed zero for rational development to proceed."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G222",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G222 (opportunistic — the style that development inhabits), ★G227 (the construction loan), ★G219 (yield-on-cost vs. exit cap — the developer's return gauge), ★G232 (development feeds the supply pipeline — the cycle mechanism), Z4.4 (development as the most extreme value-creation play), Z3.7 (LTC as the construction lender's sizing metric). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.6",
+    "local_id": "Z4.6",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Capital Events: Refinancing & Recapitalization",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "During the hold period, an owner can refinance the existing debt (replacing it at maturity or extracting equity through a cash-out refinance) or recapitalize the equity (restructuring the partnership or bringing in a new capital partner) without selling the asset — converting embedded value into cash while retaining the investment.",
+    "explainer_covers": [
+      "The refinance: when the existing loan matures (or when market conditions improve materially), the owner replaces the loan with new debt; a \"cash-out refi\" is executed when the property has appreciated sufficiently — the new, larger loan returns equity to the LP while the sponsor retains the asset; this resets the basis and the return clock without triggering a taxable sale.",
+      "The recapitalization: restructuring the equity side — replacing an exiting LP with a new capital partner, restructuring the promote tiers, or bringing in a new capital partner at a new valuation to fund the next phase of the business plan; common in value-add transitions (a value-add fund exits by selling the stabilized asset to a core buyer, often another vehicle of the same manager).",
+      "The refinancing wall: in a rising-rate environment, a large volume of loans maturing simultaneously face a painful refinancing: the new debt available at higher rates supports a smaller loan (the DSCR constraint tightens), but the property's value may not have risen to compensate, creating a \"loan shortfall\" — the sponsor must contribute additional equity or sell the asset; the 2023–25 CRE refinancing wall is the largest current-context application of this mechanism. GAP flag: post-source; the post-2022 refinancing stress is not covered by the in-Drive materials.",
+      "Waterfall implications: a cash-out refinance (a return of equity) typically does not trigger the promote — the waterfall runs on net profits from operations and sale, not debt proceeds; a partial-sale or recapitalization does trigger the waterfall calculation, requiring careful accounting."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.7",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G227 (the mortgage being refinanced), ★G75 (LTV determines the new loan size), Z4.7 (the downside scenario — refinancing fails), Z5.1 (the alternative to refinancing: just sell), ★G11 (waterfall implications of a recapitalization). *GAP flag:* the refinancing wall is post-source. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z4.7",
+    "local_id": "Z4.7",
+    "module": "real-estate",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "Managing Through the Cycle: Risk, Leverage & Distress",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real estate's defining risk is leverage meeting the cycle — when values fall and loans mature in a softening market, over-levered assets face covenant breaches, refinancing failure, or a forced sale at the wrong time, and that distress becomes the next opportunistic buyer's entry point.",
+    "explainer_covers": [
+      "Leverage as the risk amplifier (★G29): positive leverage (cap rate > debt cost) amplifies returns on the way up; the same leverage creates a \"negative leverage spiral\" when cap rates expand — falling NOI + rising debt service + falling values = rapid equity wipeout on a highly-levered deal.",
+      "Covenant breaches (★G34): commercial mortgage loan agreements contain maintenance covenants (minimum DSCR, maximum LTV) that breach when the property deteriorates; a covenant breach does not immediately default the loan but gives the lender consent rights, modifications, and additional collateral demands.",
+      "The distress sequence: covenant breach → forbearance negotiation or amend-and-extend (★G81 workout) → maturity default (loan comes due and cannot be refinanced) → lender enforcement (foreclosure on the property or foreclosure on the borrowing entity's equity interests via the mezzanine pledge).",
+      "Recovery for lenders (★G61): commercial mortgage lenders have generally high recovery rates in historical cycles because they lend at 55–65% LTV — a 35–45% property-value cushion before first-loss; mezzanine lenders and preferred equity holders face higher loss in severe downturns.",
+      "Distressed investing as the opportunistic entry: the buyer who purchases a property in distress (from a lender selling REO — real-estate owned — or from a sponsor forced to sell) acquires at a discount to replacement cost (★G220), with the potential to re-stabilize and capture the appreciation; this is the cycle's mechanism for clearing excess supply and correcting overvaluation."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G29 (leverage — the amplifier), ★G34 (covenant — the breach trigger), ★G81 (workout — the out-of-court resolution), ★G232 (the real estate cycle — the context), ★G61 (recovery/LGD from the lender's view), Z4.6 (refinancing risk — the capital-event that goes wrong), PC Z4.x (the lender's distress-management parallel). *GAP flag:* the current CRE distress cycle — office distress, regional bank exposure, and the 2023–25 refinancing wave — is post-source. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

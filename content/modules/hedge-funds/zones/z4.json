@@ -1,0 +1,252 @@
+[
+  {
+    "id": "hedge-funds.z4.1",
+    "local_id": "Z4.1",
+    "module": "hedge-funds",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Ongoing Risk & Exposure Management",
+    "tag": "global",
+    "global_id": "G116",
+    "quick_definition": "The daily discipline of keeping the whole book within its risk budget — monitoring net and gross exposure, factor and sector tilts, leverage, and drawdown — as prices move and theses evolve.",
+    "explainer_covers": [
+      "The daily dashboard: net/gross exposure (★ G110), leverage, single-name and sector concentration, factor exposures, liquidity, and current drawdown against limits.",
+      "Dynamic hedging: adjusting the hedge as exposures drift — adding shorts or index hedges when net exposure creeps up, trimming when risk limits bind.",
+      "Rebalancing vs. conviction: the tension between trimming winners (risk control) and letting them run (conviction) — and how the platform model resolves it with hard rules.",
+      "The platform-model version: real-time, centralized risk monitoring across pods, with automatic de-risking when limits are breached (ties to Z2.11)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.5",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.11",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G110",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G116` Drawdown, `★ G110` Net & gross exposure, `★ G29` Leverage, Z3.5 (the risk framework), Z2.11 (the platform's risk core), Z4.4 (the risks being managed).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z4.2",
+    "local_id": "Z4.2",
+    "module": "hedge-funds",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Monitoring Theses & Catalysts",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The ongoing work of tracking whether each position's thesis is still intact — watching for the catalyst, re-underwriting as new information arrives, and being honest about when the thesis has broken.",
+    "explainer_covers": [
+      "Tracking the catalyst (★ G122): is the expected event on track, delayed, or off? — and what each means for the position.",
+      "Re-underwriting: every earnings report, data point, and news item is a test of the thesis; the discipline of updating (or killing) the view rather than anchoring to the entry.",
+      "Avoiding the value trap and the confirmation trap: distinguishing \"cheap and catalyzing\" from \"cheap for a reason,\" and seeking disconfirming evidence rather than reasons to hold.",
+      "The link to sizing: a strengthening thesis earns a bigger position; a weakening one earns a trim — risk management as a continuous, not one-time, act."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.8",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G122` Catalyst, `★ G121` The thesis, `★ G124` Second-level thinking, Z3.3 (the original thesis), Z3.8 (exit when broken), Z3.4 (re-sizing).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z4.3",
+    "local_id": "Z4.3",
+    "module": "hedge-funds",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Activist Engagement — The Active Hold",
+    "tag": "global",
+    "global_id": "G134",
+    "quick_definition": "For activist funds, the work of the holding period is the engagement — running the campaign that forces the value-creating change, the one hedge-fund strategy with a genuinely \"active\" hold like PE's.",
+    "explainer_covers": [
+      "The campaign arc during the hold: private engagement → public pressure → proxy contest → board representation → the change (capital return, break-up, sale, management change) → re-rating.",
+      "The governance toolkit (★ G99, PE Z4.2): board seats, shareholder proposals, public letters, and the threat of a proxy fight — PE-style influence without control.",
+      "Supplying the catalyst: the activist's defining feature is that it creates the event the market was waiting for, rather than waiting for one (ties Z2.7 to ★ G122).",
+      "Working with (or against) other holders, management, and the board; the reputational and relationship dynamics that determine success.",
+      "The exit: once the change is made and the stock re-rates, the activist sells — the catalyst-resolved exit of Z3.8."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G134",
+        "note": null
+      },
+      {
+        "ref": "G122",
+        "note": null
+      },
+      {
+        "ref": "G99",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G134` Activist investing, `★ G122` Catalyst, PE Z4.2 (governance — the shared toolkit), PE Z4.1 (active ownership — the analogue), Z3.8 (exit on re-rating), `★ G99` Control premium.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z4.4",
+    "local_id": "Z4.4",
+    "module": "hedge-funds",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Navigating Cycles, Crowding & Tail Events",
+    "tag": "global",
+    "global_id": "G127",
+    "quick_definition": "Managing the risks that don't show up in a single position but in the whole market's behavior — where the cycle sits, whether your trades are crowded, and what happens when everyone heads for the exit at once.",
+    "explainer_covers": [
+      "Reading the cycle (★ G127): Marks's pendulum — recognizing when markets are greedy and dear (reduce risk, raise hedges) vs. fearful and cheap (deploy) — the closest thing to timing edge.",
+      "Crowding (★ G120): when many funds hold the same positions, an exit by one forces losses on all — the mechanism behind the August 2007 \"quant quake\" and countless deleveraging spirals.",
+      "Tail risk and \"the dangers of diversification\": how multi-strategy and multi-manager books can look diversified while concentrating hidden common-factor exposure that all goes wrong together (Grinold & Kahn).",
+      "Liquidity spirals: leverage + crowding + a shock = forced synchronized selling into a falling market, converting paper losses into permanent ones (the ★ G126 mechanism at the system level).",
+      "Positioning for the tail: carrying hedges, holding dry powder, and sizing so a tail event is survivable, not fatal."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.11",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G127` Cycles, `★ G120` Capacity & crowding, `★ G126` Risk as permanent loss, `★ G29` Leverage, Z2.11 (platform deleveraging risk), Z4.5 (the canonical stress test), `★ G116` Drawdown.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z4.5",
+    "local_id": "Z4.5",
+    "module": "hedge-funds",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "The Stress Test: What 2008 (and Other Crises) Taught",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The recurring lesson of every crisis — that leverage, crowding, illiquidity, and counterparty risk are the real killers, and that the strategies which survive are the ones that managed those, not the ones with the cleverest theses.",
+    "explainer_covers": [
+      "2008 as the canonical case: prime-broker counterparty risk (Lehman's collapse trapping client assets), the redemption wave (the liquidity mismatch of Z1.7 made real), forced deleveraging, and the funds that gated vs. those that paid out.",
+      "The winners and losers: who had hedged tail risk, kept leverage modest, and matched liquidity to assets — and who blew up despite being \"right\" too early (carried out before convergence).",
+      "Recurring patterns across crises (1998 LTCM, 2007 quant quake, 2008, 2020 COVID, 2021 Archegos): the same quartet — leverage, crowding, illiquidity, counterparty risk — in new clothes.",
+      "The meta-lesson (Marks, Schwager): survival is the precondition for compounding; the manager who avoids the permanent loss wins over time even with a lower peak return."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G126` Risk as permanent loss, `★ G29` Leverage, `★ G120` Crowding, `★ G119` Liquidity terms, Z1.6 (counterparty/prime risk), Z4.4 (the system-level risks), `★ G127` Cycles.",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 14–16 (the 2008 crisis: \"Premonitions of a Crisis,\" \"Riding the Storm,\" \"How Could They Do This?\").",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "activity.schema.json",
+  "title": "LearningActivity",
+  "description": "A learning modality attached to a node or global. V0 defines the envelope only; no activities are authored yet. New modalities are added by extending the 'type' enum and adding a payload definition — node and global schemas never change.",
+  "type": "object",
+  "required": ["id", "target", "type", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^A[1-9][0-9]*$" },
+    "target": {
+      "type": "string",
+      "description": "The node or global this activity teaches: 'G{n}' or '{module-slug}.z{zone}.{n}'."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "flashcard",
+        "quiz",
+        "comparison",
+        "worked_example",
+        "interactive_exercise",
+        "simulation",
+        "game"
+      ]
+    },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 4, "description": "Maps to the app's progressive-depth layers." },
+    "payload": {
+      "type": "object",
+      "description": "Type-specific content. Validated against pipeline/validate/checks payload rules per type once modalities are implemented."
+    },
+    "generated_by": {
+      "type": "string",
+      "enum": ["human", "opus", "cheap-llm", "script"],
+      "description": "Provenance, for QA sampling policy (machine-generated activities get audited at higher rates)."
+    },
+    "status": { "type": "string", "enum": ["draft", "reviewed", "published"], "default": "draft" }
+  }
+}

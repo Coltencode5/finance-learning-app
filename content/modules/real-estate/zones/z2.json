@@ -1,0 +1,388 @@
+[
+  {
+    "id": "real-estate.z2.1",
+    "local_id": "Z2.1",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "The Property Sectors",
+    "tag": "global",
+    "global_id": "G221",
+    "quick_definition": "The property sectors classify real estate by end use — office, retail, industrial, multifamily, hospitality, and a growing set of alternative/specialty types — each a distinct business with its own demand drivers, lease structure, capital intensity, and cycle behavior.",
+    "explainer_covers": [
+      "The traditional five \"food groups\": office (commercial workspace), retail (consumer-facing stores and centers), industrial (warehouses, distribution, light manufacturing), multifamily (apartment complexes, the residential rental sector), and hospitality (hotels, which are operating businesses with daily pricing, not long-term leases).",
+      "The alternative/specialty sectors that have institutionalized: data centers, self-storage, life sciences (lab space), senior housing, student housing, single-family rental, medical office — collectively now represent a major share of institutional portfolios and traded REIT market cap.",
+      "Demand drivers from the Technical Topics PDF (the practitioner's map): office → GDP, employment, and access to transportation; multifamily → population age 20–35, housing affordability, employment; hotel → tourism, GDP, employment; industrial → GDP, employment, and logistics/e-commerce volume; retail → employment, GDP, income; self-storage → GDP, employment, single-family housing trends; medical office → elderly population, health-care employment, transit; senior housing → same as medical office.",
+      "Lease-structure variation: industrial and office use long-term leases (3–10 years); multifamily turns over annually; hotels price nightly (RevPAR — revenue per available room — is the key operating metric); NNN retail to credit tenants can have 20-year leases.",
+      "Why sector matters for underwriting: each sector has a different vacancy risk, capex intensity, rent-growth driver, and correlation to the economic cycle — choosing the sector is as important as choosing the specific asset."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z2.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.3",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (traditional sectors in depth), Z2.3 (alternative sectors), ★G229 (lease structure varies by sector), ★G232 (different sectors cycle differently), ★G219 (cap rates vary by sector — hotels trade at high caps, industrial compressed post-2020), AM Z3.x (sector allocation). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.2",
+    "local_id": "Z2.2",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Branch: The Traditional Sectors",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Office, retail, industrial, multifamily, and hospitality are the five traditional institutional property types — each a distinct business with different demand dynamics, lease economics, and risk profile, and each at a different point in structural disruption.",
+    "explainer_covers": [
+      "Office: long leases (5–10 years) with credit-tenant focus; return driven by occupancy and rent-per-square-foot; the structural demand driver is GDP and white-collar employment; the sector has faced severe post-2020 work-from-home disruption that has repriced suburban and B-class office assets sharply (GAP flag: this is post-source — see Part 9).",
+      "Retail: anchor/in-line/strip-center/power-center categories; the key underwriting variable is co-tenancy and the traffic the anchor tenant generates; e-commerce pressure has bifurcated the sector (commodity retailers struggling; experiential, grocery-anchored, and necessity retail more resilient).",
+      "Industrial/logistics: the e-commerce beneficiary sector — short leases (3–5 years), low capex relative to rent, proximity to population centers as the key site criterion; cap rates compressed dramatically post-2018 on e-commerce and supply-chain demand.",
+      "Multifamily: apartments rented on annual leases — the most liquid sector (Fannie/Freddie agency debt available), with demand driven by demographic age 20–35 and housing affordability relative to for-sale homes; the inflation-hedge sector among traditional types.",
+      "Hospitality: the most operationally complex — hotels are businesses (labor-intensive, RevPAR-driven) as much as real estate; flagged vs. unflagged; management contracts vs. owned operations; most cyclical sector, most exposed to GDP and travel demand shocks."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G221",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.1 (sector overview), ★G221 (the sector taxonomy), ★G229 (sector-specific lease structures), ★G232 (each sector's cycle position). *GAP flag:* office distress and work-from-home structural shift are post-source; the industrial/logistics cap-rate compression post-2018 and the e-commerce demand story exceed source coverage. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag: this is post-source — see Part 9",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.3",
+    "local_id": "Z2.3",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Branch: Alternative & Specialty Sectors",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The alternative sectors — data centers, self-storage, life sciences, senior and student housing, medical office, single-family rental — have moved from niche to core institutional allocations as investors pursue secular demand tailwinds and diversification from the traditional food groups.",
+    "explainer_covers": [
+      "Data centers: facilities housing server racks, requiring massive power and cooling infrastructure; demand driven by cloud computing and AI model training (GAP flag: the AI demand wave is post-source); long-term leases to hyperscale tenants (Amazon, Google, Microsoft) and colocation tenants; technically complex, capital-intensive, and increasingly institutional.",
+      "Self-storage: recession-resilient, low-capex (no tenant improvements, minimal leasing commissions), month-to-month leases; demand drivers per the Technical Topics source include GDP, employment, and single-family housing activity; strong operating leverage because incremental storage units are nearly pure margin.",
+      "Life sciences: wet lab and dry lab space requiring specialized HVAC and structural specifications; demand driven by pharmaceutical and biotech employment; often university-adjacent (Cambridge MA, South San Francisco, Research Triangle); long leases to creditworthy tenants; extremely supply-constrained.",
+      "Senior and student housing: operating-intensive (staffing, food service for senior housing); demand driven by aging demographics (senior) or enrollment trends (student); higher yield but more complex to operate and underwrite.",
+      "Single-family rental: large-scale ownership of single-family homes as rental housing; institutionalized post-2012 after foreclosure-wave acquisitions; operates through property management platforms at scale."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z2.1",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G221",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.1 (sector overview), ★G221 (alternatives within the taxonomy), Z2.4 (alternative sectors often value-add or opportunistic), AM Z3.x (alternative sector allocations). *GAP flags:* data-center/AI demand wave, life-sciences market dynamics, single-family rental institutional scale are all post-source. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag: the AI demand wave is post-source); long-term leases to hyperscale tenants (Amazon, Google, Microsoft) and colocation tenants; technically complex, capital-intensive, and increasingly institutional",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flags:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.4",
+    "local_id": "Z2.4",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "The Risk-Return Styles",
+    "tag": "global",
+    "global_id": "G222",
+    "quick_definition": "The four risk-return styles — core, core-plus, value-add, and opportunistic — sort real-estate strategies by leverage level, the income-vs.-appreciation return mix, and how much execution work the business plan requires, mapping each onto a distinct target return range, investor type, and vehicle structure.",
+    "explainer_covers": [
+      "Core: stabilized, high-quality assets with strong occupancy and long-term leases; low leverage (≤30–40% LTV); income-driven (most of the return comes from the current yield); typical target net IRR ≈ 6–9%; held in open-end core funds (★G224) or by institutions directly; the \"bond-like\" end of the risk spectrum.",
+      "Core-plus: similar to core but with a modest value-creation component — slightly shorter leases, slightly higher leverage, or a minor re-tenanting required; target net IRR ≈ 9–12%.",
+      "Value-add: assets requiring active work — renovating, re-tenanting, repositioning, or improving operations — to lift NOI from an unstabilized current level to a durable stabilized run-rate; moderate leverage (50–65% LTV); balanced income-and-appreciation return; target net IRR ≈ 12–18%; held in closed-end funds.",
+      "Opportunistic: development (★G231), deep distress, heavy repositioning, high leverage (65–80%+ LTV) — pure appreciation return, minimal current income; the business plan is the return; target net IRR ≥ 18–20%; highest risk; closed-end funds.",
+      "The leverage/income-return trade-off: higher leverage amplifies potential appreciation returns but reduces current income and magnifies downside in a correction (negative leverage when cap rates are below borrowing costs)."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.8",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z4.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G231",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G29 (leverage — the defining axis across styles), Z1.8 (return thresholds by style), ★G231 (development = the opportunistic end), Z4.4 (value-add execution), Z2.6 (style maps to fund structure), PE Z2.x (the PE parallel — PE has its own risk-return style spectrum but uses different vocabulary). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.5",
+    "local_id": "Z2.5",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "The REIT",
+    "tag": "global",
+    "global_id": "G223",
+    "quick_definition": "A real estate investment trust (REIT) is the tax-pass-through corporate vehicle that owns income-producing property, must distribute at least 90% of taxable income to shareholders, and pays no entity-level federal income tax — the public-equity quadrant of real estate, delivering daily liquidity and institutional-scale property ownership in exchange format.",
+    "explainer_covers": [
+      "The tax structure: a REIT qualifies as a tax-exempt pass-through by meeting income, asset, and distribution tests — the 90% distribution requirement means REITs distribute most earnings as dividends, making them high-yield equity instruments; investors pay tax on dividends, not the REIT itself.",
+      "Equity REITs vs. mortgage REITs (mREITs): equity REITs own properties directly (the dominant form); mortgage REITs own mortgages and CMBS — they are credit vehicles, not property owners, and typically carry more interest-rate risk.",
+      "Public-listed vs. public-non-traded vs. private REITs: listed REITs trade on stock exchanges (NYSE, Nasdaq) and offer daily liquidity; non-traded public REITs are registered with the SEC but not exchange-listed (illiquid, often higher fees); private REITs are for institutional or accredited investors only.",
+      "The public-equity pricing dynamic: listed REIT share prices reflect market sentiment, interest-rate expectations, and sector narratives as well as underlying property values — which is why REITs can trade at persistent premiums or discounts to NAV (★G235).",
+      "Geltner et al. (Ch. 23) covers the legislative history (1960 US REIT Act), the REIT boom of the 1990s, and the structure's global spread."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z5.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G217",
+        "note": null
+      },
+      {
+        "ref": "G234",
+        "note": null
+      },
+      {
+        "ref": "G235",
+        "note": null
+      },
+      {
+        "ref": "G189",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G217 (the public-equity quadrant of the four-quadrant map), ★G234 (FFO — how REITs are measured), ★G235 (NAV — the private-market value vs. public price gap), ER ★G189 (REIT sector coverage by equity research analysts), WM ★G166 (REITs are tax-inefficient for individual taxable accounts), Z5.2 (FFO in depth), Z5.3 (NAV in depth). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.6",
+    "local_id": "Z2.6",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Open-End vs. Closed-End Real Estate Funds",
+    "tag": "global",
+    "global_id": "G224",
+    "quick_definition": "The structural split between perpetual-life core funds (open-end, with continuous subscriptions and redemption queues) and finite-life value-add/opportunistic funds (closed-end, the standard PE structure) is the organizing distinction that maps investment style, vehicle structure, and liquidity terms in real estate — unique to this asset class among private-capital vehicles.",
+    "explainer_covers": [
+      "The closed-end fund (the PE structure): finite life (typically 10–12 years), blind-pool capital commitment (★G19), draw-down and return structure (★G15/G3), promote waterfall (★G10/★G11) — the standard mode for value-add and opportunistic; the GP deploys capital over the investment period and harvests via dispositions; the LP cannot redeem early.",
+      "The open-end core fund: perpetual life, no finite termination date; investors subscribe and receive fund units at current NAV; to exit, investors submit redemption requests and join a queue — in normal markets, redemptions are filled quarterly; in stressed markets, queues can extend to a year or more.",
+      "The NCREIF Fund Index-ODCE (Open-End Diversified Core Equity): the benchmark for large diversified open-end core funds; tracks unlevered core-property returns across the major property sectors and markets; used in Z5.4.",
+      "Why core uses open-end: stabilized income-producing assets generate consistent quarterly cash flows, have liquid appraisal-based NAVs, and can support perpetual capital; value-add and opportunistic require finite business plans and the promote incentive structure.",
+      "The redemption-queue risk: the 2020 and 2022 episodes illustrated that in stressed markets, open-end fund gates can trap investors who expected liquidity — the queue mechanism is the price of illiquidity premium in a structure that looks liquid."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G222",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G19 (blind pool — the closed-end version), PE Z1.2 (closed-end mechanics in full), ★G222 (investment style maps to structure: core → open-end; VA/oppo → closed-end), Z5.4 (ODCE benchmarking), ★G3 (DPI/TVPI apply only to closed-end). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.7",
+    "local_id": "Z2.7",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "The Sponsor & the JV",
+    "tag": "global",
+    "global_id": "G225",
+    "quick_definition": "The joint venture is the deal-level partnership between a sponsor (an operating partner who originates, finances, and manages the property) and a capital partner (an institutional LP or family office who provides most of the equity), aligned by the promote — the dominant structure for direct institutional real-estate investment at the asset level.",
+    "explainer_covers": [
+      "The sponsor's role: sourcing the deal, performing underwriting and due diligence, arranging the debt financing, structuring the JV, managing the asset through the hold period, and executing the exit — the \"sweat equity\" partner who puts in expertise and a small co-investment (typically 1–10% of the equity).",
+      "The capital partner's role: providing the bulk of the equity capital (typically 90–99% of the equity tranche) in exchange for a preferred return and a minority profit share — the \"silent partner\" role.",
+      "The deal-level JV structure: typically a limited liability company (LLC) or limited partnership (LP) formed for a single asset or a defined portfolio; governed by an operating agreement (the deal-level equivalent of the LPA, ★G20) that sets the promote tiers, the pref, the capital calls, and the major-decision approval rights.",
+      "How alignment is built: the promote (★G10) gives the sponsor upside when returns exceed the pref (★G12); the sponsor's co-investment (★G23 equivalent at deal level) puts their own capital at risk.",
+      "Beyond the single-asset JV: programmatic JVs (a series of deals under a standing agreement with a capital partner), separate accounts (a large institutional investor funding a platform sponsor directly), and co-GP structures (two sponsors sharing the GP role and promote)."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.6",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.3",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G10 (promote), ★G12 (pref), ★G6/★G7 (GP/LP — the same roles at deal level), Z1.6 (fund and deal economics), Z1.3 (the players), PE Z5.x (co-investment — the PE parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z2.8",
+    "local_id": "Z2.8",
+    "module": "real-estate",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "Access Routes: Direct, Fund, REIT & Debt",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "An investor reaches real estate through four access routes that map onto the four quadrants — direct ownership (via JV), private fund, REIT shares, or real-estate debt — each with a different liquidity profile, control level, minimum investment, and return-risk tradeoff.",
+    "explainer_covers": [
+      "Direct / JV (★G225): maximum control and operational influence, minimum liquidity, largest minimum investment (typically $5M+), most alignment with the sponsor; suitable for large institutions that want governance rights and customized mandates.",
+      "Private fund (closed-end or open-end, ★G224): diversified across assets and geography, illiquid (closed-end) or semi-liquid with queues (open-end), minimum typically $1M–$5M, managed by the GP; the PE-analogous experience.",
+      "REIT (★G223): daily liquidity, no minimum beyond share price, broadest access for individuals via brokerage accounts or REIT mutual funds/ETFs; zero operational control; price driven by both underlying property fundamentals and public-market sentiment.",
+      "Real-estate debt (★G227): senior mortgage or mezzanine lending, or CMBS investing; current income with downside protection from the collateral; capped upside (lenders don't share in appreciation); can be accessed directly (debt funds) or through public markets (CMBS bonds or mortgage REIT shares).",
+      "How institutions mix routes: a large endowment might hold core real estate through open-end funds, opportunistic through closed-end funds, liquid real-estate exposure through REITs (for tactical flexibility), and supplemental yield through debt funds — the four quadrants as a portfolio toolkit."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G217",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      },
+      {
+        "ref": "G224",
+        "note": null
+      },
+      {
+        "ref": "G223",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G217 (the quadrant each route occupies), ★G225 (direct/JV), ★G224 (private fund), ★G223 (REIT), ★G227 (commercial mortgage and CMBS), PC Z2.x (the debt route — the lender's side), Z1.9 (institutional allocation logic). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

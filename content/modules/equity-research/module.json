@@ -1,0 +1,65 @@
+{
+  "slug": "equity-research",
+  "title": "Equity Research",
+  "kind": "role",
+  "build_order": 7,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Research Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Types of Coverage",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Research Process",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Maintaining Coverage",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "The Franchise",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 19,
+    "global_range": "G182–G200",
+    "zone_node_count": 43,
+    "globals_reused": [
+      "G83",
+      "G87",
+      "G88",
+      "G89",
+      "G90",
+      "G91",
+      "G92",
+      "G93",
+      "G94",
+      "G95",
+      "G102",
+      "G104",
+      "G106",
+      "G112",
+      "G113",
+      "G114",
+      "G115",
+      "G121",
+      "G124",
+      "G125",
+      "G136",
+      "G149"
+    ],
+    "gap_count": 7
+  },
+  "status": "mapped"
+}

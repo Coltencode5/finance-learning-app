@@ -1,0 +1,325 @@
+[
+  {
+    "id": "hedge-funds.z5.1",
+    "local_id": "Z5.1",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Hedge Fund Firm as a Business",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Beyond the portfolio, a hedge fund is a company — with a brand, a team, infrastructure, regulatory obligations, and economics — and building the firm is as decisive to long-term success as picking the trades.",
+    "explainer_covers": [
+      "The two businesses inside one: the investment business (generating returns) and the asset-management business (gathering and keeping capital, running operations, managing people).",
+      "Scaling and key-person risk: the founder-PM problem (returns tied to one person), institutionalizing a process, and building a bench.",
+      "Infrastructure and regulation: compliance, risk systems, operations, and the post-2008 regulatory perimeter (registration, reporting) that raised the cost of being a firm.",
+      "The economics of the firm: management fees fund the business; performance fees and the principals' own capital are the wealth engine — and the platform model's pass-through economics change the calculus entirely."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z5.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G118",
+        "note": null
+      },
+      {
+        "ref": "G132",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G118` High-water mark (the firm's revenue mechanics), `★ G132` Multi-strategy (the platform as a business), Z1.4 (the structure), Z5.5 (fees), IB Z5.3 (the franchise/relationship parallel on the sell-side).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z5.2",
+    "local_id": "Z5.2",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "Performance Measurement: Sharpe, Information Ratio & Attribution",
+    "tag": "global",
+    "global_id": "G111",
+    "quick_definition": "The metrics and conventions used to judge a hedge fund — risk-adjusted return (the Sharpe ratio), benchmark-relative skill (the information ratio), and the attribution that separates real alpha from luck, beta, and fees.",
+    "explainer_covers": [
+      "The Sharpe ratio (G111): excess return over the risk-free rate, divided by volatility — the headline risk-adjusted number; the way IRR is PE's headline and yield is credit's.",
+      "The information ratio (G112) vs. Sharpe: active return over active risk — skill relative to a benchmark; the central statistic of active management, and not the same as Sharpe (cross-link the distinction).",
+      "Attribution: decomposing returns into alpha vs. beta (★ G106/★ G107) — how much was skill vs. just market exposure — and into factor contributions; the test of whether the fee was earned.",
+      "The honesty problems: smoothed/illiquid marks inflating Sharpe, survivorship and backfill bias in indices, short track records, and the difficulty of distinguishing skill from luck over the periods investors actually observe (Grinold & Kahn; Mallaby's appendices on whether the pioneers truly generated alpha).",
+      "Sharpe's arithmetic, revisited: in aggregate, active management is worse than zero-sum after fees — so the average fund disappoints, and identifying the persistent outperformers ex ante is the LP's hard problem."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G111",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G113",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G111` Sharpe ratio, `★ G112` Information ratio, `★ G106` Alpha / `★ G107` Beta (attribution), `★ G113` Information coefficient, Z1.3 (the alpha case), Z5.4 (how LPs select), `★ G1` IRR (the cross-module performance cousin).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z5.3",
+    "local_id": "Z5.3",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Investor Base & Raising Capital",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "How a hedge fund raises and retains the capital it manages — who the investors are, what they want, and the fundraising and investor-relations work that keeps them.",
+    "explainer_covers": [
+      "The investor types and what each wants: funds of funds (access and diligence), endowments and foundations (long-horizon alpha and diversification), pensions (steady risk-adjusted returns), sovereign wealth funds (scale), and family offices / HNW (return and relationship).",
+      "The capital-raising process: the track record, the pitch, the DDQ, operational due diligence by allocators, and the role of prime-broker capital introduction (Z1.6) and placement agents.",
+      "Retaining capital: transparency, reporting, and the brutal reality that a bad drawdown (the high-water-mark trap) triggers redemptions exactly when the manager most needs stable capital — the run dynamic of Z1.7.",
+      "Liquidity terms as a fundraising variable (★ G119): the negotiation between the fund's need for stable capital and the investor's need for access."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      },
+      {
+        "ref": "G118",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G119` Liquidity terms, `★ G118` High-water mark (redemption trigger), Z1.6 (cap intro), Z5.4 (the allocator's decision), Z5.1 (the firm), PE Z5.4 (the analogous PE fundraise).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z5.4",
+    "local_id": "Z5.4",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Allocating to Hedge Funds — The LP's View",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How institutional investors decide whether, how much, and which hedge funds to allocate to — the diligence, the portfolio role, and the persistent question of whether the fees are worth it.",
+    "explainer_covers": [
+      "The portfolio role: hedge funds as a diversifier and downside protector (low-correlation, absolute-return) rather than a return-maximizer — the \"uncorrelated alpha\" pitch and whether it holds up.",
+      "Manager selection: the core difficulty — Sharpe's arithmetic says the average manager underperforms, so allocation only makes sense if you can identify persistent skill ex ante (track record, IC, process, team, edge) — the LP's version of GP due diligence (PE Z5.8).",
+      "The access and capacity problem (★ G120): the best funds are closed or capacity-constrained; getting in is itself the challenge.",
+      "Fee-adjusted thinking: evaluating net-of-fee returns, and the \"five myths about fees\" — how fee structures (not just levels) affect the investor's real outcome (Grinold & Kahn).",
+      "The disillusionment cycle: periods when institutions pile in chasing past returns and later retreat when the average disappoints (the industry's own cyclicality)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G120` Capacity & crowding, `★ G106` Alpha (what they're buying), `★ G135` Absolute return (the portfolio role), Z5.2 (the metrics they judge on), Z5.5 (fees), PE Z5.8 (manager selection — the analogue), PE Z5.6 (allocation logic).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z5.5",
+    "local_id": "Z5.5",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "The Fee Debate & Alignment",
+    "tag": "global",
+    "global_id": "G9",
+    "quick_definition": "The long-running argument over whether hedge funds are worth their fees — and how the fee structure (2-and-20, the high-water mark, the pass-through model) does and doesn't align manager and investor.",
+    "explainer_covers": [
+      "The alignment logic: the performance fee is meant to make the manager think like the investor — but only the upside is shared, creating an option-like incentive to take risk (heads I win, tails you lose), partly offset by the manager's own capital and the high-water mark.",
+      "The pressure on fees: the rise of cheap beta and factor \"smart beta\" (★ G107) has compressed fees for commodity strategies, even as scarce, capacity-constrained strategies (and the platforms' pass-through) command more.",
+      "The high-water-mark double-edge (★ G118): protects investors from paying twice, but incentivizes a deeply underwater manager to either swing for the fences or shut down and start fresh.",
+      "\"Five myths about fees\" (Grinold & Kahn): why headline fee levels mislead, and how to compare products with different structures on a true net basis.",
+      "The verdict the literature keeps circling: fees are justified only by persistent net-of-fee alpha, which is scarce — so the debate is really the alpha-sustainability question of Z5.6."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.5",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G118",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G9` \"2 and 20\", `★ G118` High-water mark, `★ G107` Beta (cheap-beta pressure), `★ G106` Alpha (what justifies the fee), Z1.5 (the fee model), Z5.4 (the LP's fee-adjusted view), Z5.6.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z5.6",
+    "local_id": "Z5.6",
+    "module": "hedge-funds",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Where Hedge Funds Are Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The forces reshaping the industry — the sustainability of alpha as markets get more efficient, the dominance of the platform model, the quant/AI frontier, fee pressure, and the blurring lines with private capital.",
+    "explainer_covers": [
+      "The alpha-sustainability question (Mallaby's central tension): as the industry scales and markets get more efficient, can aggregate alpha persist? — Sharpe's arithmetic says the average manager can't win, so the field consolidates toward the genuinely skilled.",
+      "The platform era: the gravitational pull of multi-strategy platforms (Z2.11) gathering capital, talent, and the best risk infrastructure — and the systemic questions their crowding and leverage raise.",
+      "The quant/AI frontier (extends Grinold & Kahn): machine learning, alternative data, and faster signals — and the arms race as edges get arbitraged away ever faster (GAP: post-2020 ML/AI in investing).",
+      "Fee compression and the barbell: cheap passive/factor products on one end, expensive scarce-alpha and pass-through platforms on the other, squeezing the undifferentiated middle.",
+      "Blurring boundaries: hedge funds moving into private credit and private equity (and vice versa), the \"everything is alternatives\" convergence — ties to the IB Z5.6 and Credit Z5.x \"where is this heading\" nodes."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.1",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G132",
+        "note": null
+      },
+      {
+        "ref": "G131",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G106` Alpha (its sustainability), `★ G120` Capacity & crowding, `★ G132` Multi-strategy, `★ G131` Quant, Z1.1 (what a hedge fund is — capstone), IB Z5.6 (the convergence from the sell-side), Credit Z5.14 (private credit's future), PE Z5.22 (PE's future). **GAP: post-2020 AI/ML, platform-era data, and private-market convergence (recency).** ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "post-2020 ML/AI in investing",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "post-2020 AI/ML, platform-era data, and private-market convergence (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "wealth-management.z5.1",
+    "local_id": "Z5.1",
+    "module": "wealth-management",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Wealth Manager as a Business",
+    "tag": "global",
+    "global_id": "G180",
+    "quick_definition": "Beyond serving any one family, a wealth-management firm is a business — most often an AUM business whose revenue is a slice of client assets — whose economics, like an asset manager's, reward gathering and retaining assets, but whose product is advice and relationship, not a fund.",
+    "explainer_covers": [
+      "The AUM business model (★ G151 reused): most advisory revenue is a percentage of client assets (G180), so the firm's economics turn on gathering and retaining assets — high operating leverage on a platform of advisors, planning tools, and custody — the same scale logic as asset management (AM Z5.1), but with the advisor relationship as the moat.",
+      "The firm structures: the independent RIA (fiduciary, fee-based, often a boutique or a fast-growing aggregator), the wirehouse/broker-dealer (the traditional brokerage, historically commission-driven, now migrating to fee-based advice), the bank/private bank (G176), the multi-family office (G177), and the robo/digital platform (G178) — each a different business model around the same core service.",
+      "The two businesses inside one (echoing AM Z5.1): the advice/planning business (relationship, coaching, planning — the value, G161) and the asset-gathering business (distribution, brand, scale) — and as fees compress, efficiency and scale increasingly decide which firms thrive.",
+      "Consolidation and the RIA roll-up: the industry is consolidating fast — RIA aggregators buying up independent advisors for scale and succession, banks and asset managers buying wealth platforms for the stable, recurring fee stream the wealth channel provides (the reason every asset manager now wants a wealth business — AM Z5.6).",
+      "The succession problem: advisory firms are often built around individual advisors nearing retirement, making advisor succession (and the transfer of client relationships) a defining business challenge — and a driver of the roll-up wave."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.2",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G151",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G176",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G180` fee models, `★ G151` AUM economics (the same engine), `G161` the advisor's value (the product), `G176`/`G177`/`G178` the firm types/channels, `★ G150` cost/fee drag (the fee pressure), Z5.2 (the fee debate), Z5.4 (the family-office model), **AM Z5.1** (the asset manager as a business — *the same AUM logic, product is advice not funds*), AM Z5.6 (asset managers buying wealth businesses). **GAP: current industry-structure and RIA-consolidation data (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "current industry-structure and RIA-consolidation data (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z5.2",
+    "local_id": "Z5.2",
+    "module": "wealth-management",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "What Is Advice Worth? The Fee & Value Debate",
+    "tag": "global",
+    "global_id": "G158",
+    "quick_definition": "The defining argument of modern wealth management — whether paying ~1% of assets for advice is worth it — which turns on cleanly separating the commodity (cheap index products anyone can buy) from the real value (planning, tax, and behavioral coaching) the fee should buy.",
+    "explainer_covers": [
+      "The cost-drag arithmetic applied to advice (★ G150): a 1% AUM advice fee, on top of product fees, compounded over a lifetime, is a large share of returns (Bogle's/Swensen's arithmetic, reused) — so advice must add at least its fee in value or the client is better off self-directing with cheap index funds. The same active-vs-passive logic (★ G158) that indicts expensive funds now scrutinizes the advice fee.",
+      "The value that justifies the fee (G161): the defensible value is not market-beating selection (which the evidence says advisors can't reliably deliver any more than fund managers can) — it is behavioral coaching (preventing the panic-selling and performance-chasing that cost individuals far more than 1%), tax management (G166, a reliable risk-free gain), comprehensive planning (G159), and decumulation and estate coordination — the \"advisor's alpha\" components that are worth the fee for many households.",
+      "Swensen's indictment of the conflicted model: the for-profit fund and commission-broker complex extracts wealth from individuals by selling high-fee, \"suitable\"-but-inferior products — the abuse the fiduciary standard (G181) and the fee-only model (G180) exist to remedy. The debate is partly which fee model deserves trust, not just how much.",
+      "Fee compression and transparency: as cheap index products make the product nearly free, the advice fee becomes newly visible and contestable — driving fees down, pushing low-balance clients toward robo/hybrid models (G178), and forcing advisors to demonstrate planning and behavioral value rather than hide behind product selection.",
+      "The honest resolution: for a disciplined, knowledgeable saver with a simple situation, low-cost self-direction (or a robo) may be the right answer; for the many who aren't — who would otherwise buy high, sell low, mismanage taxes, and neglect their estate — good advice is worth well more than its fee. The question is fit, not a universal verdict."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G159",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G181",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G158` the active-vs-passive debate, `★ G150` cost/fee drag, `G161` behavioral coaching (the value), `G166` tax-aware investing (reliable value), `G159` financial planning (the value), `G180` fee models, `G181` fiduciary vs. suitability, `G178` robo-advisor (the low-cost alternative), **AM Z5.2** (the active-vs-passive/fee debate — *the same arithmetic, applied to the advice fee*), AM Z2.2 (the index-fund case). *Real-world layer: Swensen,* Unconventional Success *(the for-profit-fund critique); the \"advisor's alpha\" literature; Bogle's cost arithmetic (GAP — not in Drive).*",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "— not in Drive",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z5.3",
+    "local_id": "Z5.3",
+    "module": "wealth-management",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "Distribution & Reaching Households",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How wealth-management services and products actually reach families — through advisors and their custodial platforms, employer retirement plans, direct-to-consumer and robo channels, and the model-portfolio and product pipelines that connect asset managers to households — the demand-side plumbing of the whole investment industry.",
+    "explainer_covers": [
+      "The channels to the household: the advisor channel (RIAs and broker-dealers, working on custodial platforms like the big custodians), employer retirement plans (the 401(k)/DC system, where target-date defaults and plan menus shape most Americans' investing — the link to AM Z5.3), direct-to-consumer (fund-company and brokerage platforms), and robo/digital (G178) — the routes by which products and advice reach families at each wealth tier (Z1.4).",
+      "Wealth management as asset management's distribution (the cross-module hinge): from the asset manager's seat (AM Z5.3), the advisor channel and model portfolios are the distribution system — a mediocre fund with great advisor/platform distribution outsells a great fund with none — so the wealth channel is where the demand for AM's products is aggregated. This module is the other side of AM Z5.3.",
+      "Model portfolios: pre-built allocations (often by asset managers or platforms) that advisors deploy across many clients — an increasingly dominant distribution form that bundles fund selection and allocation into a turnkey product, blurring the line between asset and wealth management.",
+      "The retirement-plan gateway: the 401(k)/DC menu and its target-date default (G165) are how most households invest at all — making plan-menu placement and the default-option design decisive for both savers' outcomes and asset-gathering.",
+      "The HNW/UHNW \"distribution\" of alternatives: for wealthy clients, distribution includes the feeders, platforms, and now semi-liquid/evergreen vehicles that channel PE, private credit, and hedge funds (★ G9, ★ G56) into private-wealth portfolios — the democratization pipeline (Z5.5, PE Z5.22, AM Z5.6)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.3",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z1.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G165",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G152",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G178` robo-advisor (a direct channel), `G165` lifecycle/target-date (the DC default), `G177` family office (the UHNW alternatives channel), `★ G9` \"2 and 20\" (alternatives reaching the wealth channel), `★ G152` mutual fund / `★ G139` ETF (the products distributed), Z1.4 (the segments reached), Z5.5 (where distribution is heading), **AM Z5.3** (distribution from the asset-manager seat — *this module is its mirror/demand side*). **GAP: distribution economics, the DC/401(k) system, custodial-platform and model-portfolio mechanics, and the alternatives-feeder ecosystem (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "distribution economics, the DC/401(k) system, custodial-platform and model-portfolio mechanics, and the alternatives-feeder ecosystem (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z5.4",
+    "local_id": "Z5.4",
+    "module": "wealth-management",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "The HNW & Family-Office Allocator's Seat",
+    "tag": "global",
+    "global_id": "G177",
+    "quick_definition": "At the top of the wealth spectrum, the private client becomes an allocator — the HNW investor and especially the family office (G177) set a policy portfolio, select managers, and access alternatives much like an endowment — the seat where this module fuses with the LP-side nodes of every other module, but always under the individual's tax, horizon, and estate constraints.",
+    "explainer_covers": [
+      "The private client as allocator: a wealthy family (or its family office) does what an institutional allocator does — sets a policy portfolio (★ G144), chooses asset classes, selects and monitors external managers (★ G156), and accesses PE, private credit, and hedge funds (★ G9, ★ G56, ★ G57) — the private-client mirror of AM Z5.4.",
+      "The endowment model, adopted and adapted (★ G154): the UHNW family can run an endowment-style program (equity-oriented, diversified, alternatives-heavy, manager-selected) because it has the scale and resources Swensen says the model requires — but it must adapt for the things no endowment faces: taxes (every gain is taxed — G166), a finite, multi-generational horizon (not perpetuity), spending for living family members (decumulation, G169), and estate and generational transfer (G175). This is the AM↔WM contrast at the top of the wealth scale: same allocator's seat, individual's constraints.",
+      "The LP-side convergence (the densest cross-module thread): the family office is the same investor as the LP in PE Z5, the hedge-fund allocator in HF Z5.4, the credit allocator in Credit Z5, and the institutional allocator in AM Z5.4 — funding private equity, hedge funds, private credit, and public markets out of one (taxable, finite-horizon) family portfolio. This node is where the user sees the private-wealth version of the whole allocator portfolio assembled.",
+      "Direct investing and the operating business: at the top end, family offices invest directly (co-investing, buying companies and real estate, stewarding the family operating business) — making them indistinguishable from PE/credit principals (PE Z5.6/Z5.7 co-investment and direct LP investment).",
+      "Manager selection and net-of-tax thinking: the family-office allocator selects managers with the same rigor as an institution (AM Z5.5) but evaluates them net of taxes — an active manager's pre-tax alpha can vanish after the taxes their turnover generates, sharpening the case for tax-efficient indexing even at the top."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.4",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.7",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G177",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      },
+      {
+        "ref": "G169",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G56",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G177` the family office, `★ G154` endowment model (adopted-and-adapted — *the key AM↔WM contrast at scale*), `★ G144` policy portfolio, `★ G156` manager selection, `G166` tax-aware investing (net-of-tax allocation), `G169` decumulation / `G175` transfer (the individual constraints), `★ G56` co-investment / `★ G57` secondaries, `★ G9` \"2 and 20\", **AM Z5.4** (the institutional allocator's seat — *the same seat, individual constraints*), **PE Z5.6/Z5.7/Z5.8** (the PE LP/co-investor seat), **HF Z5.4** (allocating to hedge funds), **Credit Z5.x** (the credit allocator seat). *Real-world layer: Swensen,* Pioneering Portfolio Management *(the model the family office adapts);* Unconventional Success *(why most individuals should not).* **GAP: a dedicated UHNW/family-office investment source.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "a dedicated UHNW/family-office investment source",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Swensen,",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "wealth-management.z5.5",
+    "local_id": "Z5.5",
+    "module": "wealth-management",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Where Wealth Management Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The forces reshaping the field — the technology-driven democratization of advice (robo and direct indexing), relentless fee compression and the premium on planning-and-behavioral value, the push of private-markets alternatives into the wealth channel, the great generational wealth transfer, and the personalization of portfolios at scale.",
+    "explainer_covers": [
+      "Democratization through technology: robo-advisors (G178) and direct indexing (G179) are bringing low-cost allocation, automated rebalancing, and single-stock tax-loss harvesting — techniques once reserved for institutions and the UHNW — down to ordinary investors, compressing the price of the commodity part of wealth management toward zero.",
+      "Fee compression and the value premium: as products and even basic allocation become nearly free, the advice fee (G180) is squeezed and must be justified by planning, tax, and behavioral value (G161) — pushing the industry toward a barbell of cheap digital advice for simple needs and high-touch, high-value planning for complex ones (echoing AM's barbell, AM Z5.1).",
+      "Alternatives in the wealth channel (the convergence): PE, private credit, and hedge funds are being packaged in semi-liquid/evergreen vehicles and pushed into private-wealth and even mass-affluent portfolios — the democratization of alternatives and the convergence of public and private wealth management (the shared \"where is this heading\" thread with PE Z5.22, AM Z5.6, HF Z5.6, Credit Z5.14). A major opportunity and a major suitability risk (G181) — illiquid, complex, high-fee products reaching investors who may not understand them.",
+      "The great wealth transfer: an enormous intergenerational transfer of wealth is underway (the aging of the post-war generations), reshaping the client base toward heirs (often with different values, lower advisor loyalty, and digital expectations) — making generational transfer (G175), heir engagement, and the retention of next-generation clients a defining strategic problem.",
+      "Personalization and AI: technology enabling mass personalization — custom-indexed, tax-managed, values-aligned portfolios (G179) at scale — and AI reshaping advice delivery, planning, and the advisor's role (augmenting the human advisor's coaching and planning rather than fully replacing it, given that behavioral trust resists automation)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z1.1",
+        "note": null
+      },
+      {
+        "ref": "wealth-management.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G178",
+        "note": null
+      },
+      {
+        "ref": "G179",
+        "note": null
+      },
+      {
+        "ref": "G180",
+        "note": null
+      },
+      {
+        "ref": "G161",
+        "note": null
+      },
+      {
+        "ref": "G175",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G158",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`G178` robo-advisor, `G179` direct indexing, `G180` fee models, `G161` behavioral coaching (the durable human value), `G175` generational transfer (the great wealth transfer), `★ G9` \"2 and 20\" (alternatives democratizing), `★ G158` the active-vs-passive/fee debate, Z1.1 (what wealth management is — capstone), Z5.4 (the family-office frontier), **PE Z5.22** (retail democratization of PE), **AM Z5.6** (the public/private convergence and direct indexing from the AM seat), **HF Z5.6 / Credit Z5.14** (the convergence from those seats). **GAP: the dominant theme of the whole zone — robo/digital advice, direct indexing, evergreen-alternatives-in-wealth, AI in advice, and the wealth-transfer demographics are all *post-source* and need current material (recency). This is the most heavily gap-flagged node in the map, exactly as the brief predicted.** ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "the dominant theme of the whole zone — robo/digital advice, direct indexing, evergreen-alternatives-in-wealth, AI in advice, and the wealth-transfer demographics are all",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

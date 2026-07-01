@@ -1,0 +1,846 @@
+[
+  {
+    "id": "private-equity.z1.1",
+    "local_id": "Z1.1",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Private Equity?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Long-term capital invested in private (or soon-to-be-private) companies in exchange for an equity stake that isn't traded on a public market, with the goal of improving the business and selling it at a profit.",
+    "explainer_covers": [
+      "The simple business model: buy a stake, improve the company, sell after a limited holding period.",
+      "PE vs. public equity: illiquidity, long horizon, control/influence, information access.",
+      "The PE umbrella: venture capital, growth equity, buyouts, and alternative strategies — one spectrum by company maturity.",
+      "\"Organized\" PE (professional funds) vs. \"informal\" private capital (angels, family money).",
+      "Scale of the asset class and why companies seek PE at inflection points (growth, succession, turnaround, take-private)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.22",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, Z2.1 (the strategy spectrum), G29 Leverage, G52 Exit, Z5.22 (industry evolution).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.2",
+    "local_id": "Z1.2",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The PE Fund",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A stand-alone, finite-life pooled vehicle that raises committed capital to buy and later sell equity stakes, with investors locked in for roughly ten years.",
+    "explainer_covers": [
+      "Closed-end structure: finite life, no early redemption, capital committed up front but drawn over time.",
+      "The blind-pool principle and the fund mandate.",
+      "Fund (the vehicle) vs. firm (the manager) vs. family of funds.",
+      "Why the limited-partnership form dominates (vs. LLC/corporate vehicles)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G19",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G19 Blind pool, ★ G20 LPA, ★ G16 Committed capital, ★ G6 GP, ★ G7 LP, Z1.3, Z5.1 (fund formation).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.3",
+    "local_id": "Z1.3",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Fund Structure & Key Players",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The legal architecture linking the PE firm, the GP, the investment manager, the LPs, and the portfolio companies into one fund.",
+    "explainer_covers": [
+      "PE firm vs. GP vs. investment manager — why they're separate legal entities (liability insulation).",
+      "GP: fiduciary duty, decision-making authority, unlimited liability; the investment committee (IC).",
+      "LPs: who they are — pensions, endowments, insurers, banks, family offices, sovereign wealth funds, funds-of-funds — and why they stay passive (limited-liability rule).",
+      "Portfolio / investee / target company and the 10–15-company portfolio.",
+      "GP commitment (\"skin in the game\") and the two relationships a GP must manage (LPs ↔ companies)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G23",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G6 GP, ★ G7 LP, ★ G20 LPA, ★ G23 GP commitment, Z1.4, Z5.1, Z5.8 (manager selection), G48 Alignment.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.4",
+    "local_id": "Z1.4",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "The PE Fund Lifecycle (10+2)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The staged timeline over which a fund raises, deploys, holds, and harvests capital — typically ten years plus two one-year extensions.",
+    "explainer_covers": [
+      "The four overlapping periods: fundraising → investment → holding → divestment/harvest.",
+      "First close vs. final close; the 12–18-month fundraising window.",
+      "Investment period (4–5 yrs), follow-ons and add-ons after it closes, recycling of capital.",
+      "Extensions (\"+2\") and why funds need them.",
+      "Successor funds, \"re-ups,\" and the lifecycle of a successful firm running overlapping vintages."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G21",
+        "note": null
+      },
+      {
+        "ref": "G22",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G21 Investment period, ★ G22 Holding period, ★ G18 Vintage year, ★ G15 Capital call, ★ G17 Dry powder, ★ G4 J-curve, Z5.4 (fundraising).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.5",
+    "local_id": "Z1.5",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "Capital Calls & Drawdowns",
+    "tag": "global",
+    "global_id": "G15",
+    "quick_definition": "The GP's demands for portions of LPs' committed capital as deals and fees arise, rather than taking all the cash up front.",
+    "explainer_covers": [
+      "Mechanics and the ~10-business-day notice period.",
+      "Committed → contributed (paid-in) → invested capital.",
+      "LP default remedies: penalty interest, forced secondary sale, loss of future profit share.",
+      "Recycling provisions and \"quick-flip\" reinvestment rules."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G16 Committed/contributed capital, ★ G17 Dry powder, ★ G4 J-curve, ★ G57 Secondaries, Z5.7 (commitment pacing).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.6",
+    "local_id": "Z1.6",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Committed, Contributed & Invested Capital",
+    "tag": "global",
+    "global_id": "G16",
+    "quick_definition": "The distinction between capital pledged (committed), capital actually called (contributed/paid-in), and capital actually deployed into deals (invested).",
+    "explainer_covers": [
+      "Definitions and how they diverge over a fund's life.",
+      "Uninvested committed capital = dry powder.",
+      "How fees draw on committed vs. invested capital at different stages.",
+      "Why the gap matters for LP cash management."
+    ],
+    "connects_to": [
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G15 Capital call, ★ G17 Dry powder, ★ G8 Management fee, ★ G4 J-curve.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.7",
+    "local_id": "Z1.7",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Dry Powder",
+    "tag": "global",
+    "global_id": "G17",
+    "quick_definition": "Committed but not-yet-invested capital available to a fund — or, in aggregate, to the whole industry — waiting to be deployed.",
+    "explainer_covers": [
+      "Fund-level vs. industry-level dry powder.",
+      "Drivers and the deployment-pressure dynamic (and its effect on entry prices).",
+      "Reading dry powder by vintage year."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G16 Committed capital, ★ G15 Capital call, ★ G18 Vintage year, Z3.2 (deal sourcing).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.8",
+    "local_id": "Z1.8",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Vintage Year",
+    "tag": "global",
+    "global_id": "G18",
+    "quick_definition": "The year a fund holds its first close and starts investing — used to benchmark it against all other funds raised the same year.",
+    "explainer_covers": [
+      "Definition and why benchmarking must be vintage-controlled.",
+      "Macro/credit-cycle exposure baked into a vintage.",
+      "Quartile-by-vintage performance comparison."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, Z5.4 (fundraising), Z5.10 (performance), ★ G17 Dry powder.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.9",
+    "local_id": "Z1.9",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Blind Pool",
+    "tag": "global",
+    "global_id": "G19",
+    "quick_definition": "A fund whose investors commit capital before knowing which specific companies it will buy, trusting the GP's stated mandate.",
+    "explainer_covers": [
+      "Definition; mandate breadth vs. GP discretion.",
+      "Why LPs accept blind-pool risk (track record, trust).",
+      "Implications for fundraising and manager selection."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G20 LPA, ★ G6 GP, Z5.4, Z5.8.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.10",
+    "local_id": "Z1.10",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Fund Economics: \"2 and 20\"",
+    "tag": "global",
+    "global_id": "G9",
+    "quick_definition": "The standard PE compensation model — roughly a 2% annual management fee plus 20% of profits (carried interest) to the GP, with 80% of profits to LPs.",
+    "explainer_covers": [
+      "The two components and the 80/20 profit split.",
+      "How the structure is meant to align GP and LP incentives.",
+      "Evolution and fee pressure since the 2008 crisis (offsets, discounted co-invest)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G8 Management fee, ★ G10 Carried interest, ★ G11 Distribution waterfall, ★ G12 Hurdle rate.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.11",
+    "local_id": "Z1.11",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 11,
+    "title": "Management Fees",
+    "tag": "global",
+    "global_id": "G8",
+    "quick_definition": "The annual fee (~1.3–2.5%) paid to the investment manager to cover the cost of running the fund.",
+    "explainer_covers": [
+      "Basis: committed capital during the investment period → invested capital after, often with a step-down.",
+      "Fee drag over a fund's life; first-time vs. mega-fund differences.",
+      "Paid quarterly/semi-annually in advance; drawn from commitments early, offset by exits later."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.12",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G9 \"2 and 20\", Z1.12 (other fees), ★ G16 Committed/invested capital.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.12",
+    "local_id": "Z1.12",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 12,
+    "title": "Other Fees & Fee Offsets",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Transaction, monitoring, director, and broken-deal fees a manager may charge — increasingly rebated to LPs through management-fee offsets.",
+    "explainer_covers": [
+      "The fee categories and where they're charged (often at the portfolio-company level).",
+      "Management-fee offsets (historically 50–100%, trending to 100%) and what they do to economics.",
+      "ILPA pressure and the shift of fee-based value from GP to the partnership."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G8 Management fee, ★ G20 LPA, Z5.5 (fundraising docs), Z4.2 (governance).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.13",
+    "local_id": "Z1.13",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 13,
+    "title": "Carried Interest",
+    "tag": "global",
+    "global_id": "G10",
+    "quick_definition": "The GP's ~20% share of a fund's net profits — the single biggest performance incentive for PE professionals.",
+    "explainer_covers": [
+      "Definition and being \"in the carry.\"",
+      "Tied to the waterfall, gated by the hurdle, trued-up by catch-up, protected by clawback.",
+      "The tax debate (carry as capital gains vs. income)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G14",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G11 Distribution waterfall, ★ G12 Hurdle rate, ★ G13 Catch-up, ★ G14 Clawback, ★ G9 \"2 and 20\".",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.14",
+    "local_id": "Z1.14",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 14,
+    "title": "Distribution Waterfall",
+    "tag": "global",
+    "global_id": "G11",
+    "quick_definition": "The contractual order in which exit proceeds flow back: return LP capital → pay the preferred return → GP catch-up → split remaining profits 80/20.",
+    "explainer_covers": [
+      "The standard steps, common to every waterfall.",
+      "European / \"all-capital-first\" (whole-fund) vs. American / \"deal-by-deal\" (with loss carry-forward and make-whole).",
+      "Where it's defined (the LPA) — deep mechanics and worked math live in Z5.3."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G14",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G10 Carried interest, ★ G12 Hurdle, ★ G13 Catch-up, ★ G14 Clawback, ★ G20 LPA, **Z5.3** (deep), Z5.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.15",
+    "local_id": "Z1.15",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 15,
+    "title": "Hurdle Rate / Preferred Return",
+    "tag": "global",
+    "global_id": "G12",
+    "quick_definition": "The minimum annual return (typically 8%) LPs must receive before the GP earns any carry.",
+    "explainer_covers": [
+      "Definition and the 8% norm, negotiated during fundraising.",
+      "Hard vs. soft hurdle and the effect on carry timing.",
+      "Interaction with the catch-up."
+    ],
+    "connects_to": [
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G13",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G10 Carried interest, ★ G13 Catch-up, ★ G11 Distribution waterfall.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.16",
+    "local_id": "Z1.16",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 16,
+    "title": "Catch-up Mechanism",
+    "tag": "global",
+    "global_id": "G13",
+    "quick_definition": "The waterfall step that lets the GP collect profits until it holds its full ~20% share, once the hurdle has been cleared.",
+    "explainer_covers": [
+      "Definition; 100% catch-up vs. an 80/20 catch-up rate.",
+      "How it interacts with the hurdle to make the GP \"whole\" on its carry."
+    ],
+    "connects_to": [
+      {
+        "ref": "G12",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G12 Hurdle rate, ★ G10 Carried interest, ★ G11 Distribution waterfall.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.17",
+    "local_id": "Z1.17",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 17,
+    "title": "Clawback",
+    "tag": "global",
+    "global_id": "G14",
+    "quick_definition": "An LPA provision forcing the GP to return any carried interest it was overpaid across the fund's life.",
+    "explainer_covers": [
+      "When it's triggered (typically under deal-by-deal carry after later losses).",
+      "Escrows/holdbacks and other LP protections."
+    ],
+    "connects_to": [
+      {
+        "ref": "G11",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G11 Distribution waterfall, ★ G10 Carried interest, ★ G20 LPA.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.18",
+    "local_id": "Z1.18",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 18,
+    "title": "The J-curve",
+    "tag": "global",
+    "global_id": "G4",
+    "quick_definition": "The curve of an LP's cumulative net cash flow — dipping negative early as fees and investments go out, then turning positive as exits return capital.",
+    "explainer_covers": [
+      "The shape and its drivers; why it rarely dips below ~80% of committed capital.",
+      "Breakeven (crossing the x-axis) and the final point = net profit.",
+      "Single-fund J-curve vs. an LP's blended portfolio J-curve.",
+      "How secondaries shorten and flatten the curve."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G8",
+        "note": null
+      },
+      {
+        "ref": "G16",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G15 Capital call, ★ G8 Management fee, ★ G16 Committed capital, ★ G57 Secondaries, Z5.7, Z5.10.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.19",
+    "local_id": "Z1.19",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 19,
+    "title": "PE Returns — IRR & MOIC (intro)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "PE measures success two ways at once: a time-weighted rate (IRR) and an absolute multiple of money (MOIC), always assessed net of fees.",
+    "explainer_covers": [
+      "Gross vs. net returns and why net is what LPs live on.",
+      "IRR in one line; MOIC in one line; why you need both (IRR ignores scale, MOIC ignores time).",
+      "Pointer to the deep performance node."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G1 IRR, ★ G2 MOIC, **Z5.10** (deep performance), ★ G4 J-curve.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z1.20",
+    "local_id": "Z1.20",
+    "module": "private-equity",
+    "zone": 1,
+    "ordinal": 20,
+    "title": "The GP–LP Relationship (foundations)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The fiduciary, economic, and reporting bond between fund managers and their investors that underpins all of PE.",
+    "explainer_covers": [
+      "Fiduciary duty and the alignment toolkit (carry, GP commitment, hurdle, clawback).",
+      "Information, transparency, and reporting expectations.",
+      "Trust, track record, and conflicts of interest."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G6 GP, ★ G7 LP, ★ G48 Alignment, **all of Zone 5**, Z4.2 (governance).",
+    "gaps": [],
+    "real_world_layer": "PE in Action Case #1 (Beroni Group: Managing GP–LP Relationships).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

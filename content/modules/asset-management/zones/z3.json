@@ -1,0 +1,445 @@
+[
+  {
+    "id": "asset-management.z3.1",
+    "local_id": "Z3.1",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Setting the Mandate & the Benchmark",
+    "tag": "global",
+    "global_id": "G140",
+    "quick_definition": "Every long-only portfolio begins by defining its mandate — the objective, constraints, and universe — and choosing the benchmark index it will be measured against, which together fix what \"success\" and \"risk\" mean for everything downstream.",
+    "explainer_covers": [
+      "The investment policy statement (IPS): the document that sets the objective (the return target or liability to fund), the constraints (liquidity, time horizon, risk tolerance, legal/ESG limits), and the eligible universe — the mandate the manager is hired to run.",
+      "Choosing the benchmark (G140): the index must match the mandate's asset class, style, and region — pick wrong and the manager looks skilled or hopeless for the wrong reasons. The benchmark sets the neutral weights (the default the manager deviates from only with conviction).",
+      "The tracking-error budget (★ G141): how far the mandate allows the portfolio to stray from the benchmark — an enhanced-index mandate permits tiny deviations, a high-conviction mandate permits large ones; this single parameter shapes the whole construction.",
+      "For institutions, this is where the policy portfolio (★ G144) and the spending/liability needs (Swensen) translate into specific mandates handed to internal teams or external managers.",
+      "The fiduciary frame (★ G155): the mandate must be suitable and prudent — diversification requirements and concentration limits are written in here."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G140",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G157",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      },
+      {
+        "ref": "G153",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G140` (this node), `★ G141` tracking error, `★ G157` relative return, `★ G144` policy portfolio, `★ G155` fiduciary duty, `★ G153` SMA/mandate, Z3.2 (allocation), Z2.4 (the style that sets the benchmark), PE Z1.2 (the fund mandate — *the private-markets analogue*). **GAP: IPS construction and liability-driven investing (LDI) detail.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "IPS construction and liability-driven investing (LDI) detail",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.2",
+    "local_id": "Z3.2",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Asset Allocation — Strategic & Tactical",
+    "tag": "global",
+    "global_id": "G143",
+    "quick_definition": "The decision of how much to put in each asset class — the strategic long-run policy mix that drives most of a portfolio's return and risk, plus any tactical short-run tilts away from it — the single most consequential step in the process.",
+    "explainer_covers": [
+      "Strategic asset allocation (G143): the long-run target mix (the ★ G144 policy portfolio), set from capital-market assumptions (expected return, risk, and correlation per class) and the investor's objectives and constraints — and, per Swensen and Malkiel, the decision that explains the overwhelming majority of a portfolio's outcome.",
+      "The efficient-frontier engine (★ G145): mean-variance optimization combines asset classes to maximize expected return per unit of risk; in practice it's tempered with judgment because the inputs (especially expected returns) are noisy and optimizers over-fit.",
+      "Tactical asset allocation (G143): short-run deviation from the policy mix to exploit perceived mispricing — a form of market timing that Swensen treats with caution (most timing fails; discipline beats cleverness).",
+      "The role of alternatives (Swensen Ch. 7–8): for institutions with the ability to select managers, adding private equity, hedge funds, and real assets pushes the frontier outward (lower-correlation return streams and an illiquidity premium) — the move that defines the endowment model (★ G154).",
+      "The discipline that makes it real (★ G147): an allocation is only as good as the rebalancing that maintains it — \"far too many investors construct policy portfolios only to let them drift\" (Swensen)."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.10",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G145",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G143` (this node), `★ G144` policy portfolio, `★ G145` MPT/efficient frontier, `★ G146` diversification, `★ G147` rebalancing, `★ G154` endowment model, `★ G127` cycles (the tactical input), Z3.3 (selection within a class), Z2.10 (multi-asset), Z4.1 (rebalancing discipline). *Real-world layer: Swensen Ch. 5–6 (asset allocation & its management).*",
+    "gaps": [],
+    "real_world_layer": "Swensen Ch. 5–6 (asset allocation & its management).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.3",
+    "local_id": "Z3.3",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "Security Selection — The Active Thesis",
+    "tag": "global",
+    "global_id": "G121",
+    "quick_definition": "Within a given asset class and mandate, the active manager decides which securities to own and at what weight relative to the benchmark — building, for each holding, a thesis for why it will beat its benchmark weight.",
+    "explainer_covers": [
+      "The thesis, long-only version (★ G121): the same unit of work as the hedge-fund thesis, but the decision is overweight / market-weight / underweight against the benchmark, not long / short against zero. The bar is \"will this beat its index weight?\" — and, since shorting is usually off the table, the underweight (own less, or none) is how a negative view is expressed.",
+      "The valuation toolkit, reused (★ G87–★ G95): comps, precedent transactions, DCF, WACC — run from the investor's seat to find the gap between price and value. Expectations Investing's key move: don't forecast cash flows, reverse-engineer the expectations already in the price and judge whether they're beatable (the ★ G124 second-level-thinking discipline made operational).",
+      "Style-specific lenses: value (margin of safety, Z2.5), growth (durable compounding, Z2.6), and quality (moats and capital allocation, Z2.7) — the style determines what kind of mispricing the manager hunts.",
+      "Competitive-strategy analysis (Rappaport & Mauboussin, via Porter): five-forces and value-chain analysis to judge whether a company's competitive position will beat or miss the market's embedded expectations — the engine behind a fundamental thesis.",
+      "The fiduciary and diversification constraint (★ G155): unlike a hedge fund, the long-only manager generally can't bet the book on one name — position sizes are bounded by prudence and the tracking-error budget (Z3.4)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.4",
+        "note": null
+      },
+      {
+        "ref": "G121",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G121` the thesis, `★ G87` valuation toolkit, `★ G90` DCF, `★ G124` second-level thinking, `★ G136` the edge, `★ G125` market efficiency, Z2.5/Z2.6/Z2.7 (the styles), Z3.4 (sizing the thesis), HF Z3.3 (the long/short thesis — *same work, different expression*). *Real-world layer: Rappaport & Mauboussin (price-implied expectations); Graham (margin of safety).*",
+    "gaps": [],
+    "real_world_layer": "Rappaport & Mauboussin (price-implied expectations); Graham (margin of safety).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.4",
+    "local_id": "Z3.4",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Portfolio Construction Under Tracking-Error & Fiduciary Constraints",
+    "tag": "global",
+    "global_id": "G123",
+    "quick_definition": "Assembling the individual security views into a coherent portfolio — deciding active weights against the benchmark subject to a tracking-error budget, diversification rules, and fiduciary limits — the step where conviction is converted into a buildable, prudent portfolio.",
+    "explainer_covers": [
+      "Active weights, not absolute bets: every position is sized relative to its benchmark weight (+2% overweight, −1% underweight) — the long-only translation of the hedge fund's position-sizing problem (★ G123).",
+      "The tracking-error budget (★ G141): total active risk is capped by the mandate, so the manager allocates that budget to the highest-conviction active weights — the benchmark-relative version of risk budgeting (the active-risk denominator of the information ratio ★ G112).",
+      "Active share (★ G142) as the honesty check: a manager charging active fees should run genuinely different holdings; low active share + active fees = a closet indexer (the problem the metric was built to expose).",
+      "The Fundamental Law, long-only version (★ G115): information ratio ≈ skill × √breadth × implementation efficiency — and the long-only constraint is itself a major drag on implementation efficiency (Grinold & Kahn's result, established in the HF map): not being able to short caps how fully a manager can express negative views, which is exactly why the hedge fund's freedom to short is an efficiency gain and the long-only manager's fiduciary constraint is a cost. Build this as the explicit bridge to HF Z3.6.",
+      "Fiduciary diversification (★ G155): prudence and (for funds) regulation bound concentration — the structural reason a long-only portfolio holds dozens or hundreds of names where a hedge fund might hold ten."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G123",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G142",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G146",
+        "note": null
+      },
+      {
+        "ref": "G155",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G123` position sizing & construction, `★ G141` tracking error, `★ G142` active share, `★ G112` information ratio, `★ G115` Fundamental Law, `★ G146` diversification, `★ G155` fiduciary duty, Z3.5 (implementation), HF Z3.4 / HF Z3.6 (sizing and the long-only-constraint efficiency gain — *the key cross-module bridge*).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.5",
+    "local_id": "Z3.5",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Implementation & Trading",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "Turning target weights into actual positions — executing trades at scale without moving the price against yourself — the step where a real edge can quietly leak away through transaction costs.",
+    "explainer_covers": [
+      "Why scale makes this hard: a giant fund moving a large position is a meaningful share of daily volume, so naive trading signals the market and moves the price — execution is alpha preservation, exactly as in the HF map (HF Z3.6), but amplified by the asset manager's size.",
+      "The toolkit: patient execution algorithms, trading in liquid names and ETFs, crossing internally between funds, and (for index funds) trading at the benchmark's reconstitution to minimize tracking difference.",
+      "Transaction costs and capacity: trading costs rise faster than size, so every strategy has a capacity limit beyond which its own market impact eats its edge (★ G120 crowding/capacity, reused) — a binding constraint for large active managers and a reason scale pushes managers toward indexing.",
+      "The cost connection (★ G150): trading costs are part of the total drag that the active-vs-passive arithmetic counts against active managers — a hidden cost on top of the visible fee.",
+      "Index-fund implementation as its own craft: minimizing tracking difference is an operational discipline (handling index changes, corporate actions, and cash flows) rather than a research one."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.6",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.4",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G120",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      },
+      {
+        "ref": "G139",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G120` capacity & crowding, `★ G150` cost/fee drag, `★ G141` tracking error, `★ G139` ETF (an execution tool), Z3.4 (the target weights), Z3.6 (rebalancing), HF Z3.6 (execution as alpha preservation — *the same discipline, larger scale*). **GAP: market-microstructure and transaction-cost-analysis (TCA) mechanics — shared with HF Z3.6.**",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "market-microstructure and transaction-cost-analysis (TCA) mechanics — shared with HF Z3.6",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.6",
+    "local_id": "Z3.6",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Rebalancing",
+    "tag": "global",
+    "global_id": "G147",
+    "quick_definition": "Periodically trading the portfolio back to its policy weights — selling what has outgrown its target and buying what has fallen below — the discipline that keeps risk on-target and quietly enforces \"buy low, sell high.\"",
+    "explainer_covers": [
+      "Why drift happens and why it matters: as markets move, winners grow into oversized positions and the portfolio's risk profile drifts away from the policy (★ G144) — rebalancing pulls it back, controlling risk that would otherwise compound silently.",
+      "The rebalancing premium: mechanically selling strength and buying weakness harvests a small return bonus and is the opposite of the performance-chasing that sinks most investors (Swensen's discipline; the antidote to buying high and selling low).",
+      "The methods: calendar rebalancing (quarterly/annually) vs. threshold/band rebalancing (act when a weight drifts more than X% from target) — and the trade-off against transaction costs and taxes.",
+      "Where it lives in the process vs. Zone 4: rebalancing is both a process step (executed on a schedule) and an ongoing managing discipline (Z4.1) — the two nodes cross-reference.",
+      "The behavioral hardness (Swensen, Graham): rebalancing requires selling this year's winners and buying its losers exactly when it feels wrong — which is why disciplined rules, not judgment, enforce it."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z3.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G147",
+        "note": null
+      },
+      {
+        "ref": "G144",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G147` (this node), `★ G144` policy portfolio, `★ G143` asset allocation, `★ G127` cycles (rebalancing is contrarian to the pendulum), Z3.2 (the targets it maintains), Z4.1 (the managing-discipline view), `★ G124` second-level thinking. *Real-world layer: Swensen Ch. 6 (disciplined maintenance of policy targets).*",
+    "gaps": [],
+    "real_world_layer": "Swensen Ch. 6 (disciplined maintenance of policy targets).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "asset-management.z3.7",
+    "local_id": "Z3.7",
+    "module": "asset-management",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Performance Measurement & Attribution",
+    "tag": "global",
+    "global_id": "G111",
+    "quick_definition": "Judging the portfolio — its risk-adjusted return (the Sharpe ratio), its skill relative to the benchmark (the information ratio), and the attribution that separates real skill from luck, beta, style, and fees.",
+    "explainer_covers": [
+      "The headline metrics, reused (★ G111/★ G112): the Sharpe ratio (excess return over total risk) and the information ratio (active return over active risk = tracking error) — the same nodes as the HF map, but here the information ratio is the central one because the benchmark is the whole point.",
+      "Attribution: decomposing the return gap vs. the benchmark into allocation (did the asset-class/sector weights help?), selection (did the security picks within each sector help?), and interaction — the long-only counterpart of the HF's alpha/beta attribution (★ G106/★ G107).",
+      "Style and factor attribution (★ G148): how much of the \"alpha\" was really just a style or factor tilt (a value or small-cap bet) that could have been bought cheaply as smart beta — the test that separates genuine selection skill from packaged factor exposure.",
+      "The honesty problems: short track records, survivorship and benchmark-gaming, the difficulty of distinguishing skill from luck over observable horizons, and Sharpe's arithmetic (★ G150) — the average active dollar underperforms after costs, so the persistent outperformer is rare and hard to identify ex ante (the manager-selection problem, Z5.6).",
+      "Why this closes the loop: attribution feeds back into the process — confirming or disconfirming the manager's edge and informing whether the active fee was earned."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z5.2",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.5",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G111",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G148",
+        "note": null
+      },
+      {
+        "ref": "G150",
+        "note": null
+      },
+      {
+        "ref": "G141",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G111` Sharpe ratio, `★ G112` information ratio, `★ G106` alpha / `★ G107` beta (attribution), `★ G148` smart beta (style/factor attribution), `★ G150` cost/fee drag, `★ G141` tracking error, Z5.5 (the fee debate), Z5.6 (manager selection), HF Z5.2 (the hedge-fund performance node — *the same metrics, benchmark-relative emphasis*). *Real-world layer: the active-management literature (Malkiel on the fund-performance record).* ---",
+    "gaps": [],
+    "real_world_layer": "the active-management literature (Malkiel on the fund-performance record).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,0 +1,518 @@
+[
+  {
+    "id": "hedge-funds.z1.1",
+    "local_id": "Z1.1",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is a Hedge Fund?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A lightly-regulated private investment fund that pools capital from sophisticated investors and pursues absolute returns using a wide toolkit — leverage, short selling, derivatives, and concentrated bets — that long-only funds can't or won't use, in exchange for performance-based fees.",
+    "explainer_covers": [
+      "The simple model: a manager promises to make money in any market by being skillful, not just by riding the market up — and takes a large share of the profits for doing so.",
+      "What makes a fund a \"hedge\" fund: the freedom to go short, use leverage, trade almost any instrument, and concentrate — versus the constraints (long-only, benchmark-relative, diversified) that bind mutual funds and pensions.",
+      "\"Hedge fund\" as a structure and mandate, not a single strategy — the umbrella over long/short equity, macro, event-driven, quant, and multi-strategy.",
+      "Who can invest (accredited/qualified investors, institutions) and why the regulatory perimeter is lighter (the investor-protection bargain).",
+      "The scale and outsized cultural footprint of the industry relative to its AUM; why it attracts the talent it does."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G107",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      },
+      {
+        "ref": "G108",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (the origin), Z1.3 (`★ G106` alpha vs. `★ G107` beta), Z2.1 (the strategy spectrum), `★ G135` absolute return, `★ G108` the hedge, and across the aisle: IB Z1.3 (the sell-side that serves it), PE Z1.1 (the other major buy-side discipline), Credit Z1.1 (the lender it competes with).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.2",
+    "local_id": "Z1.2",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Origin: A.W. Jones & the Hedged Structure",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The hedge fund was invented in 1949 by Alfred Winslow Jones, who combined three ideas — a hedged long/short book, leverage, and a 20% incentive fee — into the template the whole industry still runs on.",
+    "explainer_covers": [
+      "Jones's insight: by holding both longs and shorts, you can remove the market's direction from your returns and isolate stock-picking skill (alpha) — letting you safely use leverage on top.",
+      "The three structural innovations that all survive today: the long/short hedge, the use of leverage, and the performance fee that aligns manager and investor.",
+      "Why \"hedged fund\" became \"hedge fund,\" and how the model stayed obscure for decades before exploding.",
+      "The lineage from Jones to the modern industry — the \"Jones men\" who spun out, and the strategy's descendants."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G108",
+        "note": null
+      },
+      {
+        "ref": "G109",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G108` The hedge / long–short construction, `★ G109` Short selling, `★ G29` Leverage (the PE/IB node, here as return amplifier), `★ G9` \"2 and 20\" (here with the incentive-fee origin), Z2.2 (long/short equity — the direct descendant), Z1.4.",
+    "gaps": [],
+    "real_world_layer": "Mallaby Ch. 1 (\"Big Daddy\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.3",
+    "local_id": "Z1.3",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Alpha vs. Beta — Why Hedge Funds Exist",
+    "tag": "global",
+    "global_id": "G106",
+    "quick_definition": "Beta is the return you get just for being exposed to the market; alpha is the return a manager adds through skill, above beta — and the entire economic case for a hedge fund is its claim to deliver alpha.",
+    "explainer_covers": [
+      "The decomposition: any return splits into a market (beta) component and a residual (alpha) component — the foundation of active management (Grinold & Kahn).",
+      "Why this matters: beta is now nearly free (index funds cost a few basis points), so a hedge fund charging 2-and-20 must justify itself entirely on alpha.",
+      "\"Alpha is scarce and zero-sum-ish\": Sharpe's arithmetic — in aggregate, active management can't beat the market before costs, so the average manager underperforms after fees (deep version in Z5.x). The burden of proof is on the manager.",
+      "The critique that haunts the industry: much apparent alpha is disguised beta — leverage, illiquidity premia, or a factor tilt dressed up as skill.",
+      "How a fund demonstrates alpha: benchmark-relative returns, the information ratio, attribution."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z5.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.1",
+        "note": null
+      },
+      {
+        "ref": "G135",
+        "note": null
+      },
+      {
+        "ref": "G112",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      },
+      {
+        "ref": "G125",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G135` Absolute return, `★ G112` Information ratio, `★ G115` Fundamental Law, `★ G125` Market efficiency, `★ G136` The edge, Z5.2 (performance measurement), Z2.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.4",
+    "local_id": "Z1.4",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "Fund Structure & Key Players",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The legal and human architecture of a hedge fund — the management company and its GP, the fund vehicle(s), the portfolio managers and analysts, and the investors (LPs) — plus the service providers that make it run.",
+    "explainer_covers": [
+      "Management company vs. the fund vs. the GP — why they're separate entities (mirrors the PE structure; reuse the PE Zone 1 framing).",
+      "The investment team: the portfolio manager (PM) who makes the calls, the analysts who generate ideas, and (in larger shops) the CIO and risk team.",
+      "The investors (LPs): funds of funds, endowments, pensions, sovereign wealth funds, family offices, and high-net-worth individuals — and why each allocates to HFs (return, diversification, downside protection).",
+      "The master-feeder structure (onshore/offshore feeders into one master fund) and why it exists (tax and access for different investor types).",
+      "The service providers: prime broker, administrator, auditor, legal — the operational backbone."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G117",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G6` GP / `★ G7` LP (the PE nodes, reused), `★ G117` Prime brokerage, Z1.6, `★ G119` Liquidity terms, Z5.1 (the firm as a business), PE Z1.3 (the analogous PE structure).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.5",
+    "local_id": "Z1.5",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "How Hedge Funds Make Money: \"2 and 20,\" the High-Water Mark & Hurdles",
+    "tag": "global",
+    "global_id": "G9",
+    "quick_definition": "The classic hedge-fund fee model — roughly a 2% management fee plus 20% of profits — refined by a high-water mark (so investors never pay twice on the same gains) and sometimes a hurdle (a minimum return before performance fees apply).",
+    "explainer_covers": [
+      "The two components (management fee to keep the lights on; performance fee as the real prize) and the 80/20 profit split — the same ★ G9 node as PE, with the HF-specific nuances layered on.",
+      "High-water mark (G118): the peak-NAV rule — after a loss, the manager earns no performance fee until investors are made whole, which is why a bad year is doubly painful and can trigger team departures.",
+      "Hurdle rate in the HF context (less universal than in PE): a minimum or cash-plus threshold before the 20% kicks in.",
+      "Fee compression and its drivers: the shift toward \"1-and-15,\" founders' share classes, and the divergence between commodity strategies and scarce, capacity-constrained ones.",
+      "The pass-through (\"2-and-20 is dead; pass-through is worse\") model of the big multi-strategy platforms, where the fund charges investors its actual costs (including pod-team comp) plus a performance cut."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z5.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G9",
+        "note": null
+      },
+      {
+        "ref": "G118",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G132",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G9` \"2 and 20\" (the shared PE node), `★ G118` High-water mark, `★ G2` MOIC / `★ G1` IRR (how investors measure the net result), `★ G132` Multi-strategy (the pass-through model), Z5.2 (performance), Z5.5 (the fee debate).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.6",
+    "local_id": "Z1.6",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Prime Brokerage & the Financing Plumbing",
+    "tag": "global",
+    "global_id": "G117",
+    "quick_definition": "The bundle of bank services — execution, securities lending, margin financing, custody, and capital introduction — that a hedge fund cannot operate without, because shorting and leverage both depend on it.",
+    "explainer_covers": [
+      "What a prime broker does: clears and settles trades, lends the securities that make short selling possible, lends the cash/margin that makes leverage possible, holds assets in custody, and provides reporting.",
+      "Capital introduction (\"cap intro\"): the prime broker as matchmaker between the fund and prospective investors — a quiet but crucial channel.",
+      "The risk dimension: a fund is exposed to its prime broker (counterparty risk — vivid after Lehman 2008), and primes manage their exposure to the fund through margin terms; multi-prime arrangements as a response.",
+      "How financing terms (haircuts, rebate rates, term) directly shape what strategies are viable and how much leverage is achievable."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.2",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G109",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G110",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G109` Short selling (enabled by securities lending), `★ G29` Leverage (enabled by margin), `★ G110` Net & gross exposure, `★ G83` Sell-side/buy-side (the prime is the sell-side serving the buy-side), IB Z1.2 (the bank's markets/financing franchise), Z4.4 (counterparty risk).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.7",
+    "local_id": "Z1.7",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Liquidity Terms & the Liquidity Mismatch",
+    "tag": "global",
+    "global_id": "G119",
+    "quick_definition": "The contractual rules — lock-ups, redemption notice periods and windows, gates, and side pockets — that govern when investors can withdraw, which must be matched to how quickly the fund can actually sell what it owns.",
+    "explainer_covers": [
+      "Lock-up periods (initial and rolling), redemption frequency (monthly/quarterly/annual) and notice periods, and why they exist (to prevent forced selling into a panic).",
+      "Gates (caps on how much can be redeemed at once) and side pockets (segregating illiquid positions) — the emergency valves, and the reputational cost of using them.",
+      "The core principle: liquidity terms must match the liquidity of the assets. A fund holding liquid equities can offer monthly liquidity; a fund holding distressed loans or private positions cannot — and a mismatch is how funds blow up in a run (2008's \"I want my money back\" wave).",
+      "The investor's-side concern: liquidity as a key diligence item, and the trade-off between liquidity and the illiquidity premium a fund may be harvesting."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z4.4",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z5.3",
+        "note": null
+      },
+      {
+        "ref": "G119",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G119` (this node), `★ G126` Risk as permanent loss (a run forces permanent losses), Z4.4 (liquidity risk), Z5.3 (the investor base), `★ G127` Cycles (runs happen at cycle turns), Credit Z5.x (the same liquidity-matching logic in credit funds).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.8",
+    "local_id": "Z1.8",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Absolute Return & the Hedge Fund Mandate",
+    "tag": "global",
+    "global_id": "G135",
+    "quick_definition": "The promise to make money in any market environment — measured against zero or cash rather than against a market index — which is what distinguishes a hedge fund's goal from a long-only manager's.",
+    "explainer_covers": [
+      "Absolute vs. relative return: a long-only manager who loses 5% while the index loses 10% has \"won\"; a hedge fund that loses 5% has lost money and failed its mandate.",
+      "Why absolute return justifies the fee and the freedom: it requires the short book and the hedging that long-only can't use.",
+      "The tension in practice: many \"hedge funds\" are quietly directional and rise and fall with the market — the gap between the absolute-return promise and the beta-laden reality.",
+      "How absolute return shapes everything downstream: risk management centered on drawdown, not tracking error; the focus on capital preservation."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z1.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z4.1",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G116",
+        "note": null
+      },
+      {
+        "ref": "G126",
+        "note": null
+      },
+      {
+        "ref": "G111",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G106` Alpha (absolute return *is* the alpha promise), `★ G116` Drawdown, `★ G126` Risk as permanent loss, `★ G111` Sharpe ratio, Z1.3, Z4.1 (risk management).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.9",
+    "local_id": "Z1.9",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Market Efficiency & Its Limits — What Hedge Funds Bet Against",
+    "tag": "global",
+    "global_id": "G125",
+    "quick_definition": "The efficient-market hypothesis says prices already reflect all available information, leaving no room to outperform — the proposition hedge funds exist to disprove, profiting precisely where and when markets are inefficient.",
+    "explainer_covers": [
+      "The EMH in one line and why it's the intellectual antagonist of active management — if markets were perfectly efficient, alpha would be impossible and hedge funds pointless.",
+      "The reality Marks and the practitioners describe: markets are mostly efficient most of the time, but inefficiency appears in pockets (small caps, distressed, complex situations, panics) and at extremes (bubbles and crashes) — and that's where the money is.",
+      "Second-level thinking as the response: you can only beat the market by knowing something it doesn't or seeing it differently and better (deep version in Z3).",
+      "The implication for strategy choice: efficient corners (large-cap US equities) reward breadth and cost discipline; inefficient corners (distressed, emerging markets, event-driven) reward depth and specialization."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.1",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G124",
+        "note": null
+      },
+      {
+        "ref": "G106",
+        "note": null
+      },
+      {
+        "ref": "G136",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G115",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G124` Second-level thinking, `★ G106` Alpha, `★ G136` The edge, `★ G127` Cycles, Z2.1 (strategy choice follows inefficiency), Z3.1 (idea generation), `★ G115` Fundamental Law.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "hedge-funds.z1.10",
+    "local_id": "Z1.10",
+    "module": "hedge-funds",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "How Hedge Funds Connect to IB, PE & Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The map of where hedge funds touch the three sibling modules — as a client of the investment bank, a peer-and-rival of private equity, and a competitor-and-cousin of private credit.",
+    "explainer_covers": [
+      "HF ↔ IB: the hedge fund is the buy-side the bank serves — it consumes sell-side research, executes through the bank's trading desk, finances through prime brokerage, and is a top recruiter of the bank's analysts (ties to ★ G83 and IB Z5.5, the buy-side exit). Cross-reference IB Z1.3.",
+      "HF ↔ PE: both are buy-side performance-fee businesses chasing alpha, but on opposite liquidity and control axes — PE takes control of private companies for years; most HFs take minority positions in public securities they can exit daily. Activist HFs (Z2.7) are the bridge — public-market investors who act like owners.",
+      "HF ↔ Private Credit: credit and distressed hedge funds (Z2.8) trade the same instruments direct lenders hold — and increasingly some HFs originate private credit themselves, blurring the line. Cross-reference Credit Z1.7.",
+      "The unifying lesson: one capital market, four seats — the bank advises and finances, PE owns, private credit lends and holds, the hedge fund trades for mispricing."
+    ],
+    "connects_to": [
+      {
+        "ref": "investment-banking.z1.12",
+        "note": null
+      },
+      {
+        "ref": "investment-banking.z5.5",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.18",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z1.6",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.7",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G83",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G83` Sell-side/buy-side, Z1.6 (prime brokerage), Z2.7 (activism — the PE bridge), Z2.8 (credit/distressed — the credit bridge), IB Z1.12 (the IB side of this map), IB Z5.5 (the career pipeline), PE Z5.18 (LPs going direct — the converging buy-side). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

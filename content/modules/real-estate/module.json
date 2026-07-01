@@ -1,0 +1,89 @@
+{
+  "slug": "real-estate",
+  "title": "Real Estate",
+  "kind": "role",
+  "build_order": 9,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Real Estate Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Property Sectors, Styles & Vehicles",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Investment Process & Underwriting",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Asset Management, Leasing & Development",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Exits, REITs & the Public Market",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 19,
+    "global_range": "G217–G235",
+    "zone_node_count": 43,
+    "globals_reused": [
+      "G1",
+      "G2",
+      "G3",
+      "G6",
+      "G7",
+      "G8",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G18",
+      "G19",
+      "G24",
+      "G28",
+      "G29",
+      "G33",
+      "G34",
+      "G35",
+      "G36",
+      "G37",
+      "G52",
+      "G58",
+      "G61",
+      "G69",
+      "G70",
+      "G72",
+      "G74",
+      "G75",
+      "G78",
+      "G81",
+      "G87",
+      "G88",
+      "G90",
+      "G93",
+      "G94",
+      "G127",
+      "G143",
+      "G144",
+      "G146",
+      "G152",
+      "G154",
+      "G156",
+      "G166",
+      "G189"
+    ],
+    "gap_count": 15
+  },
+  "status": "mapped"
+}

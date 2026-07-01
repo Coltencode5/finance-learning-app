@@ -1,0 +1,42 @@
+{
+  "slug": "private-equity",
+  "title": "Private Equity",
+  "kind": "role",
+  "build_order": 1,
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The PE Ecosystem",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Types of Private Equity",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "Doing Deals",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Managing Investments",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Fund Management & the GP–LP Relationship",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 57,
+    "global_range": "G1–G57",
+    "zone_node_count": 105,
+    "globals_reused": [],
+    "gap_count": 9
+  },
+  "status": "mapped"
+}

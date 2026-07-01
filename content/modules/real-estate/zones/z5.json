@@ -1,0 +1,289 @@
+[
+  {
+    "id": "real-estate.z5.1",
+    "local_id": "Z5.1",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Disposition (Sale & Exit) (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A real-estate investment is realized by selling the property — typically through a brokered process applying an exit cap rate to stabilized NOI — with the timing of the sale relative to the real estate cycle often mattering as much as the quality of the asset.",
+    "explainer_covers": [
+      "The sale process: the sponsor (with the asset manager) engages an investment-sales broker to market the property; the broker prepares an offering memorandum and circulates it to a qualified buyer pool; buyers submit bids (usually indicative, then final); the sponsor selects the winning bidder and executes a PSA (★G36).",
+      "Pricing the exit: the exit value = projected stabilized NOI ÷ exit cap rate (the reversion from ★G228); this is the price as a property-level concept; selling costs (typically 1–2% commission plus transfer taxes and legal) reduce the net proceeds.",
+      "Tax at exit: depreciation recapture tax (25% on accumulated depreciation, ★G233) and capital-gains tax are triggered at a taxable sale; the 1031 exchange (★G233) defers both by rolling proceeds into a replacement property within 180 days; a sale into a recapitalization does not trigger the full gain.",
+      "Cycle timing matters: exiting in the expansion phase (occupancy high, cap rates compressed, credit available) maximizes price; exiting in hypersupply or recession (values down, buyers scarce) forces a discount; experienced sponsors manage the hold period to position for a favorable exit window (★G232).",
+      "Alternatives to outright sale: partial-interest sale (selling a percentage of the asset to a new capital partner while retaining operating control), a recapitalization (bringing in a new LP at a new valuation, ★Z4.6), or a refinance-and-hold (extracting liquidity without selling); all have different tax, waterfall, and LP-reporting implications."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      },
+      {
+        "ref": "G233",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G52 (exit — the inherited global for exit mechanics), ★G219 (exit cap — the pricing mechanism), ★G228 (the reversion — exit value calculation), ★G233 (tax at sale), ★G232 (timing the cycle), Z5.4 (how returns are benchmarked after exit), PE Z4.x (the PE exit process — the parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z5.2",
+    "local_id": "Z5.2",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "FFO & AFFO — The REIT Earnings Metric",
+    "tag": "global",
+    "global_id": "G234",
+    "quick_definition": "Funds from operations (FFO) is the REIT industry's standard earnings metric — GAAP net income plus real-estate depreciation, minus gains on property sales — that corrects for the distortion of non-cash depreciation and reveals the cash-earnings power of a REIT's portfolio; AFFO (adjusted FFO) further subtracts recurring capital expenditures and TI/LC for a closer-to-distributable-cash refinement.",
+    "explainer_covers": [
+      "Why GAAP net income misleads for REITs: commercial real estate is depreciated over 39 years under GAAP, generating a large annual non-cash charge that reduces reported earnings even when the underlying property is holding or appreciating in value; a REIT can report thin or negative GAAP net income while generating strong and growing cash flow.",
+      "FFO = GAAP net income + real-estate depreciation and amortization − gains on property sales: the NAREIT (National Association of Real Estate Investment Trusts) standardized definition, used for comparability across REITs; adding back depreciation reveals the cash-generating capacity of the portfolio.",
+      "AFFO (Adjusted FFO) = FFO − recurring capital expenditures − TI/LC + straight-line rent normalization: the closer-to-distributable-cash refinement; a REIT that is FFO-positive but AFFO-thin may be under-investing in its properties and deferring maintenance.",
+      "How REITs are valued: on FFO per share multiples (Price/FFO, analogous to P/E but on a cash-earnings basis), on dividend yield (the 90%+ payout requirement makes REITs high-yield equity), and on NAV (★G235, the property-value basis); FFO multiples typically range from 12–25× depending on sector growth prospects and interest-rate environment.",
+      "The payout ratio and the 90% distribution rule: the REIT tax election requires distributing at least 90% of taxable income; in practice most REITs target 70–90% of AFFO as the dividend (retaining some cash for capex); this makes the dividend yield a central investor metric."
+    ],
+    "connects_to": [
+      {
+        "ref": "G223",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G235",
+        "note": null
+      },
+      {
+        "ref": "G189",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G223 (the REIT whose earnings FFO measures), ★G218 (NOI feeds FFO indirectly — NOI → operating income → net income → +depreciation → FFO), ★G235 (NAV — the other REIT valuation lens), ER ★G189 (REIT analysts use FFO in their models), HF Z3.x (hedge funds trading REIT earnings mispricing). *Disambiguation anchor:* FFO vs. GAAP net income — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z5.3",
+    "local_id": "Z5.3",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "NAV & the Public-Private Valuation Gap",
+    "tag": "global",
+    "global_id": "G235",
+    "quick_definition": "REIT NAV is the estimated private-market value of a REIT's underlying real property less all its liabilities, expressed per share — and the premium or discount at which the traded share price diverges from this private-market value is the signal connecting public-market sentiment to private-market fundamentals, and a potential arbitrage.",
+    "explainer_covers": [
+      "Computing REIT NAV: for each property, estimate stabilized NOI ÷ private-market cap rate (sector- and market-specific, derived from recent comparable transactions) = property value; sum across the portfolio; subtract total debt and other liabilities; divide by shares outstanding = NAV per share; the exercise requires sector expertise and access to current private-market transaction data.",
+      "The premium/discount: if a REIT's share price exceeds NAV per share, it trades at a premium — the public market is willing to pay more for the REIT's assets in securitized, liquid form (or expects property values to appreciate further); if shares trade below NAV, the market is pricing in declining property values, or the REIT's management/platform is viewed negatively, or interest rates are making listed equity less attractive.",
+      "Signals the gap sends: a persistent deep discount (REIT shares worth 70 cents on the dollar of underlying property) historically signals a buying opportunity if the private-market valuation is correct, or foreshadows a private-market correction if the public market is leading; the public market reprices faster than appraisals — the standard leading indicator.",
+      "The take-private arbitrage: when REITs trade at persistent and large discounts to NAV, private-equity real-estate funds may pursue a take-private (buying all the public shares, delisting the company, and owning the properties directly) — they acquire the underlying assets at a discount to what the assets would sell for individually.",
+      "Distinguishing from mutual-fund NAV (★G152): a mutual fund's NAV is the daily accounting price at which the fund issues and redeems shares — there is no premium or discount; the REIT's NAV is an estimated private-market value from which the public price can and does diverge."
+    ],
+    "connects_to": [
+      {
+        "ref": "G223",
+        "note": null
+      },
+      {
+        "ref": "G234",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G152",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G223 (the REIT whose NAV is being computed), ★G234 (FFO — the other valuation lens used alongside NAV), ★G219 (private-market cap rate is the input to NAV), ★G152 (mutual-fund NAV disambiguation — different concept), HF Z3.x (the NAV discount as a trading signal), ER Z2.x (REIT analysts build NAV models). *Disambiguation anchor:* RE NAV (premium/discount) vs. mutual-fund NAV — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z5.4",
+    "local_id": "Z5.4",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Fund Returns & Benchmarking (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real-estate funds report the same IRR and equity-multiple metrics as PE, benchmarked against property-return indices that decompose total returns into their income and appreciation components — with a well-known appraisal-smoothing bias in private RE indices that makes them look less volatile than they truly are.",
+    "explainer_covers": [
+      "Return metrics: levered IRR (★G1), equity multiple (★G2 / MOIC), DPI/RVPI/TVPI (★G3); vintage benchmarking (★G18 — comparing fund returns against the universe of funds from the same formation year); the same framework as PE Z5.10.",
+      "The NCREIF Property Index (NPI): tracks unlevered returns on a large pool of institutional properties held by the NCREIF (National Council of Real Estate Investment Fiduciaries) member firms; reported quarterly; the standard unlevered property benchmark; decomposed into income return and appreciation return each quarter.",
+      "The NCREIF Fund Index-ODCE (NFI-ODCE): tracks levered returns on a universe of large open-end diversified core-equity funds (the \"ODCE\" universe); the standard benchmark for core real-estate managers; investment committees compare their core RE managers' performance against the ODCE.",
+      "Appraisal smoothing and the illusion of low volatility: private RE indices are driven by quarterly appraisals, not transaction prices; appraisers are anchored to prior values and update slowly; the result is a measured volatility far below the true economic volatility of real estate (which can be seen in REIT price movements in public markets); Geltner et al. (Ch. 25) analyze this bias in detail.",
+      "How public and private benchmarks interact: REIT total returns (tracked by FTSE NAREIT) typically lead the private NCREIF index by 6–18 months in both bull and bear markets — the public-market leading indicator that sophisticated allocators track to anticipate private-market repricing."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z1.8",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      },
+      {
+        "ref": "G18",
+        "note": null
+      },
+      {
+        "ref": "G224",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G1, ★G2, ★G3 (inherited return metrics), ★G18 (vintage benchmarking), ★G224 (ODCE = the open-end core-fund universe), Z1.8 (the return-metrics framework), ★G156 (manager selection — the LP's view of benchmark-relative performance), PE Z5.10 (the PE benchmarking parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z5.5",
+    "local_id": "Z5.5",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Raising the Next Fund & the Sponsor Franchise (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A real-estate manager sustains itself by raising successor funds — or extending into programmatic JVs, separate accounts, and open-end vehicles — on the strength of its realized track record, sector expertise, and operational platform, with LPs diligencing the same dimensions they assess in any private-capital manager.",
+    "explainer_covers": [
+      "The fundraising process: the sponsor prepares a private-placement memorandum (PPM) and a track record presentation showing realized DPI (★G3), sector-specific performance, and team; it markets to its existing LP base and targeted new LPs via the fund placement agent (if used); the fund closes when commitments reach the target.",
+      "What LPs diligence in RE managers (★G156): realized DPI (not just TVPI — distributions prove the return is real, not just paper marks); sector and geographic expertise; underwriting track record (did they hit pro forma targets?); team stability; the quality and integration of the operating platform (leasing, asset management, construction management capabilities embedded in the firm); fees and alignment.",
+      "The spectrum of vehicles a successful manager offers: a progression from closed-end value-add funds (the classic starting point) to open-end core vehicles (once the track record is established) to programmatic JVs (large institution-specific mandates) and separate accounts (bespoke capital from one LP); the full vehicle menu is a sign of institutional maturity.",
+      "The operating-platform advantage: vertically-integrated sponsors with in-house property management, construction management, and leasing teams have a structural advantage — they create NOI that a less-integrated manager cannot, and they retain market intelligence that improves underwriting.",
+      "The LP's view of the RE sponsor: the allocator (★G154 and ★G156) cares that the sponsor's past returns came from skill and platform rather than from leverage at a fortuitous moment in the cycle; decomposing returns by source (NOI growth vs. cap-rate compression vs. leverage effect) is the analytical test."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G156",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      },
+      {
+        "ref": "G224",
+        "note": null
+      },
+      {
+        "ref": "G154",
+        "note": null
+      },
+      {
+        "ref": "G3",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G156 (manager selection — the LP diligence process), ★G225 (the sponsor — the entity raising the fund), ★G224 (the vehicle menu — closed-end to open-end progression), ★G154 (the endowment allocator's view), PE Z5.4 (the PE fundraising parallel), ★G3 (DPI as the LP's proof of return). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z5.6",
+    "local_id": "Z5.6",
+    "module": "real-estate",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "The Real Estate Career & Where Real Estate Is Heading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The real-estate career spans acquisitions, asset management, development, debt, and capital markets / REIT analysis — and the industry is being reshaped by the post-2022 interest-rate shock and value reset, structural sector dislocation, proptech and AI, and climate-risk repricing that no pre-2023 source fully anticipates.",
+    "explainer_covers": [
+      "The career tracks: acquisitions (sourcing, underwriting, and closing investments — the analytical/deal-making role); asset management (executing the business plan post-close — the operating/reporting role); development (managing ground-up projects from entitlement through stabilization); debt origination (underwriting and structuring loans — the PC parallel in a RE context); capital markets and REIT analysis (equity research on REIT stocks, REIT capital markets, investor relations) — ER Z5.x and IB Z5.x are the skill-set parallels.",
+      "The post-2022 repricing (the module's largest current-context shift): the rapid rise in interest rates from 2022 onward drove significant cap-rate expansion across most CRE sectors, reducing property values by 20–40% in some asset classes and creating the \"refinancing wall\" — billions of dollars of floating-rate and maturing fixed-rate loans that cannot be refinanced at prior loan sizes; the industry is navigating significant stress. GAP flag: post-source.",
+      "Sector dislocation: office distress (structural work-from-home shift, negative absorption in many markets, high vacancies, values down 40–60%+ in some CBDs) contrasting with industrial/logistics strength, multifamily resilience, and data-center/life-sciences growth. GAP flag: post-source.",
+      "Proptech and AI in real estate operations: AI-driven underwriting (faster rent-comp analysis, property-condition prediction), smart building management, automated leasing platforms, data analytics for site selection — shifting the skill requirements for younger professionals. GAP flag: post-source.",
+      "Climate risk repricing: rising insurance costs in coastal, wildfire, and flood-prone markets are materially reducing NOI (and therefore value) in affected geographies; building-level decarbonization mandates (LEED, net-zero building codes) are creating capex obligations; the repricing of climate risk is a structural shift in underwriting practice. GAP flag: post-source."
+    ],
+    "connects_to": [],
+    "connects_to_raw": "IB Z5.x (capital markets career parallel), ER Z5.x (REIT analyst career parallel), PE Z5.x (private-equity real-estate career track). *GAP flag (the module's largest):* the post-2022 rate shock, CRE value reset, office distress, refinancing wall, data-center/AI demand, proptech, and climate-risk repricing are all post-source. See Part 9 for the consolidated source-gap note. --- ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag: post-source",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag: post-source",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag: post-source",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag: post-source",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag (the module's largest):",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

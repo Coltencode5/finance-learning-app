@@ -1,0 +1,639 @@
+[
+  {
+    "id": "real-estate.z3.1",
+    "local_id": "Z3.1",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "The Acquisition Process Overview",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "A real-estate acquisition runs from deal sourcing through underwriting, letter of intent, due diligence, financing, and closing — with the underwriting (the pro forma) as the analytical core that validates price, structures the debt, and frames the equity return.",
+    "explainer_covers": [
+      "Deal sourcing: brokered marketed processes (the investment-sales broker circulates an offering memorandum to a buyer list) vs. off-market / proprietary origination (the sponsor finds the deal before it is broadly marketed, often yielding a better price); relationship and reputation drive off-market access.",
+      "The underwriting phase: constructing the pro forma (★G228), stress-testing assumptions, sizing the debt (★G74/★G75), and arriving at a maximum bid price consistent with the target return (★G222); this is the analytical heart of the process.",
+      "The letter of intent (LOI) and the purchase-and-sale agreement (PSA, ★G36): the LOI is non-binding but establishes price, deposit, diligence period, and key terms; the PSA is the binding contract; real-estate contracts give the buyer a defined due-diligence period (typically 30–60 days) during which they can exit (the \"hard\" deposit period follows).",
+      "Financing contingency and the closing timeline: most acquisitions are conditioned on securing debt financing; the lender's underwriting timeline (4–8 weeks) is the rate-limiting step; closing typically follows 60–90 days after contract execution.",
+      "Coordination at close: the single-asset LLC or LP (★G35) that holds title signs the PSA; the JV operating agreement (★G225) is executed simultaneously; title insurance and escrow close the loop."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.1",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.2",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.3",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.5",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.6",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.7",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.8",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.9",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.10",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.11",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G35",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2–Z3.12 (the steps in depth), ★G228 (pro forma as the analytical core), ★G36 (PSA — the binding contract), ★G35 (the SPV that holds title), Z3.9 (due diligence as the critical intermediate step), PE Z3.1 (the PE deal process — the parallel). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.2",
+    "local_id": "Z3.2",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Net Operating Income (NOI)",
+    "tag": "global",
+    "global_id": "G218",
+    "quick_definition": "Net operating income is a property's annual income after operating expenses but before debt service, capital expenditures, TI/LC, and income taxes — the property-level cash-earnings figure that every real-estate valuation, loan sizing, and return projection runs on.",
+    "explainer_covers": [
+      "The NOI build-up (the income statement of a property): potential gross income (PGI, at 100% occupancy at market rent) → less vacancy and credit loss → effective gross income (EGI) → less operating expenses → NOI.",
+      "What is in operating expenses: property taxes, insurance, utilities, property management fees, maintenance and repairs, and administrative costs — expenses the landlord pays regardless of the lease structure.",
+      "What is not in NOI (items below the NOI line): debt service (interest and amortization), capital expenditures (major repairs and improvements), tenant improvements (TI) and leasing commissions (LC), and income taxes.",
+      "Why the below-NOI items matter: TI/LC and recurring capex can be substantial — in an office building, TI on a lease renewal can run $50–$100/SF, converting a high NOI into modest actual cash flow; the pro forma (★G228) must model all of them.",
+      "Key disambiguation (grounded in the Technical Topics PDF): NOI ≠ cash flow (cash flow is NOI minus debt service, capex, and TI/LC) and NOI ≠ EBITDA (★G24 — a corporate earnings metric that does not strip operating expenses the same way and does not separate capex in the RE underwriting sense)."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G219 (cap rate = NOI ÷ value — the valuation link), ★G229 (the lease determines what NOI is), ★G230 (occupancy and expense management drive NOI), ★G24 EBITDA (the disambiguation — different metric, different purpose), ★G228 (the pro forma starts with NOI), Z3.3 (cap rate valuation flows from NOI). *Disambiguation anchor:* NOI vs. cash flow vs. EBITDA — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.3",
+    "local_id": "Z3.3",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Cap Rate & Direct Capitalization",
+    "tag": "global",
+    "global_id": "G219",
+    "quick_definition": "The capitalization rate (cap rate) is the ratio of NOI to value — cap rate = NOI ÷ value, equivalently value = NOI ÷ cap rate — that prices income property the way a P/E multiple prices a stock, and functions as both the primary valuation metric and the measure of unlevered current yield on an income property.",
+    "explainer_covers": [
+      "The identity: cap rate = NOI ÷ value; value = NOI ÷ cap rate; the cap rate is the inverse of a price-to-income multiple (a 5% cap rate = 20× NOI; a 8% cap rate = 12.5× NOI) — Geltner et al. (Ch. 1) characterize it as similar to a current yield.",
+      "What moves cap rates: (1) the general level of interest rates (★G69 — when rates rise, required returns rise, cap rates rise, values fall); (2) perceived risk of the property/market (higher risk → higher cap rate); (3) expected NOI growth (higher growth expectations → lower cap rate, investors accept a lower current yield for future appreciation).",
+      "Going-in (entry) cap rate vs. exit (terminal/reversion) cap rate: the going-in cap prices the acquisition; the exit cap is an assumption in the pro forma about what the market will pay at sale — the spread between them is the critical underwriting judgment (see Part 1 disambiguation).",
+      "Cap-rate compression and expansion: compression (cap rates falling, values rising) is the appreciation driver in a bull market; expansion (cap rates rising) is the driver of value decline in a correction — the post-2022 rate shock drove dramatic cap-rate expansion across most CRE sectors.",
+      "Direct capitalization: value = stabilized NOI ÷ market cap rate; this one-year income snapshot is the dominant valuation method for stabilized income-producing properties (the income approach by direct cap); DCF (★G90) is used when cash flows are uneven or the hold is being explicitly modeled."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      },
+      {
+        "ref": "G220",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G218 (NOI — the numerator), ★G228 (pro forma uses the going-in and exit cap), ★G220 (the income approach, of which direct cap is the simpler form), ★G90 (DCF — the multi-year alternative), ★G69 (interest rates drive cap rates), Z3.5 (exit cap in the pro forma model). *Disambiguation anchors:* cap rate vs. yield/IRR/cash-on-cash (see Part 1); going-in vs. exit cap rate (see Part 1). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.4",
+    "local_id": "Z3.4",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "The Three Appraisal Approaches",
+    "tag": "global",
+    "global_id": "G220",
+    "quick_definition": "The three appraisal approaches are the three lenses for valuing a real property — the income approach (cap rate or DCF), the sales-comparison approach (comparable transactions per unit or per square foot), and the cost approach (replacement cost of the improvements less depreciation, plus land value) — the real-estate counterpart to IB's three valuation methodologies.",
+    "explainer_covers": [
+      "The income approach: the dominant approach for income-producing properties; takes two forms — direct capitalization (value = NOI ÷ cap rate, ★G219) for stabilized assets, and DCF analysis (★G90) for properties with uneven or growing cash flows; the appraiser selects the cap rate or discount rate from market evidence.",
+      "The sales-comparison approach: valuing a property by reference to recent comparable transactions (sales comps) — adjusted for differences in size, age, condition, location, and lease terms — expressed per square foot (office, industrial, retail) or per unit (multifamily) or per room (hotel); the RE-specific application of ★G88 (comps); the Technical Topics PDF explicitly distinguishes sales comps (price/SF from actual transactions) from lease comps (rent/SF from recent leases).",
+      "The cost approach: estimating what it would cost to rebuild the property today (replacement cost) less physical depreciation, functional obsolescence, and external obsolescence, plus the value of the land; used as a check for new construction or special-purpose assets (churches, schools) where income and sales comps are thin; when market values fall below replacement cost, new development stops — a key cycle signal.",
+      "Reconciliation: an appraiser weights the three approaches based on the quality and availability of evidence; for stabilized income properties the income approach dominates; for development comparisons the cost approach is useful; the three form a framework (★G94 football field equivalent in RE).",
+      "The parallel to IB's three methodologies (★G87): income approach ≈ DCF; sales-comparison ≈ comps (★G88); cost approach ≈ a check on absolute value, analogous to how liquidation value works in IB."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.3",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.5",
+        "note": null
+      },
+      {
+        "ref": "G87",
+        "note": null
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G94",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G87 (IB's three methodologies — the structural parallel), ★G88 (comps → sales comparison), ★G90 (DCF → income approach using multi-year projections), ★G219 (cap rate / direct cap — the standard income-approach tool), ★G94 (football field — the weighting/reconciliation parallel), Z3.3 (cap rate), Z3.5 (pro forma as the DCF version). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.5",
+    "local_id": "Z3.5",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "The Pro Forma & the Reversion",
+    "tag": "global",
+    "global_id": "G228",
+    "quick_definition": "The real-estate pro forma is the multi-year hold model that projects NOI growth, capital expenditure, debt service, and levered cash flows over the investment period, culminating in the reversion (terminal value = stabilized NOI ÷ exit cap rate, less selling costs and loan payoff) — the document where the exit-cap-rate assumption dominates the return.",
+    "explainer_covers": [
+      "The pro forma structure: rent roll and lease expiration schedule → projected occupancy and rents by year → NOI by year (★G218) → below-NOI items (debt service from ★G226/★G227, capex, TI/LC from ★G230) → levered cash flow available to equity by year.",
+      "The reversion calculation: in the terminal year, projected stabilized NOI is divided by the assumed exit cap rate to produce the gross sale price; less selling costs (typically 1–2%), less loan payoff (remaining principal), less depreciation recapture tax (★G233), yields the net reversion to equity — the usually-dominant cash event.",
+      "Exit cap rate as the dominant assumption: Geltner et al. (Ch. 11) and the Technical Topics source both emphasize that the return is enormously sensitive to the exit cap; a 50-bps increase in exit cap compresses the sale value by 5–10% depending on the going-in cap; underwriting an exit cap below the going-in cap (cap-rate compression) is optimistic; above (expansion) is conservative.",
+      "DCF mechanics (★G90 reused): the pro forma is fundamentally a multi-period DCF — the levered cash flows plus the reversion are discounted at the target levered IRR to check whether the assumed entry price is justified.",
+      "Terminal value parallel: the reversion parallels the terminal value (★G93) in a corporate DCF — the large back-end cash flow that dominates present-value analysis."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.3",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.6",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.11",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G93",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G218 (NOI — the input), ★G219 (exit cap — the dominant output assumption), ★G90 (DCF mechanics — the pro forma is a property DCF), ★G93 (terminal value → the reversion), Z3.3 (cap rate), Z3.6 (debt service comes from the capital stack), Z3.11 (IRR and equity multiple fall out of the pro forma). *Disambiguation anchor:* going-in vs. exit cap rate — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.6",
+    "local_id": "Z3.6",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "The Capital Stack",
+    "tag": "global",
+    "global_id": "G226",
+    "quick_definition": "The capital stack is the layered financing structure of a real-estate deal — senior mortgage debt, mezzanine debt, preferred equity, and common equity — ranked from the lowest-cost senior claim (first priority of payment, first priority on collateral) to the highest-cost/highest-risk common equity (last claim, residual upside), with each layer receiving the return commensurate with its risk.",
+    "explainer_covers": [
+      "The stack from bottom to top: (1) senior mortgage debt (★G227) — first lien (★G78), lowest yield, highest attachment point in a distress, typically 50–65% of the property value; (2) mezzanine debt — second in priority (behind the senior, ahead of equity), bridge loans or stretch-senior structures, higher yield (8–15%); (3) preferred equity (★G37) — an equity tranche with a priority return before common equity; (4) common equity — the sponsor and LP's residual stake, last in line and first to be wiped out, but capturing all upside above the debt costs.",
+      "Priority of payment: the senior lender is paid first, every period; mezzanine is paid next; preferred equity receives its current return; common equity receives whatever remains; in a distress scenario, this priority order determines who gets what.",
+      "Reuse of ★G33 (debt stack/instruments) and ★G78 (lien priority): the RE capital stack is a direct application of the debt-stack concept and lien-priority framework already globalized in Private Credit.",
+      "Preferred equity vs. mezzanine debt (the thin line): preferred equity is technically equity — there is no default remedy, just a right to distributions ahead of common; mezzanine debt is debt — there is a loan agreement, a maturity, and a pledge of the equity interests (or a second mortgage) as collateral; the practical difference matters most in a default.",
+      "LTV implications: the senior loan-to-value ratio (★G75) measures how much of the value the senior debt covers; the total loan-to-value (all debt as a percentage) determines how \"levered\" the deal is; higher combined LTV means more amplification and more risk."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.7",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G37",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G33 (debt stack), ★G37 (preferred equity), ★G78 (lien priority), ★G29 (leverage — the aggregate effect of the stack), Z3.7 (sizing the debt), Z3.8 (the senior mortgage in detail), PC Z2.x (mezzanine and the lender's view), PE Z3.x (capital structure parallel). *Disambiguation anchor:* preferred equity vs. the \"pref\" — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.7",
+    "local_id": "Z3.7",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Sizing the Debt: LTV, DSCR & Debt Yield (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A commercial real-estate loan is sized by the binding of three simultaneous constraints — loan-to-value (LTV, ★G75), debt-service coverage ratio (DSCR, within ★G74), and debt yield — whichever produces the smallest loan wins, and that constraint changes across interest-rate environments.",
+    "explainer_covers": [
+      "LTV (★G75, inherited from Private Credit): loan ÷ appraised value; the fundamental leverage gauge; a 65% LTV senior loan means the lender will absorb up to a 35% property-value decline before losing principal; typical ranges: 55–65% senior only, up to 75–80% for total debt.",
+      "DSCR (within ★G74, inherited from Private Credit): NOI ÷ annual debt service (interest plus amortization); a DSCR of 1.25× means the property generates 25% more income than needed to service the debt; lenders typically require 1.20–1.30× minimum; below 1.0× means the property cannot service the debt from operating income.",
+      "Debt yield (the RE-specific third test): NOI ÷ loan amount; the value-independent, interest-rate-independent check; a 9% debt yield means the property's NOI represents 9% of the loan; lenders set floors (e.g., 8–10%) to ensure that even if cap rates expand (values fall), the loan is still covered by income alone.",
+      "Loan-to-cost (LTC): the fourth metric used specifically in development (★G231) where the property has no stabilized value yet — loan ÷ total project cost (land + construction + soft costs); typical 65–75%.",
+      "How the three interact: in a low-rate environment, DSCR typically binds first (cheap debt allows high LTV but DSCR limits borrowing when the cap rate is low relative to the debt constant); in a high-rate environment, DSCR binds harder (debt is expensive relative to NOI), making the debt-yield constraint simultaneously more binding."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G74",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G226",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G75 (LTV — inherited from PC, home in PC Z3.x), ★G74 (coverage ratios — inherited from PC, DSCR lives here), ★G58 (debt yield — the return metric for the lender), ★G226 (the capital stack this debt sits in), ★G29 (leverage), Z3.8 (the commercial mortgage that embodies these tests). *Disambiguation anchor:* LTV vs. LTC vs. debt yield — see Part 1. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.8",
+    "local_id": "Z3.8",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "The Commercial Mortgage & CMBS",
+    "tag": "global",
+    "global_id": "G227",
+    "quick_definition": "A commercial mortgage is the senior loan secured by an income-producing property — with terms covering amortization or interest-only, a balloon payment at maturity, and recourse or non-recourse status — while CMBS is the securitization mechanism that pools these loans and sells them as rated tranches to bond investors, creating public debt from private loans.",
+    "explainer_covers": [
+      "The commercial mortgage: typically a 5–10-year term with a 25–30-year amortization schedule (many are interest-only for 2–3 years, then switching to amortizing); the balloon payment (the remaining principal balance due at maturity) is the key refinancing risk; non-recourse means the lender's remedy in default is limited to the property and does not extend to the sponsor's personal or corporate assets (vs. recourse, which does).",
+      "Lender types and their niches: commercial banks (construction and bridge loans, floating rate, ★G69); life insurance companies (core permanent financing, long-term fixed rate, conservative underwriting); agency lenders (Fannie Mae/Freddie Mac for multifamily — the dominant liquidity source for apartments); CMBS conduits (fixed-rate, 10-year terms, pooled and securitized).",
+      "CMBS mechanics (Geltner et al., Ch. 20): a conduit lender originates mortgages to CMBS standards, pools 50–150 loans, and passes them to a trust; the trust issues bond tranches (AAA senior, mezzanine tranches, BB and B bonds) that absorb credit losses from the bottom up (the B-piece buyer absorbs first losses); a master servicer handles current loans; a special servicer handles defaults.",
+      "Prepayment and call protection (★G72): CMBS loans typically include defeasance (replacing the loan with Treasury securities that replicate the cash flows — expensive but necessary for fixed-rate CMBS) or yield maintenance (a make-whole premium); these protect the securitization's cash flows.",
+      "The CMBS market as the \"public debt\" quadrant (★G217): CMBS bonds trade on secondary markets, offering investors (money managers, insurance companies) real-estate credit exposure with daily liquidity and rated tranches."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z4.6",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.7",
+        "note": null
+      },
+      {
+        "ref": "G75",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G75 (LTV — how the mortgage is sized), ★G78 (lien priority — the mortgage has first-lien position), ★G70 (credit spread), ★G69 (SOFR/floating rate), ★G72 (prepayment protection), PC Z2.x (the lender's view, the private-debt parallel), Z4.6 (refinancing risk), Z3.7 (debt sizing). *GAP flag:* the post-2022 CMBS market dislocation and office-sector refinancing wall are post-source. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.9",
+    "local_id": "Z3.9",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "Real Estate Due Diligence (inherited)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Real-estate due diligence verifies the physical asset, the title, the leases, and the trailing financial statements before closing — the same investigative logic as any private-capital investment (★G28), applied to a building rather than a business.",
+    "explainer_covers": [
+      "Physical diligence: the property condition assessment (PCA — a third-party engineering review of the building's major systems and deferred maintenance); Phase I environmental site assessment (screening for contamination); roof, HVAC, plumbing, structural inspections; the PCA findings feed the capex budget in the pro forma (★G228).",
+      "Legal diligence: title search and title insurance (confirming ownership is clear, there are no undisclosed liens or encumbrances); survey (confirming lot lines, easements, setbacks); zoning and entitlement confirmation (the property can be used as intended).",
+      "Lease diligence: reviewing the full rent roll (★G230) — every lease, term, rent, concessions, co-tenancy clauses, options; estoppels (written certifications from each tenant confirming the lease terms — the tenant can't later claim different terms); SNDA (subordination, non-disturbance, and attornment agreements — lender protections with tenants); tenant credit quality.",
+      "Financial diligence: reviewing the trailing-12-month (T-12) operating statement; reconciling actual income and expenses against the seller's underwriting; identifying unusual items (lease concessions, below-market rents, deferred maintenance); grounding the pro forma in actual rather than pro-forma-only numbers.",
+      "How diligence findings price deals: a PCA finding $3M of deferred maintenance translates directly into a price reduction request; a lease showing below-market rent on a near-term expiry is an NOI-growth opportunity the buyer can underwrite; diligence is not binary pass/fail, it reprices the deal."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.5",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.1",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G229",
+        "note": null
+      },
+      {
+        "ref": "G230",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G28 (due diligence — the inherited global framework), ★G229 (lease review is the core legal diligence), ★G230 (rent roll analysis), Z3.5 (diligence validates and grounds the pro forma), Z3.1 (where diligence fits in the acquisition timeline), PE Z3.x (the parallel PE due-diligence process). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.10",
+    "local_id": "Z3.10",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "The Real Estate Tax Shield",
+    "tag": "global",
+    "global_id": "G233",
+    "quick_definition": "The real-estate tax shield is the collection of tax mechanisms that materially lifts after-tax returns — depreciation (a non-cash deduction sheltering rental income), cost segregation (accelerating depreciation on qualifying components), the 1031 like-kind exchange (deferring capital-gains tax on reinvestment), opportunity zones, and depreciation recapture (the tax bill paid back at sale).",
+    "explainer_covers": [
+      "Depreciation: commercial real estate is depreciated over 39 years (residential over 27.5 years) on a straight-line basis; a $10M property generates roughly $256K/year in depreciation deductions that offset rental income — a real cash-tax saving even though the building may be appreciating in value; depreciation sits below the NOI line (★G218) but above taxable income.",
+      "Cost segregation (accelerated depreciation): an engineering study that reclassifies portions of a building (carpets, lighting, fixtures, land improvements) as 5-, 7-, or 15-year property for depreciation purposes; combined with bonus depreciation provisions, this can allow investors to deduct a large fraction of the building cost in the early years — front-loading the tax benefit.",
+      "The 1031 like-kind exchange: Internal Revenue Code Section 1031 allows a seller to defer capital-gains tax on a property sale by rolling the proceeds into a \"like-kind\" replacement property within 180 days (after a 45-day identification window); the basis carries over, perpetually deferring the tax gain until a taxable sale; death eliminates the deferred gain entirely through the stepped-up basis.",
+      "Opportunity zones: designated census tracts where investors can defer and reduce capital-gains tax by reinvesting gains in Qualified Opportunity Funds; the program has specific holding-period requirements (GAP flag: tax legislation governing opportunity zones changes with Congress).",
+      "Depreciation recapture: when the property is eventually sold in a taxable transaction, the IRS recaptures depreciation deductions at a 25% rate (Section 1250) — the \"tax bill you paid back\" for years of depreciation deductions; planning the exit timing and 1031 strategy mitigates this."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.4",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G218",
+        "note": null
+      },
+      {
+        "ref": "G166",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G218 (depreciation sits below NOI), Z1.4 (tax shield as the fourth return driver), Z5.1 (recapture at sale), WM ★G166 (asset location — real estate tax benefits favor taxable accounts; REITs are tax-inefficient). *GAP flag:* opportunity-zone tax provisions and bonus-depreciation rules are subject to legislative change. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "flag: tax legislation governing opportunity zones changes with Congress",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "flag:",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.11",
+    "local_id": "Z3.11",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "Underwriting the Return: IRR, Equity Multiple & Sensitivity (inherited)",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The deal's return falls out of the pro forma as a levered IRR and an equity multiple, tested across sensitivity tables on the assumptions that matter most — the exit cap rate and rent growth — at targets calibrated by the investment style.",
+    "explainer_covers": [
+      "Return outputs: the levered IRR (★G1) over the projected hold period, typically 3–7 years for value-add and 5–10 for opportunistic; the equity multiple (★G2 = MOIC) as the intuitive \"how many times my money\" metric; cash-on-cash by year as the current-income check.",
+      "Return calibration by style (★G222): core targets ≈ 6–9% net levered IRR and 1.4–1.7× equity multiple; value-add targets ≈ 12–18% IRR and 1.7–2.2×; opportunistic targets ≥ 18–20% IRR and 2.0–2.5×+.",
+      "The sensitivity table: the standard RE output — a grid of exit cap rate × rent-growth assumptions showing the levered IRR at each combination; reveals how quickly the deal degrades if the exit cap expands by 50 bps or rents grow at 1% instead of 3%.",
+      "Unlevered vs. levered IRR (the key distinction, grounded in Technical Topics PDF): the unlevered IRR (property yield) strips out financing effects; the levered IRR captures the equity return including the cost of debt and the amplification; when the unlevered return exceeds the cost of debt (\"positive leverage\"), levering up lifts the equity IRR.",
+      "Why exit cap dominates: a property generating $5M NOI sold at a 5.0% exit cap = $100M; at a 5.5% exit cap = $90.9M — a $9M difference on a deal whose equity might be $30–35M; the return difference is enormous from a single 50-bps move in the exit cap assumption."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z1.8",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G2",
+        "note": null
+      },
+      {
+        "ref": "G228",
+        "note": null
+      },
+      {
+        "ref": "G222",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G1 (IRR), ★G2 (equity multiple/MOIC), ★G228 (the pro forma that produces these), ★G222 (style-appropriate return thresholds), Z1.8 (the return-metrics framework), Z5.4 (benchmarking these outputs against indices). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "real-estate.z3.12",
+    "local_id": "Z3.12",
+    "module": "real-estate",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "Structuring & Closing the Deal",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The deal closes through a purpose-formed single-asset entity that holds title, executes the purchase-and-sale agreement, and funds simultaneously with the equity and debt closing — a coordinated settlement that transfers ownership, title, and legal obligations in a single closing event.",
+    "explainer_covers": [
+      "The single-asset SPV (★G35): the deal is held in a newly-formed LLC or LP that ring-fences the asset from the sponsor's other portfolio and limits lender recourse to the one asset; this is the standard closing vehicle — the sponsor (and often the capital partner) become members of the LLC.",
+      "The purchase-and-sale agreement (★G36, the RE version known as the PSA): the binding sale contract specifying price, closing date, deposit amounts and hard/soft periods, representations and warranties, closing conditions; negotiated by the parties between the LOI and close.",
+      "The JV operating agreement (★G225): the deal-level partnership agreement setting the capital-account structure, promote tiers, capital-call mechanics, major-decision approval rights, and transfer restrictions — executed simultaneously at closing.",
+      "Title insurance and escrow: the title company issues an owner's policy and a lender's policy insuring against undisclosed liens or title defects; the escrow agent holds the deposit, coordinates the payoff of the seller's existing loan, and disburses funds at close.",
+      "Funds flow at closing: buyer's equity → escrow → (less existing loan payoff) → net proceeds to seller; simultaneously, the lender funds the acquisition loan directly to escrow; the balance is the equity funded by the JV."
+    ],
+    "connects_to": [
+      {
+        "ref": "real-estate.z3.1",
+        "note": null
+      },
+      {
+        "ref": "real-estate.z3.9",
+        "note": null
+      },
+      {
+        "ref": "G35",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G225",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G35 (SPV — the deal entity), ★G36 (PSA — the contract), ★G225 (JV operating agreement), Z3.1 (where closing fits in the timeline), Z3.9 (diligence precedes closing), PE Z3.x (the parallel closing process). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

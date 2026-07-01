@@ -1,0 +1,700 @@
+[
+  {
+    "id": "private-equity.z4.1",
+    "local_id": "Z4.1",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Active Ownership & the Holding Period",
+    "tag": "global",
+    "global_id": "G47",
+    "quick_definition": "The post-close phase in which PE works hands-on with a company — with a sense of urgency — to create value before exit.",
+    "explainer_covers": [
+      "The 3–7-year holding period; active vs. passive ownership.",
+      "The shift from \"financial engineer\" to \"industrialist.\"",
+      "The value-creation mandate that frames everything in this zone."
+    ],
+    "connects_to": [
+      {
+        "ref": "G22",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      },
+      {
+        "ref": "G50",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G22 Holding period, G51 Governance, G49 Operational value creation, ★ G50 100-Day Plan, G52 Exit.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.2",
+    "local_id": "Z4.2",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Corporate Governance in PE",
+    "tag": "global",
+    "global_id": "G51",
+    "quick_definition": "The board-level control and oversight structures PE uses to steer a portfolio company.",
+    "explainer_covers": [
+      "Core governance principles in a control buyout; board composition and reserved matters.",
+      "Reporting cadence and the information edge.",
+      "Governance in minority/growth settings; the special case of family-owned businesses."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.8",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G47",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      },
+      {
+        "ref": "G44",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "G47 Active ownership, G48 Alignment, Z2.8 (board rights), ★ G44 Minority rights, Z4.4.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.3",
+    "local_id": "Z4.3",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Alignment of Interest",
+    "tag": "global",
+    "global_id": "G48",
+    "quick_definition": "Structuring incentives so management, the GP, and LPs all win from the same outcome — value creation and a strong exit.",
+    "explainer_covers": [
+      "The founding principle of PE (Kravis): owner-mindset management.",
+      "The three alignment layers: management ownership, GP commitment, LP carry.",
+      "How misalignment quietly destroys value."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      },
+      {
+        "ref": "G23",
+        "note": null
+      },
+      {
+        "ref": "G10",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G45 Sweet equity, Z4.5, ★ G23 GP commitment (Z1), ★ G10 Carried interest, G51 Governance.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.4",
+    "local_id": "Z4.4",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Securing & Working with Management Teams",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How PE owners recruit, retain, motivate, and sometimes replace the executives running a portfolio company.",
+    "explainer_covers": [
+      "Assessing management; what makes a great PE CEO.",
+      "Rollover vs. new hires; the PE owner's role (two competing views).",
+      "Aligning VC funds with founders (the minority analogue)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G45",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G45 Sweet equity, Z4.5, G51 Governance, G48 Alignment, G49 Value creation.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.5",
+    "local_id": "Z4.5",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "Management Compensation & Sweet Equity",
+    "tag": "global",
+    "global_id": "G45",
+    "quick_definition": "The equity incentive package — sweet equity, ratchets, leaver terms — that gives management outsized upside for hitting targets.",
+    "explainer_covers": [
+      "Sweet equity vs. the institutional strip; the two-tiered structure.",
+      "The envy ratio; ratchets (positive/negative); vesting.",
+      "Good-leaver / bad-leaver provisions; cash-flow and sweet-equity returns at exit."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z3.19",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.14",
+        "note": null
+      },
+      {
+        "ref": "G48",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.19 (equity docs), G48 Alignment, Z2.14 (ESOP — the VC analogue), ★ G32 Sources & uses, G52 Exit.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.6",
+    "local_id": "Z4.6",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Operational Value Creation",
+    "tag": "global",
+    "global_id": "G49",
+    "quick_definition": "Growing returns by improving the actual business — revenue, margins, operations, strategy — rather than relying on leverage or multiple expansion.",
+    "explainer_covers": [
+      "The value-creation roadmap and the levers: revenue growth, margin/cost, capital efficiency, M&A/buy-and-build, strategic repositioning.",
+      "Resources: in-house operating partners (e.g., KKR Capstone–style teams).",
+      "The \"skilled industrialists\" model and the 100-day plan."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.23",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.9",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G50",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G50 100-Day Plan, Z2.23 (value drivers), Z4.9 (buy-and-build), Z4.8 (measuring it), operating partners.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.7",
+    "local_id": "Z4.7",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "The 100-Day Plan / Value Creation Plan",
+    "tag": "global",
+    "global_id": "G50",
+    "quick_definition": "The urgent post-close action plan that sets priorities, metrics, and quick wins from day one of ownership.",
+    "explainer_covers": [
+      "Origins and rationale; upfront operating metrics that surface problems early.",
+      "Quick wins vs. structural change; the ownership model in practice."
+    ],
+    "connects_to": [
+      {
+        "ref": "G47",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "G47 Active ownership, G49 Operational value creation, G51 Governance.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.8",
+    "local_id": "Z4.8",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 8,
+    "title": "Measuring Operational Value Creation",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Frameworks that decompose a deal's return into how much came from operations vs. leverage vs. multiple expansion — \"isolating alpha.\"",
+    "explainer_covers": [
+      "The standard value-creation bridge.",
+      "\"IVC 2.0\"–style driver decomposition; isolating alpha from market beta.",
+      "Attribution analysis as a diligence and reporting tool."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z2.23",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.23 (value drivers), G49 Operational value creation, Z5.10 (performance), Z3.8 (multiples).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.9",
+    "local_id": "Z4.9",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 9,
+    "title": "Buy-and-Build / Add-on Acquisitions",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Growing a platform company by acquiring smaller add-ons to gain scale, multiple arbitrage, and synergies.",
+    "explainer_covers": [
+      "Platform + add-ons; multiple arbitrage (buy small cheap, sell big dear).",
+      "Integration risk; follow-on capital during the holding period."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      },
+      {
+        "ref": "G32",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "G49 Operational value creation, ★ G32 Sources & uses, ★ G27 Multiples, Z1.4 (follow-on investment).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.10",
+    "local_id": "Z4.10",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 10,
+    "title": "Responsible Investment & ESG",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Integrating environmental, social, and governance factors into PE investing — from risk management to genuine value creation.",
+    "explainer_covers": [
+      "The responsible-investment continuum; ESG \"from risk to opportunity.\"",
+      "Three categories of ESG; the challenge of measuring impact.",
+      "Emerging frameworks (PRI and successors); ESG in emerging markets; the impact-investing boundary."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G51",
+        "note": null
+      },
+      {
+        "ref": "G49",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G28 Due diligence (ESG DD), G51 Governance, G49 Value creation, Z5.6 (LP demands). **GAP: post-2017 ESG/impact frameworks (recency).**",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "post-2017 ESG/impact frameworks (recency",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.11",
+    "local_id": "Z4.11",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 11,
+    "title": "Exit",
+    "tag": "global",
+    "global_id": "G52",
+    "quick_definition": "The sale or listing through which a PE fund realizes its investment and returns capital to LPs.",
+    "explainer_covers": [
+      "Why exit is planned from entry; unrealized value sitting in funds.",
+      "Exit timing and readiness; how the chosen route shapes the return.",
+      "\"The proof is in the exit.\""
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G22",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G54",
+        "note": null
+      },
+      {
+        "ref": "G55",
+        "note": null
+      },
+      {
+        "ref": "G11",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G22 Holding period, Z4.12, Z4.13, ★ G53 IPO, ★ G54 Trade sale, ★ G55 SBO, ★ G11 Waterfall, Z5.10.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.12",
+    "local_id": "Z4.12",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 12,
+    "title": "Exit Preparation / Exit Shaping",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The work of grooming a company and its equity story to maximize value and certainty at sale.",
+    "explainer_covers": [
+      "The equity story; financial readiness and audited accounts.",
+      "Management presentation; vendor due diligence; cleaning up the cap table and contracts.",
+      "Timing the market."
+    ],
+    "connects_to": [
+      {
+        "ref": "G52",
+        "note": null
+      },
+      {
+        "ref": "G28",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G54",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "G52 Exit, ★ G28 Due diligence (vendor DD), ★ G36 SPA, ★ G53 IPO, ★ G54 Trade sale.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.13",
+    "local_id": "Z4.13",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 13,
+    "title": "Exit Paths",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The menu of ways out — IPO, trade sale, secondary buyout, dual-track, recapitalization, or write-off.",
+    "explainer_covers": [
+      "Each route's pros/cons and what drives the choice.",
+      "Partial exits and staged sell-downs.",
+      "Dual-track (run IPO and M&A in parallel) as a tension-creator."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.14",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.15",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.16",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z4.17",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.14, Z4.15, Z4.16, Z4.17, ★ G52 Exit.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.14",
+    "local_id": "Z4.14",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 14,
+    "title": "IPO as an Exit",
+    "tag": "global",
+    "global_id": "G53",
+    "quick_definition": "Listing the company on a public market to sell the stake down over time.",
+    "explainer_covers": [
+      "IPO mechanics; partial exit and lock-up periods.",
+      "Valuation vs. a trade sale; when an IPO wins.",
+      "Dual-track with M&A."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.25",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.13, G52 Exit, Z2.25 (P2P — the reverse trade), dual-track.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.15",
+    "local_id": "Z4.15",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 15,
+    "title": "Trade Sale",
+    "tag": "global",
+    "global_id": "G54",
+    "quick_definition": "Selling the company to a strategic (corporate) buyer — often the highest-value, cleanest exit.",
+    "explainer_covers": [
+      "Strategic-buyer synergies and why they can pay more.",
+      "Clean break; auction vs. bilateral; SPA and warranties.",
+      "Trade sale vs. secondary buyout."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.3",
+        "note": null
+      },
+      {
+        "ref": "G36",
+        "note": null
+      },
+      {
+        "ref": "G55",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.13, ★ G36 SPA, Z3.3 (auction), ★ G55 SBO.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.16",
+    "local_id": "Z4.16",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 16,
+    "title": "Secondary Buyout (SBO)",
+    "tag": "global",
+    "global_id": "G55",
+    "quick_definition": "Selling a portfolio company to another PE fund.",
+    "explainer_covers": [
+      "Why SBOs happen; pricing dynamics.",
+      "The \"pass-the-parcel\" critique vs. the speed/certainty advantages.",
+      "How one fund's exit becomes another's entry (links Z2 buyout types ↔ Z4 exit)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z4.13",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.25",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G57",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z4.13, Z2.25 (buyout types), Z3.2 (sourcing), ★ G57 Secondaries (**not the same thing** — cross-link the distinction).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-equity.z4.17",
+    "local_id": "Z4.17",
+    "module": "private-equity",
+    "zone": 4,
+    "ordinal": 17,
+    "title": "Dividend Recapitalization",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Re-leveraging a portfolio company to pay its PE owner a dividend without selling the business.",
+    "explainer_covers": [
+      "Mechanics; partial liquidity ahead of a full exit.",
+      "Risk transferred to the company; LP and reputational optics."
+    ],
+    "connects_to": [
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G52",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★ G29 Leverage, ★ G33 Debt stack (Z3), G52 Exit, distributions. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

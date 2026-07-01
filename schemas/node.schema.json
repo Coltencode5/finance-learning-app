@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "node.schema.json",
+  "title": "ModuleNode",
+  "description": "A zone learning node inside a module. Carries the four-field content contract (quick definition, explainer scope, connections, tag) established by the PE template.",
+  "type": "object",
+  "required": ["id", "module", "zone", "ordinal", "title", "tag", "quick_definition", "explainer_covers", "connects_to"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+\\.z[1-5]\\.[0-9]+$",
+      "description": "Globally unique node ID: '{module-slug}.z{zone}.{n}', e.g. 'private-equity.z1.5'."
+    },
+    "local_id": {
+      "type": "string",
+      "pattern": "^Z[1-5]\\.[0-9]+$",
+      "description": "The human-facing in-module ID, e.g. 'Z1.5'. Redundant with id; kept for rendering fidelity with legacy maps."
+    },
+    "module": { "type": "string", "description": "Module slug." },
+    "zone": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "ordinal": { "type": "integer", "minimum": 1, "description": "Position within the zone's learning sequence." },
+    "title": { "type": "string", "minLength": 1 },
+    "tag": {
+      "type": "string",
+      "enum": ["core", "process", "branch", "global"],
+      "description": "Node role. 'global' means this zone node is the home explainer of a global concept (global_id required)."
+    },
+    "global_id": {
+      "type": ["string", "null"],
+      "pattern": "^G[1-9][0-9]*$",
+      "description": "If tag=='global', the G-number whose deep explainer lives here."
+    },
+    "quick_definition": { "type": "string", "minLength": 1 },
+    "explainer_covers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Bulleted explainer scope, ordered basic → technical."
+    },
+    "connects_to": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": {
+            "type": "string",
+            "description": "Target reference: 'G{n}' for globals, '{module-slug}.z{zone}.{n}' for nodes (same or cross module)."
+          },
+          "note": { "type": ["string", "null"], "description": "Optional relationship annotation, e.g. 'clarify the difference'." }
+        }
+      },
+      "description": "Outbound graph edges. The authoritative source for graph.json — edges are derived from this field, never hand-authored elsewhere."
+    },
+    "connects_to_raw": {
+      "type": ["string", "null"],
+      "description": "The original free-text 'Connects to.' line from the legacy markdown, preserved losslessly through migration. Removable after Milestone 2 sign-off."
+    },
+    "gaps": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "required": ["kind", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": { "type": "string", "enum": ["source", "recency"] },
+          "note": { "type": "string" },
+          "needed_source": { "type": ["string", "null"] }
+        }
+      },
+      "description": "The single canonical GAP mechanism. Replaces both legacy formats (inline 'GAP:' tags and consolidated Part 9 prose)."
+    },
+    "real_world_layer": {
+      "type": ["string", "null"],
+      "description": "Optional case/example annotation (e.g. 'PE in Action Case #2')."
+    },
+    "source_refs": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "required": ["source"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "type": "string", "description": "Source key from module.json sources list." },
+          "location": { "type": ["string", "null"], "description": "Chapter/section, e.g. 'ch1'." }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["mapped", "expanded", "reviewed", "published"],
+      "default": "mapped"
+    }
+  }
+}

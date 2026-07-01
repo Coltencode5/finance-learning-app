@@ -1,0 +1,821 @@
+[
+  {
+    "id": "private-credit.z1.1",
+    "local_id": "Z1.1",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Is Private Credit?",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Privately negotiated, non-publicly-traded debt extended directly to companies by asset managers rather than banks or bond markets, generally held to maturity (or through a workout) for its contractual income.",
+    "explainer_covers": [
+      "The simple model: originate a loan, earn the coupon and fees, get repaid (or restructure) — return is contractual income, not capital appreciation.",
+      "Private credit vs. private equity: a lender's fixed, senior, downside-protected claim vs. an owner's residual, unlimited-upside stake — two sides of the same deal.",
+      "Private credit vs. public credit (broadly syndicated loans, high-yield bonds): bilateral and illiquid vs. rated, traded, and liquid.",
+      "The umbrella of strategies (direct lending → mezzanine → distressed → specialty) as one spectrum by seniority and risk.",
+      "Why the asset class exists at all: a structural lending gap left by banks (Z1.2)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, Z2.1 (the strategy spectrum), `★ G29` Leverage, `★ G6` GP / `★ G7` LP, Z5.14 (evolution), and across the aisle: PE Z1.1 (*the equity counterpart*), PE Z2.21 (LBO — the deal private credit most often funds).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.2",
+    "local_id": "Z1.2",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "Why Private Credit Exists: Bank Retrenchment & Disintermediation",
+    "tag": "global",
+    "global_id": "G63",
+    "quick_definition": "The post-2008 regulatory and structural retreat of banks from middle-market and leveraged lending, which handed that lending to non-bank asset managers.",
+    "explainer_covers": [
+      "The drivers: Basel III capital rules, Dodd-Frank, the Leveraged Lending Guidance, and post-crisis bank risk aversion.",
+      "Disintermediation: lending moving from regulated deposit-funded balance sheets to fund-funded asset managers.",
+      "Why this is structural, not cyclical — and the systemic-risk debate it raises (regulators now watching).",
+      "The supply/demand fit: borrowers needing capital, institutions needing yield."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1, Z1.3, Z1.7 (the market it took share from), Z5.14 (where it's heading), `★ G7` LP (the yield-seeking capital).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.3",
+    "local_id": "Z1.3",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "The Private Credit Asset Class & Its Growth",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The scale, shape, and rapid rise of private credit from a post-GFC niche into a multi-trillion-dollar pillar of institutional portfolios.",
+    "explainer_covers": [
+      "Where it sits among alternatives (alongside PE, real assets, hedge funds).",
+      "The growth story: AUM expansion since 2010 and the move from \"alternative\" to \"core fixed-income substitute.\"",
+      "The capital flywheel: strong relative returns → more LP allocation → more dry powder → competition.",
+      "(Recency flag: the books predate the 2021–2025 surge, the insurance-capital wave, and the \"wall of money\"/spread-compression debate — see Part 9.)"
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.14",
+        "note": null
+      },
+      {
+        "ref": "G17",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2, Z1.4, `★ G17` Dry powder, Z5.7 (the CDLI track record), Z5.14.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.4",
+    "local_id": "Z1.4",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "The Lender Ecosystem & Capital Sources",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The range of who actually lends — credit-focused asset managers, BDCs, insurance/annuity capital, separately managed accounts, and the institutions behind them.",
+    "explainer_covers": [
+      "The manager landscape: standalone credit shops and the credit arms of mega-managers.",
+      "Capital sources: pensions, endowments, sovereign wealth, and especially insurers/annuity writers (the defining modern source).",
+      "Access vehicles: commingled funds, BDCs, SMAs, rated-note feeders, CLO financing.",
+      "The convergence of \"private credit\" and \"asset management\" into one industry."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.9",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.12",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G7` LP, Z1.8 (the vehicles), Z1.9 (BDCs), Z5.4 (fundraising), Z5.12.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.5",
+    "local_id": "Z1.5",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "The Middle Market",
+    "tag": "global",
+    "global_id": "G65",
+    "quick_definition": "The segment of companies — typically split lower, core, and upper by EBITDA — that private credit principally finances.",
+    "explainer_covers": [
+      "Segmentation: lower MM (≈ <$25M EBITDA), core MM (≈ $25–75M), upper MM (≈ $75–100M+); definitions vary by lender.",
+      "Why the middle market is structurally underserved (too big for bank relationship lending, too small for the bond/BSL market).",
+      "How segment choice drives everything: deal size, pricing, leverage, competition, and lender scale.",
+      "The move up-market over time as funds got bigger (and the convergence with syndicated lending at the top)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G24",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1, Z2.2 (direct lending lives here), Z3.2 (sourcing by segment), `★ G24` EBITDA (the unit of measure), Z1.7.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.6",
+    "local_id": "Z1.6",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "Why Borrowers Choose Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The reasons a company takes a private loan over a bank facility or a bond — speed, certainty, confidentiality, flexibility, and a single relationship — and the price it pays for them.",
+    "explainer_covers": [
+      "Speed and certainty of execution (one lender, no syndication/ratings process).",
+      "Confidentiality, structuring flexibility, and a hold-to-maturity relationship partner.",
+      "Certainty in volatile markets (private credit stays open when public markets shut).",
+      "The trade-off: a higher coupon and tighter covenants than a syndicated loan."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (the alternative), Z1.5, Z3.2 (origination), `★ G34` Covenant (the strings attached), Z2.2.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.7",
+    "local_id": "Z1.7",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Private Credit vs. the Broadly Syndicated Loan (BSL) Market",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How a privately-held, bilateral, covenanted loan differs from a rated, widely-distributed, tradable syndicated loan (the Term Loan B market).",
+    "explainer_covers": [
+      "BSL mechanics: arranger banks, credit ratings, hundreds of holders, secondary-market liquidity, mostly cov-lite.",
+      "Private credit's contrast: bilateral or small-club, illiquid, hold-to-maturity, historically tighter covenants.",
+      "Where they compete and converge (jumbo unitranche deals now rival BSL on size; covenant erosion at the top).",
+      "How a borrower (and its sponsor) chooses between them."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z2.16",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.6, Z2.2, `★ G34` Covenant, Z2.16 (structured credit / CLOs sit in the BSL plumbing), Z5.8 (benchmarking against loan indices).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.8",
+    "local_id": "Z1.8",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Fund Vehicles & Structures in Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The legal wrappers used to hold private loans — closed-end drawdown funds, evergreen/perpetual funds, BDCs, SMAs, and rated structures.",
+    "explainer_covers": [
+      "Closed-end drawdown funds (the PE-style 10-year vehicle) vs. open-end/evergreen perpetual funds.",
+      "BDCs (Z1.9) and SMAs (large-LP custom mandates).",
+      "Rated-note feeders and insurance-dedicated vehicles; CLOs as a financing technology for a loan book.",
+      "Why the perpetual/evergreen structure fits an income product better than PE's finite life — and powers the private-wealth channel."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z5.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.9",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.12",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G20` LPA, Z1.9, Z5.1 (formation), Z5.12 (BDC structure), PE Z5.1 (the drawdown-fund template it borrows).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.9",
+    "local_id": "Z1.9",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Business Development Companies (BDCs)",
+    "tag": "global",
+    "global_id": "G64",
+    "quick_definition": "A U.S.-regulated, tax-advantaged vehicle purpose-built to lend to private middle-market companies and pass its income through to shareholders.",
+    "explainer_covers": [
+      "The legal basis (Investment Company Act of 1940, as amended) and RIC tax pass-through (distribute ≥90% of income, avoid entity tax).",
+      "The ≥70% \"qualifying assets\" rule (private/thinly-traded U.S. companies).",
+      "The three flavors: publicly-traded BDCs, non-traded (perpetual) BDCs, and private BDCs.",
+      "Externally managed (most) vs. internally managed; the wealth-channel role of non-traded BDCs."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.10",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.12",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.10 (its rules), Z1.8, Z4.11 (its fair-value duty), Z5.12 (its economics), `★ G7` LP / retail access.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.10",
+    "local_id": "Z1.10",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "BDC Regulation, Leverage & Asset Coverage",
+    "tag": "global",
+    "global_id": "G67",
+    "quick_definition": "The regulatory frame governing a BDC's borrowing, distributions, and valuation — most importantly the asset-coverage (leverage) limit.",
+    "explainer_covers": [
+      "Asset coverage: the move from 200% (1:1 debt/equity) to 150% (2:1) under the Small Business Credit Availability Act (2018), and what doubling allowable leverage did to returns and risk.",
+      "The RIC distribution mandate and its cash-flow implications.",
+      "Mandatory quarterly fair-value reporting and board valuation duties.",
+      "How fund-level leverage (subscription lines, asset facilities) lifts a single-digit asset yield to a double-digit equity return."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.9",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.11",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.9, Z5.3 (fund leverage deep), `★ G29` Leverage, Z4.11 (valuation), Z5.13 (risk).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.11",
+    "local_id": "Z1.11",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 11,
+    "title": "Sponsored vs. Non-Sponsored Lending",
+    "tag": "global",
+    "global_id": "G66",
+    "quick_definition": "Whether a loan backs a private-equity-owned company (\"sponsored\") or is made directly to an independently-owned business (\"non-sponsored\").",
+    "explainer_covers": [
+      "Sponsored: relationship-driven repeat deal flow, a professional equity owner beneath the debt, an equity cushion, and reliance on the sponsor's diligence.",
+      "Non-sponsored (direct-to-borrower): higher origination cost, more diligence to do yourself, often higher pricing and stronger terms, but harder to source at scale.",
+      "How the split shapes sourcing, underwriting depth, pricing, and the lender–owner relationship."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.18",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.2 (sourcing channels), Z3.3 (diligence reliance), Z3.18 (sponsor doc leverage), PE Z1.3 (the sponsor is a PE GP), Z5.9 (a manager's origination edge).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.12",
+    "local_id": "Z1.12",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 12,
+    "title": "How Private Lenders Make Money",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The components of a private-credit return — interest spread, upfront/OID, call protection, amendment fees — amplified by fund-level leverage.",
+    "explainer_covers": [
+      "The income stack: spread over the reference rate, OID, arrangement/upfront fees, and ongoing amendment/consent fees.",
+      "Call protection capturing yield when loans repay early.",
+      "The leverage multiplier (fund-level borrowing on top of a senior loan book).",
+      "Why this is a yield business, not a capital-gains business — and what that does to the return profile."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.14",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      },
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G67",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G70` Spread, `★ G71` OID, `★ G72` Call protection, `★ G67` Fund leverage, Z1.14, Z5.6 (yield metrics).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.13",
+    "local_id": "Z1.13",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 13,
+    "title": "Seniority, Security & the Capital Structure ★ GLOBAL (part of G78)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where private credit sits in a borrower's capital stack — usually at the top, first-lien and secured — and why that position is the heart of its downside protection.",
+    "explainer_covers": [
+      "The capital structure from senior secured down to common equity; private credit's first-lien dominance.",
+      "Security and collateral as downside protection; the equity cushion beneath the loan.",
+      "How seniority maps directly to recovery in a default (the lender's safety net).",
+      "The contrast with the sponsor's residual equity at the bottom of the stack."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z2.4",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G33",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G33` Debt stack (the PE-map node it deepens from the lender's side), `★ G78` Security/lien priority, Z2.4 (second lien), Z4.8 (recovery), `★ G29` Leverage.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.14",
+    "local_id": "Z1.14",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 14,
+    "title": "Floating Rate & the Income Profile",
+    "tag": "global",
+    "global_id": "G69",
+    "quick_definition": "Private credit's predominantly floating-rate structure — a spread over a base rate (SOFR) with a floor — which makes its income rise as interest rates rise.",
+    "explainer_covers": [
+      "The mechanic: reference rate + fixed spread, often with a base-rate floor.",
+      "The LIBOR→SOFR transition and what changed.",
+      "Why floating rate protects lenders (and stresses borrowers) when rates climb — the 2022–2024 rate cycle as the live case.",
+      "The income-led, current-pay return profile this creates."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z3.10",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.15",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.6",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G70` Spread, Z3.10 (rates & floors), Z1.15, Z5.6 (yield), Z5.13 (rate risk), `★ G58` Yield.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.15",
+    "local_id": "Z1.15",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 15,
+    "title": "Risk & Return Positioning of Private Credit",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where private credit sits on the risk/return map — higher yield than public credit for bearing illiquidity and complexity, with historically low losses thanks to seniority.",
+    "explainer_covers": [
+      "The illiquidity premium and complexity premium over public credit.",
+      "Historically low realized loss rates in senior direct lending (seniority + security + covenants + workout effort).",
+      "The position relative to high-yield bonds, leveraged loans, and equity.",
+      "Where the real risk hides: leverage-on-leverage, vintage/cycle timing, and spread compression."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.16",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` Yield, `★ G60` Loss rate, `★ G61` Recovery, Z1.16, Z5.13 (risk), Z5.7 (the CDLI evidence).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.16",
+    "local_id": "Z1.16",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 16,
+    "title": "The Private Credit J-curve (or the lack of one)  (deepens ★ G4)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Private credit's near-absent J-curve — because loans pay current income from day one, an LP's cash flow turns positive far faster than in PE.",
+    "explainer_covers": [
+      "Why the PE J-curve (★ G4) is deep and slow but the credit one is shallow and short: income arrives immediately, there's no multi-year \"blind period\" of fees-only.",
+      "Current yield vs. capital appreciation as the source of return.",
+      "How this changes LP cash-flow planning, pacing, and the appeal to income-seeking investors.",
+      "This is one of the highest-value cross-links in the app: same J-curve node, opposite shape, told from the credit side."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.18",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.5",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G15",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G4` J-curve (*the canonical node — credit adds the \"flat J-curve\" contrast*), `★ G15` Capital call, `★ G58` Yield, Z5.5 (performance), PE Z1.18 (the equity-side J-curve).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.17",
+    "local_id": "Z1.17",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 17,
+    "title": "Key Players & Roles Inside a Credit Fund",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The functional teams that run a private-credit platform — origination, underwriting/credit, portfolio management, capital markets, and workout — coordinated by a credit committee.",
+    "explainer_covers": [
+      "Origination/coverage (sourcing), credit/underwriting (analysis and the credit memo), portfolio management (monitoring), capital markets (syndication/financing), and the workout team.",
+      "The investment/credit committee as the decision body (the credit analogue of PE's IC).",
+      "Why workout capability is a distinguishing competence, not an afterthought."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z3.3",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.1",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z4.5",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.9",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PE Z1.3 (the structural parallel), Z3.3 (underwriting), Z4.1 (monitoring), Z4.5 (workouts), Z5.9 (what LPs diligence).",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "private-credit.z1.18",
+    "local_id": "Z1.18",
+    "module": "private-credit",
+    "zone": 1,
+    "ordinal": 18,
+    "title": "The GP–LP Relationship in Private Credit  (deepens ★ G6/★ G7)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The manager–investor bond in credit — structurally like PE's, but reshaped by current income, lower fees, fund leverage, and a heavy insurance-capital presence.",
+    "explainer_covers": [
+      "The fiduciary and reporting relationship (shared with PE) but with income distributions rather than back-ended carry.",
+      "Lower fee load, incentive fees on income, and the alignment questions fund-level leverage raises.",
+      "SMAs and the rise of the insurer-as-anchor-LP (and even owner-of-the-manager) model.",
+      "Transparency expectations on marks, loss rates, and leverage."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-equity.z1.20",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.2",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G6",
+        "note": null
+      },
+      {
+        "ref": "G7",
+        "note": null
+      },
+      {
+        "ref": "G20",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G6` GP / `★ G7` LP / `★ G20` LPA (*shared nodes — credit nuance added here*), Z5.2 (fund economics), Z5.4 (the insurance LP), PE Z1.20 (the equity-side relationship). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

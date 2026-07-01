@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "edge.schema.json",
+  "title": "GraphEdge",
+  "description": "One edge in graph/graph.json. graph.json is a GENERATED artifact — built by pipeline/build/build_graph.py from node connects_to fields and global home assignments. It is never hand-edited; hand edits are overwritten on every build.",
+  "type": "object",
+  "required": ["from", "to", "kind"],
+  "additionalProperties": false,
+  "properties": {
+    "from": { "type": "string", "description": "Node ID or global ID." },
+    "to": { "type": "string", "description": "Node ID or global ID." },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "references",
+        "home_of",
+        "disambiguates",
+        "prerequisite"
+      ],
+      "description": "references: node → node/global link from connects_to. home_of: zone node → the global whose deep explainer it hosts. disambiguates: 'this vs. that' pair. prerequisite: derived learning-order edge (topological, Milestone 3+)."
+    },
+    "note": { "type": ["string", "null"] }
+  }
+}
