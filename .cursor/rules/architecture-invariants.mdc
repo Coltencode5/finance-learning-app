@@ -1,0 +1,31 @@
+---
+description: Core architectural invariants for the finance-graph repo — always enforced
+alwaysApply: true
+---
+
+# Architecture invariants — do not violate without an explicit ADR
+
+1. **`content/` (JSON) is the only editable source of truth.**
+   Never edit files under `legacy/markdown/` — they are frozen reference only.
+
+2. **`graph/` is entirely generated.** Never hand-edit `graph/graph.json` or any
+   file under `graph/`. Regenerate via `pipeline/build/build_graph.py`.
+   `graph/prerequisites.json` is experimental — never wire it into the app or
+   treat it as canonical without an explicit milestone decision.
+
+3. **Global IDs (G-numbers) are append-only.** Never renumber or reuse an
+   existing G-id. A new module's globals must start at exactly one higher
+   than the current max in `content/glossary/globals.json`.
+
+4. **The five-zone template is locked** (see `docs/five_zone_template.md`).
+   Every module has exactly five zones. Do not add, merge, or rename a zone's
+   structural role without flagging it as a proposed ADR first.
+
+5. **Before ending any task that touched `content/` or `schemas/`, run:**
+   `python pipeline/validate/validate.py --strict`
+   If it fails, do not report the task as complete — surface the failure.
+
+6. **Ambiguous judgment calls are flagged, not silently decided.** If it's
+   unclear which node should "own" a concept, or how a reference should
+   resolve, add an entry to `docs/MIGRATION_DEFECTS.md` rather than guessing
+   quietly.

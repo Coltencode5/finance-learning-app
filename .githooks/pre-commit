@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Running content validator before commit..."
+python pipeline/validate/validate.py --strict
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "COMMIT BLOCKED: validation failed. See output above."
+  exit 1
+fi
