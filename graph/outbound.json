@@ -160,9 +160,37 @@
     "G233": [],
     "G234": [],
     "G235": [],
+    "G236": [],
+    "G237": [],
+    "G238": [],
+    "G239": [],
     "G24": [],
+    "G240": [],
+    "G241": [],
+    "G242": [],
+    "G243": [],
+    "G244": [],
+    "G245": [],
+    "G246": [],
+    "G247": [],
+    "G248": [],
+    "G249": [],
     "G25": [],
+    "G250": [],
+    "G251": [],
+    "G252": [],
+    "G253": [],
+    "G254": [],
+    "G255": [],
+    "G256": [],
+    "G257": [],
+    "G258": [],
+    "G259": [],
     "G26": [],
+    "G260": [],
+    "G261": [],
+    "G262": [],
+    "G263": [],
     "G27": [],
     "G28": [],
     "G29": [],
@@ -7753,6 +7781,2098 @@
       },
       {
         "to": "private-credit.z5.14",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.1": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.12",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.10": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G241",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G253",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.11": [
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.12": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.2": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G243",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.3": [
+      {
+        "to": "G236",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G238",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G241",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.5",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.4": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.5": [
+      {
+        "to": "G1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G219",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G253",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G58",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.6": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G232",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G238",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G241",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "hedge-funds.z3.7",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "private-equity.z2.21",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "private-equity.z3.12",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "private-equity.z5.21",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.7": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G238",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "hedge-funds.z2.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.8": [
+      {
+        "to": "G236",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z1.9": [
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G241",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.1": [
+      {
+        "to": "G243",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G243",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G246",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.7",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.10": [
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.11": [
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.12": [
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.2": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G243",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G244",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.10",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.3": [
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.4": [
+      {
+        "to": "G243",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G246",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.5": [
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G69",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.6": [
+      {
+        "to": "G219",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G27",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G91",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.7": [
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G253",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.8": [
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z2.9": [
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.11",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.1": [
+      {
+        "to": "G243",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G253",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.2": [
+      {
+        "to": "G241",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G253",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.10",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.3": [
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G246",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.4": [
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.12",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.5",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.5": [
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.10",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.6": [
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.7": [
+      {
+        "to": "G239",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G240",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G245",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z3.8": [
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.10",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.5",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.1": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G29",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G70",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.10": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G219",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G232",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G27",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G29",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G69",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G70",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G77",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G91",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.2": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.11",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.6",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.3": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.9",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.4": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.5": [
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G238",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G241",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z1.10",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.6": [
+      {
+        "to": "G219",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G257",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.7": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G219",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G27",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G91",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.8": [
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G70",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G77",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z4.9": [
+      {
+        "to": "G244",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G246",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.1": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G250",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.2": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G249",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.3": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G242",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.6",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.4": [
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G77",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.6",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.6",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.5": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G261",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.8",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.6": [
+      {
+        "to": "G246",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G251",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G252",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G262",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.6",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.9",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.9",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.7": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G247",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G248",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G255",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G258",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.8": [
+      {
+        "to": "G129",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G260",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.5",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "macro-economics.z5.9": [
+      {
+        "to": "G238",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G246",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G254",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G256",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G263",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.11",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z2.9",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.7",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z3.8",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.4",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z4.9",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.6",
         "kind": "references",
         "note": null
       }

@@ -26,6 +26,11 @@
       "private-equity": 31,
       "private-credit": 18
     },
+    "macro-economics": {
+      "global": 307,
+      "private-equity": 3,
+      "hedge-funds": 2
+    },
     "private-credit": {
       "global": 181,
       "private-equity": 27

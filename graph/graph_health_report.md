@@ -1,26 +1,26 @@
 # Graph Health Report
 
-Generated: 2026-07-01 by `pipeline/build/graph_health.py`
+Generated: 2026-07-02 by `pipeline/build/graph_health.py`
 
 ## Summary
 
 | Metric | Value |
 |---|---|
-| Globals | 235 |
-| Module zone nodes | 478 |
-| Total edges | 3357 |
-| Cross-module reference edges | 2045 |
+| Globals | 263 |
+| Module zone nodes | 529 |
+| Total edges | 3755 |
+| Cross-module reference edges | 2357 |
 
 ### Edge kinds
 
 - **disambiguates**: 2
-- **home_of**: 266
-- **references**: 3089
+- **home_of**: 294
+- **references**: 3459
 
 ### Inbound degree distribution (all indexed ids)
 
 - min: 0
-- max: 44
+- max: 46
 - mean: 4.7
 
 ### Outbound degree distribution
@@ -33,16 +33,16 @@ Generated: 2026-07-01 by `pipeline/build/graph_health.py`
 
 | Rank | ID | Term | Inbound refs |
 |---|---|---|---|
-| 1 | G29 | Leverage | 44 |
-| 2 | G1 | IRR (Internal Rate of Return) | 24 |
-| 3 | G9 | "2 and 20" | 23 |
-| 4 | G124 | Second-level thinking | 22 |
-| 5 | G33 | Debt stack / Funding instruments | 20 |
-| 6 | G125 | Market efficiency (and its limits) | 19 |
-| 7 | G127 | Market cycles & the pendulum | 19 |
+| 1 | G29 | Leverage | 46 |
+| 2 | G127 | Market cycles & the pendulum | 26 |
+| 3 | G1 | IRR (Internal Rate of Return) | 25 |
+| 4 | G9 | "2 and 20" | 23 |
+| 5 | G124 | Second-level thinking | 22 |
+| 6 | G33 | Debt stack / Funding instruments | 20 |
+| 7 | G125 | Market efficiency (and its limits) | 19 |
 | 8 | G156 | Manager selection (the allocator's manager due diligence) | 19 |
-| 9 | G61 | Recovery rate / Loss Given Default (LGD) | 19 |
-| 10 | G7 | LP (Limited Partner) | 19 |
+| 9 | G247 | The federal funds rate (the policy rate) (Z2.5) | 19 |
+| 10 | G4 | J-curve | 19 |
 
 ## Disambiguation edges (canonical metadata only)
 
@@ -69,6 +69,7 @@ Count: 2
 - **equity-research** → global (181), asset-management (24), investment-banking (24), hedge-funds (19)
 - **hedge-funds** → global (181), private-equity (12), investment-banking (9), private-credit (2)
 - **investment-banking** → global (120), private-equity (31), private-credit (18)
+- **macro-economics** → global (307), private-equity (3), hedge-funds (2)
 - **private-credit** → global (181), private-equity (27)
 - **private-equity** → global (298)
 - **real-estate** → global (161), private-equity (17), investment-banking (2), private-credit (1)

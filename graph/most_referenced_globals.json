@@ -5,16 +5,23 @@
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 44,
+      "inbound_references": 46,
       "home_of_edges": 1,
-      "total_inbound": 44
+      "total_inbound": 46
+    },
+    {
+      "id": "G127",
+      "term": "Market cycles & the pendulum",
+      "inbound_references": 26,
+      "home_of_edges": 3,
+      "total_inbound": 26
     },
     {
       "id": "G1",
       "term": "IRR (Internal Rate of Return)",
-      "inbound_references": 24,
+      "inbound_references": 25,
       "home_of_edges": 1,
-      "total_inbound": 24
+      "total_inbound": 25
     },
     {
       "id": "G9",
@@ -45,17 +52,24 @@
       "total_inbound": 19
     },
     {
-      "id": "G127",
-      "term": "Market cycles & the pendulum",
-      "inbound_references": 19,
-      "home_of_edges": 3,
-      "total_inbound": 19
-    },
-    {
       "id": "G156",
       "term": "Manager selection (the allocator's manager due diligence)",
       "inbound_references": 19,
       "home_of_edges": 2,
+      "total_inbound": 19
+    },
+    {
+      "id": "G247",
+      "term": "The federal funds rate (the policy rate) (Z2.5)",
+      "inbound_references": 19,
+      "home_of_edges": 1,
+      "total_inbound": 19
+    },
+    {
+      "id": "G4",
+      "term": "J-curve",
+      "inbound_references": 19,
+      "home_of_edges": 1,
       "total_inbound": 19
     },
     {
@@ -94,6 +108,20 @@
       "total_inbound": 18
     },
     {
+      "id": "G252",
+      "term": "Inflation & deflation (Z3.1)",
+      "inbound_references": 18,
+      "home_of_edges": 1,
+      "total_inbound": 18
+    },
+    {
+      "id": "G256",
+      "term": "The debt cycle (short-term & long-term / Big Debt Cycle) (Z4.2)",
+      "inbound_references": 18,
+      "home_of_edges": 1,
+      "total_inbound": 18
+    },
+    {
       "id": "G143",
       "term": "Asset allocation (strategic vs. tactical)",
       "inbound_references": 17,
@@ -115,18 +143,18 @@
       "total_inbound": 17
     },
     {
-      "id": "G4",
-      "term": "J-curve",
-      "inbound_references": 17,
-      "home_of_edges": 1,
-      "total_inbound": 17
-    },
-    {
       "id": "G87",
       "term": "The valuation toolkit / \"the three methodologies\"",
       "inbound_references": 17,
       "home_of_edges": 2,
       "total_inbound": 17
+    },
+    {
+      "id": "G219",
+      "term": "The capitalization rate (cap rate) & direct capitalization",
+      "inbound_references": 16,
+      "home_of_edges": 1,
+      "total_inbound": 16
     },
     {
       "id": "G28",
@@ -138,6 +166,20 @@
     {
       "id": "G197",
       "term": "How research is paid for (the bundle, soft dollars & MiFID II unbundling)",
+      "inbound_references": 15,
+      "home_of_edges": 1,
+      "total_inbound": 15
+    },
+    {
+      "id": "G27",
+      "term": "Valuation multiples",
+      "inbound_references": 15,
+      "home_of_edges": 1,
+      "total_inbound": 15
+    },
+    {
+      "id": "G58",
+      "term": "Yield",
       "inbound_references": 15,
       "home_of_edges": 1,
       "total_inbound": 15
@@ -185,6 +227,27 @@
       "total_inbound": 14
     },
     {
+      "id": "G245",
+      "term": "Monetary policy (Z2.3)",
+      "inbound_references": 14,
+      "home_of_edges": 1,
+      "total_inbound": 14
+    },
+    {
+      "id": "G254",
+      "term": "The Phillips curve (the inflation–unemployment tradeoff) (Z3.4)",
+      "inbound_references": 14,
+      "home_of_edges": 1,
+      "total_inbound": 14
+    },
+    {
+      "id": "G255",
+      "term": "The credit cycle (Z4.1)",
+      "inbound_references": 14,
+      "home_of_edges": 1,
+      "total_inbound": 14
+    },
+    {
       "id": "G34",
       "term": "Covenant",
       "inbound_references": 14,
@@ -206,8 +269,8 @@
       "total_inbound": 14
     },
     {
-      "id": "G58",
-      "term": "Yield",
+      "id": "G69",
+      "term": "Floating rate / Reference rate (SOFR)",
       "inbound_references": 14,
       "home_of_edges": 1,
       "total_inbound": 14
@@ -234,6 +297,13 @@
       "total_inbound": 13
     },
     {
+      "id": "G129",
+      "term": "Global macro",
+      "inbound_references": 13,
+      "home_of_edges": 1,
+      "total_inbound": 13
+    },
+    {
       "id": "G144",
       "term": "The policy portfolio",
       "inbound_references": 13,
@@ -250,6 +320,20 @@
     {
       "id": "G160",
       "term": "Goals-based investing & bucketing",
+      "inbound_references": 13,
+      "home_of_edges": 1,
+      "total_inbound": 13
+    },
+    {
+      "id": "G248",
+      "term": "The risk-free rate & the term structure of interest rates (Z2.6)",
+      "inbound_references": 13,
+      "home_of_edges": 1,
+      "total_inbound": 13
+    },
+    {
+      "id": "G263",
+      "term": "Financial crises (the taxonomy & contagion) (Z5.6)",
       "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
@@ -353,8 +437,29 @@
       "total_inbound": 12
     },
     {
-      "id": "G27",
-      "term": "Valuation multiples",
+      "id": "G251",
+      "term": "Quantitative easing & quantitative tightening (Z2.9)",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G258",
+      "term": "Financial conditions (the rate & credit environment) (Z4.6)",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G260",
+      "term": "Exchange rates & currencies (Z5.1)",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G262",
+      "term": "Sovereign debt & sovereign risk (Z5.4)",
       "inbound_references": 12,
       "home_of_edges": 1,
       "total_inbound": 12
@@ -369,13 +474,6 @@
     {
       "id": "G51",
       "term": "Corporate governance",
-      "inbound_references": 12,
-      "home_of_edges": 1,
-      "total_inbound": 12
-    },
-    {
-      "id": "G69",
-      "term": "Floating rate / Reference rate (SOFR)",
       "inbound_references": 12,
       "home_of_edges": 1,
       "total_inbound": 12
@@ -437,8 +535,22 @@
       "total_inbound": 11
     },
     {
-      "id": "G219",
-      "term": "The capitalization rate (cap rate) & direct capitalization",
+      "id": "G237",
+      "term": "The business cycle (Z1.6)",
+      "inbound_references": 11,
+      "home_of_edges": 1,
+      "total_inbound": 11
+    },
+    {
+      "id": "G250",
+      "term": "The monetary transmission mechanism (Z2.8)",
+      "inbound_references": 11,
+      "home_of_edges": 1,
+      "total_inbound": 11
+    },
+    {
+      "id": "G70",
+      "term": "Spread / Credit margin",
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 11
@@ -521,6 +633,27 @@
       "total_inbound": 10
     },
     {
+      "id": "G236",
+      "term": "GDP — gross domestic product (Z1.3)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G239",
+      "term": "Aggregate demand, aggregate supply & the output gap (Z1.8)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G249",
+      "term": "The real vs. nominal interest rate (the Fisher relation) (Z2.7)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
       "id": "G3",
       "term": "DPI / RVPI / TVPI",
       "inbound_references": 10,
@@ -530,6 +663,13 @@
     {
       "id": "G62",
       "term": "Default rate / Probability of Default (PD)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G77",
+      "term": "Internal credit rating / Risk rating",
       "inbound_references": 10,
       "home_of_edges": 1,
       "total_inbound": 10
@@ -619,6 +759,20 @@
       "total_inbound": 9
     },
     {
+      "id": "G232",
+      "term": "The real estate cycle",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
+      "id": "G242",
+      "term": "Fiscal policy (deficits, debt & the multiplier) (Z1.11)",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
       "id": "G32",
       "term": "Sources & uses",
       "inbound_references": 9,
@@ -663,6 +817,13 @@
     {
       "id": "G72",
       "term": "Call protection / Prepayment economics",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
+      "id": "G91",
+      "term": "WACC (Weighted Average Cost of Capital)",
       "inbound_references": 9,
       "home_of_edges": 1,
       "total_inbound": 9
@@ -787,13 +948,6 @@
       "total_inbound": 8
     },
     {
-      "id": "G70",
-      "term": "Spread / Credit margin",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
       "id": "G75",
       "term": "Loan-to-Value (LTV)",
       "inbound_references": 8,
@@ -906,8 +1060,15 @@
       "total_inbound": 7
     },
     {
-      "id": "G232",
-      "term": "The real estate cycle",
+      "id": "G240",
+      "term": "Unemployment & the labor market (Z1.9)",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
+      "id": "G244",
+      "term": "The central bank & the Federal Reserve (Z2.2)",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
@@ -946,13 +1107,6 @@
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 8
-    },
-    {
-      "id": "G77",
-      "term": "Internal credit rating / Risk rating",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 7
     },
     {
       "id": "G81",
@@ -1074,6 +1228,41 @@
       "total_inbound": 6
     },
     {
+      "id": "G241",
+      "term": "Economic indicators (leading, coincident, lagging) (Z1.10)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G243",
+      "term": "Money (and fiat currency) (Z2.1)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G246",
+      "term": "The money supply & money creation (Z2.4)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G257",
+      "term": "The yield curve & its shape (the inversion signal) (Z4.5)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G261",
+      "term": "The balance of payments (trade, current & capital accounts) (Z5.3)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G43",
       "term": "Drag-along / Tag-along",
       "inbound_references": 6,
@@ -1083,13 +1272,6 @@
     {
       "id": "G55",
       "term": "Secondary buyout (SBO)",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
-      "id": "G91",
-      "term": "WACC (Weighted Average Cost of Capital)",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1244,6 +1426,27 @@
     {
       "id": "G224",
       "term": "Open-end vs. closed-end real estate funds",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G238",
+      "term": "Recession & depression (Z1.7)",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G253",
+      "term": "The price indices (CPI, PCE, PPI) (Z3.2)",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G259",
+      "term": "The discount-rate channel & the equity risk premium (CAPM bridge) (Z4.7)",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1466,13 +1669,6 @@
       "total_inbound": 3
     },
     {
-      "id": "G129",
-      "term": "Global macro",
-      "inbound_references": 3,
-      "home_of_edges": 1,
-      "total_inbound": 3
-    },
-    {
       "id": "G170",
       "term": "The 4% rule / safe withdrawal rate",
       "inbound_references": 3,
@@ -1652,16 +1848,23 @@
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 44,
+      "inbound_references": 46,
       "home_of_edges": 1,
-      "total_inbound": 44
+      "total_inbound": 46
+    },
+    {
+      "id": "G127",
+      "term": "Market cycles & the pendulum",
+      "inbound_references": 26,
+      "home_of_edges": 3,
+      "total_inbound": 26
     },
     {
       "id": "G1",
       "term": "IRR (Internal Rate of Return)",
-      "inbound_references": 24,
+      "inbound_references": 25,
       "home_of_edges": 1,
-      "total_inbound": 24
+      "total_inbound": 25
     },
     {
       "id": "G9",
@@ -1692,13 +1895,6 @@
       "total_inbound": 19
     },
     {
-      "id": "G127",
-      "term": "Market cycles & the pendulum",
-      "inbound_references": 19,
-      "home_of_edges": 3,
-      "total_inbound": 19
-    },
-    {
       "id": "G156",
       "term": "Manager selection (the allocator's manager due diligence)",
       "inbound_references": 19,
@@ -1706,15 +1902,15 @@
       "total_inbound": 19
     },
     {
-      "id": "G61",
-      "term": "Recovery rate / Loss Given Default (LGD)",
+      "id": "G247",
+      "term": "The federal funds rate (the policy rate) (Z2.5)",
       "inbound_references": 19,
       "home_of_edges": 1,
       "total_inbound": 19
     },
     {
-      "id": "G7",
-      "term": "LP (Limited Partner)",
+      "id": "G4",
+      "term": "J-curve",
       "inbound_references": 19,
       "home_of_edges": 1,
       "total_inbound": 19
