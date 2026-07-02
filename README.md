@@ -2,7 +2,7 @@
 
 The content platform for a finance education app built on a shared knowledge
 graph: 9 modules, 235 global glossary concepts, 478 zone learning nodes,
-3,310 graph edges — all as validated, structured JSON.
+3,357 graph edges — all as validated, structured JSON.
 
 ## The one rule
 
@@ -19,10 +19,10 @@ content/
   glossary/         globals.json — the shared glossary (G1–G235), the app's spine
   modules/{slug}/   module.json + zones/z1..z5.json per module
   activities/       learning activities (empty in V0; schema is ready)
-graph/              graph.json — generated edges (do not edit)
+graph/              graph.json + derived indexes (do not edit; see docs/GRAPH_HEALTH.md)
 pipeline/
   migrate/          parse_markdown.py — one-time legacy migration (done)
-  build/            build_graph.py (+ render_markdown.py in M2)
+  build/            build_graph.py, render_markdown.py
   validate/         validate.py — the correctness gate
   prompts/          reusable Cursor/LLM prompts per milestone
 docs/               architecture, five-zone template, ADRs, defect register
@@ -34,22 +34,24 @@ app/                Next.js app (Milestone 4)
 
 ```bash
 python3 pipeline/validate/validate.py            # must pass before any commit
-python3 pipeline/build/build_graph.py            # regenerate graph.json
+python3 pipeline/validate/validate.py --strict   # content-only strict gate
+python3 pipeline/build/build_graph.py            # regenerate graph + indexes + health report
 python3 pipeline/migrate/parse_markdown.py       # re-run migration (idempotent;
                                                  # only until M2 sign-off)
 ```
 
+See `docs/GRAPH_HEALTH.md` for generated graph artifacts and how to interpret
+orphan/low-reference reports.
+
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 1)
+## Current state (post-Milestone 2)
 
 - Migration complete: all 9 legacy modules parsed to canonical JSON.
-- Validation: **11 known errors** — all genuine defects in the legacy content
-  (dangling cross-references), catalogued with proposed fixes in
-  `docs/MIGRATION_DEFECTS.md`. Resolving them is Milestone 2.
-- 46 warnings: 1 intentional term collision (IPO dual-lens) + 45 globals
-  awaiting explicit host-node assignment (see defect register, section C).
+- Validation: **0 errors, 0 warnings** (strict content gate).
+- Graph health indexes and reports generated under `graph/` (Milestone 3).
+- See `docs/MIGRATION_DEFECTS.md` for resolved migration defects.
 
 ## Contributing content
 

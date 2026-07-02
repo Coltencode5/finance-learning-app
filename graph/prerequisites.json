@@ -1,0 +1,6411 @@
+{
+  "status": "experimental",
+  "generated_by": "pipeline/build/derive_prerequisites.py",
+  "warning": "NOT canonical. Suggestions only — for future learning-path design. Do not enforce as course order or write back to content/.",
+  "method": "Per module: (1) immediate predecessor in zone+ordinal order; (2) same-module connects_to targets that appear earlier in that order.",
+  "modules": {
+    "asset-management": [
+      {
+        "node": "asset-management.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z4.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z4.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "asset-management.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "asset-management.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "asset-management.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "asset-management.z4.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "equity-research": [
+      {
+        "node": "equity-research.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z4.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z4.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z3.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z4.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z4.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z5.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z4.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "equity-research.z5.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "equity-research.z5.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "equity-research.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "equity-research.z5.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "hedge-funds": [
+      {
+        "node": "hedge-funds.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z2.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z2.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "hedge-funds.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z5.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "hedge-funds.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "hedge-funds.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "hedge-funds.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "investment-banking": [
+      {
+        "node": "investment-banking.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z1.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z1.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z2.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z2.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.15",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z3.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z3.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z2.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z4.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z2.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z3.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z4.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z5.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "investment-banking.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "investment-banking.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "investment-banking.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "investment-banking.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "private-credit": [
+      {
+        "node": "private-credit.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z1.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z1.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z1.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z2.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z2.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z3.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z3.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z3.15",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z3.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z3.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z3.18",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z4.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z4.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z4.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z4.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z4.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z4.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z4.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.17",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z4.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.15",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z5.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-credit.z5.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-credit.z5.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-credit.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-credit.z2.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "private-equity": [
+      {
+        "node": "private-equity.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.19",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z1.20",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.19",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z1.20",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.19",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.20",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.19",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.21",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.20",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.22",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.21",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.23",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.22",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.24",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.23",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.25",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.24",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.26",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.25",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z2.27",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.26",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z2.27",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.25",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.23",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.21",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.25",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.26",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z3.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.26",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z3.19",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z3.19",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.14",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.19",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.23",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.23",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.25",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z4.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z2.25",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z4.13",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z4.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z4.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.13",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.14",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.13",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z5.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.15",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.14",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.16",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.15",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.17",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.16",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.18",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.17",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.19",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.18",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.15",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.20",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.19",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.21",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.20",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z5.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "private-equity.z5.22",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "private-equity.z5.21",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "private-equity.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "private-equity.z5.20",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
+    "real-estate": [
+      {
+        "node": "real-estate.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "real-estate.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "real-estate.z3.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "real-estate.z3.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "real-estate.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "real-estate.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "real-estate.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      }
+    ],
+    "venture-capital": [
+      {
+        "node": "venture-capital.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z3.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z4.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z4.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z4.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z3.10",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z3.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z4.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z4.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "venture-capital.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "venture-capital.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "venture-capital.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "venture-capital.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      }
+    ],
+    "wealth-management": [
+      {
+        "node": "wealth-management.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z1.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z1.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z2.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z1.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "wealth-management.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "wealth-management.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "wealth-management.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ]
+  }
+}

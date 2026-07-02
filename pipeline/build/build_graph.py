@@ -1,25 +1,21 @@
 #!/usr/bin/env python3
-"""Regenerate graph/graph.json from canonical node connects_to and global homes."""
+"""Regenerate graph/graph.json and derived index artifacts from canonical content."""
+from __future__ import annotations
+
 import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-def load_nodes(root: Path) -> list[dict]:
-    nodes = []
-    for mdir in sorted((root / "content/modules").iterdir()):
-        if not mdir.is_dir():
-            continue
-        for zfile in sorted((mdir / "zones").glob("z*.json")):
-            nodes.extend(json.loads(zfile.read_text(encoding="utf-8")))
-    return nodes
+from _load import load_globals, load_nodes, repo_root
 
 
-def build_edges(nodes: list[dict]) -> list[dict]:
+def build_edges(nodes: list[dict], globals_: list[dict]) -> list[dict]:
     edges: list[dict] = []
     seen: set[tuple] = set()
 
-    def add(from_id: str, to_id: str, kind: str, note=None):
+    def add(from_id: str, to_id: str, kind: str, note: str | None = None) -> None:
         key = (from_id, to_id, kind)
         if key in seen:
             return
@@ -35,22 +31,44 @@ def build_edges(nodes: list[dict]) -> list[dict]:
         for gid in n.get("hosts_globals", []):
             add(nid, gid, "home_of", None)
 
+    for g in globals_:
+        for other in g.get("disambiguate_with", []):
+            add(g["id"], other, "disambiguates", None)
+
     edges.sort(key=lambda e: (e["from"], e["kind"], e["to"]))
     return edges
 
 
 def main() -> int:
-    root = Path(__file__).resolve().parents[2]
+    root = repo_root()
     nodes = load_nodes(root)
-    edges = build_edges(nodes)
-    out = {
-        "generated_by": "pipeline/build/build_graph.py",
-        "edge_count": len(edges),
-        "edges": edges,
-    }
-    path = root / "graph/graph.json"
-    path.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"wrote {path}: {len(edges)} edges from {len(nodes)} nodes")
+    globals_ = load_globals(root)
+    edges = build_edges(nodes, globals_)
+
+    graph_path = root / "graph/graph.json"
+    graph_path.write_text(
+        json.dumps(
+            {
+                "generated_by": "pipeline/build/build_graph.py",
+                "edge_count": len(edges),
+                "edges": edges,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"wrote {graph_path}: {len(edges)} edges from {len(nodes)} nodes")
+
+    from build_indexes import build_indexes
+    from derive_prerequisites import derive_prerequisites
+    from graph_health import write_health_report
+
+    build_indexes(root, edges, nodes, globals_)
+    derive_prerequisites(root, nodes, edges)
+    write_health_report(root)
+
     return 0
 
 

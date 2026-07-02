@@ -1,0 +1,57 @@
+{
+  "generated_by": "pipeline/build/build_indexes.py",
+  "description": "Cross-module reference counts: source module → target module.",
+  "dependencies": {
+    "asset-management": {
+      "global": 192,
+      "hedge-funds": 31,
+      "private-equity": 14,
+      "investment-banking": 3,
+      "private-credit": 2
+    },
+    "equity-research": {
+      "global": 181,
+      "asset-management": 24,
+      "investment-banking": 24,
+      "hedge-funds": 19
+    },
+    "hedge-funds": {
+      "global": 181,
+      "private-equity": 12,
+      "investment-banking": 9,
+      "private-credit": 2
+    },
+    "investment-banking": {
+      "global": 120,
+      "private-equity": 31,
+      "private-credit": 18
+    },
+    "private-credit": {
+      "global": 181,
+      "private-equity": 27
+    },
+    "private-equity": {
+      "global": 298
+    },
+    "real-estate": {
+      "global": 161,
+      "private-equity": 17,
+      "investment-banking": 2,
+      "private-credit": 1
+    },
+    "venture-capital": {
+      "global": 152,
+      "private-equity": 33,
+      "equity-research": 5,
+      "investment-banking": 3,
+      "hedge-funds": 1
+    },
+    "wealth-management": {
+      "global": 249,
+      "asset-management": 38,
+      "private-equity": 9,
+      "hedge-funds": 4,
+      "private-credit": 1
+    }
+  }
+}

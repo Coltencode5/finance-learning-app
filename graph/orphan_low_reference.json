@@ -1,0 +1,46 @@
+{
+  "generated_by": "pipeline/build/build_indexes.py",
+  "description": "Nodes with zero graph edges, low-edge nodes, and globals referenced fewer than twice.",
+  "orphan_nodes": [
+    {
+      "id": "real-estate.z5.6",
+      "title": "The Real Estate Career & Where Real Estate Is Heading",
+      "module": "real-estate",
+      "zone": 5,
+      "inbound": 0,
+      "outbound": 0
+    }
+  ],
+  "low_reference_nodes": [
+    {
+      "id": "private-equity.z2.17",
+      "title": "Growth Equity Targets",
+      "module": "private-equity",
+      "zone": 2,
+      "inbound": 0,
+      "outbound": 2,
+      "total_edges": 2
+    },
+    {
+      "id": "venture-capital.z5.6",
+      "title": "The Venture Career & Where VC Is Heading",
+      "module": "venture-capital",
+      "zone": 5,
+      "inbound": 0,
+      "outbound": 2,
+      "total_edges": 2
+    }
+  ],
+  "low_reference_globals": [
+    {
+      "id": "G63",
+      "term": "Non-bank lending / Disintermediation",
+      "inbound_references": 1
+    },
+    {
+      "id": "G128",
+      "term": "Long/short equity",
+      "inbound_references": 1
+    }
+  ]
+}

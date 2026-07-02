@@ -19,5 +19,5 @@ jobs:
       - name: Graph builds cleanly and is committed fresh
         run: |
           python pipeline/build/build_graph.py
-          git diff --exit-code graph/graph.json \
-            || (echo "graph.json is stale — run build_graph.py and commit" && exit 1)
+          git diff --exit-code graph/ \
+            || (echo "graph/ artifacts are stale — run build_graph.py and commit" && exit 1)

@@ -15,6 +15,7 @@ Runs five check families over content/:
   5. required      — quick_definition and explainer_covers non-empty; every
                      tag=='global' node has a global_id; every global's home
                      module actually contains a node hosting it (warning)
+  6. graph         — self-edges, orphan nodes, low-reference globals (warnings)
 
 Exit code 0 = pass (warnings allowed), 1 = errors found.
 Usage: python pipeline/validate/validate.py [--repo-root PATH] [--strict]
@@ -26,6 +27,9 @@ import sys
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from checks.graph_checks import check_graph
 
 try:
     import jsonschema
@@ -174,6 +178,8 @@ def main() -> int:
     check_references(globals_, nodes, errors, warnings)
     check_duplicates(globals_, errors, warnings)
     check_required(globals_, nodes, errors, warnings)
+    if not args.strict:
+        check_graph(root, nodes, globals_, warnings)
 
     print(f"content: {len(globals_)} globals, {len(modules)} modules, {len(nodes)} zone nodes")
     print(f"result: {len(errors)} errors, {len(warnings)} warnings\n")
