@@ -1,0 +1,87 @@
+{
+  "slug": "fixed-income",
+  "title": "Fixed Income",
+  "kind": "asset-class",
+  "build_order": 11,
+  "visibility": "active",
+  "status": "mapped",
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Bond & Its Market",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Bond Math & the Curve",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Instrument Universe",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Credit & Spread",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Trading, Financing & the Portfolio",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 22,
+    "global_range": "G264–G285",
+    "zone_node_count": 51,
+    "globals_reused": [
+      "G1",
+      "G29",
+      "G34",
+      "G58",
+      "G60",
+      "G61",
+      "G62",
+      "G63",
+      "G64",
+      "G69",
+      "G70",
+      "G71",
+      "G72",
+      "G74",
+      "G77",
+      "G78",
+      "G81",
+      "G82",
+      "G90",
+      "G95",
+      "G103",
+      "G127",
+      "G143",
+      "G153",
+      "G170",
+      "G182",
+      "G227",
+      "G242",
+      "G244",
+      "G247",
+      "G248",
+      "G249",
+      "G250",
+      "G251",
+      "G252",
+      "G253",
+      "G255",
+      "G257",
+      "G258",
+      "G259",
+      "G260",
+      "G262",
+      "G263"
+    ],
+    "gap_count": 21
+  }
+}

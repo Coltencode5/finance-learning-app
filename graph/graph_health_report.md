@@ -6,21 +6,21 @@ Generated: 2026-07-02 by `pipeline/build/graph_health.py`
 
 | Metric | Value |
 |---|---|
-| Globals | 263 |
-| Module zone nodes | 529 |
-| Total edges | 3755 |
-| Cross-module reference edges | 2357 |
+| Globals | 285 |
+| Module zone nodes | 580 |
+| Total edges | 4088 |
+| Cross-module reference edges | 2585 |
 
 ### Edge kinds
 
-- **disambiguates**: 2
-- **home_of**: 294
-- **references**: 3459
+- **disambiguates**: 8
+- **home_of**: 316
+- **references**: 3764
 
 ### Inbound degree distribution (all indexed ids)
 
 - min: 0
-- max: 46
+- max: 49
 - mean: 4.7
 
 ### Outbound degree distribution
@@ -33,20 +33,26 @@ Generated: 2026-07-02 by `pipeline/build/graph_health.py`
 
 | Rank | ID | Term | Inbound refs |
 |---|---|---|---|
-| 1 | G29 | Leverage | 46 |
-| 2 | G127 | Market cycles & the pendulum | 26 |
-| 3 | G1 | IRR (Internal Rate of Return) | 25 |
+| 1 | G29 | Leverage | 49 |
+| 2 | G1 | IRR (Internal Rate of Return) | 27 |
+| 3 | G127 | Market cycles & the pendulum | 27 |
 | 4 | G9 | "2 and 20" | 23 |
 | 5 | G124 | Second-level thinking | 22 |
-| 6 | G33 | Debt stack / Funding instruments | 20 |
-| 7 | G125 | Market efficiency (and its limits) | 19 |
-| 8 | G156 | Manager selection (the allocator's manager due diligence) | 19 |
-| 9 | G247 | The federal funds rate (the policy rate) (Z2.5) | 19 |
-| 10 | G4 | J-curve | 19 |
+| 6 | G247 | The federal funds rate (the policy rate) (Z2.5) | 22 |
+| 7 | G61 | Recovery rate / Loss Given Default (LGD) | 22 |
+| 8 | G248 | The risk-free rate & the term structure of interest rates (Z2.6) | 20 |
+| 9 | G33 | Debt stack / Funding instruments | 20 |
+| 10 | G125 | Market efficiency (and its limits) | 19 |
 
 ## Disambiguation edges (canonical metadata only)
 
 - `G102` → `G53`
+- `G265` → `G58`
+- `G269` → `G248`
+- `G269` → `G257`
+- `G276` → `G77`
+- `G277` → `G70`
+- `G285` → `G72`
 - `G53` → `G102`
 
 ## Orphan nodes (zero inbound and zero outbound)
@@ -60,13 +66,14 @@ Count: 2 (see `graph/orphan_low_reference.json` for full list)
 ## Low-reference globals (<2 inbound references)
 
 Count: 2
-- `G63` Non-bank lending / Disintermediation (1 refs)
 - `G128` Long/short equity (1 refs)
+- `G272` The money market (bills, CP, CDs) (Z3.5) (1 refs)
 
 ## Cross-module dependencies (reference counts)
 
 - **asset-management** → global (192), hedge-funds (31), private-equity (14), investment-banking (3), private-credit (2)
 - **equity-research** → global (181), asset-management (24), investment-banking (24), hedge-funds (19)
+- **fixed-income** → global (197), hedge-funds (14), asset-management (7), private-credit (6), macro-economics (4)
 - **hedge-funds** → global (181), private-equity (12), investment-banking (9), private-credit (2)
 - **investment-banking** → global (120), private-equity (31), private-credit (18)
 - **macro-economics** → global (307), private-equity (3), hedge-funds (2)

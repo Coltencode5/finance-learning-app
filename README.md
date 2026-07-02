@@ -1,8 +1,8 @@
 # finance-graph
 
 The content platform for a finance education app built on a shared knowledge
-graph: 10 modules, 263 global glossary concepts, 529 zone learning nodes,
-3,755 graph edges — all as validated, structured JSON.
+graph: 11 modules, 285 global glossary concepts, 580 zone learning nodes,
+4,088 graph edges — all as validated, structured JSON.
 
 ## The one rule
 
@@ -16,7 +16,7 @@ build outputs — never hand-edit them. See `docs/decisions/ADR-001`.
 ```
 schemas/            JSON Schemas: global, node, module, activity, edge
 content/
-  glossary/         globals.json — the shared glossary (G1–G263), the app's spine
+  glossary/         globals.json — the shared glossary (G1–G285), the app's spine
   modules/{slug}/   module.json + zones/z1..z5.json per module
   activities/       learning activities (empty in V0; schema is ready)
 graph/              graph.json + derived indexes (do not edit; see docs/GRAPH_HEALTH.md)
@@ -48,15 +48,16 @@ orphan/low-reference reports.
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 6)
+## Current state (post-Milestone 7)
 
-- **10 active modules**: the 9 legacy role modules plus **macro-economics** — the
-  first `kind: core-concept` module (see ADR-002) — migrated to canonical JSON.
-- Shared glossary: **263 globals (G1–G263)**, contiguous; macro contributed G236–G263.
+- **11 active modules**: the 9 legacy role modules plus **macro-economics**
+  (`kind: core-concept`, ADR-002) and **fixed-income** (`kind: asset-class`, ADR-003).
+- Shared glossary: **285 globals (G1–G285)**, contiguous; fixed-income contributed G264–G285.
   The new-module gate is parameterized to `corpus_max + 1`, so the next active
-  module starts at **G264**.
-- **529 zone nodes**; graph rebuilt — 3,755 edges.
+  module starts at **G286**.
+- **580 zone nodes**; graph rebuilt — 4,088 edges.
 - Validation: **0 errors, 0 warnings** (strict content gate).
+- See `PROJECT_STATUS.md` for milestone history and corpus totals.
 - Module factory (Milestone 5) scaffolds new modules; `corporate-finance` is a
   parked draft placeholder (`build_order: 999`, `visibility: draft`).
 - **Minimal Next.js app** (Milestone 4) reads canonical JSON at build time — no database, no auth.

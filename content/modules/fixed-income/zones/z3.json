@@ -1,0 +1,588 @@
+[
+  {
+    "id": "fixed-income.z3.1",
+    "local_id": "Z3.1",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "The U.S. Treasury Market",
+    "tag": "global",
+    "global_id": "G270",
+    "quick_definition": "The market for U.S. government debt — bills (≤1 year, discount instruments), notes (2–10 years), and bonds (20–30 years) — the largest and most liquid securities market on earth, the risk-free benchmark (★ G248) made tradable, and the anchor issuer of the entire system.",
+    "explainer_covers": [
+      "Why Treasuries are special (Thau Ch. 6): full-faith-and-credit backing (default risk treated as ~zero in pricing — with the sovereign caveat parked at ★ G262), unmatched liquidity, exemption from state tax, and the role of the collateral of the financial system (★ G282).",
+      "The auction machine (Parameswaran Ch. 2; Z1.6 deepened): the announced calendar, competitive bids in yield, single-price clearing, primary dealers obligated to bid, when-issued trading before settlement, and re-openings. Auction \"tails\" and bid-to-cover as the market's fiscal thermometer (★ G242).",
+      "The liquidity microstructure: on-the-run (the newest issue at each maturity — the trading vehicle) vs. off-the-run (everything older — cheaper, less liquid); the run/off-run spread as the price of liquidity itself, and a classic RV trade (Z5.9; LTCM's infamous version).",
+      "What the market does for everyone else: supplies the risk-free curve every spread is measured against (★ G277), the collateral repo runs on (★ G282), the hedge instrument for every desk (Z2.11), and the deliverable for the futures complex (Z5.4). The 10-year yield is arguably the single most important price in finance (★ G248's \"price of time,\" now with its marketplace)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z1.6",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.2",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248` (the concept this market embodies), Z1.6 (auctions), `★ G282` repo, `★ G251` QE/QT (the Fed as largest holder — and QT as supply), `★ G262` sovereign risk (the tail case), Z3.2 (STRIPS carved from these), `★ G283` (the index weight). *Real-world layer: Fabozzi Ch. 10; Tuckman Ch. 0.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Ch. 10; Tuckman Ch. 0.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.2",
+    "local_id": "Z3.2",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Zeros & STRIPS",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Bonds with no coupons — sold at a discount, paying face at maturity — and STRIPS, the Treasury program that carves coupon bonds into separately tradable zero-coupon pieces: the physical embodiment of the spot curve (★ G269).",
+    "explainer_covers": [
+      "The cleanest bond there is: one cash flow, so yield is the spot rate, duration equals maturity (★ G267's limiting case), and convexity is maximal per unit of duration (★ G268). Zeros are the atoms; coupon bonds are molecules (Z2.1's decomposition made literal).",
+      "STRIPS mechanics (Parameswaran Ch. 2): dealers separate a note's coupons and principal into individual claims (Separate Trading of Registered Interest and Principal); the pieces trade as zeros and can be reconstituted. Arbitrage between the bond and its pieces enforces the bootstrapped curve (Z2.7).",
+      "Who wants them: liability-matchers who need a known sum on a known date (★ G284 — a zero is a self-immunizing bond), and the tax wrinkle that phantom income (accrued OID, ★ G71's public-market cousin) is taxed annually, pushing zeros into tax-deferred accounts (Thau).",
+      "The volatility warning (Thau): the longest zeros are the most rate-sensitive instruments in the Treasury complex — retail buys them for \"safety\" and discovers duration."
+    ],
+    "connects_to": [
+      {
+        "ref": "G269",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G271",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G269` (spots made physical), `★ G267` (duration = maturity case), `★ G271` (TIPS also strip), `★ G284` (the LDI use), `★ G71` OID (back-link — accretion math shared with loans). *Real-world layer: Parameswaran (synthetic zeros); Fabozzi Ch. 10.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran (synthetic zeros); Fabozzi Ch. 10.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.3",
+    "local_id": "Z3.3",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "TIPS & Inflation-Linked Bonds",
+    "tag": "global",
+    "global_id": "G271",
+    "quick_definition": "Treasuries whose principal indexes to CPI — coupons pay a fixed real rate on the inflating principal — so the holder earns purchasing power directly, and the gap between nominal and TIPS yields (the breakeven) is the market's own inflation forecast.",
+    "explainer_covers": [
+      "The mechanism (Fabozzi Ch. 15; Thau Ch. 6): principal adjusts with CPI (★ G253); the coupon rate is real and constant; at maturity you get the greater of adjusted or original principal (the deflation floor). The instrument operationalizes the Fisher relation (★ G249 — back-link: that node's math, this node's security).",
+      "The breakeven as information: nominal 10y minus TIPS 10y ≈ expected inflation plus an inflation-risk premium — the bond market's inflation expectation read in real time, the anchoring evidence Macro Z3.5 relies on (back-link).",
+      "What TIPS hedge and what they don't: realized CPI inflation, yes; real-rate rises, no — 2022's lesson, when TIPS fell despite the inflation spike because real yields surged (GAP: the episode post-dates the sources' data; framework covered by Tuckman/Willer, levels need current authoring).",
+      "The EM version (Willer Ch. 7 — \"real rates: simply superior\"): linkers are a mature, often superior habitat in high-inflation EMs (Brazil's market as the canon); breakeven trading rules (buy breakevens below inflation expectations) preview Z5.10."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G253",
+        "note": null
+      },
+      {
+        "ref": "G270",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G249` Fisher (back-link — the concept), `★ G252`/`★ G253` inflation & the indices (what's being indexed), `★ G270` (the issuer), WM (the retiree inflation hedge), Willer Ch. 7 (EM linkers), Z5.10. *Real-world layer: Fabozzi Ch. 15 (Brynjolfsson); Thau's TIPS chapter.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` the episode post-dates the sources' data; framework covered by Tuckman/Willer, levels need current authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Ch. 15 (Brynjolfsson); Thau's TIPS chapter.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.4",
+    "local_id": "Z3.4",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Agencies & the GSEs",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Debt of the government-sponsored enterprises (Fannie Mae, Freddie Mac, the FHLBs) and federal agencies — near-Treasury credit with a small spread, and the institutional machine whose guarantee business makes the agency MBS market (★ G280) possible.",
+    "explainer_covers": [
+      "The two products of one system: agency debentures (this node — bullet or callable senior debt funding the enterprises) and agency MBS guarantees (Z3.11 — the credit wrap on pooled mortgages). The debenture market is the callable-bond training ground (★ G285 in the wild).",
+      "The credit nuance: \"implicit\" government backing priced at a sliver over Treasuries — made near-explicit by the 2008 conservatorships (Fabozzi Ch. 10's account; the episode is the case study for ★ G263's taxonomy touching home soil).",
+      "Who buys: banks (favorable capital treatment), foreign officials, and money funds at the short end; the FHLB system doubling as a quiet liquidity backstop for banks (the 2023 regional-bank episode — GAP: post-dates all sources; flag for current authoring).",
+      "The map placement note: this node is deliberately compact — the agencies matter to this app mostly as the gateway to MBS, which carries the full treatment."
+    ],
+    "connects_to": [
+      {
+        "ref": "G280",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G270",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G280` (the main event this enables), `★ G285` (callable debentures), `★ G270` (the pricing benchmark), `★ G263` (the 2008 case), RE module (the housing-finance context). *Real-world layer: Fabozzi Ch. 10 (agency securities).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` post-dates all sources; flag for current authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Ch. 10 (agency securities).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.5",
+    "local_id": "Z3.5",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "The Money Market",
+    "tag": "global",
+    "global_id": "G272",
+    "quick_definition": "The market for debt maturing inside a year — T-bills, commercial paper, negotiable CDs, fed funds, and repo (★ G282) — where the policy rate (★ G247) becomes actual funding, and where \"cash\" in every portfolio actually lives.",
+    "explainer_covers": [
+      "The instrument roster (Parameswaran Ch. 6; Fabozzi Ch. 12): T-bills (discount instruments — quoted on a discount rate that understates the true yield, the day-count trap of Z2.4), commercial paper (corporates borrowing short, unsecured), negotiable CDs (banks borrowing short), bankers' acceptances (vestigial), and fed funds (banks trading reserves overnight — the market ★ G247 literally names).",
+      "The rate plumbing: the policy rate anchors overnight money; bills, CP, and CDs price off it with tenor and credit increments; SOFR (★ G69) is manufactured from the repo segment (Z5.2 tells that story). This node is the transmission mechanism's (★ G250) first meter.",
+      "Why it matters beyond plumbing: the money market is where funding stress shows first — CP freezing in 2008, the bill curve kinking around debt-ceiling dates, money funds \"breaking the buck\" (★ G263's early-warning gauges).",
+      "The vehicle seam (Part 1 callout): money market funds — the WM cash bucket — are the retail wrapper on these instruments; the segment is homed here, the wrapper with the fund modules (Z5.7)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G247` (the anchor rate — back-link), `★ G69` SOFR (manufactured here — back-link), `★ G282` repo (the secured half), Z2.4 (discount-rate quoting), `★ G250` transmission (Macro's chain, first link), WM (cash management). *Real-world layer: Parameswaran Ch. 6 end-to-end; Fabozzi Ch. 12.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 6 end-to-end; Fabozzi Ch. 12.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.6",
+    "local_id": "Z3.6",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "Municipal Bonds",
+    "tag": "global",
+    "global_id": "G273",
+    "quick_definition": "Debt of states, cities, and their authorities, whose interest is exempt from federal tax — making the muni market a parallel bond universe priced in after-tax terms, navigated with the taxable-equivalent yield and split between general-obligation and revenue credit.",
+    "explainer_covers": [
+      "The tax math that defines the market (Thau Ch. 7): TEY = muni yield ÷ (1 − marginal tax rate). A 3.5% muni beats a 5% taxable for a 37%-bracket buyer (TEY ≈ 5.6%) and loses for a low-bracket one — which is why munis are a household and high-bracket market, largely absent from pensions and foreign portfolios (they can't use the exemption).",
+      "The two credit species (Fabozzi Ch. 11, 34): general obligation (backed by taxing power — analyzed like a sovereign-in-miniature: tax base, pension burden) vs. revenue (backed by a project's cash flows — tolls, water, hospitals — analyzed like project finance: coverage ★ G74's cousin, rate covenants).",
+      "Muni market structure quirks: enormous issue count with tiny sizes, thin retail-heavy secondary (Z1.7's illiquidity extreme), serial maturities, insurance wrappers (diminished post-2008), and the premium-coupon convention (Z2.3's tax-driven de-minimis mechanics — depth-layer detail, placed here).",
+      "Default reality vs. reputation: historically low default rates but concentrated, slow-motion failures (Detroit, Puerto Rico) — the ★ G262 sovereign-analysis toolkit scaled to sub-sovereigns."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "WM (the natural holder — the tax-location decision), `★ G276` ratings (muni scales), `★ G262` (the GO analysis rhyme), Z1.7 (the illiquid secondary), `★ G242` fiscal policy (state/local edition). *Real-world layer: Thau Ch. 7 (the buyer's guide); Fabozzi Ch. 11 & 34.* ---",
+    "gaps": [],
+    "real_world_layer": "Thau Ch. 7 (the buyer's guide); Fabozzi Ch. 11 & 34.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.7",
+    "local_id": "Z3.7",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Corporate Bonds",
+    "tag": "global",
+    "global_id": "G274",
+    "quick_definition": "Standardized, rated, tradable debt issued by companies under an indenture with a trustee — the public-market output of IB's debt capital markets, spanning AAA utilities to CCC leveraged credits, and the raw material of Zone 4's entire credit apparatus.",
+    "explainer_covers": [
+      "The contract (Fabozzi Ch. 13): the indenture (the master agreement), the trustee (the holders' agent), seniority and security (★ G78 — back-link: liens and priority are homed with Private Credit), and covenants — typically incurrence-only, the structural covenant-lite contrast with private loans (★ G34, Z1.8's seam).",
+      "The retirement menu: bullets, sinking funds, calls (★ G285), make-wholes, tenders, and defeasance — the issuer's toolkit for getting out early, each priced by the market (Fabozzi's \"alternative mechanisms to retire debt\").",
+      "The market's internal geography: IG vs. HY (★ G275 — the divide gets its own node), financials vs. industrials vs. utilities, MTN programs (Z1.6), and the maturity ladder from 2s to 30s along the credit curve (Z4.9's raw material).",
+      "The three-market view of one borrower (Z1.8 completed): the same credit can have bonds (here), a TLB (PC Z1.7), and CDS (★ G278) — the capital-structure map ER and HF Z2.8 trade across. Sector-level credit work (banks vs. energy vs. utilities) is deferred to the sector modules (GAP: deliberate, per scope boundary 3)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      },
+      {
+        "ref": "G275",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "IB DCM & `★ G103` (the birth process), `★ G275`/`★ G276`/`★ G277` (Zone 4's machinery applied to these), `★ G78` (back-link — seniority), `★ G34` (covenant contrast), PC Z1.7 (the loan sibling), ER (the issuer analysis). *Real-world layer: Fabozzi Ch. 13; Tuckman Ch. 14 (first half).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` deliberate, per scope boundary 3",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Ch. 13; Tuckman Ch. 14 (first half).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.8",
+    "local_id": "Z3.8",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Floaters & Loans: the Floating-Rate Universe",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The instruments whose coupons reset off a reference rate — floating-rate notes, the syndicated loan market, and their structured kin — the near-zero-duration corner of the universe (★ G267's limiting case) homed around ★ G69, which this node back-links rather than re-teaches.",
+    "explainer_covers": [
+      "The mechanics in one line: coupon = reference rate (★ G69 SOFR — back-link, the home) + a quoted margin fixed at issue; the reset clock, caps/floors on the coupon, and the margin-measure family (discount margin as the floater's YTM-equivalent — Parameswaran Ch. 7).",
+      "Why duration collapses: the price re-anchors to ~par at each reset — rate risk lives only until the next reset date, leaving spread risk as the exposure that remains (a floater is short-duration in rates but full-duration in credit; the 2022 shelter with the 2023 caveat).",
+      "The loan overlap, mapped not re-homed: Term Loan Bs and the BSL market are Private Credit Z1.7's canonical ground; CLOs — the securitized wrapper on loans — are flagged here and treated within ★ G279's framework. The inverse floater and structured-note exotica (Parameswaran Ch. 7) are named as leaf variants.",
+      "The issuer's rate-mix decision: fixed vs. floating as corporate ALM — and the swap that converts one into the other, referenced at usage level (Z5.4; mechanics to the future Derivatives module)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.2",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G279",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G69` (the home — back-link), PC Z1.7 (loans), `★ G267` (the duration case), `★ G277` (the spread exposure that remains), `★ G279` (CLOs as securitized loans), Z5.2 (how SOFR is made). *Real-world layer: Parameswaran Ch. 7; Fabozzi Ch. 16.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 7; Fabozzi Ch. 16.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.9",
+    "local_id": "Z3.9",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 9,
+    "title": "Callable, Putable & Convertible: Embedded Options",
+    "tag": "global",
+    "global_id": "G285",
+    "quick_definition": "Bonds carrying options inside the security — the issuer's right to call (redeem early), the holder's right to put (sell back), or to convert into equity — whose value the market strips out via yield-to-worst and, properly, OAS (★ G277): the reason a 6% callable is not a 6% bullet.",
+    "explainer_covers": [
+      "The call, from both seats: the issuer holds a refinancing option (call when rates fall or spreads tighten); the holder has sold that option and is paid for it in extra yield. The crude quote is yield-to-worst (★ G265's extension); the honest price is the OAS after modeling the option (★ G277; lattice valuation named per Fabozzi Ch. 37, deferred to the Derivatives module for mechanics — flagged seam).",
+      "The behavioral consequence: negative convexity (★ G268's pathology in miniature) — price compression as rates fall toward the call. Agency debentures (Z3.4), muni pre-refundings, and HY calls are the habitats; MBS (★ G280) is the same option held by millions of homeowners.",
+      "The private-market cousin, disambiguated (Part 1): ★ G72 call protection is the negotiated shield against early repayment in loans; this node is the securitized option the market prices. Same refinancing economics, opposite framing — the pair is a load-bearing cross-link.",
+      "Puts and converts, placed: putables invert the option (holder protection — rate rises get a par exit); convertibles are debt with an equity call option attached (Fabozzi Part 8) — named and framed here, with the option-pricing depth explicitly deferred to Derivatives (GAP: deliberate; the convertible node is that module's natural attachment point back into FI)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G72",
+        "note": null
+      },
+      {
+        "ref": "G265",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G268",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G72` (disambiguate_with — the loan cousin), `★ G265` (YTW), `★ G277` (OAS — the proper strip), `★ G268` (negative convexity), `★ G280` (the mass-market version), IB (converts as issuance products), future Derivatives module (option mechanics — flagged seam). *Real-world layer: Parameswaran Ch. 13; Fabozzi Ch. 37, 59–60.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` deliberate; the convertible node is that module's natural attachment point back into FI",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Parameswaran Ch. 13; Fabozzi Ch. 37, 59–60.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.10",
+    "local_id": "Z3.10",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 10,
+    "title": "Securitization",
+    "tag": "global",
+    "global_id": "G279",
+    "quick_definition": "The machine that turns pools of illiquid loans into tradable bonds: assets (mortgages, card receivables, auto loans) are sold to a bankruptcy-remote trust, and the trust issues tranches of securities against the pool's cash flows — senior to junior, each with its own rating and spread.",
+    "explainer_covers": [
+      "The assembly line (Fabozzi Ch. 22, 26–29): originate → pool → sell to an SPV (true sale, bankruptcy-remote) → tranche the liabilities → wrap with credit enhancement (subordination, over-collateralization, excess spread) → rate (★ G276) → distribute. The originator gets balance-sheet relief and fees; investors get tailored risk slices.",
+      "Tranching as the core invention: the same pool supports AAA seniors and equity residuals because losses hit bottom-up while cash flows fill top-down — the waterfall. Seniority here is structural (rules in a trust) rather than negotiated (★ G78's lien world — the rhyme and the difference).",
+      "The family tree, mapped once: residential MBS (agency → ★ G280, the flagship; non-agency named), CMBS (back-link ★ G227 — homed in Real Estate, per scope boundary 2), ABS (cards, autos, student loans), and CLOs (securitized leveraged loans — the bridge back to Z3.8/PC). CDOs and the 2008 pathology carried at the framework level with ★ G263 owning the crisis narrative.",
+      "Why the machine exists and when it breaks: it converts lending capacity into market capacity (disintermediation's other face, ★ G63), and it moved underwriting risk away from originators — the incentive fault line 2008 exposed (rating-agency structured-finance process per Fabozzi Ch. 35 named; GAP: post-crisis reform detail — risk retention, rating reform — post-dates parts of the source base; flag for depth)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G63",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G280` (the flagship product), `★ G227` (back-link — CMBS stays homed in RE), `★ G63` disintermediation (back-link), `★ G276` (ratings' structured-finance arm), `★ G263` (the 2008 case), PC/Z3.8 (CLOs). *Real-world layer: Fabozzi Chs. 22–31.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` post-crisis reform detail — risk retention, rating reform — post-dates parts of the source base; flag for depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Chs. 22–31.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.11",
+    "local_id": "Z3.11",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 11,
+    "title": "Agency MBS & Prepayment",
+    "tag": "global",
+    "global_id": "G280",
+    "quick_definition": "Bonds backed by pools of government-guaranteed home mortgages — pass-throughs and their CMO re-slicings — whose defining risk is not default (the agencies wrap that) but prepayment: millions of homeowners hold a free refinancing option and exercise it exactly when investors least want the money back.",
+    "explainer_covers": [
+      "The pass-through (Parameswaran Ch. 8–9; Thau Ch. 9): homeowners' monthly payments (interest + scheduled principal + prepayments) flow through the pool to holders, minus servicing. The vocabulary: WAC, WAM, SMM/CPR (prepayment speeds), and the PSA convention — the measurement kit for a cash-flow stream that is never fixed.",
+      "The prepayment option and its price: falling rates → refinancing wave → principal returns at par just as reinvestment rates collapse (contraction); rising rates → prepayments stop → duration extends into the sell-off (extension). This is ★ G268's negative convexity at population scale, and the reason MBS trade at an OAS (★ G277) off prepayment models, not just curves.",
+      "The CMO re-slicing: sequential tranches, PACs (prepayment-protected schedules with support bonds absorbing the variance), IO/PO strips (pure bets on prepayment speed — the IO is one of the few instruments that gains when rates rise). Structuring redistributes the option; it cannot destroy it.",
+      "Who holds this market and why it matters systemically: banks, the Fed (QE's second portfolio — ★ G251), and money managers against ★ G283 (MBS is a giant index weight). The agency wrap makes it a rates+prepayment product; non-agency (credit-risk-bearing) MBS is named and framed under ★ G279 with the 2008 file at ★ G263."
+    ],
+    "connects_to": [
+      {
+        "ref": "G279",
+        "note": null
+      },
+      {
+        "ref": "G268",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G227",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G279` (the machine that builds it), `★ G268` (negative convexity — the defining pathology), `★ G277` (OAS as the honest spread), `★ G227` (the commercial sibling — back-link), `★ G251` (the Fed's holdings), RE module (the housing-side view), `★ G283` (the index weight). *Real-world layer: Parameswaran Ch. 8–9; Fabozzi Chs. 22–24; Tuckman Ch. 15.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 8–9; Fabozzi Chs. 22–24; Tuckman Ch. 15.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z3.12",
+    "local_id": "Z3.12",
+    "module": "fixed-income",
+    "zone": 3,
+    "ordinal": 12,
+    "title": "Emerging Market Debt",
+    "tag": "global",
+    "global_id": "G281",
+    "quick_definition": "The sovereign and corporate debt of developing economies, structurally split in two: local-currency bonds (a rates market plus an FX exposure — GBI-EM) and hard-currency/external bonds (a credit market in dollars — EMBI), each with its own index, buyer base, and risk anatomy.",
+    "explainer_covers": [
+      "The two-asset-class split (Willer Ch. 1 — the module's organizing fact): local debt is rates (★ G247-equivalents set by EM central banks) plus FX (★ G260 — most of local-debt volatility is currency); external debt is credit (a spread over Treasuries, ★ G277, behaving like US HY's cousin). Same country, two different trades.",
+      "The historical arc: \"original sin\" (forced dollar borrowing) → the crises of the 1980s–90s (Bradys — Fabozzi Ch. 20 — restructuring's founding technology) → the deliberate build-out of local markets (Willer's 15% CAGR story) → China as half the local universe. The ★ G262/★ G263 sovereign-risk machinery is this market's operating system (back-link).",
+      "What drives it (Willer Ch. 2's 65/35 rule): EM returns are ~two-thirds global macro — the Fed (★ G247), the dollar (★ G260), US HY spreads, commodities — and one-third local. The asset class is a leveraged read on ★ G258 global financial conditions.",
+      "Index mechanics and the buyer base: EMBI/GBI-EM/CEMBI (★ G283's EM wing), index-inclusion events as flow catalysts, and the dispersion that makes EM an alpha habitat (Willer Ch. 1) — the trading treatment continues at Z5.10."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.10",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G271",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G260`–`★ G263` (the Macro Zone 5 machinery — back-links throughout), `★ G277` (external spreads), `★ G271` (EM linkers), `★ G283` (the indices), Z5.10 (trading EM), HF Z2.4 (the macro-fund habitat). *Real-world layer: Willer Chs. 1–3, 6, 9; Fabozzi Ch. 20.* ---",
+    "gaps": [],
+    "real_world_layer": "Willer Chs. 1–3, 6, 9; Fabozzi Ch. 20.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

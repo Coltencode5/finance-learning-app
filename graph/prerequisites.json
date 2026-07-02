@@ -1198,6 +1198,663 @@
         ]
       }
     ],
+    "fixed-income": [
+      {
+        "node": "fixed-income.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.5",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z1.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z1.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z2.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z2.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.11",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.10",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z3.12",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.11",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z3.12",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z4.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z4.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z3.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.6",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z5.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.5",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.6",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.5",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z4.8",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.7",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.6",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z1.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.8",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.7",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.11",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.9",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.8",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z2.7",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z4.9",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "fixed-income.z5.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "fixed-income.z5.10",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "fixed-income.z5.9",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "fixed-income.z3.12",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
     "hedge-funds": [
       {
         "node": "hedge-funds.z1.2",
