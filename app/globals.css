@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+a {
+  color: #0b4f8a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header nav a {
+  margin-left: 1rem;
+}
+
+.container {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.site-footer {
+  max-width: 52rem;
+  margin: 2rem auto;
+  padding: 0 1.5rem 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+
+.muted {
+  color: #666;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.zone-block {
+  margin-bottom: 2rem;
+}
+
+.node-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #ccc;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #eee;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.ref-list {
+  padding-left: 1.25rem;
+}
+
+.ref-list li {
+  margin-bottom: 0.35rem;
+}
+
+.kind-tag {
+  font-size: 0.75rem;
+  color: #666;
+  margin-left: 0.35rem;
+}
+
+.missing-ref {
+  color: #a33;
+  font-style: italic;
+}
+
+.note {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.bullets {
+  padding-left: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: #e8f0fe;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+.not-found {
+  padding: 2rem 0;
+}
+
+.dep-table {
+  font-size: 0.9rem;
+}
+
+.dep-table td {
+  padding: 0.25rem 0.75rem 0.25rem 0;
+}

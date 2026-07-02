@@ -27,7 +27,9 @@ pipeline/
   prompts/          reusable Cursor/LLM prompts per milestone
 docs/               architecture, five-zone template, ADRs, defect register
 legacy/markdown/    the nine original node maps (read-only reference)
-app/                Next.js app (Milestone 4)
+app/                Next.js App Router pages (Milestone 4)
+src/lib/graph/      Typed data access layer (reads content/ + graph/)
+scripts/            App data check script
 ```
 
 ## Commands
@@ -46,12 +48,46 @@ orphan/low-reference reports.
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 2)
+## Current state (post-Milestone 4)
 
 - Migration complete: all 9 legacy modules parsed to canonical JSON.
 - Validation: **0 errors, 0 warnings** (strict content gate).
-- Graph health indexes and reports generated under `graph/` (Milestone 3).
-- See `docs/MIGRATION_DEFECTS.md` for resolved migration defects.
+- Graph health indexes under `graph/` (Milestone 3).
+- **Minimal Next.js app** (Milestone 4) reads canonical JSON at build time — no database, no auth.
+
+## Milestone 4 — minimal app
+
+Proof that canonical JSON powers a real product shell:
+
+```bash
+pip install jsonschema          # optional; required for --strict
+python pipeline/validate/validate.py --strict
+python pipeline/build/build_graph.py
+
+npm install
+npm run check:data              # verify JSON + graph indexes load
+npm run typecheck
+npm run dev                     # http://localhost:3000
+npm run build                   # static production build
+```
+
+### Routes
+
+| Route | Purpose |
+|---|---|
+| `/` | Module list (all 9 modules) |
+| `/modules/[slug]` | Zone/node listing for one module |
+| `/concepts/[id]` | Global (G1) or node (private-equity.z1.5) detail + graph refs |
+
+### Sample URLs
+
+- http://localhost:3000/
+- http://localhost:3000/modules/private-equity
+- http://localhost:3000/concepts/G1
+- http://localhost:3000/concepts/G29
+- http://localhost:3000/concepts/private-equity.z1.5
+
+Data loading is centralized in `src/lib/graph/` — page components do not read the filesystem directly.
 
 ## Contributing content
 
