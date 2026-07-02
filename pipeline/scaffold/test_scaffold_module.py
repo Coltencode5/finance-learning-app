@@ -116,7 +116,7 @@ class TestScaffoldModule(unittest.TestCase):
             )
 
             validate = _load_validate()
-            globals_, modules, nodes = validate.load_content(root)
+            globals_, modules, nodes, _draft_slugs = validate.load_content(root)
             errors: list[str] = []
             warnings: list[str] = []
             validate.check_references(globals_, nodes, errors, warnings)
