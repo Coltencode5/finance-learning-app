@@ -1,7 +1,7 @@
 {
   "generated_by": "pipeline/build/build_indexes.py",
   "description": "Reference edges whose endpoints span modules (or module ↔ global).",
-  "edge_count": 2357,
+  "edge_count": 2585,
   "edges": [
     {
       "from": "asset-management.z1.1",
@@ -3313,6 +3313,1571 @@
     {
       "from": "equity-research.z5.7",
       "to": "asset-management.z5.6",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.1",
+      "to": "G143",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.1",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.1",
+      "to": "G264",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.1",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.2",
+      "to": "G265",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.2",
+      "to": "G266",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.2",
+      "to": "G29",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.2",
+      "to": "G34",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.3",
+      "to": "G143",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.3",
+      "to": "G170",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.3",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.3",
+      "to": "G29",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.3",
+      "to": "G95",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.4",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.4",
+      "to": "G259",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.4",
+      "to": "G270",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.4",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.4",
+      "to": "macro-economics.z4.10",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.5",
+      "to": "G244",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.5",
+      "to": "G251",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.5",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.5",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.6",
+      "to": "G103",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.6",
+      "to": "G274",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.7",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.7",
+      "to": "private-credit.z1.7",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "G265",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "G58",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "G64",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "G70",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.8",
+      "to": "private-credit.z1.7",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z1.9",
+      "to": "G255",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z1.9",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.1",
+      "to": "G1",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.1",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.1",
+      "to": "G90",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.10",
+      "to": "G259",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.10",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.10",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.10",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.10",
+      "to": "hedge-funds.z2.3",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.11",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.11",
+      "to": "G268",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.11",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.11",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G259",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G265",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G268",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.2",
+      "to": "macro-economics.z4.10",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.3",
+      "to": "G273",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.3",
+      "to": "G71",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.5",
+      "to": "G1",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.5",
+      "to": "G170",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.5",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.5",
+      "to": "G58",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.6",
+      "to": "G265",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.6",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.6",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.6",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.6",
+      "to": "hedge-funds.z2.3",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.7",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.7",
+      "to": "G257",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.8",
+      "to": "G251",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.8",
+      "to": "G257",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.8",
+      "to": "G269",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.8",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.8",
+      "to": "hedge-funds.z2.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z2.9",
+      "to": "G266",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.9",
+      "to": "G268",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.9",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.9",
+      "to": "G69",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z2.9",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z3.1",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.1",
+      "to": "G251",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.1",
+      "to": "G262",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.1",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.1",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.10",
+      "to": "G227",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.10",
+      "to": "G263",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.10",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.10",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.10",
+      "to": "G63",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G227",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G251",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G268",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G279",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.11",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "G260",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "G263",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "G271",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.12",
+      "to": "hedge-funds.z2.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z3.2",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.2",
+      "to": "G269",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.2",
+      "to": "G271",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.2",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.2",
+      "to": "G71",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.3",
+      "to": "G249",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.3",
+      "to": "G252",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.3",
+      "to": "G253",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.3",
+      "to": "G270",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.4",
+      "to": "G263",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.4",
+      "to": "G270",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.4",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.4",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.5",
+      "to": "G247",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.5",
+      "to": "G250",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.5",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.5",
+      "to": "G69",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.6",
+      "to": "G242",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.6",
+      "to": "G262",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.6",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G103",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G275",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G34",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "G78",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.7",
+      "to": "private-credit.z1.7",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z3.8",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.8",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.8",
+      "to": "G279",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.8",
+      "to": "G69",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.8",
+      "to": "private-credit.z1.7",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z3.9",
+      "to": "G265",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.9",
+      "to": "G268",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.9",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.9",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z3.9",
+      "to": "G72",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "G255",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "G60",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "G61",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "G62",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.1",
+      "to": "macro-economics.z4.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G182",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G262",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G263",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G275",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G279",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.2",
+      "to": "G77",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.3",
+      "to": "G255",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.3",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.3",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.3",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.3",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "G269",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "G278",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "G70",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.4",
+      "to": "macro-economics.z4.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.5",
+      "to": "G127",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.5",
+      "to": "G255",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.5",
+      "to": "G258",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.5",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.5",
+      "to": "private-credit.z5.13",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G262",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G278",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G61",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G62",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G78",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G81",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "G82",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.6",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.7",
+      "to": "G262",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.7",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.7",
+      "to": "G61",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.7",
+      "to": "G62",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.7",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.8",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.8",
+      "to": "G29",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.8",
+      "to": "G34",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.8",
+      "to": "G74",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "G255",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "G277",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "G278",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "G70",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "hedge-funds.z2.3",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z4.9",
+      "to": "hedge-funds.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.1",
+      "to": "G258",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.1",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "G260",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "G263",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "G271",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "G281",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.10",
+      "to": "hedge-funds.z2.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.2",
+      "to": "G247",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.2",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.2",
+      "to": "G69",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.3",
+      "to": "G247",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.3",
+      "to": "G251",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.3",
+      "to": "G69",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.4",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.4",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.4",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.4",
+      "to": "hedge-funds.z2.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.5",
+      "to": "G275",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.5",
+      "to": "G276",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.5",
+      "to": "G280",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.5",
+      "to": "G281",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.5",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "G283",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "G284",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "G285",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "asset-management.z2.8",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.6",
+      "to": "private-credit.z1.7",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "fixed-income.z5.7",
+      "to": "G170",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.7",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.8",
+      "to": "G153",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.8",
+      "to": "G248",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.8",
+      "to": "G267",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.8",
+      "to": "G271",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.9",
+      "to": "G269",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.9",
+      "to": "G282",
+      "kind": "references",
+      "note": null,
+      "to_module": "global"
+    },
+    {
+      "from": "fixed-income.z5.9",
+      "to": "hedge-funds.z2.3",
       "kind": "references",
       "note": null
     },

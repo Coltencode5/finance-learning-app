@@ -1,0 +1,523 @@
+[
+  {
+    "id": "fixed-income.z5.1",
+    "local_id": "Z5.1",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Dealer Desk, Liquidity & the Bid–Ask",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How bonds actually change hands: dealers quote two-way prices, warehouse inventory financed in repo, and charge the bid–ask spread as the price of immediacy — making liquidity a balance-sheet product whose supply varies with regulation and stress.",
+    "explainer_covers": [
+      "The desk's economics: buy at the bid, sell at the ask, finance the warehouse overnight (★ G282), hedge the rate risk (Z5.4), and hope the spread beats the inventory risk. Market-making is a short-volatility business — profitable daily, ruinous in gaps — which is why liquidity evaporates precisely when it's most wanted.",
+      "The liquidity hierarchy priced: on-the-run Treasuries at fractions of a basis point; IG corporates in basis points; HY, munis, and EM in fractions of a point — the tiering from Z1.7, now as a cost schedule that RV strategies (Z5.9) must clear before their edge is real (Huggins's \"demand for immediacy\" as an RV source).",
+      "The structural shift the older sources predate: post-Basel III balance-sheet costs shrank dealer inventories relative to market size (Huggins Ch. 18's shadow-cost frame); electronification and portfolio trading partially replaced principal liquidity with matching. GAP: current market-structure data (ETF-driven liquidity, all-to-all share) post-dates the source base — flagged for depth authoring.",
+      "Stress anatomy: March 2020's Treasury-market seizure — the world's deepest market gapping — as the canonical modern case that liquidity is a state, not a property (★ G263's plumbing chapter; GAP: episode post-dates sources, framework doesn't)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.7 (the structure this operationalizes), `★ G282` (the financing), Z5.4 (the hedge), Huggins Ch. 18 (regulatory constraints), `★ G258` (liquidity as a financial-conditions component), HF (the liquidity takers and providers). *Real-world layer: Tuckman Ch. 0; Huggins Chs. 1, 18.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` current market-structure data (ETF-driven liquidity, all-to-all share) post-dates the source base — flagged for depth authoring",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "` episode post-dates sources, framework doesn't",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Tuckman Ch. 0; Huggins Chs. 1, 18.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.2",
+    "local_id": "Z5.2",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "Reference Rates: SOFR & the Post-LIBOR World",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where the floating world's anchor rate actually comes from: SOFR (★ G69 — back-link, the home) is computed from the observed volume of overnight Treasury repo (★ G282), replacing LIBOR's surveyed, unsecured, manipulable quote — a plumbing change that re-based every floating contract and swap spread in the system.",
+    "explainer_covers": [
+      "The manufacture (Huggins Ch. 11 — the definitive treatment in the source base): SOFR = a volume-weighted median of actual overnight repo transactions against Treasury collateral. Transaction-based (unmanipulable in principle), secured (collateralized), and overnight (no term credit component) — each property the exact negation of a LIBOR flaw.",
+      "Why the transition happened (the story ★ G69 names and this node tells): the interbank market LIBOR surveyed had hollowed out post-crisis, and the rigging scandal ended its credibility; regulators engineered the migration. The rate family now: SOFR (secured overnight), term SOFR (derived), EFFR/fed funds (★ G247's market), and the international siblings (SONIA, ESTR).",
+      "What changed analytically (Huggins's preface, operationalized): LIBOR embedded bank credit risk; SOFR doesn't — so swap spreads versus SOFR became cleanly linkable to sovereign/funding factors (the Z5.9 yardstick), while the secured–unsecured basis became its own traded object. Legacy time series broke; the analyst's data problem is real and flagged.",
+      "The stress wrinkle: SOFR is repo, so repo stress is reference-rate stress — September 2019's spike printed directly into the benchmark (Z5.3's episode, seen from the rate's side)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G69` (the home — back-link; this is its market-side story), `★ G282` (the raw material), `★ G247` (the policy anchor it tracks), Z3.8 (the instruments that float on it), Huggins Ch. 11, future Derivatives module (SOFR futures/swaps — flagged seam). *Real-world layer: Huggins Ch. 11; Tuckman Ch. 12.* ---",
+    "gaps": [],
+    "real_world_layer": "Huggins Ch. 11; Tuckman Ch. 12.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.3",
+    "local_id": "Z5.3",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "Repo & Secured Financing",
+    "tag": "global",
+    "global_id": "G282",
+    "quick_definition": "Selling a security with a commitment to repurchase it — economically a collateralized loan — the financing layer under every bond desk, the mechanism that turns bond portfolios into levered portfolios, the raw material of SOFR, and the pipe through which funding stress transmits system-wide.",
+    "explainer_covers": [
+      "The mechanics (Tuckman Ch. 10 — the modern chapter-length treatment): cash lender takes the bond as collateral with a haircut; the borrower pays the repo rate; reverse repo is the same trade from the other side. Overnight vs. term; general collateral (any Treasury) vs. specials (a specific issue in demand repos below GC — scarcity priced as a financing subsidy, the mechanism behind on-the-run richness, Z3.1).",
+      "Leverage manufactured: buy a bond, repo it, use the cash to buy another — the loop that turns 2% yields into levered carry (Z2.6's financing leg) and the reason haircut changes are margin calls system-wide. Hedge-fund basis trades (cash vs. futures, Z5.4) run entirely on this pipe.",
+      "The Fed inside the market: the standing repo and reverse-repo facilities as the policy rate's enforcement mechanism at the secured short end (★ G247/★ G244 — back-links), and QE/QT (★ G251) as the slow-motion version of the same balance-sheet plumbing.",
+      "The stress file: September 2019 — quarter-end collateral supply met constrained dealer balance sheets and overnight repo printed ~10% intraday, forcing the Fed's return to open-market operations (Huggins Ch. 18's canonical case for shadow balance-sheet costs); March 2020's dash-for-cash as the sequel. Repo is where ★ G263-grade stress announces itself first."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z5.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.6",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.1",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.1",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G69`/Z5.2 (SOFR made from this), `★ G247`/`★ G251` (the Fed's plumbing — back-links), Z2.6 (carry's financing leg), Z3.1 (specials & the on-the-run), Z5.1 (dealer inventory finance), HF (leverage), Macro Z4 (transmission). *Real-world layer: Tuckman Ch. 10; Huggins Chs. 11, 18; Fabozzi Ch. 45.* ---",
+    "gaps": [],
+    "real_world_layer": "Tuckman Ch. 10; Huggins Chs. 11, 18; Fabozzi Ch. 45.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.4",
+    "local_id": "Z5.4",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Rates Derivatives at the Desk: Futures & Swaps (Usage Level)",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The tools a bond desk reaches for — Treasury futures to move duration instantly, interest-rate swaps to convert fixed↔floating or express curve views — treated here strictly at usage level: what they do for a portfolio, with mechanics and pricing deferred to the future Derivatives module.",
+    "explainer_covers": [
+      "The usage inventory: futures — add or shed DV01 (★ G267) without touching cash bonds (cheaper, instant, off-balance-sheet); the deliverable basket and CTD named as the reason futures ≠ bonds exactly (Tuckman Ch. 11 flagged as the depth source). Swaps — pay-fixed as a duration short, receive-fixed as synthetic bonds; the fixed-vs-floating conversion every corporate treasurer runs (Z3.8's other half). Swap spreads — the gap between swap and Treasury curves as a traded object (Huggins Ch. 12's territory, touched at Z5.9).",
+      "Who uses what for what: AM Z2.8's duration bets (futures overlay on a cash portfolio), LDI's hedging (★ G284 — swaps to extend duration without cash), the mortgage market's convexity hedging (★ G280's holders chasing their moving duration — a rates-volatility amplifier worth naming), and HF macro expression (Willer's EM receivers/payers vocabulary — Z5.10).",
+      "The explicit boundary (scope boundary 1, restated where it bites): contract mechanics, margining, the CTD option, swap valuation, swaptions, caps/floors — all deferred to the Derivatives module, which will back-link this node and ★ G278 as its FI attachment points. This node exists so Zone 5's portfolio stories can be told without a forward reference into a module that doesn't exist yet.",
+      "GAP: (structural, deliberate): the entire mechanics layer is a designed gap with a named future home — the map's cleanest example of the seam-flagging-over-retrofitting principle."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G267` (what these tools move), `★ G284` (LDI's usage), `★ G280` (convexity hedging), Z5.9 (swap spreads in RV), future Derivatives module (the mechanics home — the module's largest flagged seam), HF Z2.4. *Real-world layer: Tuckman Chs. 11–13 (named as the depth source for the future module).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` (structural, deliberate): the entire mechanics layer is a designed gap with a named future home — the map's cleanest example of the seam-flagging-over-retrofitting principle",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Tuckman Chs. 11–13 (named as the depth source for the future module).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.5",
+    "local_id": "Z5.5",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "The Bond Index & the Benchmark",
+    "tag": "global",
+    "global_id": "G283",
+    "quick_definition": "The rules-based baskets that define \"the bond market\" for portfolios — the Bloomberg US Aggregate above all, plus the HY, muni, and EM families (EMBI/GBI-EM) — with the structural quirk that market-value weighting hands the biggest weights to whoever has borrowed the most.",
+    "explainer_covers": [
+      "What the Agg is (Fabozzi Ch. 4; AM Z2.8's assumed backdrop, now taught): IG-only (★ G275's gate), USD, size- and maturity-filtered — Treasuries + agencies + IG corporates + agency MBS (★ G280's giant weight). What it excludes matters as much: HY, munis, TIPS (own index), non-USD — \"the benchmark\" is a choice, not the market.",
+      "The debtor's-weight quirk and its consequences (AM Z2.8 flags it; this node owns it): more issuance → bigger index weight → passive flows fund the biggest borrowers; index duration extends when issuers term out debt (the 2010s duration creep — benchmark risk rose while yields fell, no one voted on it).",
+      "Index events as market events: rating changes crossing the IG line (★ G275's fallen-angel flows), EM index inclusions (Willer Ch. 8: \"buy the news, sell the fact\" — a backtested playbook), and rebalancing-day technicals (Z4.5's technicals wing).",
+      "The benchmark's gravitational role: mandates are written against it, tracking error is measured off it, and \"active\" (Z5.6) is defined as deviation from it — the same logic AM built for equities, with the bond-specific twist that replicating an index of tens of thousands of illiquid bonds forces sampling, not full replication."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G275",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      },
+      {
+        "ref": "G281",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "AM Z2.8 (back-link — the manager's benchmark), `★ G275`/`★ G276` (the gates), `★ G280` (the MBS weight), `★ G281` (the EM indices), Willer Ch. 8 (inclusion trades), Z5.6 (active defined against this). *Real-world layer: Fabozzi Chs. 4, 43–44.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Chs. 4, 43–44.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.6",
+    "local_id": "Z5.6",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Active Bond Management",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Beating the benchmark with the levers this module has built — duration positioning, curve shape, sector allocation, credit selection, and structure selection — the practice AM Z2.8 homes as a strategy category and this node grounds in its FI machinery (back-link, not duplication).",
+    "explainer_covers": [
+      "The division of labor with AM stated first: AM Z2.8 owns the strategy category (what a bond manager decides, the mandate, the business); this node supplies the machinery those decisions run on — each lever now pointing at its Zone 2–4 home rather than at an assumption.",
+      "The lever inventory, wired: duration (± vs. benchmark — ★ G267, expressed via Z5.4's tools), curve (bullets vs. barbells, steepener/flattener — Z2.7/Z2.8), sector (Treasuries vs. corporates vs. MBS — the Zone 3 map as a menu), credit (Z4.8's work, ★ G275's divide), structure (callables vs. bullets — ★ G285's OAS judgment), security selection (Z5.9's RV at the margin).",
+      "The scoreboard: excess return vs. benchmark decomposed by lever (Tuckman Ch. 3's P&L attribution scaled to portfolios — Fabozzi Ch. 44's quantitative benchmarked management), tracking error as the risk budget, and information ratio as the grade (★ G143's framework — back-link — applied to bonds).",
+      "The honest base rate: core bond active management is a low-dispersion game (the index is efficient at the rates level; edge concentrates in credit and structure) — which is why AM's core/satellite logic (Fabozzi Ch. 43) puts indexed rates at the core and active credit/EM/HY in satellites, and why the fee question (★ G143's adjacent debates) bites hard in FI."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "AM Z2.8 (back-link — the home of the category; the app should render this pair like the Z1.8/PC Z1.7 seam), `★ G283` (the opponent), `★ G267`/Z2.7/Z4.8/`★ G285` (the levers' homes), `★ G284` (the *other* institutional mode — matching, not beating), Z5.9. *Real-world layer: Fabozzi Chs. 43–44, 46.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Chs. 43–44, 46.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.7",
+    "local_id": "Z5.7",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 7,
+    "title": "Bond Funds, ETFs & the Individual Investor",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "How households actually own this market: mutual funds and ETFs that hold the bonds (a NAV that moves — no maturity date, no pull-to-par), versus owning individual bonds (a par payoff at maturity, but retail-hostile OTC pricing) — Thau's core dilemma, mapped onto the fund machinery WM/AM home.",
+    "explainer_covers": [
+      "Thau's fork, stated fairly: an individual bond held to maturity returns par regardless of rate moves (★ G266's price risk expires — you bear it only if you sell); a bond fund never matures — its NAV is a perpetual mark on a rolling portfolio (2022 made this concrete for a generation of savers). The fund buys diversification, liquidity, and institutional pricing; it sells the certainty of par.",
+      "The vehicle mechanics, back-linked not re-taught: open-end funds, ETFs, closed-end funds, and money-market funds are homed with WM/AM's vehicle nodes (★ G224's open/closed distinction is the RE sibling); this node adds the bond-specific wrinkles — fund NAVs marked off matrix prices (Z1.7), the ETF create/redeem arbitrage as a liquidity translation layer (bond ETFs traded through March 2020 while underlying bonds froze — price discovery, not failure), and duration disclosure as the retail risk label (★ G267 on the fact sheet).",
+      "The ladder as the retail middle path (Thau Part 4): staggered individual maturities — each rung pulls to par, reinvestment rolls up the curve — self-immunizing without the fund wrapper (Z2.11's logic in a brokerage account; TreasuryDirect and Z3.1/★ G273 as the natural habitats).",
+      "GAP: (recency): the bond-ETF ecosystem's scale and the 2020/2022 episodes post-date Thau (2011) and Fabozzi's edition — the frameworks hold; the market-structure facts need current-data authoring."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G170",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "WM (the client seat — back-link to its vehicle and planning nodes), `★ G170` (the withdrawal math bond income feeds), Thau Parts 3–4 (the source spine), Z1.7 (why retail pricing is hostile), `★ G267` (the risk label), Z2.11 (the ladder's logic). ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "` (recency): the bond-ETF ecosystem's scale and the 2020/2022 episodes post-date Thau (2011) and Fabozzi's edition — the frameworks hold; the market-structure facts need current-data authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.8",
+    "local_id": "Z5.8",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 8,
+    "title": "Immunization & LDI",
+    "tag": "global",
+    "global_id": "G284",
+    "quick_definition": "The institutional endgame of Zone 2's math: structuring bond assets so they move with liabilities — duration-matched (immunized) or fully cash-flow-matched (dedicated) — so a pension or insurer is hedged against rates rather than betting on them; the strategy known institutionally as liability-driven investing.",
+    "explainer_covers": [
+      "The problem it solves: a pension's liabilities are a stream of promised payments — economically a short bond position (★ G248 discounting — liabilities balloon when rates fall). Holding equities against bond-like liabilities is a levered rates bet; LDI closes it by matching asset duration (★ G267) to liability duration (Fabozzi Ch. 47's single- and multi-period immunization; Ch. 48's dedicated portfolios).",
+      "The implementation ladder: duration matching (rebalance as Z2.11's conditions drift), cash-flow matching/dedication (zeros — Z3.2 — and bullets laddered to the payment schedule; certain but expensive), and derivative overlay (swaps to extend duration without cash — Z5.4's usage case) — the modern institutional default.",
+      "The stress case that made LDI famous: the 2022 UK gilt/LDI spiral — levered duration overlays met a gilt crash, collateral calls forced gilt sales, prices fell further (★ G263's doom-loop anatomy in a pension wrapper; Z2.8's habitat-demand point inverted). GAP: post-dates all sources; framework fully covered by this zone's machinery, episode needs current authoring.",
+      "The seam with the wealth modules: WM's household version (matching a retiree's spending with ladders and TIPS — Z5.7, ★ G271, ★ G170) is the same logic at retail scale; AM runs the institutional mandates (★ G153's SMA world)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.11",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G271",
+        "note": null
+      },
+      {
+        "ref": "G153",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G267`/Z2.11 (the math), Z3.2/`★ G271` (the matching instruments), Z5.4 (the overlay tools), `★ G153`/AM (the mandate wrapper), WM (the household version), `★ G248` (the liability discount rate). *Real-world layer: Fabozzi Chs. 47–48; Parameswaran Ch. 5 (the immunization proof).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` post-dates all sources; framework fully covered by this zone's machinery, episode needs current authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Chs. 47–48; Parameswaran Ch. 5 (the immunization proof).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.9",
+    "local_id": "Z5.9",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 9,
+    "title": "Relative Value & the Fitted Curve",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The professional discipline of trading bonds against each other: fit a smooth curve through a government market, measure each bond's richness/cheapness against it, hedge the factor risk (duration, curve), and harvest the convergence — Huggins & Schaller's craft, the quant wing of everything this module prices.",
+    "explainer_covers": [
+      "The analytic process (Huggins Ch. 9's three-step, the map's chosen frame): (1) fitted curves (Ch. 8 — a smooth discount function through all of a sovereign's bonds; each bond's residual = its richness/cheapness, adjusted for benchmark status and repo specialness ★ G282); (2) factor structure (PCA — level/slope/curvature as the curve's real degrees of freedom; hedge those, trade the residual); (3) mean reversion (Ch. 2 — the statistical engine: half-lives, conditional Sharpe ratios, first-passage times — when the convergence pays, not just whether).",
+      "The trade zoo, named: on/off-the-run (Z3.1's liquidity premium harvested), butterflies (Z2.10's convexity in pair form), swap spreads and asset swaps (Huggins Ch. 12 — the bond-vs-swap axis, post-SOFR cleanly linkable to credit/funding factors — Z5.2's payoff), the bond–CDS basis (Z4.9's arbitrage), and cross-currency RV (Chs. 15–17's global yardstick: everything as a spread to USD SOFR).",
+      "Why the free lunch isn't (Huggins Ch. 1's honest frame): RV premia are payment for immediacy provision, model risk, and balance-sheet rent (Ch. 18) — LTCM as the permanent cautionary tale that convergence trades embed liquidity and leverage risk (★ G282's haircut spiral; ★ G263's 1998 file).",
+      "The map placement: this node names and organizes the discipline; the statistical machinery (OU processes, PCA mathematics) is depth-layer material against Huggins Chs. 2–4, and the swap-spread mechanics await the Derivatives module's swap home (GAP: both flagged, both deliberate)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.3",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.9",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G269",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.7/`★ G269` (the curve being fitted), `★ G282` (specials & financing), Z4.9 (the credit wing), Z5.4 (the hedge tools & swap-spread seam), HF Z2.3 (the strategy category — back-link), Huggins end-to-end. *Real-world layer: Huggins Chs. 1–9, 12, 15–18.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` both flagged, both deliberate",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Huggins Chs. 1–9, 12, 15–18.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z5.10",
+    "local_id": "Z5.10",
+    "module": "fixed-income",
+    "zone": 5,
+    "ordinal": 10,
+    "title": "Global & EM Bond Investing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The bond market beyond the dollar curve: currency-hedged vs. unhedged foreign bonds, the EM asset class in practice (Willer's backtested playbook — the cycle rules, the event guide), and the portfolio question of what global bonds add — the module's closing bridge back to Macro's Zone 5.",
+    "explainer_covers": [
+      "The hedging fork that defines global FI: an unhedged foreign bond is mostly an FX position (★ G260 — Willer Fig 1.6: most local-debt volatility is currency); hedged, it's a rates position at the hedge-adjusted yield (covered parity's arithmetic — ★ G261's toolkit, named at Macro Z5.2). The hedge decision is the asset-allocation decision.",
+      "The EM playbook, compressed from Willer (Z3.12's instrument split, now traded): the 65/35 global-local rule (Ch. 2 — the Fed, DXY, and US HY as the masters); the rates-cycle rules (Ch. 6 — receive after the last hike, pay into the first, steepeners after the first cut); the event guide (Chs. 5, 8 — interventions, emergency hikes, IMF packages, index inclusions, elections — each backtested); credit selection (Ch. 9 — the 3–5yr BB sweet spot, embracing defaults, ratings lag); linkers as the superior habitat (Ch. 7, ★ G271).",
+      "The portfolio construction wing (Willer Ch. 10): benchmark-aware but not benchmark-slaved (GDP-weighting's failure), frontier markets as the liquidity frontier, derivatives as \"weapons of mass alpha\" (ND-IRS and NDFs named — usage level, per the standing boundary), and the honest ESG-in-EM tension (poverty-adjusted scoring).",
+      "The closing bridge: this node hands back to Macro Z5 — currencies (★ G260), the balance of payments (★ G261), sovereign risk (★ G262), and crises (★ G263) are the why under every EM bond price; HF Z2.4's global macro strategy is the who. The FI module ends where the app's macro layer begins — by design."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.12",
+        "note": null
+      },
+      {
+        "ref": "G281",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G271",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z3.12/`★ G281` (the instruments), `★ G260`–`★ G263` (back-links — the macro machinery), HF Z2.4 (the strategy seat), `★ G271` (linkers), `★ G283` (the EM indices), Willer end-to-end. `GAP:` Willer's data runs to ~2019 — the 2020 EM crisis, the 2021–23 EM hiking cycle (EM hiked *before* the Fed — a first), and current index compositions are recency-flagged for depth authoring. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` Willer's data runs to ~2019 — the 2020 EM crisis, the 2021–23 EM hiking cycle (EM hiked",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

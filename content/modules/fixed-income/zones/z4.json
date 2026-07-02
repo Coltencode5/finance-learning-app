@@ -1,0 +1,476 @@
+[
+  {
+    "id": "fixed-income.z4.1",
+    "local_id": "Z4.1",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Credit Risk in Traded Markets",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The probability-times-severity of not being paid — PD (★ G62) × LGD (★ G61) — repriced continuously by a market rather than monitored privately by a lender: the same risk Private Credit underwrites, now with a ticker.",
+    "explainer_covers": [
+      "The inheritance stated plainly: default probability, recovery, and loss-given-default are homed in Private Credit (★ G62, ★ G61, ★ G60) — this zone does not re-define them; it shows what happens when a market prices them tick by tick instead of a credit committee reviewing them quarterly.",
+      "Expected loss as the spread's floor: spread ≈ PD × LGD + risk premium + liquidity premium (Macro Z4.8's decomposition — back-link — now applied instrument-by-instrument). The premium components are why spreads systematically overpay for realized defaults — the credit risk premium that makes the asset class investable.",
+      "The migration dimension markets add: a bond can lose 15 points without any default — a downgrade (★ G276), a sector scare, a liquidity vacuum (Z1.7). Mark-to-market credit risk is a different animal from hold-to-maturity credit risk; the same loan hurts a BDC's NAV differently than the bond hurts a mutual fund (Z1.8's seam, restated in risk terms).",
+      "The cycle overlay: defaults cluster (★ G255 — back-link); spreads lead realized defaults (the market prices the next wave); and the credit cycle's macro seat (Macro Z4.1) meets its market seat here."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G60",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G61`/`★ G62`/`★ G60` (back-links — the homes), Macro Z4.8 (spreads as the price of risk — the macro seat), `★ G255` (the cycle), `★ G277` (the measurement), Z4.6 (when default arrives), PC module (the private seat throughout). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.2",
+    "local_id": "Z4.2",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Credit Ratings & the Rating Agencies",
+    "tag": "global",
+    "global_id": "G276",
+    "quick_definition": "The public letter-grade scales — Moody's (Aaa…C), S&P and Fitch (AAA…D) — issued by licensed agencies and hard-wired into the market's plumbing: index membership, investment mandates, capital rules, and funding costs all key off these grades.",
+    "explainer_covers": [
+      "What a rating is and is not: an ordinal opinion of relative default risk over a cycle — not a price, not a buy/sell, not a market forecast. The scales and their notches (Parameswaran Ch. 2's tables; Fabozzi Ch. 13), split ratings, outlooks, and watch listings as the grammar.",
+      "Why ratings have consequences beyond opinion: the IG line (★ G275) gates index inclusion (★ G283), insurance and pension mandates, bank capital treatment, and CP market access (★ G272) — a downgrade mechanically forces selling regardless of anyone's view. Ratings are load-bearing infrastructure, which is exactly why their failures matter.",
+      "The disambiguation (Part 1 callout): ★ G77 internal ratings are a lender's private grade for portfolio monitoring (watch-list ★ G82 as its action); this node's grades are public infrastructure with market consequences. Related craft — both estimate PD/LGD — different institutions, different stakes.",
+      "The known pathologies, stated honestly: issuer-pays conflicts, structured-finance inflation pre-2008 (★ G279's fault line; Fabozzi Ch. 35's process view), ratings lagging markets (Willer Ch. 9: \"late, but market-moving\" — spreads and CDS move first, ratings confirm). The sovereign wing (★ G262) and muni scales (★ G273) as the family's other branches."
+    ],
+    "connects_to": [
+      {
+        "ref": "G77",
+        "note": null
+      },
+      {
+        "ref": "G275",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      },
+      {
+        "ref": "G279",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G182",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G77` (disambiguate_with), `★ G275` (the divide the grades draw), `★ G283` (index gating), `★ G279`/`★ G263` (the structured-finance failure), `★ G262` (sovereign ratings), ER (the analyst's parallel opinion — `★ G182`'s world). *Real-world layer: Fabozzi Chs. 13, 32, 35; Willer Ch. 9.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Chs. 13, 32, 35; Willer Ch. 9.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.3",
+    "local_id": "Z4.3",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "Investment Grade vs. High Yield (the Ratings Divide)",
+    "tag": "global",
+    "global_id": "G275",
+    "quick_definition": "The BBB−/Baa3 line that splits the bond market into two regimes — different buyers, different indices, different covenant norms, different spread behavior — with the fallen angel (IG loses the grade) and the rising star (HY gains it) as the boundary events the market trades.",
+    "explainer_covers": [
+      "Two markets, not one spectrum: IG is a rates-plus market (spread is a minority of yield; buyers are duration-driven insurers, pensions, foreign officials); HY is an equity-adjacent market (spread dominates; buyers are total-return funds; correlation runs to stocks, not Treasuries — Willer's US-HY-as-EM-driver finding is this fact exported).",
+      "The boundary mechanics: the BBB− cliff concentrates issuance just above the line (the \"BBB bulge\"); a fallen angel triggers forced index selling (★ G283) into a thin bid — a repeatable dislocation that dedicated fallen-angel strategies harvest (HF Z2.8's habitat).",
+      "HY's anatomy (Fabozzi Ch. 13's high-yield section): the LBO/leveraged-finance connection — HY bonds fund the same sponsor deals as TLBs (PC's world) — call schedules as standard equipment (★ G285), and default/recovery statistics by rating cohort as the base rates the market prices against.",
+      "The divide inside portfolios: \"core\" mandates hold IG (the Agg contains no HY — ★ G283's rule), HY lives in dedicated sleeves, and the crossover space (BB/BBB) is a strategy of its own. Willer's EM credit sweet spot (3–5yr BBs) is the same anatomy in the EMBI."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G276` (the grades drawing the line), `★ G283` (index consequences), IB leveraged finance & PC (the issuance engine), `★ G285` (HY call structures), HF Z2.8 (distressed & event credit), `★ G255` (HY as the cycle's amplifier). *Real-world layer: Fabozzi Ch. 13; Willer Ch. 9.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Ch. 13; Willer Ch. 9.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.4",
+    "local_id": "Z4.4",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Bond Spreads: G, Z & OAS",
+    "tag": "global",
+    "global_id": "G277",
+    "quick_definition": "The extra yield a bond offers over the risk-free curve — measured against a single curve point (G-spread), against the whole spot curve (Z-spread), or net of embedded-option value (OAS) — the market's continuously repriced quote for credit, liquidity, and structure.",
+    "explainer_covers": [
+      "The measurement ladder, and why three rungs exist: G-spread (yield minus the interpolated Treasury yield — quick, curve-shape-blind), Z-spread (the constant shift to the spot curve ★ G269 that reprices the bond — the arithmetically honest version), OAS (the Z-spread after a model strips the option — the only fair comparison for callables ★ G285 and MBS ★ G280). Comparing a callable's G-spread to a bullet's is the classic amateur error.",
+      "What lives inside a spread (Macro Z4.8's decomposition, operationalized): expected loss (PD×LGD — ★ G62/★ G61), a credit risk premium, and a liquidity premium (Z1.7's tiers priced). Spread level prices the credit; spread change is the P&L (Z2.6's attribution completed: rates + spread).",
+      "The ★ G70 disambiguation (Part 1 callout, restated at the home): the loan spread is contractual — set at close, changes only on repricing; these spreads are observed — recomputed with every trade. The same borrower's TLB spread and bond Z-spread inform each other but are different objects; their gap is capital-structure information (Z4.9).",
+      "The family's extensions, placed: asset-swap spreads and SOFR spreads (Huggins Chs. 12, 17 — the post-LIBOR yardstick, deepened at Z5.9), CDS spreads (★ G278 — the third quote on the same risk), and the EM sovereign spread (EMBI's currency — ★ G281)."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.5",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G269",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      },
+      {
+        "ref": "G278",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G70` (disambiguate_with — the loan spread), `★ G269` (the curve it's measured against), `★ G285`/`★ G280` (why OAS exists), Macro Z4.8 (the decomposition — back-link), `★ G278` (the derivative quote), Z4.5 (what moves it). *Real-world layer: Fabozzi Ch. 39 (OAS); Tuckman Ch. 3; Huggins Ch. 12.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Ch. 39 (OAS); Tuckman Ch. 3; Huggins Ch. 12.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.5",
+    "local_id": "Z4.5",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "What Moves Spreads (the Spread Cycle)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The drivers of spread widening and compression: the credit cycle's fundamentals (defaults ahead), risk appetite (the premium demanded), supply/demand technicals (issuance, fund flows, dealer capacity), and liquidity shocks — the market weather Zone 4's instruments live in.",
+    "explainer_covers": [
+      "The four-driver frame: (1) fundamentals — expected defaults over the horizon (★ G255's position); (2) risk premium — the compensation mood (★ G127's pendulum in credit clothing); (3) technicals — new-issue calendars, fund flows, index events (★ G283), dealer balance-sheet capacity (Huggins Ch. 18's post-Basel constraint); (4) liquidity — the Z1.7 premium repricing violently in stress.",
+      "The cyclical signature: spreads grind tighter for years and gap wider in weeks (the asymmetry every credit book carries); HY leads IG; spreads lead realized defaults (the market prices the next wave, then the defaults arrive into already-wide spreads — the sequencing Willer exploits in EM Ch. 9).",
+      "Compression's anatomy — the private-credit rhyme: PC Z5.13's \"spread compression in a capital-flooded market\" is this node's mechanism operating in the private market; too much capital chasing carry compresses both markets' spreads and erodes both markets' covenants (★ G34) simultaneously. One cycle, two venues.",
+      "The macro read-through: IG and HY spreads are inputs to financial conditions (★ G258 — back-link); the HY spread is a recession gauge that rivals the curve (★ G257); and spread blowouts are how ★ G263's crises announce themselves in this market."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z5.13",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G255`/`★ G258` (back-links — the macro machinery), `★ G127` (the sentiment overlay), PC Z5.13 (the private rhyme), `★ G283` (technicals), Z1.7 (liquidity), Willer Ch. 9 (the EM playbook). `GAP:` the 2020 COVID spread event and the Fed's corporate-credit facilities post-date most sources' data — framework covered, episode needs current authoring. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` the 2020 COVID spread event and the Fed's corporate-credit facilities post-date most sources' data — framework covered, episode needs current authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.6",
+    "local_id": "Z4.6",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Default, Restructuring & Recovery in Public Markets",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "What happens when the promise breaks and the workout occurs in public: acceleration, bankruptcy or exchange offers, the priority waterfall paying recoveries by seniority — the traded-market version of the process Private Credit homes at ★ G81, with distressed investors as the market's undertakers.",
+    "explainer_covers": [
+      "The event taxonomy: missed payment (past grace), bankruptcy filing, and the distressed exchange (a haircut dressed as a tender — the majority of modern \"defaults\" — a definitional point that matters for reading default statistics and triggers ★ G278's committee machinery).",
+      "The waterfall in action: recoveries by seniority and security (★ G78 — back-link) — secured loans recover most, senior unsecured bonds the benchmark ~40¢ heuristic, subordinated less — the LGD (★ G61) statistics behind every spread floor (Z4.1), with the honest caveat that recoveries are cycle-dependent (they fall exactly when defaults cluster).",
+      "Public vs. private workout, the seam completed: ★ G81 (out-of-court restructuring) and ★ G82 (watch-list) are the private lender's quiet process; the public version plays out in prices — bonds trade to recovery estimates within days, and control shifts to whoever buys the fulcrum security. Distressed investing (HF Z2.8 — back-link) is the strategy of buying that transition.",
+      "EM defaults as the sovereign wing (Willer Ch. 9's \"embrace defaults\"): sovereign restructurings (★ G262 — back-link) run on exchange offers and CACs rather than bankruptcy courts; recovery outcomes have historically rewarded buying into EM defaults — the counterintuitive base rate his backtests document."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G81",
+        "note": null
+      },
+      {
+        "ref": "G82",
+        "note": null
+      },
+      {
+        "ref": "G78",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G278",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G81`/`★ G82`/`★ G78` (back-links — the private process), `★ G61`/`★ G62` (the statistics), HF Z2.8 (the buyers), `★ G262` (sovereign workouts), `★ G278` (the trigger machinery), Z1.9 (death #3 in the bond's life). *Real-world layer: Fabozzi Ch. 13 (default/recovery data); Willer Ch. 9.* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Ch. 13 (default/recovery data); Willer Ch. 9.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.7",
+    "local_id": "Z4.7",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "The Credit Default Swap",
+    "tag": "global",
+    "global_id": "G278",
+    "quick_definition": "A contract paying out if a reference borrower defaults, in exchange for a running premium — tradable default insurance that separates credit risk from the bond itself, quotes it as a spread, and lets credit be shorted, hedged, and measured independently.",
+    "explainer_covers": [
+      "The mechanics at concept level (Tuckman Ch. 14; Huggins Ch. 13): protection buyer pays a running spread; on a credit event (failure to pay, bankruptcy, restructuring — determined by committee), the seller pays par minus recovery. The CDS spread is thus a near-pure market quote on PD×LGD (★ G62×★ G61) — cleaner than a bond spread because funding and curve noise are stripped out.",
+      "What the instrument enables: shorting credit without borrowing bonds, hedging a loan book without selling relationships, expressing single-name views at size, and index trading (CDX/iTraxx) as the credit market's futures. The negative-basis trade (bond + CDS protection) as the arbitrage that ties ★ G277 and this quote together (Huggins Ch. 16's equilibrium machinery, deepened at Z5.9).",
+      "The sovereign wing: sovereign CDS as the market's read on ★ G262 — with the wrinkles Huggins documents (the delivery option, USD-payout quanto effect) that make the quote more than pure default probability.",
+      "The scope-boundary note, stated in the map (Part 4 repeats it): CDS is homed here because the sources treat it as inseparable from traded credit; the future Derivatives module owns general swap/option mechanics and the post-crisis clearing/margin plumbing, and will back-link G278 rather than re-home it. GAP: ISDA determinations detail and the cleared-CDS market structure are deferred to that module."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G61",
+        "note": null
+      },
+      {
+        "ref": "G62",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G277` (the cash-market quote — the basis pair), `★ G61`/`★ G62` (what it prices), Z4.6 (the trigger events), `★ G262` (sovereign CDS), HF Z2.8 (the users), future Derivatives module (mechanics — flagged seam), Macro (credit conditions read via CDX). *Real-world layer: Tuckman Ch. 14; Huggins Ch. 13; Fabozzi Ch. 58.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` ISDA determinations detail and the cleared-CDS market structure are deferred to that module",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Tuckman Ch. 14; Huggins Ch. 13; Fabozzi Ch. 58.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.8",
+    "local_id": "Z4.8",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 8,
+    "title": "The Credit Work: Analyzing a Corporate Bond",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The analyst's craft applied to a traded credit: business risk, financial risk (the coverage and leverage arithmetic inherited from Private Credit), indenture and structure reading, and the relative-value judgment — ER's discipline pointed at the debt side of the balance sheet.",
+    "explainer_covers": [
+      "The four-part frame (Fabozzi Ch. 32): industry (cyclicality, competitive position — the sector layer, deferred per scope boundary 3 to the sector modules hanging off ER Z2.3), financials (coverage ★ G74, leverage ★ G29/debt-to-EBITDA — back-links: the ratios are homed with PC), indenture (covenants ★ G34, structural subordination, guarantees — where the bonds sit in the org chart), management/event risk (LBO risk to bondholders — the IB/PE event that transfers value from creditors to sponsors).",
+      "The credit-vs-equity lens inversion: the equity analyst (★ G182's world) asks \"how good can it get?\"; the credit analyst asks \"how bad can it get and am I paid for it?\" — same company, asymmetric payoff, different work. ER's models feed both; the outputs diverge.",
+      "Quantitative credit, named: structural models (equity as a call on the firm — Merton) and reduced-form models (Fabozzi Ch. 33) as the machinery behind model-implied spreads and default probabilities — placed here, depth deferred (GAP: the modeling layer is an authoring-depth item, with the Derivatives module's math as a prerequisite).",
+      "The output: an opinion versus the market — is the Z-spread (★ G277) paying for the risk? — which is where the craft hands off to Z4.9's relative value and the portfolio's decision (Z5.6)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z4.9",
+        "note": null
+      },
+      {
+        "ref": "G74",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G74`/`★ G29`/`★ G34` (back-links — the ratio kit), ER module (the sibling craft), PC underwriting zone (the private version of the same work), `★ G276` (the agencies doing this work publicly), Z4.9 (the RV output), sector modules (the industry layer — flagged forward seam). *Real-world layer: Fabozzi Chs. 32–33.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` the modeling layer is an authoring-depth item, with the Derivatives module's math as a prerequisite",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Fabozzi Chs. 32–33.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z4.9",
+    "local_id": "Z4.9",
+    "module": "fixed-income",
+    "zone": 4,
+    "ordinal": 9,
+    "title": "Credit Relative Value",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Trading credits against each other rather than owning credit outright: curves (one issuer's 5s vs. 10s), capital structure (bonds vs. loans vs. CDS), compression pairs (IG vs. HY, cash vs. index), and the basis — the credit wing of the RV discipline Z5.9 generalizes.",
+    "explainer_covers": [
+      "The trade taxonomy: credit curves (steep issuer curves flatten as credits improve or invert into distress — the front-end-survives logic Willer documents for EM); capital structure (the same issuer's TLB ★ G70, bond ★ G277, and CDS ★ G278 should cohere; dislocations are the trade — Z1.8's seam monetized); decompression/compression (HY vs. IG spread ratios across the cycle ★ G255); the basis (bond vs. CDS — Huggins Ch. 16's arbitrage equalities and their financing/regulatory frictions).",
+      "Why credit RV is harder than rates RV: idiosyncratic risk doesn't diversify in pairs (one default swamps the spread convergence), liquidity is tiered (Z1.7 — exiting the illiquid leg costs the theoretical edge), and shorting cash credit is expensive (why the CDS exists, Z4.7).",
+      "The Malvey frame (Fabozzi Ch. 46): global credit portfolio management as continuous relative value — primary vs. secondary, sector rotation, structure selection (callables vs. bullets), and the swap decision — the institutional discipline AM Z2.8's \"sector and credit selection\" line compresses.",
+      "The EM wing (Willer Ch. 9): external-vs-local as the master EM credit RV axis, ratings-lag trades, and the IMF-package and default event playbooks — previewing Z5.10."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.3",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G278",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.9 (the general RV machinery — fitted curves, ASW), `★ G277`/`★ G278`/`★ G70` (the three quotes traded against each other), HF Z2.3/Z2.8 (the practitioners), `★ G255` (the cycle timing), AM Z2.8 (the long-only version). *Real-world layer: Huggins Chs. 13, 16; Fabozzi Ch. 46; Willer Ch. 9.* ---",
+    "gaps": [],
+    "real_world_layer": "Huggins Chs. 13, 16; Fabozzi Ch. 46; Willer Ch. 9.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

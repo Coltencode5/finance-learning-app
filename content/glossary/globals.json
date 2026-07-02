@@ -4569,5 +4569,417 @@
     ],
     "disambiguate_with": [],
     "status": "mapped"
+  },
+  {
+    "id": "G264",
+    "term": "The bond (the debt security) (Z1.2)",
+    "aliases": [
+      "the debt security"
+    ],
+    "quick_definition": "A tradable IOU — a promise to pay fixed coupons on set dates and return the face value at maturity — the atomic unit of the fixed-income market.",
+    "home_module": "fixed-income",
+    "home_zone": "Z1.2",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G265",
+    "term": "Yield to maturity (& the meanings of yield) (Z2.5)",
+    "aliases": [
+      "& the meanings of yield"
+    ],
+    "quick_definition": "The single discount rate that equates a bond's price to the PV of its remaining cash flows — the market's quoted \"yield,\" one of several yield concepts that must never be conflated.",
+    "home_module": "fixed-income",
+    "home_zone": "Z2.5",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [
+      "G58"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G266",
+    "term": "Bond pricing & the price–yield inversion (Z2.2)",
+    "aliases": [],
+    "quick_definition": "A bond's price is the present value of its cash flows, which makes price and yield move inversely — the mechanical reason bond prices fall when rates rise.",
+    "home_module": "fixed-income",
+    "home_zone": "Z2.2",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G267",
+    "term": "Duration (& DV01) (Z2.9)",
+    "aliases": [
+      "& DV01"
+    ],
+    "quick_definition": "The sensitivity of a bond's price to a change in yield — the master risk number of fixed income (DV01 is the same idea in dollars per basis point).",
+    "home_module": "fixed-income",
+    "home_zone": "Z2.9",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "AM",
+      "WM",
+      "HF",
+      "RE",
+      "ER",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G268",
+    "term": "Convexity (Z2.10)",
+    "aliases": [],
+    "quick_definition": "The curvature in the price–yield relationship — why duration understates gains and overstates losses, and why prepayable bonds can have negative convexity.",
+    "home_module": "fixed-income",
+    "home_zone": "Z2.10",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "AM",
+      "HF",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G269",
+    "term": "Spot, forward & par rates (the curve toolkit) (Z2.7)",
+    "aliases": [
+      "the curve toolkit"
+    ],
+    "quick_definition": "The pricing machinery extracted from bond prices — discount factors, zero-coupon spot rates, implied forwards, and par yields — the arithmetic form of the term structure.",
+    "home_module": "fixed-income",
+    "home_zone": "Z2.7",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "HF",
+      "AM",
+      "IB",
+      "future Derivatives"
+    ],
+    "disambiguate_with": [
+      "G248",
+      "G257"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G270",
+    "term": "The U.S. Treasury market (Z3.1)",
+    "aliases": [],
+    "quick_definition": "The market for U.S. government debt — bills, notes, and bonds — the largest, most liquid bond market on earth and the risk-free benchmark everything else is priced against.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.1",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G271",
+    "term": "TIPS & inflation-linked bonds (Z3.3)",
+    "aliases": [],
+    "quick_definition": "Treasuries whose principal indexes to CPI, paying a real yield — and, via the gap to nominal yields, the market's own inflation forecast (the breakeven).",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.3",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "WM",
+      "AM",
+      "HF",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G272",
+    "term": "The money market (bills, CP, CDs) (Z3.5)",
+    "aliases": [
+      "bills, CP, CDs"
+    ],
+    "quick_definition": "The market for debt maturing inside a year — T-bills, commercial paper, certificates of deposit, fed funds — where the policy rate becomes actual funding.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.5",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "WM",
+      "AM",
+      "HF",
+      "IB"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G273",
+    "term": "Municipal bonds & tax-equivalent yield (Z3.6)",
+    "aliases": [],
+    "quick_definition": "State and local government debt whose interest is federally tax-exempt — compared to taxable bonds via the taxable-equivalent yield, the core math of the retail bond buyer.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.6",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G274",
+    "term": "Corporate bonds (Z3.7)",
+    "aliases": [],
+    "quick_definition": "Standardized, rated, tradable debt issued by companies under an indenture — the public-market sibling of the private loan and the output of IB's debt capital markets.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.7",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "IB",
+      "ER",
+      "Credit",
+      "AM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G275",
+    "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
+    "aliases": [
+      "the ratings divide"
+    ],
+    "quick_definition": "The BBB−/Baa3 line that splits the bond market into two regimes — who may own the paper, which index it joins, what it costs to issue — and the \"fallen angel\" dynamics at the boundary.",
+    "home_module": "fixed-income",
+    "home_zone": "Z4.3",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "IB",
+      "Credit",
+      "HF",
+      "AM",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G276",
+    "term": "Credit ratings & the rating agencies (Z4.2)",
+    "aliases": [],
+    "quick_definition": "The public letter-grade scales (Moody's, S&P, Fitch) that price default risk into markets — with hard-wired consequences for index membership, mandates, and funding costs.",
+    "home_module": "fixed-income",
+    "home_zone": "Z4.2",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [
+      "G77"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G277",
+    "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
+    "aliases": [
+      "G-spread, Z-spread, OAS"
+    ],
+    "quick_definition": "The extra yield a bond offers over the Treasury curve — measured against a point (G), the whole curve (Z), or net of embedded options (OAS) — the market's running price of credit risk.",
+    "home_module": "fixed-income",
+    "home_zone": "Z4.4",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "Credit",
+      "HF",
+      "AM",
+      "ER",
+      "Macro"
+    ],
+    "disambiguate_with": [
+      "G70"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G278",
+    "term": "The credit default swap (CDS) (Z4.7)",
+    "aliases": [
+      "CDS"
+    ],
+    "quick_definition": "A contract that pays out if a borrower defaults, in exchange for a running premium — tradable default insurance that lets credit risk be bought, sold, and measured apart from the bond.",
+    "home_module": "fixed-income",
+    "home_zone": "Z4.7",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "HF",
+      "IB",
+      "Credit",
+      "Macro",
+      "future Derivatives"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G279",
+    "term": "Securitization (Z3.10)",
+    "aliases": [],
+    "quick_definition": "The machine that pools illiquid loans (mortgages, cards, autos), routes their cash flows through a trust, and issues tradable bonds in tranches against the pool.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.10",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "RE",
+      "Credit",
+      "IB",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G280",
+    "term": "Agency MBS & prepayment (Z3.11)",
+    "aliases": [],
+    "quick_definition": "Bonds backed by pools of government-guaranteed home mortgages, whose defining risk is not default but prepayment — homeowners refinancing exactly when investors least want it.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.11",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "RE",
+      "AM",
+      "HF",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G281",
+    "term": "Emerging market debt (local vs. external) (Z3.12)",
+    "aliases": [
+      "local vs. external"
+    ],
+    "quick_definition": "Sovereign and corporate debt of developing economies, split into local-currency bonds (rates + FX risk) and hard-currency bonds (credit risk) — a distinct asset class with its own indices.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.12",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "HF",
+      "AM",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G282",
+    "term": "Repo & secured financing (Z5.3)",
+    "aliases": [],
+    "quick_definition": "Selling a security with an agreement to buy it back — a collateralized loan that finances every bond desk, sets the secured overnight rate (SOFR's raw material), and transmits leverage system-wide.",
+    "home_module": "fixed-income",
+    "home_zone": "Z5.3",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "HF",
+      "Macro",
+      "AM",
+      "future Derivatives"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G283",
+    "term": "The bond index & the benchmark (the Agg) (Z5.5)",
+    "aliases": [
+      "the Agg"
+    ],
+    "quick_definition": "The rules-based baskets (Bloomberg Aggregate, EMBI, HY indices) that define \"the bond market\" for portfolios — with the quirk that issuers get bigger weights by owing more.",
+    "home_module": "fixed-income",
+    "home_zone": "Z5.5",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "AM",
+      "WM",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G284",
+    "term": "Immunization & liability-driven investing (LDI) (Z5.8)",
+    "aliases": [
+      "LDI"
+    ],
+    "quick_definition": "Structuring a bond portfolio so assets move with liabilities — matching duration so a pension or insurer is hedged against rates rather than betting on them.",
+    "home_module": "fixed-income",
+    "home_zone": "Z5.8",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "AM",
+      "WM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G285",
+    "term": "Callable bonds & embedded options (Z3.9)",
+    "aliases": [],
+    "quick_definition": "Bonds carrying issuer or holder options (call, put, conversion) whose value the market strips out via yield-to-worst and OAS — the reason a 6% callable isn't a 6% bullet.",
+    "home_module": "fixed-income",
+    "home_zone": "Z3.9",
+    "contributed_by": "fixed-income",
+    "category": "Fixed Income",
+    "appears_in": [
+      "Credit",
+      "IB",
+      "WM",
+      "future Derivatives"
+    ],
+    "disambiguate_with": [
+      "G72"
+    ],
+    "status": "mapped"
   }
 ]

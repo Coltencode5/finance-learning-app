@@ -1,0 +1,558 @@
+[
+  {
+    "id": "fixed-income.z2.1",
+    "local_id": "Z2.1",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Discounting & the Time Value of Money",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The single principle under all of fixed income: a dollar later is worth less than a dollar now, so every bond is valued by discounting its future cash flows to the present — the same DCF machinery IB homed at ★ G90, applied to contractual cash flows.",
+    "explainer_covers": [
+      "The back-link discipline first: DCF is homed in IB (★ G90); this node does not re-teach it — it specializes it. Bonds are the cleanest possible DCF: the cash flows are contractual, so all the uncertainty lives in the discount rate.",
+      "Compounding conventions that actually bite (Parameswaran Ch. 1): nominal vs. effective rates, semiannual compounding (the US bond norm — a \"5% yield\" means 2.5% per half-year), and continuous compounding as the quant limit (Tuckman's appendices).",
+      "The discount factor as the primitive (Tuckman Ch. 1): d(t) = the price today of $1 at time t. A bond's price is just its cash flows times the discount factors. Everything in Z2.7 is machinery for extracting those discount factors from market prices.",
+      "Annuities and perpetuities as bond building blocks: a coupon bond = an annuity (the coupons) + a zero (the face). This decomposition is why zeros (Z3.2) are conceptually prior to coupon bonds even though coupon bonds came first historically."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.7",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G90` DCF (the home — back-link), Z2.2 (pricing as applied discounting), Z2.7 (extracting discount factors), `★ G248` (the risk-free rate as the base discount rate), `★ G1` IRR (YTM is an IRR — the PE bridge). *Real-world layer: Parameswaran Ch. 1 end-to-end.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 1 end-to-end.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.2",
+    "local_id": "Z2.2",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Bond Pricing & the Price–Yield Inversion",
+    "tag": "global",
+    "global_id": "G266",
+    "quick_definition": "A bond's price is the present value of its remaining cash flows at the market's required yield — which makes price and yield two expressions of one number moving in opposite directions: when rates rise, existing bond prices fall, mechanically.",
+    "explainer_covers": [
+      "The mechanism in one story (Thau's version): you hold a 3% coupon bond; the market now offers 5% on new bonds. Nobody will pay par for your 3% — your price falls until a buyer earns 5% on it. No judgment, no panic: arithmetic.",
+      "The pricing equation (Parameswaran Ch. 2): price = coupon annuity discounted at y + face discounted at y. Yield up → every discount factor down → price down. The relationship is convex, not linear (previewing ★ G268).",
+      "Why this is the single most consequential fact in retail finance: \"bonds are safe\" and \"bond funds lost 13% in 2022\" are both true — the payments were safe; the prices repriced to a 4-handle world. 2022 is the canonical modern case (GAP: post-dates Thau/Fabozzi; Tuckman's framework covers it, the episode itself needs current-data authoring).",
+      "What moves the yield that moves the price: the risk-free base (★ G248 — Macro's channel) plus the credit spread (★ G277 — Zone 4's channel). Decomposing a price move into \"rates\" vs. \"spread\" is the first skill of bond P&L attribution (Tuckman Ch. 3)."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.10",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.3",
+        "note": null
+      },
+      {
+        "ref": "G265",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G268",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G265` YTM (the y in the equation), Z2.3 (price relative to par), `★ G267`/`★ G268` (the sensitivity of this relationship), `★ G248` + `★ G277` (the two components of yield), Macro Z4.10 (the same inversion driving multiples and cap rates — `★ G259`). Across the graph: WM (why bond funds fell), AM Z2.8 (duration positioning is a bet on this). ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` post-dates Thau/Fabozzi; Tuckman's framework covers it, the episode itself needs current-data authoring",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.3",
+    "local_id": "Z2.3",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Par, Premium & Discount (and the Pull to Par)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The three price states of a coupon bond — at par (coupon = market yield), at a premium (coupon > yield), at a discount (coupon < yield) — and the gravitational fact that all of them converge to par as maturity approaches.",
+    "explainer_covers": [
+      "The classification and what it signals: a premium price isn't \"expensive\" and a discount isn't \"cheap\" — they just date the bond's birth rate environment against today's (Z1.9's time-capsule point). A 7% coupon trading at 108 and a 3% coupon trading at 92 can have identical yields.",
+      "The pull to par (Parameswaran Ch. 2): hold yield constant and roll the calendar — the premium bond's price drifts down to 100, the discount bond's drifts up to 100, the par bond stays put. Price change over time therefore has two parts: the market's yield moves and the deterministic pull.",
+      "The income-vs-capital composition: a premium bond pays more coupon and gives some back in price; a discount bond pays less coupon and makes it up in appreciation. Same total return, different tax and cash-flow texture (the muni market lives on this — ★ G273; and OID ★ G71 is the loan-world sibling of discount accrual).",
+      "Roll-down as the trading expression (previewing Z2.6): on an upward-sloping curve, a bond \"rolls down\" to lower yields as it shortens — a return source that exists even if the curve never moves."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.9",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G71",
+        "note": null
+      },
+      {
+        "ref": "G273",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (the pricing this classifies), Z1.9 (the arc), Z2.6 (carry & roll), `★ G71` OID (back-link — the private-market discount mechanics), `★ G273` munis (premium/discount tax treatment). *Real-world layer: Parameswaran's premium/discount tables.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran's premium/discount tables.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.4",
+    "local_id": "Z2.4",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Accrued Interest, Day Counts & the Dirty Price",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The settlement plumbing: buyers compensate sellers for interest earned since the last coupon (accrued interest), quoted prices exclude it (clean) while invoices include it (dirty), and the accrual is counted under market-specific day-count conventions.",
+    "explainer_covers": [
+      "The mechanism: coupons pay the holder of record on the coupon date, so a mid-period seller would lose earned interest — accrued interest fixes that at settlement. Dirty price = clean price + accrued; the screen shows clean, the wire moves dirty.",
+      "The day-count zoo (Parameswaran Ch. 3): actual/actual (Treasuries), 30/360 (corporates and munis), actual/360 (money market — why a T-bill \"discount rate\" isn't a yield, Z3.5). Same bond math, different calendars; getting the convention wrong misprices the trade.",
+      "The saw-tooth: dirty price climbs between coupons and drops by the coupon on payment date — a pattern that is not a market move, which is exactly why quoting convention strips it out.",
+      "Where it bites: settlement fails, coupon rolls, and the ex-dividend mechanics of specific markets — leaf-level detail; this node places the concept and flags the depth. GAP: full per-market convention tables are reference material for the depth layer, not the map."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.1",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.5",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 (what the quoted price actually is), Z3.1/Z3.5 (Treasury vs. money-market conventions), Z5.1 (settlement at the desk). *Real-world layer: Parameswaran Ch. 3 (the convention walkthroughs).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` full per-market convention tables are reference material for the depth layer, not the map",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Parameswaran Ch. 3 (the convention walkthroughs).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.5",
+    "local_id": "Z2.5",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "The Many Meanings of Yield",
+    "tag": "global",
+    "global_id": "G265",
+    "quick_definition": "Yield to maturity — the single discount rate equating price to the PV of remaining cash flows, i.e. the bond's IRR at today's price — and the disambiguation of the whole yield family: coupon, current yield, YTM, yield-to-call/worst, and Private Credit's all-in loan yield (★ G58).",
+    "explainer_covers": [
+      "The family, in one worked contrast (Thau Ch. 4 — her chapter title is this node's title): a 6% coupon bond at 90 has a 6% coupon, a 6.7% current yield (6/90), and an ~7.8% YTM (which adds the pull-to-par gain). Three \"yields,\" one bond — and salespeople historically quoted whichever flattered.",
+      "What YTM really is and really assumes: an IRR (★ G1 — the PE bridge is literal) with a buried assumption that coupons reinvest at the YTM. Realized return only equals YTM if rates cooperate — the reinvestment-risk footnote (Fabozzi Ch. 5's total-return critique, deepened at Z2.6).",
+      "Yield-to-call and yield-to-worst (previewing ★ G285): recompute YTM to each call date and price; the worst of them is the honest quote for a callable — the market's standard convention for pricing the issuer's option crudely before OAS does it properly (★ G277).",
+      "The ★ G58 seam (Part 1 callout, restated because it's load-bearing): Private Credit's \"yield\" is an underwriting construction — SOFR + spread + OID + fees on a loan that never trades. This node's YTM is a market observation on a security that reprices daily. When AM says \"the Agg yields 4.6%,\" it means the aggregated YTM of ★ G283's basket."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.3",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.6",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G170",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G58` (disambiguate_with — the paired yield), `★ G1` IRR (the shared math), Z2.2/Z2.3 (price ↔ yield ↔ par state), `★ G285` (YTW), Z2.6 (why realized ≠ quoted), `★ G170` (WM's withdrawal math consumes this number). *Real-world layer: Thau Ch. 4; Parameswaran Ch. 3 (the full measure-by-measure derivations).* ---",
+    "gaps": [],
+    "real_world_layer": "Thau Ch. 4; Parameswaran Ch. 3 (the full measure-by-measure derivations).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.6",
+    "local_id": "Z2.6",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "Total Return: Carry, Roll & Price",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "What a bondholder actually earns over a horizon, decomposed: carry (coupon income plus financing), roll-down (the deterministic slide along the curve), and price return (the mark-to-market from yield and spread moves) — the P&L attribution frame of every bond desk.",
+    "explainer_covers": [
+      "Why the decomposition exists (Tuckman Ch. 3): \"the bond yields 5%\" tells you almost nothing about what you'll make this year. Total return = income earned + price change, and the price change splits into the passage of time (pull-to-par + roll-down — knowable today) and market moves (rates + spread — not knowable).",
+      "Carry properly defined: coupon accrual minus the cost of financing the position (repo, ★ G282) — positive carry means the position pays you to wait; negative carry means the clock is against you (Willer's \"learn to love negative carry\" for EM is the exception that proves the rule).",
+      "Roll-down: on an upward-sloping curve a 5-year bond becomes a 4-year bond priced at a lower yield — a price gain from aging, harvested even in a frozen curve. Curve shape (Z2.8) is therefore a return input, not just a signal.",
+      "Horizon analysis and the reinvestment problem (Fabozzi Ch. 5): realized compound yield over a horizon depends on where coupons get reinvested — the formal reason YTM ≠ realized return, and the origin of immunization's duration-matching logic (★ G284)."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.3",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G265",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G265` (the quoted number this corrects), `★ G282` repo (the financing leg of carry), Z2.7/Z2.8 (the curve that roll-down rides), `★ G267` (price return per basis point), HF Z2.3 (RV trades are carry/roll/price bets in pairs), AM Z2.8 (the manager's scoreboard). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.7",
+    "local_id": "Z2.7",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "Spot, Forward & Par Rates (the Curve Toolkit)",
+    "tag": "global",
+    "global_id": "G269",
+    "quick_definition": "The pricing machinery extracted from bond prices: discount factors (the primitive), spot rates (zero-coupon yields), forward rates (the rates between future dates the curve implies), and par rates (the coupon that prices a bond at 100) — the arithmetic form of the term structure.",
+    "explainer_covers": [
+      "The extraction chain (Tuckman Ch. 1–2, Parameswaran Ch. 4): observed bond prices → discount factors → spot rates by bootstrapping (strip the short bond's cash flows out of the longer bond's price, iterate out the curve) → implied forwards from ratios of discount factors → par curve from the spots. One dataset, four representations.",
+      "Why YTM alone isn't enough: YTM discounts every cash flow at one rate, which is internally inconsistent across bonds (Huggins Ch. 5's caveat). Spot rates discount each cash flow at its own maturity's rate — the arbitrage-consistent frame, and the reason STRIPS (Z3.2) exist as its physical embodiment.",
+      "Forwards as the market's break-evens: the 1-year rate 1 year forward is the rate at which rolling short bonds ties rolling long bonds — \"what's priced in\" for the Fed path (★ G247) is read off exactly here. Forward ≠ forecast (the term-premium wedge, Z2.8).",
+      "The three-vantages callout, operationalized (Part 1): ★ G248 (the risk-free anchor for valuation), ★ G257 (the shape as macro signal), and this node (the arithmetic toolkit). Fitted curves (Z5.9 — Nelson-Siegel and friends, Huggins Ch. 8) are this toolkit industrialized for relative value."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.1",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z3.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248`/`★ G257` (the sibling vantages — disambiguated in Part 1), Z2.1 (discount factors), Z3.2 (STRIPS as physical spots), Z2.8 (why the curve has its shape), Z5.9 (fitted curves), future Derivatives module (forwards are its native language — flagged seam). *Real-world layer: Parameswaran Ch. 4 (bootstrapping worked); Tuckman Ch. 2.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 4 (bootstrapping worked); Tuckman Ch. 2.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.8",
+    "local_id": "Z2.8",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "Term-Structure Theories: Why the Curve Has Its Shape",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The three-part answer to why long rates differ from short rates: expectations (long rates average expected future short rates), the term premium (extra yield for bearing duration risk), and segmentation/preferred habitat (different investors are captive to different maturities).",
+    "explainer_covers": [
+      "Pure expectations as the baseline (Parameswaran Ch. 4): if investors were risk-neutral, the 10-year would be the geometric average of expected short rates — forwards would be forecasts, and an inverted curve would purely mean \"cuts are coming\" (the mechanism inside ★ G257).",
+      "The term premium correction (Tuckman Ch. 8; Fabozzi Ch. 8, Ilmanen): duration risk deserves compensation, so long yields = expected shorts + a premium that varies over time — and can go negative under QE (★ G251 distorting the signal, Macro's flagged caveat, now with its mechanism).",
+      "Segmentation and preferred habitat: pensions must own long bonds (★ G284), money funds must own short paper (★ G272) — captive demand bends segments of the curve independent of expectations (the UK LDI episode as the extreme case, flagged at Z5.8).",
+      "Reading a curve move by decomposition: bull steepener vs. bear steepener vs. flattener each tells a different story about which component moved — the grammar ★ G257 uses, taught here with the machinery under it."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      },
+      {
+        "ref": "G269",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G257` (the signal this theory underwrites — back-link), `★ G269` (the arithmetic it explains), `★ G251` QE/QT (the distortion), `★ G284` LDI (habitat demand), HF Z2.4 (macro curve trades), Willer Ch. 6 (the EM version). `GAP:` post-2022 term-premium estimates and the QT-era curve are recency-flagged; frameworks stable, levels stale. ---",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "` post-2022 term-premium estimates and the QT-era curve are recency-flagged; frameworks stable, levels stale",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.9",
+    "local_id": "Z2.9",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Duration & DV01",
+    "tag": "global",
+    "global_id": "G267",
+    "quick_definition": "The master risk number: duration measures how much a bond's price changes for a change in yield (modified duration ≈ %-price-change per 1% yield move; DV01 = the dollar change per basis point) — and it is not maturity, though the two rhyme.",
+    "explainer_covers": [
+      "The intuition ladder: (1) longer bonds swing more; (2) precisely, price sensitivity ≈ the PV-weighted average time to the cash flows (Macaulay), because distant cash flows get discounted hardest; (3) the trading form is DV01 — dollars per basis point — because desks hedge dollars, not percentages (Tuckman Ch. 4).",
+      "The duration-vs-maturity disambiguation (Part 1 callout, the worked cases): 30-year coupon bond ≈ 18-year duration; 30-year zero = 30-year duration (nothing arrives early); floater ≈ duration to the next reset (★ G69 — why private credit \"has no duration\" and why floaters were 2022's shelter); higher coupon → lower duration (more of the value arrives sooner).",
+      "Portfolio duration and the hedge ratio: durations aggregate value-weighted; matching DV01s is how a desk hedges a corporate with Treasuries or futures, and how AM Z2.8 states its benchmark bet (\"half a year long duration\"). Key-rate/partial '01s (Tuckman Ch. 5) refine \"the\" yield move into moves at each curve point — named here, deferred to depth.",
+      "The limits that motivate the next node: duration is the linear approximation, good for small moves, wrong for big ones — and systematically wrong in one direction, which is convexity's subject."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.4",
+        "note": null
+      },
+      {
+        "ref": "G268",
+        "note": null
+      },
+      {
+        "ref": "G266",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G268` convexity (the correction), `★ G266` (the relationship it linearizes), `★ G284` immunization (duration-matching as strategy), `★ G69` floaters (the near-zero-duration case), Z5.4 (futures/swaps as duration tools), AM Z2.8 / WM (the word they've been using unexplained — this is its home). *Real-world layer: Parameswaran Ch. 5; Tuckman Ch. 4–5.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 5; Tuckman Ch. 4–5.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.10",
+    "local_id": "Z2.10",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Convexity",
+    "tag": "global",
+    "global_id": "G268",
+    "quick_definition": "The curvature in the price–yield relationship: for a plain bond, prices rise more when yields fall than they drop when yields rise — a free asymmetry duration misses — and for prepayable bonds the curvature flips negative, the defining pathology of MBS.",
+    "explainer_covers": [
+      "The picture: the price–yield curve is bowed toward the origin. Duration is the tangent line; convexity is how the curve bends away from it. Big rate moves therefore beat the duration estimate on the upside and undershoot it on the downside — positive convexity is worth paying for (Parameswaran Ch. 5).",
+      "Where convexity comes from: dispersion of cash flows — zeros have the least for their duration, long low-coupon bonds the most. Barbell vs. bullet portfolios with equal duration differ in convexity, which is a real trade (Fabozzi Ch. 9; HF Z2.3's butterfly trades live here).",
+      "Negative convexity (the load-bearing case, previewing ★ G280): when rates fall, homeowners refinance — the MBS holder gets principal back exactly when reinvestment rates are worst, so the price stops rising. When rates rise, prepayments stop and duration extends into the sell-off. The price–yield curve bends the wrong way on both sides. Callable bonds (★ G285) share the disease in miniature.",
+      "The practitioner caveat (Huggins Ch. 5): \"convexity\" gets misapplied when yield curves aren't flat — the common textbook shortcut mistakes a curve effect for a convexity effect. Flagged at map level; the correction lives in the depth layer."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.3",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G280",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G267` (the linear term this corrects), `★ G280` MBS & `★ G285` callables (negative convexity's homes), Z2.11 (hedging the second order), HF Z2.3 (convexity trades), `★ G259` (the discount-rate channel — long-duration assets are also the most *convex*, the VC/growth-equity rhyme). *Real-world layer: Parameswaran Ch. 5; Tuckman Ch. 4.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 5; Tuckman Ch. 4.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z2.11",
+    "local_id": "Z2.11",
+    "module": "fixed-income",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "Hedging & Immunization Logic",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The zone's payoff assembled: with duration and convexity in hand, a portfolio can be neutralized against rate moves — matching DV01s to hedge a position, matching duration (and dispersion) to immunize a liability — the logic that Z5 turns into practice.",
+    "explainer_covers": [
+      "The single-position hedge: short enough Treasuries (or futures/swaps — Z5.4, usage level) to zero the DV01, leaving only the spread exposure — the standard way a credit desk isolates what it's actually paid to take (★ G277).",
+      "Single-period immunization (Parameswaran Ch. 5's proof, in words): set portfolio duration equal to the horizon and the two rate risks — reinvestment (rates fall, coupons reinvest worse) and price (rates rise, sale price worse) — offset each other. The pension version scales this into LDI (★ G284, the Z5.8 home).",
+      "Beyond parallel shifts: duration hedges assume the whole curve moves together; key-rate '01s, regression hedging, and PCA (Tuckman Ch. 5–6; Huggins Ch. 3) handle twists — named as the professional toolkit, deferred to the depth layer and to the RV node (Z5.9).",
+      "The honest limit: immunization is against rates, not credit — a duration-matched corporate portfolio still bleeds if spreads widen (★ G255). Zone 4 prices what this zone can't hedge."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z5.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.4",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G267",
+        "note": null
+      },
+      {
+        "ref": "G268",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G267`/`★ G268` (the inputs), `★ G284` LDI (the institutional application — home in Z5.8), Z5.4 (the instruments, usage level), Z5.9 (PCA-grade hedging), `★ G277` (the residual this isolates). `GAP:` key-rate, regression, and PCA hedging are placed by name; full treatment belongs to depth authoring against Tuckman Ch. 5–6. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "` key-rate, regression, and PCA hedging are placed by name; full treatment belongs to depth authoring against Tuckman Ch. 5–6",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

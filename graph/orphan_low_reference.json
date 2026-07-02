@@ -33,13 +33,13 @@
   ],
   "low_reference_globals": [
     {
-      "id": "G63",
-      "term": "Non-bank lending / Disintermediation",
+      "id": "G128",
+      "term": "Long/short equity",
       "inbound_references": 1
     },
     {
-      "id": "G128",
-      "term": "Long/short equity",
+      "id": "G272",
+      "term": "The money market (bills, CP, CDs) (Z3.5)",
       "inbound_references": 1
     }
   ]

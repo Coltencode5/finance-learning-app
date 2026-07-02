@@ -15,6 +15,13 @@
       "investment-banking": 24,
       "hedge-funds": 19
     },
+    "fixed-income": {
+      "global": 197,
+      "hedge-funds": 14,
+      "asset-management": 7,
+      "private-credit": 6,
+      "macro-economics": 4
+    },
     "hedge-funds": {
       "global": 181,
       "private-equity": 12,

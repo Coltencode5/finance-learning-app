@@ -1,0 +1,434 @@
+[
+  {
+    "id": "fixed-income.z1.1",
+    "local_id": "Z1.1",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Fixed Income Is (the Asset Class)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The asset class of tradable debt — securities that promise contractual payments on a schedule — spanning government, municipal, corporate, securitized, and emerging-market debt; called \"fixed income\" because the payments are set by contract, not by the issuer's profits.",
+    "explainer_covers": [
+      "The defining contrast with equity: a bondholder is a lender with a contract, not an owner with a claim on profits. Coupons are obligations (missing one is default); dividends are discretionary. Upside is capped at the promised payments; downside protection comes from seniority (★ G78) and the contract.",
+      "Why \"fixed\" income still moves: the payments are fixed but the price is not — it reprices continuously as rates (★ G248) and credit conditions (★ G258) move. Zone 2 is the mechanics of that repricing.",
+      "The map of the universe (previewing Zone 3): governments (Treasuries ★ G270, TIPS ★ G271), the money market (★ G272), munis (★ G273), corporates (★ G274, IG and HY ★ G275), securitized products (★ G279/★ G280), and EM (★ G281).",
+      "Where this module sits in the app: Macro built the rates variables; Private Credit built the private lending world; Asset/Wealth Management built the vehicles and mandates. This module builds the market they all assume."
+    ],
+    "connects_to": [
+      {
+        "ref": "asset-management.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.3",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.8",
+        "note": null
+      },
+      {
+        "ref": "G264",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G264` the bond (the atomic unit), Z1.3 (why the asset class exists), Z1.8 (the private-credit seam), `★ G248` the risk-free rate (the anchor variable), AM Z2.8 (Active Fixed Income — the manager's seat over this market), `★ G143` asset allocation (where FI sits in a portfolio). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.2",
+    "local_id": "Z1.2",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Bond",
+    "tag": "global",
+    "global_id": "G264",
+    "quick_definition": "A tradable IOU: a security promising to pay a fixed coupon on set dates and return the face value (par) at maturity — the atomic unit of the fixed-income market, defined by four terms: face, coupon, maturity, and the price the market sets against them.",
+    "explainer_covers": [
+      "The anatomy (Parameswaran Ch. 2): face/par value (the principal repaid at the end, the base coupons are computed on), the coupon rate (the contractual interest, usually paid semiannually in the US), the maturity (when the debt ceases to exist), and the price (what the market pays today — quoted per 100 of face). The fifth number, yield (★ G265), is derived from price, not written in the contract.",
+      "Bond vs. loan vs. note vs. debenture: a bond is securitized borrowing — standardized, registered, transferable. In US usage a debenture is unsecured and a bond is secured; in practice the words blur, and the load-bearing distinction is tradable security vs. bilateral loan (Z1.8).",
+      "Variants previewed (each gets its Zone 3 node): zero-coupon (Z3.2), floating-rate (Z3.8, ★ G69), inflation-linked (★ G271), callable (★ G285), amortizing and mortgage-backed (★ G280).",
+      "The two things that can happen to a holder: get paid as promised, or default (★ G62) — with recovery (★ G61) governed by seniority (★ G78). Everything in Zone 4 prices the odds of the second outcome."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z2.2",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.9",
+        "note": null
+      },
+      {
+        "ref": "G266",
+        "note": null
+      },
+      {
+        "ref": "G265",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G34",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z2.2 pricing (`★ G266`), `★ G265` YTM (the derived number), Z1.9 (the life cycle), `★ G29` leverage (the issuer's side — bonds are how companies lever without diluting), `★ G34` covenant (the contract's teeth, lighter in bonds than loans), Z3 (every variant). Across the graph: the word \"bond\" appears in all ten modules; this is its home. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.3",
+    "local_id": "Z1.3",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "Why Issuers Borrow & Why Investors Lend",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The two-sided motive that creates the market: issuers get capital without dilution plus a tax shield and leverage; investors get contractual income, seniority over equity, and the portfolio ballast of an asset that (usually) zigged when stocks zagged.",
+    "explainer_covers": [
+      "The issuer's side (Parameswaran): debt raises capital without giving up ownership — the leverage effect (★ G29, back-link: it magnifies equity returns both ways) and the tax shield (interest is deductible; dividends are not — the same arithmetic PE runs in every LBO). Governments have no equity to sell; bonds are their only security.",
+      "The investor's side (Thau): predictable income (retirees, insurers, pensions — the LDI motive previewed at ★ G284), capital preservation via seniority, and diversification — the historical stock–bond hedge, with the honest caveat that the hedge fails when inflation is the shock (2022: both fell together; ★ G252).",
+      "Who must hold bonds by mandate: banks (regulation and liquidity rules), insurers (matching liabilities), pensions (LDI), money-market and bond funds (★ G283 benchmarks). Much of the market is structurally long.",
+      "The pecking order in the capital structure: secured debt → unsecured bonds → subordinated → preferred → equity (★ G78, ★ G95 the EV bridge). Where a bond sits determines its recovery (★ G61) and therefore its spread (★ G277)."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z4.6",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G95",
+        "note": null
+      },
+      {
+        "ref": "G143",
+        "note": null
+      },
+      {
+        "ref": "G170",
+        "note": null
+      },
+      {
+        "ref": "G284",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G29` leverage, `★ G95` EV bridge (IB), `★ G143` asset allocation (AM), `★ G170` the 4% rule (WM — the income link), Z4.6 (default & recovery), `★ G284` LDI. *Real-world layer: Parameswaran Ch. 2 (leverage & tax shield tables); Thau Part 1.* ---",
+    "gaps": [],
+    "real_world_layer": "Parameswaran Ch. 2 (leverage & tax shield tables); Thau Part 1.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.4",
+    "local_id": "Z1.4",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "The Scale of the Market",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The fact that reframes everything: the global bond market is larger than the global equity market — US Treasuries alone form the deepest securities market on earth — and bond-market prices (yields) are the gravitational field every other asset is priced in.",
+    "explainer_covers": [
+      "The size ranking a newcomer never guesses: global debt securities outstanding exceed global equity market capitalization; within the US, the Treasury market (★ G270) is the single deepest and most-traded market in existence, followed by MBS (★ G280) and corporates (★ G274).",
+      "Why equities get the headlines anyway: stocks are exchange-traded, volatile, and story-rich; bonds trade OTC (Z1.7) in institutional size. Retail sees the bond market mostly through funds (Z5.7) and mortgage rates.",
+      "Why the bond market is called \"the smart money\": yields aggregate the market's view of growth, inflation, and policy (★ G257 the inversion signal is bond-market information); \"the bond vigilantes\" discipline fiscal policy (★ G242, ★ G262).",
+      "The gravitational-field point (the G248→G259 chain restated from the market side): the Treasury curve is the risk-free base; every mortgage, loan, corporate bond, cap rate (★ G219), and equity multiple (★ G27) is priced at a spread or premium to it."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.10",
+        "note": null
+      },
+      {
+        "ref": "G270",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      },
+      {
+        "ref": "G283",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G270` the Treasury market, `★ G248`/`★ G259` (the valuation chain — this node is its marketplace), Macro Z4.10 (the macro–markets bridge), `★ G283` (how the market is indexed). GAP: outstanding-size figures are level-data that date quickly — sources run to ~2022; refresh at authoring depth. ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "outstanding-size figures are level-data that date quickly — sources run to ~2022; refresh at authoring depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.5",
+    "local_id": "Z1.5",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "The Players: Issuers, Investors & Dealers",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The three-sided cast: issuers who need capital (Treasury, agencies, states, corporations), investors who supply it (central banks, funds, insurers, pensions, banks, households), and the dealers in the middle who underwrite, quote, and warehouse risk.",
+    "explainer_covers": [
+      "The issuer roster by size: the US Treasury (the anchor issuer, ★ G270), the housing agencies/GSEs (Z3.4), states and municipalities (★ G273), corporations from AAA to CCC (★ G274/★ G275), securitization trusts (★ G279), and foreign sovereigns (★ G281).",
+      "The investor roster and what each wants: central banks (reserves — the Fed itself via QE ★ G251), commercial banks (liquidity portfolios), insurers and pensions (liability matching, ★ G284), mutual funds and ETFs (benchmark tracking, ★ G283), hedge funds (RV and macro — HF Z2.3/Z2.4), money-market funds, and households (Thau's reader).",
+      "The dealers: the sell-side desks (and, for Treasuries, the designated primary dealers, Z3.1) that underwrite new issues (Z1.6, ★ G103), make secondary markets (Z1.7), and finance inventory in repo (★ G282). Post-Basel III their balance sheets are scarcer — a structural liquidity change the older sources predate (Huggins Ch. 18).",
+      "The Fed as a player, not just a referee: open-market operations, the QE/QT portfolio (★ G251), and the standing repo facilities put the central bank inside this market — the direct line to Macro Z2."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.6",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.6/Z1.7 (what dealers do), `★ G244` the Fed, `★ G251` QE/QT, AM/WM (the buy-side modules — their firms are these investors), HF Z2.8 (credit funds), `★ G282` repo (the financing layer). *Real-world layer: Tuckman Ch. 0's market-participant map; Fabozzi Ch. 3.* ---",
+    "gaps": [],
+    "real_world_layer": "Tuckman Ch. 0's market-participant map; Fabozzi Ch. 3.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.6",
+    "local_id": "Z1.6",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "The Primary Market: Auctions & Underwriting",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "How bonds are born: governments sell by auction on a published calendar; corporates and munis sell by underwriting, where an IB syndicate buys the issue and re-offers it — the fixed-income half of the capital-markets machinery IB already teaches.",
+    "explainer_covers": [
+      "The auction route (Treasuries, detailed at Z3.1): announced size and date, competitive bids in yield from primary dealers and directs, a single clearing yield, when-issued trading before settlement (Parameswaran Ch. 2).",
+      "The underwritten route: the DCM desk builds a book, prices the deal as a spread over Treasuries (★ G277 at birth), and the syndicate earns the gross spread (★ G103 — back-link, homed in IB). New-issue concessions and order-book dynamics are the corporate market's version of an IPO pop.",
+      "Private placements and MTN programs as the middle path (Fabozzi Ch. 14): continuously offered notes off a shelf — flexible size and maturity, sitting between a bond deal and a loan.",
+      "Why the primary market matters for pricing everywhere: new-issue supply is the marginal flow that moves secondary spreads; Treasury auction sizes are fiscal policy (★ G242) arriving in the market."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z3.1",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.7",
+        "note": null
+      },
+      {
+        "ref": "G103",
+        "note": null
+      },
+      {
+        "ref": "G274",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G103` underwriting spread (IB — back-link, the fee side), IB's ECM/DCM zone (the process this node is the product of), Z3.1 (the Treasury auction in full), `★ G274` corporates, Z1.7 (where the bonds go next). *Real-world layer: Fabozzi Ch. 3 (primary market); Parameswaran (auction illustration).* ---",
+    "gaps": [],
+    "real_world_layer": "Fabozzi Ch. 3 (primary market); Parameswaran (auction illustration).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.7",
+    "local_id": "Z1.7",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "The Secondary Market: OTC Dealer Trading",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Where bonds live after issuance: not an exchange but a dealer network — investors trade against dealer quotes, bilaterally or on electronic platforms, which makes liquidity a negotiated, tiered thing rather than a continuous ticker.",
+    "explainer_covers": [
+      "The structural fact (Thau's Part 1 warning to retail buyers): most bonds don't trade on an exchange. A dealer quotes a bid and an ask and holds inventory in between; the spread between them is the price of liquidity (Z5.1 deepens this).",
+      "The liquidity tiers: on-the-run Treasuries trade nearly continuously; off-the-run and IG corporates trade daily-ish; a seasoned muni or small HY issue may not trade for weeks. \"The price\" of an untraded bond is a mark, not a print — matrix pricing off comparable bonds.",
+      "The electronification shift: platforms, all-to-all trading, and portfolio trading have transformed corporate-bond liquidity since the sources' publication dates. GAP: Thau (2011) and Fabozzi (7th ed.) predate this; Tuckman covers the modern structure partially. Flag for refresh at depth.",
+      "Transparency plumbing: TRACE (corporates) and EMMA (munis) publish trades after the fact — the closest the OTC market gets to a tape."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.1",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.5",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G282",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z5.1 (the dealer desk & bid–ask, the trading-zone deepening), Z1.5 (the dealers), `★ G282` repo (how dealer inventory is financed), WM (why retail should usually buy funds, Z5.7 — Thau's core advice), PC Z1.7 (the *other* market structure: none at all). ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "Thau (2011) and Fabozzi (7th ed.) predate this; Tuckman covers the modern structure partially. Flag for refresh at depth",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.8",
+    "local_id": "Z1.8",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Public/Traded Credit vs. Private Credit (the Seam)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The module's front-door disambiguation (Part 1, first callout): the same act of lending split into two worlds — bilateral, negotiated, illiquid, floating-rate private credit vs. standardized, rated, continuously repriced public fixed income — with the syndicated-loan market as the blurry middle.",
+    "explainer_covers": [
+      "The two-column contrast, made concrete with one borrower: a sponsor-backed company might carry a private unitranche (★ G68) and a public high-yield bond. The unitranche: one lender, SOFR + spread set at close (★ G69/★ G70), maintenance covenants (★ G34), no secondary price. The bond: hundreds of holders, a fixed coupon, incurrence-only covenants, a price on a screen every day.",
+      "What \"traded\" buys and costs: liquidity (you can exit) and price discovery (you know the mark) — paid for with mark-to-market volatility, thinner covenants, and disclosure obligations. What \"private\" buys: yield premium, covenant control, information access — paid for with illiquidity (★ G63's disintermediation story is the supply side of this).",
+      "The blurry middle this seam already flagged from the other side: the broadly syndicated loan market (Private Credit Z1.7 — back-link, the canonical BSL node). Term Loan Bs are loans that trade — rated, index-tracked, institutionally distributed. The two modules meet exactly there.",
+      "Reading the same credit in both markets: the bond's spread (★ G277) and the loan's spread (★ G70) price the same default risk in different clothes; the CDS (★ G278) prices it in a third. Divergences between them are the raw material of capital-structure relative value (HF Z2.8)."
+    ],
+    "connects_to": [
+      {
+        "ref": "private-credit.z1.7",
+        "note": null
+      },
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G265",
+        "note": null
+      },
+      {
+        "ref": "G64",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "PC Z1.7 (the paired seam node — the app renders these as two doors on one wall), `★ G70` vs. `★ G277` (Part 1 spread callout), `★ G58` vs. `★ G265` (Part 1 yield callout), `★ G64` BDCs (who holds the private side), HF Z2.8 (who trades the dislocations). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "fixed-income.z1.9",
+    "local_id": "Z1.9",
+    "module": "fixed-income",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "A Bond's Life: Issue → Coupons → Maturity (or Default)",
+    "tag": "process",
+    "global_id": null,
+    "quick_definition": "The full arc as a sequence: origination and pricing at issue, the seasoning of a coupon-paying security through the curve and the credit cycle, and the three exits — maturity at par, an early call (★ G285), or default and workout (★ G62, ★ G81).",
+    "explainer_covers": [
+      "Birth (Z1.6): priced at ~par with a coupon set to the market yield for that issuer, maturity, and moment — meaning the coupon is a time capsule of the rate environment at issue (★ G258).",
+      "Life: the price walks with the market (Z2.2) while pulling to par as maturity approaches (Z2.3); the bond migrates from on-the-run to off-the-run liquidity (Z1.7); its rating can migrate too (★ G276 — upgrades, downgrades, the fallen-angel cliff at ★ G275).",
+      "The three deaths: maturity (par repaid, the ordinary case), the call (the issuer refinances when rates fall — exactly when the holder least wants the money back, ★ G285), or default (Z4.6 — acceleration, restructuring ★ G81, recovery ★ G61).",
+      "Why the arc matters for the app's learners: every metric in Zones 2 and 4 (YTM, duration, spread, YTW) is a snapshot along this arc, and each assumes a different ending. Yield-to-maturity assumes death #1; yield-to-worst prices death #2; spreads price the odds of death #3."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z1.6",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z2.3",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z4.6",
+        "note": null
+      },
+      {
+        "ref": "fixed-income.z1.2",
+        "note": null
+      },
+      {
+        "ref": "G285",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.6 (birth), Z2.3 (pull to par), `★ G285` (the call), Z4.6 (default & recovery), `★ G255` the credit cycle (the weather across the life), Z1.2 (the object whose biography this is). ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]
