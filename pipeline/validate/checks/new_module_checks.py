@@ -12,6 +12,22 @@ NODE_ID_PATTERN = re.compile(r"^[a-z0-9-]+\.z[1-5]\.\d+$")
 GLOBAL_ID_PATTERN = re.compile(r"^G[1-9][0-9]*$")
 REQUIRED_ZONE_FILES = [f"z{n}.json" for n in range(1, 6)]
 
+ROLE_SPINE_PLACEHOLDERS = {
+    "PLACEHOLDER — Ecosystem",
+    "PLACEHOLDER — Types",
+    "PLACEHOLDER — Process",
+    "PLACEHOLDER — Managing",
+    "PLACEHOLDER — Meta",
+}
+
+CORE_CONCEPT_SPINE_PLACEHOLDERS = {
+    "PLACEHOLDER — Concept zone 1",
+    "PLACEHOLDER — Concept zone 2",
+    "PLACEHOLDER — Concept zone 3",
+    "PLACEHOLDER — Concept zone 4",
+    "PLACEHOLDER — Concept zone 5",
+}
+
 
 def _norm_term(t: str) -> str:
     t = unicodedata.normalize("NFKD", t.lower())
@@ -19,6 +35,30 @@ def _norm_term(t: str) -> str:
     t = re.sub(r"[^a-z0-9 ]", " ", t)
     t = re.sub(r"\b(the|a|an|of|and)\b", " ", t)
     return re.sub(r"\s+", " ", t).strip()
+
+
+def check_zone_titles_by_kind(
+    modules: dict,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    """Active modules must use zone title placeholders appropriate to their kind."""
+    for slug, mod in sorted(modules.items()):
+        if is_draft(mod):
+            continue
+        kind = mod.get("kind", "role")
+        titles = {z["zone"]: z["title"] for z in mod.get("zones", [])}
+        for zone_num, title in titles.items():
+            if kind == "core-concept" and title in ROLE_SPINE_PLACEHOLDERS:
+                errors.append(
+                    f"[module] {slug} zone {zone_num} uses role spine placeholder "
+                    f"'{title}' but kind is core-concept (ADR-002)"
+                )
+            elif kind == "role" and title in CORE_CONCEPT_SPINE_PLACEHOLDERS:
+                errors.append(
+                    f"[module] {slug} zone {zone_num} uses core-concept placeholder "
+                    f"'{title}' but kind is role (ADR-002)"
+                )
 
 
 def check_module_structure(modules: dict, nodes: list[dict], errors: list[str], warnings: list[str]) -> None:
@@ -66,7 +106,7 @@ def check_new_module_globals(
     errors: list[str],
     warnings: list[str],
 ) -> None:
-    """New globals from active modules must start at G236+ and not collide on normalized terms."""
+    """New globals from active modules must start at corpus_max+1 and not collide."""
     existing_norm: dict[str, str] = {}
     for g in globals_:
         existing_norm[_norm_term(g["term"])] = g["id"]
@@ -75,28 +115,33 @@ def check_new_module_globals(
             if key:
                 existing_norm[key] = g["id"]
 
-    max_g = max((int(g["id"][1:]) for g in globals_), default=0)
-    next_expected = max_g + 1
-
     for slug, mod in modules.items():
         if is_draft(mod):
             continue
 
-        new_globals = [
-            g for g in globals_
-            if g.get("contributed_by") == slug and int(g["id"][1:]) >= 236
-        ]
+        module_globals = sorted(
+            (g for g in globals_ if g.get("contributed_by") == slug),
+            key=lambda g: int(g["id"][1:]),
+        )
+        if not module_globals:
+            continue
+
+        other_max = max(
+            (int(g["id"][1:]) for g in globals_ if g.get("contributed_by") != slug),
+            default=0,
+        )
+        new_globals = [g for g in module_globals if int(g["id"][1:]) > other_max]
         if not new_globals:
             continue
 
         nums = sorted(int(g["id"][1:]) for g in new_globals)
+        next_expected = other_max + 1
         expected = list(range(next_expected, next_expected + len(new_globals)))
         if nums != expected:
             errors.append(
                 f"[module] {slug} new globals must be contiguous from G{next_expected}: "
                 f"got {[f'G{n}' for n in nums]}"
             )
-
         for g in new_globals:
             keys = [_norm_term(g["term"])] + [_norm_term(a) for a in g.get("aliases", [])]
             for key in keys:
@@ -139,5 +184,6 @@ def check_new_modules(
     warnings: list[str],
 ) -> None:
     check_module_structure(modules, nodes, errors, warnings)
+    check_zone_titles_by_kind(modules, errors, warnings)
     check_new_module_globals(globals_, modules, errors, warnings)
     check_module_graph_presence(root, modules, errors, warnings)

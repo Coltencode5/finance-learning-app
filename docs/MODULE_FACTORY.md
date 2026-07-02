@@ -40,9 +40,20 @@ The script:
 
 - Validates slug format (`^[a-z][a-z0-9-]*$`)
 - Rejects duplicate slugs
-- Assigns `build_order` automatically
+- Assigns `build_order` automatically (next sequential slot; see draft band below)
 - Sets `visibility: draft` and `status: in-progress`
 - Creates one placeholder front-door node per zone (`connects_to: []`)
+
+## Build order convention
+
+| Range | Use |
+|---|---|
+| `1`–`899` | Real modules — claim the next sequential slot via `next_build_order()` |
+| `≥ 900` | Draft/scaffold placeholders — excluded from the sequential counter |
+
+The `corporate-finance` draft uses `build_order: 999` so module 10 (`macro-economics`)
+can claim slot `10` without collision. Draft modules in the sentinel band are still
+excluded from validation, graph build, and the app.
 
 ## Active vs draft
 
@@ -72,7 +83,8 @@ python -m unittest pipeline.scaffold.test_scaffold_module
 
 - Five zone files (`z1.json`–`z5.json`) required
 - Node IDs must match `{slug}.z{1-5}.{n}`
-- New globals must start at **G236** and be contiguous
+- New globals must start at **corpus_max + 1** (currently G236 after the nine
+  role modules) and be contiguous
 - New globals must not collide on normalized terms with existing glossary
 - Active modules must appear in `graph/by_module.json` after graph build
 
@@ -84,11 +96,18 @@ python -m unittest pipeline.scaffold.test_scaffold_module
 - Do not make Markdown canonical — JSON only
 - Do not skip validation after adding zones or globals
 
-## Module 10 scaffold
+## Module 10 — Macro & Economics
 
-`content/modules/corporate-finance/` is a **draft** placeholder for future
-Corporate Finance content. It is excluded from production navigation until
-promoted.
+`content/modules/macro-economics/` is migrated from
+`legacy/markdown/Macro_Economics_Module_Node_Map.md` via
+`pipeline/migrate/parse_macro.py`. It uses `kind: core-concept` and a
+concept-progression zone spine per ADR-002.
+
+## Draft placeholder — Corporate Finance
+
+`content/modules/corporate-finance/` is a **draft** placeholder (`build_order: 999`)
+for future Corporate Finance content. It is excluded from production navigation
+until promoted.
 
 ## Tests
 

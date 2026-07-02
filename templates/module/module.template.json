@@ -1,7 +1,7 @@
 {
   "slug": "{{MODULE_SLUG}}",
   "title": "{{MODULE_TITLE}}",
-  "kind": "core-concept",
+  "kind": "{{MODULE_KIND}}",
   "build_order": {{BUILD_ORDER}},
   "visibility": "draft",
   "status": "in-progress",

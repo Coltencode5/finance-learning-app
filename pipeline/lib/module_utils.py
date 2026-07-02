@@ -66,5 +66,20 @@ def load_active_nodes(root: Path) -> list[dict]:
 
 
 def next_build_order(root: Path) -> int:
-    orders = [m.get("build_order", 0) for m in load_all_modules(root).values()]
+    """Next sequential build_order, excluding draft sentinel band (>= 900)."""
+    orders = [
+        m.get("build_order", 0)
+        for m in load_all_modules(root).values()
+        if m.get("build_order", 0) < 900
+    ]
     return max(orders, default=0) + 1
+
+
+def corpus_max_g(globals_: list[dict]) -> int:
+    if not globals_:
+        return 0
+    return max(int(g["id"][1:]) for g in globals_)
+
+
+def next_global_id(globals_: list[dict]) -> str:
+    return f"G{corpus_max_g(globals_) + 1}"
