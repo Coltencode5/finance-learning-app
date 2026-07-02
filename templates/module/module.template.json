@@ -1,0 +1,16 @@
+{
+  "slug": "{{MODULE_SLUG}}",
+  "title": "{{MODULE_TITLE}}",
+  "kind": "core-concept",
+  "build_order": {{BUILD_ORDER}},
+  "visibility": "draft",
+  "status": "in-progress",
+  "zones": [
+    { "zone": 1, "title": "{{ZONE_1_TITLE}}", "front_door": "Z1.1" },
+    { "zone": 2, "title": "{{ZONE_2_TITLE}}", "front_door": "Z2.1" },
+    { "zone": 3, "title": "{{ZONE_3_TITLE}}", "front_door": "Z3.1" },
+    { "zone": 4, "title": "{{ZONE_4_TITLE}}", "front_door": "Z4.1" },
+    { "zone": 5, "title": "{{ZONE_5_TITLE}}", "front_door": "Z5.1" }
+  ],
+  "sources": []
+}

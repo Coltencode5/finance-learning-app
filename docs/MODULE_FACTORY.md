@@ -1,0 +1,100 @@
+# Module Factory
+
+Milestone 5 adds safe infrastructure for creating future modules without
+corrupting the nine active canonical modules.
+
+## Purpose
+
+- **Template** — `templates/module/` mirrors the canonical JSON structure
+- **Scaffold script** — generates a draft five-zone module with placeholders
+- **Validation gates** — `new_module_checks.py` enforces structure and new-global rules
+- **Draft visibility** — draft modules are excluded from validation, graph build, and the app
+
+## Module structure (actual repo conventions)
+
+| Item | Convention |
+|---|---|
+| Metadata | `content/modules/{slug}/module.json` |
+| Zones | `content/modules/{slug}/zones/z1.json` … `z5.json` |
+| Node ID | `{slug}.z{zone}.{ordinal}` e.g. `private-equity.z1.5` |
+| Local ID | `Z{zone}.{ordinal}` e.g. `Z1.5` |
+| Global refs | `G{n}` in `connects_to` |
+| Cross-module refs | `{other-slug}.z{zone}.{n}` |
+| Gaps | `{ "kind": "source"\|"recency", "note": "..." }` on node `gaps` array |
+| Graph edges | Derived from `connects_to` + `home_of` + `disambiguates` — never hand-edit `graph/` |
+
+## Scaffold a module
+
+```bash
+# Preview (no files written)
+python pipeline/scaffold/scaffold_module.py --slug corporate-finance --title "Corporate Finance" --dry-run
+
+# Create draft scaffold
+python pipeline/scaffold/scaffold_module.py --slug corporate-finance --title "Corporate Finance"
+
+# npm alias
+npm run scaffold:module -- --slug corporate-finance --title "Corporate Finance" --dry-run
+```
+
+The script:
+
+- Validates slug format (`^[a-z][a-z0-9-]*$`)
+- Rejects duplicate slugs
+- Assigns `build_order` automatically
+- Sets `visibility: draft` and `status: in-progress`
+- Creates one placeholder front-door node per zone (`connects_to: []`)
+
+## Active vs draft
+
+| `visibility` | Validation | Graph build | App home page |
+|---|---|---|---|
+| `active` (default) | Full checks | Included | Shown |
+| `draft` | Excluded | Excluded | Hidden (set `SHOW_DRAFT_MODULES=1` to reveal) |
+
+Promote a module when content is ready:
+
+```json
+"visibility": "active"
+```
+
+Then run strict validation and rebuild the graph.
+
+## Validation commands
+
+```bash
+python pipeline/validate/validate.py --strict   # active modules only
+python pipeline/build/build_graph.py
+npm run check:data
+python -m unittest pipeline.scaffold.test_scaffold_module
+```
+
+### New-module rules (active modules)
+
+- Five zone files (`z1.json`–`z5.json`) required
+- Node IDs must match `{slug}.z{1-5}.{n}`
+- New globals must start at **G236** and be contiguous
+- New globals must not collide on normalized terms with existing glossary
+- Active modules must appear in `graph/by_module.json` after graph build
+
+## What not to do
+
+- Do not add finance content during scaffolding — use placeholders
+- Do not set `visibility: active` until validation passes
+- Do not hand-edit `derived` blocks in `module.json`
+- Do not make Markdown canonical — JSON only
+- Do not skip validation after adding zones or globals
+
+## Module 10 scaffold
+
+`content/modules/corporate-finance/` is a **draft** placeholder for future
+Corporate Finance content. It is excluded from production navigation until
+promoted.
+
+## Tests
+
+```bash
+python -m unittest pipeline.scaffold.test_scaffold_module
+```
+
+Covers: dry-run plan, file creation, duplicate slug rejection, malformed slug
+rejection, and broken `connects_to` detection.

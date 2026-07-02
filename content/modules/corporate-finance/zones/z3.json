@@ -1,0 +1,19 @@
+[
+  {
+    "id": "corporate-finance.z3.1",
+    "local_id": "Z3.1",
+    "module": "corporate-finance",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "PLACEHOLDER — Zone 3 front door",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "PLACEHOLDER: Replace with one-sentence definition.",
+    "explainer_covers": [
+      "PLACEHOLDER: Add explainer bullets (basic to technical)."
+    ],
+    "connects_to": [],
+    "gaps": [],
+    "status": "mapped"
+  }
+]

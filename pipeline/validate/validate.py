@@ -16,6 +16,7 @@ Runs five check families over content/:
                      tag=='global' node has a global_id; every global's home
                      module actually contains a node hosting it (warning)
   6. graph         — self-edges, orphan nodes, low-reference globals (warnings)
+  7. module        — five-zone structure, new-global numbering, by_module presence
 
 Exit code 0 = pass (warnings allowed), 1 = errors found.
 Usage: python pipeline/validate/validate.py [--repo-root PATH] [--strict]
@@ -28,8 +29,10 @@ import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from checks.graph_checks import check_graph
+from checks.new_module_checks import check_new_modules
+from lib.module_utils import is_draft
 
 try:
     import jsonschema
@@ -44,7 +47,10 @@ def load_content(root: Path):
     for mdir in sorted((root / "content/modules").iterdir()):
         if not mdir.is_dir():
             continue
-        modules[mdir.name] = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
+        mod = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
+        if is_draft(mod):
+            continue
+        modules[mdir.name] = mod
         for zfile in sorted((mdir / "zones").glob("z*.json")):
             nodes.extend(json.loads(zfile.read_text(encoding="utf-8")))
     return globals_, modules, nodes
@@ -178,6 +184,7 @@ def main() -> int:
     check_references(globals_, nodes, errors, warnings)
     check_duplicates(globals_, errors, warnings)
     check_required(globals_, nodes, errors, warnings)
+    check_new_modules(root, globals_, modules, nodes, errors, warnings)
     if not args.strict:
         check_graph(root, nodes, globals_, warnings)
 

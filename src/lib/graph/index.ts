@@ -6,10 +6,20 @@ import type {
   ModuleNode,
   OutboundRef,
 } from "./types";
-import { getStore } from "./load";
+import { getStore, getDraftModulesFromDisk } from "./load";
 
 export function getAllModules(): Module[] {
-  return getStore().modules.slice().sort((a, b) => a.build_order - b.build_order);
+  return getStore()
+    .modules.slice()
+    .sort((a, b) => a.build_order - b.build_order);
+}
+
+export function getActiveModules(): Module[] {
+  return getAllModules().filter((m) => (m.visibility ?? "active") === "active");
+}
+
+export function getDraftModules(): Module[] {
+  return getDraftModulesFromDisk();
 }
 
 export function getModule(moduleSlug: string): Module | undefined {

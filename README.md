@@ -89,6 +89,8 @@ npm run build                   # static production build
 
 Data loading is centralized in `src/lib/graph/` — page components do not read the filesystem directly.
 
+See `docs/MODULE_FACTORY.md` for scaffolding new modules (Milestone 5).
+
 ## Contributing content
 
 1. Edit JSON under `content/` (or use pipeline tooling).

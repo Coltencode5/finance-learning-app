@@ -3,7 +3,11 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from lib.module_utils import is_draft
 
 
 def repo_root() -> Path:
@@ -19,6 +23,9 @@ def load_nodes(root: Path) -> list[dict]:
     for mdir in sorted((root / "content/modules").iterdir()):
         if not mdir.is_dir():
             continue
+        mod = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
+        if is_draft(mod):
+            continue
         for zfile in sorted((mdir / "zones").glob("z*.json")):
             nodes.extend(json.loads(zfile.read_text(encoding="utf-8")))
     return nodes
@@ -29,7 +36,10 @@ def load_modules(root: Path) -> dict[str, dict]:
     for mdir in sorted((root / "content/modules").iterdir()):
         if not mdir.is_dir():
             continue
-        modules[mdir.name] = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
+        mod = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
+        if is_draft(mod):
+            continue
+        modules[mdir.name] = mod
     return modules
 
 

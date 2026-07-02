@@ -41,6 +41,14 @@ export interface DataStore {
   moduleDependencies: Record<string, Record<string, number>>;
 }
 
+function moduleVisibility(mod: Module): "draft" | "active" {
+  return mod.visibility ?? "active";
+}
+
+function isActiveModule(mod: Module): boolean {
+  return moduleVisibility(mod) === "active";
+}
+
 function loadModules(): Module[] {
   const slugs = fs
     .readdirSync(MODULES_DIR, { withFileTypes: true })
@@ -53,7 +61,20 @@ function loadModules(): Module[] {
   );
 }
 
+export function getDraftModulesFromDisk(): Module[] {
+  return loadModules()
+    .filter((m) => moduleVisibility(m) === "draft")
+    .sort((a, b) => a.build_order - b.build_order);
+}
+
+function loadActiveModuleSlugs(): Set<string> {
+  return new Set(
+    loadModules().filter(isActiveModule).map((m) => m.slug)
+  );
+}
+
 function loadNodes(): ModuleNode[] {
+  const activeSlugs = loadActiveModuleSlugs();
   const nodes: ModuleNode[] = [];
   const slugs = fs
     .readdirSync(MODULES_DIR, { withFileTypes: true })
@@ -62,6 +83,7 @@ function loadNodes(): ModuleNode[] {
     .sort();
 
   for (const slug of slugs) {
+    if (!activeSlugs.has(slug)) continue;
     const zonesDir = path.join(MODULES_DIR, slug, "zones");
     const zoneFiles = fs
       .readdirSync(zonesDir)
@@ -89,7 +111,7 @@ function loadOutboundIndex(relativePath: string): Map<string, OutboundRef[]> {
 
 function buildStore(): DataStore {
   const globals = readJson<GlobalConcept[]>("content/glossary/globals.json");
-  const modules = loadModules();
+  const modules = loadModules().filter(isActiveModule);
   const nodes = loadNodes();
   const graph = readJson<GraphJson>("graph/graph.json");
   const inboundRaw = loadInboundIndex("graph/inbound.json");

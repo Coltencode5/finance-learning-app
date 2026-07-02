@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "check:data": "tsx scripts/check-app-data.ts"
+    "check:data": "tsx scripts/check-app-data.ts",
+    "scaffold:module": "python pipeline/scaffold/scaffold_module.py",
+    "test:scaffold": "python -m unittest pipeline.scaffold.test_scaffold_module"
   },
   "dependencies": {
     "next": "^15.1.0",

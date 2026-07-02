@@ -58,6 +58,12 @@
         "gap_count": { "type": "integer" }
       }
     },
-    "status": { "type": "string", "enum": ["in-progress", "mapped", "expanded", "reviewed", "published"], "default": "mapped" }
+    "status": { "type": "string", "enum": ["in-progress", "mapped", "expanded", "reviewed", "published"], "default": "mapped" },
+    "visibility": {
+      "type": "string",
+      "enum": ["draft", "active"],
+      "default": "active",
+      "description": "draft modules are scaffold-only: excluded from validation, graph build, and the app home page until promoted to active."
+    }
   }
 }

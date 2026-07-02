@@ -1,0 +1,16 @@
+{
+  "slug": "corporate-finance",
+  "title": "Corporate Finance",
+  "kind": "core-concept",
+  "build_order": 10,
+  "visibility": "draft",
+  "status": "in-progress",
+  "zones": [
+    { "zone": 1, "title": "PLACEHOLDER — Ecosystem", "front_door": "Z1.1" },
+    { "zone": 2, "title": "PLACEHOLDER — Types", "front_door": "Z2.1" },
+    { "zone": 3, "title": "PLACEHOLDER — Process", "front_door": "Z3.1" },
+    { "zone": 4, "title": "PLACEHOLDER — Managing", "front_door": "Z4.1" },
+    { "zone": 5, "title": "PLACEHOLDER — Meta", "front_door": "Z5.1" }
+  ],
+  "sources": []
+}

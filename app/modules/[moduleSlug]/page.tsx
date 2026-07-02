@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import {
   conceptHref,
-  getAllModules,
+  getActiveModules,
   getModule,
   getModuleDependencies,
   getNodesByModule,
@@ -11,7 +11,7 @@ import {
 } from "@/lib/graph";
 
 export function generateStaticParams() {
-  return getAllModules().map((m) => ({ moduleSlug: m.slug }));
+  return getActiveModules().map((m) => ({ moduleSlug: m.slug }));
 }
 
 export default async function ModulePage({
@@ -21,7 +21,7 @@ export default async function ModulePage({
 }) {
   const { moduleSlug } = await params;
   const mod = getModule(moduleSlug);
-  if (!mod) {
+  if (!mod || (mod.visibility ?? "active") === "draft") {
     notFound();
   }
 

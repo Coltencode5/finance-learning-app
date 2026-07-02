@@ -26,6 +26,7 @@ export interface Module {
   sources?: unknown[];
   derived?: ModuleDerived;
   status?: string;
+  visibility?: "draft" | "active";
 }
 
 export interface ModuleNode {

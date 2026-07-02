@@ -27,7 +27,7 @@ export function runDataCheck(): CheckResult {
   }
 
   const stats = {
-    modules: store.modules.length,
+    activeModules: store.modules.length,
     nodes: store.nodes.length,
     globals: store.globals.length,
     edges: store.graph.edge_count,
@@ -36,7 +36,7 @@ export function runDataCheck(): CheckResult {
   };
 
   if (store.modules.length !== 9) {
-    warnings.push(`Expected 9 modules, found ${store.modules.length}`);
+    warnings.push(`Expected 9 active modules, found ${store.modules.length}`);
   }
 
   for (const mod of store.modules) {
