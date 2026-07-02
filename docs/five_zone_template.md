@@ -44,5 +44,5 @@ basic → technical) → connects_to (the graph edges) → tag
    the build, never from prose.
 6. **Sector modules** (open question, resolve before first sector build):
    recommended as compact depth-layer clusters (8–12 nodes) attached at
-   ER Z2.3, not full five-zone peers. Decide once, record as ADR-002, apply
-   uniformly.
+   ER Z2.3, not full five-zone peers. Decide once, record as ADR-003, apply
+   uniformly. (Zone *semantics* for core-concept modules is ADR-002.)
