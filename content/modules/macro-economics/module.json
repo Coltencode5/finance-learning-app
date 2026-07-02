@@ -3,8 +3,8 @@
   "title": "Macro & Economics",
   "kind": "core-concept",
   "build_order": 10,
-  "visibility": "draft",
-  "status": "in-progress",
+  "visibility": "active",
+  "status": "mapped",
   "zones": [
     {
       "zone": 1,
