@@ -1,8 +1,8 @@
 # finance-graph
 
 The content platform for a finance education app built on a shared knowledge
-graph: 9 modules, 235 global glossary concepts, 478 zone learning nodes,
-3,357 graph edges — all as validated, structured JSON.
+graph: 10 modules, 263 global glossary concepts, 529 zone learning nodes,
+3,755 graph edges — all as validated, structured JSON.
 
 ## The one rule
 
@@ -16,7 +16,7 @@ build outputs — never hand-edit them. See `docs/decisions/ADR-001`.
 ```
 schemas/            JSON Schemas: global, node, module, activity, edge
 content/
-  glossary/         globals.json — the shared glossary (G1–G235), the app's spine
+  glossary/         globals.json — the shared glossary (G1–G263), the app's spine
   modules/{slug}/   module.json + zones/z1..z5.json per module
   activities/       learning activities (empty in V0; schema is ready)
 graph/              graph.json + derived indexes (do not edit; see docs/GRAPH_HEALTH.md)
@@ -26,7 +26,7 @@ pipeline/
   validate/         validate.py — the correctness gate
   prompts/          reusable Cursor/LLM prompts per milestone
 docs/               architecture, five-zone template, ADRs, defect register
-legacy/markdown/    the nine original node maps (read-only reference)
+legacy/markdown/    the original node maps, incl. macro (read-only reference)
 app/                Next.js App Router pages (Milestone 4)
 src/lib/graph/      Typed data access layer (reads content/ + graph/)
 scripts/            App data check script
@@ -48,11 +48,17 @@ orphan/low-reference reports.
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 4)
+## Current state (post-Milestone 6)
 
-- Migration complete: all 9 legacy modules parsed to canonical JSON.
+- **10 active modules**: the 9 legacy role modules plus **macro-economics** — the
+  first `kind: core-concept` module (see ADR-002) — migrated to canonical JSON.
+- Shared glossary: **263 globals (G1–G263)**, contiguous; macro contributed G236–G263.
+  The new-module gate is parameterized to `corpus_max + 1`, so the next active
+  module starts at **G264**.
+- **529 zone nodes**; graph rebuilt — 3,755 edges.
 - Validation: **0 errors, 0 warnings** (strict content gate).
-- Graph health indexes under `graph/` (Milestone 3).
+- Module factory (Milestone 5) scaffolds new modules; `corporate-finance` is a
+  parked draft placeholder (`build_order: 999`, `visibility: draft`).
 - **Minimal Next.js app** (Milestone 4) reads canonical JSON at build time — no database, no auth.
 
 ## Milestone 4 — minimal app
@@ -75,7 +81,7 @@ npm run build                   # static production build
 
 | Route | Purpose |
 |---|---|
-| `/` | Module list (all 9 modules) |
+| `/` | Module list (all active modules) |
 | `/modules/[slug]` | Zone/node listing for one module |
 | `/concepts/[id]` | Global (G1) or node (private-equity.z1.5) detail + graph refs |
 
