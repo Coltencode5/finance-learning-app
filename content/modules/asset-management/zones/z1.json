@@ -297,7 +297,11 @@
     ],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G152",
+      "G153"
+    ]
   },
   {
     "id": "asset-management.z1.6",

@@ -354,7 +354,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G93"
+    ]
   },
   {
     "id": "investment-banking.z3.8",
@@ -626,7 +629,7 @@
     ],
     "connects_to": [
       {
-        "ref": "private-equity.z3.20",
+        "ref": "private-equity.z3.16",
         "note": null
       },
       {
@@ -678,7 +681,7 @@
     ],
     "connects_to": [
       {
-        "ref": "private-equity.z3.20",
+        "ref": "private-equity.z3.16",
         "note": null
       },
       {

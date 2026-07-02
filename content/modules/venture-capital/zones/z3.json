@@ -556,7 +556,13 @@
       }
     ],
     "connects_to_raw": "Z3.9 (G207, options are struck at the 409A price), Z3.7 (G205, the round price that the 409A sits below), Z3.10 (the preferred/common gap is the same economics as the liq-pref vs. common gap). ---",
-    "gaps": [],
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "Part 9 #4 — regulatory/legal depth (409A, exemptions, CFIUS, crypto financing) beyond accredited-investor basics",
+        "needed_source": "venture securities/regulatory source"
+      }
+    ],
     "real_world_layer": null,
     "source_refs": [],
     "status": "mapped"

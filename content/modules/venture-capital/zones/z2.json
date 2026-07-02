@@ -464,6 +464,11 @@
         "kind": "recency",
         "note": "AI's role as both the dominant venture investment thesis and a tool reshaping company-building and diligence is the largest recency gap in this module; none of the sources cover it",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #2 — AI's dual role in venture (investment thesis and firm operations)",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,

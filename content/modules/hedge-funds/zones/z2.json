@@ -94,7 +94,10 @@
     "gaps": [],
     "real_world_layer": "Mallaby Ch. 5 (\"Top Cat,\" Julian Robertson/Tiger); Schwager Part 3 (equity traders).",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G109"
+    ]
   },
   {
     "id": "hedge-funds.z2.3",
@@ -292,7 +295,10 @@
     "gaps": [],
     "real_world_layer": "Mallaby Ch. 10 (\"The Yale Men,\" Farallon's event-driven model).",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G133"
+    ]
   },
   {
     "id": "hedge-funds.z2.7",

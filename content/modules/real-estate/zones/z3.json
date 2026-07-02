@@ -439,6 +439,11 @@
         "kind": "source",
         "note": "flag:",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #6 — post-2022 CMBS dislocation (spreads, special servicer volumes, office-backed tranche distress)",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -535,6 +540,11 @@
       {
         "kind": "source",
         "note": "flag:",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #5 — climate-risk repricing (insurance, decarbonization capex, ESG mandates)",
         "needed_source": null
       }
     ],

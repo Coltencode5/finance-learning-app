@@ -96,6 +96,11 @@
         "kind": "recency",
         "note": "the post-2021 growth of the venture secondary market — driven by the exit drought — is significant and not covered in the primary sources",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #3 — venture secondary market growth (fund and direct stakes) as liquidity option",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -278,7 +283,7 @@
         "note": null
       },
       {
-        "ref": "venture-capital.z5.7",
+        "ref": "equity-research.z5.7",
         "note": null
       }
     ],
@@ -298,6 +303,11 @@
         "kind": "source",
         "note": "flags:",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — 2021 venture boom and 2022–24 reset (exit drought, down-round wave); Part 9 #2 — AI as dual thesis and tool",
+        "needed_source": "sources published 2023+"
       }
     ],
     "real_world_layer": null,

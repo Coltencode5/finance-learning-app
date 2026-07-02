@@ -98,7 +98,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G112"
+    ]
   },
   {
     "id": "hedge-funds.z5.3",
@@ -199,7 +202,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G120"
+    ]
   },
   {
     "id": "hedge-funds.z5.5",

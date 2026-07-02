@@ -90,6 +90,11 @@
         "kind": "source",
         "note": "flag:",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #2 — office-sector distress and work-from-home structural shift",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -137,6 +142,11 @@
       {
         "kind": "source",
         "note": "flags:",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #3 — data-center and AI demand wave (scale, power constraints, hyperscale leases)",
         "needed_source": null
       }
     ],

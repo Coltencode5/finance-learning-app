@@ -133,7 +133,7 @@
         "note": null
       },
       {
-        "ref": "asset-management.z5.7",
+        "ref": "asset-management.z5.6",
         "note": null
       },
       {
@@ -585,7 +585,11 @@
     ],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G145",
+      "G146"
+    ]
   },
   {
     "id": "asset-management.z2.11",

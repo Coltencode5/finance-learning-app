@@ -365,6 +365,11 @@
         "kind": "recency",
         "note": "flag",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #2 — AI/alt-data as disruption of the research product",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,

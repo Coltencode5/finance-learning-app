@@ -888,7 +888,9 @@
     "appears_in": [
       "Z4"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G102"
+    ],
     "status": "mapped"
   },
   {
@@ -1731,7 +1733,9 @@
       "Z2",
       "Z3"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G53"
+    ],
     "status": "mapped"
   },
   {

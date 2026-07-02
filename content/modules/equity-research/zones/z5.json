@@ -133,6 +133,11 @@
         "kind": "recency",
         "note": "flag — the module's largest",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — modern sell-side research business model after unbundling",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -254,6 +259,11 @@
         "kind": "recency",
         "note": "flag",
         "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "Part 9 #3 — securities-regulation frame for research independence",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -325,6 +335,11 @@
       {
         "kind": "recency",
         "note": "flag",
+        "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "Part 9 #3 — securities-regulation frame (rules at learner level, not legal practice)",
         "needed_source": null
       }
     ],
@@ -457,6 +472,16 @@
       {
         "kind": "recency",
         "note": "flag — flagged throughout",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — current quantitative state of the research business (budgets, pricing, consolidation)",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #2 — AI and alternative data reshaping the research product",
         "needed_source": null
       }
     ],

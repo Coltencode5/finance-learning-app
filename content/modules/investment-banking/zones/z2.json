@@ -218,7 +218,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G99"
+    ]
   },
   {
     "id": "investment-banking.z2.6",
@@ -314,7 +317,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G101"
+    ]
   },
   {
     "id": "investment-banking.z2.8",

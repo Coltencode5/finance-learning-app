@@ -294,7 +294,11 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G26",
+      "G30"
+    ]
   },
   {
     "id": "private-equity.z3.8",
@@ -337,7 +341,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G24"
+    ]
   },
   {
     "id": "private-equity.z3.9",
@@ -541,7 +548,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G31"
+    ]
   },
   {
     "id": "private-equity.z3.14",

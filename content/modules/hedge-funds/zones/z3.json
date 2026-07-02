@@ -49,7 +49,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G136"
+    ]
   },
   {
     "id": "hedge-funds.z3.2",
@@ -163,7 +166,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G122"
+    ]
   },
   {
     "id": "hedge-funds.z3.4",
@@ -220,7 +226,12 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G113",
+      "G114",
+      "G115"
+    ]
   },
   {
     "id": "hedge-funds.z3.5",
@@ -273,7 +284,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G126"
+    ]
   },
   {
     "id": "hedge-funds.z3.6",

@@ -151,7 +151,12 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G6",
+      "G7",
+      "G23"
+    ]
   },
   {
     "id": "private-equity.z1.4",
@@ -204,7 +209,11 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G21",
+      "G22"
+    ]
   },
   {
     "id": "private-equity.z1.5",

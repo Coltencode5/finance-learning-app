@@ -129,7 +129,10 @@
     "gaps": [],
     "real_world_layer": "Swensen Ch. 5–6 (asset allocation & its management).",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G144"
+    ]
   },
   {
     "id": "asset-management.z3.3",
@@ -263,7 +266,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G142"
+    ]
   },
   {
     "id": "asset-management.z3.5",

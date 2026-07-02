@@ -228,7 +228,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G73"
+    ]
   },
   {
     "id": "private-credit.z2.6",

@@ -133,7 +133,10 @@
     ],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G171"
+    ]
   },
   {
     "id": "wealth-management.z4.3",

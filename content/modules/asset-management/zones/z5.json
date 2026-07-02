@@ -93,7 +93,7 @@
         "note": null
       },
       {
-        "ref": "asset-management.z5.7",
+        "ref": "asset-management.z5.6",
         "note": null
       },
       {
@@ -125,7 +125,10 @@
     "gaps": [],
     "real_world_layer": "Malkiel (the index-fund case); Rappaport & Mauboussin Ch. 1 (the cost critique); Bogle (the canonical source — GAP, not in Drive).",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G150"
+    ]
   },
   {
     "id": "asset-management.z5.3",
@@ -209,11 +212,11 @@
         "note": null
       },
       {
-        "ref": "asset-management.z5.7",
+        "ref": "private-equity.z5.7",
         "note": null
       },
       {
-        "ref": "asset-management.z5.8",
+        "ref": "private-equity.z5.8",
         "note": null
       },
       {

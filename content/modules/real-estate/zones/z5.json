@@ -280,6 +280,11 @@
         "kind": "source",
         "note": "flag (the module's largest):",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #2 — office distress; #3 — data-center/AI demand; #4 — proptech/AI in operations; #5 — climate-risk repricing",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,

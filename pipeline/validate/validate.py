@@ -119,6 +119,7 @@ def check_references(globals_, nodes, errors, warnings):
 
 
 def check_duplicates(globals_, errors, warnings):
+    gmap = {g["id"]: g for g in globals_}
     by_norm = defaultdict(list)
     for g in globals_:
         by_norm[norm_term(g["term"])].append(g["id"])
@@ -129,11 +130,21 @@ def check_duplicates(globals_, errors, warnings):
     for term, ids in sorted(by_norm.items()):
         uniq = sorted(set(ids), key=lambda x: int(x[1:]))
         if len(uniq) > 1:
+            if all(
+                other in gmap[gid].get("disambiguate_with", [])
+                for gid in uniq
+                for other in uniq
+                if other != gid
+            ):
+                continue
             warnings.append(f"[dupes] term collision '{term}': {uniq} — confirm intentional or merge")
 
 
 def check_required(globals_, nodes, errors, warnings):
     home_hosts = {n["global_id"] for n in nodes if n.get("global_id")}
+    for n in nodes:
+        for gid in n.get("hosts_globals", []):
+            home_hosts.add(gid)
     for n in nodes:
         if not n.get("quick_definition"):
             errors.append(f"[required] {n['id']} missing quick_definition")

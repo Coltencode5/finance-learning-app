@@ -31,6 +31,15 @@
       "pattern": "^G[1-9][0-9]*$",
       "description": "If tag=='global', the G-number whose deep explainer lives here."
     },
+    "hosts_globals": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string",
+        "pattern": "^G[1-9][0-9]*$"
+      },
+      "description": "G-numbers whose deep explainers live inside this node's prose without a dedicated global tag."
+    },
     "quick_definition": { "type": "string", "minLength": 1 },
     "explainer_covers": {
       "type": "array",

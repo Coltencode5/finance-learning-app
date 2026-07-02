@@ -466,7 +466,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G74"
+    ]
   },
   {
     "id": "private-credit.z3.12",

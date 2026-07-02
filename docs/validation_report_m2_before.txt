@@ -1,0 +1,61 @@
+﻿content: 235 globals, 9 modules, 478 zone nodes
+result: 11 errors, 47 warnings
+
+ERROR   [refs] asset-management.z2.3 ΓåÆ dangling node asset-management.z5.7
+ERROR   [refs] asset-management.z4.4 ΓåÆ dangling node asset-management.z5.7
+ERROR   [refs] asset-management.z5.2 ΓåÆ dangling node asset-management.z5.7
+ERROR   [refs] asset-management.z5.4 ΓåÆ dangling node asset-management.z5.7
+ERROR   [refs] asset-management.z5.4 ΓåÆ dangling node asset-management.z5.8
+ERROR   [refs] investment-banking.z3.13 ΓåÆ dangling node private-equity.z3.20
+ERROR   [refs] investment-banking.z3.14 ΓåÆ dangling node private-equity.z3.20
+ERROR   [refs] venture-capital.z5.6 ΓåÆ dangling node venture-capital.z5.7
+ERROR   [refs] wealth-management.z2.8 ΓåÆ dangling node wealth-management.z5.7
+ERROR   [refs] wealth-management.z5.4 ΓåÆ dangling node wealth-management.z5.7
+ERROR   [refs] wealth-management.z5.4 ΓåÆ dangling node wealth-management.z5.8
+warning jsonschema not installed ΓÇö running structural checks only (pip install jsonschema for full validation)
+warning [dupes] term collision 'ipo': ['G53', 'G102'] ΓÇö confirm intentional or merge
+warning [required] G6 'GP (General Partner)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G7 'LP (Limited Partner)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G21 'Commitment / Investment period' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G22 'Holding period' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G23 'GP commitment ("skin in the game")' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G24 'EBITDA' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G26 'Equity Value' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G29 'Leverage' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G30 'Net debt' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G31 'Working capital' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G37 'Preferred equity' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G43 'Drag-along / Tag-along' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G46 'Term sheet' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G73 'PIK (Payment-in-Kind)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G74 'Coverage ratios' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G93 'Terminal value' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G99 'Control premium' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G101 'Underwriting' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G107 'Beta / market exposure' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G108 'The hedge / longΓÇôshort construction' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G109 'Short selling' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G110 'Net & gross exposure' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G112 'Information ratio (IR)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G113 'Information coefficient (IC) / skill' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G114 'Breadth' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G115 'The Fundamental Law of Active Management' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G118 'High-water mark' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G120 'Capacity & crowding' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G122 'Catalyst' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G126 'Risk as permanent loss of capital' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G133 'Merger (risk) arbitrage' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G136 'The edge / informational advantage' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G142 'Active share' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G144 'The policy portfolio' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G145 'Modern Portfolio Theory & the efficient frontier' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G146 'Diversification' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G150 'The cost/fee drag (Bogle's arithmetic)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G152 'The mutual fund (open-end)' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G153 'Separately managed account / institutional mandate' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G164 'Time horizon & the glide path' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G167 'Tax-loss harvesting' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G170 'The 4% rule / safe withdrawal rate' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G171 'Sequence-of-returns risk' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G172 'Annuitization & longevity risk' has no hosting zone node (home explainer not yet mapped to a node)
+warning [required] G174 'The trust' has no hosting zone node (home explainer not yet mapped to a node)

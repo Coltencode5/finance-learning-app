@@ -271,7 +271,10 @@
     "gaps": [],
     "real_world_layer": "Swensen,",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G167"
+    ]
   },
   {
     "id": "wealth-management.z3.5",

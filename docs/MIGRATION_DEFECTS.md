@@ -14,17 +14,17 @@ call about what the reference *meant*.
 
 | # | Where | Reference | Problem | Likely intent | Status |
 |---|---|---|---|---|---|
-| 1 | asset-management.z2.3 | AM Z5.7 | AM Zone 5 ends at Z5.6 | Z5.6 "Where AM Is Heading" (source text says "Z5.7 (where AM is heading)") | OPEN |
-| 2 | asset-management.z4.4 | AM Z5.7 | same | Z5.6 (context: "the giants' stewardship power" — confirm) | OPEN |
-| 3 | asset-management.z5.2 | AM Z5.7 | same | Z5.6 | OPEN |
-| 4 | asset-management.z5.4 | AM Z5.7 | same | PE Z5.7 (context is the PE allocator seat — may be a dropped "PE" prefix) | OPEN |
-| 5 | asset-management.z5.4 | AM Z5.8 | same | PE Z5.8 (same pattern as #4) | OPEN |
-| 6 | investment-banking.z3.13 | PE Z3.20 | PE Zone 3 ends at Z3.19 | PE Z3.17 (SPA) or Z3.19 (equity documentation) — "transaction documentation" | OPEN |
-| 7 | investment-banking.z3.14 | PE Z3.20 | same | same as #6 | OPEN |
-| 8 | venture-capital.z5.6 | VC Z5.7 | VC Zone 5 ends at Z5.6 | self-reference intent unclear — inspect source line | OPEN |
-| 9 | wealth-management.z2.8 | WM Z5.7 | WM Zone 5 ends at Z5.5 | inspect source line | OPEN |
-| 10 | wealth-management.z5.4 | WM Z5.7 | same | possibly PE Z5.7 (dropped prefix, same as AM pattern) | OPEN |
-| 11 | wealth-management.z5.4 | WM Z5.8 | same | possibly PE Z5.8 | OPEN |
+| 1 | asset-management.z2.3 | AM Z5.7 | AM Zone 5 ends at Z5.6 | Z5.6 "Where AM Is Heading" (source text says "Z5.7 (where AM is heading)") | FIXED — `connects_to` → `asset-management.z5.6` |
+| 2 | asset-management.z4.4 | AM Z5.7 | same | Z5.6 (context: "the giants' stewardship power" — confirm) | FIXED — `connects_to` → `asset-management.z5.6` |
+| 3 | asset-management.z5.2 | AM Z5.7 | same | Z5.6 | FIXED — `connects_to` → `asset-management.z5.6` |
+| 4 | asset-management.z5.4 | AM Z5.7 | same | PE Z5.7 (context is the PE allocator seat — may be a dropped "PE" prefix) | FIXED — `connects_to` → `private-equity.z5.7` |
+| 5 | asset-management.z5.4 | AM Z5.8 | same | PE Z5.8 (same pattern as #4) | FIXED — `connects_to` → `private-equity.z5.8` |
+| 6 | investment-banking.z3.13 | PE Z3.20 | PE Zone 3 ends at Z3.19 | PE Z3.17 (SPA) or Z3.19 (equity documentation) — "transaction documentation" | FIXED — `connects_to` → `private-equity.z3.16` (PE Transaction Documentation) |
+| 7 | investment-banking.z3.14 | PE Z3.20 | same | same as #6 | FIXED — `connects_to` → `private-equity.z3.16` |
+| 8 | venture-capital.z5.6 | VC Z5.7 | VC Zone 5 ends at Z5.6 | self-reference intent unclear — inspect source line | FIXED — `connects_to_raw` cites ER Z5.6/Z5.7; → `equity-research.z5.7` |
+| 9 | wealth-management.z2.8 | WM Z5.7 | WM Zone 5 ends at Z5.5 | inspect source line | FIXED — `connects_to_raw` cites PE Z5.6/Z5.7; → `private-equity.z5.7` |
+| 10 | wealth-management.z5.4 | WM Z5.7 | same | possibly PE Z5.7 (dropped prefix, same as AM pattern) | FIXED — `connects_to` → `private-equity.z5.7` |
+| 11 | wealth-management.z5.4 | WM Z5.8 | same | possibly PE Z5.8 | FIXED — `connects_to` → `private-equity.z5.8` |
 
 **Pattern note:** defects 1–5 and 9–11 cluster in AM and WM Zone-5 references,
 suggesting a renumbering pass during authoring that didn't update inbound refs —
@@ -34,19 +34,25 @@ the exact failure mode a validator prevents going forward.
 
 | Term | IDs | Note |
 |---|---|---|
-| IPO | G53, G102 | G53 = IPO **as exit** (PE lens); G102 = IPO **process** (IB lens). VC module Part 7 explicitly treats these as an intentional dual-lens pair. Confirm and record in each global's `disambiguate_with`, then suppress. |
+| IPO | G53, G102 | G53 = IPO **as exit** (PE lens); G102 = IPO **process** (IB lens). VC module Part 7 explicitly treats these as an intentional dual-lens pair. **FIXED:** mutual `disambiguate_with`; validator suppresses the dupe warning. |
 
 ## C. Globals without a hosting zone node (45 warnings)
 
-45 of 235 globals have no zone node carrying their `global_id` (e.g. G6 GP,
+45 of 235 globals had no zone node carrying their `global_id` (e.g. G6 GP,
 G7 LP, G24 EBITDA). In the legacy maps these globals' deep explainers live
 *inside* a broader zone node (G6/G7 inside PE Z1.3 "Fund Structure & Key
 Players") without a `★ GLOBAL` tag on that node.
 
-**Decision needed (Milestone 2):** either (a) assign each orphan global a host
-node explicitly via a `hosts_globals` field, or (b) accept that some globals
-are "sectioned" rather than "hosted" and model that state. Recommendation: (a) —
-one canonical URL per global is the stated product architecture.
+**Decision (Milestone 2 — applied):** `hosts_globals` array on `node.schema.json`;
+each orphan global assigned to the zone node whose legacy prose contains its deep
+explainer. Validator accepts `global_id` or `hosts_globals` as hosting.
+
+**Human review — ambiguous host assignments (approved for v0; refine later if needed):**
+
+| Global | Assigned host | Ambiguity |
+|---|---|---|
+| G73 PIK | `private-credit.z2.5` Mezzanine Debt | `home_zone` is Z3 but no Z3 node owns PIK; mezzanine (Z2) is the upside explainer; `private-credit.z4.11` deepens stress-signal nuance |
+| G113 IC / skill | `hedge-funds.z3.4` Position Sizing | IC also introduced in `hedge-funds.z2.9` Quant; Z3.4 hosts the Fundamental Law cluster (G113–G115) |
 
 ## D. Legacy schema drift (informational — absorbed by the parser, normalize on render)
 
@@ -62,3 +68,9 @@ one canonical URL per global is the stated product architecture.
 - Hedge Funds' own prose says "29 new global nodes (G106–G136)"; the actual
   table (and now `derived.globals_contributed`) is 31. Derived counts are the
   fix: module summaries are now generated, never hand-written.
+
+**GAP normalization (Milestone 2):** Consolidated Part 9 summaries from ER, VC,
+and RE attached to primary anchor nodes (see `pipeline/build/apply_m2.py`
+`CONSOLIDATED_GAPS`). Node-level inline gaps preserved. **Deferred:** ER Part 9
+item #4 (sector-specific valuation depth — breadth item, not a true gap); RE
+Part 9 item #7 (source-quality/file-access note — module-level, not node-level).

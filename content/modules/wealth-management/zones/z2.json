@@ -187,7 +187,10 @@
     "gaps": [],
     "real_world_layer": "Berns (glide path from discretionary wealth); Malkiel's life-cycle chapter (the age-related-allocation logic), reused from AM.",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G164"
+    ]
   },
   {
     "id": "wealth-management.z2.4",
@@ -258,7 +261,11 @@
     ],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G170",
+      "G172"
+    ]
   },
   {
     "id": "wealth-management.z2.5",
@@ -325,7 +332,10 @@
     ],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G174"
+    ]
   },
   {
     "id": "wealth-management.z2.6",
@@ -484,7 +494,7 @@
         "note": null
       },
       {
-        "ref": "wealth-management.z5.7",
+        "ref": "private-equity.z5.7",
         "note": null
       },
       {

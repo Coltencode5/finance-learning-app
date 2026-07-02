@@ -450,6 +450,11 @@
         "kind": "recency",
         "note": "flag",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — post-MiFID-II research economics (budgets, headcount, survival); no source after 2018 unbundling",
+        "needed_source": "current post-MiFID-II research industry source"
       }
     ],
     "real_world_layer": null,
@@ -571,6 +576,11 @@
         "kind": "recency",
         "note": "flag",
         "needed_source": null
+      },
+      {
+        "kind": "source",
+        "note": "Part 9 #3 — securities-regulation frame (Reg AC, Reg FD, MiFID II conflicts); no dedicated securities-law source",
+        "needed_source": "securities-law / regulation source"
       }
     ],
     "real_world_layer": null,

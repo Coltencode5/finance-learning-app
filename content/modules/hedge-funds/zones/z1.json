@@ -62,7 +62,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G107"
+    ]
   },
   {
     "id": "hedge-funds.z1.2",
@@ -110,7 +113,10 @@
     "gaps": [],
     "real_world_layer": "Mallaby Ch. 1 (\"Big Daddy\").",
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G108"
+    ]
   },
   {
     "id": "hedge-funds.z1.3",
@@ -269,7 +275,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G118"
+    ]
   },
   {
     "id": "hedge-funds.z1.6",
@@ -317,7 +326,10 @@
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],
-    "status": "mapped"
+    "status": "mapped",
+    "hosts_globals": [
+      "G110"
+    ]
   },
   {
     "id": "hedge-funds.z1.7",

@@ -273,6 +273,11 @@
         "kind": "source",
         "note": "flag:",
         "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — post-2022 interest-rate shock, cap-rate expansion, refinancing wall, distressed opportunities",
+        "needed_source": null
       }
     ],
     "real_world_layer": null,
@@ -327,6 +332,11 @@
       {
         "kind": "source",
         "note": "flag:",
+        "needed_source": null
+      },
+      {
+        "kind": "recency",
+        "note": "Part 9 #1 — CRE value reset and distress cycle detail post-2022",
         "needed_source": null
       }
     ],

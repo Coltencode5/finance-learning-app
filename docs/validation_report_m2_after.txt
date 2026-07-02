@@ -1,0 +1,4 @@
+﻿content: 235 globals, 9 modules, 478 zone nodes
+result: 0 errors, 1 warnings
+
+warning jsonschema not installed ΓÇö running structural checks only (pip install jsonschema for full validation)
