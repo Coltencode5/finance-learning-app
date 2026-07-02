@@ -1,6 +1,7 @@
 /build/
 node_modules/
 .next/
+tsconfig.tsbuildinfo
 __pycache__/
 *.pyc
 .DS_Store
