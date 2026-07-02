@@ -1,0 +1,57 @@
+{
+  "slug": "macro-economics",
+  "title": "Macro & Economics",
+  "kind": "core-concept",
+  "build_order": 10,
+  "visibility": "draft",
+  "status": "in-progress",
+  "zones": [
+    {
+      "zone": 1,
+      "title": "The Macro Framework",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Money, Rates & the Fed",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "Inflation & the Price Level",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "Credit Cycles & Financial Conditions",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "Global Macro & Markets",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 28,
+    "global_range": "G236–G263",
+    "zone_node_count": 51,
+    "globals_reused": [
+      "G1",
+      "G4",
+      "G27",
+      "G29",
+      "G58",
+      "G69",
+      "G70",
+      "G77",
+      "G91",
+      "G127",
+      "G129",
+      "G219",
+      "G232"
+    ],
+    "gap_count": 4
+  }
+}

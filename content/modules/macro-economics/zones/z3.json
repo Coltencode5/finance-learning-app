@@ -1,0 +1,404 @@
+[
+  {
+    "id": "macro-economics.z3.1",
+    "local_id": "Z3.1",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Inflation & Deflation",
+    "tag": "global",
+    "global_id": "G252",
+    "quick_definition": "Inflation is a sustained rise in the general price level (money's purchasing power falling); deflation is a sustained fall (purchasing power rising) — and the distinction between the price level, the rate of inflation, and the direction of that rate is the source of most confusion in the whole topic.",
+    "explainer_covers": [
+      "The core idea: inflation means your money buys less over time; the same basket that cost $100 last year costs $103 this year (3% inflation). Deflation is the reverse — prices fall, money buys more. Both are about the general level, not any single price.",
+      "The three-way distinction the map insists on (the Part 1 disambiguation, made concrete here): the price level (a stock — how high prices are, an index value), inflation (the flow — the level rising), and the inflation rate (the speed of that flow, e.g., 3%/yr). And two more terms sit on top: disinflation (the rate falling — prices still rising, just slower — e.g., 6% → 3%) and deflation (the rate going negative — prices actually falling).",
+      "Why deflation is feared more than mild inflation: falling prices → consumers delay purchases (it'll be cheaper later) → demand weakens → prices fall more (a deflationary spiral); and deflation raises the real value of fixed debts (Fisher's \"debt-deflation,\" the Z4 link) — the debt burden grows even as incomes shrink. This is why central banks target positive low inflation (≈2%) rather than zero, keeping a buffer away from the deflation trap.",
+      "Why some inflation is the target, not zero: a small positive rate greases relative-price and wage adjustments (nominal wages rarely fall, so mild inflation lets real wages adjust) and keeps distance from the zero-lower-bound/deflation danger (the Z2.11 link).",
+      "The purchasing-power lens for finance: inflation is what separates nominal from real returns (the Fisher relation, ★ G249). An investment that returns 5% when inflation is 5% has earned nothing in purchasing power."
+    ],
+    "connects_to": [
+      {
+        "ref": "G253",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G243",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G253` price indices (how it's measured), `★ G254` the Phillips curve (its relationship to unemployment), `★ G249` real vs. nominal (inflation is the wedge), `★ G245` monetary policy (the Fed's primary target), `★ G243` money (too much money chasing too few goods), `★ G256` the debt cycle (inflation as a debt-eroding lever), `★ G263` financial crises (inflation crises, Z5). Across the graph: **ALL** — every asset class cares about the real return. *Real-world layer: Wheelan Ch. 7; Blinder throughout; the 2021–23 inflation surge as the modern reference case (a recency GAP for the very latest data).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "for the very latest data",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Wheelan Ch. 7; Blinder throughout; the 2021–23 inflation surge as the modern reference case (a recency GAP for the very latest data).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.2",
+    "local_id": "Z3.2",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "The Price Indices (CPI, PCE, PPI)",
+    "tag": "global",
+    "global_id": "G253",
+    "quick_definition": "Inflation is measured by tracking the cost of a fixed \"basket\" of goods over time; the main gauges are the CPI (consumer prices), the PCE deflator (the Fed's preferred consumer measure), and the PPI (producer prices) — with a crucial split between headline (everything) and core (excluding volatile food and energy).",
+    "explainer_covers": [
+      "How you measure a \"general price level\" at all: pick a representative basket of what households buy, price it each month, and track the total cost. The percentage change is the inflation rate. The choice of basket and method is what makes the different indices differ.",
+      "The three main indices: CPI (Consumer Price Index, from the BLS — the most-quoted, used to index Social Security and TIPS), the PCE deflator (Personal Consumption Expenditures, from the BEA — the Fed's preferred gauge because it captures substitution and a broader basket, and usually runs a few tenths below CPI), and the PPI (Producer Price Index — prices at the wholesale/producer level, an early-warning signal that feeds into consumer prices later).",
+      "Headline vs. core — the distinction that decides how every print is read: headline includes food and energy; core strips them out because they're volatile and often supply-driven. The Fed watches core (and increasingly \"supercore\"/services) to see the persistent trend rather than a temporary oil spike. This is why a scary headline CPI and a calm core CPI can appear in the same report (the Part 1 disambiguation, made concrete).",
+      "The measurement problems the map flags: substitution bias (fixed baskets overstate inflation because people switch away from what's gotten dear), quality change (is a pricier laptop inflation, or a better product?), and new goods. These biases mean measured inflation is an estimate, not a physical constant — the \"Boskin Commission\" critique.",
+      "Why finance watches these to the decimal: inflation prints move the expected Fed path, which moves the entire rate structure (★ G248) in real time. A single CPI surprise can reprice bonds, equities, and currencies within seconds."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G241",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G252` inflation (what these measure), `★ G249` real vs. nominal (indices convert nominal to real — the deflator), `★ G254` the Phillips curve (the inflation variable), `★ G247` the funds rate (prints drive the policy path), `★ G241` economic indicators (inflation data is the key lagging/coincident set — back-link to Z1.10). Across the graph: **ER** (real growth, inflation pass-through to margins), **AM** (TIPS, real-return mandates), **RE** (rents and CPI linkage), **HF** (inflation-surprise trades). *Real-world layer: BLS/BEA data; Wheelan on measuring inflation; the core-vs-headline debates of 2021–23.* ---",
+    "gaps": [],
+    "real_world_layer": "BLS/BEA data; Wheelan on measuring inflation; the core-vs-headline debates of 2021–23.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.3",
+    "local_id": "Z3.3",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Causes of Inflation (Demand-Pull, Cost-Push & the Monetary View)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Inflation is generated three ways that the map keeps distinct: demand-pull (too much spending chasing too little output), cost-push (rising input costs, e.g., an oil shock, pushing prices up), and the monetary view (too much money growth over the long run) — and which one is operating determines what, if anything, policy should do.",
+    "explainer_covers": [
+      "Demand-pull: aggregate demand (★ G239) outruns the economy's productive capacity → a positive output gap → prices bid up. This is \"too much money chasing too few goods\" in real-economy terms — the classic overheating boom. The right response is tightening (cool demand).",
+      "Cost-push: costs rise on the supply side — an oil embargo, a supply-chain break, a wage-price spiral — shifting aggregate supply back, so prices rise even as output falls. This is the ugly case: it produces stagflation (Z3.7), and tightening to fight it deepens the output loss. The policy dilemma the 1970s made famous.",
+      "The monetary view (Friedman, via Blinder): over the long run, sustained inflation \"is always and everywhere a monetary phenomenon\" — it can't persist without accommodating money-supply growth (★ G246). Demand or cost shocks cause one-time price-level jumps; only continuing money growth turns that into sustained inflation. This reconciles the three views: money is the long-run enabler; demand and cost pressures are the short-run triggers.",
+      "The wage-price spiral and why expectations are the hinge: once workers expect inflation, they demand higher wages, firms raise prices to cover them, validating the expectation — a self-perpetuating loop (the bridge to Z3.5 expectations and the Z3.4 Phillips curve). Breaking a spiral requires breaking the expectation, which is why credibility (Z2.10) matters so much.",
+      "The diagnostic value for finance: reading which inflation is operating tells you the likely policy path and asset response. Demand-pull → the Fed tightens into a strong economy (risk assets can absorb it a while); cost-push → the Fed faces a recession-or-inflation choice (bad for almost everything)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G246",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G252` inflation, `★ G239` AD/AS & the output gap (demand-pull is a positive gap), `★ G246` money supply (the monetary view), `★ G254` the Phillips curve (the demand-side tradeoff), `★ G245` monetary policy (the response differs by cause). Across the graph: **ER** (cost-push hits margins; demand-pull lifts pricing power), **Macro→everything** via the policy path. *Real-world layer: Blinder on the 1970s cost-push shocks and the monetarist rebuttal; the 2021–23 debate over \"transitory\" (supply) vs. \"persistent\" (demand/money) inflation.* ---",
+    "gaps": [],
+    "real_world_layer": "Blinder on the 1970s cost-push shocks and the monetarist rebuttal; the 2021–23 debate over \"transitory\" (supply) vs. \"persistent\" (demand/money) inflation.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.4",
+    "local_id": "Z3.4",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "The Phillips Curve (the Inflation–Unemployment Tradeoff)",
+    "tag": "global",
+    "global_id": "G254",
+    "quick_definition": "The Phillips curve is the observed short-run tradeoff between inflation and unemployment — lower unemployment tends to come with higher inflation — that becomes vertical in the long run at the \"natural rate\" of unemployment, meaning there is no permanent tradeoff: this is the single framework behind nearly every Fed decision.",
+    "explainer_covers": [
+      "The original finding (Blinder's history): A.W. Phillips (1958) fit a curve to a century of British data showing a strong negative relationship between wage inflation and unemployment. Samuelson and Solow (1960) recast it with price inflation on the axis and called it a \"menu of choice\" — policymakers could supposedly pick a point (more inflation for less unemployment, or vice versa). For a decade this framed the whole inflation-policy debate (and even mapped onto the political parties, per Blinder).",
+      "The verticalization (the pivotal intellectual event, Friedman 1968 + Phelps): the menu was a mirage because it ignored expectations. Once people come to expect the inflation policymakers are generating, the tradeoff vanishes — attempts to hold unemployment below its \"natural rate\" produce only accelerating inflation, not permanently lower unemployment. In Blinder's algebra: if the coefficient on expected inflation (α) is 1, the long-run Phillips curve is vertical at the natural rate; if α < 1, a permanent tradeoff survives. The empirical verdict moved toward α = 1 — a vertical long-run curve.",
+      "What \"vertical\" means operationally: in the short run the curve still slopes (a hot economy does lift inflation), so the Fed can trade off temporarily. But in the long run the economy returns to the natural rate of unemployment whatever the inflation rate — so monetary policy sets inflation, not the long-run level of unemployment. This is the theoretical backbone of the dual mandate's tension (Z2.2).",
+      "The natural rate / NAIRU: the \"Non-Accelerating Inflation Rate of Unemployment\" — the unemployment rate consistent with stable inflation. Below it, inflation accelerates; above it, it decelerates. Like r\\ (Z2.12) and potential output (★ G239), NAIRU is an unobservable benchmark* that must be estimated (and shifts) — which is why real-time policy is so hard.",
+      "The modern wrinkle the map flags: the curve has looked \"flat\" at times (inflation unresponsive to low unemployment), sparking debate over whether it has weakened, whether expectations have become so anchored (Z3.5) that it barely moves, or whether it reasserts violently once expectations un-anchor (the 2021–23 experience). A live, unsettled debate — not a fixed law."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z2.12",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.5",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G252` inflation & `★ G240` unemployment (the two axes), `★ G239` AD/AS & the output gap (the same tradeoff in output space), `★ G245` monetary policy (the framework it navigates), Z2.12 the neutral rate r\\* (its interest-rate twin), Z3.5 inflation expectations (what makes it vertical), Z3.8 disinflation (moving *along* vs. *shifting* the curve). Across the graph: **HF/ER/AM** (the Phillips-curve read drives the rates and inflation call). *Real-world layer: Blinder Ch. 3 in full; Friedman's 1968 AEA address; the 1970s as the vertical curve's proof and the 2021–23 surge as its violent return.* ---",
+    "gaps": [],
+    "real_world_layer": "Blinder Ch. 3 in full; Friedman's 1968 AEA address; the 1970s as the vertical curve's proof and the 2021–23 surge as its violent return.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.5",
+    "local_id": "Z3.5",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 5,
+    "title": "Inflation Expectations & Anchoring",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Inflation expectations are what households, firms, and markets believe future inflation will be; because those beliefs feed into wage demands, price-setting, and bond yields, they can be self-fulfilling — and keeping them \"anchored\" near the target is arguably the central bank's single most important job.",
+    "explainer_covers": [
+      "Why expectations are the mechanism (not a footnote): if everyone expects 5% inflation, workers bargain for 5% raises, firms pre-emptively raise prices 5%, and lenders demand a 5% inflation premium in nominal rates — all of which produces 5% inflation. Expectations are the transmission belt that turns a one-time shock into persistent inflation (the wage-price spiral of Z3.3) and the reason the long-run Phillips curve is vertical (Z3.4).",
+      "Adaptive vs. rational expectations (Blinder's framing): adaptive expectations look backward (people expect roughly what they've recently seen), which makes inflation sticky and gives policy a short-run tradeoff. Rational expectations look forward (people use all available information, including the Fed's likely actions), which — in the strongest form — can make even short-run tradeoffs evaporate if policy is anticipated. The truth is in between; the debate reshaped macro in the 1970s–80s.",
+      "Anchoring: expectations are \"anchored\" when people ignore transient inflation blips and keep expecting ≈2% because they trust the central bank to bring it back. Anchored expectations are hugely valuable — they let the Fed look through supply shocks without a wage-price spiral. Un-anchoring (the fear of 2021–23) is the nightmare: once people stop believing the target, inflation becomes self-sustaining and far costlier to break (Z3.8).",
+      "How it's measured: survey measures (consumer and professional forecasters) and market measures (breakeven inflation = nominal Treasury yield − TIPS yield, the Fisher decomposition from Z2.7). Watching breakevens is watching the market's real-time inflation expectation.",
+      "The credibility link: anchoring is earned through a track record and protected by independence (Z2.10). This is why Volcker's brutal disinflation (Z3.8) was about re-anchoring beliefs, not just cooling the current rate."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G254` the Phillips curve (expectations verticalize it), `★ G252` inflation (self-fulfilling), `★ G249` real vs. nominal (expected inflation is the Fisher wedge; breakevens measure it), Z2.10 independence (the source of credibility), `★ G245` monetary policy (managing expectations *is* modern policy). Across the graph: **HF/AM** (breakeven and inflation-expectation trades), **Credit** (nominal yields embed the premium). *Real-world layer: Blinder on adaptive vs. rational expectations and the 1970s un-anchoring; the 2021–23 anchoring debate; TIPS breakevens.* ---",
+    "gaps": [],
+    "real_world_layer": "Blinder on adaptive vs. rational expectations and the 1970s un-anchoring; the 2021–23 anchoring debate; TIPS breakevens.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.6",
+    "local_id": "Z3.6",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 6,
+    "title": "The Costs of Inflation: Hyperinflation & the Inflation Tax",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Mild inflation is a nuisance (menu costs, bracket creep, arbitrary redistribution), but high and hyperinflation (Reinhart-Rogoff's threshold: inflation crises at ≈20–40%+, hyperinflation at ≥50% per month) is catastrophic — destroying money's usefulness and functioning as a hidden \"inflation tax\" that transfers wealth from savers and creditors to the government and debtors.",
+    "explainer_covers": [
+      "The costs of moderate inflation (why even 4–5% matters): menu costs (constantly repricing), shoe-leather costs (minimizing cash holdings), bracket creep (nominal gains pushed into higher tax brackets), relative-price noise (harder to read true signals), and above all arbitrary redistribution — inflation is a random tax that punishes anyone holding fixed nominal claims (savers, bondholders, pensioners) and rewards fixed nominal debtors.",
+      "The inflation tax / seigniorage (the key mechanism): when a government finances spending by creating money, the resulting inflation erodes the real value of everyone's currency and nominal bonds — a tax on money holders that requires no legislation. Dalio's debt-cycle framework treats this as a core \"lever\" (printing/inflation as one of the four ways to reduce a debt burden — ★ G256). Reinhart-Rogoff document inflation and currency debasement as the oldest sovereign default technology — defaulting through inflation rather than on the paper.",
+      "Hyperinflation (Reinhart-Rogoff / historical): when inflation runs to double or triple digits (Weimar 1923, Zimbabwe, post-war Hungary), money ceases to function — people flee to hard assets and foreign currency, the tax base collapses, and the economy reverts toward barter. Almost always the endgame of monetizing unsustainable fiscal deficits (the Z5 sovereign-crisis link, and Dalio's late-stage debt cycle).",
+      "Why finance treats tail inflation as a regime risk, not a data point: hyperinflation wipes out all nominal assets simultaneously and is the ultimate case for real assets, hard currency, and gold — the deep rationale behind \"inflation hedge\" allocations (back-link to RE and AM)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G252` inflation (its extreme tail), `★ G256` the debt cycle (inflation as a debt-eroding lever; monetization), `★ G262` sovereign debt (debasement as default, Z5), `★ G263` financial crises (the inflation-crisis category, Z5), `★ G249` real vs. nominal (the inflation tax is the negative real return on money). Across the graph: **AM/WM/RE** (inflation hedging, real assets), **HF** (regime/tail trades). *Real-world layer: Reinhart-Rogoff on inflation crises, debasement, and the \"≥40%\" threshold; Dalio on printing as a lever; the Weimar/Zimbabwe canon.* ---",
+    "gaps": [],
+    "real_world_layer": "Reinhart-Rogoff on inflation crises, debasement, and the \"≥40%\" threshold; Dalio on printing as a lever; the Weimar/Zimbabwe canon.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.7",
+    "local_id": "Z3.7",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 7,
+    "title": "Stagflation & Supply Shocks",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Stagflation is the simultaneous occurrence of stagnant growth (high unemployment) and high inflation — the combination the simple Phillips curve said was impossible — typically caused by an adverse supply shock (e.g., an oil-price spike) that raises prices while cutting output, and it presents the central bank with an inescapable dilemma.",
+    "explainer_covers": [
+      "Why it \"shouldn't\" happen and why it does: the naive Phillips-curve \"menu\" (Z3.4) implied inflation and unemployment move opposite ways — so you couldn't have both high. The 1970s shattered that: the 1973 and 1979 oil shocks pushed inflation and unemployment up together. This is the empirical event that killed the stable Phillips curve and vindicated the Friedman-Phelps verticalization (expectations shifted the whole curve out).",
+      "The mechanism (cost-push, Z3.3): a supply shock shifts aggregate supply back — less output at higher prices. Output falls (→ unemployment rises) and the price level jumps (→ inflation rises). If it feeds into expectations and wages (a wage-price spiral), a one-time shock becomes sustained stagflation.",
+      "The central bank's dilemma (why stagflation is uniquely nasty): the two halves of the dual mandate now point in opposite directions. Fight the inflation (tighten) → deepen the recession. Fight the unemployment (ease) → entrench the inflation. There is no clean move — only a choice of which pain to take. This is the setup for the Volcker decision (Z3.8): accept a severe recession to break inflation, because the alternative (letting expectations un-anchor) was judged worse.",
+      "The modern relevance the map flags: any large supply-side disruption (a pandemic supply-chain break, an energy embargo, a geopolitical shock) raises the stagflation specter and forces the same dilemma — which is why \"supply shock\" is a live risk category for markets, not a 1970s relic."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z3.3",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.8",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G254` the Phillips curve (stagflation broke the naive version and shifted it), `★ G239` AD/AS (a backward supply shift), Z3.3 causes (cost-push), `★ G245` monetary policy (the dilemma it creates), Z3.8 disinflation (the resolution), `★ G252` inflation & `★ G240` unemployment (both high at once). Across the graph: **HF/AM/ER** (stagflation is a distinct, hard-to-hedge regime — bad for both stocks and bonds). *Real-world layer: Blinder on the 1970s oil shocks and the death of the stable Phillips curve; the recurring \"is this stagflation?\" debate around energy and supply shocks.* ---",
+    "gaps": [],
+    "real_world_layer": "Blinder on the 1970s oil shocks and the death of the stable Phillips curve; the recurring \"is this stagflation?\" debate around energy and supply shocks.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z3.8",
+    "local_id": "Z3.8",
+    "module": "macro-economics",
+    "zone": 3,
+    "ordinal": 8,
+    "title": "Disinflation, the Sacrifice Ratio & the Volcker Episode",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Disinflation is the process of bringing a high inflation rate down; because it usually requires tightening hard enough to open an output gap, it carries a \"sacrifice ratio\" (the cumulative percentage of a year's GDP lost per point of inflation reduced) — and the canonical case is Volcker's 1979–82 disinflation, which broke double-digit US inflation at the cost of a severe recession.",
+    "explainer_covers": [
+      "Disinflation vs. deflation (reinforcing Z3.1): disinflation is the rate falling (10% → 3%, prices still rising); deflation is the rate negative (prices falling). Disinflation is usually the goal after an inflation surge; deflation is a danger to be avoided.",
+      "The sacrifice ratio: because breaking inflation means cooling the economy below potential (moving up the short-run Phillips curve, Z3.4), disinflation typically costs output and jobs in the transition. The sacrifice ratio quantifies that cost. It is lower when expectations are well-anchored and policy is credible (people believe the disinflation, so wages/prices adjust with less recession) and higher when the Fed lacks credibility — which is the whole argument for independence and for acting decisively.",
+      "The Volcker episode (the reference case, via Blinder): appointed in 1979 with inflation near 13%, Paul Volcker pushed the federal funds rate toward 20%, deliberately inducing the deep 1981–82 recession (unemployment ~10%). It worked: inflation collapsed to ~3–4% by 1983, and — more importantly — it re-anchored inflation expectations for a generation, ushering in the \"Great Moderation.\" The cost was real and severe; the benefit was durable price stability. This is the archetype of \"a central bank doing the politically unbearable because it is independent\" (the Z2.10 link).",
+      "The credibility payoff and the generational lesson: Volcker's willingness to accept the recession is why later, smaller inflation scares could be handled with far less pain — the anchor he established did the work. The map draws the line from this episode to why modern central banks guard credibility so fiercely, and why the 2021–23 surge revived direct Volcker comparisons.",
+      "The finance takeaway: a disinflation is a regime shift — it re-prices the entire rate structure (the peak in rates, then the long decline), and getting its timing right (the \"Fed pivot\") is one of the highest-stakes macro calls for every asset class."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z3.5",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G254` the Phillips curve (moving along it to disinflate; re-anchoring shifts it), Z3.5 expectations (the sacrifice ratio depends on anchoring), `★ G247` the funds rate (Volcker's 20% instrument), Z2.10 independence (what made Volcker possible), `★ G252` inflation (the target being lowered), `★ G258` financial conditions (a disinflation is a massive tightening then easing). Across the graph: **ALL** — the Volcker template underlies every \"will the Fed break inflation and when does it pivot?\" debate. *Real-world layer: Blinder's Volcker chapters; the Great Moderation; the 2022+ tightening cycle as the modern echo (recency GAP for the latest data).* --- ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "for the latest data",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Blinder's Volcker chapters; the Great Moderation; the 2022+ tightening cycle as the modern echo (recency GAP for the latest data).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

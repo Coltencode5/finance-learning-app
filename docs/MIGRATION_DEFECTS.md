@@ -74,3 +74,18 @@ and RE attached to primary anchor nodes (see `pipeline/build/apply_m2.py`
 `CONSOLIDATED_GAPS`). Node-level inline gaps preserved. **Deferred:** ER Part 9
 item #4 (sector-specific valuation depth — breadth item, not a true gap); RE
 Part 9 item #7 (source-quality/file-access note — module-level, not node-level).
+
+## E. Macro & Economics migration (Milestone 6)
+
+| # | Where | Reference | Problem | Likely intent | Status |
+|---|---|---|---|---|---|
+| 12 | legacy Macro map Part 1 reading list | Z5.10 | Zone 5 ends at Z5.9 (9 nodes); Z5.10 cited only in prose ("historical-episode layer for Z5.9–Z5.10") with no `### Z5.10` header | Either a planned tenth Z5 node never authored, or Z5.9 subsumes the canon | OPEN — 51 nodes migrated; no Z5.10 node created |
+| 13 | macro-economics.z1.6 (initial parse) | PE Z2.21 / Z3.12 / Z5.21 | Slash-chained cross-module refs without repeated prefix were resolved as local `macro-economics.z3.12` / `z5.21` | `private-equity.z3.12`, `private-equity.z5.21` | FIXED — `propagate_abbrev_prefix()` in `parse_markdown.py`; content regenerated |
+
+## E. Macro & Economics migration (Milestone 6 — informational)
+
+| # | Where | Issue | Decision | Status |
+|---|---|---|---|---|
+| 12 | Macro map Part 1 source list | **Z5.10** cited as the historical-episode layer alongside Z5.9, but no `### Z5.10` node header exists in the legacy map | Z5.9 "The Historical Episodes (the Crisis Canon)" subsumes the canon; 51 nodes emitted (not 52). No phantom node created. | DECIDED |
+| 13 | `validate.py` + draft modules | G236–G263 are in `globals.json` while `macro-economics` is draft; validator loads all globals but skips draft module nodes | **FIXED:** `check_required` skips hosting warnings for globals whose `contributed_by` module is draft. Re-run strict validation after promotion. | FIXED |
+| 14 | macro-economics.z1.6 connects_to | Legacy prose `PE Z2.21 / Z3.12 / Z5.21` — bare `Z3.12`/`Z5.21` were parsed as in-module refs | **FIXED** in `parse_markdown.py` via `propagate_abbrev_prefix()`; re-parsed to `private-equity.z3.12` / `.z5.21`. | FIXED |

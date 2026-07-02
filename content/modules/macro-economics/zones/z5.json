@@ -1,0 +1,556 @@
+[
+  {
+    "id": "macro-economics.z5.1",
+    "local_id": "Z5.1",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "Exchange Rates & Currencies",
+    "tag": "global",
+    "global_id": "G260",
+    "quick_definition": "An exchange rate is the price of one currency expressed in another; the regime governing it can be floating (set by the market), fixed/pegged (held to a target by the central bank), or somewhere in between, and it is the single price that links every domestic economy to the rest of the world.",
+    "explainer_covers": [
+      "The basic object: an exchange rate (e.g., $1.10 per euro) is just a price — of one money in terms of another. It has two sides: a stronger dollar makes imports cheaper and exports dearer; a weaker dollar does the reverse. Because it's a relative price, one currency can only strengthen if another weakens.",
+      "The regimes (the key taxonomy): floating (the market sets it — USD, EUR, JPY, GBP); fixed/pegged (the central bank commits to a rate and defends it with reserves and rate policy — e.g., Hong Kong's dollar peg, historical Bretton Woods); managed float (the market leads but the central bank intervenes); and currency union/dollarization (giving up a national currency entirely — the euro, or countries that adopt the dollar). Each regime trades off monetary independence, exchange-rate stability, and capital mobility — the \"impossible trinity\": a country can have only two of {fixed exchange rate, free capital flows, independent monetary policy}.",
+      "The impossible trinity in action: peg your currency and allow free capital flows, and you lose control of your interest rates (you must set them to defend the peg). This is the trap behind most currency crises (Z5.6): a country pegs, borrows in foreign currency, and is forced to choose between defending the peg (crushing the domestic economy with high rates) and abandoning it (a devaluation that blows up foreign-currency debts). Soros's 1992 sterling trade was this trap sprung.",
+      "Why it's the border-crossing price: every cross-border investment, trade flow, and foreign-currency debt is exposed to the exchange rate. It is the variable that turns a domestic rate or inflation story into an international one — the entry point to this zone."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z5.2",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G261",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G250` transmission (the exchange-rate channel of monetary policy), `★ G247` the funds rate (rate differentials drive FX — Z5.2), `★ G261` the balance of payments (flows move the rate), `★ G262` sovereign risk (currency vs. debt crises), `★ G263` financial crises (currency crashes), `★ G252` inflation (purchasing-power parity over the long run), Z4.4 reflexivity (*back-link* — Soros's reflexive currency trends). Across the graph: **HF** (FX is a core macro market — `★ G129`), **AM** (currency hedging in global portfolios), **PE/Credit** (cross-border deals and foreign-currency exposure). *Real-world layer: the impossible trinity; Bretton Woods and its 1971 collapse; the 1992 ERM crisis; Soros on reflexive exchange rates.* ---",
+    "gaps": [],
+    "real_world_layer": "the impossible trinity; Bretton Woods and its 1971 collapse; the 1992 ERM crisis; Soros on reflexive exchange rates.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.2",
+    "local_id": "Z5.2",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "What Moves Exchange Rates",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "In the short run currencies are driven mainly by interest-rate differentials and capital flows (money chases higher risk-adjusted yield); in the long run by inflation differentials (purchasing-power parity) and the balance of payments; and throughout by expectations, risk sentiment, and — in Soros's account — reflexive, trend-following feedback.",
+    "explainer_covers": [
+      "Short-run driver — rate differentials and the carry: capital flows toward currencies offering higher (risk-adjusted) real yields. If the Fed hikes while other central banks hold, the dollar tends to strengthen as capital flows in. The carry trade (borrow a low-yield currency, invest in a high-yield one) is this force operationalized — profitable until a sudden reversal (\"carry unwinds\" are violent, a recurring HF risk). Covered/uncovered interest parity is the formal frame: forward rates should offset rate differentials, but don't reliably, which is what makes FX trading possible.",
+      "Long-run driver — purchasing-power parity (PPP): over long horizons, currencies drift toward the level that equalizes the price of a common basket (the \"Big Mac index\" intuition). A country with persistently higher inflation (★ G252) sees its currency depreciate over time — its money is losing value faster, so it buys less foreign currency. Real exchange rates mean-revert slowly.",
+      "Flow driver — the balance of payments (★ G261): persistent trade surpluses tend to support a currency (foreigners must buy it to pay for exports); persistent deficits must be financed by capital inflows, which can support the currency until confidence wavers — then the financing stops and the currency drops (a sudden stop, Z5.6).",
+      "Expectations, risk sentiment, and reflexivity: in \"risk-off\" episodes capital flees to safe-haven currencies (USD, JPY, CHF) regardless of yield — fear dominates. And Soros's reflexivity (Z4.4) applies sharply to FX: trend-following speculation can drive a currency far from fundamentals in a self-reinforcing move, because the trend itself becomes a fundamental (capital flows, competitiveness) — until it snaps.",
+      "The synthesis: no single model predicts FX well (the \"exchange-rate disconnect\" puzzle). The map teaches the forces (rates, inflation, flows, sentiment, reflexivity) and their time horizons rather than a false precision — currencies are the hardest macro market to forecast."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G261",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G260` exchange rates (what this explains), `★ G247` the funds rate & `★ G248` rate differentials (the short-run driver), `★ G252` inflation (the long-run PPP driver), `★ G261` the balance of payments (the flow driver), `★ G249` real vs. nominal (real rate differentials and real exchange rates), Z4.4 reflexivity (*back-link* — trend-following FX). Across the graph: **HF** (carry, FX macro trades — `★ G129`), **AM** (hedging decisions). *Real-world layer: the carry trade and its unwinds; PPP/Big Mac index; safe-haven flows; Soros's reflexive currency chapters.* ---",
+    "gaps": [],
+    "real_world_layer": "the carry trade and its unwinds; PPP/Big Mac index; safe-haven flows; Soros's reflexive currency chapters.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.3",
+    "local_id": "Z5.3",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 3,
+    "title": "The Balance of Payments (Trade, Current & Capital Accounts)",
+    "tag": "global",
+    "global_id": "G261",
+    "quick_definition": "The balance of payments is the accounting of all of a country's transactions with the rest of the world, split into the current account (trade in goods and services plus income flows) and the capital/financial account (cross-border investment and lending) — and by construction the two must offset: a current-account deficit is a capital-account surplus (the country is borrowing from abroad).",
+    "explainer_covers": [
+      "The structure: the current account = the trade balance (exports − imports of goods and services) + net income from abroad (investment income, remittances). The capital/financial account = net cross-border investment and lending (foreigners buying your assets and vice versa). The accounting identity: current account + capital account = 0 (abstracting from reserve changes) — they must sum to zero because every real transaction has a financial counterpart.",
+      "The identity's meaning (the counter-intuitive core): a country running a current-account deficit (importing more than it exports) must be running a capital-account surplus — it is financing the excess consumption by borrowing from or selling assets to foreigners. The US trade deficit and the US as the world's largest debtor are two sides of one coin. \"A country lives beyond its means\" = \"a country imports capital.\"",
+      "Why it matters for currencies and crises: persistent current-account deficits must be continuously financed by capital inflows. As long as foreigners are happy to hold your assets, fine — but if confidence breaks and the inflows stop (\"sudden stop\"), the currency must fall and/or rates must spike to force the accounts back into balance, often violently (the mechanism of many emerging-market crises, Z5.6). A current-account surplus country (a net lender — China, Germany, Japan) has the opposite, more comfortable position.",
+      "The savings-investment identity (the deep view): the current-account balance also equals national savings minus domestic investment. A deficit means a country invests more than it saves and imports the difference; this reframes \"trade\" deficits as savings imbalances — which is why they're driven by macro forces (fiscal deficits, demographics), not just trade policy. (This connects to the \"twin deficits\" and Soros's Imperial Circle, Z5.5/Z5.8.)",
+      "The finance takeaway: the balance of payments is the flow backdrop for currencies (Z5.2) and sovereign risk (Z5.4) — it tells you whether a country is accumulating claims on the world or obligations to it, and thus how vulnerable its currency and debt are to a shift in global sentiment."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z5.2",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G260` exchange rates (BoP flows move the rate), Z5.2 what moves FX (the flow driver), `★ G262` sovereign debt (external deficits → external debt → vulnerability), `★ G242` fiscal policy (*back-link* — the twin-deficits link), `★ G263` financial crises (sudden stops, Z5.6). Across the graph: **HF/AM** (global-imbalances macro themes — `★ G129`). *Real-world layer: US twin deficits; the global-imbalances debate; emerging-market sudden stops; the savings-glut hypothesis.* ---",
+    "gaps": [],
+    "real_world_layer": "US twin deficits; the global-imbalances debate; emerging-market sudden stops; the savings-glut hypothesis.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.4",
+    "local_id": "Z5.4",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 4,
+    "title": "Sovereign Debt & Sovereign Risk",
+    "tag": "global",
+    "global_id": "G262",
+    "quick_definition": "Sovereign debt is government borrowing, and sovereign risk is the danger it isn't repaid in real terms — through outright default, restructuring, or inflation/debasement — with Reinhart-Rogoff's key findings that default is far more common than assumed (\"serial default\"), that some countries have chronically low tolerance for debt (\"debt intolerance\"), and that the crucial fault line is whether the debt is in the country's own currency or a foreign one.",
+    "explainer_covers": [
+      "The two kinds of sovereign default (Reinhart-Rogoff's taxonomy): external default (on debt owed to foreigners, usually in foreign currency — the classic emerging-market crisis) and domestic default (on debt owed at home, often in local currency — rarer, more hidden, frequently accomplished through inflation rather than outright non-payment). The inflation route (Z3.6) is default in real terms: the bonds are repaid in nominal money that's worth far less — \"debasement,\" the oldest sovereign default technology.",
+      "The own-currency fault line (the single most important distinction, tying to Dalio's debt cycle): a government that borrows in its own currency can always avoid nominal default — it can print (the Z2/Z4 link). Its risk is therefore inflation/currency depreciation, not non-payment. A government that borrows in a foreign currency (or under a gold standard, or in a currency union it can't print — e.g., Greece in the euro) can be forced into outright default, because it can't print what it owes. This is why emerging markets with dollar debt are so crisis-prone and why the euro-periphery crisis was so severe.",
+      "Debt intolerance (Reinhart-Rogoff): some countries repeatedly hit crisis at debt levels that others carry comfortably — because of weak institutions, a history of default (which raises borrowing costs and shortens maturities), and \"original sin\" (inability to borrow abroad in their own currency). Debt sustainability isn't a single universal threshold; it's country-specific and confidence-dependent.",
+      "Serial default and \"this time is different\": Reinhart-Rogoff's central historical finding is that sovereign default is a recurring feature, not a rare accident — countries default in waves (clustered around global rate hikes and commodity busts), and each cycle is preceded by the belief that \"this time is different\" (the modern economy has outgrown crises). The 1980s Latin American debt crisis — triggered by rich-country (Volcker) rate hikes raising the cost of dollar debt — is the canonical macro→sovereign-crisis case, and the direct link back to Z2/Z3.",
+      "The fragility of confidence: sovereign debt runs on confidence, which is stable until it isn't — debt that rolled over fine for years can hit a wall suddenly when sentiment shifts (a reflexive, Soros-style dynamic, Z4.4). The \"debt is sustainable at 4% but not at 8%\" nonlinearity means a rate shock can flip a solvent sovereign into a crisis (the doom loop between sovereign yields and banks).",
+      "The finance takeaway: sovereign risk is the credit risk of the risk-free asset — when it's questioned, the entire ★ G248 risk-free-rate foundation of the valuation stack wobbles (the euro crisis, EM crises). It also homes the sovereign end of the credit-ratings spectrum (★ G77)."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z3.6",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G261",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G256` the debt cycle (the sovereign endgame; own-currency denomination), `★ G252` inflation & Z3.6 the inflation tax (default-by-debasement), `★ G260` exchange rates (currency crises accompany sovereign crises), `★ G261` the balance of payments (external debt vulnerability), `★ G263` financial crises (sovereign crises as a category, Z5.6), `★ G248` the risk-free rate (*back-link* — sovereign risk *is* the credit risk of the \"risk-free\" asset), `★ G77` credit ratings (*back-link*, Private Credit — sovereign ratings). Across the graph: **Credit/HF/AM** (sovereign and EM debt). *Real-world layer: Reinhart-Rogoff's eight centuries of default; the 1980s LATAM crisis (Volcker-triggered); the euro-periphery crisis; Argentina's serial defaults.* ---",
+    "gaps": [],
+    "real_world_layer": "Reinhart-Rogoff's eight centuries of default; the 1980s LATAM crisis (Volcker-triggered); the euro-periphery crisis; Argentina's serial defaults.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.5",
+    "local_id": "Z5.5",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 5,
+    "title": "Reserve Currencies & the Dollar System",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "A reserve currency is one that other nations hold in reserve and use to price trade, invest, and denominate debt globally; the US dollar is today's dominant reserve currency, which grants the US an \"exorbitant privilege\" (it can borrow cheaply in its own currency and run persistent deficits) — but reserve status is cyclical, and Dalio frames its rise and eventual decline as the spine of his Big Cycle.",
+    "explainer_covers": [
+      "What reserve status is and why it matters: the dollar is used far beyond US borders — to price oil and commodities, settle trade between third countries, denominate the majority of international debt, and hold as central-bank reserves. This creates a structural global demand for dollars and dollar assets (Treasuries) that no other currency enjoys.",
+      "The \"exorbitant privilege\": because the world needs dollars and dollar assets, the US can (1) borrow enormous sums in its own currency at low rates (foreigners want to lend to it), (2) run persistent trade and fiscal deficits that would trigger a crisis for anyone else, and (3) project power through the financial system (sanctions work because the dollar is unavoidable). This is the deep reason the US sovereign-risk story (Z5.4) is different — it borrows in the currency it prints, and the world lines up to hold that debt.",
+      "The cost and the reflexive tension (Soros's Imperial Circle, Z5.8): reserve status also means the dollar can stay \"too strong\" (hurting US exporters) and that US monetary policy is the world's monetary policy — a Fed hike tightens conditions globally (the dollar-funding channel), which is why US rate cycles trigger emerging-market crises (the Z5.4 LATAM case). The privilege and the burden are two sides of the same reserve coin.",
+      "Reserve status is cyclical (Dalio's Big Cycle, the bridge to Z5.8): history shows a succession of reserve currencies — Dutch guilder → British pound → US dollar — each tied to the rise of a dominant commercial-military-financial power, and each losing status as that power over-borrows, over-extends, and is challenged. Dalio argues reserve status lags real economic decline (it persists on inertia and network effects long after the fundamentals turn), which makes its eventual erosion slow but consequential — and a live macro question about the dollar's future (a recency/forward-looking GAP the map flags as contested, not settled).",
+      "The finance takeaway: the dollar system is the plumbing beneath the entire global risk-free-rate and credit structure. Its stability is why Treasuries are the global safe asset; questions about its longevity are questions about the foundation of the whole valuation stack."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z5.8",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G261",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G260` exchange rates (the dollar as the reference currency), `★ G256` the debt cycle (reserve status and the Big Cycle), `★ G262` sovereign debt (why US debt is different), `★ G261` the balance of payments (the dollar recycles global surpluses), Z5.8 the Big Cycle (reserve rise-and-fall), `★ G247` the funds rate (*back-link* — US policy as global policy). Across the graph: **HF/AM** (the dollar as the master macro variable — `★ G129`). *Real-world layer: Bretton Woods and the dollar's ascent; \"exorbitant privilege\" (Giscard/Rueff); Dalio's Changing World Order on reserve-currency succession; the de-dollarization debate.* ---",
+    "gaps": [],
+    "real_world_layer": "Bretton Woods and the dollar's ascent; \"exorbitant privilege\" (Giscard/Rueff); Dalio's Changing World Order on reserve-currency succession; the de-dollarization debate.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.6",
+    "local_id": "Z5.6",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 6,
+    "title": "Financial Crises (the Taxonomy & Contagion)",
+    "tag": "global",
+    "global_id": "G263",
+    "quick_definition": "Financial crises come in recurring, catalogable varieties — banking crises, currency crises (crashes), inflation crises, and sovereign-default crises (external and domestic) — which often cluster (several at once, e.g., \"twin\" banking-and-currency crises) and spread across borders (contagion), following the \"this time is different\" pattern that Reinhart-Rogoff show recurring across eight centuries.",
+    "explainer_covers": [
+      "The taxonomy (Reinhart-Rogoff's varieties, with rough thresholds): a banking crisis (bank runs, failures, and bailouts — the most economically destructive and expensive); a currency crisis/crash (a sharp devaluation, e.g., ≥15% in a year); an inflation crisis (inflation above a high threshold, ≈≥20–40% annually — the debasement default of Z3.6/Z5.4); and a sovereign-debt crisis (external or domestic default/restructuring, Z5.4). Each has a distinct trigger and signature, and the map teaches them as a set so a learner can classify any real crisis.",
+      "Clustering — the compound crises: crises rarely come singly. A \"twin crisis\" pairs a banking and a currency crisis (a bank run drains reserves and breaks the peg, or a devaluation blows up banks' foreign-currency liabilities). The worst episodes stack banking + currency + sovereign together (the \"triple crisis\" — Asia 1997, and elements of 2008). The compounding is what turns a shock into a catastrophe.",
+      "The anatomy (tying the whole module together): crises follow the Minsky/Kindleberger arc (Z4.3) — displacement, credit-fueled boom, euphoria, distress, revulsion, panic — amplified by Soros's reflexivity (Z4.4) and the credit-collateral loop, and often triggered by a macro shock from earlier zones (a Fed tightening cycle raising the cost of dollar debt, a commodity bust, a sudden stop in capital flows). The 2008 GFC is the archetype: a housing/credit Minsky bubble, a reflexive collateral spiral, a banking panic, and a lender-of-last-resort/QE response (Z4.9/Z2.9).",
+      "Contagion — how crises spread: crises jump borders through trade links (a crisis country buys less), financial links (shared creditors pull back from a whole region — the \"wake-up call\" as investors reprice similar countries), and pure sentiment (fear spreads faster than fundamentals justify). The 1997 Asian crisis spreading from Thailand across the region, and 2008 spreading from US subprime worldwide, are the canonical contagion cases.",
+      "\"This time is different\" (the recurring delusion): before every crisis, the consensus explains why the old rules no longer apply — new financial technology, a new economy, permanently high growth, sustainable debt. Reinhart-Rogoff catalog five recurring forms of this belief. The map's stance: crises are a permanent structural feature of leveraged financial systems (Minsky), not a solved problem — humility about \"this time is different\" is itself a piece of macro literacy.",
+      "The fragility of confidence and the nonlinearity: the deep lesson — financial systems run on confidence, which is stable until a threshold, then collapses discontinuously. This is why crises are so hard to predict in timing even when the vulnerability (leverage, an overvalued peg, a debt overhang) is visible in advance."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.6",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.9",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z5.9",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G246",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G255` the credit cycle & Z4.3 Minsky & Z4.4 reflexivity (the crisis anatomy), `★ G256` the debt cycle (the deleveraging as crisis), `★ G260` currency crises, `★ G262` sovereign crises, `★ G252`/Z3.6 inflation crises, Z4.9 lender of last resort (the response), `★ G251` QE (the modern response), `★ G246` money supply (*back-link* — the Friedman-Schwartz Great Contraction as a policy-failed banking crisis). Across the graph: **ALL** — every module operates atop a system that periodically seizes. *Real-world layer: Reinhart-Rogoff's crisis database and taxonomy; the Asian 1997 triple crisis; the 2008 GFC; the historical canon in Z5.9.* ---",
+    "gaps": [],
+    "real_world_layer": "Reinhart-Rogoff's crisis database and taxonomy; the Asian 1997 triple crisis; the 2008 GFC; the historical canon in Z5.9.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.7",
+    "local_id": "Z5.7",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 7,
+    "title": "Global Macro Investing",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Global macro is the investment discipline that trades the entire content of this module — making directional bets on interest rates, currencies, commodities, equity indices, and sovereign credit based on a top-down read of economies, policy, and cross-border flows — and it is the strategy that most directly is applied macroeconomics (the home for the global-macro reference ★ G129).",
+    "explainer_covers": [
+      "What it is (framing the discipline): unlike bottom-up stock-picking, global macro starts from the big picture — where are we in the cycle, what will central banks do, which currencies and rates are mispriced, where are the imbalances — and expresses those views across any liquid market (rates, FX, commodities, equity indices, credit), long or short, often with leverage and derivatives. It is the purest trading application of everything in Zones 1–5.",
+      "The playbook (how macro views become trades): a rate view → bond futures or curve trades (Z4.5); an inflation view → breakevens/TIPS (Z2.7/Z3.5); a currency view → FX and carry (Z5.2); a cycle/financial-conditions view → equity-index or credit positioning (Z4.6); a crisis/vulnerability view → shorting an overvalued peg or stressed sovereign (Z5.6). The macro thinker and the macro trader are linked but distinct — the edge is in timing and sizing a view the whole market can eventually see.",
+      "The archetypes (via Drobny and Mallaby, known from the HF module): the great macro traders — Soros (reflexivity in action, the 1992 sterling break), Druckenmiller, the \"house of money\" generation — traded regimes and turning points, not fundamentals-forever. Their canonical trades were bets that a macro dislocation (an unsustainable peg, a policy error, a debt overhang) would resolve — the applied form of this module's crisis and cycle theory.",
+      "Why it's the hardest and most humbling seat: macro markets are the deepest and most efficient, the drivers are multi-causal and reflexive, and the timing problem is brutal (\"markets can stay irrational longer than you can stay solvent\"). The map presents global macro as the discipline where being right about the economy and wrong about the trade is an everyday hazard — which is exactly why macro literacy (this module) is necessary but not sufficient for macro trading.",
+      "The connective payoff: this node is where the module's content becomes a seat — it's the direct upgrade of the HF module's global-macro node (★ G129), which the HF map explicitly flagged as \"depends on the Core Concepts macro module.\" That dependency is now satisfied."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G129` global macro (*back-link* — HF; this node satisfies its stated dependency), and effectively *every* global in this module (rates `★ G247`/`★ G248`, FX `★ G260`, the cycle `★ G255`/`★ G258`, crises `★ G263`, the debt cycle `★ G256`), Z4.4 reflexivity (Soros as the archetype), `★ G127` the sentiment pendulum (*back-link*, HF). Across the graph: **HF** (the home strategy), **AM** (macro overlays and tactical allocation). *Real-world layer: Drobny's Inside the House of Money; Mallaby's More Money Than God; Soros's and Druckenmiller's canonical macro trades.* ---",
+    "gaps": [],
+    "real_world_layer": "Drobny's Inside the House of Money; Mallaby's More Money Than God; Soros's and Druckenmiller's canonical macro trades.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.8",
+    "local_id": "Z5.8",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 8,
+    "title": "The Big Cycle: The Rise & Fall of Reserve Powers",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Dalio's \"Big Cycle\" is the long-horizon (roughly one-to-several-century) pattern in which a dominant power rises on the back of education, innovation, competitiveness, military strength, and a trusted reserve currency — then declines as it over-borrows, over-extends, and is challenged by a rising rival, with the debt cycle (★ G256) and reserve-currency status (Z5.5) as its financial spine.",
+    "explainer_covers": [
+      "The arc (Dalio's Changing World Order framework): a rising power gains an edge in education and innovation → becomes competitive in trade and technology → builds economic and then military dominance → its currency becomes the world's reserve currency (Z5.5), cementing financial dominance. At the peak, success breeds the seeds of decline: wealth gaps widen, the leading power over-consumes and over-borrows (financing itself by issuing the reserve debt the world will hold), it over-extends militarily, and a rising rival (with better fundamentals and less debt) challenges it. The reserve currency's erosion lags the real decline but eventually follows.",
+      "Why it belongs here (the synthesis of the whole module at the longest horizon): the Big Cycle is the debt cycle (★ G256) and the reserve-currency cycle (Z5.5) fused and stretched across centuries. The MP0→MP3 phases (Z4.2) are the financial mechanics of a Big Cycle's late stage — a mature power moving from hard money to fiat to monetization to coordinated fiscal-monetary as its debt burden grows. The historical reserve succession (Dutch → British → American) is the Big Cycle repeating.",
+      "The internal-order dimension: Dalio pairs the external cycle (the rise and fall of powers) with an internal one — widening wealth and values gaps that strain the social and political order, especially in the late, indebted stage. This connects the macro-financial story to the political-economy backdrop (populism, conflict over distribution — the \"wealth transfer\" lever of Z4.2).",
+      "The map's careful framing (a forward-looking GAP): the Big Cycle is a big, contested thesis about where the current world order is heading (the dollar's future, US-China dynamics). The map presents it as a framework and a set of historical rhymes, explicitly not a prediction — flagging that this is Dalio's interpretive lens, powerful for organizing history but inherently speculative about the future. It is taught as a way to think, not a settled forecast.",
+      "The finance takeaway: the Big Cycle sets the deepest backdrop — the multi-decade regime (rising vs. falling rates, strengthening vs. weakening reserve currency, deflationary vs. inflationary long wave) inside which all the shorter cycles play out. Most careers sit within one phase; recognizing the phase is the highest-level macro judgment."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z5.5",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.2",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G256` the debt cycle (the financial spine of the Big Cycle), Z5.5 reserve currencies (the currency dimension), Z4.2's MP0→MP3 phases (the late-stage mechanics), `★ G260` exchange rates (reserve-currency shifts), `★ G263` financial crises (the turning points). Across the graph: **HF/AM** (the longest-horizon regime call — `★ G129`). *Real-world layer: Dalio's The Changing World Order and How Countries Go Broke; the Dutch/British/American reserve succession; the current US-China debate (flagged as contested).* ---",
+    "gaps": [],
+    "real_world_layer": "Dalio's The Changing World Order and How Countries Go Broke; the Dutch/British/American reserve succession; the current US-China debate (flagged as contested).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z5.9",
+    "local_id": "Z5.9",
+    "module": "macro-economics",
+    "zone": 5,
+    "ordinal": 9,
+    "title": "The Historical Episodes (the Crisis Canon)",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The set of landmark macro-financial episodes that every prior node has been pointing toward — the gold standard, 1929 and the Great Depression, the 1970s Great Inflation, the Volcker disinflation, 1987, the 1990s (Japan's bust, Asia 1997, LTCM), the 2008 Global Financial Crisis, and the 2020 COVID shock — taught not as trivia but as the worked examples where the module's frameworks (cycles, crises, policy responses) are seen operating together.",
+    "explainer_covers": [
+      "The classical gold standard & its interwar collapse (Ahamed, Lords of Finance): money as hard/commodity money (Z2.1, Dalio's MP0), the discipline and the deflationary rigidity it imposed, and how central bankers' defense of gold deepened the Depression — the case study in a monetary regime and its constraints (the impossible trinity, Z5.1, in historical form).",
+      "1929 and the Great Depression (Galbraith, The Great Crash 1929; Friedman-Schwartz): the archetypal Minsky bubble and crash (Z4.3) in equities, followed by the Great Contraction — Friedman-Schwartz's thesis that the Fed's failure as lender of last resort (Z4.9), letting the money supply (★ G246) collapse by a third, turned a crash into a decade-long depression. The founding lesson of modern central banking.",
+      "The 1970s Great Inflation (Blinder): the death of the naive Phillips curve (Z3.4), cost-push oil shocks and stagflation (Z3.7), un-anchored expectations (Z3.5), and the Burns-Nixon failure of independence (Z2.10) — the case study in how inflation gets loose.",
+      "The Volcker disinflation, 1979–82 (Blinder): breaking inflation with 20% rates and a deliberate recession (Z3.8), the sacrifice ratio paid, and the re-anchoring of expectations that launched the Great Moderation — the case study in how inflation gets beaten and why independence matters.",
+      "1987 (Black Monday): a market crash without a depression — the contrast case showing how a prompt liquidity backstop (the Fed's \"we will provide liquidity\" — Z4.9) can contain a crash before it infects the real economy.",
+      "Japan's 1990s bust & the 1997 Asian crisis (Reinhart-Rogoff, Kindleberger): a credit/asset bubble and a \"lost decade\" of balance-sheet recession and deflation (the Z2.11 liquidity-trap and Z4.2 deleveraging case); and the Asian triple crisis (Z5.6) — pegged currencies + foreign-currency debt + sudden stop + contagion, the textbook emerging-market crisis and the impossible trinity sprung.",
+      "The 2008 Global Financial Crisis (the synthesis episode): a housing/credit Minsky bubble (Z4.3) with a reflexive collateral spiral (Z4.4), a shadow-banking run, a global banking + credit crisis (Z5.6) transmitted by contagion worldwide, met with the full modern toolkit — lender of last resort, ZLB, QE (Z4.9/Z2.11/Z2.9), and Dalio's \"beautiful deleveraging\" attempt (Z4.2). The episode where every framework in the module appears at once.",
+      "The 2020 COVID shock & response: an exogenous real shock triggering the fastest-ever crash and the most aggressive-ever coordinated monetary-fiscal response (Dalio's MP3, Z4.2/Z2.11) — massive QE plus direct fiscal transfers — which reflated assets and then contributed to the 2021–23 inflation surge (Z3), closing the loop back to the start of the module. (The most recent episode, and the edge of the sources' coverage — a recency GAP for the full 2022–24 tightening cycle and its aftermath.)",
+      "How to use this node: each episode is a hub linking back to the frameworks it illustrates — a learner can enter from \"what happened in 2008?\" and be routed to Minsky, reflexivity, the lender of last resort, QE, and the debt cycle. The canon is the module's set of integrated worked examples."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.9",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.7",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.8",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z2.9",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z2.11",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z5.6",
+        "note": null
+      },
+      {
+        "ref": "G238",
+        "note": null
+      },
+      {
+        "ref": "G246",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Effectively *every* node in the module — each episode instantiates a cluster: `★ G238` depression, `★ G246` money supply, Z4.3 Minsky, Z4.4 reflexivity, Z4.9 lender of last resort, `★ G254` the Phillips curve, Z3.7 stagflation, Z3.8 disinflation, Z2.9 QE, Z2.11 the ZLB, `★ G256` the debt cycle, `★ G263` crises, Z5.6 contagion. Across the graph: **ALL** — the shared historical vocabulary the role modules assume. *Real-world layer: Galbraith, Ahamed, Friedman-Schwartz, Blinder, Reinhart-Rogoff, Kindleberger, Dalio — the full source canon converging.* --- ---",
+    "gaps": [],
+    "real_world_layer": "Galbraith, Ahamed, Friedman-Schwartz, Blinder, Reinhart-Rogoff, Kindleberger, Dalio — the full source canon converging.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

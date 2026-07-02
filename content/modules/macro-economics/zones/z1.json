@@ -1,0 +1,612 @@
+[
+  {
+    "id": "macro-economics.z1.1",
+    "local_id": "Z1.1",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Macroeconomics Is",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Macroeconomics is the study of the economy as a whole — aggregate output, employment, inflation, and growth — as opposed to microeconomics, which studies the choices of individual households and firms.",
+    "explainer_covers": [
+      "The shift in lens: micro asks \"what is the price of this good and how much does this firm produce?\"; macro asks \"how fast is the whole economy growing, and why is unemployment rising?\" The role modules already think micro (a single company's EBITDA, a single deal's IRR); macro is the weather they all operate in.",
+      "Why aggregation changes the rules: things true of one household are false of the whole (the fallacy of composition). Harford's babysitting co-op is the canonical case — every couple saving scrip is individually prudent, but if everyone saves, spending collapses and everyone is worse off. One person's spending is another's income.",
+      "The two halves of macro: the short run (the business cycle — why output fluctuates around its trend, the domain of monetary and fiscal policy) and the long run (growth — why the trend rises at all, the domain of productivity and human capital).",
+      "The \"dismal science\" framing (Wheelan/Malkiel): macro is harder than physics because you can't run controlled experiments and people don't behave predictably — so macro is a field of contested models, not settled laws. The map flags where economists genuinely disagree rather than presenting one school as truth."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.2",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z1.12",
+        "note": null
+      },
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2 (the circular flow it studies), `★ G236` GDP (its headline measure), `★ G237` the business cycle (its short-run object), Z1.12 (long-run growth), `★ G127` (the *sentiment* cycle it must be distinguished from — Part 1). Across the graph: every role module's \"macro backdrop\" — this is the node that names what that backdrop is. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.2",
+    "local_id": "Z1.2",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Circular Flow & the Four Agents",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The economy modeled as a continuous loop of money and goods among four agents — households, firms, the government, and the central bank (plus the rest of the world) — where one agent's spending is always another's income.",
+    "explainer_covers": [
+      "The basic loop: households supply labor to firms and receive wages; they spend those wages buying firms' output; firms use the revenue to pay wages again. Money circulates; goods flow the other way.",
+      "The four agents and what each does in macro: households (consume and save), firms (invest and produce), the government (taxes, spends, borrows — the fiscal lever ★ G242), and the central bank (issues money, sets rates — the monetary lever ★ G245). The rest of the world is the fifth, entering through trade and capital flows (Zone 5).",
+      "Harford's \"Phillips Machine\" image: a macroeconomist sees the economy as water sloshing through tanks and pipes — big glugs of spending power (consumption, government spending, investment, imports) that can be dammed, redirected, and siphoned by policymakers moving rates, taxes, and the money supply.",
+      "Leakages and injections: saving, taxes, and imports leak out of the loop; investment, government spending, and exports inject back in. When leakages exceed injections, the loop shrinks — a recession."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.1",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G243",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.1, `★ G236` GDP (the loop measured), Z1.4 (the expenditure identity — the loop as an equation), `★ G242` fiscal policy (the government in the loop), `★ G243`/`★ G245` money & monetary policy (the central bank in the loop), Zone 5 (the rest of the world). *Real-world layer: Harford Ch. 1 (the Phillips Machine); Wheelan Ch. 1 (\"Who feeds Paris?\").* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 1 (the Phillips Machine); Wheelan Ch. 1 (\"Who feeds Paris?\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.3",
+    "local_id": "Z1.3",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 3,
+    "title": "GDP — Gross Domestic Product",
+    "tag": "global",
+    "global_id": "G236",
+    "quick_definition": "The total market value of all final goods and services produced within an economy in a period — the single headline number for how big an economy is and whether it is growing or shrinking.",
+    "explainer_covers": [
+      "What it is and isn't: GDP counts final output (to avoid double-counting intermediate goods), produced within a country's borders (domestic), in a given period (a flow, usually annualized). It is the scoreboard — Wheelan's \"Keeping Score: is my economy bigger than your economy?\"",
+      "The three equivalent ways to measure it (they must sum to the same number): the expenditure approach (C + I + G + NX — Z1.4), the income approach (all wages + profits + rents + interest), and the output/value-added approach (the sum of value added at each stage). Three lenses on one quantity.",
+      "Real vs. nominal (Z1.5): nominal GDP mixes up more output with higher prices; real GDP strips out inflation to measure actual production. GDP growth almost always means real growth. The GDP deflator is the price index implied by the gap between the two.",
+      "What GDP misses (Harford's \"Cult of GNP\"): unpaid work, the environment, inequality, well-being, the informal economy. GDP measures activity, not welfare — a critical caveat the app should carry, not bury. GDP per capita (output per person) is the better proxy for living standards.",
+      "Why finance cares: GDP growth is the demand backdrop for every company's revenue, the denominator for debt sustainability (debt-to-GDP), and the variable the Fed and the bond market obsess over. A recession is, formally, a fall in real GDP."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.4",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z1.5",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G238",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G241",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G237` the business cycle (GDP's fluctuation), `★ G238` recession (a GDP contraction), Z1.4 (the expenditure identity), Z1.5 (real vs. nominal), `★ G239` AD/AS & the output gap (actual vs. potential GDP), `★ G241` economic indicators (GDP's higher-frequency cousins), `★ G262` sovereign debt (debt-to-GDP). Across the graph: ER (the top-down demand input to every revenue forecast), every role module's macro backdrop. *Real-world layer: Wheelan Ch. 9; Harford Ch. 11 (\"The Cult of GNP\").* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 9; Harford Ch. 11 (\"The Cult of GNP\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.4",
+    "local_id": "Z1.4",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 4,
+    "title": "The Expenditure Identity (C + I + G + NX)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The accounting identity that total output equals the sum of consumption, investment, government spending, and net exports — the map of who is doing the spending that adds up to GDP.",
+    "explainer_covers": [
+      "The four components: C (household consumption — the biggest, ~⅔ of US GDP), I (business investment — the most volatile, and the channel monetary policy works through), G (government spending — the fiscal lever), NX (net exports = exports − imports — the link to the rest of the world).",
+      "Why the breakdown matters for the cycle: recessions are usually investment-led (I collapses first and hardest — firms stop building when confidence and credit dry up). This is why interest rates matter so much: they move I.",
+      "The policy reading: each component is a different lever. Monetary policy works mainly on I (and on C through credit and asset prices); fiscal policy works directly on G (and on C through taxes); trade and the exchange rate work on NX.",
+      "The savings-investment identity: in a closed economy, saving must equal investment; opening to the world, a country that invests more than it saves runs a current-account deficit (Z5.3) — the bridge to the balance of payments."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.2",
+        "note": null
+      },
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G261",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (the identity *is* GDP, decomposed), Z1.2 (the circular flow it formalizes), `★ G250` monetary transmission (how policy moves I and C), `★ G242` fiscal policy (G), `★ G261` the balance of payments (NX and the saving-investment link). PE/VC: the \"I\" component is where private investment shows up in the aggregate. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.5",
+    "local_id": "Z1.5",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 5,
+    "title": "Real vs. Nominal",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The distinction between a quantity measured in current dollars (nominal — distorted by inflation) and the same quantity adjusted to constant dollars (real — reflecting actual purchasing power or output).",
+    "explainer_covers": [
+      "The core idea: if your wage rose 3% but prices rose 3%, your real wage is flat — you can buy exactly what you could before. Nominal is the number on the check; real is what it's worth.",
+      "Where it bites in macro: real GDP (output, not price changes — Z1.3), the real interest rate (★ G249 — what a lender truly earns), real wages, real returns. Almost every macro variable that matters is the real one.",
+      "The Fisher relation (preview of ★ G249): real rate ≈ nominal rate − expected inflation. A 5% nominal rate when inflation is 4% is only a 1% real rate — barely positive. Inflation is a tax on nominal assets.",
+      "Why finance must watch this: a bond yielding 5% \"loses\" to 6% inflation (negative real return); a real-estate value that \"rose\" 4% in a year of 5% inflation actually fell in real terms. Confusing nominal gains with real ones is how investors fool themselves in inflationary periods (a recurring theme in Reinhart-Rogoff)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G253",
+        "note": null
+      },
+      {
+        "ref": "G1",
+        "note": null
+      },
+      {
+        "ref": "G58",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (real vs. nominal GDP), `★ G249` the real vs. nominal rate (the Fisher relation — the home node for this in rates), `★ G252` inflation (the wedge between the two), `★ G253` the price indices (how the adjustment is made). Across the graph: every return metric (IRR `G1`, yield `G58`, cap rate `G219`) has a real-vs-nominal reading the app should surface. ---",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.6",
+    "local_id": "Z1.6",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 6,
+    "title": "The Business Cycle",
+    "tag": "global",
+    "global_id": "G237",
+    "quick_definition": "The recurring fluctuation of real economic output around its long-run trend — expansion, peak, recession, trough, and recovery — the rhythm of boom and bust in the real economy (distinct from the sentiment cycle ★ G127 and the credit cycle ★ G255).",
+    "explainer_covers": [
+      "The four phases: expansion (output, employment, and confidence rising), peak (the economy at or above capacity, inflation pressure building), recession (★ G238 — output contracting), trough (the bottom), then recovery back into expansion. Expansions are long and gradual; recessions are short and sharp (the asymmetry).",
+      "What dates it: in the US, the NBER dates cycles (not the \"two negative quarters\" rule of thumb) using a broad read of output, employment, income, and spending. Cycles are recurrent but not periodic — they don't run on a fixed clock.",
+      "What drives it: the short-run cycle is fundamentally about demand (Harford's babysitting recession — a shortfall of spending, not of capacity) interacting with the credit cycle (★ G255) and policy. Late-cycle dynamics (Dalio): the late stage typically shows weak growth with rising inflation, which provokes tightening, which tips the economy into recession.",
+      "The relationship to the other cycles (Part 1, restated because it's load-bearing): the business cycle is the real-economy object; Marks's pendulum (★ G127) is the sentiment object; the credit cycle (★ G255) is the lending object; Dalio's short-term debt cycle (★ G256) is essentially this business cycle viewed through the lens of debt accumulation. They overlap but peak at different times.",
+      "Why finance lives and dies by it: the cycle governs default rates (Credit), exit windows and entry multiples (PE), deal volume (IB), revenue growth (ER), and which strategies work when (HF). Knowing where you are in the cycle is the master macro skill the role modules assume."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z3.7",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z2.21",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z3.12",
+        "note": null
+      },
+      {
+        "ref": "private-equity.z5.21",
+        "note": null
+      },
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G238",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      },
+      {
+        "ref": "G241",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (what fluctuates), `★ G238` recession, `★ G239` AD/AS & the output gap (the cycle as deviation from potential), `★ G240` unemployment (its mirror), `★ G241` economic indicators (how you locate yourself in it), `★ G255` the credit cycle / `★ G256` the debt cycle (its financial drivers), `★ G127` (the sentiment cycle — **disambiguate**, Part 1). Across the graph: **HF Z3.7 / `★ G127`** (navigating cycles), **PE Z2.21 / Z3.12 / Z5.21** (the \"why now\" the PE map flagged as missing), **Credit Z5.x** (the default cycle), **RE `★ G232`** (the real-estate cycle is this cycle's property-market expression), **ER** (cyclical vs. defensive sectors). *Real-world layer: Harford Ch. 2, 6–7; Dalio (the short-term cycle).* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 2, 6–7; Dalio (the short-term cycle).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.7",
+    "local_id": "Z1.7",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 7,
+    "title": "Recession & Depression",
+    "tag": "global",
+    "global_id": "G238",
+    "quick_definition": "A recession is a broad, sustained contraction in economic activity; a depression is a rare, severe, prolonged one — and both are usually a shortfall of demand rather than a loss of productive capacity.",
+    "explainer_covers": [
+      "The Harford insight (the heart of this node): in the babysitting co-op, the parents, the children, and the willingness to babysit were all unchanged — nothing real was destroyed — yet the \"economy\" seized up because everyone hoarded scrip and stopped spending. A recession is often exactly this: the factories, workers, and know-how are all still there, but spending and confidence have collapsed, so output falls anyway. The fix was to print more scrip (monetary stimulus) — and it worked.",
+      "The two kinds of recession: demand-driven (the common kind — a collapse in spending, curable by easier money and fiscal support) vs. supply-driven (rarer — a real shock to capacity: an oil embargo, a pandemic, a war, which easier money can't fix and may worsen via inflation). The 1970s and 2020 were partly supply shocks; 2008 was a demand/credit collapse.",
+      "Depression: defined by depth and duration, not a formula. The Great Depression (1929–33) — output fell ~30%, unemployment hit ~25% — is the reference case, and Friedman-Schwartz's thesis that the Fed turned a recession into a depression by letting the money supply collapse is the single most influential idea in modern macro (it shaped Bernanke's 2008 response).",
+      "Why the distinction matters: the cause dictates the cure. Mistaking a supply shock for a demand shortfall (printing money into an oil crisis) gives you stagflation (Z3.7); mistaking a demand collapse for a supply problem (austerity into a depression — Dalio's warning) deepens the slump."
+    ],
+    "connects_to": [
+      {
+        "ref": "hedge-funds.z2.8",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G237` the business cycle (recession is one phase), `★ G236` GDP (a recession is a GDP contraction), `★ G239` AD/AS & the output gap (a recession opens a negative gap), `★ G240` unemployment (rises in recession), `★ G245`/`★ G242` monetary & fiscal policy (the countercyclical response), `★ G263` financial crises (which trigger the deepest recessions). Across the graph: **Credit** (defaults spike in recession — the distressed opportunity), **PE/VC** (the J-curve `G4` and exit windows shift), **HF Z2.8** (distressed is countercyclical), **RE** (vacancy and cap rates move). *Real-world layer: Harford Ch. 2 & 6; Friedman-Schwartz on the Great Contraction; Blinder Ch. 13 (the Great Recession).* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 2 & 6; Friedman-Schwartz on the Great Contraction; Blinder Ch. 13 (the Great Recession).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.8",
+    "local_id": "Z1.8",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 8,
+    "title": "Aggregate Demand, Aggregate Supply & the Output Gap",
+    "tag": "global",
+    "global_id": "G239",
+    "quick_definition": "Total economy-wide spending (aggregate demand) set against total productive capacity (aggregate supply), and the output gap — the difference between what the economy is producing and what it could produce at full employment — which drives inflation and unemployment.",
+    "explainer_covers": [
+      "Potential output: the level of GDP the economy can sustain at full employment without accelerating inflation — set by the labor force, the capital stock, and productivity (the supply side, long-run). It's the \"speed limit.\"",
+      "The output gap: actual GDP minus potential. A negative gap (actual below potential — a recession, slack, unemployment) puts downward pressure on inflation. A positive gap (actual above potential — an overheating boom) puts upward pressure on inflation. The gap is the single best summary of \"is the economy too hot or too cold?\"",
+      "Aggregate demand: total spending (the C+I+G+NX of Z1.4 viewed as a downward-sloping schedule against the price level). Monetary and fiscal policy work by moving AD — easing shifts it out (more spending), tightening shifts it in.",
+      "Aggregate supply: short-run (sticky prices and wages — the economy can produce above or below potential temporarily) vs. long-run (vertical at potential — you can't outproduce capacity forever; trying just causes inflation). A supply shock (oil, pandemic, war) shifts AS and is the nightmare case — it raises inflation and lowers output at once (stagflation, Z3.7).",
+      "Why the Fed thinks in these terms: the Fed's whole job is to keep AD matched to potential — close the gap when it's negative (ease), restrain AD when the gap goes positive (tighten). The Phillips curve (★ G254) is the output gap translated into the inflation-unemployment language."
+    ],
+    "connects_to": [
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (actual output), `★ G237` the business cycle (the gap *is* the cycle, measured against potential), `★ G240` unemployment (a negative gap = high unemployment — the labor-market face of the same thing), `★ G252` inflation (the gap is the demand-pull driver), `★ G254` the Phillips curve (the gap in inflation-unemployment form), `★ G245` monetary policy (which targets the gap). Across the graph: **HF macro** (the gap is a core top-down input), **ER** (cyclical demand), **AM fixed income** (the gap drives the rate cycle). *Real-world layer: Harford Ch. 7 (\"Output Gaps\").* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 7 (\"Output Gaps\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.9",
+    "local_id": "Z1.9",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 9,
+    "title": "Unemployment & the Labor Market",
+    "tag": "global",
+    "global_id": "G240",
+    "quick_definition": "The share of people who want work but cannot find it — its measurement, its types (frictional, structural, cyclical), and its tight link to output — and one half of the Federal Reserve's dual mandate.",
+    "explainer_covers": [
+      "The measure and its traps: the unemployment rate = unemployed ÷ labor force, where \"unemployed\" means actively looking. It misses discouraged workers (gave up looking — they leave the labor force and the rate falls, perversely) and the underemployed (part-time, want full-time). The labor-force participation rate is the essential companion number. Harford's \"Invention of Unemployment\" — the category itself is a 20th-century construct.",
+      "The three types: frictional (between jobs — healthy, unavoidable), structural (skills or location mismatch — a worker's skills are obsolete), and cyclical (demand shortfall — the recession kind, the kind policy can fix). The first two define the natural rate of unemployment (★ G254's NAIRU — the rate consistent with stable inflation); cyclical is the deviation.",
+      "Okun's law: the empirical link between the output gap and unemployment — roughly, each percentage point of unemployment above the natural rate corresponds to ~2% of GDP below potential. It connects the labor market (G240) to the output gap (G239).",
+      "Why it's half the Fed's mandate: the Fed targets maximum employment alongside stable prices — and the two can conflict (the Phillips-curve tradeoff ★ G254). When unemployment is below the natural rate, the Fed fears wage-driven inflation and leans toward tightening; when it's above, the Fed eases.",
+      "The market read: payrolls (the monthly jobs report), jobless claims, wage growth, and the \"quits rate\" are among the most market-moving data releases — they tell the Fed and the bond market where the cycle and inflation pressure stand."
+    ],
+    "connects_to": [
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G241",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G239` AD/AS & the output gap (Okun's law links them), `★ G237` the business cycle (unemployment is countercyclical), `★ G254` the Phillips curve (the inflation-unemployment tradeoff; the natural rate/NAIRU), `★ G244` the Fed (employment is half the mandate), `★ G241` economic indicators (payrolls, claims). Across the graph: **ER/HF** (the jobs report as a market event), **AM** (labor data drives the rate view). *Real-world layer: Harford Ch. 8 (\"The Invention of Unemployment\").* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 8 (\"The Invention of Unemployment\").",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.10",
+    "local_id": "Z1.10",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 10,
+    "title": "Economic Indicators (Leading, Coincident, Lagging)",
+    "tag": "global",
+    "global_id": "G241",
+    "quick_definition": "The dashboard of higher-frequency data — payrolls, PMIs, jobless claims, retail sales, housing starts, the yield curve — classified by whether they turn before, with, or after the cycle, used to locate where the economy is and where it's heading.",
+    "explainer_covers": [
+      "The three classes: leading (turn before the economy — building permits, new orders, the stock market, jobless claims, and the yield curve ★ G257 — the most-watched leading signal); coincident (turn with the economy — payrolls, industrial production, real income); lagging (turn after — the unemployment rate, CPI inflation, business-loan delinquencies).",
+      "The key survey indicators: PMIs (purchasing-managers' indices — a 50 line separates expansion from contraction; among the fastest reads on the cycle), consumer confidence, the ISM. These are timely because they're surveys, not lagged accounting.",
+      "The \"hard vs. soft data\" distinction: soft data (surveys, sentiment) move fast but can mislead; hard data (production, sales, payrolls) confirm but lag. A turning point is when the two diverge.",
+      "Why it matters: GDP (★ G236) is comprehensive but slow (quarterly, revised). Markets trade on the higher-frequency indicators that arrive weekly and monthly and that anticipate GDP. The whole craft of reading the cycle in real time (HF, ER, AM) is built on this dashboard."
+    ],
+    "connects_to": [
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G240",
+        "note": null
+      },
+      {
+        "ref": "G253",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (what the indicators anticipate), `★ G237` the business cycle (what they locate), `★ G240` unemployment (payrolls, claims), `★ G253` the price indices (CPI/PCE as lagging indicators), `★ G257` the yield curve (the premier leading indicator). Across the graph: **HF macro / ER / AM** (the data calendar these desks trade around). *Real-world layer: Wheelan; Drobny (how macro traders read the data flow).* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan; Drobny (how macro traders read the data flow).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.11",
+    "local_id": "Z1.11",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 11,
+    "title": "Fiscal Policy (Deficits, Debt & the Multiplier)",
+    "tag": "global",
+    "global_id": "G242",
+    "quick_definition": "The government's lever over the economy — taxes and spending — used to stabilize the cycle, and the deficits (annual shortfalls) and accumulated debt (their sum) that result.",
+    "explainer_covers": [
+      "The lever: in a downturn the government can spend more or tax less to inject demand (expansionary fiscal policy); in a boom it can do the reverse (contractionary). It works directly on the G of C+I+G+NX, and on C through taxes and transfers.",
+      "Automatic stabilizers: the parts that work without anyone deciding — unemployment benefits rise and tax receipts fall automatically in a recession, cushioning the fall; the reverse in a boom. The first line of fiscal defense.",
+      "The fiscal multiplier: a dollar of government spending can raise GDP by more (or less) than a dollar, because the recipient re-spends part of it (one person's spending is another's income — Harford again). The multiplier is larger in a slump (idle resources) and smaller near full employment (where it crowds out private activity — Blinder's \"Deficits Crowd Out Fiscal Policy\"). Its size is one of the most contested numbers in macro.",
+      "Deficit vs. debt (Part 1): the deficit is the annual gap; the debt is the accumulated stock. Debt sustainability is about the debt-to-GDP ratio — which can fall even with deficits if growth outpaces debt (the arithmetic behind Dalio's \"beautiful deleveraging\").",
+      "The interaction with monetary policy: fiscal and monetary policy can reinforce (2020: deficits financed by Fed purchases — Dalio's \"MP3\") or clash (Reaganomics — loose fiscal, tight monetary — Blinder Ch. 8). Whether deficits are inflationary depends, per Friedman, on whether they're financed by printing money or by borrowing."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.2",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z1.4",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "Z1.2/Z1.4 (the government in the circular flow and the identity), `★ G237` the business cycle (countercyclical use), `★ G245` monetary policy (the partner/rival lever — **disambiguate**, Part 1), `★ G251` QE (when the central bank finances the deficit), `★ G262` sovereign debt (where fiscal debt becomes a risk), `★ G256` the debt cycle (government over-borrowing as a stage). Across the graph: **Credit/PE** (fiscal stimulus as a demand and rate driver), **HF macro** (fiscal as a top-down variable). *Real-world layer: Harford Ch. 5 (\"Stimulus\"); Blinder Ch. 1, 8, 10, 18.* ---",
+    "gaps": [],
+    "real_world_layer": "Harford Ch. 5 (\"Stimulus\"); Blinder Ch. 1, 8, 10, 18.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z1.12",
+    "local_id": "Z1.12",
+    "module": "macro-economics",
+    "zone": 1,
+    "ordinal": 12,
+    "title": "Long-Run Growth & Productivity",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Why the economy's trend rises at all over decades — the accumulation of capital, labor, and above all productivity (output per worker) — as distinct from the short-run cycle around that trend.",
+    "explainer_covers": [
+      "The distinction from the cycle: the business cycle (★ G237) is fluctuation around the trend; growth is the trend itself. A country can have a great cycle (no recession) and terrible growth (a flat trend) — Japan's recent decades — or vice versa.",
+      "The drivers: more labor (population, participation), more capital (investment in plant, equipment, infrastructure), and total factor productivity (technology, institutions, education — \"why is Bill Gates richer than you?\" in Wheelan's framing — the residual that explains most long-run growth).",
+      "Why it's the most important number over long horizons: small differences in the growth rate compound enormously (the \"rule of 70\" — years to double ≈ 70 ÷ growth rate). 1% vs. 3% growth is the difference between stagnation and doubling living standards in a generation.",
+      "The development question (Wheelan Ch. 13): why some countries are rich and others poor — institutions, human capital, property rights, openness to trade. The supply side that sets potential output (★ G239).",
+      "Why finance cares less day-to-day but more strategically: growth sets the long-run return backdrop, the sustainable level of rates (a high-growth economy can bear higher real rates), and the demographic and productivity assumptions inside any long-horizon valuation."
+    ],
+    "connects_to": [
+      {
+        "ref": "G236",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G236` GDP (its long-run path), `★ G239` AD/AS (potential output is the supply-side trend), `★ G248` the risk-free rate (long-run growth and the neutral real rate are linked), `★ G237` the business cycle (the trend the cycle moves around). Across the graph: **AM/WM** (long-run capital-market assumptions), **VC** (technology as the productivity frontier). *Real-world layer: Wheelan Ch. 6 & 13; Harford Ch. 13 (\"Can Growth Continue Forever?\").* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 6 & 13; Harford Ch. 13 (\"Can Growth Continue Forever?\").",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

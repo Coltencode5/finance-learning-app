@@ -1,0 +1,594 @@
+[
+  {
+    "id": "macro-economics.z2.1",
+    "local_id": "Z2.1",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Money (and Fiat Currency)",
+    "tag": "global",
+    "global_id": "G243",
+    "quick_definition": "Money is anything widely accepted as a medium of exchange, a store of value, and a unit of account; modern \"fiat\" money is currency that has value not because it is backed by gold but because the government declares it legal tender and people trust it.",
+    "explainer_covers": [
+      "The three jobs money does: medium of exchange (solves the \"double coincidence of wants\" that cripples barter), store of value (you can hold it and spend later), and unit of account (a common yardstick for prices). Wheelan's framing: money is a social technology, not a thing — it works only because everyone believes it will.",
+      "Commodity money → representable money → fiat money. Historically money was a commodity (gold, silver) or a claim on one (a note redeemable for gold — the gold standard, covered in Z5). Modern money is fiat: intrinsically worthless paper and electronic entries whose value rests entirely on confidence and the government's taxing power. Dalio's \"hard money → fiat money\" transition (MP0→MP1) is exactly this shift, and it is the master key to his debt-cycle framework.",
+      "Why fiat money is both powerful and fragile: a government that issues its own fiat currency can never be forced to default in that currency (it can always print) — but that same power is what makes inflation and debasement possible (Z3, Z5). The discipline of gold is traded for the flexibility (and temptation) of the printing press.",
+      "The distinction between currency (physical notes and coins) and money (a far broader aggregate including bank deposits — see money supply, ★ G246). Most \"money\" today is not currency at all; it is electronic bank-deposit entries."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z5.7",
+        "note": null
+      },
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G246",
+        "note": null
+      },
+      {
+        "ref": "G243",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G244` the central bank (issues it), `★ G246` the money supply (the quantity of it), `★ G243`→`★ G252` inflation (too much money chasing too few goods erodes its value), `★ G260` exchange rates (the price of one money in another), and Dalio's `★ G256` debt cycle (the hard-money→fiat transition is the spine of the long-term cycle). *Real-world layer: Wheelan Ch. 10; Dalio MP0/MP1; the gold-standard history in Z5.7.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Dalio MP0/MP1; the gold-standard history in Z5.7.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.2",
+    "local_id": "Z2.2",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "The Central Bank & the Federal Reserve",
+    "tag": "global",
+    "global_id": "G244",
+    "quick_definition": "A central bank is the public institution that issues a nation's currency and conducts monetary policy; in the United States it is the Federal Reserve (\"the Fed\"), which sets interest rates through its Federal Open Market Committee (FOMC) under a congressional \"dual mandate\" of stable prices and maximum employment.",
+    "explainer_covers": [
+      "What a central bank is: the bank for banks and the government's monetary authority. It (1) issues currency, (2) sets the policy interest rate, (3) acts as lender of last resort in a panic (the Z4 link), (4) supervises parts of the banking system, and (5) holds the nation's reserves. It is deliberately insulated from day-to-day politics (see independence, Z2.10).",
+      "The Fed's structure (Wheelan Ch. 10): a Board of Governors in Washington (seven governors, including the Chair), twelve regional Federal Reserve Banks, and the FOMC — the rate-setting committee (the seven governors plus a rotating set of regional presidents) that meets roughly eight times a year to set the federal funds target.",
+      "The dual mandate: by law (added to the Federal Reserve Act in 1977, per Blinder), the Fed must pursue both low, stable inflation and maximum sustainable employment. These two goals can conflict (the Phillips-curve tension, Z3.4) — which is the central drama of nearly every Fed decision. Most other central banks (e.g., the ECB) have a single mandate (price stability only).",
+      "What it is not: not a commercial bank, not part of the elected government, not literally \"printing money\" in the colloquial sense (see the QE disambiguation, Part 1). Blinder's history shows the Fed's self-conception evolving — in the early 1960s the FOMC \"saw itself as a bulwark against inflation, not as an agency responsible for steering the economy\"; the activist, expectations-managing modern Fed is a relatively recent construction."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z2.10",
+        "note": null
+      },
+      {
+        "ref": "G243",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G243` money (issues it), `★ G245` monetary policy (conducts it), `★ G247` the federal funds rate (sets it), `★ G250` transmission (how its decisions reach the economy), `★ G251` QE (its crisis tool), Z2.10 independence, and the Z4 **lender of last resort** node. Across the graph: this node is referenced implicitly everywhere a model assumes \"the Fed cut\" or \"the Fed hiked\" — **HF** global macro (`★ G129`), **Credit** (central-bank scrutiny of systemic risk), **AM/WM** (policy as the driver of the rate regime). *Real-world layer: Wheelan Ch. 10; Blinder throughout; the Fed chairs as a through-line — Martin, Burns, Volcker, Greenspan, Bernanke, Yellen, Powell.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Blinder throughout; the Fed chairs as a through-line — Martin, Burns, Volcker, Greenspan, Bernanke, Yellen, Powell.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.3",
+    "local_id": "Z2.3",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Monetary Policy",
+    "tag": "global",
+    "global_id": "G245",
+    "quick_definition": "Monetary policy is the central bank's management of interest rates and the money supply to steer inflation and employment — easing (cutting rates / adding money to stimulate a weak economy) or tightening (raising rates / draining money to restrain an overheating one).",
+    "explainer_covers": [
+      "The two directions, in plain terms: when the economy is weak and unemployment rising, the Fed eases — cuts the policy rate, making borrowing cheaper, spending and investment rise. When inflation is too high, the Fed tightens — raises the rate, making borrowing dearer, demand cools. This is the short-run stabilization lever (the counterpart to fiscal policy, ★ G242 — see the Part 1 disambiguation).",
+      "Conventional vs. unconventional policy: conventionally the Fed moves the short-term policy rate (★ G247). When that rate hits zero (the zero lower bound, Z2.11) it turns to unconventional tools — quantitative easing (★ G251) and forward guidance.",
+      "The lags: monetary policy works with \"long and variable lags\" (Friedman's famous phrase, via Blinder) — a rate change today affects the economy 6–18 months later. This is why the Fed must act on forecasts, and why it so often over- or under-shoots (tightening into a slowdown, easing into a recovery).",
+      "Rules vs. discretion: a deep, unresolved debate (Blinder). Monetarists (Friedman) wanted a fixed rule — grow the money supply at a constant k percent and stop fine-tuning. The modern Fed uses discretion, guided by frameworks like the Taylor rule (a formula linking the policy rate to inflation and the output gap) as a reference, not a straitjacket. The map flags this as a genuine school-of-thought disagreement, not settled doctrine.",
+      "The goal variable has shifted over time: from money-supply targeting (the monetarist 1979–82 experiment under Volcker) to interest-rate targeting with an inflation objective (the modern regime). Greenspan's announcement that the FOMC \"would no longer pay attention to the growth rates of the monetary aggregates\" (Blinder) marks the end of monetarist operating procedure."
+    ],
+    "connects_to": [
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G244` the Fed (conducts it), `★ G247` the funds rate (the main instrument), `★ G250` transmission (how it works), `★ G251` QE (the unconventional version), `★ G254` the Phillips curve (the tradeoff it navigates), `★ G242` fiscal policy (its sibling lever — disambiguated in Part 1), and `★ G258` financial conditions (what it ultimately moves). Across the graph: **every** module that says \"in a rate-cutting environment\" or \"when the Fed pivots\" is leaning on this node. *Real-world layer: Wheelan Ch. 10; Blinder's entire 60-year narrative is the history of this node.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Blinder's entire 60-year narrative is the history of this node.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.4",
+    "local_id": "Z2.4",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "The Money Supply & Money Creation",
+    "tag": "global",
+    "global_id": "G246",
+    "quick_definition": "The money supply is the total quantity of money in the economy — measured in tiers (M1, M2) — and most of it is created not by the government but by commercial banks when they make loans, expanding deposits out of reserves.",
+    "explainer_covers": [
+      "The aggregates: M1 (currency + checkable deposits — the most liquid money) and M2 (M1 + savings deposits, money-market funds, small time deposits — \"broad money\"). When economists say \"the money supply,\" they usually mean M2.",
+      "Banks create money by lending (the single most counterintuitive idea in the zone). When a bank makes a loan, it doesn't hand over someone else's savings — it credits the borrower's deposit account, creating a new deposit (new money) out of nothing but its own balance sheet, constrained by reserves and capital. The old \"money multiplier / fractional-reserve\" story (one dollar of reserves supports several dollars of deposits) is the textbook version; the modern reality is that lending is constrained more by capital and demand than by a mechanical reserve multiple.",
+      "Why this matters for the cycle: because banks create money when they lend, the money supply is pro-cyclical — it expands in booms (eager lending) and contracts in busts (lending freezes). This is the monetary face of the credit cycle (★ G255) and the mechanism behind Friedman-Schwartz's thesis that the Fed, by letting the money supply collapse by a third, turned the 1929 crash into the Great Contraction.",
+      "The monetarist claim (Friedman, via Blinder): the quantity of money is the dominant driver of nominal GDP and inflation in the long run — \"inflation is always and everywhere a monetary phenomenon.\" The opposing Keynesian view stresses that the demand for money and the velocity of money are unstable, so controlling the supply doesn't cleanly control the economy. The 1980s death of stable money-demand relationships is why the Fed abandoned money-supply targeting — a key episode the map flags.",
+      "How the central bank influences the supply: not by printing currency, but by adding/draining bank reserves (through open-market operations and, in the QE era, large-scale asset purchases — Z2.12) and by setting the price of reserves (the funds rate)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G243",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G243` money, `★ G247` the funds rate (the price of reserves), `★ G251` QE (reserve creation at scale), `★ G255` the credit cycle (lending = money creation), `★ G252` inflation (the monetarist link), and the **Friedman-Schwartz Great Contraction** branch in Z5. Across the graph: **Credit** (bank lending capacity), **HF** (liquidity-driven macro trades), **AM** (money/liquidity as a regime variable). *Real-world layer: Wheelan Ch. 10; Blinder Ch. 2–3 (the monetarist debate); Friedman-Schwartz.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Blinder Ch. 2–3 (the monetarist debate); Friedman-Schwartz.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.5",
+    "local_id": "Z2.5",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 5,
+    "title": "The Federal Funds Rate (the Policy Rate)",
+    "tag": "global",
+    "global_id": "G247",
+    "quick_definition": "The federal funds rate is the overnight interest rate at which banks lend reserves to one another, which the Fed targets as its primary policy instrument — the anchor from which nearly every other interest rate in the economy is ultimately set.",
+    "explainer_covers": [
+      "What it actually is: an overnight rate on lending of reserves between banks. The Fed doesn't dictate it by decree; it sets a target (a range, e.g., 5.25–5.50%) and steers the market rate into that range using its tools (Z2.6 toolkit — open-market operations and, in the modern \"ample-reserves\" regime, the interest it pays on reserves).",
+      "Why this one overnight rate matters so much: it is the shortest, safest rate in the economy, so it anchors the bottom of the term structure (★ G248). Every other rate — SOFR, prime, mortgage rates, corporate-bond yields — is built up from it plus term and credit premia. Move the anchor and (with varying lags and pass-through) the whole structure shifts.",
+      "The critical disambiguation (see Part 1): the funds rate is not SOFR (★ G69, the benchmark loans float over — though SOFR tracks it closely), not the 10-year Treasury (a long, market-set rate), and not the discount or prime rate (administered rates that move with it). When a levered deal \"uses the interest rate,\" the funds rate governs the short-end financing cost; the long rate governs discounting.",
+      "How a change propagates: a funds-rate hike raises banks' funding costs → raises SOFR → raises floating-rate loan coupons (the direct hit to PE/Credit/RE borrowers) → with a lag, feeds into longer rates and the discount rate (the hit to valuations). This is the entry point of the transmission mechanism (★ G250).",
+      "The funds rate as the fulcrum of the whole zone: monetary policy (★ G245) is, operationally, mostly \"what is the FOMC doing to the funds-rate target?\""
+    ],
+    "connects_to": [
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G245` monetary policy (its main instrument), `★ G244` the Fed (sets it), `★ G248` the risk-free rate / term structure (anchors its short end), `★ G69` SOFR (tracks it — *back-link*, homed in Private Credit), `★ G250` transmission (the first link in the chain), `★ G249` real vs. nominal (the funds rate is a *nominal* rate; the *real* funds rate is what bites). Across the graph: **PE** financing cost, **Credit** floating-rate coupons (`★ G69`), **RE** debt cost and cap-rate pressure, **HF** rates trades, **AM** the front end of the curve. *Real-world layer: Wheelan Ch. 10; Blinder (the funds rate is the spine of his policy narrative — e.g., Volcker pushing it toward 20%).* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Blinder (the funds rate is the spine of his policy narrative — e.g., Volcker pushing it toward 20%).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.6",
+    "local_id": "Z2.6",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 6,
+    "title": "The Risk-Free Rate & the Term Structure of Interest Rates",
+    "tag": "global",
+    "global_id": "G248",
+    "quick_definition": "The risk-free rate is the return on default-free government debt; because it varies by maturity, the full set of these rates across maturities forms the term structure (the yield curve), and it is the baseline \"price of time\" that anchors the discount rate for every other asset in finance — the home node for the \"risk-free rate\" referenced inside WACC (★ G91) but defined nowhere in the graph until now.",
+    "explainer_covers": [
+      "The concept: a risk-free rate is what you earn with (near) zero default risk — in practice, the yield on government bonds (US Treasuries) of a given maturity. It is the floor every risky asset is priced against: no rational investor accepts less than the risk-free rate for taking more risk, so every required return = risk-free rate + a risk premium.",
+      "The term structure / yield curve: there isn't one risk-free rate but a curve of them — the 3-month, 2-year, 10-year, 30-year Treasury yields. The 10-year is the canonical \"the risk-free rate\" used to discount long-lived cash flows (equities, real estate, PE). (The detailed shape of this curve — normal, flat, inverted — and its signaling power gets its own node in Z4, ★ G257; here we establish what it is and why it anchors discounting.)",
+      "The closure of a long-standing gap in this graph. WACC (★ G91, homed in IB) is built as \"risk-free rate + equity risk premium × beta, blended with after-tax cost of debt.\" But the risk-free rate itself — the first term — had no home node anywhere across the nine modules. Cap rates (★ G219, RE) are quoted as \"a spread over the 10-year,\" again assuming this node. This is that node. Every valuation in the app that discounts cash flows is standing on G248.",
+      "Why it moves: the risk-free curve embeds (1) the expected path of future short rates (i.e., expected ★ G247 over time), plus (2) a term premium (extra yield for locking up money longer and bearing rate risk), plus (3) expected inflation (the Fisher link, ★ G249). So \"the 10-year went up\" can mean the market expects more Fed hikes, demands more term premium, or expects more inflation — three very different stories with the same price move.",
+      "The real-rate version: the real risk-free rate (the inflation-protected Treasury, \"TIPS,\" yield) is the true \"price of time\"; the nominal risk-free rate is that plus expected inflation (Z2.7)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G91` WACC (**closes the gap** — *back-link*, homed in IB), `★ G247` the funds rate (anchors the short end), `★ G257` the yield curve (the shape and signal of this same curve, Z4), `★ G259` the discount-rate channel & ERP (the risk-free rate **+ the premium** = the discount rate — the CAPM bridge, Z4), `★ G249` real vs. nominal, `★ G219` cap rate (quoted as a spread over the 10-year — *back-link*, homed in RE), `★ G27` valuation multiples (a multiple is the inverse of a discount rate built on this — *back-link*). Across the graph: **PE, IB, ER, AM, HF, RE, VC** — *every* discounting exercise. *Real-world layer: the Treasury market; Wheelan Ch. 7; the term-premium debate.* ---",
+    "gaps": [],
+    "real_world_layer": "the Treasury market; Wheelan Ch. 7; the term-premium debate.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.7",
+    "local_id": "Z2.7",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 7,
+    "title": "The Real vs. Nominal Interest Rate (the Fisher Relation)",
+    "tag": "global",
+    "global_id": "G249",
+    "quick_definition": "The nominal interest rate is the stated rate on a loan; the real interest rate is that rate minus expected inflation — what a lender actually earns and a borrower actually pays in purchasing power — linked by the Fisher relation: real ≈ nominal − expected inflation.",
+    "explainer_covers": [
+      "The core idea: a 6% loan when inflation is 2% costs the borrower ~4% in real terms; the same 6% loan when inflation is 6% is free in real terms (and a 6% loan when inflation is 8% actually pays the borrower to take it). What matters for behavior is the real rate, not the nominal sticker.",
+      "The Fisher equation: nominal rate ≈ real rate + expected inflation. Rearranged: real rate ≈ nominal rate − expected inflation. (More precisely it's multiplicative, but the additive form is the working version.)",
+      "Why this is the most-missed distinction in finance commentary: headlines quote nominal rates (\"the Fed raised to 5.5%\"), but the economy responds to real rates. In the 1970s nominal rates looked high but real rates were often negative (inflation outran them) — money was effectively free, which is why tightening \"wasn't working\" until Volcker pushed real rates sharply positive. Dalio's debt-cycle mechanics turn on real rates: a \"beautiful deleveraging\" engineers negative real rates to erode debt burdens without nominal default.",
+      "The borrower/lender asymmetry and the link to inflation surprises: unexpected inflation transfers wealth from lenders to borrowers (the real value of fixed debt erodes) — the \"inflation tax\" on creditors (Z3). This is why inflation expectations (Z3) are baked into every nominal rate.",
+      "The investing implication: the real risk-free rate (TIPS yield) is the true anchor; nominal Treasury yield = real yield + breakeven inflation (the market's inflation forecast). Watching the three together (nominal, real, breakeven) decomposes any rate move into a real-rate story vs. an inflation-expectations story."
+    ],
+    "connects_to": [
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G253",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248` the risk-free rate (has a real and a nominal version), `★ G247` the funds rate (the *real* funds rate is what restrains the economy), `★ G252` inflation & `★ G253` price indices (the inflation term in Fisher), `★ G256` the debt cycle (Dalio's negative-real-rate deleveraging), `★ G254` the Phillips curve (inflation expectations). Across the graph: **Credit** (real vs. nominal yield on debt), **AM** (real-return investing, TIPS), **RE** (real assets as an inflation hedge — back-link to the RE inflation discussion), **HF** (real-rate and breakeven trades). *Real-world layer: Wheelan Ch. 7; Blinder on the 1970s negative-real-rate trap and the Volcker correction; Dalio on real rates in deleveragings.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 7; Blinder on the 1970s negative-real-rate trap and the Volcker correction; Dalio on real rates in deleveragings.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.8",
+    "local_id": "Z2.8",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 8,
+    "title": "The Monetary Transmission Mechanism",
+    "tag": "global",
+    "global_id": "G250",
+    "quick_definition": "The transmission mechanism is the chain of cause and effect by which a change in the policy rate (★ G247) propagates through borrowing costs, asset prices, credit availability, the exchange rate, and confidence to ultimately change spending, investment, output, and inflation in the real economy.",
+    "explainer_covers": [
+      "Why it needs its own node: \"the Fed cut rates\" and \"the economy sped up\" are separated by a long, multi-channel, lagged chain. Understanding the channels is what lets you reason about why a deal or an asset class is rate-sensitive.",
+      "The channels (the heart of the node):",
+      "The lags and leakages: each channel works with different speed and reliability, which is why policy is blunt. In a balance-sheet recession (Dalio) or a liquidity trap (Z2.11), several channels clog — rate cuts \"push on a string.\"",
+      "The synthesis the map drives toward: this node is the bridge between Zone 2 (the Fed's tools) and the rest of finance. When a later module says \"the deal works because rates are low,\" the reason is one or more of these channels."
+    ],
+    "connects_to": [
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G247` the funds rate (the input), `★ G259` the discount-rate channel (channel 2, formalized for valuation — Z4), `★ G255` the credit cycle (channel 3), `★ G260` exchange rates (channel 4), `★ G251` QE (works through the same channels when the rate is stuck), `★ G258` financial conditions (the aggregate read-out of all channels). Across the graph: **PE/RE** (channels 1–2: financing + valuation), **HF** (all channels are tradeable), **Credit** (channel 3), **AM** (channels 2–4). *Real-world layer: Wheelan Ch. 10; Blinder on why transmission failed in the 1930s and clogged in 2008.* ---",
+    "gaps": [],
+    "real_world_layer": "Wheelan Ch. 10; Blinder on why transmission failed in the 1930s and clogged in 2008.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.9",
+    "local_id": "Z2.9",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 9,
+    "title": "Quantitative Easing & Quantitative Tightening",
+    "tag": "global",
+    "global_id": "G251",
+    "quick_definition": "Quantitative easing (QE) is the central bank's creation of bank reserves to buy large quantities of bonds — pushing money and credit into the system and holding down long-term rates — used when the policy rate is already at zero; quantitative tightening (QT) is the reverse (letting the bond holdings run off, draining reserves).",
+    "explainer_covers": [
+      "The setup: when the policy rate (★ G247) hits the zero lower bound (Z2.11) the Fed can't cut further, so it turns to the quantity of money and the long end of the curve. QE is unconventional monetary policy.",
+      "What QE actually does (the precise mechanics, per Dalio — and the Part 1 disambiguation): the Fed does not literally print currency. It creates electronic bank reserves and uses them to buy bonds (Treasuries, mortgage-backed securities) from the market, paying interest on those reserves. Effects: (1) it bids up bond prices / pushes down long-term yields (the term-premium and duration channel), (2) it floods the banking system with reserves, (3) it pushes investors out of safe bonds into riskier assets (the \"portfolio-balance\" / risk-asset reflation channel), and (4) it signals the Fed's commitment to easy policy (the expectations channel). This is Dalio's MP2 (\"monetization\") phase of the debt cycle.",
+      "Why \"money-printing\" is the wrong mental model but the right intuition: mechanically it's a balance-sheet swap (reserves for bonds), not a printing press — but the intent and effect (more money and credit, suppressed long rates, reflated assets) is why the colloquial shorthand persists. The map teaches both: the precise mechanism and why people say \"printing.\"",
+      "QT (the reversal): the Fed stops reinvesting maturing bonds (or sells them), so its balance sheet shrinks and reserves drain — a tightening of financial conditions through the quantity channel, on top of any rate hikes. QT is newer and less battle-tested than QE.",
+      "The deep Dalio twist (the bridge to Z5): because the central bank pays interest on the reserves it created but earns the (lower, fixed) coupon on the bonds it bought, a sharp rise in rates can make the central bank lose money on its QE portfolio — the \"central bank goes broke\" dynamic that becomes central to the sovereign-debt and Big-Debt-Cycle nodes (★ G256, ★ G262)."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z2.11",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G247` the funds rate (QE begins where rate cuts end), Z2.11 the zero lower bound (the trigger), `★ G250` transmission (QE works through the asset-price and credit channels), `★ G256` the debt cycle (Dalio's MP2 monetization), `★ G258` financial conditions (QE is a massive easing of them), `★ G262` sovereign debt (the central-bank-balance-sheet link). Across the graph: **HF** (QE-driven risk-asset reflation, the \"don't fight the Fed\" trade), **Credit** (spread compression under QE — back-link to \"capital-flooded market\"), **AM/RE** (the post-2009 and 2020 asset booms). *Real-world layer: Dalio MP2 and the central-bank-goes-broke mechanics; the Fed's 2008–14 and 2020–21 QE and 2022+ QT.* ---",
+    "gaps": [],
+    "real_world_layer": "Dalio MP2 and the central-bank-goes-broke mechanics; the Fed's 2008–14 and 2020–21 QE and 2022+ QT.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.10",
+    "local_id": "Z2.10",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 10,
+    "title": "Central-Bank Independence",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The principle — and institutional design — that insulates the central bank's interest-rate decisions from elected politicians, so monetary policy can pursue long-run price stability rather than short-run electoral convenience.",
+    "explainer_covers": [
+      "The rationale: politicians face a standing temptation to juice the economy before elections (cut rates, boost growth and jobs now, pay the inflation bill later). A central bank that can say no to that pressure produces lower, more stable inflation — the time-consistency argument for independence.",
+      "The cautionary case (Blinder's richest material): Arthur Burns and Richard Nixon. The Watergate tapes show Nixon pressing Burns to ease before the 1972 election and Burns obliging — cutting the discount rate and pushing the FOMC toward \"more aggressive steps\" — feeding the 1970s inflation. The lesson that built the modern norm of independence.",
+      "The contrast: Paul Volcker (1979–87) deliberately inflicted a severe recession with 20% rates to break inflation — politically excruciating, only possible because the Fed was insulated enough to absorb the backlash. Independence is what let Volcker do what Burns wouldn't.",
+      "The limits and tensions: independence is never absolute (the Fed is a creature of Congress and can be reshaped by law), and it sits uneasily with democratic accountability. The map flags the live modern debate over political pressure on the Fed as an ongoing tension, not a settled question (a recency GAP — see Source Gaps).",
+      "Why finance cares: an independent Fed makes the inflation outlook (and thus the rate path and the discount rate) more predictable; a politicized Fed raises the inflation-risk premium baked into long rates and currencies."
+    ],
+    "connects_to": [
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G244` the Fed (the institution it protects), `★ G245` monetary policy (what it insulates), `★ G254` the Phillips curve / inflation expectations (independence is how expectations get anchored), `★ G242` fiscal policy (the political pressure usually comes from the fiscal/electoral side), `★ G262` sovereign risk (loss of independence → debasement risk, Z5). Across the graph: **HF/AM** (central-bank credibility as a macro and currency variable). *Real-world layer: Blinder on Burns/Nixon and Volcker; the independence debates of the modern era.* ---",
+    "gaps": [],
+    "real_world_layer": "Blinder on Burns/Nixon and Volcker; the independence debates of the modern era.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.11",
+    "local_id": "Z2.11",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 11,
+    "title": "The Zero Lower Bound & Forward Guidance",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The zero lower bound (ZLB) is the problem that nominal interest rates can't fall much below zero (people would hold cash instead), which traps conventional policy when the economy needs more easing than a zero rate provides; forward guidance — central-bank communication about the future rate path — is one tool used to ease at the bound.",
+    "explainer_covers": [
+      "The trap (Harford's and Keynes's \"liquidity trap\"): once the policy rate is at (near) zero, the Fed can't cut further, yet a deep slump may call for a negative real rate the Fed can't deliver — so the main lever is jammed exactly when it's needed most. This is why 2008–2015 and 2020 forced unconventional tools.",
+      "The escape routes: (1) QE (★ G251) — work on the quantity of money and long rates instead of the short rate; (2) forward guidance — promise to keep rates low for long (shaping the expected path, which is what long rates actually price); (3) tolerate/engineer higher inflation expectations to push the real rate negative even with a zero nominal rate (the Fisher link, Z2.7); (4) hand off to fiscal policy (★ G242), which still works at the ZLB (Harford's argument for stimulus).",
+      "Forward guidance in depth: because long rates embed the expected path of short rates (Z2.6), the Fed can ease today simply by credibly changing expectations about tomorrow — \"we will hold rates near zero until inflation/employment hits X.\" Its power depends entirely on credibility (the link to independence, Z2.10).",
+      "Why the ZLB reshaped macro: it turned QE and guidance from emergency oddities into standard parts of the toolkit, and it revived the case for fiscal primacy in deep slumps (Dalio's MP3 \"coordinated monetary-fiscal\" phase is the ZLB taken to its conclusion)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G249",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G247` the funds rate (the bound is on *this* rate), `★ G251` QE (the main ZLB tool), `★ G250` transmission (the expectations/confidence channel), `★ G249` real vs. nominal (negative real rates as the escape), `★ G242` fiscal policy (the handoff), `★ G256` the debt cycle (Dalio's MP3). Across the graph: **HF/AM** (the post-2008 and 2020 ZLB regimes defined a decade of asset returns). *Real-world layer: Harford on the liquidity trap and the Phillips Machine; the Fed 2008–15 and 2020–21; Dalio MP3.* ---",
+    "gaps": [],
+    "real_world_layer": "Harford on the liquidity trap and the Phillips Machine; the Fed 2008–15 and 2020–21; Dalio MP3.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z2.12",
+    "local_id": "Z2.12",
+    "module": "macro-economics",
+    "zone": 2,
+    "ordinal": 12,
+    "title": "The Neutral Rate of Interest (r*)",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The neutral (or \"natural\") rate of interest, written r\\*, is the theoretical real policy rate that neither stimulates nor restrains the economy — the rate consistent with full employment and stable inflation, and the benchmark against which actual policy is judged \"easy\" or \"tight.\"",
+    "explainer_covers": [
+      "The concept: at r\\ the economy runs at potential with stable inflation. If the Fed holds the real policy rate below r\\, policy is stimulative (easing); above r\\, policy is restrictive (tightening). So \"are rates high?\" is the wrong question — the right one is \"are rates above or below r\\?\"",
+      "Why it's slippery: r\\ is unobservable — it must be estimated*, and estimates are wide and shift over time. It is the interest-rate analogue of the natural rate of unemployment (NAIRU, Z3) and of potential output (★ G239) — all three are the \"neutral\" benchmarks that anchor the gaps the Fed responds to.",
+      "What moves it: long-run productivity and growth (★ G248 link — faster trend growth → higher r\\), demographics (aging, more saving → lower r\\), and global savings/investment balances (the \"savings glut\" → lower r\\). The widely held view that r\\ fell secularly after 2000 (\"secular stagnation\") is why the ZLB became a recurring problem.",
+      "The Wicksellian root and the Phillips-curve tie: if the market real rate sits below the natural rate for too long, you get a self-reinforcing credit/inflation boom (Wicksell — the intellectual ancestor of both the Taylor rule and the credit-cycle node, ★ G255).",
+      "Why finance cares: r\\ sets the gravity for long-run rates and thus for long-run discount rates and asset valuations. A lower r\\ world justifies structurally higher multiples (the discount-rate channel, ★ G259); a rising r\\* compresses them."
+    ],
+    "connects_to": [
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G245",
+        "note": null
+      },
+      {
+        "ref": "G239",
+        "note": null
+      },
+      {
+        "ref": "G254",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248` the risk-free rate (r\\* is its real, long-run anchor), `★ G247` the funds rate (judged easy/tight vs. r\\*), `★ G245` monetary policy (the benchmark for the stance), `★ G239` AD/AS & potential output (the real-economy twin), `★ G254` the Phillips curve / NAIRU (the inflation-side twin), `★ G259` the discount-rate channel (r\\* sets long-run discounting gravity). Across the graph: **AM/WM** (long-run capital-market assumptions hinge on r\\*), **HF** (r\\* re-pricing is a major macro theme). *Real-world layer: the secular-stagnation debate; the Taylor rule's neutral-rate input; Wicksell's natural rate.* --- ---",
+    "gaps": [],
+    "real_world_layer": "the secular-stagnation debate; the Taylor rule's neutral-rate input; Wicksell's natural rate.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

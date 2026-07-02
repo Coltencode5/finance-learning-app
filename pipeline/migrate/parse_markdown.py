@@ -139,9 +139,26 @@ def expand_ranges(raw: str) -> str:
     return pat.sub(_expand, raw)
 
 
+def propagate_abbrev_prefix(raw: str) -> str:
+    """Expand slash-chained refs: 'PE Z2.21 / Z3.12' → 'PE Z2.21, PE Z3.12'."""
+    abbrev_alt = "|".join(sorted((re.escape(k) for k in MODULE_ABBREVS), key=len, reverse=True))
+    pat = re.compile(
+        r"\b(" + abbrev_alt + r")\s+(Z[1-5]\.\d+)((?:\s*/\s*Z[1-5]\.\d+)+)"
+    )
+
+    def _expand(m: re.Match) -> str:
+        prefix = m.group(1)
+        first = m.group(2)
+        rest = re.findall(r"Z([1-5]\.\d+)", m.group(3))
+        all_z = [first] + [f"Z{z}" for z in rest]
+        return ", ".join(f"{prefix} {z}" for z in all_z)
+
+    return pat.sub(_expand, raw)
+
+
 def extract_refs(raw: str, slug: str) -> list[dict]:
     """Extract structured refs from a free-text 'Connects to.' line."""
-    raw = expand_ranges(raw)
+    raw = propagate_abbrev_prefix(expand_ranges(raw))
     refs, seen = [], set()
     # cross-module refs first: 'PE Z1.1', 'PC Z1.1', etc.
     abbrev_alt = "|".join(sorted((re.escape(k) for k in MODULE_ABBREVS), key=len, reverse=True))

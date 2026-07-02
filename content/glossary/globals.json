@@ -4051,5 +4051,523 @@
     ],
     "disambiguate_with": [],
     "status": "mapped"
+  },
+  {
+    "id": "G236",
+    "term": "GDP — gross domestic product (Z1.3)",
+    "aliases": [],
+    "quick_definition": "The total market value of all final goods and services an economy produces in a period — the single headline measure of how big an economy is and whether it is growing or shrinking.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.3",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G237",
+    "term": "The business cycle (Z1.6)",
+    "aliases": [],
+    "quick_definition": "The recurring expansion-peak-recession-trough fluctuation of real economic output around its long-run trend — the rhythm of boom and bust in the real economy.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.6",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "HF",
+      "RE",
+      "ER",
+      "AM",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G238",
+    "term": "Recession & depression (Z1.7)",
+    "aliases": [],
+    "quick_definition": "A broad, sustained contraction in economic activity (a depression is a rare, severe, prolonged one) — usually a shortfall of demand rather than a loss of productive capacity.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.7",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "HF",
+      "RE",
+      "ER",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G239",
+    "term": "Aggregate demand, aggregate supply & the output gap (Z1.8)",
+    "aliases": [],
+    "quick_definition": "Total economy-wide spending vs. total productive capacity, and the gap between actual output and potential output that drives inflation and unemployment.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.8",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "ER",
+      "AM",
+      "Credit"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G240",
+    "term": "Unemployment & the labor market (Z1.9)",
+    "aliases": [],
+    "quick_definition": "The share of people who want work but can't find it, its types (frictional, structural, cyclical), and its link to output via Okun's law — half of the Fed's mandate.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.9",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G241",
+    "term": "Economic indicators (leading, coincident, lagging) (Z1.10)",
+    "aliases": [
+      "leading, coincident, lagging"
+    ],
+    "quick_definition": "The dashboard of data — payrolls, PMIs, jobless claims, retail sales, housing starts — that signals where the cycle is and where it's heading.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.10",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "ER",
+      "AM",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G242",
+    "term": "Fiscal policy (deficits, debt & the multiplier) (Z1.11)",
+    "aliases": [
+      "deficits, debt & the multiplier"
+    ],
+    "quick_definition": "The government's lever — taxes and spending — used to stabilize the economy, and the deficits and accumulated debt that result.",
+    "home_module": "macro-economics",
+    "home_zone": "Z1.11",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "HF",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G243",
+    "term": "Money (and fiat currency) (Z2.1)",
+    "aliases": [
+      "and fiat currency"
+    ],
+    "quick_definition": "A medium of exchange, store of value, and unit of account whose modern form (\"fiat\") has value only because the government declares it legal tender.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.1",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G244",
+    "term": "The central bank & the Federal Reserve (Z2.2)",
+    "aliases": [],
+    "quick_definition": "The institution that issues money and sets monetary policy; in the US, the Fed — with its FOMC and its dual mandate of stable prices and maximum employment.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.2",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G245",
+    "term": "Monetary policy (Z2.3)",
+    "aliases": [],
+    "quick_definition": "The central bank's management of money and interest rates to steer inflation and employment — easing (stimulating) or tightening (restraining).",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.3",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G246",
+    "term": "The money supply & money creation (Z2.4)",
+    "aliases": [],
+    "quick_definition": "The total money in the economy (M1, M2) and how commercial banks create most of it by lending — the quantity side of monetary policy.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.4",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "Credit",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G247",
+    "term": "The federal funds rate (the policy rate) (Z2.5)",
+    "aliases": [
+      "the policy rate"
+    ],
+    "quick_definition": "The overnight interest rate the Fed targets — the anchor from which nearly every other interest rate in the economy is set.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.5",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G248",
+    "term": "The risk-free rate & the term structure of interest rates (Z2.6)",
+    "aliases": [],
+    "quick_definition": "The return on default-free government debt across maturities — the baseline \"price of time\" that anchors the discount rate for every other asset (the home node referenced inside WACC G91).",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.6",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "IB",
+      "ER",
+      "AM",
+      "HF",
+      "RE",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G249",
+    "term": "The real vs. nominal interest rate (the Fisher relation) (Z2.7)",
+    "aliases": [
+      "the Fisher relation"
+    ],
+    "quick_definition": "The distinction between the stated (nominal) rate and the inflation-adjusted (real) rate — what a lender actually earns and a borrower actually pays in purchasing power.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.7",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "Credit",
+      "AM",
+      "RE",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G250",
+    "term": "The monetary transmission mechanism (Z2.8)",
+    "aliases": [],
+    "quick_definition": "The chain by which a change in the policy rate flows through borrowing costs, asset prices, credit, the exchange rate, and confidence to reach the real economy.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.8",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "RE",
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G251",
+    "term": "Quantitative easing & quantitative tightening (Z2.9)",
+    "aliases": [],
+    "quick_definition": "The central bank's creation of reserves to buy bonds (QE) — and the reversal (QT) — used to ease or tighten when the policy rate alone is not enough.",
+    "home_module": "macro-economics",
+    "home_zone": "Z2.9",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "Credit",
+      "AM",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G252",
+    "term": "Inflation & deflation (Z3.1)",
+    "aliases": [],
+    "quick_definition": "A sustained rise (inflation) or fall (deflation) in the general price level — the erosion or growth of money's purchasing power over time.",
+    "home_module": "macro-economics",
+    "home_zone": "Z3.1",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G253",
+    "term": "The price indices (CPI, PCE, PPI) (Z3.2)",
+    "aliases": [
+      "CPI, PCE, PPI"
+    ],
+    "quick_definition": "The baskets used to measure inflation — consumer prices (CPI), the Fed's preferred PCE deflator, and producer prices (PPI) — and the headline-vs-core distinction.",
+    "home_module": "macro-economics",
+    "home_zone": "Z3.2",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ER",
+      "AM",
+      "RE",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G254",
+    "term": "The Phillips curve (the inflation–unemployment tradeoff) (Z3.4)",
+    "aliases": [
+      "the inflation–unemployment tradeoff"
+    ],
+    "quick_definition": "The short-run tradeoff between inflation and unemployment that becomes vertical in the long run at the \"natural rate\" — the core framework behind every Fed decision.",
+    "home_module": "macro-economics",
+    "home_zone": "Z3.4",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "ER",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G255",
+    "term": "The credit cycle (Z4.1)",
+    "aliases": [],
+    "quick_definition": "The pro-cyclical expansion and contraction of lending, leverage, and credit availability — the macro engine behind deal volume, entry multiples, and default waves.",
+    "home_module": "macro-economics",
+    "home_zone": "Z4.1",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "RE",
+      "HF",
+      "VC",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G256",
+    "term": "The debt cycle (short-term & long-term / Big Debt Cycle) (Z4.2)",
+    "aliases": [
+      "short-term & long-term / Big Debt Cycle"
+    ],
+    "quick_definition": "Dalio's framework of debt accumulating relative to income — a short-term version (≈ the business cycle) nested inside a long-term ≈80-year cycle that ends in deleveraging.",
+    "home_module": "macro-economics",
+    "home_zone": "Z4.2",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "HF",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G257",
+    "term": "The yield curve & its shape (the inversion signal) (Z4.5)",
+    "aliases": [
+      "the inversion signal"
+    ],
+    "quick_definition": "The plot of government-bond yields across maturities; its slope (normal, flat, inverted) is the market's most-watched signal of the cycle and of coming recessions.",
+    "home_module": "macro-economics",
+    "home_zone": "Z4.5",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "Credit",
+      "HF",
+      "ER",
+      "AM",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G258",
+    "term": "Financial conditions (the rate & credit environment) (Z4.6)",
+    "aliases": [
+      "the rate & credit environment"
+    ],
+    "quick_definition": "The overall ease or tightness of money — rates, credit spreads, the exchange rate, and asset prices taken together — that governs deal activity and valuations (\"the rate environment\").",
+    "home_module": "macro-economics",
+    "home_zone": "Z4.6",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "Credit",
+      "RE",
+      "HF",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G259",
+    "term": "The discount-rate channel & the equity risk premium (CAPM bridge) (Z4.7)",
+    "aliases": [
+      "CAPM bridge"
+    ],
+    "quick_definition": "The mechanism by which the risk-free rate plus a risk premium set the discount rate that prices every asset — the reason multiples compress and cap rates rise when rates rise (homes the ERP/CAPM referenced inside WACC G91).",
+    "home_module": "macro-economics",
+    "home_zone": "Z4.7",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "PE",
+      "IB",
+      "ER",
+      "AM",
+      "RE",
+      "VC",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G260",
+    "term": "Exchange rates & currencies (Z5.1)",
+    "aliases": [],
+    "quick_definition": "The price of one currency in another, the regimes that govern it (floating, fixed, pegged), and what makes it move (rate differentials, flows, trade).",
+    "home_module": "macro-economics",
+    "home_zone": "Z5.1",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "AM",
+      "PE",
+      "Credit"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G261",
+    "term": "The balance of payments (trade, current & capital accounts) (Z5.3)",
+    "aliases": [
+      "trade, current & capital accounts"
+    ],
+    "quick_definition": "The accounting of a country's transactions with the world — the trade balance, the current account, and the offsetting capital flows.",
+    "home_module": "macro-economics",
+    "home_zone": "Z5.3",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "HF",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G262",
+    "term": "Sovereign debt & sovereign risk (Z5.4)",
+    "aliases": [],
+    "quick_definition": "Government borrowing and the risk it isn't repaid — through outright default, restructuring, or inflation — including \"debt intolerance\" and serial default.",
+    "home_module": "macro-economics",
+    "home_zone": "Z5.4",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "Credit",
+      "HF",
+      "AM",
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G263",
+    "term": "Financial crises (the taxonomy & contagion) (Z5.6)",
+    "aliases": [
+      "the taxonomy & contagion"
+    ],
+    "quick_definition": "The recurring varieties of crisis (banking, currency, inflation, sovereign-default) and how they cluster, spread, and follow the \"this time is different\" pattern.",
+    "home_module": "macro-economics",
+    "home_zone": "Z5.6",
+    "contributed_by": "macro-economics",
+    "category": "Core Concepts — Macro & Economics",
+    "appears_in": [
+      "ALL"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
   }
 ]

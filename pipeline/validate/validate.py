@@ -43,17 +43,18 @@ except ImportError:
 
 def load_content(root: Path):
     globals_ = json.loads((root / "content/glossary/globals.json").read_text(encoding="utf-8"))
-    modules, nodes = {}, []
+    modules, nodes, draft_slugs = {}, [], set()
     for mdir in sorted((root / "content/modules").iterdir()):
         if not mdir.is_dir():
             continue
         mod = json.loads((mdir / "module.json").read_text(encoding="utf-8"))
         if is_draft(mod):
+            draft_slugs.add(mdir.name)
             continue
         modules[mdir.name] = mod
         for zfile in sorted((mdir / "zones").glob("z*.json")):
             nodes.extend(json.loads(zfile.read_text(encoding="utf-8")))
-    return globals_, modules, nodes
+    return globals_, modules, nodes, draft_slugs
 
 
 def norm_term(t: str) -> str:
@@ -150,7 +151,7 @@ def check_duplicates(globals_, errors, warnings):
             warnings.append(f"[dupes] term collision '{term}': {uniq} — confirm intentional or merge")
 
 
-def check_required(globals_, nodes, errors, warnings):
+def check_required(globals_, nodes, errors, warnings, draft_slugs: set[str] | frozenset[str] = frozenset()):
     home_hosts = {n["global_id"] for n in nodes if n.get("global_id")}
     for n in nodes:
         for gid in n.get("hosts_globals", []):
@@ -163,6 +164,8 @@ def check_required(globals_, nodes, errors, warnings):
         if n.get("tag") == "global" and not n.get("global_id"):
             errors.append(f"[required] {n['id']} tagged global but has no global_id")
     for g in globals_:
+        if g.get("contributed_by") in draft_slugs:
+            continue
         if g["id"] not in home_hosts:
             warnings.append(f"[required] {g['id']} '{g['term']}' has no hosting zone node "
                             f"(home explainer not yet mapped to a node)")
@@ -175,7 +178,7 @@ def main() -> int:
     args = ap.parse_args()
     root = Path(args.repo_root)
 
-    globals_, modules, nodes = load_content(root)
+    globals_, modules, nodes, draft_slugs = load_content(root)
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -183,7 +186,7 @@ def main() -> int:
     check_ids(globals_, nodes, errors, warnings)
     check_references(globals_, nodes, errors, warnings)
     check_duplicates(globals_, errors, warnings)
-    check_required(globals_, nodes, errors, warnings)
+    check_required(globals_, nodes, errors, warnings, draft_slugs)
     check_new_modules(root, globals_, modules, nodes, errors, warnings)
     if not args.strict:
         check_graph(root, nodes, globals_, warnings)

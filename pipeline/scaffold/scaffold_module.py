@@ -134,7 +134,7 @@ def print_plan(plan: dict, dry_run: bool) -> None:
     print(f"  visibility:  {plan['visibility']} (excluded from validation/graph/app)")
     print("  zones:")
     for n in range(1, 6):
-        print(f"    Z{n}: {plan['zone_titles'][n]} → front door Z{n}.1")
+        print(f"    Z{n}: {plan['zone_titles'][n]} -> front door Z{n}.1")
     print("  files:")
     for entry in plan["files"]:
         rel = entry["path"].relative_to(ROOT)

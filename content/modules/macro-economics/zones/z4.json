@@ -1,0 +1,621 @@
+[
+  {
+    "id": "macro-economics.z4.1",
+    "local_id": "Z4.1",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "The Credit Cycle",
+    "tag": "global",
+    "global_id": "G255",
+    "quick_definition": "The credit cycle is the recurring, pro-cyclical expansion and contraction of lending, leverage, and credit availability — credit gets cheap and abundant in good times (fueling booms and bidding up assets) and scarce and expensive in bad times (starving the economy and forcing sales) — and it is the macro engine behind deal volume, entry multiples, and default waves.",
+    "explainer_covers": [
+      "The basic rhythm: in an upswing, lenders are confident, spreads narrow, credit standards loosen, leverage rises, and the flood of cheap debt bids up asset prices — which makes borrowers look more creditworthy (their collateral is worth more), justifying still more lending. In the downswing it reverses violently: confidence breaks, spreads blow out, standards tighten, credit vanishes exactly when borrowers need it, forcing asset sales that push prices down and make everyone look less creditworthy. Credit is pro-cyclical — it amplifies the real cycle rather than dampening it.",
+      "Why it's distinct from the business cycle (★ G237, the Part 1 disambiguation): the business cycle is fluctuation in real output; the credit cycle is fluctuation in lending and leverage. They interact — credit booms often drive the expansion and credit busts deepen the recession — but they are separate objects, and the credit cycle is typically longer and more violent at the turns.",
+      "The connective payoff (why this is a keystone global): the role modules live on this cycle. PE entry multiples and leverage availability are the credit cycle (a buyout boom is a credit boom). Private Credit's spread-compression-and-widening is the credit cycle from the lender's seat. Real Estate's debt availability and cap-rate movement is the credit cycle in property. VC's funding environment and down-rounds are the credit cycle in venture. One macro engine; many module-specific faces (the \"one home, many seats\" pattern flagged in Part 1).",
+      "Where it comes from: the deep theories of why credit is pro-cyclical and self-destructing are Minsky (Z4.3) and Soros's reflexivity (Z4.4); the quantitative face is credit spreads (Z4.8); the aggregate read is financial conditions (Z4.6)."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G237` the business cycle (interacts with, distinct from), `★ G256` the debt cycle (the credit cycle is the debt cycle's engine), `★ G255`→Z4.3 Minsky & Z4.4 reflexivity (why it self-destructs), `★ G258` financial conditions (the aggregate measure), `★ G127` Marks's sentiment pendulum (*back-link*, HF — the psychology driving it), `★ G70` credit spread (*back-link*, Private Credit — the price of it), `★ G29` leverage (*back-link*, PE — what expands and contracts). Across the graph: **PE** (entry multiples, leverage availability), **Private Credit** (spread & default cycle), **RE** (debt availability, cap rates), **VC** (funding environment). *Real-world layer: Kindleberger on the pro-cyclicality of credit; Dalio's debt-cycle mechanics; Marks's \"where are we in the cycle?\"* ---",
+    "gaps": [],
+    "real_world_layer": "Kindleberger on the pro-cyclicality of credit; Dalio's debt-cycle mechanics; Marks's \"where are we in the cycle?\"",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.2",
+    "local_id": "Z4.2",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "The Debt Cycle (Short-Term, Long-Term & the Big Debt Cycle)",
+    "tag": "global",
+    "global_id": "G256",
+    "quick_definition": "The debt cycle is Dalio's framework in which debt accumulates relative to income in a recurring pattern — a short-term cycle (≈5–8 years, essentially the business cycle driven by credit) nested inside a long-term \"Big Debt Cycle\" (≈50–100 years) that ends in a deleveraging managed through four levers, ideally balanced into a \"beautiful deleveraging.\"",
+    "explainer_covers": [
+      "The nesting (the core structure): the short-term debt cycle is the familiar few-year oscillation — credit expands, the economy heats, the central bank tightens, credit contracts, recession, then ease and repeat. But each cycle tends to leave debt a little higher relative to income, so the peaks build up over decades into the long-term (Big) Debt Cycle — until the debt burden becomes unsustainable and must be reduced. The short cycle is what traders live in; the long cycle is the once-in-a-lifetime regime shift Dalio warns about.",
+      "The phases (MP0→MP3) — Dalio's monetary-policy stages of the long cycle: MP0 hard money (gold-backed, disciplined) → MP1 fiat with interest-rate policy (the normal modern regime) → MP2 money-printing/monetization (QE, when rates hit zero — the Z2.9/Z2.11 link) → MP3 coordinated monetary-and-fiscal (the central bank finances the government directly, the endgame). Each step trades discipline for flexibility; MP2–MP3 is where debasement and currency risk enter (the Z5 bridge).",
+      "The four levers to reduce a debt burden (Dalio, verbatim): (1) austerity (spending less), (2) debt defaults/restructurings, (3) the central bank \"printing money\" and making purchases or guarantees (monetization), and (4) transfers of money and credit from those who have more to those who have less (wealth transfers, e.g., taxes on the rich). Each has a different mix of who bears the pain and whether it's deflationary or inflationary.",
+      "The austerity trap and the \"beautiful deleveraging\": policymakers instinctively try austerity first — and Dalio argues that's a big mistake, because \"one person's spending is another person's income,\" so cutting spending cuts incomes commensurately, the economy contracts, deficits rise anyway, and the debt-to-income ratio often worsens. The escape is a \"beautiful deleveraging\": balance the deflationary levers (debt restructuring — reducing the debt) against the inflationary levers (money printing/monetization — supporting incomes and asset prices), calibrated so you get debt reduction without an unacceptable depression or runaway inflation. Done well, nominal growth outpaces debt growth and the ratio falls \"beautifully.\"",
+      "The condition that makes it manageable: it works cleanest when the debt is denominated in a currency the central bank controls (it can always print to service it) — which is why sovereign crises are far worse for countries that borrow in someone else's currency (the Z5 sovereign-risk link, ★ G262).",
+      "The finance takeaway: the debt cycle sets the regime. Most of a career is spent in MP1 (normal rate policy); but the map flags that MP2–MP3 transitions re-price everything (rates, currencies, real vs. financial assets) and are the deep backdrop to the 2008 and 2020 responses."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z2.11",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z3.6",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G252",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G242",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G255` the credit cycle (its engine), `★ G251` QE (Dalio's MP2 monetization), Z2.11 the ZLB (why MP2 begins), `★ G252` inflation (the inflationary levers; the inflation tax of Z3.6), `★ G262` sovereign debt (the endgame; currency denomination — Z5), `★ G242` fiscal policy (*back-link* — the levers are largely fiscal; deficits/debt), `★ G263` financial crises (the deleveraging as crisis, Z5). Across the graph: **PE/Credit/RE** (the leverage regime), **HF/AM** (the master macro backdrop; `★ G129`). *Real-world layer: Dalio's How Countries Go Broke — the MP phases, four levers, and beautiful deleveraging; the 1930s and 2008 as the reference deleveragings. **Source GAP: Dalio's canonical* Principles for Navigating Big Debt Crises *is image-only/unextractable — this node is grounded in his two readable books; see Source Gaps.* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "Dalio's canonical",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Dalio's How Countries Go Broke — the MP phases, four levers, and beautiful deleveraging; the 1930s and 2008 as the reference deleveragings.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.3",
+    "local_id": "Z4.3",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 3,
+    "title": "The Minsky Model of Financial Instability",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "The Minsky model (as transmitted by Kindleberger) is the canonical anatomy of a credit-driven bubble and bust: a displacement (some new profit opportunity) ignites a credit-fueled boom that tips into euphoria and overtrading, then distress as insiders exit, then revulsion and panic as credit reverses, ending in a crash — with the crucial insight that stability itself breeds instability by encouraging ever-riskier borrowing.",
+    "explainer_covers": [
+      "The stages (Kindleberger's Minsky sequence): (1) Displacement — an exogenous shock (a new technology, the end of a war, a financial innovation, a rate cut) creates a new, genuinely attractive profit opportunity. (2) Boom — credit expands to fund it; prices of the favored asset rise. (3) Euphoria / overtrading — rising prices attract momentum buyers, leverage climbs, standards collapse, \"this time is different\" reasoning takes hold, and speculation detaches from fundamentals. (4) Distress — smart/early money recognizes the top and begins to exit; the marginal buyer runs out. (5) Revulsion / panic (the \"Minsky moment\") — sentiment flips, credit is withdrawn, everyone sells at once, and prices collapse below fair value. (6) Crash — forced liquidation, defaults, and (absent intervention) a spillover to the real economy.",
+      "The Financial Instability Hypothesis (Minsky's core idea): a long period of stability and rising asset prices makes lenders and borrowers progressively less cautious — they shift from hedge finance (income covers principal + interest) to speculative finance (income covers interest only, must roll over principal) to Ponzi finance (income covers neither — reliant purely on rising asset prices to refinance). The system becomes more fragile precisely because it has been calm. Stability is destabilizing.",
+      "Why it belongs with the credit cycle: Minsky is the micro-behavioral engine of the credit cycle's boom and bust — it explains why credit is pro-cyclical (confidence and leverage build on themselves) and why the turn is sudden and violent (the shift from Ponzi finance to panic is discontinuous).",
+      "The connective payoff: this is the deep structure beneath every bubble the role modules touch — the LBO-boom-then-bust, the CRE cycle, the VC funding mania and down-round reckoning, the credit-spread compression then blowout. The map uses Minsky as the shared vocabulary for \"how bubbles work.\""
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.9",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G255` the credit cycle (Minsky is its behavioral engine), Z4.4 reflexivity (Soros's complementary mechanism), `★ G127` Marks's sentiment pendulum (*back-link*, HF — the psychology), `★ G256` the debt cycle (the boom's leverage buildup), `★ G263` financial crises (the crash phase, Z5), Z4.9 lender of last resort (the intervention that arrests the panic). Across the graph: **ALL** cyclical/leverage modules — the anatomy of every bust. *Real-world layer: Kindleberger's Manias, Panics, and Crashes in full; the tulip-to-2008 canon; the \"Minsky moment\" as market vocabulary.* ---",
+    "gaps": [],
+    "real_world_layer": "Kindleberger's Manias, Panics, and Crashes in full; the tulip-to-2008 canon; the \"Minsky moment\" as market vocabulary.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.4",
+    "local_id": "Z4.4",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 4,
+    "title": "Reflexivity & the Credit–Collateral Loop (Soros)",
+    "tag": "branch",
+    "global_id": null,
+    "quick_definition": "Reflexivity is Soros's principle that in markets there is a two-way feedback between participants' biased perceptions and the fundamentals themselves — perceptions influence prices, and prices change the fundamentals, which then validate (or eventually invalidate) the perceptions — producing self-reinforcing booms that become self-defeating busts; its sharpest form is the credit–collateral loop, where lending inflates collateral values, which supports more lending.",
+    "explainer_covers": [
+      "The core break with equilibrium theory: classical economics assumes perceptions passively reflect fundamentals and markets tend toward equilibrium. Soros argues that when expectations about the future affect present behavior — always true in finance — perceptions can shape the fundamentals, so there's no fixed equilibrium to return to. He distinguishes near-equilibrium conditions (feedback is weak, classical theory roughly holds — \"noise\") from far-from-equilibrium conditions (the two-way feedback dominates and prices follow a self-reinforcing, then self-defeating, path — a \"change of regime\").",
+      "The boom-bust shape: a prevailing bias (say, optimism about a sector) lifts prices; higher prices improve the actual fundamentals (easier financing, higher collateral, more investment), which appears to confirm the bias, lifting prices further — a self-reinforcing spiral. But the divergence between perception and sustainable reality widens until it snaps; the process then runs in reverse, self-reinforcingly downward. Boom and bust are asymmetric: the boom is slow and self-validating, the bust fast and self-defeating.",
+      "The credit–collateral loop (the mechanism most relevant to this module): credit is extended against collateral; the act of lending bids up the price of the collateral; higher collateral values justify more credit; and so on — a reflexive spiral that inflates asset prices and debt together on the way up and collapses them together on the way down. Soros's own example (via the text): in the late-1970s LATAM lending boom, bankers used debt ratios to judge creditworthiness without recognizing those ratios were reflexive — their own lending inflated the collateral and incomes the ratios were measured against, so the ratios flattered exactly when risk was building (the direct Z5 sovereign-crisis link).",
+      "Why it complements Minsky: Minsky explains the behavioral fragility (hedge→speculative→Ponzi); Soros explains the perception-fundamental feedback that makes the fragility look like sound value all the way up. Together they are the map's two-lens account of why credit booms are so convincing and their reversals so brutal.",
+      "The connective payoff: the credit–collateral loop is literally the mechanism behind LBO/CRE leverage spirals (rising asset values support more debt support higher values), margin-based bubbles, and the \"capital-flooded market\" spread compression Private Credit flags. It also underlies Dalio's debt cycle and the Z5 currency/Imperial-Circle dynamics."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G256",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G262",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G255` the credit cycle (reflexivity is its perception-fundamental engine), Z4.3 Minsky (the complementary behavioral lens), `★ G256` the debt cycle (the collateral spiral inflates debt), `★ G258` financial conditions (reflexive loosening/tightening), `★ G262` sovereign risk (the reflexive debt-ratio example, Z5), `★ G260` exchange rates (Soros's reflexive currency trends, Z5). Across the graph: **PE/RE** (the leverage–collateral spiral), **HF** (Soros as the archetypal reflexive macro trader — *back-link* to `★ G129`), **Private Credit** (collateral-based lending cycles). *Real-world layer: Soros's The Alchemy of Finance — reflexivity, the credit/regulatory cycle, near- vs. far-from-equilibrium; the 1980s LATAM and the 1992 sterling trade as canonical cases.* ---",
+    "gaps": [],
+    "real_world_layer": "Soros's The Alchemy of Finance — reflexivity, the credit/regulatory cycle, near- vs. far-from-equilibrium; the 1980s LATAM and the 1992 sterling trade as canonical cases.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.5",
+    "local_id": "Z4.5",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 5,
+    "title": "The Yield Curve & Its Shape (the Inversion Signal)",
+    "tag": "global",
+    "global_id": "G257",
+    "quick_definition": "The yield curve plots government-bond yields across maturities (3-month to 30-year); its slope — normal (upward), flat, or inverted (short rates above long rates) — is the market's single most-watched signal of where the economy and monetary policy are heading, with inversion being the most reliable recession warning in modern macro.",
+    "explainer_covers": [
+      "What it is (building on the term structure, ★ G248): the same set of risk-free rates across maturities, but now the focus is the shape. A normal curve slopes up (longer maturities yield more — compensation for term risk and expected growth). A flat curve means little difference. An inverted curve means short rates exceed long rates.",
+      "Why inversion signals recession (the mechanism): long rates embed the market's expectation of future short rates (Z2.6). If investors expect the Fed to be cutting rates in the future — which happens when they expect a recession — long rates fall below current short rates, inverting the curve. So an inversion is the bond market saying \"the Fed is tight now and will have to ease because a slowdown is coming.\" Empirically, the 10-year-minus-2-year (or 10-year-minus-3-month) inversion has preceded most US recessions, typically with a lead of several quarters to two years.",
+      "The three drivers of the curve's shape: expected future short rates (the policy-path expectation — the dominant driver of inversion), the term premium (extra yield for duration risk — can steepen or flatten the curve independent of expectations), and expected inflation (higher long-run inflation steepens). Reading a curve move means decomposing which of these changed.",
+      "Steepening vs. flattening as regime tells: a bull steepener (short rates falling faster — the Fed easing into a slowdown) vs. a bear steepener (long rates rising — growth/inflation optimism or term-premium/supply concerns) vs. flattening (the Fed tightening into a late cycle) each carries a different macro story. The dis-inversion (re-steepening after an inversion) has often coincided with recession onset, not relief.",
+      "The caveats the map flags: the signal has lengthening and variable lead times, QE/QT distort the term premium (muddying the pure-expectations read), and \"this time is different\" claims about inversion recur (usually wrongly, occasionally rightly) — so the map presents inversion as a high-quality-but-not-infallible indicator, not a mechanical trigger."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z1.10",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "G238",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      },
+      {
+        "ref": "G241",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248` the risk-free rate / term structure (the curve is its shape), `★ G247` the funds rate (anchors the short end; the expected *path* drives inversion), `★ G237` the business cycle & `★ G238` recession (what inversion forecasts), `★ G257`→`★ G241` economic indicators (*back-link* — the curve is the premier *leading* indicator, Z1.10), `★ G251` QE (distorts the term premium), `★ G258` financial conditions (the curve is a key input). Across the graph: **HF/AM** (curve trades, duration positioning), **Credit** (the risk-free base for spreads), **RE** (long rates drive cap rates and mortgages), **PE** (the discounting and financing backdrop). *Real-world layer: the Treasury curve; the 2-year/10-year and 3-month/10-year inversion record; the 2022–23 deep inversion as the modern case (recency GAP).* ---",
+    "gaps": [],
+    "real_world_layer": "the Treasury curve; the 2-year/10-year and 3-month/10-year inversion record; the 2022–23 deep inversion as the modern case (recency GAP).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.6",
+    "local_id": "Z4.6",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 6,
+    "title": "Financial Conditions (the Rate & Credit Environment)",
+    "tag": "global",
+    "global_id": "G258",
+    "quick_definition": "Financial conditions are the overall ease or tightness of money in the economy — a composite of the policy rate, the whole rate structure, credit spreads, the exchange rate, equity prices, and credit availability, taken together — the practical meaning of \"the rate environment\" that governs how easily deals get financed and how richly assets are valued.",
+    "explainer_covers": [
+      "Why a composite is needed: the policy rate alone doesn't capture how \"easy\" money really is. Rates can be low while credit is unavailable (2008), or the Fed can be hiking while conditions stay loose because equities are booming and spreads are tight (2021). Financial conditions aggregate the pieces into one read: policy rate + long rates (★ G248/★ G257) + credit spreads (Z4.8) + the exchange rate (★ G260) + equity valuations + credit availability/standards. Central banks and markets track \"financial conditions indexes\" (FCIs) as the true stance of policy-plus-markets.",
+      "Loose vs. tight (what it governs): loose conditions (low rates, tight spreads, strong equities, available credit, weak currency) → deals get financed cheaply, leverage is available, valuations expand, risk-taking rises. Tight conditions → financing dries up, leverage shrinks, valuations compress, deal volume falls, defaults rise. This is the direct dial on the role modules' operating environment.",
+      "The reflexive/transmission link: financial conditions are the aggregate output of the monetary transmission mechanism (★ G250) — the Fed moves the policy rate in order to move financial conditions, but markets can amplify or offset the Fed (the reflexive loop, Z4.4). This is why the Fed sometimes has to \"talk tough\" to tighten conditions even without hiking (managing the expectations channel).",
+      "Why this is the phrase the role modules actually use: \"the rate environment,\" \"when money was cheap,\" \"the financing markets are open/closed,\" \"risk-on/risk-off\" — these are all colloquial references to financial conditions. This node gives that ubiquitous, previously-unhomed phrase a precise definition and a set of measurable components.",
+      "The connective payoff: financial conditions are the proximate macro variable every deal is exposed to. PE deal volume, Private Credit issuance, RE transaction volume and cap rates, VC funding, IPO windows — all track financial conditions far more tightly than they track GDP."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      },
+      {
+        "ref": "G260",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G250` the transmission mechanism (conditions are its aggregate output), `★ G247` the funds rate & `★ G248`/`★ G257` the rate structure (rate components), Z4.8 credit spreads (the credit component), `★ G260` exchange rates (the FX component), `★ G255` the credit cycle (conditions *are* the credit cycle's current reading), `★ G251` QE (a massive loosening of conditions). Across the graph: **PE** (deal volume, leverage), **Private Credit** (issuance, spreads), **RE** (transaction volume, cap rates — *back-link* to `★ G219`), **VC** (funding environment, exit windows), **IB** (the IPO/M&A window). *Real-world layer: FCIs (Goldman, Chicago Fed NFCI); \"don't fight the Fed\"; the 2021 loose-vs-2022 tight swing.* ---",
+    "gaps": [],
+    "real_world_layer": "FCIs (Goldman, Chicago Fed NFCI); \"don't fight the Fed\"; the 2021 loose-vs-2022 tight swing.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.7",
+    "local_id": "Z4.7",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 7,
+    "title": "The Discount-Rate Channel & the Equity Risk Premium (the CAPM Bridge)",
+    "tag": "global",
+    "global_id": "G259",
+    "quick_definition": "The discount-rate channel is the mechanism by which the risk-free rate (★ G248) plus a risk premium sets the discount rate that prices every asset — so when the risk-free rate rises, discount rates rise and the present value of future cash flows (stocks, real estate, growth companies) falls; the equity risk premium (ERP) is the extra return equities must offer over the risk-free rate, and together they are the reason multiples compress and cap rates rise when rates rise. This node homes the ERP/CAPM referenced but never defined inside WACC (★ G91).",
+    "explainer_covers": [
+      "The one equation everything rests on: the value of any asset is the present value of its future cash flows, discounted at a rate = risk-free rate + risk premium. Raise the risk-free rate (Z2.6) and you raise the denominator on every future cash flow, lowering every asset's present value — most severely for assets whose cash flows are furthest in the future (growth equities, VC, long-duration real estate). This is the master mechanism linking the Fed (Zone 2) to valuations.",
+      "The equity risk premium (ERP): equities are riskier than Treasuries, so investors demand a premium over the risk-free rate to hold them — historically a few percent. The required return on equity = risk-free rate + ERP (scaled by the asset's beta in CAPM — its sensitivity to market risk). This is the exact content that WACC (★ G91, IB) assumes when it writes \"cost of equity = risk-free rate + β × equity risk premium\" — but neither the risk-free rate nor the ERP was homed anywhere in the graph. Z2.6 homed the first; this node homes the second and the assembly.",
+      "Why multiples compress when rates rise (the payoff that recurs across modules): a valuation multiple (★ G27, IB — P/E, EV/EBITDA) is, mathematically, roughly the inverse of a discount rate (net of growth). Higher discount rate → lower justified multiple. So \"multiples compressed\" and \"the discount rate rose\" are the same event viewed two ways. This is the mechanical answer to the PE gap-flag (\"why did entry multiples fall?\") and the ER concern (\"why did the market de-rate?\").",
+      "Why cap rates rise when rates rise (the RE payoff): a cap rate (★ G219, RE) is a discount rate for property (net operating income ÷ value). It's quoted as \"a spread over the 10-year.\" When the 10-year risk-free rate (Z2.6) rises, the cap rate rises with it (unless the spread compresses), and property values fall. This node is the mechanism behind the RE gap-flags on \"cap-rate compression\" and \"rising-rate environment.\"",
+      "The equity-risk-premium-as-sentiment view: the ERP isn't constant — it widens when investors are fearful (prices fall, future returns rise) and narrows when complacent (prices rise, future returns fall). This connects the cold CAPM math to Marks's sentiment pendulum (★ G127) and Soros's reflexivity (Z4.4): the \"risk premium\" is where psychology enters the valuation equation.",
+      "The connective payoff (the single most important cross-link in the module): this node is the mechanical bridge from \"the Fed changed rates\" to \"every asset in every role module re-priced.\" It is why a rates call is a valuation call."
+    ],
+    "connects_to": [
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G248` the risk-free rate (the base of the discount rate — **the two together close the WACC gap**), `★ G91` WACC (**homes the ERP/CAPM term** — *back-link*, IB), `★ G27` valuation multiples (the inverse of the discount rate — *back-link*, IB/ER), `★ G219` cap rate (a property discount rate over the risk-free rate — *back-link*, RE), `★ G250` transmission (this is the asset-price channel, formalized), `★ G127` Marks's pendulum (*back-link*, HF — the ERP as sentiment), `★ G258` financial conditions (the discount rate is a core component). Across the graph: **PE** (entry/exit multiples, the \"why now\" of pricing), **IB/ER** (WACC, DCF, de-rating), **RE** (cap rates), **VC** (long-duration discounting — the harshest hit), **AM/HF** (asset allocation across the risk-free-plus-premium spectrum). *Real-world layer: CAPM; the Fed-model debate; the 2022 \"long-duration-asset\" repricing as the textbook case (recency GAP for latest levels).* ---",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "for latest levels",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "CAPM; the Fed-model debate; the 2022 \"long-duration-asset\" repricing as the textbook case (recency GAP for latest levels).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.8",
+    "local_id": "Z4.8",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 8,
+    "title": "Credit Spreads & the Price of Risk",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "A credit spread is the extra yield a borrower pays over the risk-free rate to compensate lenders for default risk; the level and movement of spreads is the bond market's real-time \"price of risk,\" and it widens in fear (credit tightening) and compresses in greed (credit loosening) — the quantitative face of the credit cycle.",
+    "explainer_covers": [
+      "The definition (building on the risk-free rate, Z2.6): if a Treasury yields 4% and a corporate bond of the same maturity yields 6%, the credit spread is 2% (200 basis points) — the market's charge for that issuer's default risk. Investment-grade spreads are narrow; high-yield (\"junk\") spreads are wide; distressed spreads are very wide. This is the same object Private Credit homes as the spread (★ G70) — here it's framed as a macro signal.",
+      "Spreads as the price of risk: the spread is what the market charges for bearing credit risk right now. When spreads are tight (compressed), risk is \"cheap\" — lenders are complacent, credit is abundant, the cycle is late/frothy (Private Credit's \"capital-flooded market\"). When spreads blow out (widen), risk is \"expensive\" — lenders are fearful, credit is scarce, the cycle has turned. Spread levels are one of the best real-time reads on where the credit cycle (Z4.1) and financial conditions (Z4.6) actually are.",
+      "The components of a spread: expected loss (default probability × loss given default — the ★ G77 credit-ratings link), plus a risk premium (compensation for uncertainty and illiquidity, above the mathematically expected loss), plus a liquidity premium. In panics the risk-premium component explodes far beyond any rise in actual default probability — fear, not arithmetic, drives the blowout (the Minsky/reflexivity link).",
+      "Why spreads lead and amplify: rising spreads raise borrowing costs for everyone precisely as the economy weakens (pro-cyclical, the credit-cycle engine), and spread blowouts can be self-fulfilling (higher costs → more defaults → wider spreads — a reflexive loop). Spreads are both a symptom and a cause of credit contraction.",
+      "The connective payoff: spreads are the daily dashboard of the credit cycle that Private Credit, PE (financing cost and availability), and distressed/HF strategies all watch. This node frames the module-level ★ G70 spread as a macro instrument."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "macro-economics.z4.4",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G70` credit spread (*back-link* — the same object, homed in Private Credit; here as macro signal), `★ G255` the credit cycle (spreads are its quantitative face), `★ G258` financial conditions (a core component), `★ G248` the risk-free rate (the base spreads sit over), `★ G77` credit ratings (*back-link*, Private Credit — the expected-loss component), Z4.3/Z4.4 Minsky & reflexivity (the fear-driven blowout). Across the graph: **Private Credit** (the home seat), **PE** (financing cost/availability), **HF** (credit and distressed trades), **AM** (credit allocation). *Real-world layer: IG and HY spread indices (OAS); the 2008 and 2020 blowouts vs. the 2021 compression.* ---",
+    "gaps": [],
+    "real_world_layer": "IG and HY spread indices (OAS); the 2008 and 2020 blowouts vs. the 2021 compression.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.9",
+    "local_id": "Z4.9",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 9,
+    "title": "The Lender of Last Resort",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The lender of last resort is the central bank's crisis role of lending freely against good collateral (at a penalty rate) to solvent-but-illiquid institutions during a panic — Bagehot's classic prescription — to arrest a self-feeding banking collapse when private credit has frozen and no one else will lend.",
+    "explainer_covers": [
+      "The problem it solves: in a panic (the revulsion/crash phase of Minsky, Z4.3), everyone tries to sell assets and hoard cash at once; credit freezes; even solvent institutions can't roll over funding and are forced into fire sales that make the panic worse — a self-feeding liquidity spiral. Private markets can't stop this because no individual lender will step in front of a stampede.",
+      "Bagehot's rule (the classic prescription): the central bank should lend freely, against good collateral, at a penalty rate. \"Freely\" stops the panic (there's always cash available, so the incentive to run disappears); \"good collateral\" limits losses to illiquidity, not insolvency; \"penalty rate\" ensures it's used only in genuine distress and unwound afterward. This is why a central bank exists as more than a rate-setter (the Z2.2 link).",
+      "The distinction that matters: the lender of last resort is meant to solve illiquidity (a fundamentally sound institution can't access cash right now), not insolvency (the institution is actually bust). In real crises the line is blurry, and the central bank is often forced to choose between letting a solvency problem trigger systemic collapse and effectively bailing out the insolvent — the moral-hazard bind.",
+      "Moral hazard (the cost): if institutions expect rescue, they take more risk (heads they win, tails the central bank pays) — which feeds the next Minsky buildup. The lender-of-last-resort function thus sits in permanent tension: necessary to stop panics, but corrosive to discipline over time (the Soros \"regulatory cycle\" link).",
+      "Why it belongs in this zone: it is the circuit-breaker on the credit cycle's downswing — the intervention that turns a Minsky crash into a contained event rather than a Great Contraction (the Friedman-Schwartz counterfactual: in 1930–33 the Fed failed to perform this role, and a panic became a depression). The modern extensions — QE (Z2.9), emergency facilities, and \"whatever it takes\" — are the lender-of-last-resort function scaled to the shadow-banking and sovereign-bond eras."
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.3",
+        "note": null
+      },
+      {
+        "ref": "G244",
+        "note": null
+      },
+      {
+        "ref": "G263",
+        "note": null
+      },
+      {
+        "ref": "G251",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G246",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`★ G244` the central bank (whose crisis role this is), Z4.3 Minsky (the panic it arrests), `★ G263` financial crises (the intervention in a crisis, Z5), `★ G251` QE (the modern balance-sheet extension), `★ G255` the credit cycle (the circuit-breaker on the downswing), `★ G246` money supply (*back-link* — the Friedman-Schwartz failure to backstop the money supply, Z5). Across the graph: **Credit/HF** (systemic backstops as a regime variable), **the whole system** (tail-risk floor). *Real-world layer: Bagehot's Lombard Street; the Fed's 2008 facilities and 2020 backstops; Draghi's \"whatever it takes\"; the 1907 panic (the Fed's origin).* ---",
+    "gaps": [],
+    "real_world_layer": "Bagehot's Lombard Street; the Fed's 2008 facilities and 2020 backstops; Draghi's \"whatever it takes\"; the 1907 panic (the Fed's origin).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "macro-economics.z4.10",
+    "local_id": "Z4.10",
+    "module": "macro-economics",
+    "zone": 4,
+    "ordinal": 10,
+    "title": "The Macro–Markets Bridge: Why Rates & Credit Drive Deals & Valuations",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The synthesis node — and the module's primary connective tissue — that assembles Zones 2–4 into a single causal chain showing how a change in monetary policy and the credit cycle flows through to the specific quantities the nine role modules care about: entry/exit multiples, leverage availability, financing cost, cap rates, deal volume, exit windows, and default rates.",
+    "explainer_covers": [
+      "The single chain, end to end: Fed sets the policy rate (★ G247) → moves the risk-free curve (★ G248/★ G257) and financial conditions (★ G258) → which act through two master channels: the financing channel (short rates/SOFR ★ G69 → cost and availability of leverage → what a buyer can pay) and the discount-rate channel (★ G259) (long risk-free rate + ERP → discount rate → multiples and cap rates). Layer on the credit cycle (★ G255) and spreads (Z4.8) governing whether financing is available at all. That's the whole macro→markets machine on one page.",
+      "The module-by-module payoff (why this node exists — it wires the map together):",
+      "Private Equity: cheap, available leverage (loose credit cycle) + low discount rates (high justified multiples) = high entry multiples and deal volume; the reverse = multiple compression and a financing freeze. Directly answers the PE gap-flags on \"why now\" for pricing (PE Z2.21/Z3.12/Z5.21) and homes the macro behind leverage (★ G29) and the J-curve's rate sensitivity (★ G4).",
+      "Private Credit: the credit cycle is the strategy's weather — spread compression in a capital-flooded market (loose) vs. blowout and defaults (tight); floating-rate coupons (★ G69) ride the funds rate (★ G247) directly (the Credit Z1.14/Z5.13 gap-flags on the rate cycle).",
+      "Real Estate: cap rates (★ G219) = risk-free rate + spread, so rising rates lift cap rates and cut values (the RE gap-flags on cap-rate compression and the rising-rate environment); debt availability tracks financial conditions; the RE cycle (★ G232) is the credit cycle in property.",
+      "Venture Capital: long-duration cash flows are the most discount-rate-sensitive (the harshest ★ G259 hit), so VC valuations, funding availability, and exit windows (IPO market) swing hardest with financial conditions — the macro behind down-rounds and exit droughts.",
+      "IB / Equity Research: WACC (★ G91) is built from the risk-free rate (★ G248) + ERP (★ G259); DCFs and target multiples (★ G27) re-rate mechanically with rates — the macro behind \"the market de-rated.\"",
+      "Hedge Funds / Asset & Wealth Management: the entire opportunity set (rates, credit, FX, equities) is priced off this chain; global macro (★ G129) trades it directly; asset allocation is a bet on where in this chain we are.",
+      "The one-sentence thesis the module drives toward: a view on rates and the credit cycle is, mechanically, a view on the price and availability of everything the role modules buy, sell, and lever — which is why a foundational macro module belongs beneath all nine.",
+      "How to use it as a hub: this node is the intended jumping-off point back into the role modules — each bullet above is a live cross-link a learner can follow from \"the macro why\" into \"the role-specific how.\""
+    ],
+    "connects_to": [
+      {
+        "ref": "macro-economics.z4.8",
+        "note": null
+      },
+      {
+        "ref": "G247",
+        "note": null
+      },
+      {
+        "ref": "G248",
+        "note": null
+      },
+      {
+        "ref": "G257",
+        "note": null
+      },
+      {
+        "ref": "G250",
+        "note": null
+      },
+      {
+        "ref": "G255",
+        "note": null
+      },
+      {
+        "ref": "G258",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": null
+      },
+      {
+        "ref": "G4",
+        "note": null
+      },
+      {
+        "ref": "G29",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G91",
+        "note": null
+      },
+      {
+        "ref": "G69",
+        "note": null
+      },
+      {
+        "ref": "G70",
+        "note": null
+      },
+      {
+        "ref": "G77",
+        "note": null
+      },
+      {
+        "ref": "G219",
+        "note": null
+      },
+      {
+        "ref": "G232",
+        "note": null
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G129",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "*Upstream (this module):* `★ G247` funds rate, `★ G248`/`★ G257` risk-free curve, `★ G250` transmission, `★ G255` credit cycle, `★ G258` financial conditions, `★ G259` discount-rate channel & ERP, Z4.8 spreads. *Downstream (back-links into the role modules):* `★ G4` J-curve (PE), `★ G29` leverage (PE), `★ G27` valuation multiples (IB/ER), `★ G91` WACC (IB), `★ G69` SOFR (Private Credit), `★ G70` spread (Private Credit), `★ G77` credit ratings (Private Credit), `★ G219` cap rate (RE), `★ G232` real-estate cycle (RE), `★ G127` sentiment pendulum (HF), `★ G129` global macro (HF). *Real-world layer: the synthesis of Dalio, Kindleberger, Soros, and Marks with the role modules' own toolkits — the reason this module is the connective tissue of the whole app.* --- ---",
+    "gaps": [],
+    "real_world_layer": "the synthesis of Dalio, Kindleberger, Soros, and Marks with the role modules' own toolkits — the reason this module is the connective tissue of the whole app.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]
