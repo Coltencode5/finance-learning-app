@@ -82,3 +82,9 @@ Part 9 item #7 (source-quality/file-access note — module-level, not node-level
 | 12 | Macro map Part 1 source list | **Z5.10** cited as the historical-episode layer alongside Z5.9, but no `### Z5.10` node header exists in the legacy map | Z5.9 "The Historical Episodes (the Crisis Canon)" subsumes the canon; 51 nodes emitted (not 52). No phantom node created. | DECIDED |
 | 13 | `validate.py` + draft modules | G236–G263 are in `globals.json` while `macro-economics` is draft; validator loads all globals but skips draft module nodes | **FIXED:** `check_required` skips hosting warnings for globals whose `contributed_by` module is draft. Re-run strict validation after promotion. | FIXED |
 | 14 | macro-economics.z1.6 connects_to | Legacy prose `PE Z2.21 / Z3.12 / Z5.21` — bare `Z3.12`/`Z5.21` were parsed as in-module refs | **FIXED** in `parse_markdown.py` via `propagate_abbrev_prefix()`; re-parsed to `private-equity.z3.12` / `.z5.21`. | FIXED |
+
+## F. Scaffold conventions (Milestone 8)
+
+| # | Where | Issue | Decision | Status |
+|---|---|---|---|---|
+| 15 | `scaffold_module.py` `zone_titles_for_kind()` | Unmapped kinds (e.g. `asset-class`) silently fall back to `ROLE_ZONE_TITLES` instead of erroring or requiring an explicit mapping | Logged for deliberate decision — fallback vs. explicit mapping should not be fixed drive-by; Fixed Income is complete so nothing is broken today | OPEN |

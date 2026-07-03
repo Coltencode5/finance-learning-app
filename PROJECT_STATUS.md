@@ -1,6 +1,6 @@
 # Project Status
 
-**Last updated:** Milestone 7 complete (2026-07-02)
+**Last updated:** Milestone 8 complete (2026-07-03)
 
 ## Corpus totals (validated)
 
@@ -9,7 +9,7 @@
 | Active modules | **11** |
 | Shared globals | **285** (G1–G285, contiguous) |
 | Zone nodes | **580** |
-| Graph edges | **4,088** |
+| Graph edges | **4,091** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -19,6 +19,15 @@
 | 1–9 | Role modules (PE → RE) | various | role | 1–9 | 478 | G1–G235 | complete |
 | 6 | Macro & Economics | macro-economics | core-concept | 10 | 51 | G236–G263 | complete |
 | **7** | **Fixed Income** | **fixed-income** | **asset-class** | **11** | **51** | **G264–G285** | **complete** |
+
+## Milestone 8 — Sector Layer Prep
+
+Prep milestone (no new module content authored):
+
+- Removed `corporate-finance` draft placeholder (regenerable via factory; not in standing build sequence)
+- ADR-003 pipeline consequences: sector spine placeholders in `scaffold_module.py`; extended placeholder-mismatch and sector compactness checks in `new_module_checks.py`
+- ER Z2.3 → Real Estate back-links (GICS real-estate exclusion per sector design D1)
+- Ratified standing reference: `docs/SECTOR_LAYER_DESIGN.md`
 
 ## Milestone 7 — Fixed Income
 
@@ -32,9 +41,10 @@
 
 ## Next gate
 
-- New-module global numbering starts at **G286**
-- Build sequence per ADR-003: sector-layer1 → sector-layer2 → Derivatives
+- Next module: **sector-financials** (M9, `kind: sector-layer1`, `build_order: 12`, globals from **G286**)
+- Blocked on Tier A source acquisition (see `docs/SECTOR_LAYER_DESIGN.md` D2–D3)
+- Wave one build order: Financials → IT → Energy → Consumer Discretionary
 
 ## Known defects (unchanged)
 
-- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7
+- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7/M8
