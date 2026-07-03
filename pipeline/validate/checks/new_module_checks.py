@@ -28,6 +28,16 @@ CORE_CONCEPT_SPINE_PLACEHOLDERS = {
     "PLACEHOLDER — Concept zone 5",
 }
 
+SECTOR_SPINE_PLACEHOLDERS = {
+    "PLACEHOLDER — Sector economics",
+    "PLACEHOLDER — Segments",
+    "PLACEHOLDER — Drivers & KPIs",
+    "PLACEHOLDER — Valuation treatment",
+    "PLACEHOLDER — Regulation & cycle",
+}
+
+SECTOR_KINDS = frozenset({"sector-layer1", "sector-layer2"})
+
 
 def _norm_term(t: str) -> str:
     t = unicodedata.normalize("NFKD", t.lower())
@@ -58,6 +68,58 @@ def check_zone_titles_by_kind(
                 errors.append(
                     f"[module] {slug} zone {zone_num} uses core-concept placeholder "
                     f"'{title}' but kind is role (ADR-002)"
+                )
+            elif kind in SECTOR_KINDS and title in ROLE_SPINE_PLACEHOLDERS:
+                errors.append(
+                    f"[module] {slug} zone {zone_num} uses role spine placeholder "
+                    f"'{title}' but kind is {kind} (ADR-003)"
+                )
+            elif kind in SECTOR_KINDS and title in CORE_CONCEPT_SPINE_PLACEHOLDERS:
+                errors.append(
+                    f"[module] {slug} zone {zone_num} uses core-concept placeholder "
+                    f"'{title}' but kind is {kind} (ADR-003)"
+                )
+            elif kind not in SECTOR_KINDS and title in SECTOR_SPINE_PLACEHOLDERS:
+                errors.append(
+                    f"[module] {slug} zone {zone_num} uses sector spine placeholder "
+                    f"'{title}' but kind is {kind} (ADR-003)"
+                )
+
+
+def check_sector_compactness(
+    modules: dict,
+    nodes: list[dict],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    """Warn when active sector modules fall outside ADR-003 compactness bounds."""
+    nodes_by_module: dict[str, list] = {}
+    for n in nodes:
+        nodes_by_module.setdefault(n["module"], []).append(n)
+
+    for slug, mod in sorted(modules.items()):
+        if is_draft(mod):
+            continue
+        kind = mod.get("kind", "role")
+        if kind not in SECTOR_KINDS:
+            continue
+
+        module_nodes = nodes_by_module.get(slug, [])
+        total = len(module_nodes)
+        if total < 8 or total > 14:
+            warnings.append(
+                f"[module] {slug} has {total} nodes — sector modules should have "
+                f"8–14 nodes (ADR-003 rule 6)"
+            )
+
+        by_zone: dict[int, int] = {}
+        for n in module_nodes:
+            by_zone[n["zone"]] = by_zone.get(n["zone"], 0) + 1
+        for zone_num, count in sorted(by_zone.items()):
+            if count > 4:
+                warnings.append(
+                    f"[module] {slug} zone {zone_num} has {count} nodes — "
+                    f"soft cap is 4 per zone (ADR-003 rule 6)"
                 )
 
 
@@ -185,5 +247,6 @@ def check_new_modules(
 ) -> None:
     check_module_structure(modules, nodes, errors, warnings)
     check_zone_titles_by_kind(modules, errors, warnings)
+    check_sector_compactness(modules, nodes, errors, warnings)
     check_new_module_globals(globals_, modules, errors, warnings)
     check_module_graph_presence(root, modules, errors, warnings)

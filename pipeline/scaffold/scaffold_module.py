@@ -29,9 +29,19 @@ CORE_CONCEPT_ZONE_TITLES = {
     5: "PLACEHOLDER — Concept zone 5",
 }
 
+SECTOR_ZONE_TITLES = {
+    1: "PLACEHOLDER — Sector economics",
+    2: "PLACEHOLDER — Segments",
+    3: "PLACEHOLDER — Drivers & KPIs",
+    4: "PLACEHOLDER — Valuation treatment",
+    5: "PLACEHOLDER — Regulation & cycle",
+}
+
 ZONE_TITLES_BY_KIND = {
     "role": ROLE_ZONE_TITLES,
     "core-concept": CORE_CONCEPT_ZONE_TITLES,
+    "sector-layer1": SECTOR_ZONE_TITLES,
+    "sector-layer2": SECTOR_ZONE_TITLES,
 }
 
 
@@ -155,7 +165,7 @@ def print_plan(plan: dict, dry_run: bool) -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Scaffold a new draft module")
-    ap.add_argument("--slug", required=True, help="Module slug, e.g. corporate-finance")
+    ap.add_argument("--slug", required=True, help="Module slug, e.g. sector-financials")
     ap.add_argument("--title", required=True, help='Module title, e.g. "Corporate Finance"')
     ap.add_argument(
         "--kind",
