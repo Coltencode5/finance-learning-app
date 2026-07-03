@@ -1,6 +1,6 @@
 # Graph Health Report
 
-Generated: 2026-07-02 by `pipeline/build/graph_health.py`
+Generated: 2026-07-03 by `pipeline/build/graph_health.py`
 
 ## Summary
 
@@ -8,14 +8,14 @@ Generated: 2026-07-02 by `pipeline/build/graph_health.py`
 |---|---|
 | Globals | 285 |
 | Module zone nodes | 580 |
-| Total edges | 4088 |
-| Cross-module reference edges | 2585 |
+| Total edges | 4091 |
+| Cross-module reference edges | 2588 |
 
 ### Edge kinds
 
 - **disambiguates**: 8
 - **home_of**: 316
-- **references**: 3764
+- **references**: 3767
 
 ### Inbound degree distribution (all indexed ids)
 
@@ -72,7 +72,7 @@ Count: 2
 ## Cross-module dependencies (reference counts)
 
 - **asset-management** → global (192), hedge-funds (31), private-equity (14), investment-banking (3), private-credit (2)
-- **equity-research** → global (181), asset-management (24), investment-banking (24), hedge-funds (19)
+- **equity-research** → global (181), asset-management (24), investment-banking (24), hedge-funds (19), real-estate (3)
 - **fixed-income** → global (197), hedge-funds (14), asset-management (7), private-credit (6), macro-economics (4)
 - **hedge-funds** → global (181), private-equity (12), investment-banking (9), private-credit (2)
 - **investment-banking** → global (120), private-equity (31), private-credit (18)

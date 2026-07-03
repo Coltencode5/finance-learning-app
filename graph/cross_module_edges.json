@@ -1,7 +1,7 @@
 {
   "generated_by": "pipeline/build/build_indexes.py",
   "description": "Reference edges whose endpoints span modules (or module ↔ global).",
-  "edge_count": 2585,
+  "edge_count": 2588,
   "edges": [
     {
       "from": "asset-management.z1.1",
@@ -2137,6 +2137,24 @@
       "to": "asset-management.z2.5",
       "kind": "references",
       "note": null
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z2.1",
+      "kind": "references",
+      "note": "GICS real-estate sector lens — segments live in the RE module, not a sector-layer cluster (sector design Q1)"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z5.2",
+      "kind": "references",
+      "note": "REIT valuation treatment — FFO/AFFO"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z5.3",
+      "kind": "references",
+      "note": "REIT valuation treatment — NAV & the public-private gap"
     },
     {
       "from": "equity-research.z2.4",

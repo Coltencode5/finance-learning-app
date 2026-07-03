@@ -136,7 +136,8 @@
       "Worked contrasts: a bank trades on net interest margin, credit losses, and capital ratios (and is valued on a DDM/book basis, per Damodaran's special cases); a retailer on same-store sales, traffic, and margin; a commodity/cyclical producer on the commodity price and the cycle (valued on normalized earnings, Damodaran); a software company on net revenue retention, bookings, and the growth-vs-margin trade.",
       "Why the valuation method follows the sector: the choice between DCF, multiples, and a sector-specific method (Z3.7–3.8) is driven by the sector's economics — banks and financials break the standard enterprise-value frame, young/high-growth names defy multiples, cyclicals defy spot earnings.",
       "The KPI layer beneath the financials: every sector has operating metrics (subscribers, load factors, rig counts, daily active users) that lead the reported financials — and the analyst's edge is often in forecasting the KPI before it shows up in EPS.",
-      "The link to channel checks: the sector framework tells you which operating metrics to go check (Z3.3) — you can't build a useful mosaic without knowing what's material."
+      "The link to channel checks: the sector framework tells you which operating metrics to go check (Z3.3) — you can't build a useful mosaic without knowing what's material.",
+      "The real-estate exception: REITs are a GICS sector, but their sector framework (property segments, FFO/AFFO, NAV) is taught in the Real Estate module itself — the sector layer back-links there rather than rebuilding it."
     ],
     "connects_to": [
       {
@@ -158,6 +159,18 @@
       {
         "ref": "equity-research.z3.8",
         "note": null
+      },
+      {
+        "ref": "real-estate.z2.1",
+        "note": "GICS real-estate sector lens — segments live in the RE module, not a sector-layer cluster (sector design Q1)"
+      },
+      {
+        "ref": "real-estate.z5.2",
+        "note": "REIT valuation treatment — FFO/AFFO"
+      },
+      {
+        "ref": "real-estate.z5.3",
+        "note": "REIT valuation treatment — NAV & the public-private gap"
       },
       {
         "ref": "G191",

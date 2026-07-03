@@ -1,6 +1,6 @@
 {
   "generated_by": "pipeline/build/build_graph.py",
-  "edge_count": 4088,
+  "edge_count": 4091,
   "edges": [
     {
       "from": "G102",
@@ -2893,6 +2893,24 @@
       "to": "equity-research.z3.8",
       "kind": "references",
       "note": null
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z2.1",
+      "kind": "references",
+      "note": "GICS real-estate sector lens — segments live in the RE module, not a sector-layer cluster (sector design Q1)"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z5.2",
+      "kind": "references",
+      "note": "REIT valuation treatment — FFO/AFFO"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "real-estate.z5.3",
+      "kind": "references",
+      "note": "REIT valuation treatment — NAV & the public-private gap"
     },
     {
       "from": "equity-research.z2.4",

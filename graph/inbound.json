@@ -20799,6 +20799,11 @@
     ],
     "real-estate.z2.1": [
       {
+        "from": "equity-research.z2.3",
+        "kind": "references",
+        "note": "GICS real-estate sector lens — segments live in the RE module, not a sector-layer cluster (sector design Q1)"
+      },
+      {
         "from": "real-estate.z2.2",
         "kind": "references",
         "note": null
@@ -21123,12 +21128,22 @@
     ],
     "real-estate.z5.2": [
       {
+        "from": "equity-research.z2.3",
+        "kind": "references",
+        "note": "REIT valuation treatment — FFO/AFFO"
+      },
+      {
         "from": "real-estate.z2.5",
         "kind": "references",
         "note": null
       }
     ],
     "real-estate.z5.3": [
+      {
+        "from": "equity-research.z2.3",
+        "kind": "references",
+        "note": "REIT valuation treatment — NAV & the public-private gap"
+      },
       {
         "from": "real-estate.z2.5",
         "kind": "references",
