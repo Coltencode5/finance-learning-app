@@ -48,18 +48,18 @@ orphan/low-reference reports.
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 7)
+## Current state (post-Milestone 8)
 
 - **11 active modules**: the 9 legacy role modules plus **macro-economics**
   (`kind: core-concept`, ADR-002) and **fixed-income** (`kind: asset-class`, ADR-003).
 - Shared glossary: **285 globals (G1–G285)**, contiguous; fixed-income contributed G264–G285.
   The new-module gate is parameterized to `corpus_max + 1`, so the next active
   module starts at **G286**.
-- **580 zone nodes**; graph rebuilt — 4,088 edges.
+- **580 zone nodes**; graph rebuilt — 4,091 edges.
 - Validation: **0 errors, 0 warnings** (strict content gate).
 - See `PROJECT_STATUS.md` for milestone history and corpus totals.
-- Module factory (Milestone 5) scaffolds new modules; `corporate-finance` is a
-  parked draft placeholder (`build_order: 999`, `visibility: draft`).
+- Module factory (Milestone 5) scaffolds new draft modules with kind-appropriate
+  zone placeholders (`role`, `core-concept`, `sector-layer1`, `sector-layer2`).
 - **Minimal Next.js app** (Milestone 4) reads canonical JSON at build time — no database, no auth.
 
 ## Milestone 4 — minimal app

@@ -27,13 +27,13 @@ corrupting the nine active canonical modules.
 
 ```bash
 # Preview (no files written)
-python pipeline/scaffold/scaffold_module.py --slug corporate-finance --title "Corporate Finance" --dry-run
+python pipeline/scaffold/scaffold_module.py --slug sector-financials --title "Financials" --kind sector-layer1 --dry-run
 
 # Create draft scaffold
-python pipeline/scaffold/scaffold_module.py --slug corporate-finance --title "Corporate Finance"
+python pipeline/scaffold/scaffold_module.py --slug sector-financials --title "Financials" --kind sector-layer1
 
 # npm alias
-npm run scaffold:module -- --slug corporate-finance --title "Corporate Finance" --dry-run
+npm run scaffold:module -- --slug sector-financials --title "Financials" --kind sector-layer1 --dry-run
 ```
 
 The script:
@@ -51,9 +51,9 @@ The script:
 | `1`–`899` | Real modules — claim the next sequential slot via `next_build_order()` |
 | `≥ 900` | Draft/scaffold placeholders — excluded from the sequential counter |
 
-The `corporate-finance` draft uses `build_order: 999` so module 10 (`macro-economics`)
-can claim slot `10` without collision. Draft modules in the sentinel band are still
-excluded from validation, graph build, and the app.
+Draft modules may use `build_order: 999` (or any slot in the `≥ 900` band) to avoid
+colliding with the sequential active-module counter. Draft modules in the sentinel
+band are still excluded from validation, graph build, and the app.
 
 ## Active vs draft
 
@@ -103,11 +103,11 @@ python -m unittest pipeline.scaffold.test_scaffold_module
 `pipeline/migrate/parse_macro.py`. It uses `kind: core-concept` and a
 concept-progression zone spine per ADR-002.
 
-## Draft placeholder — Corporate Finance
+## Sector modules (Milestone 8+)
 
-`content/modules/corporate-finance/` is a **draft** placeholder (`build_order: 999`)
-for future Corporate Finance content. It is excluded from production navigation
-until promoted.
+Use `--kind sector-layer1` or `--kind sector-layer2` to scaffold with the canonical
+sector spine placeholders (ADR-003). See `docs/SECTOR_LAYER_DESIGN.md` for the
+standing build checklist.
 
 ## Tests
 

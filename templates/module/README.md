@@ -13,8 +13,8 @@ Scaffold files for a new five-zone module. Placeholders use `{{TOKEN}}` syntax.
 
 | Token | Example | Notes |
 |---|---|---|
-| `{{MODULE_SLUG}}` | `corporate-finance` | Lowercase, hyphens; becomes node ID prefix |
-| `{{MODULE_TITLE}}` | `Corporate Finance` | Display title |
+| `{{MODULE_SLUG}}` | `sector-financials` | Lowercase, hyphens; becomes node ID prefix |
+| `{{MODULE_TITLE}}` | `Financials` | Display title |
 | `{{BUILD_ORDER}}` | `10` | Auto-assigned by scaffold script |
 | `{{ZONE_NUM}}` | `1` | Zone number 1–5 |
 | `{{ZONE_TITLE}}` | `The Ecosystem` | Zone heading in module.json |
@@ -27,7 +27,7 @@ Every node must include: `id`, `local_id`, `module`, `zone`, `ordinal`, `title`,
 `tag`, `global_id`, `quick_definition`, `explainer_covers`, `connects_to`,
 `gaps`, `status`.
 
-- **Node ID:** `{slug}.z{zone}.{ordinal}` e.g. `corporate-finance.z1.1`
+- **Node ID:** `{slug}.z{zone}.{ordinal}` e.g. `sector-financials.z1.1`
 - **Global refs:** `G{n}` in `connects_to` — must exist in `globals.json`
 - **Cross-module refs:** `{other-slug}.z{zone}.{n}` — target must exist when module is active
 - **Gaps:** structured `{ "kind": "source"|"recency", "note": "..." }` objects
