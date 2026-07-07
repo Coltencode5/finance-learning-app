@@ -1,23 +1,60 @@
 name: validate-content
 on:
   push:
-    paths: ["content/**", "schemas/**", "pipeline/**"]
+    paths:
+      - "content/**"
+      - "schemas/**"
+      - "pipeline/**"
+      - "graph/**"
+      - "app/**"
+      - "src/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
   pull_request:
-    paths: ["content/**", "schemas/**", "pipeline/**"]
+    paths:
+      - "content/**"
+      - "schemas/**"
+      - "pipeline/**"
+      - "graph/**"
+      - "app/**"
+      - "src/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install jsonschema
-      - name: Validate canonical content
-        run: python pipeline/validate/validate.py
+
+      - name: Strict content validation
+        run: python pipeline/validate/validate.py --strict
+
       - name: Graph builds cleanly and is committed fresh
         run: |
           python pipeline/build/build_graph.py
           git diff --exit-code graph/ \
             || (echo "graph/ artifacts are stale — run build_graph.py and commit" && exit 1)
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: App data check
+        run: npm run check:data
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Production build
+        run: npm run build

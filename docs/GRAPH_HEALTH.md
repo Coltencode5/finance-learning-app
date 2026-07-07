@@ -43,7 +43,9 @@ Disambiguation edges are created **only** from explicit `disambiguate_with`
 metadata. Legacy prose “this vs. that” pairs (e.g. alpha vs. beta) do not
 become edges until a global pair is recorded in `globals.json`.
 
-Current disambiguation pairs: **G53 ↔ G102** (IPO as exit vs. IPO process).
+The current pair list and count live in the **generated**
+`graph/graph_health_report.md` section “Disambiguation edges (canonical metadata
+only)” — do not duplicate pairs here; they change as globals are added.
 
 ## Interpreting orphan / low-reference reports
 

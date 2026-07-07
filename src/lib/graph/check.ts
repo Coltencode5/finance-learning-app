@@ -35,8 +35,8 @@ export function runDataCheck(): CheckResult {
     outboundKeys: store.outbound.size,
   };
 
-  if (store.modules.length !== 10) {
-    warnings.push(`Expected 10 active modules, found ${store.modules.length}`);
+  if (store.modules.length === 0) {
+    errors.push("No active modules loaded");
   }
 
   for (const mod of store.modules) {
