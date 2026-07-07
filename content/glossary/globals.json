@@ -1166,7 +1166,9 @@
       "Z3",
       "Z5"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G288"
+    ],
     "status": "mapped"
   },
   {
@@ -1183,7 +1185,9 @@
       "Z3",
       "Z5"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G286"
+    ],
     "status": "mapped"
   },
   {
@@ -4827,7 +4831,8 @@
       "Macro"
     ],
     "disambiguate_with": [
-      "G70"
+      "G70",
+      "G286"
     ],
     "status": "mapped"
   },
@@ -4980,6 +4985,148 @@
     "disambiguate_with": [
       "G72"
     ],
+    "status": "mapped"
+  },
+  {
+    "id": "G286",
+    "term": "Net interest margin (NIM) (Z1.1)",
+    "aliases": [
+      "NIM"
+    ],
+    "quick_definition": "Net interest income divided by average earning assets — how a bank makes money on the gap between what it lends at and pays for.",
+    "home_module": "sector-financials",
+    "home_zone": "Z1.1",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "IB",
+      "AM",
+      "WM",
+      "Macro"
+    ],
+    "disambiguate_with": [
+      "G70",
+      "G277"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G287",
+    "term": "Regulatory capital: CET1, RWAs & the Basel ratios (Z5.1)",
+    "aliases": [
+      "CET1",
+      "RWAs",
+      "Basel ratios"
+    ],
+    "quick_definition": "The equity cushion a bank must hold — common-equity Tier 1 as a share of risk-weighted assets, plus buffers — the sector binding rule.",
+    "home_module": "sector-financials",
+    "home_zone": "Z5.1",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "IB",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G288",
+    "term": "Insurance float (Z2.2)",
+    "aliases": [
+      "float"
+    ],
+    "quick_definition": "Policyholder money held between premium and claim — an investable pool whose cost is the underwriting result.",
+    "home_module": "sector-financials",
+    "home_zone": "Z2.2",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "AM",
+      "WM"
+    ],
+    "disambiguate_with": [
+      "G69"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G289",
+    "term": "The combined ratio (Z2.2)",
+    "aliases": [],
+    "quick_definition": "Claims plus expenses as a share of premiums; under 100% means the insurer was paid to hold the float.",
+    "home_module": "sector-financials",
+    "home_zone": "Z2.2",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G290",
+    "term": "Provision for loan losses & the allowance (Z3.1)",
+    "aliases": [
+      "loan loss provision",
+      "allowance"
+    ],
+    "quick_definition": "The estimated charge for loans expected to go bad (provision) and the reserve it feeds (allowance) — where bank earnings become a judgment.",
+    "home_module": "sector-financials",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "Credit"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G291",
+    "term": "Non-performing loans & asset quality (Z3.2)",
+    "aliases": [
+      "NPLs",
+      "asset quality"
+    ],
+    "quick_definition": "Loans no longer paying as agreed, and the ratios (NPLs, charge-offs, coverage) that test whether the loan book is as healthy as claimed.",
+    "home_module": "sector-financials",
+    "home_zone": "Z3.2",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "Credit"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G292",
+    "term": "The bank run & deposit insurance (Z5.2)",
+    "aliases": [
+      "bank run",
+      "deposit insurance"
+    ],
+    "quick_definition": "The self-fulfilling withdrawal stampede that is banking signature failure, and the government guarantee that stops it — at the cost of moral hazard.",
+    "home_module": "sector-financials",
+    "home_zone": "Z5.2",
+    "contributed_by": "sector-financials",
+    "category": "Financials (Sector)",
+    "appears_in": [
+      "Macro",
+      "FI",
+      "ER"
+    ],
+    "disambiguate_with": [],
     "status": "mapped"
   }
 ]

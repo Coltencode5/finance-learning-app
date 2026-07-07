@@ -137,9 +137,14 @@
       "Why the valuation method follows the sector: the choice between DCF, multiples, and a sector-specific method (Z3.7–3.8) is driven by the sector's economics — banks and financials break the standard enterprise-value frame, young/high-growth names defy multiples, cyclicals defy spot earnings.",
       "The KPI layer beneath the financials: every sector has operating metrics (subscribers, load factors, rig counts, daily active users) that lead the reported financials — and the analyst's edge is often in forecasting the KPI before it shows up in EPS.",
       "The link to channel checks: the sector framework tells you which operating metrics to go check (Z3.3) — you can't build a useful mosaic without knowing what's material.",
-      "The real-estate exception: REITs are a GICS sector, but their sector framework (property segments, FFO/AFFO, NAV) is taught in the Real Estate module itself — the sector layer back-links there rather than rebuilding it."
+      "The real-estate exception: REITs are a GICS sector, but their sector framework (property segments, FFO/AFFO, NAV) is taught in the Real Estate module itself — the sector layer back-links there rather than rebuilding it.",
+      "The financials forward-link (M8 deferral, landed M9): banks and insurers get their full sector syllabus in the Financials sector module — net interest margin, credit losses, capital ratios, and the valuation bend. This hub points to sector-financials.z1.1 as the door; the sector module points back here for the full research craft."
     ],
     "connects_to": [
+      {
+        "ref": "sector-financials.z1.1",
+        "note": "GICS financials sector lens — understand the sector here, learn to research it in ER"
+      },
       {
         "ref": "asset-management.z2.5",
         "note": null
@@ -189,7 +194,7 @@
         "note": null
       }
     ],
-    "connects_to_raw": "Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*.",
+    "connects_to_raw": "`sector-financials.z1.1` (GICS financials sector lens — the M8 deferral landed M9) · Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*.",
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "sector-financials.z1.1",
+    "local_id": "Z1.1",
+    "module": "sector-financials",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "How Banks Make Money: Intermediation & the Margin",
+    "tag": "global",
+    "global_id": "G286",
+    "quick_definition": "A bank makes money on other people's money: it takes deposits (cheap, short-term) and makes loans (dearer, longer-term), earning the gap between the two — the net interest margin — and layers fee income on top.",
+    "explainer_covers": [
+      "The core idea, told plainly (Golin Ch. 3): a bank sits between savers who want their money safe and available, and borrowers who need funds, and gets paid the rate gap for standing in the middle. Why that's genuinely useful work — pooling many small deposits, transforming short savings into long loans, and knowing who's creditworthy.",
+      "What a bank is actually made of: the deposit types that fund it (checking/demand, savings, time deposits) and why cheap, sticky deposits are the sector's crown jewel — the thing that separates a great bank from an ordinary one (picked up in Z2.1).",
+      "★G286 NIM, built up gently: it's just net interest income divided by the assets that earn it — the bank's core profit margin. What pushes it around: what loans yield, what deposits cost, and the interest-rate weather set by the Fed and the yield curve (★G244, ★G257 — this sector lives and dies by rates).",
+      "The second engine: fee income — wealth management, dealmaking, cards, moving money around (Golin's four) — and why it grew as the plain lending margin got squeezed (★G63 — the flip side of money leaving banks for private lenders).",
+      "The door onward: this is the sector framework that Equity Research's Z2.3 points to — someone who wants to analyze banks starts from exactly this understanding of how they make money."
+    ],
+    "connects_to": [
+      { "ref": "equity-research.z2.3", "note": "attachment — the bidirectional door to sector research craft" },
+      { "ref": "G244", "note": null },
+      { "ref": "G257", "note": null },
+      { "ref": "G63", "note": null },
+      { "ref": "sector-financials.z2.1", "note": null },
+      { "ref": "sector-financials.z3.1", "note": null },
+      { "ref": "sector-financials.z4.1", "note": null }
+    ],
+    "connects_to_raw": "`equity-research.z2.3` (attachment — the door, both directions), `★G244`, `★G257`, `★G63`, Z2.1, Z3.1, Z4.1.",
+    "gaps": [],
+    "real_world_layer": "Golin & Delhaise Ch. 3.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-financials.z1.2",
+    "local_id": "Z1.2",
+    "module": "sector-financials",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "Why Banks Run on Borrowed Money — Leverage as the Business Model",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Banks operate at a level of borrowing no ordinary company could survive — often ten dollars of other people's money for every dollar of their own — because for a bank, debt (deposits) isn't a financing choice, it's the raw material. A thin sliver of equity absorbs losses, and the whole system runs on confidence in that sliver.",
+    "explainer_covers": [
+      "Why it's built-in, not a choice (Golin Ch. 9): a bank deals in cash itself, and borrowing is the business — this is fundamentally unlike a factory choosing how much debt to take on (★G29, corporate leverage as an elective decision).",
+      "What that thin layer of capital is for (Golin's canon): it funds growth, absorbs surprise losses, keeps creditors confident, satisfies regulators, and gives management a yardstick — and it matters most precisely when there's least of it.",
+      "The vocabulary trap worth clearing early (Golin's \"capital confusion\"): \"capital\" means five different things in banking (total funding / owners' stake / the regulator's definition / the analyst's / the bank's internal one). Flagging it now so later zones can use the word precisely.",
+      "The ROE illusion, in plain terms (Admati & Hellwig): heavy borrowing makes returns on equity look spectacular in good years and turns modest losses into wipeouts in bad ones — so a bank's headline profitability never means much until you know how much leverage produced it.",
+      "Where this is heading: a business funded by money people can demand back at any moment, invested in loans you can't quickly sell, is fragile by design — the full story of how that turns into a crisis is Z5.2."
+    ],
+    "connects_to": [
+      { "ref": "G29", "note": "elective vs. structural leverage" },
+      { "ref": "sector-financials.z3.1", "note": null },
+      { "ref": "sector-financials.z5.1", "note": null },
+      { "ref": "sector-financials.z5.2", "note": null },
+      { "ref": "fixed-income.z1.1", "note": null }
+    ],
+    "connects_to_raw": "`★G29` (elective vs. structural leverage), Z3.1 (ROE decomposed), Z5.1 (capital's regulatory meaning), Z5.2 (fragility), `fixed-income.z1.1`.",
+    "gaps": [],
+    "real_world_layer": "Golin Ch. 9; Admati & Hellwig.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -263,6 +263,21 @@
         "from": "investment-banking.z2.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z2.1",
+        "kind": "references",
+        "note": "universal banks as underwriters — the IB seam"
+      },
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "references",
+        "note": "disambiguate — the two underwritings seam"
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": null
       }
     ],
     "G102": [
@@ -370,6 +385,11 @@
       },
       {
         "from": "investment-banking.z2.8",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
         "kind": "references",
         "note": null
       }
@@ -1016,6 +1036,11 @@
       {
         "from": "hedge-funds.z1.6",
         "kind": "home_of",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
         "note": null
       }
     ],
@@ -2878,6 +2903,11 @@
         "note": null
       },
       {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": null
+      },
+      {
         "from": "wealth-management.z1.8",
         "kind": "references",
         "note": null
@@ -2931,6 +2961,11 @@
       },
       {
         "from": "asset-management.z5.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
         "kind": "references",
         "note": null
       },
@@ -4458,6 +4493,11 @@
       }
     ],
     "G180": [
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": null
+      },
       {
         "from": "wealth-management.z1.8",
         "kind": "home_of",
@@ -6755,6 +6795,11 @@
         "from": "macro-economics.z5.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G239": [
@@ -7072,6 +7117,16 @@
       },
       {
         "from": "macro-economics.z4.9",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
         "kind": "references",
         "note": null
       }
@@ -7494,6 +7549,11 @@
       },
       {
         "from": "private-equity.z3.8",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
         "kind": "references",
         "note": null
       }
@@ -7943,6 +8003,16 @@
         "from": "macro-economics.z5.7",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G256": [
@@ -8080,6 +8150,11 @@
       },
       {
         "from": "macro-economics.z4.6",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z1.1",
         "kind": "references",
         "note": null
       }
@@ -8496,6 +8571,11 @@
         "from": "macro-economics.z5.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G264": [
@@ -8742,6 +8822,11 @@
         "note": null
       },
       {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
+      },
+      {
         "from": "venture-capital.z2.4",
         "kind": "references",
         "note": null
@@ -8852,6 +8937,11 @@
         "from": "fixed-income.z5.5",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G276": [
@@ -8889,9 +8979,19 @@
         "from": "fixed-income.z5.5",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G277": [
+      {
+        "from": "G286",
+        "kind": "disambiguates",
+        "note": null
+      },
       {
         "from": "fixed-income.z1.8",
         "kind": "references",
@@ -8951,6 +9051,11 @@
         "from": "fixed-income.z4.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G278": [
@@ -8973,6 +9078,11 @@
         "from": "fixed-income.z4.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
       }
     ],
     "G279": [
@@ -8993,6 +9103,16 @@
       },
       {
         "from": "fixed-income.z4.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
         "kind": "references",
         "note": null
       }
@@ -9321,6 +9441,59 @@
         "note": null
       }
     ],
+    "G286": [
+      {
+        "from": "G277",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
+        "from": "G70",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "G287": [
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
+        "kind": "home_of",
+        "note": null
+      }
+    ],
+    "G288": [
+      {
+        "from": "G69",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "home_of",
+        "note": null
+      }
+    ],
+    "G289": [
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "home_of",
+        "note": null
+      }
+    ],
     "G29": [
       {
         "from": "fixed-income.z1.2",
@@ -9558,6 +9731,16 @@
         "note": null
       },
       {
+        "from": "sector-financials.z1.2",
+        "kind": "references",
+        "note": "elective vs. structural leverage"
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": "disambiguate — the negative seam"
+      },
+      {
         "from": "venture-capital.z1.4",
         "kind": "references",
         "note": null
@@ -9565,6 +9748,37 @@
       {
         "from": "wealth-management.z2.7",
         "kind": "references",
+        "note": null
+      }
+    ],
+    "G290": [
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "G291": [
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "G292": [
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "home_of",
         "note": null
       }
     ],
@@ -9911,6 +10125,11 @@
       },
       {
         "from": "real-estate.z4.7",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
         "kind": "references",
         "note": null
       }
@@ -11527,6 +11746,11 @@
         "from": "private-credit.z1.2",
         "kind": "home_of",
         "note": null
+      },
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": null
       }
     ],
     "G64": [
@@ -11646,6 +11870,11 @@
     ],
     "G69": [
       {
+        "from": "G288",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
         "from": "asset-management.z2.8",
         "kind": "references",
         "note": null
@@ -11739,6 +11968,11 @@
         "from": "real-estate.z3.8",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "references",
+        "note": "disambiguate — float vs. floating rate"
       }
     ],
     "G7": [
@@ -11841,6 +12075,11 @@
     "G70": [
       {
         "from": "G277",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
+        "from": "G286",
         "kind": "disambiguates",
         "note": null
       },
@@ -12056,6 +12295,11 @@
         "from": "real-estate.z3.7",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": "disambiguate — the negative seam"
       }
     ],
     "G75": [
@@ -12756,6 +13000,11 @@
         "from": "real-estate.z3.4",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
       }
     ],
     "G89": [
@@ -13034,6 +13283,11 @@
         "from": "macro-economics.z4.7",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
       }
     ],
     "G92": [
@@ -13059,6 +13313,11 @@
       },
       {
         "from": "investment-banking.z3.6",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
         "kind": "references",
         "note": null
       }
@@ -13187,6 +13446,11 @@
         "from": "investment-banking.z3.1",
         "kind": "home_of",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
       }
     ],
     "G96": [
@@ -13297,6 +13561,11 @@
         "from": "equity-research.z1.3",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": "the seam's far side — inside view"
       },
       {
         "from": "wealth-management.z1.1",
@@ -14280,6 +14549,11 @@
         "from": "equity-research.z3.2",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": "attachment — the bidirectional door to sector research craft"
       }
     ],
     "equity-research.z2.4": [
@@ -14653,6 +14927,11 @@
         "from": "equity-research.z3.8",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": "generic machinery — the duplication guard"
       }
     ],
     "equity-research.z3.8": [
@@ -14685,6 +14964,11 @@
         "from": "equity-research.z3.9",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": "generic machinery — the duplication guard"
       }
     ],
     "equity-research.z3.9": [
@@ -15067,7 +15351,13 @@
         "note": null
       }
     ],
-    "fixed-income.z1.1": [],
+    "fixed-income.z1.1": [
+      {
+        "from": "sector-financials.z1.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
     "fixed-income.z1.2": [
       {
         "from": "fixed-income.z1.9",
@@ -15403,6 +15693,11 @@
         "from": "fixed-income.z5.6",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": "attachment — the deferral handshake completed"
       }
     ],
     "fixed-income.z4.9": [
@@ -15560,6 +15855,11 @@
         "from": "hedge-funds.z5.6",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": "the seam's far side — inside view"
       }
     ],
     "hedge-funds.z1.10": [
@@ -16340,6 +16640,16 @@
         "from": "investment-banking.z5.4",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": "the seam's far side — inside view"
       }
     ],
     "investment-banking.z1.10": [
@@ -17302,6 +17612,11 @@
         "from": "macro-economics.z1.2",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
+        "kind": "references",
+        "note": null
       }
     ],
     "macro-economics.z1.10": [
@@ -17683,6 +17998,11 @@
         "from": "macro-economics.z5.6",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": "the crisis canon — the episodes this node's mechanics explain"
       }
     ],
     "private-credit.z1.1": [
@@ -21148,6 +21468,11 @@
         "from": "real-estate.z2.5",
         "kind": "references",
         "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": "NAV — the sector layer's other book-value cousin"
       }
     ],
     "real-estate.z5.4": [
@@ -21174,6 +21499,176 @@
     ],
     "real-estate.z5.5": [],
     "real-estate.z5.6": [],
+    "sector-financials.z1.1": [
+      {
+        "from": "equity-research.z2.3",
+        "kind": "references",
+        "note": "GICS financials sector lens — understand the sector here, learn to research it in ER"
+      },
+      {
+        "from": "sector-financials.z2.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z1.2": [
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z2.1": [
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z2.2": [],
+    "sector-financials.z2.3": [],
+    "sector-financials.z3.1": [
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z1.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z3.2": [
+      {
+        "from": "sector-financials.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z4.1": [
+      {
+        "from": "sector-financials.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z4.2": [
+      {
+        "from": "fixed-income.z4.8",
+        "kind": "references",
+        "note": "attachment — bank-credit analysis deferred here per scope boundary 3"
+      },
+      {
+        "from": "sector-financials.z3.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z5.1": [
+      {
+        "from": "sector-financials.z1.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z5.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-financials.z5.2": [
+      {
+        "from": "sector-financials.z1.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "from": "sector-financials.z4.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
     "venture-capital.z1.1": [],
     "venture-capital.z1.10": [
       {
@@ -21834,6 +22329,16 @@
     ],
     "venture-capital.z5.6": [],
     "wealth-management.z1.1": [
+      {
+        "from": "sector-financials.z2.2",
+        "kind": "references",
+        "note": "insurance as a product — the inside view"
+      },
+      {
+        "from": "sector-financials.z2.3",
+        "kind": "references",
+        "note": "the seam's far side — inside view"
+      },
       {
         "from": "wealth-management.z5.5",
         "kind": "references",

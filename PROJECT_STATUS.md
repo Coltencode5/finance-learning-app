@@ -1,15 +1,14 @@
 # Project Status
 
-**Last updated:** Milestone 8 complete (2026-07-03)
+**Last updated:** Milestone 9 complete (2026-07-07)
 
 ## Corpus totals (validated)
 
 | Metric | Value |
 |---|---|
-| Active modules | **11** |
-| Shared globals | **285** (G1–G285, contiguous) |
-| Zone nodes | **580** |
-| Graph edges | **4,091** |
+| Active modules | **12** |
+| Shared globals | **292** (G1–G292, contiguous) |
+| Zone nodes | **591** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -18,7 +17,19 @@
 |---|---|---|---|---|---|---|---|
 | 1–9 | Role modules (PE → RE) | various | role | 1–9 | 478 | G1–G235 | complete |
 | 6 | Macro & Economics | macro-economics | core-concept | 10 | 51 | G236–G263 | complete |
-| **7** | **Fixed Income** | **fixed-income** | **asset-class** | **11** | **51** | **G264–G285** | **complete** |
+| 7 | Fixed Income | fixed-income | asset-class | 11 | 51 | G264–G285 | complete |
+| **8** | **Financials (Sector)** | **sector-financials** | **sector-layer1** | **12** | **11** | **G286–G292** | **complete** |
+
+## Milestone 9 — Financials (Sector)
+
+- **Slug:** `sector-financials`
+- **Kind:** `sector-layer1` (ADR-003 rule 1)
+- **Zones:** Z1 The Spread Business (2) · Z2 Three Businesses, One Sector (3) · Z3 What Drives the Firms (2) · Z4 Going Deeper: Analyzing One (2) · Z5 The Rules & the Fragility (2)
+- **New globals:** G286–G292 (7 net-new; append-only; each with exactly one `home_of`)
+- **Back-links:** 28 existing globals referenced; G69/G70/G277 disambiguate_with updated for G286/G288 pairs
+- **Attachment edges:** Z1.1 ↔ `equity-research.z2.3` (bidirectional); Z4.2 → `fixed-income.z4.8` (FI deferral handshake completed)
+- **Structured GAPs:** 2 (`insurance-source-depth` on Z2.2; `golin-ch7-not-extracted` on Z3.2)
+- **Design ripple:** D7 (sector-module voice rule) added to `docs/SECTOR_LAYER_DESIGN.md`
 
 ## Milestone 8 — Sector Layer Prep
 
@@ -41,10 +52,9 @@ Prep milestone (no new module content authored):
 
 ## Next gate
 
-- Next module: **sector-financials** (M9, `kind: sector-layer1`, `build_order: 12`, globals from **G286**)
-- Blocked on Tier A source acquisition (see `docs/SECTOR_LAYER_DESIGN.md` D2–D3)
-- Wave one build order: Financials → IT → Energy → Consumer Discretionary
+- Next module: **sector-information-technology** (M10, `kind: sector-layer1`, `build_order: 13`, globals from **G293**)
+- Wave one build order: IT → Energy → Consumer Discretionary
 
 ## Known defects (unchanged)
 
-- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7/M8
+- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7/M8/M9

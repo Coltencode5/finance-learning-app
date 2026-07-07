@@ -6727,6 +6727,148 @@
         ]
       }
     ],
+    "sector-financials": [
+      {
+        "node": "sector-financials.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-financials.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-financials.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-financials.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-financials.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-financials.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-financials.z4.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-financials.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-financials.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-financials.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-financials.z4.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
     "venture-capital": [
       {
         "node": "venture-capital.z1.2",

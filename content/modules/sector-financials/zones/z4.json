@@ -1,0 +1,75 @@
+[
+  {
+    "id": "sector-financials.z4.1",
+    "local_id": "Z4.1",
+    "module": "sector-financials",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Valuing a Financial: Why the Normal Toolkit Breaks",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "If you try to value a bank or insurer the way you'd value a normal company, the tools fall apart — because debt is the raw material, not a financing choice, so enterprise value and free cash flow stop meaning anything. Valuation is forced to the equity side: dividends, and price-to-book read against the returns that book earns.",
+    "explainer_covers": [
+      "The two breakages, plainly (Damodaran Ch. 14): (1) you can't separate a bank's operations from its financing — deposits and debt are the product — so enterprise value (★G25) and the EV↔equity bridge (★G95) are undefined; (2) there's no meaningful capex or working capital, so free cash flow (★G92) can't be computed — regulatory capital plays the role reinvestment plays elsewhere.",
+      "What still works: value the equity directly — the dividend (plus buybacks) is the stream you can actually take out, and it's capped by the capital rules (Z5.1); and you use the cost of equity only, never a blended WACC (★G91, with the exception noted).",
+      "The sector's signature chart: price-to-book against ROE — a bank worth more than its book equity is one earning good returns on that equity; price-to-tangible-book is the honesty-adjusted version. (The comps machinery itself is ★G27/★G88's — this node adds only the bank-specific twist.)",
+      "The catch that ties it to Z3.2: a bank trading below book is either a bargain or the market's honest verdict that the loan marks are too optimistic — so the valuation question collapses back into the asset-quality question.",
+      "Duplication guard (D4), honored: DCF, multiples, and comps process are not re-taught here — Equity Research (Z3.7–3.8) and ★G88/★G90/★G27 own them; this node adds only the bend. Insurers get book/embedded-value logic with the same equity-side constraint; asset managers are the exception where the ordinary toolkit mostly works (Z2.3)."
+    ],
+    "connects_to": [
+      { "ref": "equity-research.z3.7", "note": "generic machinery — the duplication guard" },
+      { "ref": "equity-research.z3.8", "note": "generic machinery — the duplication guard" },
+      { "ref": "G25", "note": null },
+      { "ref": "G95", "note": null },
+      { "ref": "G92", "note": null },
+      { "ref": "G91", "note": null },
+      { "ref": "G27", "note": null },
+      { "ref": "G88", "note": null },
+      { "ref": "sector-financials.z5.1", "note": null },
+      { "ref": "sector-financials.z3.2", "note": null },
+      { "ref": "real-estate.z5.3", "note": "NAV — the sector layer's other book-value cousin" }
+    ],
+    "connects_to_raw": "`equity-research.z3.7`, `equity-research.z3.8` (the generic machinery — the guard), `★G25`, `★G95`, `★G92`, `★G91`, `★G27`, `★G88`, Z5.1, Z3.2, `real-estate.z5.3` (NAV — the sector layer's other book-value cousin).",
+    "gaps": [],
+    "real_world_layer": "Damodaran, The Dark Side of Valuation, Ch. 14.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-financials.z4.2",
+    "local_id": "Z4.2",
+    "module": "sector-financials",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "The Credit Lens: Sizing Up a Bank as a Borrower",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Judging whether a bank can repay its own debt is a different craft from judging a normal company: the usual corporate credit tools don't apply, so the analysis runs on capital, asset quality, and funding stability — plus the modern wrinkle that a bank's own debt now includes instruments designed to take losses in a crisis.",
+    "explainer_covers": [
+      "The Fixed Income handshake, completed: FI taught the corporate credit template and openly deferred the industry cases — this is that leg for the sector where the template breaks hardest.",
+      "The negative seam first (Part 1's callout): the corporate workhorses — EBITDA-to-interest, leverage multiples (★G74, ★G29) — are undefined for a bank. What replaces them is the classic bank checklist: capital (★G287), asset quality (★G291), management, earnings (Z3.1), and liquidity/funding — captured by the old \"CAMELS\" shorthand.",
+      "Funding as the bank-specific art: sticky insured deposits versus flighty wholesale money — two banks with equal capital but different funding are genuinely different credit risks (this is the run exposure, Z5.2).",
+      "The capital stack a lender faces after 2008: senior vs. subordinated vs. the newer AT1/CoCo instruments built to convert to equity or get written off when a bank gets into trouble (Ramirez Ch. 6) — \"bail-in\" as the deliberate replacement for taxpayer \"bail-out,\" and why a bank's junior debt is closer to equity risk than its name suggests (★G275/★G276/★G277 for the market's read; ★G278 CDS as the hedge and the signal).",
+      "Why covenants barely feature (★G34 contrast): a bank's creditors lean on the regulator, not on loan covenants — the supervisor is the covenant package."
+    ],
+    "connects_to": [
+      { "ref": "fixed-income.z4.8", "note": "attachment — the deferral handshake completed" },
+      { "ref": "G74", "note": "disambiguate — the negative seam" },
+      { "ref": "G29", "note": "disambiguate — the negative seam" },
+      { "ref": "G287", "note": null },
+      { "ref": "G291", "note": null },
+      { "ref": "G275", "note": null },
+      { "ref": "G276", "note": null },
+      { "ref": "G277", "note": null },
+      { "ref": "G278", "note": null },
+      { "ref": "G34", "note": null },
+      { "ref": "sector-financials.z5.1", "note": null },
+      { "ref": "sector-financials.z5.2", "note": null }
+    ],
+    "connects_to_raw": "`fixed-income.z4.8` (attachment — the deferral completed), `★G74`/`★G29` (the negative seam), `★G287`, `★G291`, `★G275`, `★G276`, `★G277`, `★G278`, `★G34`, Z5.1, Z5.2.",
+    "gaps": [],
+    "real_world_layer": "Ramirez Ch. 6; Fabozzi (via FI Z4.8).",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

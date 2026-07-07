@@ -31,6 +31,9 @@ Removed in M8. Any future corporate-finance module requires fresh scoping (much 
 ### D6 — Build mechanics (per ADR-003 rules 1, 6, 8)
 Each sector is a standard module: own directory `content/modules/sector-{slug}/`, own `build_order`, factory scaffold, five zone files, canonical sector spine (rule 4). Wave-one build orders: sector-financials **12**, sector-information-technology **13**, sector-energy **14**, sector-consumer-discretionary **15**. Globals contiguous from **G286**, append-only, exactly one `home_of` each. Expected ~6–10 net-new globals per sector — a low count is the health signal.
 
+### D7 — Sector-module voice
+A sector module teaches the sector *as a business* to a curious, browsing learner. Zones 1, 2, 3, and 5 are the "understand the sector" layer (accessible, business-first prose — not analyst-second-person). Zone 4 is the "analyst deepening" — the "now, to evaluate one as an investment…" layer, and the concentration point for valuation/credit craft that leans on ER/IB machinery rather than re-teaching it. The `equity-research.z2.3` edge is the bidirectional door: understand the sector here → learn the full research craft in ER. This voice rule is a reframe of the ADR-003 spine, not a change to it — the five-zone structure already supports it.
+
 ## Per-sector build checklist (reuse for every sector)
 
 1. Scaffold via `scaffold_module.py --kind sector-layer1` (sector spine placeholders land automatically post-M8).
@@ -42,4 +45,4 @@ Each sector is a standard module: own directory `content/modules/sector-{slug}/`
 7. `validate.py --strict` at 0/0 (compactness warnings included) before delivery.
 
 ## Milestone numbering
-M8 = this prep. M9 = sector-financials (Tier A — blocked on source acquisition). M10–M12 = remaining wave one.
+M8 = sector-layer prep. **M9 = sector-financials (complete).** M10–M12 = remaining wave one.

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sector-financials.z5.1",
+    "local_id": "Z5.1",
+    "module": "sector-financials",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Capital Rules: Basel, CET1 & Risk-Weighted Assets",
+    "tag": "global",
+    "global_id": "G287",
+    "quick_definition": "Because banks are fragile and backed by the public, they're required to hold a minimum cushion of equity — set by the international Basel rules as a percentage of risk-weighted assets. The hardest, most loss-absorbing layer is CET1 — common equity, at least 4.5% of risk-weighted assets plus buffers — topped up by weaker layers and policed by stress tests.",
+    "explainer_covers": [
+      "Why regulate this at all (Golin Ch. 9 → Admati): left alone, a subsidized, run-prone industry will hold too little cushion — so capital rules are the system's shock absorber.",
+      "★G287, assembled: the three layers (CET1 = common equity and retained earnings, minus deductions like goodwill and deferred-tax assets; AT1 = perpetual convertibles/CoCos; Tier 2 = subordinated debt); risk-weighted assets as the denominator — assets scaled by how risky they are, the cleverest and most game-able idea in the whole framework; and the headline: CET1 has to clear 4.5% plus buffers, which in practice binds the big banks around 10–13%.",
+      "The three pillars in one pass (Ramirez): minimum requirements, supervisory review, public disclosure — and where the U.S. stress tests (CCAR/DFAST) fit as often the real binding constraint for large banks, tighter than the ratio itself.",
+      "The critique to hold alongside the rules (Admati): risk-weights invite gaming, which is exactly why a plain leverage ratio (equity over total assets, unweighted) exists as a backstop — Basel III as an improvement, not a cure.",
+      "Why this matters even if you never analyze a bank: it's why banks can only pay out dividends and buybacks their capital position permits — the rules quietly govern what shareholders get (the hinge to Z4.1)."
+    ],
+    "connects_to": [
+      { "ref": "sector-financials.z1.2", "note": null },
+      { "ref": "sector-financials.z4.1", "note": null },
+      { "ref": "sector-financials.z4.2", "note": null },
+      { "ref": "G279", "note": null },
+      { "ref": "macro-economics.z1.1", "note": null }
+    ],
+    "connects_to_raw": "Z1.2 (capital's five meanings, regulatory one selected), Z4.1, Z4.2, `★G279` (securitization's original capital-arbitrage role), `macro-economics.z1.1` (the policy seat).",
+    "gaps": [],
+    "real_world_layer": "Golin Ch. 9; Ramirez; Admati & Hellwig.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-financials.z5.2",
+    "local_id": "Z5.2",
+    "module": "sector-financials",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "Runs, Panics & the Cycle: Why Finance Fails the Way It Does",
+    "tag": "global",
+    "global_id": "G292",
+    "quick_definition": "A bank that funds itself with money people can demand back at any moment, while holding loans it can't quickly sell, is fragile by construction — and the bank run is the result: a self-fulfilling stampede for the exits. Deposit insurance is the cure, moral hazard is the cure's side effect, and too big to fail is the part no one has fully solved.",
+    "explainer_covers": [
+      "★G292, mechanically: because a bank turns short-term deposits into long-term loans, no bank — even a healthy one — can survive everyone withdrawing at once; runs feed on themselves (the It's a Wonderful Life logic); and why a liquidity panic and genuine insolvency blur together in the moment.",
+      "Deposit insurance as the circuit-breaker (FDIC, $250k): why it stops runs, and what it costs — insured depositors stop watching risk, so regulators and capital rules (Z5.1) have to watch instead; the post-2008 liquidity rules (LCR, NSFR) as the admission that capital alone doesn't stop a run.",
+      "Too big to fail: the implicit government backstop, the cheaper funding it hands the giants, and the surcharges and resolution/bail-in regimes (Z4.2) built to defuse it — with Admati's skepticism as the honest counterweight.",
+      "The sector and the economic cycle: bank losses cluster (★G255 — the credit cycle); banks lend freely at the top and slam the brakes at the bottom, amplifying downturns (★G238) — which is why financials are both the transmitter and the casualty of most crises (★G263's crisis canon lives in Macro; this node explains the sector's role in it).",
+      "The takeaway that ties the module together: markets permanently discount this fragility (that persistent below-book valuation), so any investment case in the sector is a joint bet on management, where we are in the cycle, and the rules holding."
+    ],
+    "connects_to": [
+      { "ref": "G255", "note": null },
+      { "ref": "G238", "note": null },
+      { "ref": "G263", "note": null },
+      { "ref": "G244", "note": null },
+      { "ref": "sector-financials.z1.2", "note": null },
+      { "ref": "sector-financials.z5.1", "note": null },
+      { "ref": "sector-financials.z4.2", "note": null },
+      { "ref": "macro-economics.z5.9", "note": "the crisis canon — the episodes this node's mechanics explain" }
+    ],
+    "connects_to_raw": "`★G255`, `★G238`, `★G263`, `★G244` (the Fed as lender of last resort), Z1.2 (the leverage that makes runs lethal), Z5.1, Z4.2, `macro-economics.z5.9` (the crisis canon).",
+    "gaps": [],
+    "real_world_layer": "Admati & Hellwig.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

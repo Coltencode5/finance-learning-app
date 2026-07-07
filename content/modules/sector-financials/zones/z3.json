@@ -1,0 +1,69 @@
+[
+  {
+    "id": "sector-financials.z3.1",
+    "local_id": "Z3.1",
+    "module": "sector-financials",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "How a Bank's Earnings Actually Work — and Where the Risk Hides",
+    "tag": "global",
+    "global_id": "G290",
+    "quick_definition": "A bank's profit-and-loss has its own shape: interest income minus interest cost (the margin), plus fees, minus running costs, minus one crucial line — the provision for loan losses, a management estimate of loans that will go bad — which is exactly where a bank's earnings become a judgment call rather than a fact.",
+    "explainer_covers": [
+      "The anatomy, walked through (Golin Ch. 4): net interest income, plus fee and trading income (the swingy part), minus operating costs, minus provisions, equals profit — and which of those lines are steady versus cyclical.",
+      "★G290, the line that matters most: the provision is this period's charge for loans expected to sour; the allowance is the reserve on the balance sheet it feeds; write-offs draw that reserve down. The same idea hides under five names (Golin's list) — worth naming once so it stops being confusing.",
+      "Why this makes bank earnings managed earnings: the provision is a guess about the future, so under-reserving flatters today at tomorrow's expense — the single biggest \"do I trust these numbers?\" question in the sector.",
+      "The dashboard, as a way to size up any bank: the margin (★G286), the efficiency ratio (costs vs. income — how tightly it's run), how much comes from fees, and how heavy the loan-loss charge is. Four dials that tell you most of the story.",
+      "The ROE stack, tied back to Z1.2: return on equity = return on assets × leverage — so two banks with the same ROE but different leverage are not equally good businesses. (For someone going on to Z4, this is where valuation starts.)"
+    ],
+    "connects_to": [
+      { "ref": "G286", "note": null },
+      { "ref": "sector-financials.z1.2", "note": null },
+      { "ref": "sector-financials.z3.2", "note": null },
+      { "ref": "sector-financials.z5.1", "note": null },
+      { "ref": "sector-financials.z4.1", "note": null }
+    ],
+    "connects_to_raw": "`★G286`, Z1.2 (the leverage half), Z3.2 (provisions meet the actual bad loans), Z5.1 (retained profit as capital), Z4.1 (the door to valuing it).",
+    "gaps": [],
+    "real_world_layer": "Golin Ch. 4.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-financials.z3.2",
+    "local_id": "Z3.2",
+    "module": "sector-financials",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Asset Quality: Are the Loans Actually Good?",
+    "tag": "global",
+    "global_id": "G291",
+    "quick_definition": "Everything about a bank ultimately rests on whether its loans get paid back. The health of the loan book is read through non-performing loans — loans that have stopped paying as agreed — and whether the bank has set aside enough to cover them.",
+    "explainer_covers": [
+      "★G291, from the ground up: the slide from healthy loan → past due → non-performing → written off (with some recovered along the way); and why the exact cut-offs vary by country, so like-for-like comparison takes care.",
+      "The three numbers that tell the story: what share of loans are bad (the trouble that exists), how fast losses are being realized (the flow), and whether the reserve is big enough to cover the known trouble (coverage).",
+      "The reflexive link to Z3.1: reserves should be built up ahead of the losses; when bad loans climb faster than the reserving does, the bank is quietly borrowing from its own cushion — a classic late-in-the-cycle warning sign.",
+      "Loan mix as fate (back to Z2.1): consumer loans go bad fast and visibly; commercial and real-estate loans go bad slowly and in lumps — so concentration is the question before a downturn and coverage is the question during one.",
+      "Why this is the whole game: since the bank's thin equity is the first thing wiped out if loans fail (Z1.2), the stated book value is only as real as the loan marks — which is the hinge into how these firms get valued (Z4)."
+    ],
+    "connects_to": [
+      { "ref": "G290", "note": null },
+      { "ref": "sector-financials.z2.1", "note": null },
+      { "ref": "sector-financials.z1.2", "note": null },
+      { "ref": "sector-financials.z4.1", "note": null },
+      { "ref": "sector-financials.z4.2", "note": null },
+      { "ref": "G255", "note": null }
+    ],
+    "connects_to_raw": "`★G290` (the charge that feeds the reserve), Z2.1, Z1.2, Z4.1, Z4.2, `★G255` (the credit cycle — where the losses come from).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "golin-ch7-not-extracted — Golin's dedicated asset-quality chapter (Ch. 7) isn't in the licensed extracts; built from Ch. 4's provisioning material plus standard classification conventions. Verify if Ch. 7 exported.",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Golin Ch. 4.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

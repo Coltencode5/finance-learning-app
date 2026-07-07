@@ -1,0 +1,52 @@
+{
+  "slug": "sector-financials",
+  "title": "Financials (Sector)",
+  "kind": "sector-layer1",
+  "build_order": 12,
+  "visibility": "active",
+  "status": "mapped",
+  "zones": [
+    { "zone": 1, "title": "The Spread Business", "front_door": "Z1.1" },
+    { "zone": 2, "title": "Three Businesses, One Sector", "front_door": "Z2.1" },
+    { "zone": 3, "title": "What Drives the Firms", "front_door": "Z3.1" },
+    { "zone": 4, "title": "Going Deeper: Analyzing One", "front_door": "Z4.1" },
+    { "zone": 5, "title": "The Rules & the Fragility", "front_door": "Z5.1" }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 7,
+    "global_range": "G286–G292",
+    "zone_node_count": 11,
+    "globals_reused": [
+      "G25",
+      "G27",
+      "G29",
+      "G34",
+      "G63",
+      "G69",
+      "G70",
+      "G74",
+      "G88",
+      "G91",
+      "G92",
+      "G95",
+      "G101",
+      "G103",
+      "G117",
+      "G150",
+      "G151",
+      "G180",
+      "G238",
+      "G244",
+      "G255",
+      "G257",
+      "G263",
+      "G275",
+      "G276",
+      "G277",
+      "G278",
+      "G279"
+    ],
+    "gap_count": 2
+  }
+}

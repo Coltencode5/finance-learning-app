@@ -1,0 +1,105 @@
+[
+  {
+    "id": "sector-financials.z2.1",
+    "local_id": "Z2.1",
+    "module": "sector-financials",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Banks: Commercial, Universal & the Deposit Franchise",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Banks covers a range — the retail/commercial bank (deposits and loans on Main Street), the universal bank (that plus a Wall Street dealmaking arm under one roof), and pure wholesale institutions — and the durable advantage running through all of them is a cheap, loyal deposit base.",
+    "explainer_covers": [
+      "What's inside a bank (Golin Ch. 3): the four working parts — commercial/wholesale banking, retail/consumer banking, treasury, and asset management — and roughly what each contributes.",
+      "The one-roof question: universal banking vs. the split model — Glass-Steagall's rise and repeal as the industry's structural fault line, and why one bank's stock can contain a lender, a trading desk, and an advisor all at once (the IB module's world, seen here as a segment of the sector).",
+      "Why the deposit base is the real moat (Greenwald's lens): customers who don't switch + rules that keep new banks out = one of the most durable advantages in the whole economy — which is why deposit cost and stickiness separate banks more than loan growth does.",
+      "What banks lend on (Golin): loans sorted by term, security, and purpose — and why a bank's loan mix (consumer vs. business vs. commercial real estate) is a big part of its identity and its risk.",
+      "Where the loans go when banks sell them: securitization (★G63/★G279) as the bridge from the loan book into the bond market."
+    ],
+    "connects_to": [
+      { "ref": "G279", "note": null },
+      { "ref": "G101", "note": "universal banks as underwriters — the IB seam" },
+      { "ref": "sector-financials.z1.1", "note": null },
+      { "ref": "sector-financials.z3.2", "note": null },
+      { "ref": "investment-banking.z1.1", "note": null }
+    ],
+    "connects_to_raw": "`★G279`, `★G101` (universal banks as underwriters — the IB seam), Z1.1, Z3.2 (loan mix meets asset quality), `investment-banking.z1.1`.",
+    "gaps": [],
+    "real_world_layer": "Golin Ch. 3; Greenwald & Kahn.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-financials.z2.2",
+    "local_id": "Z2.2",
+    "module": "sector-financials",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Insurance: The Business That Gets Paid Before It Pays",
+    "tag": "global",
+    "global_id": "G288",
+    "quick_definition": "Insurance runs a business almost every other industry runs backwards: customers pay premiums now for claims paid later, so the insurer holds a pool of money in between — float — that it gets to invest, while the insurance itself is scored by the combined ratio: if claims and expenses come to less than premiums, the insurer was effectively paid to hold that float.",
+    "explainer_covers": [
+      "The inversion that defines the business: revenue arrives before costs, which means an insurer's profit is partly an estimate — reserving for claims that haven't happened yet — and why that makes the numbers judgment-laden.",
+      "★G288 float, explained: the pile of policyholder money sitting between premium and claim; it behaves like borrowing without a lender, and the famous insight (Buffett's) is that its \"cost\" is just the underwriting result — so an insurer that breaks even on underwriting gets to invest a large pool for free.",
+      "★G289 the combined ratio: claims plus expenses as a share of premiums — under 100% means an underwriting profit; and why the disciplined insurers happily write less business when prices are soft (the underwriting cycle).",
+      "What \"underwriting\" means here vs. on Wall Street — disambiguate_with ★G101 (see Part 1): same word, opposite job.",
+      "Life vs. property-casualty in one contrast: how long the promises last (decades vs. a year), and what actually drives the profit (investment spread vs. underwriting result).",
+      "One footnote from the dossier: when banks own insurers, regulators treat it harshly (Ramirez Ch. 11 — \"double leverage\"), which is why the giant bank-insurance conglomerates mostly unwound after 2008."
+    ],
+    "connects_to": [
+      { "ref": "G101", "note": "disambiguate — the two underwritings seam" },
+      { "ref": "G69", "note": "disambiguate — float vs. floating rate" },
+      { "ref": "sector-financials.z4.1", "note": null },
+      { "ref": "wealth-management.z1.1", "note": "insurance as a product — the inside view" }
+    ],
+    "connects_to_raw": "`★G101` (the two-underwritings seam), `★G69` (the float / floating near-miss), Z4.1 (why insurers, like banks, are valued on the equity side), `wealth-management.z1.1` (insurance as a product — the inside view).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "insurance-source-depth — thin insurance coverage dossier-wide; drafted from standard material + Ramirez Ch. 11. Revisit on insurance-text acquisition.",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Buffett letters (float); Ramirez Ch. 11.",
+    "source_refs": [],
+    "status": "mapped",
+    "hosts_globals": ["G289"]
+  },
+  {
+    "id": "sector-financials.z2.3",
+    "local_id": "Z2.3",
+    "module": "sector-financials",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "The Fee Machines: Capital Markets & Asset-Light Financials",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The sector's third leg doesn't earn a spread at all — it earns fees: brokers and investment banks (deal and trading fees), asset and wealth managers (a cut of the money they manage), and exchanges and market infrastructure (a toll on every trade). These are capital-light businesses whose fortunes rise and fall on completely different things than a bank's.",
+    "explainer_covers": [
+      "The map and how each one earns: advisory and underwriting fees (★G101, ★G103), trading and prime brokerage (★G117), fees on assets under management (★G151, ★G180), and exchange/data tolls — each of which is a whole role module viewed here as one segment.",
+      "The seam, stated in-node (Part 1's first callout): those modules teach the jobs; this node teaches the businesses as an industry. What actually moves them: fee compression as a slow tide against traditional asset managers (★G150 — Bogle's arithmetic), how much of a firm's revenue simply rides the market, deal-cycle swings for the advisory names, and the near-unbeatable network-effect moat of a dominant exchange.",
+      "Why these decouple from banks: barely any balance sheet, no NIM, no loan-loss cycle in the earnings — but a strong pull from the market cycle. The \"Financials\" label hides three genuinely different businesses.",
+      "Consumer finance in a paragraph: card and consumer-credit firms as hybrids — a spread business (Z1.1) with bank-like credit costs (Z3.2) but often funded outside the deposit system.",
+      "Why the sub-industries matter to anyone comparing these firms: putting a bank and an exchange in the same bucket is a category error — a point that becomes an analyst's problem the moment they build a comparison (the door to Z4/ER)."
+    ],
+    "connects_to": [
+      { "ref": "G101", "note": null },
+      { "ref": "G103", "note": null },
+      { "ref": "G117", "note": null },
+      { "ref": "G151", "note": null },
+      { "ref": "G180", "note": null },
+      { "ref": "G150", "note": null },
+      { "ref": "investment-banking.z1.1", "note": "the seam's far side — inside view" },
+      { "ref": "asset-management.z1.1", "note": "the seam's far side — inside view" },
+      { "ref": "wealth-management.z1.1", "note": "the seam's far side — inside view" },
+      { "ref": "hedge-funds.z1.1", "note": "the seam's far side — inside view" },
+      { "ref": "sector-financials.z4.1", "note": null }
+    ],
+    "connects_to_raw": "`★G101`, `★G103`, `★G117`, `★G151`, `★G180`, `★G150`, `investment-banking` / `asset-management` / `wealth-management` / `hedge-funds` (the four inside views — the seam's far side), Z4.1.",
+    "gaps": [],
+    "real_world_layer": null,
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "generated_by": "pipeline/build/build_graph.py",
-  "edge_count": 4091,
+  "edge_count": 4185,
   "edges": [
     {
       "from": "G102",
@@ -34,6 +34,12 @@
     },
     {
       "from": "G277",
+      "to": "G286",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G277",
       "to": "G70",
       "kind": "disambiguates",
       "note": null
@@ -45,8 +51,38 @@
       "note": null
     },
     {
+      "from": "G286",
+      "to": "G277",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G286",
+      "to": "G70",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G288",
+      "to": "G69",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
       "from": "G53",
       "to": "G102",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G69",
+      "to": "G288",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G70",
+      "to": "G286",
       "kind": "disambiguates",
       "note": null
     },
@@ -2911,6 +2947,12 @@
       "to": "real-estate.z5.3",
       "kind": "references",
       "note": "REIT valuation treatment — NAV & the public-private gap"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "sector-financials.z1.1",
+      "kind": "references",
+      "note": "GICS financials sector lens — understand the sector here, learn to research it in ER"
     },
     {
       "from": "equity-research.z2.4",
@@ -6349,6 +6391,12 @@
       "to": "fixed-income.z4.9",
       "kind": "references",
       "note": null
+    },
+    {
+      "from": "fixed-income.z4.8",
+      "to": "sector-financials.z4.2",
+      "kind": "references",
+      "note": "attachment — bank-credit analysis deferred here per scope boundary 3"
     },
     {
       "from": "fixed-income.z4.9",
@@ -20357,6 +20405,522 @@
     {
       "from": "real-estate.z5.5",
       "to": "private-equity.z5.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "G286",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "G244",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "G257",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "G63",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "attachment — the bidirectional door to sector research craft"
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "sector-financials.z2.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "sector-financials.z3.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.1",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.2",
+      "to": "G29",
+      "kind": "references",
+      "note": "elective vs. structural leverage"
+    },
+    {
+      "from": "sector-financials.z1.2",
+      "to": "fixed-income.z1.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.2",
+      "to": "sector-financials.z3.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.2",
+      "to": "sector-financials.z5.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z1.2",
+      "to": "sector-financials.z5.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.1",
+      "to": "G101",
+      "kind": "references",
+      "note": "universal banks as underwriters — the IB seam"
+    },
+    {
+      "from": "sector-financials.z2.1",
+      "to": "G279",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.1",
+      "to": "investment-banking.z1.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.1",
+      "to": "sector-financials.z1.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.1",
+      "to": "sector-financials.z3.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "G288",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "G289",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "G101",
+      "kind": "references",
+      "note": "disambiguate — the two underwritings seam"
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "G69",
+      "kind": "references",
+      "note": "disambiguate — float vs. floating rate"
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.2",
+      "to": "wealth-management.z1.1",
+      "kind": "references",
+      "note": "insurance as a product — the inside view"
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G101",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G103",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G117",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G150",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G151",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "G180",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "asset-management.z1.1",
+      "kind": "references",
+      "note": "the seam's far side — inside view"
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "hedge-funds.z1.1",
+      "kind": "references",
+      "note": "the seam's far side — inside view"
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "investment-banking.z1.1",
+      "kind": "references",
+      "note": "the seam's far side — inside view"
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z2.3",
+      "to": "wealth-management.z1.1",
+      "kind": "references",
+      "note": "the seam's far side — inside view"
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "G290",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "G286",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "sector-financials.z1.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "sector-financials.z3.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.1",
+      "to": "sector-financials.z5.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "G291",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "G255",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "G290",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "sector-financials.z1.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "sector-financials.z2.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z3.2",
+      "to": "sector-financials.z4.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G25",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G27",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G88",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G91",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G92",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "G95",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "equity-research.z3.7",
+      "kind": "references",
+      "note": "generic machinery — the duplication guard"
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "equity-research.z3.8",
+      "kind": "references",
+      "note": "generic machinery — the duplication guard"
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "real-estate.z5.3",
+      "kind": "references",
+      "note": "NAV — the sector layer's other book-value cousin"
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "sector-financials.z3.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.1",
+      "to": "sector-financials.z5.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G275",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G276",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G277",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G278",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G287",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G29",
+      "kind": "references",
+      "note": "disambiguate — the negative seam"
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G291",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G34",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "G74",
+      "kind": "references",
+      "note": "disambiguate — the negative seam"
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "fixed-income.z4.8",
+      "kind": "references",
+      "note": "attachment — the deferral handshake completed"
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "sector-financials.z5.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z4.2",
+      "to": "sector-financials.z5.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "G287",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "G279",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "macro-economics.z1.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "sector-financials.z1.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.1",
+      "to": "sector-financials.z4.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "G292",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "G238",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "G244",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "G255",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "G263",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "macro-economics.z5.9",
+      "kind": "references",
+      "note": "the crisis canon — the episodes this node's mechanics explain"
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "sector-financials.z1.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "sector-financials.z4.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-financials.z5.2",
+      "to": "sector-financials.z5.1",
       "kind": "references",
       "note": null
     },

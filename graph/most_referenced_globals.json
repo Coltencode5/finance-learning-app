@@ -5,9 +5,9 @@
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 49,
+      "inbound_references": 51,
       "home_of_edges": 1,
-      "total_inbound": 49
+      "total_inbound": 51
     },
     {
       "id": "G1",
@@ -52,6 +52,13 @@
       "total_inbound": 22
     },
     {
+      "id": "G255",
+      "term": "The credit cycle (Z4.1)",
+      "inbound_references": 21,
+      "home_of_edges": 1,
+      "total_inbound": 21
+    },
+    {
       "id": "G248",
       "term": "The risk-free rate & the term structure of interest rates (Z2.6)",
       "inbound_references": 20,
@@ -64,6 +71,13 @@
       "inbound_references": 20,
       "home_of_edges": 1,
       "total_inbound": 20
+    },
+    {
+      "id": "G69",
+      "term": "Floating rate / Reference rate (SOFR)",
+      "inbound_references": 20,
+      "home_of_edges": 1,
+      "total_inbound": 21
     },
     {
       "id": "G125",
@@ -94,8 +108,8 @@
       "total_inbound": 19
     },
     {
-      "id": "G255",
-      "term": "The credit cycle (Z4.1)",
+      "id": "G263",
+      "term": "Financial crises (the taxonomy & contagion) (Z5.6)",
       "inbound_references": 19,
       "home_of_edges": 1,
       "total_inbound": 19
@@ -103,13 +117,6 @@
     {
       "id": "G4",
       "term": "J-curve",
-      "inbound_references": 19,
-      "home_of_edges": 1,
-      "total_inbound": 19
-    },
-    {
-      "id": "G69",
-      "term": "Floating rate / Reference rate (SOFR)",
       "inbound_references": 19,
       "home_of_edges": 1,
       "total_inbound": 19
@@ -124,6 +131,13 @@
     {
       "id": "G136",
       "term": "The edge / informational advantage",
+      "inbound_references": 18,
+      "home_of_edges": 1,
+      "total_inbound": 18
+    },
+    {
+      "id": "G150",
+      "term": "The cost/fee drag (Bogle's arithmetic)",
       "inbound_references": 18,
       "home_of_edges": 1,
       "total_inbound": 18
@@ -150,18 +164,11 @@
       "total_inbound": 18
     },
     {
-      "id": "G263",
-      "term": "Financial crises (the taxonomy & contagion) (Z5.6)",
+      "id": "G34",
+      "term": "Covenant",
       "inbound_references": 18,
       "home_of_edges": 1,
       "total_inbound": 18
-    },
-    {
-      "id": "G150",
-      "term": "The cost/fee drag (Bogle's arithmetic)",
-      "inbound_references": 17,
-      "home_of_edges": 1,
-      "total_inbound": 17
     },
     {
       "id": "G166",
@@ -180,13 +187,6 @@
     {
       "id": "G262",
       "term": "Sovereign debt & sovereign risk (Z5.4)",
-      "inbound_references": 17,
-      "home_of_edges": 1,
-      "total_inbound": 17
-    },
-    {
-      "id": "G34",
-      "term": "Covenant",
       "inbound_references": 17,
       "home_of_edges": 1,
       "total_inbound": 17
@@ -220,6 +220,13 @@
       "total_inbound": 16
     },
     {
+      "id": "G27",
+      "term": "Valuation multiples",
+      "inbound_references": 16,
+      "home_of_edges": 1,
+      "total_inbound": 16
+    },
+    {
       "id": "G28",
       "term": "Due diligence",
       "inbound_references": 16,
@@ -229,13 +236,6 @@
     {
       "id": "G197",
       "term": "How research is paid for (the bundle, soft dollars & MiFID II unbundling)",
-      "inbound_references": 15,
-      "home_of_edges": 1,
-      "total_inbound": 15
-    },
-    {
-      "id": "G27",
-      "term": "Valuation multiples",
       "inbound_references": 15,
       "home_of_edges": 1,
       "total_inbound": 15
@@ -329,7 +329,7 @@
       "term": "Spread / Credit margin",
       "inbound_references": 14,
       "home_of_edges": 1,
-      "total_inbound": 15
+      "total_inbound": 16
     },
     {
       "id": "G10",
@@ -372,6 +372,13 @@
       "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
+    },
+    {
+      "id": "G277",
+      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
+      "inbound_references": 13,
+      "home_of_edges": 1,
+      "total_inbound": 14
     },
     {
       "id": "G40",
@@ -486,13 +493,6 @@
       "total_inbound": 12
     },
     {
-      "id": "G277",
-      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
-      "inbound_references": 12,
-      "home_of_edges": 1,
-      "total_inbound": 12
-    },
-    {
       "id": "G36",
       "term": "SPA (Sale & Purchase Agreement)",
       "inbound_references": 12,
@@ -505,6 +505,20 @@
       "inbound_references": 12,
       "home_of_edges": 1,
       "total_inbound": 12
+    },
+    {
+      "id": "G88",
+      "term": "Comparable companies analysis (\"comps\")",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G101",
+      "term": "Underwriting",
+      "inbound_references": 11,
+      "home_of_edges": 1,
+      "total_inbound": 11
     },
     {
       "id": "G106",
@@ -591,13 +605,6 @@
       "total_inbound": 12
     },
     {
-      "id": "G88",
-      "term": "Comparable companies analysis (\"comps\")",
-      "inbound_references": 11,
-      "home_of_edges": 1,
-      "total_inbound": 11
-    },
-    {
       "id": "G112",
       "term": "Information ratio (IR)",
       "inbound_references": 10,
@@ -637,6 +644,13 @@
       "term": "The robo-advisor / digital advice",
       "inbound_references": 10,
       "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G180",
+      "term": "Wealth-management fee models",
+      "inbound_references": 10,
+      "home_of_edges": 2,
       "total_inbound": 10
     },
     {
@@ -689,6 +703,13 @@
       "total_inbound": 10
     },
     {
+      "id": "G244",
+      "term": "The central bank & the Federal Reserve (Z2.2)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
       "id": "G283",
       "term": "The bond index & the benchmark (the Agg) (Z5.5)",
       "inbound_references": 10,
@@ -724,6 +745,20 @@
       "total_inbound": 10
     },
     {
+      "id": "G91",
+      "term": "WACC (Weighted Average Cost of Capital)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G103",
+      "term": "The underwriting spread / gross spread",
+      "inbound_references": 9,
+      "home_of_edges": 2,
+      "total_inbound": 9
+    },
+    {
       "id": "G122",
       "term": "Catalyst",
       "inbound_references": 9,
@@ -745,6 +780,13 @@
       "total_inbound": 9
     },
     {
+      "id": "G151",
+      "term": "AUM-based fee economics & scale",
+      "inbound_references": 9,
+      "home_of_edges": 2,
+      "total_inbound": 9
+    },
+    {
       "id": "G168",
       "term": "Tax-advantaged accounts (the wrappers)",
       "inbound_references": 9,
@@ -754,13 +796,6 @@
     {
       "id": "G173",
       "term": "Estate planning",
-      "inbound_references": 9,
-      "home_of_edges": 2,
-      "total_inbound": 9
-    },
-    {
-      "id": "G180",
-      "term": "Wealth-management fee models",
       "inbound_references": 9,
       "home_of_edges": 2,
       "total_inbound": 9
@@ -808,6 +843,20 @@
       "total_inbound": 9
     },
     {
+      "id": "G25",
+      "term": "Enterprise Value (EV)",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
+      "id": "G257",
+      "term": "The yield curve & its shape (the inversion signal) (Z4.5)",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
       "id": "G282",
       "term": "Repo & secured financing (Z5.3)",
       "inbound_references": 9,
@@ -850,27 +899,6 @@
       "total_inbound": 9
     },
     {
-      "id": "G91",
-      "term": "WACC (Weighted Average Cost of Capital)",
-      "inbound_references": 9,
-      "home_of_edges": 1,
-      "total_inbound": 9
-    },
-    {
-      "id": "G101",
-      "term": "Underwriting",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G103",
-      "term": "The underwriting spread / gross spread",
-      "inbound_references": 8,
-      "home_of_edges": 2,
-      "total_inbound": 8
-    },
-    {
       "id": "G104",
       "term": "League tables",
       "inbound_references": 8,
@@ -910,13 +938,6 @@
       "term": "Style & the style box",
       "inbound_references": 8,
       "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G151",
-      "term": "AUM-based fee economics & scale",
-      "inbound_references": 8,
-      "home_of_edges": 2,
       "total_inbound": 8
     },
     {
@@ -976,29 +997,15 @@
       "total_inbound": 8
     },
     {
-      "id": "G244",
-      "term": "The central bank & the Federal Reserve (Z2.2)",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G25",
-      "term": "Enterprise Value (EV)",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G257",
-      "term": "The yield curve & its shape (the inversion signal) (Z4.5)",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 9
-    },
-    {
       "id": "G259",
       "term": "The discount-rate channel & the equity risk premium (CAPM bridge) (Z4.7)",
+      "inbound_references": 8,
+      "home_of_edges": 1,
+      "total_inbound": 8
+    },
+    {
+      "id": "G276",
+      "term": "Credit ratings & the rating agencies (Z4.2)",
       "inbound_references": 8,
       "home_of_edges": 1,
       "total_inbound": 8
@@ -1158,13 +1165,6 @@
       "total_inbound": 7
     },
     {
-      "id": "G276",
-      "term": "Credit ratings & the rating agencies (Z4.2)",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 7
-    },
-    {
       "id": "G30",
       "term": "Net debt",
       "inbound_references": 7,
@@ -1319,6 +1319,13 @@
       "total_inbound": 6
     },
     {
+      "id": "G238",
+      "term": "Recession & depression (Z1.7)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G241",
       "term": "Economic indicators (leading, coincident, lagging) (Z1.10)",
       "inbound_references": 6,
@@ -1368,6 +1375,13 @@
       "total_inbound": 6
     },
     {
+      "id": "G279",
+      "term": "Securitization (Z3.10)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G43",
       "term": "Drag-along / Tag-along",
       "inbound_references": 6,
@@ -1382,6 +1396,13 @@
       "total_inbound": 6
     },
     {
+      "id": "G74",
+      "term": "Coverage ratios",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G82",
       "term": "Non-accrual & Watch-list",
       "inbound_references": 6,
@@ -1389,8 +1410,22 @@
       "total_inbound": 6
     },
     {
+      "id": "G92",
+      "term": "Unlevered Free Cash Flow (UFCF)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G93",
       "term": "Terminal value",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G95",
+      "term": "Equity Value ↔ Enterprise Value bridge",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1543,13 +1578,6 @@
       "total_inbound": 5
     },
     {
-      "id": "G238",
-      "term": "Recession & depression (Z1.7)",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
       "id": "G269",
       "term": "Spot, forward & par rates (the curve toolkit) (Z2.7)",
       "inbound_references": 5,
@@ -1559,6 +1587,20 @@
     {
       "id": "G271",
       "term": "TIPS & inflation-linked bonds (Z3.3)",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G275",
+      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G278",
+      "term": "The credit default swap (CDS) (Z4.7)",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1599,29 +1641,8 @@
       "total_inbound": 5
     },
     {
-      "id": "G74",
-      "term": "Coverage ratios",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
       "id": "G80",
       "term": "Credit / facility agreement",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
-      "id": "G92",
-      "term": "Unlevered Free Cash Flow (UFCF)",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
-      "id": "G95",
-      "term": "Equity Value ↔ Enterprise Value bridge",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1711,27 +1732,6 @@
       "total_inbound": 4
     },
     {
-      "id": "G275",
-      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
-      "id": "G278",
-      "term": "The credit default swap (CDS) (Z4.7)",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
-      "id": "G279",
-      "term": "Securitization (Z3.10)",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
       "id": "G31",
       "term": "Working capital",
       "inbound_references": 4,
@@ -1783,6 +1783,13 @@
     {
       "id": "G100",
       "term": "Consideration mix (cash / stock / debt)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G117",
+      "term": "Prime brokerage",
       "inbound_references": 3,
       "home_of_edges": 1,
       "total_inbound": 3
@@ -1872,6 +1879,13 @@
       "total_inbound": 3
     },
     {
+      "id": "G63",
+      "term": "Non-bank lending / Disintermediation",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
       "id": "G85",
       "term": "The pitch / pitchbook",
       "inbound_references": 3,
@@ -1891,13 +1905,6 @@
       "inbound_references": 3,
       "home_of_edges": 1,
       "total_inbound": 3
-    },
-    {
-      "id": "G117",
-      "term": "Prime brokerage",
-      "inbound_references": 2,
-      "home_of_edges": 1,
-      "total_inbound": 2
     },
     {
       "id": "G130",
@@ -1963,8 +1970,29 @@
       "total_inbound": 2
     },
     {
-      "id": "G63",
-      "term": "Non-bank lending / Disintermediation",
+      "id": "G286",
+      "term": "Net interest margin (NIM) (Z1.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 4
+    },
+    {
+      "id": "G287",
+      "term": "Regulatory capital: CET1, RWAs & the Basel ratios (Z5.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G290",
+      "term": "Provision for loan losses & the allowance (Z3.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G291",
+      "term": "Non-performing loans & asset quality (Z3.2)",
       "inbound_references": 2,
       "home_of_edges": 1,
       "total_inbound": 2
@@ -1996,15 +2024,36 @@
       "inbound_references": 1,
       "home_of_edges": 1,
       "total_inbound": 1
+    },
+    {
+      "id": "G288",
+      "term": "Insurance float (Z2.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G289",
+      "term": "The combined ratio (Z2.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G292",
+      "term": "The bank run & deposit insurance (Z5.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
     }
   ],
   "top_10": [
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 49,
+      "inbound_references": 51,
       "home_of_edges": 1,
-      "total_inbound": 49
+      "total_inbound": 51
     },
     {
       "id": "G1",
@@ -2049,6 +2098,13 @@
       "total_inbound": 22
     },
     {
+      "id": "G255",
+      "term": "The credit cycle (Z4.1)",
+      "inbound_references": 21,
+      "home_of_edges": 1,
+      "total_inbound": 21
+    },
+    {
       "id": "G248",
       "term": "The risk-free rate & the term structure of interest rates (Z2.6)",
       "inbound_references": 20,
@@ -2061,13 +2117,6 @@
       "inbound_references": 20,
       "home_of_edges": 1,
       "total_inbound": 20
-    },
-    {
-      "id": "G125",
-      "term": "Market efficiency (and its limits)",
-      "inbound_references": 19,
-      "home_of_edges": 2,
-      "total_inbound": 19
     }
   ]
 }

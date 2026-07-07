@@ -41,6 +41,21 @@
       "id": "G272",
       "term": "The money market (bills, CP, CDs) (Z3.5)",
       "inbound_references": 1
+    },
+    {
+      "id": "G288",
+      "term": "Insurance float (Z2.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G289",
+      "term": "The combined ratio (Z2.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G292",
+      "term": "The bank run & deposit insurance (Z5.2)",
+      "inbound_references": 1
     }
   ]
 }
