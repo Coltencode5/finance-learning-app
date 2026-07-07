@@ -8,19 +8,14 @@
 - **Page count:** 239
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: Contents page detected but dot-leader page numbers absent; chapter headings reconstructed from inline text; figure/table caption lines mixed into heading map; page references approximate.
-- **Main areas covered (heading-level, factual):**
-  - Chapter 1: Platform Thinking: Introduction
-  - Chapter 2: Winner Take All or Most: More Than Network Effects
-  - Chapter 3: Strategy and Business Models: Innovation, Transaction, or
-  - Chapter 4: Common Mistakes: Mispricing, Mistrust, Mistiming—and
-  - Chapter 5: Old Dogs and New Tricks: Build, Buy, or Belong to a Platform
-  - Chapter 6: Double-Edged Swords: Harness Platform Power, but Don’t
-  - Chapter 7: Looking Forward: Platforms and the Future
-  - ENGAGE MULTIPLE SIDES OF A MARKET
-  - AND ECOSYSTEM
-  - GENERATE NETWORK EFFECTS
-  - SOLVE A CHICKEN-OR-EGG PROBLEM
-  - CONTROL SAMPLE, AND PLATFORMS, 1995–2015
+- **Main areas covered (curated from partial extraction — figure/caption debris removed):**
+  - Chapter 1: Platform Thinking — Introduction
+  - Chapter 2: Winner Take All or Most — More Than Network Effects
+  - Chapter 3: Strategy and Business Models — Innovation, Transaction, or Hybrid
+  - Chapter 4: Common Mistakes — Mispricing, Mistrust, Mistiming, and Hubris
+  - Chapter 5: Old Dogs and New Tricks — Build, Buy, or Belong to a Platform
+  - Chapter 6: Double-Edged Swords — Harness Platform Power, but Don't Abuse It
+  - Chapter 7: Looking Forward — Platforms and the Future
 
 ## Subscribed
 - **Author/editor:** Tien Tzuo and Gabe Weisert
@@ -30,29 +25,22 @@
 - **Page count:** 235
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: no dot-leader TOC; chapter titles split across lines (e.g. 'CHAPTER 1' / 'THE END OF AN ERA'); front-matter headings duplicated; page references approximate.
-- **Main areas covered (heading-level, factual):**
-  - INTRODUCTION
-  - THE NEW SUBSCRIPTION ECONOMY
-  - CHAPTER 1
-  - THE END OF AN ERA
-  - CHAPTER 2
-  - FLIPPING THE RETAIL SCRIPT
-  - CHAPTER 3
-  - THE NEW GOLDEN AGE OF MEDIA
-  - CHAPTER 4
-  - PLANES, TRAINS, AND AUTOMOBILES
-  - CHAPTER 5
-  - COMPANIES FORMERLY KNOWN AS NEWSPAPERS
-  - CHAPTER 6
-  - SWALLOWING THE FISH: LESSONS FROM THE REBIRTH OF
-  - CHAPTER 7
-  - IOT AND THE FALL AND RISE OF MANUFACTURING
-  - CHAPTER 8
-  - THE END OF OWNERSHIP
-  - SUCCEEDING IN THE NEW SUBSCRIPTION ECONOMY
-  - CHAPTER 9
-  - THAT WTF MOMENT
-  - CHAPTER 10
+- **Main areas covered (curated from partial extraction — split chapter labels merged):**
+  - Introduction
+  - Part 1: The New Subscription Economy
+  - Chapter 1: The End of an Era
+  - Chapter 2: Flipping the Retail Script
+  - Chapter 3: The New Golden Age of Media
+  - Chapter 4: Planes, Trains, and Automobiles
+  - Chapter 5: Companies Formerly Known as Newspapers
+  - Chapter 6: Swallowing the Fish — Lessons from the Rebirth of Tech
+  - Chapter 7: IoT and the Fall and Rise of Manufacturing
+  - Chapter 8: The End of Ownership
+  - Part 2: Succeeding in the New Subscription Economy
+  - Chapter 9: That WTF Moment
+  - Chapter 10: Innovation — Staying in Beta Forever
+  - Chapter 11: Marketing — Rethinking the Four P's
+  - Chapter 12: Sales — The Eight New Rules
 
 ## Chip War
 - **Author/editor:** Chris Miller
@@ -62,31 +50,11 @@
 - **Page count:** 654
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: chapter numbers extracted without chapter titles on same line; promotional 'CLICK HERE TO SIGN UP' debris in heading map; no reliable dot-leader TOC; page references approximate.
-- **Main areas covered (heading-level, factual):**
-  - COLD WAR CHIPS
-  - CHAPTER 1
-  - CHAPTER 2
-  - CHAPTER 3
-  - CHAPTER 4
-  - CHAPTER 5
-  - CHAPTER 6
-  - THE CIRCUITRY OF THE
-  - AMERICAN WORLD
-  - CHAPTER 7
-  - CHAPTER 8
-  - CHAPTER 9
-  - CHAPTER 10
-  - CHAPTER 11
-  - CHAPTER 12
-  - CHAPTER 13
-  - CHAPTER 14
-  - CHAPTER 15
-  - CHAPTER 16
-  - CHAPTER 17
-  - CHAPTER 18
-  - CHAPTER 19
-  - CHAPTER 20
-  - AMERICA RESURGENT
+- **Main areas covered (curated from partial extraction — chapter numbers only in source; part headings retained):**
+  - Part I: Cold War Chips (Chapters 1–6)
+  - Part II: The Circuitry of the American World (Chapters 7–20)
+  - Part III: America Resurgent (Chapters 21+)
+  - Note: individual chapter titles not reliably extractable from OceanofPDF copy; semiconductor supply-chain and geopolitical narrative throughout.
 
 ## Investment Valuation (University Edition)
 - **Author/editor:** Aswath Damodaran
@@ -131,32 +99,16 @@
 - **Page count:** 324
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: cover/title-page text captured as headings; chapter takeaways and section labels duplicated; no dot-leader TOC; page references approximate.
-- **Main areas covered (heading-level, factual):**
-  - REVOLUTION
-  - HOW NETWORKED MARKETS
-  - ARE TRANSFORMING THE ECONOMY—
-  - AND HOW TO MAKE THEM WORK FOR YOU
-  - ACKNOWLEDGMENTS
-  - ABOUT THE AUTHORS
-  - SANGEET PAUL CHOUDARY
-  - REVOLUTION
-  - THE PLATFORM REVOLUTION
-  - AND THE SHAPE OF CHANGE
-  - THE PLATFORM REVOLUTION:
-  - TAKEAWAYS FROM CHAPTER ONE
-  - NETWORK EFFECTS
-  - DEMAND ECONOMIES OF SCALE
-  - TWO-SIDED NETWORK EFFECTS
-  - NETWORK EFFECTS VERSUS
-  - OTHER GROWTH-BUILDING TOOLS
-  - SCALING NETWORK EFFECTS: FRICTIONLESS ENTRY
-  - AND OTHER SCALABILITY TOOLS
-  - NEGATIVE NETWORK EFFECTS:
-  - THEIR CAUSE AND CURE
-  - FOUR KINDS OF NETWORK EFFECTS
-  - STRUCTURAL CHANGE: NETWORK EFFECTS TURN
-  - FIRMS INSIDE OUT
-  - TAKEAWAYS FROM CHAPTER TWO
+- **Main areas covered (curated from partial extraction — cover/takeaway debris removed):**
+  - Chapter 1: The Platform Revolution and the Shape of Change
+  - Chapter 2: Network Effects
+  - Chapter 3: Architecture of Platforms
+  - Chapter 4: Disruption
+  - Chapter 5: Launch
+  - Chapter 6: Monetization
+  - Chapter 7: Openness
+  - Chapter 8: Governance
+  - Chapter 9: Policy
 
 ## Lean Analytics
 - **Author/editor:** Alistair Croll and Benjamin Yoskovitz
@@ -166,30 +118,13 @@
 - **Page count:** 439
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: spaced-letter chapter labels (e.g. 'C H A P T E R 1'); duplicate part/chapter headings from layout reflow; ISBN lines in heading map; no dot-leader TOC; page references approximate.
-- **Main areas covered (heading-level, factual):**
-  - THE LEAN SERIES
-  - ERIC RIES SERIES EDITOR
-  - PART ONE: STOP LYING TO YOURSELF
-  - PART TWO: FINDING THE RIGHT METRIC FOR
-  - RIGHT NOW
-  - PART THREE: LINES IN THE SAND
-  - PART FOUR: PUTTING LEAN ANALYTICS TO WORK
-  - PA R T O N E :
-  - STOP LYING TO
-  - C H A P T E R 1
-  - PART ONE: STOP LYING TO YOURSELF
-  - Chapter 1: We’re All Liars
-  - PART ONE: STOP LYING TO YOURSELF
-  - Chapter 1: We’re All Liars
-  - PART ONE: STOP LYING TO YOURSELF
-  - C H A P T E R 2
-  - PART ONE: STOP LYING TO YOURSELF
+- **Main areas covered (curated from partial extraction — duplicates and spaced-letter OCR removed):**
+  - Part One: Stop Lying to Yourself
+  - Chapter 1: We're All Liars
   - Chapter 2: How to Keep Score
-  - PART ONE: STOP LYING TO YOURSELF
-  - Chapter 2: How to Keep Score
-  - PART ONE: STOP LYING TO YOURSELF
-  - Chapter 2: How to Keep Score
-  - PART ONE: STOP LYING TO YOURSELF
+  - Part Two: Finding the Right Metric for Right Now
+  - Part Three: Lines in the Sand
+  - Part Four: Putting Lean Analytics to Work
 
 ## Accenture plc Form 10-K (FY2025)
 - **Company:** Accenture plc
@@ -200,30 +135,14 @@
 - **Path:** `Accenture-2025-10-K.pdf`
 - **Page count:** 102
 - **Extraction status:** clean
-- **Main areas covered (heading-level, factual):**
+- **Main areas covered (standard Form 10-K structure):**
   - Item 1: Business
   - Item 1A: Risk Factors
   - Item 1C: Cybersecurity
   - Item 7: Management's Discussion and Analysis
-  - Item 8: Financial Statements
-  - Item 1B: Unresolved Staff Comments
-  - Item 2: Properties
-  - Item 3: Legal Proceedings
-  - Item 4: Mine Safety Disclosures
-  - Item 5: Market for Registrant’s Common Equity,
-  - Item 6: [Reserved]
-  - Item 7A: , “Quantitative and Qualitative Disclosures About Market Risk” and Note 9 (Financial Instruments) to our
-  - Item 9: Changes in and Disagreements With
-  - Item 9A: Controls and Procedures
-  - Item 9B: Other Information
-  - Item 9C: Disclosure Regarding Foreign
-  - Item 10: Directors, Executive Officers and
-  - Item 11: Executive Compensation
-  - Item 12: Security Ownership of Certain
-  - Item 13: Certain Relationships and Related
-  - Item 14: Principal Accountant Fees and
-  - Item 15: Exhibits, Financial Statement
-  - Item 16: Form 10-K Summary
+  - Item 7A: Quantitative and Qualitative Disclosures About Market Risk
+  - Item 8: Financial Statements and Supplementary Data
+  - Notes: segment reporting, revenue recognition, contract liabilities
 
 ## Palo Alto Networks Form 10-K (FY2025)
 - **Company:** Palo Alto Networks, Inc.
@@ -234,30 +153,14 @@
 - **Path:** `Palo-Alto-Networks-2025-10-K.pdf`
 - **Page count:** 260
 - **Extraction status:** clean
-- **Main areas covered (heading-level, factual):**
+- **Main areas covered (standard Form 10-K structure):**
   - Item 1: Business
   - Item 1A: Risk Factors
   - Item 1C: Cybersecurity
   - Item 7: Management's Discussion and Analysis
-  - Item 8: Financial Statements
-  - Item 1B: Unresolved Staff Comments
-  - Item 2: Properties
-  - Item 3: Legal Proceedings
-  - Item 4: Mine Safety Disclosures
-  - Item 5: Market for Registrant’s Common Equity, Related
-  - Item 6: [Reserved]
-  - Item 7A: Quantitative and Qualitative Disclosures About Market
-  - Item 9: Changes in and Disagreements with Accountants on
-  - Item 9A: Controls and Procedures
-  - Item 9B: Other Information
-  - Item 9C: Disclosure Regarding Foreign Jurisdictions That
-  - Item 10: Directors, Executive Officers and Corporate Governance
-  - Item 11: Executive Compensation
-  - Item 12: Security Ownership of Certain Beneficial Owners and
-  - Item 13: Certain Relationships and Related Transactions, and
-  - Item 14: Principal Accountant Fees and Services
-  - Item 15: Exhibits and Financial Statement Schedules
-  - Item 16: Form 10-K Summary
+  - Item 7A: Quantitative and Qualitative Disclosures About Market Risk
+  - Item 8: Financial Statements and Supplementary Data
+  - Notes: product vs subscription revenue, ARR, remaining performance obligations
 
 ## ServiceNow Form 10-K (FY2025)
 - **Company:** ServiceNow, Inc.
@@ -268,30 +171,14 @@
 - **Path:** `ServiceNow-2025-10-K.pdf`
 - **Page count:** 178
 - **Extraction status:** clean
-- **Main areas covered (heading-level, factual):**
+- **Main areas covered (standard Form 10-K structure):**
   - Item 1: Business
   - Item 1A: Risk Factors
   - Item 1C: Cybersecurity
   - Item 7: Management's Discussion and Analysis
-  - Item 8: Financial Statements
-  - Item 1B: Unresolved Staff Comments
-  - Item 2: Properties
-  - Item 3: Legal Proceedings
-  - Item 4: Mine Safety Disclosures
-  - Item 5: Market for Registrant’s Common Equity, Related Stockholder
-  - Item 6: Selected Consolidated Financial Data
-  - Item 7A: Qualitative and Quantitative Disclosures About Market Risk
-  - Item 9: Changes in and Disagreements with Accountants on Accounting
-  - Item 9A: Controls and Procedures
-  - Item 9B: Other Information
-  - Item 9C: Disclosures Regarding Foreign Jurisdiction that Prevent
-  - Item 10: Directors, Executive Officers and Corporate Governance
-  - Item 11: Executive Compensation
-  - Item 12: Security Ownership of Certain Beneficial Owners and
-  - Item 13: Certain Relationships and Related Transactions and Director
-  - Item 14: Principal Accountant Fees and Services
-  - Item 15: Exhibits and Financial Statement Schedules
-  - Item 16: Form 10-K Summary
+  - Item 7A: Quantitative and Qualitative Disclosures About Market Risk
+  - Item 8: Financial Statements and Supplementary Data
+  - Notes: subscription revenue, professional services, remaining performance obligations
 
 ## CrowdStrike Holdings Form 10-K (FY2025)
 - **Company:** CrowdStrike Holdings, Inc.
@@ -302,30 +189,14 @@
 - **Path:** `CrowdStrike-2025-10-K.pdf`
 - **Page count:** 148
 - **Extraction status:** clean
-- **Main areas covered (heading-level, factual):**
+- **Main areas covered (standard Form 10-K structure):**
   - Item 1: Business
   - Item 1A: Risk Factors
   - Item 1C: Cybersecurity
   - Item 7: Management's Discussion and Analysis
-  - Item 8: Financial Statements
-  - Item 1B: UNRESOLVED STAFF COMMENTS
-  - Item 2: PROPERTIES
-  - Item 3: LEGAL PROCEEDINGS
-  - Item 4: MINE SAFETY DISCLOSURES
-  - Item 5: MARKET FOR REGISTRANT’S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF
-  - Item 6: [RESERVED]
-  - Item 7A: QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
-  - Item 9: CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE
-  - Item 9A: CONTROLS AND PROCEDURES
-  - Item 9B: OTHER INFORMATION
-  - Item 9C: DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS
-  - Item 10: DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE
-  - Item 11: EXECUTIVE COMPENSATION
-  - Item 12: SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER
-  - Item 13: CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS, AND DIRECTOR INDEPENDENCE
-  - Item 14: PRINCIPAL ACCOUNTANT FEES AND SERVICES
-  - Item 15: EXHIBITS AND FINANCIAL STATEMENT SCHEDULES
-  - Item 16: FORM 10-K SUMMARY
+  - Item 7A: Quantitative and Qualitative Disclosures About Market Risk
+  - Item 8: Financial Statements and Supplementary Data
+  - Notes: subscription revenue, ARR, net retention metrics
 
 ## The Software Paradox
 - **Author/editor:** Stephen O'Grady

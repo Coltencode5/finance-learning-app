@@ -94,7 +94,8 @@ Mechanical hit/source coverage observations (not architecture judgments):
 - Concept inventory audited: removed index/OCR false positives and snippet fragments; rewrote definitions as short paraphrases.
 - Chapter_Summaries.md compacted; long copyrighted excerpts removed.
 - Local Windows file paths replaced with neutral filenames in committed dossier files.
-- `raw_extractions/` remains gitignored and uncommitted.
+- Investment Valuation chapter list retained (clean inline headings from extraction).
+- Source_Manifest.md partial-book "main areas covered" lists curated — split chapter labels merged, figure/caption/OCR debris removed; 10-K lists standardized to core Items.
 
 ## 7. Architecture deferral
 No architecture decisions, zone spines, global-reuse calls, or disambiguation judgments have been made. All of that is deferred to the architecture session.
