@@ -11,6 +11,8 @@ on:
       - "scripts/**"
       - "package.json"
       - "package-lock.json"
+      - "tsconfig.json"
+      - "next.config.*"
   pull_request:
     paths:
       - "content/**"
@@ -22,6 +24,8 @@ on:
       - "scripts/**"
       - "package.json"
       - "package-lock.json"
+      - "tsconfig.json"
+      - "next.config.*"
 
 jobs:
   validate:
