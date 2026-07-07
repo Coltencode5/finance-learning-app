@@ -4,7 +4,7 @@
 - **Author/editor:** Michael A. Cusumano, Annabelle Gawer, and David B. Yoffie
 - **Source type:** textbook / practitioner guide
 - **Source tier (config list):** primary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_Business_of_Platforms_-_Michael_A_Cusumano.pdf`
+- **Path:** `The_Business_of_Platforms.pdf`
 - **Page count:** 239
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: Contents page detected but dot-leader page numbers absent; chapter headings reconstructed from inline text; figure/table caption lines mixed into heading map; page references approximate.
@@ -17,36 +17,20 @@
   - Chapter 6: Double-Edged Swords: Harness Platform Power, but Don’t
   - Chapter 7: Looking Forward: Platforms and the Future
   - ENGAGE MULTIPLE SIDES OF A MARKET
-  - FIGURE 1-1: FACEBOOK PLATFORM
   - AND ECOSYSTEM
   - GENERATE NETWORK EFFECTS
   - SOLVE A CHICKEN-OR-EGG PROBLEM
-  - TABLE 1–1: MEDIAN VALUES FOR FORBES GLOBAL 2000, INDUSTRY
   - CONTROL SAMPLE, AND PLATFORMS, 1995–2015
-  - INNOVATION
-  - PLATFORMS
-  - TRANSACTION
-  - PLATFORMS
-  - PLATFORMS)
-  - TRANSACTION
-  - PLATFORMS
-  - EMPLOYEES
-  - OPERATING
-  - R&D/SALES
-  - G&A/SALES
 
 ## Subscribed
 - **Author/editor:** Tien Tzuo and Gabe Weisert
 - **Source type:** practitioner guide
 - **Source tier (config list):** primary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Subscribed_-_Tien_Tzuo.pdf`
+- **Path:** `Subscribed.pdf`
 - **Page count:** 235
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: no dot-leader TOC; chapter titles split across lines (e.g. 'CHAPTER 1' / 'THE END OF AN ERA'); front-matter headings duplicated; page references approximate.
 - **Main areas covered (heading-level, factual):**
-  - TITLE PAGE
-  - COPYRIGHT
-  - DEDICATION
   - INTRODUCTION
   - THE NEW SUBSCRIPTION ECONOMY
   - CHAPTER 1
@@ -74,12 +58,11 @@
 - **Author/editor:** Chris Miller
 - **Source type:** narrative / industry history
 - **Source tier (config list):** primary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Chip_War_-_Chris_Miller.pdf`
+- **Path:** `Chip_War.pdf`
 - **Page count:** 654
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: chapter numbers extracted without chapter titles on same line; promotional 'CLICK HERE TO SIGN UP' debris in heading map; no reliable dot-leader TOC; page references approximate.
 - **Main areas covered (heading-level, factual):**
-  - CLICK HERE TO SIGN UP
   - COLD WAR CHIPS
   - CHAPTER 1
   - CHAPTER 2
@@ -109,7 +92,7 @@
 - **Author/editor:** Aswath Damodaran
 - **Source type:** textbook
 - **Source tier (config list):** primary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Investment_Valuation_University_Edition_-_Aswath_Damodaran.pdf`
+- **Path:** `Investment_Valuation.pdf`
 - **Page count:** 1331
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: Contents label detected but chapter list uses inline headings without dot leaders; very large page count increases offset-based page-reference uncertainty for concept locations.
@@ -144,7 +127,7 @@
 - **Author/editor:** Geoffrey G. Parker, Marshall W. Van Alstyne, and Sangeet Paul Choudary
 - **Source type:** textbook / practitioner guide
 - **Source tier (config list):** secondary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Platform_Revolution_How_Networked_Markets_Are_Transforming_the_Economy--And_How_to_Make_Them_Work_for_You_-_Sangeet_Paul_Choudary.pdf`
+- **Path:** `Platform_Revolution.pdf`
 - **Page count:** 324
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: cover/title-page text captured as headings; chapter takeaways and section labels duplicated; no dot-leader TOC; page references approximate.
@@ -179,15 +162,13 @@
 - **Author/editor:** Alistair Croll and Benjamin Yoskovitz
 - **Source type:** practitioner guide
 - **Source tier (config list):** secondary
-- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Lean_Analytics_-_Alistair_Croll_Benjamin_Yoskovitz.pdf`
+- **Path:** `Lean_Analytics.pdf`
 - **Page count:** 439
 - **Extraction status:** partial
 - **Status detail:** OceanofPDF copy: spaced-letter chapter labels (e.g. 'C H A P T E R 1'); duplicate part/chapter headings from layout reflow; ISBN lines in heading map; no dot-leader TOC; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - THE LEAN SERIES
   - ERIC RIES SERIES EDITOR
-  - ISBN: 978-1-098-16818-6
-  - ISBN: 978-1-098-16818-6
   - PART ONE: STOP LYING TO YOURSELF
   - PART TWO: FINDING THE RIGHT METRIC FOR
   - RIGHT NOW
@@ -216,7 +197,7 @@
 - **Author/editor:** Accenture plc
 - **Source type:** Form 10-K / annual report
 - **Source tier (config list):** add-on
-- **Path:** `c:\Users\cfroo\Downloads\Accenture-2025-10-K.pdf`
+- **Path:** `Accenture-2025-10-K.pdf`
 - **Page count:** 102
 - **Extraction status:** clean
 - **Main areas covered (heading-level, factual):**
@@ -250,7 +231,7 @@
 - **Author/editor:** Palo Alto Networks, Inc.
 - **Source type:** Form 10-K / annual report
 - **Source tier (config list):** add-on
-- **Path:** `c:\Users\cfroo\Downloads\0001327567-25-000027.pdf`
+- **Path:** `Palo-Alto-Networks-2025-10-K.pdf`
 - **Page count:** 260
 - **Extraction status:** clean
 - **Main areas covered (heading-level, factual):**
@@ -284,7 +265,7 @@
 - **Author/editor:** ServiceNow, Inc.
 - **Source type:** Form 10-K / annual report
 - **Source tier (config list):** add-on
-- **Path:** `c:\Users\cfroo\Downloads\0505eb02-5a4e-449e-a662-edef3bc70e7b.pdf`
+- **Path:** `ServiceNow-2025-10-K.pdf`
 - **Page count:** 178
 - **Extraction status:** clean
 - **Main areas covered (heading-level, factual):**
@@ -318,7 +299,7 @@
 - **Author/editor:** CrowdStrike Holdings, Inc.
 - **Source type:** Form 10-K / annual report
 - **Source tier (config list):** add-on
-- **Path:** `c:\Users\cfroo\Downloads\0001535527-25-000009.pdf`
+- **Path:** `CrowdStrike-2025-10-K.pdf`
 - **Page count:** 148
 - **Extraction status:** clean
 - **Main areas covered (heading-level, factual):**

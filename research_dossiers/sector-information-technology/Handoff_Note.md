@@ -40,7 +40,7 @@
 - `raw_extractions/` — plain-text dumps (truncated) for architect reference
 
 ## 5. Concept inventory row count
-102
+72
 
 ## 6. Repo-state facts (read-only inspection)
 - Active modules: 12
@@ -89,6 +89,12 @@ Mechanical hit/source coverage observations (not architecture judgments):
 - **SaaS/subscription:** covered by Palo Alto Networks Form 10-K (FY2025) (29 hits), ServiceNow Form 10-K (FY2025) (32 hits), CrowdStrike Holdings Form 10-K (FY2025) (59 hits); prior book-source mechanical hits: 250.
 - **platform/ecosystem economics:** covered by CrowdStrike Holdings Form 10-K (FY2025) (3 hits); prior book-source mechanical hits: 616.
 - **AI infrastructure:** covered by Accenture plc Form 10-K (FY2025) (81 hits), Palo Alto Networks Form 10-K (FY2025) (119 hits), ServiceNow Form 10-K (FY2025) (162 hits), CrowdStrike Holdings Form 10-K (FY2025) (131 hits); prior book-source mechanical hits: 210.
+
+## 6d. Cleanup pass (2026-07-07)
+- Concept inventory audited: removed index/OCR false positives and snippet fragments; rewrote definitions as short paraphrases.
+- Chapter_Summaries.md compacted; long copyrighted excerpts removed.
+- Local Windows file paths replaced with neutral filenames in committed dossier files.
+- `raw_extractions/` remains gitignored and uncommitted.
 
 ## 7. Architecture deferral
 No architecture decisions, zone spines, global-reuse calls, or disambiguation judgments have been made. All of that is deferred to the architecture session.
