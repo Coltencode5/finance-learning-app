@@ -1,8 +1,8 @@
 # finance-graph
 
 The content platform for a finance education app built on a shared knowledge
-graph: 11 modules, 285 global glossary concepts, 580 zone learning nodes,
-4,088 graph edges — all as validated, structured JSON.
+graph: 12 modules, 292 global glossary concepts, 591 zone learning nodes,
+4,185 graph edges — all as validated, structured JSON.
 
 ## The one rule
 
@@ -16,7 +16,7 @@ build outputs — never hand-edit them. See `docs/decisions/ADR-001`.
 ```
 schemas/            JSON Schemas: global, node, module, activity, edge
 content/
-  glossary/         globals.json — the shared glossary (G1–G285), the app's spine
+  glossary/         globals.json — the shared glossary (G1–G292), the app's spine
   modules/{slug}/   module.json + zones/z1..z5.json per module
   activities/       learning activities (empty in V0; schema is ready)
 graph/              graph.json + derived indexes (do not edit; see docs/GRAPH_HEALTH.md)
@@ -48,14 +48,15 @@ orphan/low-reference reports.
 Requires Python 3.10+; `pip install jsonschema` for full schema validation
 (structural checks run without it).
 
-## Current state (post-Milestone 8)
+## Current state (post-Milestone 9)
 
-- **11 active modules**: the 9 legacy role modules plus **macro-economics**
-  (`kind: core-concept`, ADR-002) and **fixed-income** (`kind: asset-class`, ADR-003).
-- Shared glossary: **285 globals (G1–G285)**, contiguous; fixed-income contributed G264–G285.
-  The new-module gate is parameterized to `corpus_max + 1`, so the next active
-  module starts at **G286**.
-- **580 zone nodes**; graph rebuilt — 4,091 edges.
+- **12 active modules**: the 9 legacy role modules plus **macro-economics**
+  (`kind: core-concept`, ADR-002), **fixed-income** (`kind: asset-class`, ADR-003),
+  and **sector-financials** (`kind: sector-layer1`, ADR-003 — wave one, M9).
+- Shared glossary: **292 globals (G1–G292)**, contiguous; sector-financials
+  contributed G286–G292. The new-module gate is parameterized to `corpus_max + 1`,
+  so the next active module starts at **G293**.
+- **591 zone nodes**; graph rebuilt — 4,185 edges.
 - Validation: **0 errors, 0 warnings** (strict content gate).
 - See `PROJECT_STATUS.md` for milestone history and corpus totals.
 - Module factory (Milestone 5) scaffolds new draft modules with kind-appropriate
