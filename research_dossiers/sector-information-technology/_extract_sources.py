@@ -17,7 +17,7 @@ REPO = Path(__file__).resolve().parents[2]
 DOSSIER = Path(__file__).resolve().parent
 DOWNLOADS = Path(r"c:\Users\cfroo\Downloads")
 
-SOURCES = [
+BOOK_SOURCES = [
     {
         "key": "business_of_platforms",
         "path": DOWNLOADS
@@ -72,15 +72,97 @@ SOURCES = [
     },
 ]
 
+FILING_SOURCES = [
+    {
+        "key": "accenture_10k",
+        "path": DOWNLOADS / "Accenture-2025-10-K.pdf",
+        "title": "Accenture plc Form 10-K (FY2025)",
+        "company": "Accenture plc",
+        "filing_year": "FY2025 (fiscal year ended August 31, 2025)",
+        "type": "Form 10-K / annual report",
+        "tier": "add-on",
+    },
+    {
+        "key": "palo_alto_10k",
+        "path": DOWNLOADS / "0001327567-25-000027.pdf",
+        "title": "Palo Alto Networks Form 10-K (FY2025)",
+        "company": "Palo Alto Networks, Inc.",
+        "filing_year": "FY2025 (fiscal year ended July 31, 2025)",
+        "type": "Form 10-K / annual report",
+        "tier": "add-on",
+    },
+    {
+        "key": "servicenow_10k",
+        "path": DOWNLOADS / "0505eb02-5a4e-449e-a662-edef3bc70e7b.pdf",
+        "title": "ServiceNow Form 10-K (FY2025)",
+        "company": "ServiceNow, Inc.",
+        "filing_year": "FY2025 (fiscal year ended December 31, 2025)",
+        "type": "Form 10-K / annual report",
+        "tier": "add-on",
+    },
+    {
+        "key": "crowdstrike_10k",
+        "path": DOWNLOADS / "0001535527-25-000009.pdf",
+        "title": "CrowdStrike Holdings Form 10-K (FY2025)",
+        "company": "CrowdStrike Holdings, Inc.",
+        "filing_year": "FY2025 (fiscal year ended January 31, 2025)",
+        "type": "Form 10-K / annual report",
+        "tier": "add-on",
+    },
+]
+
 MISSING_SOURCES = [
     {
         "title": "The Software Paradox",
         "author": "Stephen O'Grady",
+        "type": "practitioner guide",
         "tier": "secondary",
         "status": "not provided",
         "status_reason": "file not in user-supplied folder",
     },
+    {
+        "title": "Apple Inc. Form 10-K",
+        "author": "Apple Inc.",
+        "company": "Apple Inc.",
+        "type": "Form 10-K / annual report",
+        "tier": "add-on",
+        "status": "not provided",
+        "status_reason": "file not in user-supplied folder",
+    },
 ]
+
+# Source-specific partial-extraction reasons (observed per file, not generic).
+BOOK_QA_REASONS: dict[str, str] = {
+    "business_of_platforms": (
+        "OceanofPDF copy: Contents page detected but dot-leader page numbers absent; "
+        "chapter headings reconstructed from inline text; figure/table caption lines "
+        "mixed into heading map; page references approximate."
+    ),
+    "subscribed": (
+        "OceanofPDF copy: no dot-leader TOC; chapter titles split across lines "
+        "(e.g. 'CHAPTER 1' / 'THE END OF AN ERA'); front-matter headings duplicated; "
+        "page references approximate."
+    ),
+    "chip_war": (
+        "OceanofPDF copy: chapter numbers extracted without chapter titles on same line; "
+        "promotional 'CLICK HERE TO SIGN UP' debris in heading map; no reliable dot-leader TOC; "
+        "page references approximate."
+    ),
+    "investment_valuation": (
+        "OceanofPDF copy: Contents label detected but chapter list uses inline headings "
+        "without dot leaders; very large page count increases offset-based page-reference "
+        "uncertainty for concept locations."
+    ),
+    "platform_revolution": (
+        "OceanofPDF copy: cover/title-page text captured as headings; chapter takeaways "
+        "and section labels duplicated; no dot-leader TOC; page references approximate."
+    ),
+    "lean_analytics": (
+        "OceanofPDF copy: spaced-letter chapter labels (e.g. 'C H A P T E R 1'); "
+        "duplicate part/chapter headings from layout reflow; ISBN lines in heading map; "
+        "no dot-leader TOC; page references approximate."
+    ),
+}
 
 HEADING_RE = re.compile(
     r"^(?:chapter|part|section|appendix)\s+[\divxlc\d]+[\.\:\s]",
@@ -88,9 +170,9 @@ HEADING_RE = re.compile(
 )
 ALLCAPS_LINE = re.compile(r"^[A-Z][A-Z0-9 ,\-–—:&'()/]{8,}$")
 NUMBERED_HEAD = re.compile(r"^\d+(\.\d+)*\s+[A-Z]")
+FILING_ITEM_RE = re.compile(r"^Item\s+(\d+[A-Z]?)\.?\s*(.*)$", re.I)
 
 IT_TERM_PATTERNS = [
-    # Subscription / SaaS economics
     r"software as a service",
     r"\bSaaS\b",
     r"software licensing",
@@ -111,7 +193,6 @@ IT_TERM_PATTERNS = [
     r"seat-based pricing",
     r"freemium",
     r"product-market fit",
-    # Platforms / cloud
     r"platform ecosystem",
     r"platform business",
     r"two-sided market",
@@ -122,7 +203,6 @@ IT_TERM_PATTERNS = [
     r"\bIaaS\b",
     r"platform as a service",
     r"\bPaaS\b",
-    # Semiconductors
     r"semiconductor",
     r"fabless",
     r"foundry",
@@ -132,7 +212,6 @@ IT_TERM_PATTERNS = [
     r"\bwafer\b",
     r"\bTSMC\b",
     r"\bEUV\b",
-    # Hardware / services / margins
     r"hardware",
     r"IT services",
     r"systems integrat",
@@ -144,12 +223,10 @@ IT_TERM_PATTERNS = [
     r"capex",
     r"capital expenditure",
     r"operating leverage",
-    # AI (source-grounded only via pattern match)
     r"artificial intelligence",
     r"\bAI\b",
     r"data center",
     r"GPU",
-    # Valuation / finance overlap
     r"valuation multiple",
     r"price-to-sales",
     r"\bP/S\b",
@@ -184,14 +261,131 @@ IT_TERM_PATTERNS = [
     r"economies of scale",
 ]
 
-THIN_COVERAGE_TERMS = [
-    "IT services",
-    "hardware",
-    "cybersecurity",
-    "enterprise software",
-    "systems integrat",
-    "outsourcing",
+FILING_TERM_PATTERNS = [
+    r"IT services",
+    r"consulting",
+    r"systems integrat",
+    r"managed services",
+    r"outsourcing",
+    r"cybersecurity",
+    r"firewall",
+    r"\bSASE\b",
+    r"cloud security",
+    r"\bXDR\b",
+    r"endpoint security",
+    r"security operations",
+    r"enterprise software",
+    r"workflow automation",
+    r"IT service management",
+    r"platform expansion",
+    r"subscription revenue",
+    r"professional services revenue",
+    r"hardware",
+    r"services revenue",
+    r"installed base",
+    r"platform ecosystem",
+    r"product revenue",
+    r"services revenue",
+    r"remaining performance obligations",
+    r"\bRPO\b",
+    r"annual recurring revenue",
+    r"\bARR\b",
+    r"net retention",
+    r"dollar-based net retention",
+    r"gross margin",
+    r"operating margin",
+    r"segment",
+    r"cloud platform",
+    r"cloud-delivered",
+    r"next-generation firewall",
+    r"\bNGFW\b",
+    r"prisma",
+    r"cortex",
+    r"reinvention services",
+    r"technology services",
 ]
+
+COVERAGE_BUCKETS: list[tuple[str, list[str], list[str]]] = [
+    (
+        "IT services",
+        ["IT services", r"\bconsulting\b", r"professional services"],
+        ["Accenture plc Form 10-K (FY2025)"],
+    ),
+    (
+        "systems integration",
+        [r"systems integrat", r"technology services", r"integration services"],
+        ["Accenture plc Form 10-K (FY2025)"],
+    ),
+    (
+        "managed services / outsourcing",
+        [r"managed services", r"outsourcing", r"managed service"],
+        ["Accenture plc Form 10-K (FY2025)"],
+    ),
+    (
+        "cybersecurity",
+        [r"cybersecurity", r"endpoint security", r"cloud security", r"\bXDR\b", r"\bSASE\b", r"firewall"],
+        [
+            "Palo Alto Networks Form 10-K (FY2025)",
+            "CrowdStrike Holdings Form 10-K (FY2025)",
+        ],
+    ),
+    (
+        "enterprise software",
+        [r"enterprise software", r"workflow automation", r"IT service management", r"cloud platform"],
+        ["ServiceNow Form 10-K (FY2025)"],
+    ),
+    (
+        "hardware/devices",
+        [r"\bhardware\b", r"devices", r"iPhone", r"installed base"],
+        [],
+    ),
+    (
+        "cloud infrastructure",
+        [r"cloud infrastructure", r"hyperscaler", r"data center", r"cloud platform"],
+        [
+            "Palo Alto Networks Form 10-K (FY2025)",
+            "ServiceNow Form 10-K (FY2025)",
+            "CrowdStrike Holdings Form 10-K (FY2025)",
+        ],
+    ),
+    (
+        "semiconductors",
+        [r"semiconductor", r"fabless", r"foundry", r"chip design", r"\bwafer\b", r"\bTSMC\b"],
+        ["Chip War"],
+    ),
+    (
+        "SaaS/subscription",
+        [r"\bSaaS\b", r"subscription revenue", r"recurring revenue", r"\bARR\b", r"annual recurring revenue"],
+        [
+            "Subscribed",
+            "Lean Analytics",
+            "ServiceNow Form 10-K (FY2025)",
+            "CrowdStrike Holdings Form 10-K (FY2025)",
+            "Palo Alto Networks Form 10-K (FY2025)",
+        ],
+    ),
+    (
+        "platform/ecosystem economics",
+        [r"platform ecosystem", r"network effects?", r"two-sided market", r"platform business"],
+        [
+            "The Business of Platforms",
+            "Platform Revolution",
+            "Subscribed",
+        ],
+    ),
+    (
+        "AI infrastructure",
+        [r"artificial intelligence", r"\bAI\b", r"GPU", r"data center"],
+        [
+            "Chip War",
+            "ServiceNow Form 10-K (FY2025)",
+            "Accenture plc Form 10-K (FY2025)",
+            "Palo Alto Networks Form 10-K (FY2025)",
+        ],
+    ),
+]
+
+BOOK_ONLY_KEYS = {s["key"] for s in BOOK_SOURCES}
 
 
 def norm_term(t: str) -> str:
@@ -231,11 +425,15 @@ def corpus_match(term: str, lookup: dict[str, list[str]]) -> str:
 def extract_pdf(path: Path) -> dict:
     doc = fitz.open(path)
     meta = doc.metadata or {}
-    pages = []
+    pages: list[str] = []
     headings: list[dict] = []
+    page_offsets: list[int] = []
+    offset = 0
     for i in range(doc.page_count):
         text = doc.load_page(i).get_text("text") or ""
         pages.append(text)
+        page_offsets.append(offset)
+        offset += len(text) + 1
         page_no = i + 1
         for line in text.splitlines():
             s = line.strip()
@@ -251,7 +449,18 @@ def extract_pdf(path: Path) -> dict:
         "pages": pages,
         "full_text": full,
         "headings": headings,
+        "page_offsets": page_offsets,
     }
+
+
+def char_to_page(pos: int, page_offsets: list[int]) -> int:
+    page = 1
+    for i, off in enumerate(page_offsets):
+        if off <= pos:
+            page = i + 1
+        else:
+            break
+    return page
 
 
 def detect_toc(pages: list[str], max_pages: int = 25) -> list[str]:
@@ -266,6 +475,51 @@ def detect_toc(pages: list[str], max_pages: int = 25) -> list[str]:
             elif re.match(r"^(contents|table of contents)$", s, re.I):
                 toc_lines.append(f"p{i+1}: {s}")
     return toc_lines
+
+
+def detect_filing_toc(pages: list[str], max_pages: int = 15) -> list[str]:
+    toc_lines: list[str] = []
+    for i in range(min(max_pages, len(pages))):
+        for line in pages[i].splitlines():
+            s = line.strip()
+            if not s:
+                continue
+            if re.match(r"^Item\s+\d", s, re.I):
+                toc_lines.append(f"p{i+1}: {s}")
+            elif re.match(r"^Part\s+[IVXLC]+", s, re.I):
+                toc_lines.append(f"p{i+1}: {s}")
+            elif re.search(r"Item\s+\d+[A-Z]?\.\s+", s, re.I) and len(s) < 120:
+                toc_lines.append(f"p{i+1}: {s}")
+    return toc_lines
+
+
+def filing_sections(pages: list[str]) -> list[dict]:
+    """Detect major Form 10-K Item sections with PDF page numbers."""
+    sections: list[dict] = []
+    seen: set[str] = set()
+    item_labels = {
+        "1": "Business",
+        "1A": "Risk Factors",
+        "1C": "Cybersecurity",
+        "7": "Management's Discussion and Analysis",
+        "8": "Financial Statements",
+    }
+    for i, page in enumerate(pages):
+        page_no = i + 1
+        for line in page.splitlines():
+            s = line.strip()
+            m = FILING_ITEM_RE.match(s)
+            if not m:
+                continue
+            item = m.group(1).upper()
+            label = m.group(2).strip() or item_labels.get(item, "")
+            key = f"Item {item}"
+            if key in seen:
+                continue
+            if item in item_labels or label:
+                seen.add(key)
+                sections.append({"item": item, "label": label or item_labels.get(item, ""), "page": page_no})
+    return sections
 
 
 def chapter_blocks(headings: list[dict]) -> list[dict]:
@@ -286,19 +540,55 @@ def chapter_blocks(headings: list[dict]) -> list[dict]:
     return out[:200]
 
 
-def find_term_occurrences(text: str, title: str) -> list[dict]:
+def assess_book_status(key: str, data: dict, toc: list[str]) -> tuple[str, str]:
+    text_quality = sum(1 for p in data["pages"][:10] if len(p.strip()) > 80)
+    if text_quality < 3:
+        return "poor", "first pages mostly empty — likely image-only or broken OCR layer"
+    if len(data["full_text"].strip()) < 5000:
+        return "partial", "very little extractable text"
+    reason = BOOK_QA_REASONS.get(key, "chapter map reconstructed from headings; page references approximate")
+    if len(toc) >= 5:
+        return "partial", reason
+    return "partial", reason
+
+
+def assess_filing_status(data: dict, toc: list[str]) -> tuple[str, str]:
+    text_quality = sum(1 for p in data["pages"][:10] if len(p.strip()) > 80)
+    if text_quality < 3:
+        return "poor", "first pages mostly empty — likely image-only or broken extraction layer"
+    if len(data["full_text"].strip()) < 5000:
+        return "partial", "very little extractable text"
+    if len(toc) >= 4:
+        return "clean", ""
+    sections = filing_sections(data["pages"])
+    if len(sections) >= 3:
+        return "partial", (
+            "SEC filing structure reconstructed from Item headings; "
+            "printed page numbers in filing may differ from PDF page index"
+        )
+    return "partial", "Item headings sparsely detected; filing section map incomplete"
+
+
+def find_term_occurrences(
+    text: str,
+    title: str,
+    patterns: list[str],
+    page_offsets: list[int],
+    is_filing: bool = False,
+) -> list[dict]:
     found = []
-    for pat in IT_TERM_PATTERNS:
+    for pat in patterns:
         rx = re.compile(pat, re.I)
         for m in rx.finditer(text):
             term = m.group(0)
-            pos = m.start()
-            page = text[:pos].count("\f") + 1 if "\f" in text else max(1, pos // 3000 + 1)
+            page = char_to_page(m.start(), page_offsets)
             found.append({"term": term, "pattern": pat, "approx_page": page})
     seen = set()
     uniq = []
     for f in found:
         k = norm_term(f["term"])
+        if not k or len(k) < 3:
+            continue
         if k in seen:
             continue
         seen.add(k)
@@ -306,15 +596,135 @@ def find_term_occurrences(text: str, title: str) -> list[dict]:
     return uniq
 
 
-def thin_coverage_report(all_text: str) -> list[str]:
-    flags = []
-    lower = all_text.lower()
-    for pat in THIN_COVERAGE_TERMS:
-        rx = re.compile(pat, re.I)
-        hits = len(rx.findall(lower))
-        if hits < 5:
-            flags.append(f"{pat}: {hits} occurrences across all readable sources")
-    return flags
+def count_hits(text: str, patterns: list[str]) -> int:
+    total = 0
+    for pat in patterns:
+        total += len(re.compile(pat, re.I).findall(text))
+    return total
+
+
+def count_hits_by_source(
+    source_texts: dict[str, str],
+    patterns: list[str],
+) -> dict[str, int]:
+    return {title: count_hits(text, patterns) for title, text in source_texts.items()}
+
+
+def coverage_limits_report(source_texts: dict[str, str]) -> list[str]:
+    book_text = "\n".join(t for title, t in source_texts.items() if "Form 10-K" not in title)
+    bullets: list[str] = []
+    for label, patterns, expected_filings in COVERAGE_BUCKETS:
+        all_hits = count_hits("\n".join(source_texts.values()), patterns)
+        book_hits = count_hits(book_text, patterns)
+        filing_hits: dict[str, int] = {}
+        for title, text in source_texts.items():
+            if "Form 10-K" in title:
+                h = count_hits(text, patterns)
+                if h:
+                    filing_hits[title] = h
+        if label == "hardware/devices":
+            apple_title = "Apple Inc. Form 10-K"
+            if apple_title in source_texts:
+                h = count_hits(source_texts[apple_title], patterns)
+                bullets.append(
+                    f"**{label}:** covered by {apple_title} ({h} hits); prior book-source mechanical hits: {book_hits}."
+                )
+            else:
+                incidental = {t: h for t, h in filing_hits.items() if t != apple_title}
+                if incidental:
+                    parts = [f"{t} ({h} incidental hits)" for t, h in incidental.items()]
+                    bullets.append(
+                        f"**{label}:** Apple 10-K not in folder; incidental mentions in {', '.join(parts)}; "
+                        f"prior book-source mechanical hits: {book_hits}."
+                    )
+                else:
+                    bullets.append(
+                        f"**{label}:** no add-on filing provided (Apple 10-K not in folder); "
+                        f"prior book-source mechanical hits: {book_hits}."
+                    )
+            continue
+        if filing_hits:
+            parts = [f"{t} ({h} hits)" for t, h in filing_hits.items()]
+            if book_hits == 0:
+                bullets.append(
+                    f"**{label}:** covered by {', '.join(parts)}; prior book-source coverage had 0 direct hits."
+                )
+            else:
+                bullets.append(
+                    f"**{label}:** covered by {', '.join(parts)}; prior book-source mechanical hits: {book_hits}."
+                )
+        elif all_hits >= 5:
+            bullets.append(f"**{label}:** book-source mechanical hits: {book_hits} (total across dossier: {all_hits}).")
+        else:
+            bullets.append(
+                f"**{label}:** thin across dossier — total mechanical hits: {all_hits}; "
+                f"book hits: {book_hits}; expected filing add-ons not matched: {', '.join(expected_filings) or 'n/a'}."
+            )
+    return bullets
+
+
+def filing_section_summary(data: dict, title: str, sections: list[dict]) -> list[str]:
+    parts: list[str] = []
+    pages = data["pages"]
+    full = data["full_text"]
+    section_map = {s["item"]: s for s in sections}
+
+    def section_text(item: str) -> str:
+        if item not in section_map:
+            return ""
+        start_page = section_map[item]["page"] - 1
+        end_page = min(start_page + 8, len(pages) - 1)
+        return "\n".join(pages[start_page : end_page + 1])
+
+    summaries = [
+        ("1", "Business overview"),
+        ("7", "MD&A operating drivers"),
+        ("1A", "Risk factors (sector-relevant)"),
+        ("8", "Segment / financial statement references"),
+    ]
+    for item, heading in summaries:
+        if item not in section_map:
+            continue
+        sec = section_map[item]
+        snippet = section_text(item)
+        concepts = []
+        for pat in FILING_TERM_PATTERNS[:25]:
+            m = re.search(pat, snippet, re.I)
+            if m:
+                concepts.append(m.group(0))
+        parts.append(f"\n### {heading} — Item {item} (PDF p.{sec['page']})\n")
+        if concepts:
+            parts.append(f"- Named terms in vicinity: {', '.join(sorted(set(concepts))[:12])}\n")
+        def_snip = definition_snippets(snippet[:8000], sec["label"] or heading)
+        if def_snip:
+            parts.append(f"- Nearby text: {def_snip}\n")
+    return parts
+
+
+def add_concept(
+    concept_rows: dict[str, dict],
+    occ: dict,
+    src_title: str,
+    full_text: str,
+    confidence: str,
+    corpus_lookup: dict[str, list[str]],
+) -> None:
+    nt = norm_term(occ["term"])
+    if not nt or len(nt) < 3:
+        return
+    if nt not in concept_rows:
+        concept_rows[nt] = {
+            "term": occ["term"],
+            "normalized_term": nt,
+            "short_definition": definition_snippets(full_text, occ["term"]),
+            "source_titles": set(),
+            "source_locations": [],
+            "extraction_confidence": confidence,
+            "also_appears_as_corpus_term": corpus_match(occ["term"], corpus_lookup),
+            "notes": "",
+        }
+    concept_rows[nt]["source_titles"].add(src_title)
+    concept_rows[nt]["source_locations"].append(f"{src_title}:p{occ['approx_page']}")
 
 
 def repo_facts() -> dict:
@@ -341,13 +751,14 @@ def main() -> None:
     corpus_lookup = load_corpus_terms()
     facts = repo_facts()
 
-    manifest_rows = []
+    manifest_rows: list[dict] = []
     toc_index_parts = ["# TOC Index — sector-information-technology\n"]
     chapter_parts = ["# Chapter Summaries — sector-information-technology\n"]
     concept_rows: dict[str, dict] = {}
-    combined_text = ""
+    source_texts: dict[str, str] = {}
 
-    for src in SOURCES:
+    # --- Book sources ---
+    for src in BOOK_SOURCES:
         path: Path = src["path"]
         block = {
             "key": src["key"],
@@ -376,33 +787,24 @@ def main() -> None:
 
         block["page_count"] = data["page_count"]
         (raw_dir / f"{src['key']}.txt").write_text(data["full_text"][:500000], encoding="utf-8")
-        combined_text += data["full_text"]
+        source_texts[src["title"]] = data["full_text"]
         toc = detect_toc(data["pages"])
         chapters = chapter_blocks(data["headings"])
-        text_quality = sum(1 for p in data["pages"][:10] if len(p.strip()) > 80)
-        if text_quality < 3:
-            block["status"] = "poor"
-            block["status_reason"] = "first pages mostly empty — likely image-only or broken OCR layer"
-        elif len(data["full_text"].strip()) < 5000:
-            block["status"] = "partial"
-            block["status_reason"] = "very little extractable text"
-        else:
-            block["status"] = "clean" if len(toc) >= 5 else "partial"
-            if block["status"] == "partial":
-                block["status_reason"] = "TOC not cleanly detected; chapter map reconstructed from headings"
-
+        block["status"], block["status_reason"] = assess_book_status(src["key"], data, toc)
         block["areas"] = [c["line"] for c in chapters[:40]]
         manifest_rows.append(block)
 
         toc_index_parts.append(f"\n## {src['title']} ({src['author']})\n")
-        toc_index_parts.append(f"Source tier: **{src['tier']}** | Extraction status: **{block['status']}** — {block['status_reason'] or 'n/a'}\n")
+        toc_index_parts.append(
+            f"Source tier: **{src['tier']}** | Extraction status: **{block['status']}** — {block['status_reason'] or 'n/a'}\n"
+        )
         toc_index_parts.append(f"Page count: {data['page_count']}\n")
         if toc:
             toc_index_parts.append("### Detected TOC lines\n")
             for line in toc[:80]:
                 toc_index_parts.append(f"- {line}\n")
         else:
-            toc_index_parts.append("### Reconstructed chapter/heading map\n")
+            toc_index_parts.append("### Reconstructed from detected headings\n")
             for c in chapters[:60]:
                 toc_index_parts.append(f"- p{c['page']}: {c['line']}\n")
 
@@ -413,7 +815,7 @@ def main() -> None:
         if not chapters:
             chapter_parts.append("_No reliable chapter headings detected — see raw extraction file._\n")
         for c in chapters[:35]:
-            title = c["line"]
+            title_line = c["line"]
             page = c["page"]
             snippet_page = data["pages"][page - 1] if page - 1 < len(data["pages"]) else ""
             concepts = []
@@ -421,42 +823,100 @@ def main() -> None:
                 m = re.search(pat, snippet_page, re.I)
                 if m:
                     concepts.append(m.group(0))
-            chapter_parts.append(f"\n### {title} (p.{page})\n")
+            chapter_parts.append(f"\n### {title_line} (p.{page})\n")
             chapter_parts.append(f"- Pages: ~{page}+\n")
             if concepts:
                 chapter_parts.append(
                     f"- Named concepts/topics in vicinity: {', '.join(sorted(set(concepts))[:12])}\n"
                 )
-            def_snip = definition_snippets(snippet_page, title.split()[-1] if title.split() else title)
+            def_snip = definition_snippets(snippet_page, title_line.split()[-1] if title_line.split() else title_line)
             if def_snip:
-                chapter_parts.append(f"- Nearby text (paraphrase source context): {def_snip}\n")
+                chapter_parts.append(f"- Nearby text (source context): {def_snip}\n")
 
-        occurrences = find_term_occurrences(data["full_text"], src["title"])
-        for occ in occurrences:
-            nt = norm_term(occ["term"])
-            if not nt or len(nt) < 3:
-                continue
-            if nt not in concept_rows:
-                concept_rows[nt] = {
-                    "term": occ["term"],
-                    "normalized_term": nt,
-                    "short_definition": definition_snippets(data["full_text"], occ["term"]),
-                    "source_titles": set(),
-                    "source_locations": [],
-                    "extraction_confidence": "medium" if block["status"] == "clean" else "low",
-                    "also_appears_as_corpus_term": corpus_match(occ["term"], corpus_lookup),
-                    "notes": "",
-                }
-            concept_rows[nt]["source_titles"].add(src["title"])
-            concept_rows[nt]["source_locations"].append(f"{src['title']}:~p{occ['approx_page']}")
+        confidence = "medium" if block["status"] == "clean" else "low"
+        for occ in find_term_occurrences(
+            data["full_text"], src["title"], IT_TERM_PATTERNS, data["page_offsets"]
+        ):
+            add_concept(concept_rows, occ, src["title"], data["full_text"], confidence, corpus_lookup)
 
+    # --- Filing add-ons ---
+    for src in FILING_SOURCES:
+        path = src["path"]
+        block = {
+            "key": src["key"],
+            "title": src["title"],
+            "author": src["company"],
+            "company": src["company"],
+            "filing_year": src["filing_year"],
+            "type": src["type"],
+            "tier": src["tier"],
+            "path": str(path),
+            "status": "failed",
+            "status_reason": "",
+            "page_count": 0,
+            "areas": [],
+        }
+        if not path.exists():
+            block["status"] = "failed"
+            block["status_reason"] = "file not found at configured path"
+            manifest_rows.append(block)
+            continue
+        try:
+            data = extract_pdf(path)
+        except Exception as e:
+            block["status"] = "failed"
+            block["status_reason"] = str(e)
+            manifest_rows.append(block)
+            continue
+
+        block["page_count"] = data["page_count"]
+        (raw_dir / f"{src['key']}.txt").write_text(data["full_text"][:500000], encoding="utf-8")
+        source_texts[src["title"]] = data["full_text"]
+        toc = detect_filing_toc(data["pages"])
+        sections = filing_sections(data["pages"])
+        block["status"], block["status_reason"] = assess_filing_status(data, toc)
+        block["areas"] = [f"Item {s['item']}: {s['label']}" for s in sections[:25]]
+        manifest_rows.append(block)
+
+        toc_index_parts.append(f"\n## {src['title']}\n")
+        toc_index_parts.append(f"Company: **{src['company']}** | Filing year: **{src['filing_year']}**\n")
+        toc_index_parts.append(
+            f"Extraction status: **{block['status']}** — {block['status_reason'] or 'n/a'}\n"
+        )
+        toc_index_parts.append(f"Page count: {data['page_count']}\n")
+        if toc:
+            toc_index_parts.append("### Detected filing TOC / Item lines\n")
+            for line in toc[:80]:
+                toc_index_parts.append(f"- {line}\n")
+        else:
+            toc_index_parts.append("### Reconstructed from detected headings\n")
+            for s in sections[:30]:
+                toc_index_parts.append(f"- p{s['page']}: Item {s['item']} — {s['label']}\n")
+
+        chapter_parts.append(f"\n## {src['title']}\n")
+        chapter_parts.append(
+            f"Company: {src['company']} | Filing year: {src['filing_year']} | "
+            f"Pages: {data['page_count']} | Status: {block['status']}\n"
+        )
+        chapter_parts.extend(filing_section_summary(data, src["title"], sections))
+
+        confidence = "high" if block["status"] == "clean" else "medium"
+        all_patterns = list(dict.fromkeys(IT_TERM_PATTERNS + FILING_TERM_PATTERNS))
+        for occ in find_term_occurrences(
+            data["full_text"], src["title"], all_patterns, data["page_offsets"], is_filing=True
+        ):
+            add_concept(concept_rows, occ, src["title"], data["full_text"], confidence, corpus_lookup)
+
+    # --- Missing sources ---
     for missing in MISSING_SOURCES:
         manifest_rows.append(
             {
                 "key": "missing",
                 "title": missing["title"],
-                "author": missing["author"],
-                "type": "practitioner guide",
+                "author": missing.get("author", missing.get("company", "")),
+                "company": missing.get("company", ""),
+                "filing_year": missing.get("filing_year", ""),
+                "type": missing["type"],
                 "tier": missing["tier"],
                 "path": "n/a",
                 "status": missing["status"],
@@ -466,11 +926,16 @@ def main() -> None:
             }
         )
 
-    thin_flags = thin_coverage_report(combined_text)
+    coverage_bullets = coverage_limits_report(source_texts)
 
+    # --- Write Source_Manifest.md ---
     sm = ["# Source Manifest — sector-information-technology\n"]
     for b in manifest_rows:
         sm.append(f"\n## {b['title']}\n")
+        if b.get("company"):
+            sm.append(f"- **Company:** {b['company']}\n")
+        if b.get("filing_year"):
+            sm.append(f"- **Filing/report year:** {b['filing_year']}\n")
         sm.append(f"- **Author/editor:** {b['author']}\n")
         sm.append(f"- **Source type:** {b['type']}\n")
         sm.append(f"- **Source tier (config list):** {b['tier']}\n")
@@ -504,13 +969,14 @@ def main() -> None:
         )
         w.writeheader()
         for row in sorted(concept_rows.values(), key=lambda r: r["normalized_term"]):
+            locs = row["source_locations"][:8]
             w.writerow(
                 {
                     "term": row["term"],
                     "normalized_term": row["normalized_term"],
                     "short_definition": row["short_definition"][:300],
-                    "source_titles": " | ".join(sorted(row["source_titles"])),
-                    "source_locations": " | ".join(row["source_locations"][:8]),
+                    "source_titles": " | ".join(sorted(row["source_titles"])) or "location unavailable from extraction",
+                    "source_locations": " | ".join(locs) if locs else "location unavailable from extraction",
                     "extraction_confidence": row["extraction_confidence"],
                     "also_appears_as_corpus_term": row["also_appears_as_corpus_term"],
                     "notes": row["notes"],
@@ -534,8 +1000,9 @@ def main() -> None:
         "\n## 2. Sources processed\n",
     ]
     for b in manifest_rows:
+        tier = b.get("tier", "")
         hn.append(
-            f"- **{b['title']}** ({b['tier']}) — {b['status']}"
+            f"- **{b['title']}** ({tier}) — {b['status']}"
             + (f" ({b['status_reason']})" if b["status_reason"] else "")
             + "\n"
         )
@@ -580,20 +1047,26 @@ def main() -> None:
             "- Corpus overlap zones flagged for name-matching in `Concept_Inventory.csv` (no reuse/new-global judgment made): equity-research (sector analysis, valuation, multiples); fixed-income (credit spreads, capital structure); macro-economics (rates, inflation, business cycles, AI capex if source-grounded); venture-capital (burn, PMF, scaling); private-equity (buyouts, recurring revenue, leverage); asset-management (benchmark/exposure lens); investment-banking (M&A, issuance, capital markets).\n",
             "- Known disambiguation/name-match risks flagged in config, not resolved: platform vs SaaS; software vs IT services; software vs semiconductors; semiconductors vs hardware/devices; ARR vs revenue; gross retention vs NRR; churn variants; gross margin vs contribution margin; usage-based vs seat-based pricing; capex-light software vs capex-heavy fabs; valuation multiple vs intrinsic value; AI hype vs durable economics.\n",
             "- **The Software Paradox** (Stephen O'Grady) was in the secondary source list but was **not provided** in the user folder.\n",
+            "- **Apple Inc. Form 10-K** was in the expected add-on list but was **not provided** in the user folder.\n",
         ]
     )
-    if thin_flags:
-        hn.append("- Thin coverage signals (mechanical occurrence counts across all readable sources):\n")
-        for flag in thin_flags:
-            hn.append(f"  - {flag}\n")
+
+    hn.append("\n## 6c. Coverage_Limits\n")
+    hn.append("Mechanical hit/source coverage observations (not architecture judgments):\n\n")
+    for bullet in coverage_bullets:
+        hn.append(f"- {bullet}\n")
 
     hn.append(
         "\n## 7. Architecture deferral\n"
-        "**No architecture decisions, zone spines, global-reuse calls, or disambiguation judgments have been made. All of that is deferred to the architecture session.**\n"
+        "No architecture decisions, zone spines, global-reuse calls, or disambiguation judgments have been made. All of that is deferred to the architecture session.\n"
     )
     (DOSSIER / "Handoff_Note.md").write_text("".join(hn), encoding="utf-8")
 
-    print(f"manifest_sources={len(manifest_rows)} concepts={inv_count} thin_flags={len(thin_flags)}")
+    probe = DOSSIER / "_pdf_probe.txt"
+    if probe.exists():
+        probe.unlink()
+
+    print(f"manifest_sources={len(manifest_rows)} concepts={inv_count} coverage={len(coverage_bullets)}")
 
 
 if __name__ == "__main__":

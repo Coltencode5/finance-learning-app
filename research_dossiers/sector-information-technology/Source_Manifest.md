@@ -7,7 +7,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_Business_of_Platforms_-_Michael_A_Cusumano.pdf`
 - **Page count:** 239
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: Contents page detected but dot-leader page numbers absent; chapter headings reconstructed from inline text; figure/table caption lines mixed into heading map; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - Chapter 1: Platform Thinking: Introduction
   - Chapter 2: Winner Take All or Most: More Than Network Effects
@@ -42,7 +42,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Subscribed_-_Tien_Tzuo.pdf`
 - **Page count:** 235
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: no dot-leader TOC; chapter titles split across lines (e.g. 'CHAPTER 1' / 'THE END OF AN ERA'); front-matter headings duplicated; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - TITLE PAGE
   - COPYRIGHT
@@ -77,7 +77,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Chip_War_-_Chris_Miller.pdf`
 - **Page count:** 654
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: chapter numbers extracted without chapter titles on same line; promotional 'CLICK HERE TO SIGN UP' debris in heading map; no reliable dot-leader TOC; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - CLICK HERE TO SIGN UP
   - COLD WAR CHIPS
@@ -112,7 +112,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Investment_Valuation_University_Edition_-_Aswath_Damodaran.pdf`
 - **Page count:** 1331
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: Contents label detected but chapter list uses inline headings without dot leaders; very large page count increases offset-based page-reference uncertainty for concept locations.
 - **Main areas covered (heading-level, factual):**
   - Chapter 1 Introduction to Valuation
   - Chapter 2 Approaches to Valuation
@@ -147,7 +147,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Platform_Revolution_How_Networked_Markets_Are_Transforming_the_Economy--And_How_to_Make_Them_Work_for_You_-_Sangeet_Paul_Choudary.pdf`
 - **Page count:** 324
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: cover/title-page text captured as headings; chapter takeaways and section labels duplicated; no dot-leader TOC; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - REVOLUTION
   - HOW NETWORKED MARKETS
@@ -182,7 +182,7 @@
 - **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Lean_Analytics_-_Alistair_Croll_Benjamin_Yoskovitz.pdf`
 - **Page count:** 439
 - **Extraction status:** partial
-- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Status detail:** OceanofPDF copy: spaced-letter chapter labels (e.g. 'C H A P T E R 1'); duplicate part/chapter headings from layout reflow; ISBN lines in heading map; no dot-leader TOC; page references approximate.
 - **Main areas covered (heading-level, factual):**
   - THE LEAN SERIES
   - ERIC RIES SERIES EDITOR
@@ -210,10 +210,155 @@
   - Chapter 2: How to Keep Score
   - PART ONE: STOP LYING TO YOURSELF
 
+## Accenture plc Form 10-K (FY2025)
+- **Company:** Accenture plc
+- **Filing/report year:** FY2025 (fiscal year ended August 31, 2025)
+- **Author/editor:** Accenture plc
+- **Source type:** Form 10-K / annual report
+- **Source tier (config list):** add-on
+- **Path:** `c:\Users\cfroo\Downloads\Accenture-2025-10-K.pdf`
+- **Page count:** 102
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: Unresolved Staff Comments
+  - Item 2: Properties
+  - Item 3: Legal Proceedings
+  - Item 4: Mine Safety Disclosures
+  - Item 5: Market for Registrant’s Common Equity,
+  - Item 6: [Reserved]
+  - Item 7A: , “Quantitative and Qualitative Disclosures About Market Risk” and Note 9 (Financial Instruments) to our
+  - Item 9: Changes in and Disagreements With
+  - Item 9A: Controls and Procedures
+  - Item 9B: Other Information
+  - Item 9C: Disclosure Regarding Foreign
+  - Item 10: Directors, Executive Officers and
+  - Item 11: Executive Compensation
+  - Item 12: Security Ownership of Certain
+  - Item 13: Certain Relationships and Related
+  - Item 14: Principal Accountant Fees and
+  - Item 15: Exhibits, Financial Statement
+  - Item 16: Form 10-K Summary
+
+## Palo Alto Networks Form 10-K (FY2025)
+- **Company:** Palo Alto Networks, Inc.
+- **Filing/report year:** FY2025 (fiscal year ended July 31, 2025)
+- **Author/editor:** Palo Alto Networks, Inc.
+- **Source type:** Form 10-K / annual report
+- **Source tier (config list):** add-on
+- **Path:** `c:\Users\cfroo\Downloads\0001327567-25-000027.pdf`
+- **Page count:** 260
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: Unresolved Staff Comments
+  - Item 2: Properties
+  - Item 3: Legal Proceedings
+  - Item 4: Mine Safety Disclosures
+  - Item 5: Market for Registrant’s Common Equity, Related
+  - Item 6: [Reserved]
+  - Item 7A: Quantitative and Qualitative Disclosures About Market
+  - Item 9: Changes in and Disagreements with Accountants on
+  - Item 9A: Controls and Procedures
+  - Item 9B: Other Information
+  - Item 9C: Disclosure Regarding Foreign Jurisdictions That
+  - Item 10: Directors, Executive Officers and Corporate Governance
+  - Item 11: Executive Compensation
+  - Item 12: Security Ownership of Certain Beneficial Owners and
+  - Item 13: Certain Relationships and Related Transactions, and
+  - Item 14: Principal Accountant Fees and Services
+  - Item 15: Exhibits and Financial Statement Schedules
+  - Item 16: Form 10-K Summary
+
+## ServiceNow Form 10-K (FY2025)
+- **Company:** ServiceNow, Inc.
+- **Filing/report year:** FY2025 (fiscal year ended December 31, 2025)
+- **Author/editor:** ServiceNow, Inc.
+- **Source type:** Form 10-K / annual report
+- **Source tier (config list):** add-on
+- **Path:** `c:\Users\cfroo\Downloads\0505eb02-5a4e-449e-a662-edef3bc70e7b.pdf`
+- **Page count:** 178
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: Unresolved Staff Comments
+  - Item 2: Properties
+  - Item 3: Legal Proceedings
+  - Item 4: Mine Safety Disclosures
+  - Item 5: Market for Registrant’s Common Equity, Related Stockholder
+  - Item 6: Selected Consolidated Financial Data
+  - Item 7A: Qualitative and Quantitative Disclosures About Market Risk
+  - Item 9: Changes in and Disagreements with Accountants on Accounting
+  - Item 9A: Controls and Procedures
+  - Item 9B: Other Information
+  - Item 9C: Disclosures Regarding Foreign Jurisdiction that Prevent
+  - Item 10: Directors, Executive Officers and Corporate Governance
+  - Item 11: Executive Compensation
+  - Item 12: Security Ownership of Certain Beneficial Owners and
+  - Item 13: Certain Relationships and Related Transactions and Director
+  - Item 14: Principal Accountant Fees and Services
+  - Item 15: Exhibits and Financial Statement Schedules
+  - Item 16: Form 10-K Summary
+
+## CrowdStrike Holdings Form 10-K (FY2025)
+- **Company:** CrowdStrike Holdings, Inc.
+- **Filing/report year:** FY2025 (fiscal year ended January 31, 2025)
+- **Author/editor:** CrowdStrike Holdings, Inc.
+- **Source type:** Form 10-K / annual report
+- **Source tier (config list):** add-on
+- **Path:** `c:\Users\cfroo\Downloads\0001535527-25-000009.pdf`
+- **Page count:** 148
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: UNRESOLVED STAFF COMMENTS
+  - Item 2: PROPERTIES
+  - Item 3: LEGAL PROCEEDINGS
+  - Item 4: MINE SAFETY DISCLOSURES
+  - Item 5: MARKET FOR REGISTRANT’S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF
+  - Item 6: [RESERVED]
+  - Item 7A: QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+  - Item 9: CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE
+  - Item 9A: CONTROLS AND PROCEDURES
+  - Item 9B: OTHER INFORMATION
+  - Item 9C: DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS
+  - Item 10: DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE
+  - Item 11: EXECUTIVE COMPENSATION
+  - Item 12: SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER
+  - Item 13: CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS, AND DIRECTOR INDEPENDENCE
+  - Item 14: PRINCIPAL ACCOUNTANT FEES AND SERVICES
+  - Item 15: EXHIBITS AND FINANCIAL STATEMENT SCHEDULES
+  - Item 16: FORM 10-K SUMMARY
+
 ## The Software Paradox
 - **Author/editor:** Stephen O'Grady
 - **Source type:** practitioner guide
 - **Source tier (config list):** secondary
+- **Page count:** n/a
+- **Extraction status:** not provided
+- **Status detail:** file not in user-supplied folder
+
+## Apple Inc. Form 10-K
+- **Company:** Apple Inc.
+- **Author/editor:** Apple Inc.
+- **Source type:** Form 10-K / annual report
+- **Source tier (config list):** add-on
 - **Page count:** n/a
 - **Extraction status:** not provided
 - **Status detail:** file not in user-supplied folder
