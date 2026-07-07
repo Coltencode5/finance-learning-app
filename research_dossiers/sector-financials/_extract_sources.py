@@ -11,6 +11,8 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
+from _dossier_utils import definition_snippets
+
 REPO = Path(__file__).resolve().parents[2]
 DOSSIER = Path(__file__).resolve().parent
 DOWNLOADS = Path(r"c:\Users\cfroo\Downloads")
@@ -300,17 +302,6 @@ def find_term_occurrences(text: str, title: str) -> list[dict]:
         seen.add(k)
         uniq.append({**f, "source": title})
     return uniq
-
-
-def definition_snippets(text: str, term: str, window: int = 220) -> str:
-    rx = re.compile(re.escape(term), re.I)
-    m = rx.search(text)
-    if not m:
-        return ""
-    start = max(0, m.start() - 40)
-    end = min(len(text), m.end() + window)
-    snippet = re.sub(r"\s+", " ", text[start:end]).strip()
-    return snippet[:280]
 
 
 def repo_facts() -> dict:

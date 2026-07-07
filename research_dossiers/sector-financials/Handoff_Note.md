@@ -71,6 +71,7 @@
 - Insurance coverage remains thinner than banking across all sources.
 - Duplicate Fisher file pair in dossier; architect may dedupe.
 - Golin extracts cover sector economics (Ch3), income-statement/NIM (Ch4), and capital (Ch9) — aligned with ER Z2.3 bank contrast; Ch7 asset quality not extracted.
+- **Rose & Hudgins (*Bank Management and Financial Services*) was never in the Tier A acquisition list for this extraction pass** — not a deliberate mid-pass drop. Z1 sector-economics ground is sourced from Golin Ch.3 instead. Architect may supplement from practitioner knowledge or a future acquisition if needed.
 
 ## 7. Architecture deferral
 **No architecture decisions, zone spines, global-reuse calls, or disambiguation judgments have been made. All of that is deferred to the architecture session.**

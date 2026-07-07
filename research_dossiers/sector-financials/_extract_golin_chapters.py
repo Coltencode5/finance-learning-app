@@ -11,6 +11,8 @@ from pathlib import Path
 
 import fitz
 
+from _dossier_utils import definition_snippets
+
 REPO = Path(__file__).resolve().parents[2]
 DOSSIER = Path(__file__).resolve().parent
 DOWNLOADS = Path(r"c:\Users\cfroo\Downloads")
@@ -145,16 +147,6 @@ def detect_sections(text: str, headings: list[dict]) -> list[dict]:
         seen.add(k)
         out.append(s)
     return out[:40]
-
-
-def definition_snippets(text: str, term: str, window: int = 200) -> str:
-    rx = re.compile(re.escape(term), re.I)
-    m = rx.search(text)
-    if not m:
-        return ""
-    start = max(0, m.start() - 30)
-    end = min(len(text), m.end() + window)
-    return re.sub(r"\s+", " ", text[start:end]).strip()[:300]
 
 
 def find_terms(text: str, source_label: str) -> list[dict]:
