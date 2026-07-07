@@ -9,6 +9,7 @@
 | Active modules | **12** |
 | Shared globals | **292** (G1–G292, contiguous) |
 | Zone nodes | **591** |
+| Graph edges | **4,185** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -18,7 +19,8 @@
 | 1–9 | Role modules (PE → RE) | various | role | 1–9 | 478 | G1–G235 | complete |
 | 6 | Macro & Economics | macro-economics | core-concept | 10 | 51 | G236–G263 | complete |
 | 7 | Fixed Income | fixed-income | asset-class | 11 | 51 | G264–G285 | complete |
-| **8** | **Financials (Sector)** | **sector-financials** | **sector-layer1** | **12** | **11** | **G286–G292** | **complete** |
+| 8 | Sector Layer Prep | — | prep | — | — | — | complete |
+| **9** | **Financials (Sector)** | **sector-financials** | **sector-layer1** | **12** | **11** | **G286–G292** | **complete** |
 
 ## Milestone 9 — Financials (Sector)
 
@@ -53,6 +55,7 @@ Prep milestone (no new module content authored):
 ## Next gate
 
 - Next module: **sector-information-technology** (M10, `kind: sector-layer1`, `build_order: 13`, globals from **G293**)
+- M10 source dossier prepared at `research_dossiers/sector-information-technology/` (architecture session pending; not yet in `content/`)
 - Wave one build order: IT → Energy → Consumer Discretionary
 
 ## Known defects (unchanged)
