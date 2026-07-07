@@ -1,0 +1,219 @@
+# Source Manifest — sector-information-technology
+
+## The Business of Platforms
+- **Author/editor:** Michael A. Cusumano, Annabelle Gawer, and David B. Yoffie
+- **Source type:** textbook / practitioner guide
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_Business_of_Platforms_-_Michael_A_Cusumano.pdf`
+- **Page count:** 239
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - Chapter 1: Platform Thinking: Introduction
+  - Chapter 2: Winner Take All or Most: More Than Network Effects
+  - Chapter 3: Strategy and Business Models: Innovation, Transaction, or
+  - Chapter 4: Common Mistakes: Mispricing, Mistrust, Mistiming—and
+  - Chapter 5: Old Dogs and New Tricks: Build, Buy, or Belong to a Platform
+  - Chapter 6: Double-Edged Swords: Harness Platform Power, but Don’t
+  - Chapter 7: Looking Forward: Platforms and the Future
+  - ENGAGE MULTIPLE SIDES OF A MARKET
+  - FIGURE 1-1: FACEBOOK PLATFORM
+  - AND ECOSYSTEM
+  - GENERATE NETWORK EFFECTS
+  - SOLVE A CHICKEN-OR-EGG PROBLEM
+  - TABLE 1–1: MEDIAN VALUES FOR FORBES GLOBAL 2000, INDUSTRY
+  - CONTROL SAMPLE, AND PLATFORMS, 1995–2015
+  - INNOVATION
+  - PLATFORMS
+  - TRANSACTION
+  - PLATFORMS
+  - PLATFORMS)
+  - TRANSACTION
+  - PLATFORMS
+  - EMPLOYEES
+  - OPERATING
+  - R&D/SALES
+  - G&A/SALES
+
+## Subscribed
+- **Author/editor:** Tien Tzuo and Gabe Weisert
+- **Source type:** practitioner guide
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Subscribed_-_Tien_Tzuo.pdf`
+- **Page count:** 235
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - TITLE PAGE
+  - COPYRIGHT
+  - DEDICATION
+  - INTRODUCTION
+  - THE NEW SUBSCRIPTION ECONOMY
+  - CHAPTER 1
+  - THE END OF AN ERA
+  - CHAPTER 2
+  - FLIPPING THE RETAIL SCRIPT
+  - CHAPTER 3
+  - THE NEW GOLDEN AGE OF MEDIA
+  - CHAPTER 4
+  - PLANES, TRAINS, AND AUTOMOBILES
+  - CHAPTER 5
+  - COMPANIES FORMERLY KNOWN AS NEWSPAPERS
+  - CHAPTER 6
+  - SWALLOWING THE FISH: LESSONS FROM THE REBIRTH OF
+  - CHAPTER 7
+  - IOT AND THE FALL AND RISE OF MANUFACTURING
+  - CHAPTER 8
+  - THE END OF OWNERSHIP
+  - SUCCEEDING IN THE NEW SUBSCRIPTION ECONOMY
+  - CHAPTER 9
+  - THAT WTF MOMENT
+  - CHAPTER 10
+
+## Chip War
+- **Author/editor:** Chris Miller
+- **Source type:** narrative / industry history
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Chip_War_-_Chris_Miller.pdf`
+- **Page count:** 654
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - CLICK HERE TO SIGN UP
+  - COLD WAR CHIPS
+  - CHAPTER 1
+  - CHAPTER 2
+  - CHAPTER 3
+  - CHAPTER 4
+  - CHAPTER 5
+  - CHAPTER 6
+  - THE CIRCUITRY OF THE
+  - AMERICAN WORLD
+  - CHAPTER 7
+  - CHAPTER 8
+  - CHAPTER 9
+  - CHAPTER 10
+  - CHAPTER 11
+  - CHAPTER 12
+  - CHAPTER 13
+  - CHAPTER 14
+  - CHAPTER 15
+  - CHAPTER 16
+  - CHAPTER 17
+  - CHAPTER 18
+  - CHAPTER 19
+  - CHAPTER 20
+  - AMERICA RESURGENT
+
+## Investment Valuation (University Edition)
+- **Author/editor:** Aswath Damodaran
+- **Source type:** textbook
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Investment_Valuation_University_Edition_-_Aswath_Damodaran.pdf`
+- **Page count:** 1331
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - Chapter 1 Introduction to Valuation
+  - Chapter 2 Approaches to Valuation
+  - Chapter 3 Understanding Financial Statements
+  - Chapter 4 The Basics of Risk
+  - Chapter 5 Option Pricing Theory and Models
+  - Chapter 6 Market Efficiency—Definition, Tests, and Evidence
+  - Chapter 7 Riskless Rates and Risk Premiums
+  - Chapter 8 Estimating Risk Parameters and Costs of Financing
+  - Chapter 9 Measuring Earnings
+  - Chapter 10 From Earnings To Cash Flows
+  - Chapter 11 Estimating Growth
+  - Chapter 12 Closure in Valuation: Estimating Terminal Value
+  - Chapter 13 Narrative and Numbers – Story to Value
+  - Chapter 14 Equity Intrinsic Value Models
+  - Chapter 15 Firm Valuation: Cost of Capital and Adjusted Present Value
+  - Chapter 16 Estimating Equity Value per Share
+  - Chapter 17 Fundamental Principles of Relative Valuation
+  - Chapter 18 Earnings Multiples
+  - Chapter 19 Book Value Multiples
+  - Chapter 20 Revenue Multiples and Sector-Specific Multiples
+  - Chapter 21 Valuing Financial Service Firms
+  - Chapter 22 Valuing Money-Losing Firms
+  - Chapter 23 Valuing Young or Start-Up Firms
+  - Chapter 24 Valuing Private Firms
+  - Chapter 25 Acquisitions and Takeovers
+
+## Platform Revolution
+- **Author/editor:** Geoffrey G. Parker, Marshall W. Van Alstyne, and Sangeet Paul Choudary
+- **Source type:** textbook / practitioner guide
+- **Source tier (config list):** secondary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Platform_Revolution_How_Networked_Markets_Are_Transforming_the_Economy--And_How_to_Make_Them_Work_for_You_-_Sangeet_Paul_Choudary.pdf`
+- **Page count:** 324
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - REVOLUTION
+  - HOW NETWORKED MARKETS
+  - ARE TRANSFORMING THE ECONOMY—
+  - AND HOW TO MAKE THEM WORK FOR YOU
+  - ACKNOWLEDGMENTS
+  - ABOUT THE AUTHORS
+  - SANGEET PAUL CHOUDARY
+  - REVOLUTION
+  - THE PLATFORM REVOLUTION
+  - AND THE SHAPE OF CHANGE
+  - THE PLATFORM REVOLUTION:
+  - TAKEAWAYS FROM CHAPTER ONE
+  - NETWORK EFFECTS
+  - DEMAND ECONOMIES OF SCALE
+  - TWO-SIDED NETWORK EFFECTS
+  - NETWORK EFFECTS VERSUS
+  - OTHER GROWTH-BUILDING TOOLS
+  - SCALING NETWORK EFFECTS: FRICTIONLESS ENTRY
+  - AND OTHER SCALABILITY TOOLS
+  - NEGATIVE NETWORK EFFECTS:
+  - THEIR CAUSE AND CURE
+  - FOUR KINDS OF NETWORK EFFECTS
+  - STRUCTURAL CHANGE: NETWORK EFFECTS TURN
+  - FIRMS INSIDE OUT
+  - TAKEAWAYS FROM CHAPTER TWO
+
+## Lean Analytics
+- **Author/editor:** Alistair Croll and Benjamin Yoskovitz
+- **Source type:** practitioner guide
+- **Source tier (config list):** secondary
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Lean_Analytics_-_Alistair_Croll_Benjamin_Yoskovitz.pdf`
+- **Page count:** 439
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - THE LEAN SERIES
+  - ERIC RIES SERIES EDITOR
+  - ISBN: 978-1-098-16818-6
+  - ISBN: 978-1-098-16818-6
+  - PART ONE: STOP LYING TO YOURSELF
+  - PART TWO: FINDING THE RIGHT METRIC FOR
+  - RIGHT NOW
+  - PART THREE: LINES IN THE SAND
+  - PART FOUR: PUTTING LEAN ANALYTICS TO WORK
+  - PA R T O N E :
+  - STOP LYING TO
+  - C H A P T E R 1
+  - PART ONE: STOP LYING TO YOURSELF
+  - Chapter 1: We’re All Liars
+  - PART ONE: STOP LYING TO YOURSELF
+  - Chapter 1: We’re All Liars
+  - PART ONE: STOP LYING TO YOURSELF
+  - C H A P T E R 2
+  - PART ONE: STOP LYING TO YOURSELF
+  - Chapter 2: How to Keep Score
+  - PART ONE: STOP LYING TO YOURSELF
+  - Chapter 2: How to Keep Score
+  - PART ONE: STOP LYING TO YOURSELF
+  - Chapter 2: How to Keep Score
+  - PART ONE: STOP LYING TO YOURSELF
+
+## The Software Paradox
+- **Author/editor:** Stephen O'Grady
+- **Source type:** practitioner guide
+- **Source tier (config list):** secondary
+- **Page count:** n/a
+- **Extraction status:** not provided
+- **Status detail:** file not in user-supplied folder
