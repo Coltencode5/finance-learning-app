@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .cursor/validation.log
+
+# Verbatim source-text dumps from copyrighted books — keep local, do not publish
+research_dossiers/**/raw_extractions/

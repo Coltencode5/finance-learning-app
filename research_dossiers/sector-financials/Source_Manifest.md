@@ -1,0 +1,328 @@
+# Source Manifest — sector-financials
+
+## The Bankers' New Clothes
+- **Author/editor:** Anat Admati and Martin Hellwig
+- **Source type:** academic / practitioner critique
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_bankers_new_clothes_-_Anat_Admat.pdf`
+- **Page count:** 650
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - PRINCETON UNIVERSITY PRESS
+  - PART I   Borrowing, Banking, and Risk    15
+  - PART II   The Case for More Bank Equity    79
+  - PART III   Moving Forward    167
+  - PREFACE TO THE PAPERBACK EDITION
+  - ACKNOWLEDGMENTS
+  - Chapter 1 we quoted Josef Ackermann, then CEO of
+  - Chapter 2 we saw that borrowing magnifies risk on the
+  - Chapter 7 as a benchmark return that shareholders expect to
+  - PART THREE
+  - Chapter 8. As long as the equity-like security is not actually
+  - Chapter 9.
+  - Chapter 11. The tax code also encourages borrowing by allowing
+  - Chapter 7. How much equity creditors require from borrowers
+  - Chapter 9.
+  - Chapter 8.
+  - Chapter 18 and 433 ff).
+  - Chapter 11. The Japanese experience of the 1990s shows that failing
+  - Chapter 10.
+  - Chapter 11.
+  - Chapter 12.
+  - Chapter 6 referred to the regulation of leverage measured in this
+  - Chapter 13.
+  - Chapter 3. Sinn (2010) explains that this structure was partly
+  - Chapter 11.
+
+## Handbook of Basel III Capital
+- **Author/editor:** Juan Ramirez
+- **Source type:** regulatory handbook
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Handbook_of_Basel_III_Capital_-_Juan_Ramirez.pdf`
+- **Page count:** 961
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - Chapter 1: Overview of Basel III
+  - Chapter 2: Minimum Capital Requirements
+  - Chapter 3: Common Equity 1 (CET1) Capital
+  - 3.6 Case Study: Banco BPI’s Partial Disposal of Portfolio of
+  - Chapter 4: Additional Tier 1 (AT1) Capital
+  - Chapter 5: Tier 2 Capital
+  - Chapter 6: Contingent Convertibles (CoCos)
+  - Chapter 7: Additional Valuation Adjustments (AVAs)
+  - Chapter 8: Accounting vs. Regulatory Consolidation
+  - Chapter 9: Treatment of Minority Interests in Consolidated Regulatory
+  - Chapter 10: Investments in Capital Instruments of Financial Institutions
+  - Chapter 11: Investments in Capital Instruments of Insurance Entities
+  - Chapter 12: Equity Investments in Non‐financial Entities
+  - Chapter 13: Deferred Tax Assets (DTAs)
+  - Chapter 14: Asset Protection Schemes and Bad Banks
+  - Chapter 15: Approaching Capital Enhancement Initiatives
+  - 15.5 Case Study: Banco Popular Joint Venture with Verde Partners
+  - Chapter 2: Minimum Capital Requirements
+  - Chapter 3: Common Equity 1 (CET1) Capital
+  - Chapter 4: Additional Tier 1 (AT1) Capital
+  - Chapter 5: Tier 2 Capital
+  - Chapter 6: Contingent Convertibles (CoCos)
+  - Chapter 7: Additional Valuation Adjustments (AVAs)
+  - Chapter 8: Accounting vs. Regulatory Consolidation
+  - Chapter 9: Treatment of Minority Interests in Consolidated Regulatory
+
+## The Dark Side of Valuation
+- **Author/editor:** Aswath Damodaran
+- **Source type:** textbook / practitioner guide
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_Dark_Side_of_Valuation_-_Aswath_Damodaran.pdf`
+- **Page count:** 876
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - THE DARK SIDE OF VALUATION
+  - ISBN-10: 0-13-485410-1
+  - ISBN-13: 978-0-13-485410-6
+  - Chapter 1 The Dark Side of Valuation
+  - PART I Enlightenment: The Tools
+  - Chapter 2 Intrinsic Valuation
+  - Chapter 3 Probabilistic Valuation: Scenario Analysis, Decision
+  - Chapter 4 Relative Valuation/Pricing
+  - Chapter 5 Real Options Valuation
+  - PART II The Dark Side of Macro Inputs
+  - Chapter 6 A Shaky Base: A “Risky” Risk-Free Rate
+  - Chapter 7 Risky Ventures: Assessing the Price of Risk
+  - Chapter 8 Macro Matters: The Real Economy
+  - PART III The Dark Side across the Life Cycle
+  - Chapter 9 Baby Steps: Young and Start-Up Companies
+  - Chapter 10 Shooting Stars: Valuing Growth Companies
+  - Chapter 11 The Grown-Ups: Mature Companies
+  - Chapter 12 Winding Down: Declining Companies
+  - PART IV The Dark Side Across Company Types
+  - Chapter 13 Ups and Downs: Cyclical and Commodity Companies
+  - Chapter 14 Mark to Market: Valuing Financial Services Companies
+  - Chapter 15 Invisible Investments: Valuing Firms with Intangible
+  - Chapter 16 Volatility Rules: Emerging-Market Companies
+  - Chapter 17 Going to Pieces: Disaggregated Value
+  - Chapter 18 The Cynic’s Corner: Value versus Price
+
+## Competition Demystified
+- **Author/editor:** Bruce C. Greenwald and Judd Kahn
+- **Source type:** textbook
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Competition_Demystified_-_Bruce_C_Greenwald.pdf`
+- **Page count:** 458
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - COMPETITION DEMYSTIFIED
+  - BRUCE GREENWALD AND JUDD KAHN
+  - PORTFOLIO
+  - LIBRARY OF CONGRESS CATALOGING IN PUBLICATION DATA
+  - ISBN: 978-1-101-21843-3
+  - Part I: The Prisoner’s Dilemma Game
+  - Part II: Entry/Preemption Games
+  - COMPETITION DEMYSTIFIED
+  - CHAPTER 1
+  - ONE SINGLE FORCE
+  - BARRIERS TO ENTRY AND COMPETITIVE ADVANTAGES
+  - LOCAL CHAMPIONS
+  - THE PROCESS OF STRATEGIC ANALYSIS
+  - THE COMPETITIVE LANDSCAPE
+  - MANAGING COMPETITIVE ADVANTAGES
+  - CONFLICTS AS GAMES: INTERACTING WITH COMPETITORS
+  - chapter 11 and illustrate its principles at play in chapters 12 and 13.
+  - THE ROAD AHEAD
+  - CHAPTER 2
+  - THE DIFFERENTIATION MYTH
+  - EFFICIENCY MATTERS
+  - BARRIERS TO ENTRY AND COMPETITIVE ADVANTAGES
+  - ENTRY, EXIT, AND LONG-RUN PROFITABILITY
+  - TYPES OF COMPETITIVE ADVANTAGES
+  - SUPPLY ADVANTAGES: COMPETITIVE COSTS
+
+## Expectations Investing
+- **Author/editor:** Alfred Rappaport and Michael J. Mauboussin
+- **Source type:** practitioner guide
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Expectations_Investing__Reading_Stock_Pric_-_Alfred_Rappaport (1).pdf`
+- **Page count:** 237
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - ALFRED RAPPAPORT
+  - HARVARD BUSINESS SCHOOL PRESS
+  - BOSTON, MASSACHUSETTS
+  - Chapter 1 makes the case for expectations investing and explains why
+  - Chapter 4 provides competitive strategy frameworks that you can apply to
+  - ACTIVE MANAGEMENT: CHALLENGE AND
+  - OPPORTUNITY
+  - THE EXPECTATIONS INVESTING PROCESS
+  - THE TWILIGHT OF TRADITIONAL ANALYSIS
+  - TABLE 1-1
+  - ESSENTIAL IDEAS
+  - THE RIGHT EXPECTATIONS
+  - SHAREHOLDER-VALUE ROAD MAP
+  - FREE CASH FLOW
+  - FIGURE 2-1
+  - TABLE 2-1
+  - TABLE 2-2
+  - COST OF CAPITAL
+  - TABLE 2-3
+  - EQUATION 2-1
+  - EQUATION 2-2
+  - EQUATION 2-3
+  - TABLE 2-4
+  - EQUATION 2-4
+  - FINANCIAL INSTITUTIONS
+
+## Common Stocks and Uncommon Profits and Other Writings
+- **Author/editor:** Philip A. Fisher
+- **Source type:** practitioner guide
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Common_Stocks_and_Uncommon_Profits_and_Oth_-_Philip_A_Fisher (1).pdf`
+- **Page count:** 307
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - INTRODUCING WILEY INVESTMENT
+  - ISBN 0-471-44550-9
+  - THE FIFTEEN POINTS
+  - GOALS VERSUS SCUTTLEBUTT
+  - MUCH MORE AVAILABLE
+  - BEGINNINGS
+  - MIDDLE LIFE
+  - SIGNIFICANCE—THE MIRROR IMAGE
+  - PART ONE COMMON STOCKS AND UNCOMMON PROFITS
+  - PART TWO CONSERVATIVE INVESTORS SLEEP WELL
+  - LOW-COST PRODUCTION
+  - STRONG MARKETING ORGANIZATION
+  - OUTSTANDING RESEARCH AND TECHNICAL EFFORT
+  - FINANCIAL SKILL
+  - PART THREE DEVELOPING AN INVESTMENT PHILOSOPHY
+  - THE BIRTH OF INTEREST
+  - FORMATIVE EXPERIENCES
+  - FIRST LESSONS IN THE SCHOOL OF EXPERIENCE
+  - BUILDING THE BASICS
+  - THE GREAT BEAR MARKET
+  - A CHANCE TO DO MY THING
+  - FROM DISASTER, OPPORTUNITY SPRINGS
+  - A FOUNDATION IS FORMED
+  - FOOD MACHINERY AS AN INVESTMENT
+  - OPPORTUNITY
+
+## Common Stocks and Uncommon Profits and Other Writings (alt file)
+- **Author/editor:** Philip A. Fisher
+- **Source type:** practitioner guide
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Common_Stocks_and_Uncommon_Profits_and_Other_Writings_-_Philip_Arthur_Fisher.pdf`
+- **Page count:** 353
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - INTRODUCING WILEY INVESTMENT
+  - ISBN 0-471-44550-9
+  - THE FIFTEEN POINTS
+  - GOALS VERSUS SCUTTLEBUTT
+  - MUCH MORE AVAILABLE
+  - BEGINNINGS
+  - MIDDLE LIFE
+  - SIGNIFICANCE—THE MIRROR IMAGE
+  - PART ONE COMMON STOCKS AND UNCOMMON PROFITS
+  - PART TWO CONSERVATIVE INVESTORS SLEEP WELL
+  - LOW-COST PRODUCTION
+  - STRONG MARKETING ORGANIZATION
+  - OUTSTANDING RESEARCH AND TECHNICAL
+  - FINANCIAL SKILL
+  - PART THREE DEVELOPING AN INVESTMENT PHILOSOPHY
+  - THE BIRTH OF INTEREST
+  - FORMATIVE EXPERIENCES
+  - FIRST LESSONS IN THE SCHOOL OF EXPERIENCE
+  - BUILDING THE BASICS
+  - THE GREAT BEAR MARKET
+  - A CHANCE TO DO MY THING
+  - FROM DISASTER, OPPORTUNITY SPRINGS
+  - A FOUNDATION IS FORMED
+  - FOOD MACHINERY AS AN INVESTMENT
+  - OPPORTUNITY
+
+## Paths to Wealth Through Common Stocks
+- **Author/editor:** Philip A. Fisher
+- **Source type:** practitioner guide
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Paths_to_Wealth_Through_Common_Stocks_-_Philip_A_Fisher.pdf`
+- **Page count:** 240
+- **Extraction status:** partial
+- **Status detail:** TOC not cleanly detected; chapter map reconstructed from headings
+- **Main areas covered (heading-level, factual):**
+  - INTRODUCING WILEY INVESTMENT CLASSICS
+  - Part I:
+  - Part II:
+  - Part III:
+  - Part IV:
+  - Part V:
+  - Part 5 is of interest partly for historical study and partly as a standard
+
+## The Bank Credit Analysis Handbook (Golin & Delhaise) — licensed chapter extracts
+- **Author/editor:** Jonathan Golin and Philippe Delhaise
+- **Source type:** practitioner handbook (bank credit analysis)
+- **Edition/year:** 2013 (2nd ed.)
+- **Extraction status:** partial
+- **Status detail:** Full ADE copy remains DRM-locked; user exported non-DRM PDFs for Chapters 3, 4, and 9 only (172 book pages per original TOC; extract page counts may differ). Chapters 5–8, 10–15 not included.
+- **Extract file — Chapter 3 — The Business of Banking:** `c:\Users\cfroo\Downloads\The_Bank_Credit_Analysis_Handbook_A_Guide_for_Anal..._----_(Chapter_3_The_Business_of_Banking).pdf` (60 pp, clean)
+  - Section headings detected:
+    - The Business of Banking
+    - BANKS AS INTERMEDIARIES
+    - How Banks Add Value
+    - Banks as Deposit-Taking Institutions
+    - 1. Demand deposits
+    - 2. Time deposits
+    - 3. Savings deposits
+    - INTERMEDIATION AND DISINTERMEDIATION
+    - Prospective borrowers
+    - Demand Deposits
+    - Time Deposits
+    - Saving Deposits
+    - How Banks Earn Money
+    - In addition to generating interest income from
+    - 1. Asset management
+    - 2. Investment banking
+    - 3. Credit cards
+    - 4. Transactional processing
+    - The Organization of the Bank
+    - Wholesale and corporate banking
+- **Extract file — Chapter 4 — Deconstructing the Bank Income Statement:** `c:\Users\cfroo\Downloads\The_Bank_Credit_Analysis_Handbook_A_Guide_for_Anal..._----_(Chapter_4_Deconstructing_the_Bank_Income_Statement).pdf` (52 pp, clean)
+  - Section headings detected:
+    - Deconstructing the Bank Income Statement
+    - Streams of revenue4
+    - Terminology and manner of presentation
+    - Importance of allowance for bad debts5
+    - ANATOMY OF A BANK INCOME
+    - The bank
+    - THE INCOME STATEMENT
+    - Also known as the
+    - Net income
+    - The income statement reflects
+    - The Cash Flow Statement
+    - CASH FLOW STATEMENT
+    - Income versus Cash Flow
+    - It cannot be overemphasized that
+    - Note that cash may be defined to include
+    - RELATIONSHIP BETWEEN THE BALANCE SHEET, THE INCOME STATEMENT, AND THE CASH FLOW
+    - Income Statement versus Cash Flow Statement
+    - Balance Sheet versus Income Statement
+    - Balance Sheet versus Cash Flow Statement
+    - No less for banks than for nonfinancial firms, income can be
+- **Extract file — Chapter 9 — Capital:** `c:\Users\cfroo\Downloads\The_Bank_Credit_Analysis_Handbook_A_Guide_for_Anal..._----_(Chapter_9_Capital).pdf` (39 pp, clean)
+  - Section headings detected:
+    - Markets 4
+    - THE FUNCTION AND IMPORTANCE OF
+    - Why Capital Is Important
+    - The Functions of Capital
+    - Bank Director Basics
+    - Capital Becomes More Important When There Is Little of It
+    - THE IMPACT OF HIGH LEVERAGE IN BANKS
+    - Capital as a Regulatory Standard
+    - Capital as an Organizing Principle
+    - Summary of Functions
+    - Fund startup, investment, and expansion to take advantage of new business opportunities
+    - Comply with regulatory requirements
+    - CAPITAL CONFUSION
+    - REASONS FOR HIGH BANK LEVERAGE
+    - As do many terms in finance, and as the quotations above suggest,
+    - 1. Capital as
+    - 2. Capital as the
+    - 3. Capital
+    - 4. Capital
+    - 5. Capital
