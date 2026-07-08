@@ -138,7 +138,8 @@
       "The KPI layer beneath the financials: every sector has operating metrics (subscribers, load factors, rig counts, daily active users) that lead the reported financials — and the analyst's edge is often in forecasting the KPI before it shows up in EPS.",
       "The link to channel checks: the sector framework tells you which operating metrics to go check (Z3.3) — you can't build a useful mosaic without knowing what's material.",
       "The real-estate exception: REITs are a GICS sector, but their sector framework (property segments, FFO/AFFO, NAV) is taught in the Real Estate module itself — the sector layer back-links there rather than rebuilding it.",
-      "The financials forward-link (M8 deferral, landed M9): banks and insurers get their full sector syllabus in the Financials sector module — net interest margin, credit losses, capital ratios, and the valuation bend. This hub points to sector-financials.z1.1 as the door; the sector module points back here for the full research craft."
+      "The financials forward-link (M8 deferral, landed M9): banks and insurers get their full sector syllabus in the Financials sector module — net interest margin, credit losses, capital ratios, and the valuation bend. This hub points to sector-financials.z1.1 as the door; the sector module points back here for the full research craft.",
+      "The software forward-link (landed M10): software companies get their full sector syllabus in the Information Technology sector module — SaaS economics, net revenue retention, the growth-vs-margin trade, and the platform/network-effects frame. This hub points to sector-information-technology.z1.1 as the door; the sector module points back here for the full research craft."
     ],
     "connects_to": [
       {
@@ -192,9 +193,13 @@
       {
         "ref": "G149",
         "note": null
+      },
+      {
+        "ref": "sector-information-technology.z1.1",
+        "note": "GICS IT sector lens — understand the sector here, learn to research it in ER"
       }
     ],
-    "connects_to_raw": "`sector-financials.z1.1` (GICS financials sector lens — the M8 deferral landed M9) · Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*.",
+    "connects_to_raw": "`sector-financials.z1.1` (GICS financials sector lens — the M8 deferral landed M9) · Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*. · `sector-information-technology.z1.1` (GICS IT sector lens — landed M10)",
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],

@@ -1,15 +1,15 @@
 # Project Status
 
-**Last updated:** Milestone 9 complete (2026-07-07)
+**Last updated:** Milestone 10 complete (2026-07-07)
 
 ## Corpus totals (validated)
 
 | Metric | Value |
 |---|---|
-| Active modules | **12** |
-| Shared globals | **292** (G1–G292, contiguous) |
-| Zone nodes | **591** |
-| Graph edges | **4,185** |
+| Active modules | **13** |
+| Shared globals | **303** (G1–G303, contiguous) |
+| Zone nodes | **602** |
+| Graph edges | **4,308** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -20,7 +20,19 @@
 | 6 | Macro & Economics | macro-economics | core-concept | 10 | 51 | G236–G263 | complete |
 | 7 | Fixed Income | fixed-income | asset-class | 11 | 51 | G264–G285 | complete |
 | 8 | Sector Layer Prep | — | prep | — | — | — | complete |
-| **9** | **Financials (Sector)** | **sector-financials** | **sector-layer1** | **12** | **11** | **G286–G292** | **complete** |
+| 9 | Financials (Sector) | sector-financials | sector-layer1 | 12 | 11 | G286–G292 | complete |
+| **10** | **Information Technology (Sector)** | **sector-information-technology** | **sector-layer1** | **13** | **11** | **G293–G303** | **complete** |
+
+## Milestone 10 — Information Technology (Sector)
+
+- **Slug:** `sector-information-technology`
+- **Kind:** `sector-layer1` (ADR-003 rule 1)
+- **Zones:** Z1 Code Eats the World (2) · Z2 Three Businesses, One Ticker Prefix (3) · Z3 Networks, Lock-In & the Scoreboard (2) · Z4 Going Deeper: Analyzing One (2) · Z5 Gravity, Regulators & the Next Wave (2)
+- **New globals:** G293–G303 (11 net-new; append-only; each with exactly one `home_of`; hosted: G295 on Z2.1, G298/G299 on Z3.1, G301 on Z3.2)
+- **Disambiguation:** G297 ↔ G132/G216 (first three-way family); G294 ↔ G67
+- **Attachment edges:** Z1.1 ↔ `equity-research.z2.3` (bidirectional, ER forward-link bullet); Z4.2 → `fixed-income.z4.8` (credit handshake as back-link — template works); Z5.2 ↔ `real-estate.z2.3` (AI/data-center seam)
+- **Structured GAPs:** 2 (`software-paradox-absent` on Z2.2 — Apple FY2025 10-K now grounds devices; `ai-cycle-recency` on Z5.2)
+- **Design ripple:** N-way `disambiguate_with` retrofit sentence added to `docs/SECTOR_LAYER_DESIGN.md` checklist step 4; unhomed-generics backlog (moat / operating leverage / TAM) added to `docs/MIGRATION_DEFECTS.md`
 
 ## Milestone 9 — Financials (Sector)
 
@@ -54,10 +66,10 @@ Prep milestone (no new module content authored):
 
 ## Next gate
 
-- Next module: **sector-information-technology** (M10, `kind: sector-layer1`, `build_order: 13`, globals from **G293**)
-- M10 source dossier prepared at `research_dossiers/sector-information-technology/` (architecture session pending; not yet in `content/`)
-- Wave one build order: IT → Energy → Consumer Discretionary
+- Next module: **sector-energy** (M11, `kind: sector-layer1`, `build_order: 14`, globals from **G304**)
+- Wave one remaining: Energy → Consumer Discretionary
 
 ## Known defects (unchanged)
 
-- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7/M8/M9
+- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7–M10
+- Unhomed cross-module concepts (moat / operating leverage / TAM) — see `docs/MIGRATION_DEFECTS.md` §G

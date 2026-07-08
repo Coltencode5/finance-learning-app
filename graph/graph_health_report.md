@@ -6,36 +6,36 @@ Generated: 2026-07-07 by `pipeline/build/graph_health.py`
 
 | Metric | Value |
 |---|---|
-| Globals | 292 |
-| Module zone nodes | 591 |
-| Total edges | 4185 |
-| Cross-module reference edges | 2641 |
+| Globals | 303 |
+| Module zone nodes | 602 |
+| Total edges | 4308 |
+| Cross-module reference edges | 2713 |
 
 ### Edge kinds
 
-- **disambiguates**: 14
-- **home_of**: 323
-- **references**: 3848
+- **disambiguates**: 20
+- **home_of**: 334
+- **references**: 3954
 
 ### Inbound degree distribution (all indexed ids)
 
 - min: 0
-- max: 51
-- mean: 4.7
+- max: 52
+- mean: 4.8
 
 ### Outbound degree distribution
 
 - min: 0
 - max: 28
-- mean: 4.7
+- mean: 4.8
 
 ## Top 10 most-referenced globals
 
 | Rank | ID | Term | Inbound refs |
 |---|---|---|---|
-| 1 | G29 | Leverage | 51 |
-| 2 | G1 | IRR (Internal Rate of Return) | 27 |
-| 3 | G127 | Market cycles & the pendulum | 27 |
+| 1 | G29 | Leverage | 52 |
+| 2 | G127 | Market cycles & the pendulum | 30 |
+| 3 | G1 | IRR (Internal Rate of Return) | 27 |
 | 4 | G9 | "2 and 20" | 23 |
 | 5 | G124 | Second-level thinking | 22 |
 | 6 | G247 | The federal funds rate (the policy rate) (Z2.5) | 22 |
@@ -47,6 +47,8 @@ Generated: 2026-07-07 by `pipeline/build/graph_health.py`
 ## Disambiguation edges (canonical metadata only)
 
 - `G102` → `G53`
+- `G132` → `G297`
+- `G216` → `G297`
 - `G265` → `G58`
 - `G269` → `G248`
 - `G269` → `G257`
@@ -57,7 +59,11 @@ Generated: 2026-07-07 by `pipeline/build/graph_health.py`
 - `G286` → `G277`
 - `G286` → `G70`
 - `G288` → `G69`
+- `G294` → `G67`
+- `G297` → `G132`
+- `G297` → `G216`
 - `G53` → `G102`
+- `G67` → `G294`
 - `G69` → `G288`
 - `G70` → `G286`
 
@@ -71,12 +77,17 @@ Count: 2 (see `graph/orphan_low_reference.json` for full list)
 
 ## Low-reference globals (<2 inbound references)
 
-Count: 5
+Count: 10
 - `G128` Long/short equity (1 refs)
 - `G272` The money market (bills, CP, CDs) (Z3.5) (1 refs)
 - `G288` Insurance float (Z2.2) (1 refs)
 - `G289` The combined ratio (Z2.2) (1 refs)
 - `G292` The bank run & deposit insurance (Z5.2) (1 refs)
+- `G297` The multi-sided platform (Z3.1) (1 refs)
+- `G298` Network effects (Z3.1) (1 refs)
+- `G300` ARR (annual recurring revenue) (Z3.2) (1 refs)
+- `G302` The Rule of 40 (Z4.1) (1 refs)
+- `G303` Stock-based compensation (SBC) (Z4.2) (1 refs)
 
 ## Cross-module dependencies (reference counts)
 
@@ -88,8 +99,9 @@ Count: 5
 - **macro-economics** → global (307), private-equity (3), hedge-funds (2)
 - **private-credit** → global (181), private-equity (27)
 - **private-equity** → global (298)
-- **real-estate** → global (161), private-equity (17), investment-banking (2), private-credit (1)
+- **real-estate** → global (161), private-equity (17), investment-banking (2), private-credit (1), sector-information-technology (1)
 - **sector-financials** → global (37), equity-research (3), fixed-income (2), investment-banking (2), macro-economics (2)
+- **sector-information-technology** → global (48), asset-management (4), equity-research (4), sector-financials (4), macro-economics (3)
 - **venture-capital** → global (152), private-equity (33), equity-research (5), investment-banking (3), hedge-funds (1)
 - **wealth-management** → global (249), asset-management (38), private-equity (9), hedge-funds (4), private-credit (1)
 
@@ -98,7 +110,7 @@ Count: 5
 These items are warnings, not validation errors:
 
 - **Orphan nodes**: 1 — may be front-door nodes or missing connects_to
-- **Low-reference globals**: 5 — candidate demotions or missing cross-links
+- **Low-reference globals**: 10 — candidate demotions or missing cross-links
 - **Disambiguation pairs**: only globals with `disambiguate_with` in `globals.json` produce edges; other legacy "this vs. that" pairs remain prose-only until metadata is added
 - **Prerequisites**: `graph/prerequisites.json` is experimental — do not treat as canonical
 

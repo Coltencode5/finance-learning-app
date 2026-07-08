@@ -39,10 +39,10 @@ A sector module teaches the sector *as a business* to a curious, browsing learne
 1. Scaffold via `scaffold_module.py --kind sector-layer1` (sector spine placeholders land automatically post-M8).
 2. Inheritance pass over all prior globals **before** authoring — list inherited vs. candidate-new.
 3. Tier A sectors: run the source-extraction prompt first; Tier B: architect drafts with targeted searches.
-4. Author per the standing node standards: four required fields, structured `gaps[]`, back-link-don't-re-home, disambiguation callouts at every seam (esp. vs. parent asset-class/macro globals; vs. the RE module where relevant per D1).
+4. Author per the standing node standards: four required fields, structured `gaps[]`, back-link-don't-re-home, disambiguation callouts at every seam (esp. vs. parent asset-class/macro globals; vs. the RE module where relevant per D1). When a new global joins an existing homonym family, the same migration appends the new ID to every prior member's `disambiguate_with` (N-way retrofit; first applied M10 for G297 ↔ G132/G216).
 5. Attachment edges: Z1.1 → `equity-research.z2.3`; ER Z2.3 → sector front door; credit node → `fixed-income.z4.8` (D4).
 6. Z4 duplication guard review (D4) as an explicit QA step.
 7. `validate.py --strict` at 0/0 (compactness warnings included) before delivery.
 
 ## Milestone numbering
-M8 = sector-layer prep. **M9 = sector-financials (complete).** M10–M12 = remaining wave one.
+M8 = sector-layer prep. **M9 = sector-financials (complete).** **M10 = sector-information-technology (complete).** M11–M12 = remaining wave one (Energy → Consumer Discretionary).

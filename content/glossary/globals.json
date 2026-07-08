@@ -1131,7 +1131,9 @@
       "Z1",
       "Z5"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G294"
+    ],
     "status": "mapped"
   },
   {
@@ -2255,7 +2257,9 @@
       "Z2",
       "Z5"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G297"
+    ],
     "status": "mapped"
   },
   {
@@ -3726,7 +3730,9 @@
       "PE",
       "AM"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G297"
+    ],
     "status": "mapped"
   },
   {
@@ -5125,6 +5131,244 @@
       "Macro",
       "FI",
       "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G293",
+    "term": "Zero marginal cost & the economics of software (Z1.2)",
+    "aliases": [
+      "zero marginal cost",
+      "software economics"
+    ],
+    "quick_definition": "Serving one more software customer costs ~nothing, so costs land upfront (R&D, S&M) and margins explode at scale — the property behind everything strange about this sector.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z1.2",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "AM",
+      "RE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G294",
+    "term": "SaaS & the subscription model (Z2.1)",
+    "aliases": [
+      "SaaS",
+      "software as a service",
+      "subscription software"
+    ],
+    "quick_definition": "Software rented as a cloud-delivered service instead of sold as a license — converting the customer's capex into opex and the vendor's revenue from lumpy into recurring.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z2.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "PC",
+      "AM"
+    ],
+    "disambiguate_with": [
+      "G67"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G295",
+    "term": "Cloud computing & the hyperscalers (Z2.1)",
+    "aliases": [
+      "cloud",
+      "hyperscalers",
+      "IaaS",
+      "PaaS"
+    ],
+    "quick_definition": "Computing sold as a utility — IaaS/PaaS/SaaS — from the handful of firms (AWS, Azure, Google Cloud) whose rented data centers now run most of the digital economy.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z2.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "RE",
+      "VC",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G296",
+    "term": "The fabless/foundry split & the semiconductor value chain (Z2.2)",
+    "aliases": [
+      "fabless",
+      "foundry",
+      "semiconductor value chain"
+    ],
+    "quick_definition": "Chip design (fabless — Nvidia) separated from chip making (foundries — TSMC), with equipment monopolies (ASML) beneath — the most concentrated manufacturing chain on earth.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z2.2",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G297",
+    "term": "The multi-sided platform (Z3.1)",
+    "aliases": [
+      "multi-sided platform",
+      "two-sided platform",
+      "platform business"
+    ],
+    "quick_definition": "A business whose product is the connection between user groups (developers↔users, merchants↔shoppers) — the economic sense of \"platform,\" distinct from ★G132/★G216.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "HF",
+      "AM",
+      "Macro"
+    ],
+    "disambiguate_with": [
+      "G132",
+      "G216"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G298",
+    "term": "Network effects (Z3.1)",
+    "aliases": [
+      "network effect",
+      "network externalities"
+    ],
+    "quick_definition": "Value that grows with each additional participant — the force that makes tech markets tip and the microeconomic engine behind VC's power law (★G201).",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "VC",
+      "ER",
+      "Macro",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G299",
+    "term": "Switching costs & lock-in (Z3.1)",
+    "aliases": [
+      "switching costs",
+      "lock-in"
+    ],
+    "quick_definition": "What leaving would cost the customer — money, risk, retraining, data — the mechanism that converts a win into durable pricing power, and the source of NRR > 100%.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G300",
+    "term": "ARR (annual recurring revenue) (Z3.2)",
+    "aliases": [
+      "ARR",
+      "annual recurring revenue"
+    ],
+    "quick_definition": "The annualized value of active subscriptions — the size of the recurring base a subscription business owns; a run-rate, deliberately distinct from GAAP revenue.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z3.2",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "PC",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G301",
+    "term": "NRR (net revenue retention) (Z3.2)",
+    "aliases": [
+      "NRR",
+      "net revenue retention",
+      "dollar-based net retention",
+      "net retention"
+    ],
+    "quick_definition": "What last year's customers spend this year — expansion netted against churn; above 100% means the installed base compounds by itself.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z3.2",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G302",
+    "term": "The Rule of 40 (Z4.1)",
+    "aliases": [
+      "Rule of 40"
+    ],
+    "quick_definition": "Revenue growth % + margin % ≥ 40 — the sector's one-number price on the growth-vs-margin trade; a screen and a language, not a valuation.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z4.1",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "VC",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G303",
+    "term": "Stock-based compensation (SBC) (Z4.2)",
+    "aliases": [
+      "SBC",
+      "stock-based compensation",
+      "share-based compensation"
+    ],
+    "quick_definition": "Pay in shares: a real expense, non-cash, added back to \"adjusted\" numbers and settled through dilution (★G42) — the sector's signature accounting adjustment.",
+    "home_module": "sector-information-technology",
+    "home_zone": "Z4.2",
+    "contributed_by": "sector-information-technology",
+    "category": "Information Technology (Sector)",
+    "appears_in": [
+      "ER",
+      "IB",
+      "AM"
     ],
     "disambiguate_with": [],
     "status": "mapped"

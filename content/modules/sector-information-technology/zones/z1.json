@@ -1,0 +1,128 @@
+[
+  {
+    "gaps": [],
+    "real_world_layer": "GICS IT classification; ER Z2.3 software contrast.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": null,
+    "id": "sector-information-technology.z1.1",
+    "local_id": "Z1.1",
+    "module": "sector-information-technology",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What the Tech Sector Sells: Code, Chips & the People In Between",
+    "tag": "core",
+    "quick_definition": "\"Information Technology\" is the market's biggest sector and its most misunderstood label: it isn't one business but a stack of three — semiconductors (the physical substrate), software (the products built on it), and IT services (the people who make it all work inside other companies) — bound together by one shared fact: what they sell gets more valuable, not used up, as more of the world runs on it.",
+    "explainer_covers": [
+      "The stack, walked bottom-up: chips (the manufactured physics — Nvidia, TSMC, ASML) → cloud infrastructure (the rented computers) → software (the products — Microsoft, ServiceNow, CrowdStrike) → IT services (the implementers — Accenture). Each layer is a customer of the one below, which is why demand ripples through the whole sector at once (the AI wave, Z5.2, is the current exhibit).",
+      "Why this sector is a third of your index fund: software's economics (Z1.2) let winners grow to sizes no industrial company ever reached, and passive ownership (★G137/★G138) mechanically concentrates everyone's savings in them — the sector's sheer index weight is itself a defining fact (picked up in Z5.1).",
+      "The label's honest borders: GICS puts Apple and Microsoft in \"IT\" but Google and Meta in Communication Services and Amazon in Consumer Discretionary — the sector boundary is administrative, not economic. This module teaches the economics (platforms, subscriptions, chips), which travel across those borders; the ticker-sorting is a classification detail.",
+      "Where these companies come from: this is the only sector with a dedicated feeder industry — venture capital. The pipeline runs founder → rounds → crossover (★G215) → IPO (★G53/★G102) → constituent of this sector, which is why VC's vocabulary keeps reappearing here at industrial scale.",
+      "The door onward: this is the sector framework Equity Research's Z2.3 points to — its software worked contrast (net revenue retention, bookings, the growth-vs-margin trade) is taught in full in Z3.2 and Z4. Someone who wants to analyze a tech company starts from exactly this understanding of what the sector sells."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z2.3",
+        "note": "attachment — the bidirectional door to sector research craft"
+      },
+      {
+        "ref": "sector-information-technology.z1.2",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.1",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.2",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.3",
+        "note": null
+      },
+      {
+        "ref": "G215",
+        "note": "crossover — the VC pipeline into public tech"
+      },
+      {
+        "ref": "G53",
+        "note": null
+      },
+      {
+        "ref": "G102",
+        "note": null
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z5.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`equity-research.z2.3` (attachment — the door, both directions), Z1.2, Z2.1–Z2.3, ★G215/★G53/★G102 (the VC pipeline), ★G137/★G138 (why everyone owns it), Z5.1."
+  },
+  {
+    "gaps": [],
+    "real_world_layer": "Tzuo; dossier 10-K subscription gross margins.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": "G293",
+    "id": "sector-information-technology.z1.2",
+    "local_id": "Z1.2",
+    "module": "sector-information-technology",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Economics That Make Tech Different: Zero Marginal Cost",
+    "tag": "global",
+    "quick_definition": "Almost everything strange about this sector traces to one property: once software exists, serving one more customer costs almost nothing (★G293). The costs all come first — engineers, sales, data centers — so a software business runs high gross margins, loses money while small, and prints money at scale. Scale isn't just an advantage here; it's the business model.",
+    "explainer_covers": [
+      "The core idea, told plainly: a factory must build every additional car; a software company copies a file. Cost of goods for software is a sliver (hosting, support) — gross margins of 70–90% versus 20–40% for most of the economy (the dossier's clean 10-Ks show it live: subscription gross margins near 80%).",
+      "Where the money actually goes: since making copies is free, the spending shifts to creating (R&D) and distributing (sales & marketing) — big, upfront, fixed-ish costs. Which produces the sector's signature income statement: enormous gross profit, thin or negative operating profit while growing — because today's S&M is buying next year's revenue (the accounting consequence lands in Z4.1).",
+      "Operating leverage, the payoff: once revenue clears the fixed-cost base, each new dollar is nearly pure profit — the same math that makes asset managers scale businesses (AM z5.1's AUM economics), turned up to maximum. This is why growth is the sector's obsession: the prize for winning is structurally bigger here than anywhere else.",
+      "The honest boundary — this is a software fact, not a sector fact: semiconductor fabs are the opposite (a leading-edge fab costs ~$20B before the first chip ships — Z2.2's world), and IT services scale one billable human at a time (Z2.3). The \"capex-light vs. capex-heavy\" split runs through the middle of this sector, not around it.",
+      "Where this is heading: costless copies + upfront costs + scale rewards = markets that tip toward one or two winners. The mechanisms that do the tipping — network effects and switching costs — are Z3.1's subject; the political consequences are Z5.1's."
+    ],
+    "connects_to": [
+      {
+        "ref": "G296",
+        "note": "the capex-heavy other half"
+      },
+      {
+        "ref": "sector-information-technology.z2.1",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.2",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.3",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z3.1",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z4.1",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z5.1",
+        "note": "the corpus's other operating-leverage exhibit"
+      },
+      {
+        "ref": "real-estate.z2.1",
+        "note": "capital intensity — the contrast asset class"
+      }
+    ],
+    "connects_to_raw": "★G296 (the capex-heavy other half), Z2.1–Z2.3 (the three cost structures), Z3.1 (what tips the markets), Z4.1 (the valuation consequence), `asset-management.z5.1`, `real-estate.z2.1`."
+  }
+]

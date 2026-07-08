@@ -6869,6 +6869,158 @@
         ]
       }
     ],
+    "sector-information-technology": [
+      {
+        "node": "sector-information-technology.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-information-technology.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-information-technology.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-information-technology.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-information-technology.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
     "venture-capital": [
       {
         "node": "venture-capital.z1.2",

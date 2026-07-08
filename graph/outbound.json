@@ -45,7 +45,13 @@
     "G13": [],
     "G130": [],
     "G131": [],
-    "G132": [],
+    "G132": [
+      {
+        "to": "G297",
+        "kind": "disambiguates",
+        "note": null
+      }
+    ],
     "G133": [],
     "G134": [],
     "G135": [],
@@ -138,7 +144,13 @@
     "G213": [],
     "G214": [],
     "G215": [],
-    "G216": [],
+    "G216": [
+      {
+        "to": "G297",
+        "kind": "disambiguates",
+        "note": null
+      }
+    ],
     "G217": [],
     "G218": [],
     "G219": [],
@@ -280,8 +292,36 @@
     "G290": [],
     "G291": [],
     "G292": [],
+    "G293": [],
+    "G294": [
+      {
+        "to": "G67",
+        "kind": "disambiguates",
+        "note": null
+      }
+    ],
+    "G295": [],
+    "G296": [],
+    "G297": [
+      {
+        "to": "G132",
+        "kind": "disambiguates",
+        "note": null
+      },
+      {
+        "to": "G216",
+        "kind": "disambiguates",
+        "note": null
+      }
+    ],
+    "G298": [],
+    "G299": [],
     "G3": [],
     "G30": [],
+    "G300": [],
+    "G301": [],
+    "G302": [],
+    "G303": [],
     "G31": [],
     "G32": [],
     "G33": [],
@@ -327,7 +367,13 @@
     "G64": [],
     "G65": [],
     "G66": [],
-    "G67": [],
+    "G67": [
+      {
+        "to": "G294",
+        "kind": "disambiguates",
+        "note": null
+      }
+    ],
     "G68": [],
     "G69": [
       {
@@ -2865,6 +2911,11 @@
         "to": "sector-financials.z1.1",
         "kind": "references",
         "note": "GICS financials sector lens — understand the sector here, learn to research it in ER"
+      },
+      {
+        "to": "sector-information-technology.z1.1",
+        "kind": "references",
+        "note": "GICS IT sector lens — understand the sector here, learn to research it in ER"
       }
     ],
     "equity-research.z2.4": [
@@ -5875,6 +5926,11 @@
         "to": "sector-financials.z4.2",
         "kind": "references",
         "note": "attachment — bank-credit analysis deferred here per scope boundary 3"
+      },
+      {
+        "to": "sector-information-technology.z4.2",
+        "kind": "references",
+        "note": "attachment — tech credit (template works) completed as back-link"
       }
     ],
     "fixed-income.z4.9": [
@@ -17307,6 +17363,11 @@
         "to": "real-estate.z2.4",
         "kind": "references",
         "note": null
+      },
+      {
+        "to": "sector-information-technology.z5.2",
+        "kind": "references",
+        "note": "AI demand wave — supply-side home in the IT sector module"
       }
     ],
     "real-estate.z2.4": [
@@ -18763,6 +18824,598 @@
         "to": "sector-financials.z5.1",
         "kind": "references",
         "note": null
+      }
+    ],
+    "sector-information-technology.z1.1": [
+      {
+        "to": "G102",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G137",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G138",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G215",
+        "kind": "references",
+        "note": "crossover — the VC pipeline into public tech"
+      },
+      {
+        "to": "G53",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "equity-research.z2.3",
+        "kind": "references",
+        "note": "attachment — the bidirectional door to sector research craft"
+      },
+      {
+        "to": "sector-information-technology.z1.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z5.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-information-technology.z1.2": [
+      {
+        "to": "G293",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G296",
+        "kind": "references",
+        "note": "the capex-heavy other half"
+      },
+      {
+        "to": "asset-management.z5.1",
+        "kind": "references",
+        "note": "the corpus's other operating-leverage exhibit"
+      },
+      {
+        "to": "real-estate.z2.1",
+        "kind": "references",
+        "note": "capital intensity — the contrast asset class"
+      },
+      {
+        "to": "sector-information-technology.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z4.1",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-information-technology.z2.1": [
+      {
+        "to": "G293",
+        "kind": "references",
+        "note": "the economics underneath"
+      },
+      {
+        "to": "G294",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G295",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G67",
+        "kind": "references",
+        "note": "disambiguate — the two subscriptions"
+      },
+      {
+        "to": "real-estate.z2.3",
+        "kind": "references",
+        "note": "data centers — where the cloud physically lives"
+      },
+      {
+        "to": "sector-information-technology.z3.1",
+        "kind": "references",
+        "note": "lock-in as the retention engine"
+      },
+      {
+        "to": "sector-information-technology.z3.2",
+        "kind": "references",
+        "note": "the metrics the model creates"
+      },
+      {
+        "to": "sector-information-technology.z5.2",
+        "kind": "references",
+        "note": "the cloud as the AI buildout's delivery layer"
+      }
+    ],
+    "sector-information-technology.z2.2": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G237",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G293",
+        "kind": "references",
+        "note": "the capex contrast — this node is the other half"
+      },
+      {
+        "to": "G296",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G299",
+        "kind": "references",
+        "note": "ecosystem lock-in on devices"
+      },
+      {
+        "to": "macro-economics.z5.3",
+        "kind": "references",
+        "note": "★G261 — the trade plumbing the chip war runs through"
+      },
+      {
+        "to": "sector-information-technology.z4.1",
+        "kind": "references",
+        "note": "cyclical valuation — normalized earnings"
+      },
+      {
+        "to": "sector-information-technology.z5.2",
+        "kind": "references",
+        "note": "AI as the current demand shock — GPUs, data centers"
+      }
+    ],
+    "sector-information-technology.z2.3": [
+      {
+        "to": "G28",
+        "kind": "references",
+        "note": "advisory work's cousin craft"
+      },
+      {
+        "to": "G293",
+        "kind": "references",
+        "note": "the exception that proves it"
+      },
+      {
+        "to": "sector-information-technology.z2.1",
+        "kind": "references",
+        "note": "the products these firms implement"
+      },
+      {
+        "to": "sector-information-technology.z4.1",
+        "kind": "references",
+        "note": "why these get people-business multiples, not software multiples"
+      },
+      {
+        "to": "sector-information-technology.z5.2",
+        "kind": "references",
+        "note": "AI adoption as the current services demand wave"
+      }
+    ],
+    "sector-information-technology.z3.1": [
+      {
+        "to": "G132",
+        "kind": "references",
+        "note": "disambiguate — HF organizational platform"
+      },
+      {
+        "to": "G201",
+        "kind": "references",
+        "note": "the power law — this node supplies its engine"
+      },
+      {
+        "to": "G216",
+        "kind": "references",
+        "note": "disambiguate — VC platform team"
+      },
+      {
+        "to": "G297",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G298",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G299",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "macro-economics.z5.5",
+        "kind": "references",
+        "note": "the dollar as a network-effect asset"
+      },
+      {
+        "to": "sector-financials.z2.3",
+        "kind": "references",
+        "note": "exchanges — the older network-effect natives"
+      },
+      {
+        "to": "sector-information-technology.z1.2",
+        "kind": "references",
+        "note": "zero marginal cost — the fuel"
+      },
+      {
+        "to": "sector-information-technology.z2.1",
+        "kind": "references",
+        "note": "subscriptions as the delivery wrapper"
+      },
+      {
+        "to": "sector-information-technology.z5.1",
+        "kind": "references",
+        "note": "antitrust — the consequence"
+      }
+    ],
+    "sector-information-technology.z3.2": [
+      {
+        "to": "G183",
+        "kind": "references",
+        "note": "the ER model these feed"
+      },
+      {
+        "to": "G215",
+        "kind": "references",
+        "note": "the bridge"
+      },
+      {
+        "to": "G294",
+        "kind": "references",
+        "note": "the model that created the metrics"
+      },
+      {
+        "to": "G299",
+        "kind": "references",
+        "note": "where NRR > 100 comes from"
+      },
+      {
+        "to": "G300",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G301",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z3.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z4.1",
+        "kind": "references",
+        "note": "what the analyst does with these"
+      },
+      {
+        "to": "sector-information-technology.z4.2",
+        "kind": "references",
+        "note": "RPO/deferred revenue — the GAAP shadow"
+      },
+      {
+        "to": "venture-capital.z3.4",
+        "kind": "references",
+        "note": "the startup lens — the seam's far side"
+      }
+    ],
+    "sector-information-technology.z4.1": [
+      {
+        "to": "G149",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G259",
+        "kind": "references",
+        "note": "the rates bridge"
+      },
+      {
+        "to": "G27",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G293",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G301",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G302",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G88",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G90",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "asset-management.z2.6",
+        "kind": "references",
+        "note": "the growth style"
+      },
+      {
+        "to": "equity-research.z3.7",
+        "kind": "references",
+        "note": "the machinery — the guard"
+      },
+      {
+        "to": "equity-research.z3.8",
+        "kind": "references",
+        "note": "the machinery — the guard"
+      },
+      {
+        "to": "sector-financials.z4.1",
+        "kind": "references",
+        "note": "the opposite pathology — the sibling contrast"
+      },
+      {
+        "to": "sector-information-technology.z2.2",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.3",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z3.2",
+        "kind": "references",
+        "note": "the companion variables' home"
+      }
+    ],
+    "sector-information-technology.z4.2": [
+      {
+        "to": "G183",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G184",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G192",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G193",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G274",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G275",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G276",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G277",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G29",
+        "kind": "references",
+        "note": "the template that works"
+      },
+      {
+        "to": "G303",
+        "kind": "home_of",
+        "note": null
+      },
+      {
+        "to": "G34",
+        "kind": "references",
+        "note": "the template that works"
+      },
+      {
+        "to": "G42",
+        "kind": "references",
+        "note": "dilution — SBC's true settlement"
+      },
+      {
+        "to": "G74",
+        "kind": "references",
+        "note": "the template that works"
+      },
+      {
+        "to": "G92",
+        "kind": "references",
+        "note": "what the add-back flatters"
+      },
+      {
+        "to": "fixed-income.z4.8",
+        "kind": "references",
+        "note": "attachment — the deferral completed, back-link form"
+      },
+      {
+        "to": "sector-financials.z4.2",
+        "kind": "references",
+        "note": "the opposite credit case — supervisor-as-covenant vs. template-as-usual"
+      },
+      {
+        "to": "sector-information-technology.z3.2",
+        "kind": "references",
+        "note": null
+      }
+    ],
+    "sector-information-technology.z5.1": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G137",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G138",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G140",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "asset-management.z2.7",
+        "kind": "references",
+        "note": "disruption as the quality-thesis killer"
+      },
+      {
+        "to": "asset-management.z3.3",
+        "kind": "references",
+        "note": "index gravity"
+      },
+      {
+        "to": "sector-financials.z5.2",
+        "kind": "references",
+        "note": "the sibling sector's meta-node — rhyming structure, different fragility"
+      },
+      {
+        "to": "sector-information-technology.z3.1",
+        "kind": "references",
+        "note": "the mechanisms whose endgame this is"
+      },
+      {
+        "to": "sector-information-technology.z5.2",
+        "kind": "references",
+        "note": "the current paradigm turn"
+      }
+    ],
+    "sector-information-technology.z5.2": [
+      {
+        "to": "G127",
+        "kind": "references",
+        "note": "the pendulum's counsel"
+      },
+      {
+        "to": "G295",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "G296",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "equity-research.z5.7",
+        "kind": "references",
+        "note": "the demand-side ring"
+      },
+      {
+        "to": "macro-economics.z1.12",
+        "kind": "references",
+        "note": "the productivity claim"
+      },
+      {
+        "to": "real-estate.z2.3",
+        "kind": "references",
+        "note": "attachment-adjacent — the physical footprint"
+      },
+      {
+        "to": "sector-information-technology.z1.1",
+        "kind": "references",
+        "note": null
+      },
+      {
+        "to": "sector-information-technology.z2.2",
+        "kind": "references",
+        "note": "the cycle physics"
+      },
+      {
+        "to": "sector-information-technology.z5.1",
+        "kind": "references",
+        "note": "the treadmill this may be a turn of"
+      },
+      {
+        "to": "venture-capital.z2.8",
+        "kind": "references",
+        "note": "the demand-side ring"
       }
     ],
     "venture-capital.z1.1": [

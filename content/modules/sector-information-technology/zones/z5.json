@@ -1,0 +1,134 @@
+[
+  {
+    "gaps": [],
+    "real_world_layer": "Cusumano Ch. 6; Apple FY2025 10-K (DMA, DOJ, Epic).",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": null,
+    "id": "sector-information-technology.z5.1",
+    "local_id": "Z5.1",
+    "module": "sector-information-technology",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "Gravity & Antitrust: When Winner-Take-Most Wins",
+    "tag": "core",
+    "quick_definition": "Follow Zone 3's logic to its end and you get this sector's meta-story: markets that tip produce companies of unprecedented size, those companies become the gravitational center of everyone's index fund, and the same dominance that investors prize pulls in the regulators — while, underneath it all, the technology treadmill keeps threatening to make today's winner tomorrow's case study.",
+    "explainer_covers": [
+      "The concentration fact, stated plainly: a handful of tech mega-caps now make up an unprecedented share of the U.S. market — which means \"the market's\" return, valuation, and risk are substantially this sector's (★G138/★G140 — cap-weighted indexing mechanically concentrates every saver in the winners; the index-fund reader has been long this story all along). Sector concentration is now a portfolio fact, not just an industry one.",
+      "Why regulators arrive on schedule (Cusumano Ch. 6 — the platform's double edge): a tipped platform controls the market it intermediates — it can self-preference, squeeze complements, buy nascent rivals, and set the rules its own competitors play under. Antitrust in tech is mostly platform antitrust: app-store tolls, default-placement deals, bundling, killer acquisitions — with the EU's DMA-style regimes writing platform-specific rulebooks and U.S. cases testing the old tools on the new structure (Apple's FY2025 10-K discloses the DOJ smartphone suit, DMA compliance work, and App Store injunctions as live exhibits).",
+      "The hard question underneath (kept honest, both sides): consumer-welfare antitrust struggles here because platform prices are often zero — the harms alleged run through choice, data, and innovation instead. The counterargument is real too: today's monopolist keeps getting displaced by the next wave without a breakup (IBM → Microsoft → Google → …). Teach the tension, not a verdict.",
+      "The treadmill, the sector's own check on itself: moats made of code decay faster than moats made of rail track — paradigm shifts (mainframe → PC → web → mobile → cloud → AI) reset the leaderboard about once a decade, which is why \"quality\" investors flag technological disruption as the way a tech thesis dies (AM z2.7's pitfall list) and why R&D here is defense, not just offense.",
+      "What this means for anyone holding the sector (the module's business-first send-off): owning tech is a joint bet on the moat mechanisms (Z3.1) outrunning both the regulators and the treadmill — the exact structure of the Financials send-off (a joint bet on management, cycle, and rules), with different antagonists."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-information-technology.z3.1",
+        "note": "the mechanisms whose endgame this is"
+      },
+      {
+        "ref": "G137",
+        "note": null
+      },
+      {
+        "ref": "G138",
+        "note": null
+      },
+      {
+        "ref": "G140",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z3.3",
+        "note": "index gravity"
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.7",
+        "note": "disruption as the quality-thesis killer"
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "the current paradigm turn"
+      },
+      {
+        "ref": "sector-financials.z5.2",
+        "note": "the sibling sector's meta-node — rhyming structure, different fragility"
+      }
+    ],
+    "connects_to_raw": "Z3.1, ★G137/★G138/★G140 + `asset-management.z3.3`, ★G127, AM z2.7, Z5.2, `sector-financials.z5.2`."
+  },
+  {
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "ai-cycle-recency — Tier B, fast-moving subject: grounded in Cusumano Ch. 7's direction, Chip War's later chapters, and the four FY2025 10-Ks' AI disclosures, but the cycle's current state moves quarterly and any supercycle-vs-overbuild verdict is deliberately not taught. Mirrors the standing recency flags on the corpus's other AI nodes (ER z2.6/z5.7, VC z2.8, RE z2.3). Revisit each authoring-depth pass. Severity: medium.",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Cusumano Ch. 7; Chip War; dossier FY2025 10-Ks.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": null,
+    "id": "sector-information-technology.z5.2",
+    "local_id": "Z5.2",
+    "module": "sector-information-technology",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "The AI Buildout: The Sector's Own Supercycle",
+    "tag": "core",
+    "quick_definition": "The sector's current chapter is a demand shock it is selling to itself: the race to build and deploy AI has every layer of Z1.1's stack running hot at once — chips (accelerators), data centers (the physical footprint), cloud (the delivery layer), software (the products absorbing it), and services (the adoption work). Whether it's a durable platform shift or an over-build, the mechanism is worth understanding either way.",
+    "explainer_covers": [
+      "The stack, lit up end to end: AI models train on specialized accelerator chips (GPUs — Nvidia's franchise; Chip War's later chapters), housed in data centers whose buildout has become a real-estate and power story (the two-way seam with `real-estate.z2.3`, whose data-center node flagged exactly this wave as post-source), rented out through the hyperscalers (★G295), and surfaced as features in every software product (the dossier's four 10-Ks all lead with AI — Accenture sells the adoption, ServiceNow the platform, the security firms both the tooling and the new threat surface).",
+      "The capex inversion worth naming: the software industry — famous for needing no factories (★G293) — is, through its hyperscaler arms, suddenly one of the economy's biggest capital spenders. The AI buildout re-runs Z2.2's economics at the sector's top: demand arriving faster than capacity, capacity arriving in multi-year lumps, and the same boom-bust physics (★G127) that has always governed semis.",
+      "The macro claim being tested (back-link, not re-taught): the bull case is a productivity wave — `macro-economics.z1.12`'s total-factor-productivity lever, pulled by software. If real, it raises trend growth; if not, the spend is the story. This module teaches the mechanism and the stakes, not the verdict — the honest position for a fast-moving structural bet (and the same discipline the corpus's other AI nodes hold).",
+      "The two historical rhymes to hold at once: railway/telecom manias (enormous, partly wasted booms that still left the infrastructure that powered the next era) and the platform shifts that created today's giants (Z5.1's treadmill turning). Both can be true — over-build and era-defining — which is exactly what makes this the live analytical question in every Z4 dashboard right now (semis on the cycle, software on whether AI features defend or erode NRR, services on the adoption wave).",
+      "Where the corpus's AI threads converge: nearly every role module carries a flagged \"AI disrupts this industry\" node (ER z5.7, VC z2.8, and the ring across IB/HF/AM/WM/RE) — those are the demand-side views, each industry as AI's customer. This node is the supply side: the sector that builds and sells it. The graph finally has both ends of the wire."
+    ],
+    "connects_to": [
+      {
+        "ref": "G295",
+        "note": null
+      },
+      {
+        "ref": "G296",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.2",
+        "note": "the cycle physics"
+      },
+      {
+        "ref": "real-estate.z2.3",
+        "note": "attachment-adjacent — the physical footprint"
+      },
+      {
+        "ref": "macro-economics.z1.12",
+        "note": "the productivity claim"
+      },
+      {
+        "ref": "G127",
+        "note": "the pendulum's counsel"
+      },
+      {
+        "ref": "equity-research.z5.7",
+        "note": "the demand-side ring"
+      },
+      {
+        "ref": "venture-capital.z2.8",
+        "note": "the demand-side ring"
+      },
+      {
+        "ref": "sector-information-technology.z5.1",
+        "note": "the treadmill this may be a turn of"
+      },
+      {
+        "ref": "sector-information-technology.z1.1",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "★G295/★G296, Z2.2, `real-estate.z2.3`, `macro-economics.z1.12`, ★G127, `equity-research.z5.7` + `venture-capital.z2.8`, Z5.1."
+  }
+]

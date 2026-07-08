@@ -407,9 +407,13 @@
       {
         "ref": "G276",
         "note": null
+      },
+      {
+        "ref": "sector-information-technology.z4.2",
+        "note": "attachment — tech credit (template works) completed as back-link"
       }
     ],
-    "connects_to_raw": "`sector-financials.z4.2` (attachment — bank-credit deferral completed), `★ G74`/`★ G29`/`★ G34` (back-links — the ratio kit), ER module (the sibling craft), PC underwriting zone (the private version of the same work), `★ G276` (the agencies doing this work publicly), Z4.9 (the RV output), sector modules (the industry layer — flagged forward seam). *Real-world layer: Fabozzi Chs. 32–33.* ---",
+    "connects_to_raw": "`sector-financials.z4.2` (attachment — bank-credit deferral completed), `★ G74`/`★ G29`/`★ G34` (back-links — the ratio kit), ER module (the sibling craft), PC underwriting zone (the private version of the same work), `★ G276` (the agencies doing this work publicly), Z4.9 (the RV output), sector modules (the industry layer — flagged forward seam). *Real-world layer: Fabozzi Chs. 32–33.* --- · `sector-information-technology.z4.2` (tech credit handshake — template works)",
     "gaps": [
       {
         "kind": "source",

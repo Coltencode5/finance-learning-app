@@ -130,9 +130,13 @@
       {
         "ref": "G221",
         "note": null
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "AI demand wave — supply-side home in the IT sector module"
       }
     ],
-    "connects_to_raw": "Z2.1 (sector overview), ★G221 (alternatives within the taxonomy), Z2.4 (alternative sectors often value-add or opportunistic), AM Z3.x (alternative sector allocations). *GAP flags:* data-center/AI demand wave, life-sciences market dynamics, single-family rental institutional scale are all post-source. ---",
+    "connects_to_raw": "Z2.1 (sector overview), ★G221 (alternatives within the taxonomy), Z2.4 (alternative sectors often value-add or opportunistic), AM Z3.x (alternative sector allocations). *GAP flags:* data-center/AI demand wave, life-sciences market dynamics, single-family rental institutional scale are all post-source. --- · `sector-information-technology.z5.2` (AI demand wave — M10)",
     "gaps": [
       {
         "kind": "source",

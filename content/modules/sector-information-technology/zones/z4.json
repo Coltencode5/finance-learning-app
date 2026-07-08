@@ -1,0 +1,172 @@
+[
+  {
+    "gaps": [],
+    "real_world_layer": "Damodaran, Investment Valuation Ch. 17–25.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": "G302",
+    "id": "sector-information-technology.z4.1",
+    "local_id": "Z4.1",
+    "module": "sector-information-technology",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Valuing Tech: Growth, Revenue Multiples & the Rule of 40",
+    "tag": "global",
+    "quick_definition": "The standard toolkit works on a tech company — the trouble is the inputs. High-growth software runs accounting losses by design (S&M expensed today buys ARR tomorrow), so earnings multiples fail young and the analysis moves up the income statement to revenue multiples read against growth, NRR, and gross margin — with the Rule of 40 (★G302) as the sector's one-number test of whether growth is worth what it costs.",
+    "explainer_covers": [
+      "Duplication guard (D4), honored first: DCF, multiples, comps, and Damodaran's companion-variable discipline are not re-taught — ER Z3.7–3.8 and ★G87–★G95 own them. This node adds only the sector bend, exactly as sector-financials Z4.1 added the bank bend (and note the symmetry: there the tools break; here the tools work but the inputs mislead).",
+      "Why earnings multiples fail young software (Damodaran, Ch. 17–20 & the money-losing/young-company chapters): reported earnings are depressed by growth spending that accounting expenses immediately, so P/E is undefined or absurd right when the business is best. The analysis moves to EV/Revenue — legitimate only with its companion variables attached: revenue growth, gross margin (★G293 — a dollar of 85%-margin revenue is worth more than a dollar of 30%-margin revenue, which is also why services firms never get software multiples, Z2.3), and NRR (★G301 — the durability of the revenue). Damodaran's young-company frame gives the intrinsic anchor: value = revenue growth × target operating margin at maturity × probability of surviving to get there.",
+      "★G302, the shorthand the sector actually talks in: revenue growth % + FCF (or operating) margin % ≥ 40. It prices the growth-vs-margin trade ER Z2.3 names in its software contrast — a company can be great growing 40% at 0% margin or growing 10% at 30% margin; what it can't be is slow and unprofitable. A screen and a language, not a valuation — the DCF discipline still governs (★G90).",
+      "The rates bend, back-linked not re-taught: ★G259 already teaches why multiples compress when rates rise; tech's twist is only that its cash flows are the market's most back-loaded, so it sits at the end of the whip — 2022 as the exhibit (growth software de-rated hardest as the risk-free rate repriced). This is also why tech is the growth style (★G149; AM z2.6's \"growth dominates in low-rate, innovation-led regimes\").",
+      "The other two sub-sectors, each in a sentence: semiconductors are valued as cyclicals — normalized, cycle-aware earnings, never the spot number (Z2.2; the ER Z2.3 commodity rhyme; Damodaran's cyclical caveat) — and IT services as people businesses on ordinary earnings multiples with bookings/backlog as the leading KPI (Z2.3). One sector, three valuation dialects."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z3.7",
+        "note": "the machinery — the guard"
+      },
+      {
+        "ref": "equity-research.z3.8",
+        "note": "the machinery — the guard"
+      },
+      {
+        "ref": "G88",
+        "note": null
+      },
+      {
+        "ref": "G90",
+        "note": null
+      },
+      {
+        "ref": "G27",
+        "note": null
+      },
+      {
+        "ref": "G259",
+        "note": "the rates bridge"
+      },
+      {
+        "ref": "G149",
+        "note": null
+      },
+      {
+        "ref": "asset-management.z2.6",
+        "note": "the growth style"
+      },
+      {
+        "ref": "sector-information-technology.z3.2",
+        "note": "the companion variables' home"
+      },
+      {
+        "ref": "sector-information-technology.z2.2",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z2.3",
+        "note": null
+      },
+      {
+        "ref": "sector-financials.z4.1",
+        "note": "the opposite pathology — the sibling contrast"
+      },
+      {
+        "ref": "G293",
+        "note": null
+      },
+      {
+        "ref": "G301",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`equity-research.z3.7`/`z3.8` (the machinery — the guard), ★G88/★G90/★G27, ★G259, ★G149 + `asset-management.z2.6`, Z3.2, Z2.2/Z2.3, `sector-financials.z4.1`."
+  },
+  {
+    "gaps": [],
+    "real_world_layer": "ServiceNow/CrowdStrike 10-Ks (RPO); Apple FY2025 10-K (IG issuer paradox).",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": "G303",
+    "id": "sector-information-technology.z4.2",
+    "local_id": "Z4.2",
+    "module": "sector-information-technology",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Reading a Tech 10-K: SBC, RPO & the Credit Footnote",
+    "tag": "global",
+    "quick_definition": "Tech financials come with sector-specific traps and sector-specific gifts. The trap: stock-based compensation (★G303) — a real cost paid in shares, added back in \"adjusted\" numbers and quietly settled in dilution. The gift: subscription accounting leaves a paper trail (deferred revenue, RPO) that lets you see contracted future revenue no other sector discloses. And the credit footnote: for once, the standard corporate template just works.",
+    "explainer_covers": [
+      "★G303, the sector's signature adjustment: paying engineers in stock is a real expense — GAAP says so — but it's non-cash, so managements add it back to reach \"adjusted\" earnings and FCF. The analyst's discipline: SBC is a cost, paid by shareholders through dilution (★G42 — the concept's home; here is its industrial-scale exhibit) rather than through the cash-flow statement. Treat it as an expense (or model the share-count creep — buybacks that merely mop up SBC issuance return nothing); \"FCF margin\" quoted before SBC (★G92's UFCF logic, bent) flatters exactly the companies that lean on it most. At 10–25% of revenue for many software firms, this one line often decides whether a business is actually profitable.",
+      "The gift — reading the subscription paper trail (the dossier's clean filings as the lab): cash is collected upfront, revenue recognized ratably, and the difference sits as deferred revenue; RPO (remaining performance obligations — ServiceNow's and CrowdStrike's headline disclosure) is all contracted, not-yet-recognized revenue. Together they're a forward X-ray: billings and RPO growth lead reported revenue (★G192/★G193 — the KPI-before-EPS edge ER teaches, in its purest sector form). Watch RPO decelerate before revenue ever does.",
+      "The R&D question (Damodaran's adjustment, flagged not drilled): accounting expenses R&D, but it's really investment in intangible assets — so tech book values are meaningless (why P/B, the Financials chart, is a dead letter here) and reported margins understate the mature-state economics. Capitalizing R&D is the adjustment; the depth stays with Damodaran/ER.",
+      "The credit footnote — the FI Z4.8 handshake, completed as a back-link: judging a tech company as a borrower uses the standard template FI already taught — coverage (★G74), leverage (★G29), covenants (★G34) all apply cleanly; recurring revenue actually makes the template work unusually well (predictable EBITDA is what lenders price — the reason software became modern private credit's and PE's favorite borrower, and lenders now underwrite pre-profit software on ARR itself). The sector wrinkles fit in two sentences: the IG end is the paradox of cash-rich mega-caps issuing bonds anyway (★G274–★G277 for the market's read — Apple's FY2025 10-K shows $91.3B of notes outstanding alongside $132.4B of cash and marketable securities), and the HY/leveraged end is the software LBO. That second phenomenon — ARR-based lending — has no home in the Private Credit map yet; seam flagged rather than taught out of place here.",
+      "What the analyst's dashboard looks like assembled (the zone's send-off): growth + NRR + gross margin (Z3.2) → Rule of 40 (Z4.1) → SBC-honest FCF and RPO trajectory (this node) → a view. Then the door back out: the full research craft — models, estimates, the published call — is Equity Research's (★G183/★G184), reached through the Z1.1 door."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z4.8",
+        "note": "attachment — the deferral completed, back-link form"
+      },
+      {
+        "ref": "G74",
+        "note": "the template that works"
+      },
+      {
+        "ref": "G29",
+        "note": "the template that works"
+      },
+      {
+        "ref": "G34",
+        "note": "the template that works"
+      },
+      {
+        "ref": "G274",
+        "note": null
+      },
+      {
+        "ref": "G275",
+        "note": null
+      },
+      {
+        "ref": "G276",
+        "note": null
+      },
+      {
+        "ref": "G277",
+        "note": null
+      },
+      {
+        "ref": "G42",
+        "note": "dilution — SBC's true settlement"
+      },
+      {
+        "ref": "G92",
+        "note": "what the add-back flatters"
+      },
+      {
+        "ref": "G192",
+        "note": null
+      },
+      {
+        "ref": "G193",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z3.2",
+        "note": null
+      },
+      {
+        "ref": "sector-financials.z4.2",
+        "note": "the opposite credit case — supervisor-as-covenant vs. template-as-usual"
+      },
+      {
+        "ref": "G183",
+        "note": null
+      },
+      {
+        "ref": "G184",
+        "note": null
+      }
+    ],
+    "connects_to_raw": "`fixed-income.z4.8` (attachment — the deferral completed, back-link form), ★G74/★G29/★G34, ★G274–★G277, ★G42, ★G92, ★G192/★G193, Z3.2, `sector-financials.z4.2`."
+  }
+]

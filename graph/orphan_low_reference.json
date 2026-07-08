@@ -56,6 +56,31 @@
       "id": "G292",
       "term": "The bank run & deposit insurance (Z5.2)",
       "inbound_references": 1
+    },
+    {
+      "id": "G297",
+      "term": "The multi-sided platform (Z3.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G298",
+      "term": "Network effects (Z3.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G300",
+      "term": "ARR (annual recurring revenue) (Z3.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G302",
+      "term": "The Rule of 40 (Z4.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G303",
+      "term": "Stock-based compensation (SBC) (Z4.2)",
+      "inbound_references": 1
     }
   ]
 }

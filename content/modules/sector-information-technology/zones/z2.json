@@ -1,0 +1,158 @@
+[
+  {
+    "gaps": [],
+    "real_world_layer": "Tzuo, Subscribed; PANW/ServiceNow/CrowdStrike 10-Ks.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": "G294",
+    "id": "sector-information-technology.z2.1",
+    "local_id": "Z2.1",
+    "module": "sector-information-technology",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Software: From Licenses to Subscriptions",
+    "tag": "global",
+    "hosts_globals": [
+      "G295"
+    ],
+    "quick_definition": "Software's defining event of the last twenty years is a change in how it's sold: from a license you buy once and install, to SaaS (★G294) — software that lives in the cloud (★G295) and is rented by subscription. The product is the same idea; the business it creates is almost unrecognizably better.",
+    "explainer_covers": [
+      "The old model, so the new one makes sense: perpetual licenses meant lumpy, one-shot sales (win the deal, book the revenue, start over), an installed base running old versions, and a maintenance fee as the only recurring piece.",
+      "★G294 SaaS, assembled (Tzuo's arc): the vendor hosts the software and sells access — which converts the customer's big capex decision into a monthly opex line, keeps everyone on the current version, and converts the vendor's revenue from lumpy to recurring. The famous transition cost: a company switching models watches reported revenue dip before it compounds (Adobe's leap; Tzuo's \"swallow the fish\" curve) — the market has learned to reward the dip.",
+      "★G295 the cloud, explained: the actual computers moved too — from the customer's server room to rented capacity at the hyperscalers (AWS, Microsoft Azure, Google Cloud), the handful of firms operating computing as a utility. The layer cake worth knowing once: IaaS (raw computing) → PaaS (development platforms) → SaaS (finished applications). One honest note: the hyperscalers' parent companies straddle GICS borders (Z1.1) — \"the cloud\" is an economic structure, not a ticker list.",
+      "The sub-industries inside software, sketched with the dossier's live exhibits: enterprise applications (ServiceNow — workflow software sold department by department), cybersecurity (Palo Alto, CrowdStrike — a permanent arms race, hence permanent demand; PANW's 10-K shows the hybrid reality: hardware \"product revenue\" still sold alongside the subscriptions), and consumer/OS software. Pricing variants inside the model — usage-based, freemium, seat-based (Tzuo) — are flavors of ★G294, not separate models.",
+      "Why the shift matters beyond convenience: subscriptions turn the customer relationship itself into the asset — which is why the whole measurement system changes (ARR/NRR, Z3.2), why retention becomes the moat's report card (★G299 → Z3.1), and why the fund-finance reader must drop the other meaning of \"subscription\" at the door (★G67)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G293",
+        "note": "the economics underneath"
+      },
+      {
+        "ref": "sector-information-technology.z3.2",
+        "note": "the metrics the model creates"
+      },
+      {
+        "ref": "sector-information-technology.z3.1",
+        "note": "lock-in as the retention engine"
+      },
+      {
+        "ref": "G67",
+        "note": "disambiguate — the two subscriptions"
+      },
+      {
+        "ref": "real-estate.z2.3",
+        "note": "data centers — where the cloud physically lives"
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "the cloud as the AI buildout's delivery layer"
+      }
+    ],
+    "connects_to_raw": "★G293, Z3.2, Z3.1, ★G67 (disambiguate — the two subscriptions), `real-estate.z2.3`, Z5.2."
+  },
+  {
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "software-paradox-absent — Apple's FY2025 10-K now grounds devices/OEM economics (Products vs. Services mix, margin split, ecosystem attach). *The Software Paradox* was configured but never supplied; revisit if a dedicated software-economics text is acquired. Severity: low.",
+        "needed_source": "The Software Paradox (or equivalent software-economics text)"
+      }
+    ],
+    "real_world_layer": "Miller, Chip War; Apple Inc. FY2025 Form 10-K.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": "G296",
+    "id": "sector-information-technology.z2.2",
+    "local_id": "Z2.2",
+    "module": "sector-information-technology",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Semiconductors: The $20 Billion Factory Under Everything",
+    "tag": "global",
+    "quick_definition": "Every line of software runs on a chip, and chips come from the most concentrated, capital-hungry, geopolitically loaded manufacturing chain on earth. Its organizing fact is the fabless/foundry split (★G296): most chip companies design silicon and outsource the making to a tiny number of foundries — above all TSMC — whose fabs cost tens of billions each.",
+    "explainer_covers": [
+      "The value chain in one pass (Chip War's map): designers (Nvidia, Qualcomm, Apple's chip team — \"fabless\"), foundries that manufacture for them (TSMC, the category's inventor), integrated firms that still do both (Intel, Samsung — \"IDM\"), the equipment makers who supply the fabs (ASML, whose EUV lithography machines are the only way to make leading-edge chips), and memory. Each layer is more concentrated than the last.",
+      "Why the split happened: fabs became so expensive that only shared factories made economic sense — Moore's Law (the decades-long doubling of transistor density, the industry's metronome) kept raising the ante until a leading-edge fab crossed ~$20B. Design got the software-like economics; manufacturing got the opposite (★G293's boundary, made concrete).",
+      "The semiconductor cycle, taught on the corpus's existing cycle machinery (★G127, ★G237): chips are a boom-bust industry by construction — demand swings, but capacity arrives in multi-year, multi-billion-dollar lumps, so shortage → over-order → glut → cut → shortage. Inventory corrections amplify it (customers double-order in shortages, vanish in gluts). Reading where the cycle stands is half of semiconductor analysis (the Z4 hinge).",
+      "The geopolitics you now can't skip (Chip War's thesis): leading-edge manufacturing concentrated in Taiwan + one Dutch equipment monopoly + US export controls on China = the sector where industrial policy, national security, and stock prices share one story. CHIPS-Act-style subsidies are the state bidding fabs back onshore.",
+      "Hardware and devices, grounded in Apple's FY2025 10-K: phone/PC/tablet makers assemble chips into products and live on hardware margins plus attached services and ecosystem lock-in (★G299). Apple's filing shows the split live — Products $307B at 36.8% gross margin vs. Services $109B at 75.4% — and the company designs nearly the entire stack (hardware, OS, apps, services). Product markets face aggressive price competition and downward margin pressure; the services attach (App Store, subscriptions, cloud, AppleCare, payments) is where software-like economics and switching costs live. The Apple model is the sector's clearest exhibit of devices as a platform wrapper, not a pure hardware business."
+    ],
+    "connects_to": [
+      {
+        "ref": "G293",
+        "note": "the capex contrast — this node is the other half"
+      },
+      {
+        "ref": "G127",
+        "note": null
+      },
+      {
+        "ref": "G237",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "AI as the current demand shock — GPUs, data centers"
+      },
+      {
+        "ref": "macro-economics.z5.3",
+        "note": "★G261 — the trade plumbing the chip war runs through"
+      },
+      {
+        "ref": "sector-information-technology.z4.1",
+        "note": "cyclical valuation — normalized earnings"
+      },
+      {
+        "ref": "G299",
+        "note": "ecosystem lock-in on devices"
+      }
+    ],
+    "connects_to_raw": "★G293 (the capex contrast), ★G127/★G237 (the cycle machinery), Z5.2, `macro-economics.z5.3`, Z4.1, ★G299 (device ecosystem lock-in)."
+  },
+  {
+    "gaps": [],
+    "real_world_layer": "Accenture FY2025 10-K; ServiceNow/CrowdStrike services lines.",
+    "source_refs": [],
+    "status": "mapped",
+    "global_id": null,
+    "id": "sector-information-technology.z2.3",
+    "local_id": "Z2.3",
+    "module": "sector-information-technology",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "IT Services: Selling Hours, Not Software",
+    "tag": "core",
+    "quick_definition": "The sector's third business doesn't sell a product at all — it sells people: consultants who advise, integrators who install and connect everyone else's technology, and outsourcers who run it for you year after year. Revenue scales with headcount, which makes this the sector's deliberate exception to everything Z1.2 said.",
+    "explainer_covers": [
+      "What the work actually is (Accenture's 10-K as the live map — $69.7B of it): consulting (advice and design), systems integration (making the software actually work inside a company — the unglamorous glue the whole sector depends on), and managed services / outsourcing (running a client's systems on multi-year contracts).",
+      "The economics, contrasted honestly: a services firm's \"factory\" is billable humans — revenue ≈ headcount × utilization × rate — so gross margins sit far below software's and scale brings almost no operating leverage. What it gets instead: revenue visibility from multi-year managed-services contracts (Accenture's recurring backbone) and near-zero capex.",
+      "Why it exists at all (the seam with Z2.1, stated plainly): every wave of new technology creates a matching wave of implementation pain — cloud migrations, ERP installs, now AI adoption (Accenture's 10-K leads with it). Services firms are the sector's complement: they monetize other companies' complexity. \"Software\" and \"IT services\" are adjacent tickers and opposite businesses.",
+      "What to watch in one of these (business-first): bookings and backlog (contracted future work), utilization, attrition (the \"inventory\" walks out the door nightly), and the consulting-vs-outsourcing mix (cyclical vs. sticky). A services firm is closer kin to a staffing or professional-services business than to the SaaS vendor next door in the index.",
+      "The hybrid blur worth naming: software vendors sell professional services around their products (ServiceNow's and CrowdStrike's 10-Ks both carry a low-margin services line), and services firms productize software — the boundary firms cross it, the economics never do."
+    ],
+    "connects_to": [
+      {
+        "ref": "G293",
+        "note": "the exception that proves it"
+      },
+      {
+        "ref": "sector-information-technology.z2.1",
+        "note": "the products these firms implement"
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "AI adoption as the current services demand wave"
+      },
+      {
+        "ref": "G28",
+        "note": "advisory work's cousin craft"
+      },
+      {
+        "ref": "sector-information-technology.z4.1",
+        "note": "why these get people-business multiples, not software multiples"
+      }
+    ],
+    "connects_to_raw": "★G293 (the exception that proves it), Z2.1, Z5.2, ★G28, Z4.1."
+  }
+]

@@ -5,22 +5,22 @@
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 51,
+      "inbound_references": 52,
       "home_of_edges": 1,
-      "total_inbound": 51
+      "total_inbound": 52
+    },
+    {
+      "id": "G127",
+      "term": "Market cycles & the pendulum",
+      "inbound_references": 30,
+      "home_of_edges": 3,
+      "total_inbound": 30
     },
     {
       "id": "G1",
       "term": "IRR (Internal Rate of Return)",
       "inbound_references": 27,
       "home_of_edges": 1,
-      "total_inbound": 27
-    },
-    {
-      "id": "G127",
-      "term": "Market cycles & the pendulum",
-      "inbound_references": 27,
-      "home_of_edges": 3,
       "total_inbound": 27
     },
     {
@@ -115,6 +115,13 @@
       "total_inbound": 19
     },
     {
+      "id": "G34",
+      "term": "Covenant",
+      "inbound_references": 19,
+      "home_of_edges": 1,
+      "total_inbound": 19
+    },
+    {
       "id": "G4",
       "term": "J-curve",
       "inbound_references": 19,
@@ -164,13 +171,6 @@
       "total_inbound": 18
     },
     {
-      "id": "G34",
-      "term": "Covenant",
-      "inbound_references": 18,
-      "home_of_edges": 1,
-      "total_inbound": 18
-    },
-    {
       "id": "G166",
       "term": "Tax-aware investing & asset location",
       "inbound_references": 17,
@@ -189,6 +189,20 @@
       "term": "Sovereign debt & sovereign risk (Z5.4)",
       "inbound_references": 17,
       "home_of_edges": 1,
+      "total_inbound": 17
+    },
+    {
+      "id": "G27",
+      "term": "Valuation multiples",
+      "inbound_references": 17,
+      "home_of_edges": 1,
+      "total_inbound": 17
+    },
+    {
+      "id": "G28",
+      "term": "Due diligence",
+      "inbound_references": 17,
+      "home_of_edges": 2,
       "total_inbound": 17
     },
     {
@@ -220,17 +234,10 @@
       "total_inbound": 16
     },
     {
-      "id": "G27",
-      "term": "Valuation multiples",
+      "id": "G90",
+      "term": "Discounted Cash Flow (DCF)",
       "inbound_references": 16,
       "home_of_edges": 1,
-      "total_inbound": 16
-    },
-    {
-      "id": "G28",
-      "term": "Due diligence",
-      "inbound_references": 16,
-      "home_of_edges": 2,
       "total_inbound": 16
     },
     {
@@ -241,17 +248,17 @@
       "total_inbound": 15
     },
     {
+      "id": "G42",
+      "term": "Dilution",
+      "inbound_references": 15,
+      "home_of_edges": 1,
+      "total_inbound": 15
+    },
+    {
       "id": "G83",
       "term": "Sell-side vs. buy-side",
       "inbound_references": 15,
       "home_of_edges": 3,
-      "total_inbound": 15
-    },
-    {
-      "id": "G90",
-      "term": "Discounted Cash Flow (DCF)",
-      "inbound_references": 15,
-      "home_of_edges": 1,
       "total_inbound": 15
     },
     {
@@ -311,11 +318,11 @@
       "total_inbound": 14
     },
     {
-      "id": "G42",
-      "term": "Dilution",
+      "id": "G277",
+      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
       "inbound_references": 14,
       "home_of_edges": 1,
-      "total_inbound": 14
+      "total_inbound": 15
     },
     {
       "id": "G52",
@@ -337,6 +344,13 @@
       "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
+    },
+    {
+      "id": "G102",
+      "term": "The IPO (issuer/process view)",
+      "inbound_references": 13,
+      "home_of_edges": 1,
+      "total_inbound": 14
     },
     {
       "id": "G120",
@@ -372,13 +386,6 @@
       "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
-    },
-    {
-      "id": "G277",
-      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
-      "inbound_references": 13,
-      "home_of_edges": 1,
-      "total_inbound": 14
     },
     {
       "id": "G40",
@@ -423,16 +430,16 @@
       "total_inbound": 13
     },
     {
-      "id": "G94",
-      "term": "Valuation football field",
+      "id": "G88",
+      "term": "Comparable companies analysis (\"comps\")",
       "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
     },
     {
-      "id": "G102",
-      "term": "The IPO (issuer/process view)",
-      "inbound_references": 12,
+      "id": "G94",
+      "term": "Valuation football field",
+      "inbound_references": 13,
       "home_of_edges": 1,
       "total_inbound": 13
     },
@@ -486,6 +493,20 @@
       "total_inbound": 12
     },
     {
+      "id": "G184",
+      "term": "The estimate & the consensus",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G237",
+      "term": "The business cycle (Z1.6)",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
       "id": "G250",
       "term": "The monetary transmission mechanism (Z2.8)",
       "inbound_references": 12,
@@ -507,13 +528,6 @@
       "total_inbound": 12
     },
     {
-      "id": "G88",
-      "term": "Comparable companies analysis (\"comps\")",
-      "inbound_references": 12,
-      "home_of_edges": 1,
-      "total_inbound": 12
-    },
-    {
       "id": "G101",
       "term": "Underwriting",
       "inbound_references": 11,
@@ -530,6 +544,13 @@
     {
       "id": "G12",
       "term": "Hurdle rate / Preferred return",
+      "inbound_references": 11,
+      "home_of_edges": 1,
+      "total_inbound": 11
+    },
+    {
+      "id": "G138",
+      "term": "The index fund",
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 11
@@ -565,20 +586,6 @@
     {
       "id": "G164",
       "term": "Time horizon & the glide path",
-      "inbound_references": 11,
-      "home_of_edges": 1,
-      "total_inbound": 11
-    },
-    {
-      "id": "G184",
-      "term": "The estimate & the consensus",
-      "inbound_references": 11,
-      "home_of_edges": 1,
-      "total_inbound": 11
-    },
-    {
-      "id": "G237",
-      "term": "The business cycle (Z1.6)",
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 11
@@ -621,6 +628,13 @@
     {
       "id": "G126",
       "term": "Risk as permanent loss of capital",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G137",
+      "term": "Passive vs. active investing",
       "inbound_references": 10,
       "home_of_edges": 1,
       "total_inbound": 10
@@ -670,6 +684,13 @@
     {
       "id": "G199",
       "term": "The research/banking conflict & the Global Research Settlement (post-Spitzer)",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 10
+    },
+    {
+      "id": "G201",
+      "term": "The power law",
       "inbound_references": 10,
       "home_of_edges": 1,
       "total_inbound": 10
@@ -766,15 +787,15 @@
       "total_inbound": 9
     },
     {
-      "id": "G138",
-      "term": "The index fund",
+      "id": "G141",
+      "term": "Tracking error (& tracking difference)",
       "inbound_references": 9,
       "home_of_edges": 1,
       "total_inbound": 9
     },
     {
-      "id": "G141",
-      "term": "Tracking error (& tracking difference)",
+      "id": "G149",
+      "term": "Style & the style box",
       "inbound_references": 9,
       "home_of_edges": 1,
       "total_inbound": 9
@@ -815,13 +836,6 @@
       "total_inbound": 9
     },
     {
-      "id": "G201",
-      "term": "The power law",
-      "inbound_references": 9,
-      "home_of_edges": 1,
-      "total_inbound": 9
-    },
-    {
       "id": "G205",
       "term": "Pre-money & post-money valuation",
       "inbound_references": 9,
@@ -855,6 +869,20 @@
       "inbound_references": 9,
       "home_of_edges": 1,
       "total_inbound": 10
+    },
+    {
+      "id": "G259",
+      "term": "The discount-rate channel & the equity risk premium (CAPM bridge) (Z4.7)",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
+      "id": "G276",
+      "term": "Credit ratings & the rating agencies (Z4.2)",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
     },
     {
       "id": "G282",
@@ -927,20 +955,6 @@
       "total_inbound": 8
     },
     {
-      "id": "G137",
-      "term": "Passive vs. active investing",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G149",
-      "term": "Style & the style box",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
       "id": "G16",
       "term": "Committed / Contributed / Invested capital",
       "inbound_references": 8,
@@ -997,20 +1011,6 @@
       "total_inbound": 8
     },
     {
-      "id": "G259",
-      "term": "The discount-rate channel & the equity risk premium (CAPM bridge) (Z4.7)",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
-      "id": "G276",
-      "term": "Credit ratings & the rating agencies (Z4.2)",
-      "inbound_references": 8,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
       "id": "G280",
       "term": "Agency MBS & prepayment (Z3.11)",
       "inbound_references": 8,
@@ -1037,6 +1037,13 @@
       "inbound_references": 8,
       "home_of_edges": 1,
       "total_inbound": 8
+    },
+    {
+      "id": "G53",
+      "term": "IPO (as exit)",
+      "inbound_references": 8,
+      "home_of_edges": 1,
+      "total_inbound": 9
     },
     {
       "id": "G75",
@@ -1130,11 +1137,25 @@
       "total_inbound": 7
     },
     {
+      "id": "G183",
+      "term": "The earnings model",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
       "id": "G204",
       "term": "The funding stages & the round",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
+    },
+    {
+      "id": "G216",
+      "term": "The venture platform & the partnership",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 8
     },
     {
       "id": "G228",
@@ -1193,13 +1214,6 @@
       "total_inbound": 7
     },
     {
-      "id": "G53",
-      "term": "IPO (as exit)",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 8
-    },
-    {
       "id": "G71",
       "term": "Original Issue Discount (OID)",
       "inbound_references": 7,
@@ -1207,8 +1221,22 @@
       "total_inbound": 7
     },
     {
+      "id": "G74",
+      "term": "Coverage ratios",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
       "id": "G89",
       "term": "Precedent transactions analysis (\"deal comps\")",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
+      "id": "G92",
+      "term": "Unlevered Free Cash Flow (UFCF)",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
@@ -1226,6 +1254,13 @@
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
+    },
+    {
+      "id": "G132",
+      "term": "Multi-strategy / the platform (pod) model",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 7
     },
     {
       "id": "G14",
@@ -1284,6 +1319,20 @@
       "total_inbound": 6
     },
     {
+      "id": "G192",
+      "term": "The quarterly earnings cycle (the print, the call, the update)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
+      "id": "G193",
+      "term": "The earnings surprise & company guidance",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G195",
       "term": "Independent & alternative research (incl. alt-data & AI)",
       "inbound_references": 6,
@@ -1305,8 +1354,8 @@
       "total_inbound": 6
     },
     {
-      "id": "G216",
-      "term": "The venture platform & the partnership",
+      "id": "G215",
+      "term": "Crossover & growth-stage investing",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1375,6 +1424,13 @@
       "total_inbound": 6
     },
     {
+      "id": "G275",
+      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
+    },
+    {
       "id": "G279",
       "term": "Securitization (Z3.10)",
       "inbound_references": 6,
@@ -1396,22 +1452,15 @@
       "total_inbound": 6
     },
     {
-      "id": "G74",
-      "term": "Coverage ratios",
+      "id": "G67",
+      "term": "Fund leverage & asset coverage",
       "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
+      "home_of_edges": 2,
+      "total_inbound": 7
     },
     {
       "id": "G82",
       "term": "Non-accrual & Watch-list",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
-      "id": "G92",
-      "term": "Unlevered Free Cash Flow (UFCF)",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1459,8 +1508,8 @@
       "total_inbound": 5
     },
     {
-      "id": "G132",
-      "term": "Multi-strategy / the platform (pod) model",
+      "id": "G140",
+      "term": "The benchmark",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1468,13 +1517,6 @@
     {
       "id": "G153",
       "term": "Separately managed account / institutional mandate",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
-      "id": "G183",
-      "term": "The earnings model",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1489,20 +1531,6 @@
     {
       "id": "G189",
       "term": "Sector coverage & the coverage universe",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
-      "id": "G192",
-      "term": "The quarterly earnings cycle (the print, the call, the update)",
-      "inbound_references": 5,
-      "home_of_edges": 1,
-      "total_inbound": 5
-    },
-    {
-      "id": "G193",
-      "term": "The earnings surprise & company guidance",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1592,15 +1620,15 @@
       "total_inbound": 5
     },
     {
-      "id": "G275",
-      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
+      "id": "G278",
+      "term": "The credit default swap (CDS) (Z4.7)",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
     },
     {
-      "id": "G278",
-      "term": "The credit default swap (CDS) (Z4.7)",
+      "id": "G293",
+      "term": "Zero marginal cost & the economics of software (Z1.2)",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1634,13 +1662,6 @@
       "total_inbound": 5
     },
     {
-      "id": "G67",
-      "term": "Fund leverage & asset coverage",
-      "inbound_references": 5,
-      "home_of_edges": 2,
-      "total_inbound": 5
-    },
-    {
       "id": "G80",
       "term": "Credit / facility agreement",
       "inbound_references": 5,
@@ -1652,13 +1673,6 @@
       "term": "Activist investing",
       "inbound_references": 4,
       "home_of_edges": 2,
-      "total_inbound": 4
-    },
-    {
-      "id": "G140",
-      "term": "The benchmark",
-      "inbound_references": 4,
-      "home_of_edges": 1,
       "total_inbound": 4
     },
     {
@@ -1699,13 +1713,6 @@
     {
       "id": "G202",
       "term": "Power-law portfolio construction & the \"return-the-fund\" test",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
-      "id": "G215",
-      "term": "Crossover & growth-stage investing",
       "inbound_references": 4,
       "home_of_edges": 1,
       "total_inbound": 4
@@ -1858,8 +1865,29 @@
       "total_inbound": 3
     },
     {
+      "id": "G274",
+      "term": "Corporate bonds (Z3.7)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
       "id": "G281",
       "term": "Emerging market debt (local vs. external) (Z3.12)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G296",
+      "term": "The fabless/foundry split & the semiconductor value chain (Z2.2)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G299",
+      "term": "Switching costs & lock-in (Z3.1)",
       "inbound_references": 3,
       "home_of_edges": 1,
       "total_inbound": 3
@@ -1963,13 +1991,6 @@
       "total_inbound": 2
     },
     {
-      "id": "G274",
-      "term": "Corporate bonds (Z3.7)",
-      "inbound_references": 2,
-      "home_of_edges": 1,
-      "total_inbound": 2
-    },
-    {
       "id": "G286",
       "term": "Net interest margin (NIM) (Z1.1)",
       "inbound_references": 2,
@@ -1993,6 +2014,27 @@
     {
       "id": "G291",
       "term": "Non-performing loans & asset quality (Z3.2)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G294",
+      "term": "SaaS & the subscription model (Z2.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G295",
+      "term": "Cloud computing & the hyperscalers (Z2.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G301",
+      "term": "NRR (net revenue retention) (Z3.2)",
       "inbound_references": 2,
       "home_of_edges": 1,
       "total_inbound": 2
@@ -2045,28 +2087,63 @@
       "inbound_references": 1,
       "home_of_edges": 1,
       "total_inbound": 1
+    },
+    {
+      "id": "G297",
+      "term": "The multi-sided platform (Z3.1)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G298",
+      "term": "Network effects (Z3.1)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G300",
+      "term": "ARR (annual recurring revenue) (Z3.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G302",
+      "term": "The Rule of 40 (Z4.1)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G303",
+      "term": "Stock-based compensation (SBC) (Z4.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
     }
   ],
   "top_10": [
     {
       "id": "G29",
       "term": "Leverage",
-      "inbound_references": 51,
+      "inbound_references": 52,
       "home_of_edges": 1,
-      "total_inbound": 51
+      "total_inbound": 52
+    },
+    {
+      "id": "G127",
+      "term": "Market cycles & the pendulum",
+      "inbound_references": 30,
+      "home_of_edges": 3,
+      "total_inbound": 30
     },
     {
       "id": "G1",
       "term": "IRR (Internal Rate of Return)",
       "inbound_references": 27,
       "home_of_edges": 1,
-      "total_inbound": 27
-    },
-    {
-      "id": "G127",
-      "term": "Market cycles & the pendulum",
-      "inbound_references": 27,
-      "home_of_edges": 3,
       "total_inbound": 27
     },
     {

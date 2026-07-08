@@ -88,3 +88,15 @@ Part 9 item #7 (source-quality/file-access note — module-level, not node-level
 | # | Where | Issue | Decision | Status |
 |---|---|---|---|---|
 | 15 | `scaffold_module.py` `zone_titles_for_kind()` | Unmapped kinds (e.g. `asset-class`) silently fall back to `ROLE_ZONE_TITLES` instead of erroring or requiring an explicit mapping | Logged for deliberate decision — fallback vs. explicit mapping should not be fixed drive-by; Fixed Income is complete so nothing is broken today | OPEN |
+
+## G. Backlog — unhomed cross-module concepts (Milestone 10)
+
+Surfaced by the IT sector inheritance pass: concepts in wide textual use across modules with **no global home**. Deliberately not minted in a sector module (would wrong-home a corpus-wide concept). Reuse OPEN lifecycle.
+
+| # | Concept | Where used (sample) | Recommended future home | Status |
+|---|---|---|---|---|
+| 16 | Moat / durable competitive advantage | VC z1.8, ER z2.7, AM z2.7/z3.3, WM z5.1, sector-financials z2.1/z2.3 (7 nodes, 5 modules) | AM Z2.7 (quality) or ER competitive-analysis territory | OPEN |
+| 17 | Operating leverage | AM z5.1, WM z5.1, RE z2.3; taught concretely inside sector-IT ★G293 | Unresolved — resurfaces the D5 corporate-finance question | OPEN |
+| 18 | TAM / addressable market | VC z3.3/z3.4, PE z2.5, macro | VC Z3.4 | OPEN |
+
+**Related M10 seam (no PC edit):** ARR-based lending (underwriting pre-EBITDA software on recurring revenue) has no home in the Private Credit map. When PC's authoring-depth layer covers it, back-link ★G300/★G294 rather than re-defining them.
