@@ -1,0 +1,462 @@
+# Source Manifest — sector-energy
+
+## Oil 101
+- **Author/editor:** Morgan Downey
+- **Source type:** practitioner guide / industry primer
+- **Source tier (config list):** primary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** yes
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Oil_101_-_Morgan_Downey.pdf`
+- **Page count:** 225
+- **Extraction status:** poor
+- **Status detail:** first pages mostly empty — likely image-only or broken OCR layer
+
+## The New Map: Energy, Climate, and the Clash of Nations
+- **Author/editor:** Daniel Yergin
+- **Source type:** narrative / geopolitics of energy
+- **Source tier (config list):** primary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** yes
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_New_Map_-_Daniel_Yergin.pdf`
+- **Page count:** 519
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - ALSO BY DANIEL YERGIN
+  - COAUTHORED BY DANIEL YERGIN
+  - PENGUIN PRESS
+  - LIBRARY OF CONGRESS CATALOGING-IN-PUBLICATION DATA
+  - PHOTOS BY RUTH MANDEL
+  - PHOTO GALLERY BY MICHAEL BLEA AND SUE LENA THOMPSON
+  - MAPS BY VIRGINIA MASON
+  - GRAPHICS BY MATTHEW LUCKWITZ
+  - MAPS OF THE MIDDLE EAST
+  - CLIMATE MAP
+  - THE GAS MAN
+  - THE NEW GAS EXPORTER
+  - CLOSING AND OPENING: MEXICO AND
+  - PIPELINE BATTLES
+  - THE SHALE ERA
+  - THE REBALANCING OF GEOPOLITICS
+  - CRISES OVER GAS
+  - CLASH OVER ENERGY SECURITY
+  - UKRAINE AND NEW SANCTIONS
+  - OIL AND THE STATE
+  - PIVOTING TO THE EAST
+  - THE HEARTLAND
+  - THE THREE QUESTIONS
+  - THE ROLE OF HISTORY
+  - THE TEST OF PRUDENCE
+
+## The World for Sale
+- **Author/editor:** Javier Blas and Jack Farchy
+- **Source type:** narrative / commodity trading history
+- **Source tier (config list):** primary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** yes
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_World_for_Sale_-_Jack_Farchy.pdf`
+- **Page count:** 369
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - TH E WO RLD F O R S A LE
+  - ABOUT THE AUTHORS
+  - INTRODUCTION
+  - THE LAST SWASHBUCKLERS
+  - THE PIONEERS
+  - THE GODFATHER OF OIL
+  - THE LAST BANK IN TOWN
+  - PAPER BARRELS
+  - THE FALL OF MARC RICH
+  - THE BIGGEST CLOSING-DOWN SALE
+  - IN HISTORY
+  - COMMUNISM WITH CAPITALIST
+  - INFLUENCES
+  - PETRODOLLARS AND KLEPTOCRATS
+  - DESTINATION AFRICA
+  - HUNGER AND PROFIT
+  - THE BILLIONAIRE FACTORY
+  - MERCHANTS OF POWER
+  - CONCLUSION
+  - A LOT OF SKELETONS
+  - ACKNOWLEDGEMENTS
+  - APPENDICES
+  - Appendix ii. Commodity trading giants’ net
+  - Appendix iv. Oil price, dollars per barrel, 1950–
+  - 44 Ivan Glasenberg, who would become CEO of Glencore, couldn’t participate in the Los Angeles Olympics in 1984
+
+## How the World Really Works
+- **Author/editor:** Vaclav Smil
+- **Source type:** popular science / energy systems
+- **Source tier (config list):** primary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** yes
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_How_the_World_Really_Works_-_Vaclav_Smil.pdf`
+- **Page count:** 336
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - HOW THE WORLD REALLY WORKS
+  - SAE (2017),
+  - 29 US Department of Agriculture, Agricultural Statistics (2019),
+  - 34 US Department of Homeland Security, “Total immigrants by
+  - 78 United Nations, “Conference of the Parties (COP),
+  - 80 United Nations, Report of the Conference of the Parties on its
+  - 110 This was the title of a chapter contributed by Amory Lovins to a
+  - 54 US Department of Defense, Narrative Summaries of Accidents
+  - AIDS, 165
+  - BASF, 81–2
+  - ENIAC, 120–1, 128
+  - THIS IS JUST THE BEGINNING
+  - PENGUIN BOOKS
+  - ISBN: 978-0-241-98968-5
+
+## The Economics of Oil and Gas
+- **Author/editor:** Xiaoyi Mu
+- **Source type:** textbook
+- **Source tier (config list):** secondary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_The_Economics_of_Oil_and_Gas_-_Xiaoyi_Mu.pdf`
+- **Page count:** 284
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - THE ECONOMICS OF
+  - Chapter 2 starts with a layman’s introduction to the technical aspects of
+  - Chapter  5 deals with the downstream side of the petroleum industry
+  - LIST OF ABBREVIATIONS
+  - INTRODUCTION
+  - EXPLORATION, DEVELOPMENT
+  - AND PRODUCTION
+  - AND PRODUCTION
+  - PETROLEUM TRANSPORTATION
+  - REFINING AND MARKETING
+  - SASOL GTL
+  - UAE (1967)
+  - REFERENCES
+  - SASOL, 168
+  - NYMEX, 235
+
+## Oil: A Beginner's Guide
+- **Author/editor:** Vaclav Smil
+- **Source type:** popular science / energy primer
+- **Source tier (config list):** secondary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Oil_-_Vaclav_Smil.pdf`
+- **Page count:** 193
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - Appendix C: Short glossary
+  - GASOLINE CONSUMPTION BY CARS
+  - GAS TURBINES IN FLIGHT
+  - PETROCHEMICAL FEEDSTOCKS AND PLASTICS
+  - NATIONAL OIL COMPANIES
+  - THE DECADE OF UPS AND DOWNS
+  - OIL, HUMAN DEVELOPMENT, FREEDOM AND CORRUPTION
+  - OIL AS CASUS BELLI
+  - PHOTOSYNTHETIC (CARBON) COST OF COAL AND OIL
+  - ABIOGENIC THEORY
+  - CLASTIC AND CARBONATE SEDIMENTS
+  - HISTORY OF SEISMIC EXPLORATION
+  - WELL LOGGING
+  - HISTORY OF ROTARY CONE DRILLS
+  - OFFSHORE DRILLING
+  - GLOBAL RESERVE/PRODUCTION RATIO
+  - LIFTING OIL
+  - SECONDARY OIL RECOVERY
+  - HISTORY OF OIL PRODUCTION
+  - ADVANTAGES OF PIPELINE TRANSPORT
+  - CATALYTIC CRACKING
+  - ENGINE KNOCK
+  - ENERGY TRANSITIONS
+  - OIL FROM SANDS
+  - NATURAL GASES: PROPERTIES AND RESERVES
+
+## Energy: A Beginner's Guide
+- **Author/editor:** Vaclav Smil
+- **Source type:** popular science / energy primer
+- **Source tier (config list):** secondary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Energy_the_beginners_guide_-_Vaclav_smil.pdf`
+- **Page count:** 206
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - BASIC SI UNITS
+  - MAGNITUDES OF ENERGY AND POWER
+  - NON-SI UNITS
+  - DIRECT AND ALTERNATING CURRENT
+  - SOLAR RADIATION
+  - EARTHQUAKES AND TSUNAMI
+  - PHOTOSYNTHETIC PATHS
+  - BASAL METABOLIC RATE
+  - ENERGY EFFICIENCY IN ECOSYSTEMS
+  - CARBOHYDRATES, LIPIDS, PROTEINS
+  - HUMAN THERMOREGULATION
+  - HUNTING BISON AND MAMMOTHS
+  - DRAFT HORSES
+  - TRADITIONAL LAND TRANSPORT
+  - COAL TYPES AND COMPOSITION
+  - CRUDE OIL TYPES AND COMPOSITION
+  - GAS TURBINES
+  - THERMAL POWER PLANTS
+  - GEOTHERMAL, WIND, PHOTOVOLTAICS
+  - MAJOR AIR POLLUTANTS
+  - CO2 CONCENTRATIONS AND OTHER GREENHOUSE GASES
+  - DIETARY TRANSITIONS
+  - MODERN INDOOR HEATING AND COOLING
+  - ENERGY EFFICIENCY OF CARS
+  - TURBOFAN ENGINES
+
+## Energy (Vaclav Smil)
+- **Author/editor:** Vaclav Smil
+- **Source type:** popular science / energy systems
+- **Source tier (config list):** secondary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\_OceanofPDF.com_Energy_-_Vaclav_Smil.pdf`
+- **Page count:** 156
+- **Extraction status:** partial
+- **Status detail:** chapter map reconstructed from headings; page references approximate
+- **Main areas covered (heading-level, factual):**
+  - ISBN 978–1–85168–452–6
+  - BASIC SI UNITS
+  - MAGNITUDES OF ENERGY AND POWER
+  - MULTIPLES
+  - SUBMULTIPLES
+  - NON-SI UNITS
+  - DIRECT AND ALTERNATING CURRENT
+  - SOLAR RADIATION
+  - EARTHQUAKES AND TSUNAMI
+  - PHOTOSYNTHETIC PATHS
+  - BASAL METABOLIC RATE
+  - ENERGY EFFICIENCY IN ECOSYSTEMS
+  - CARBOHYDRATES, LIPIDS, PROTEINS
+  - ENERGY CONTENT OF NUTRIENTS AND FOODSTUFFS
+  - HUMAN THERMOREGULATION
+  - HUNTING BISON AND MAMMOTHS
+  - DRAFT HORSES
+  - TRADITIONAL LAND TRANSPORT
+  - WATERWHEELS
+  - COAL TYPES AND COMPOSITION
+  - CRUDE OIL TYPES AND COMPOSITION
+  - GAS TURBINES
+  - THERMAL POWER PLANTS
+  - GEOTHERMAL, WIND, PHOTOVOLTAICS
+  - MAJOR AIR POLLUTANTS
+
+## Oil Company Crisis: Managing Structure, Profitability and Growth
+- **Author/editor:** Nick Antill and Robert Arnott
+- **Source type:** academic / practitioner monograph (OIES SP15)
+- **Source tier (config list):** primary-adjacent
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\SP15-OilCompanyCrisisManagingStructureProfitabilityandgGrowth-NAntillRArnott-2003.pdf`
+- **Page count:** 88
+- **Extraction status:** partial
+- **Status detail:** OIES monograph (not Valuing Oil and Gas Companies); TOC/structure from headings; Not the full book Valuing Oil and Gas Companies; this is the 2003 OIES monograph by the same authors. Flagged separately from the missing book.
+- **Main areas covered (heading-level, factual):**
+  - OIL COMPANY
+  - NICK ANTILL
+  - ROBERT ARNOTT
+  - ISBN  1-901795-27-6
+  - LIST OF FIGURES
+  - ACKNOWLEDGEMENTS
+
+## Valuation of International Oil Companies (Osmundsen et al. 2006)
+- **Author/editor:** Petter Osmundsen, Frank Asche, Bård Misund, and Klaus Mohn
+- **Source type:** academic journal article
+- **Source tier (config list):** secondary
+- **Listed in prompt SOURCE_FOLDER_OR_FILES:** no (present in Downloads; extracted as additional)
+- **Path:** `c:\Users\cfroo\Downloads\OsmundsenAscheMisundMohn2006.pdf`
+- **Page count:** 16
+- **Extraction status:** partial
+- **Status detail:** short academic article; section map from headings
+- **Main areas covered (heading-level, factual):**
+  - STOCK MARKET VALUATION
+  - F(2, 139)
+  - F(16, 126)
+  - F(18, 122)
+  - F(16, 113)
+
+## Exxon Mobil Corporation Form 10-K (FY2025)
+- **Company:** Exxon Mobil Corporation
+- **Filing/report year:** 2025
+- **Segment role (config list):** integrated supermajor
+- **Author/editor:** Exxon Mobil Corporation
+- **Source type:** regulatory filing (Form 10-K)
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\0000034088-26-000045.pdf`
+- **Page count:** 153
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Config segment role: integrated supermajor
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: UNRESOLVED STAFF COMMENTS
+  - Item 2: PROPERTIES
+  - Item 3: LEGAL PROCEEDINGS
+  - Item 4: MINE SAFETY DISCLOSURES
+  - Item 5: MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND
+  - Item 7A: QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+  - Item 9: CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL
+  - Item 9A: CONTROLS AND PROCEDURES
+  - Item 9B: OTHER INFORMATION
+  - Item 9C: DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS
+  - Item 10: DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE
+  - Item 11: EXECUTIVE COMPENSATION
+  - Item 12: SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED
+  - Item 13: CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS, AND DIRECTOR INDEPENDENCE
+  - Item 14: PRINCIPAL ACCOUNTANT FEES AND SERVICES
+  - Item 15: EXHIBIT AND FINANCIAL STATEMENT SCHEDULES
+  - Item 16: FORM 10-K SUMMARY
+
+## ConocoPhillips Form 10-K (FY2025)
+- **Company:** ConocoPhillips
+- **Filing/report year:** 2025
+- **Segment role (config list):** pure-play upstream E&P
+- **Author/editor:** ConocoPhillips
+- **Source type:** regulatory filing (Form 10-K)
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\2025 10-K Filed with SEC.pdf`
+- **Page count:** 161
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Config segment role: pure-play upstream E&P
+  - Item 1A: Risk Factors
+  - Item 1B: Unresolved Staff Comments
+  - Item 1C: Cybersecurity
+  - Item 3: Legal Proceedings
+  - Item 4: Mine Safety Disclosures
+  - Item 5: Market for Registrant's Common Equity, Related Stockholder Matters and
+  - Item 7: Management’s Discussion and Analysis of Financial Condition and
+  - Item 7A: Quantitative and Qualitative Disclosures about Market Risk
+  - Item 8: Financial Statements and Supplementary Data
+  - Item 9: Changes in and Disagreements with Accountants on Accounting and Financial
+  - Item 9A: Controls and Procedures
+  - Item 9B: Other Information
+  - Item 9C: Disclosure Regarding Foreign Jurisdictions that Prevent Inspections
+  - Item 10: Directors, Executive Officers and Corporate Governance
+  - Item 11: Executive Compensation
+  - Item 12: Security Ownership of Certain Beneficial Owners and Management and
+  - Item 13: Certain Relationships and Related Transactions, and Director Independence
+  - Item 14: Principal Accounting Fees and Services
+  - Item 15: Exhibits, Financial Statement Schedules
+
+## SLB N.V. (SLB Limited) Form 10-K (FY2025)
+- **Company:** SLB N.V. (SLB Limited)
+- **Filing/report year:** 2025
+- **Segment role (config list):** oilfield services
+- **Author/editor:** SLB N.V. (SLB Limited)
+- **Source type:** regulatory filing (Form 10-K)
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\0001193125-26-021017.pdf`
+- **Page count:** 135
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Config segment role: oilfield services
+  - Item 1: Business
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: Unresolved Staff Comments.
+  - Item 2: Properties.
+  - Item 3: Legal Proceedings.
+  - Item 4: Mine Safety Disclosures.
+  - Item 5: Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.
+  - Item 6: [Reserved].
+  - Item 7A: Quantitative and Qualitative Disclosures About Market Risk.
+  - Item 9: Changes in and Disagreements with Accountants on Accounting and Financial Disclosure.
+  - Item 9A: Controls and Procedures.
+  - Item 9B: Other Information.
+  - Item 9C: Disclosure Regarding Foreign Jurisdictions that Prevent Inspections.
+  - Item 10: Directors, Executive Officers and Corporate Governance.
+  - Item 11: Executive Compensation.
+  - Item 12: Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters.
+  - Item 13: Certain Relationships and Related Transactions, and Director Independence.
+  - Item 14: Principal Accounting Fees and Services.
+  - Item 15: Exhibits and Financial Statement Schedules.
+  - Item 16: Form 10-K Summary.
+
+## Enterprise Products Partners L.P. Form 10-K (FY2025)
+- **Company:** Enterprise Products Partners L.P.
+- **Filing/report year:** 2025
+- **Segment role (config list):** midstream MLP
+- **Author/editor:** Enterprise Products Partners L.P.
+- **Source type:** regulatory filing (Form 10-K)
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\EPD 10-K 2025 02.27.2026.pdf`
+- **Page count:** 222
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Config segment role: midstream MLP
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: UNRESOLVED STAFF COMMENTS.
+  - Item 3: LEGAL PROCEEDINGS.
+  - Item 4: MINE SAFETY DISCLOSURES.
+  - Item 5: MARKET FOR REGISTRANT’S COMMON EQUITY, RELATED UNITHOLDER MATTERS
+  - Item 6: RESERVED.
+  - Item 7A: QUANTITATIVE AND QUALITATIVE DISCLOSURES
+  - Item 9: CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON
+  - Item 9A: CONTROLS AND PROCEDURES.
+  - Item 9B: OTHER INFORMATION.
+  - Item 9C: DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS.
+  - Item 10: DIRECTORS, EXECUTIVE OFFICERS AND PARTNERSHIP GOVERNANCE.
+  - Item 11: EXECUTIVE COMPENSATION.
+  - Item 12: SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND
+  - Item 13: CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS,
+  - Item 14: PRINCIPAL ACCOUNTANT FEES AND SERVICES.
+  - Item 15: EXHIBITS AND FINANCIAL STATEMENT SCHEDULES.
+  - Item 16: FORM 10-K SUMMARY.
+
+## Valero Energy Corporation Form 10-K (FY2024)
+- **Company:** Valero Energy Corporation
+- **Filing/report year:** 2024
+- **Segment role (config list):** downstream / refining
+- **Author/editor:** Valero Energy Corporation
+- **Source type:** regulatory filing (Form 10-K)
+- **Source tier (config list):** primary
+- **Path:** `c:\Users\cfroo\Downloads\NYSE_VLO_2024.pdf`
+- **Page count:** 177
+- **Extraction status:** clean
+- **Main areas covered (heading-level, factual):**
+  - Config segment role: downstream / refining
+  - Item 1A: Risk Factors
+  - Item 1C: Cybersecurity
+  - Item 7: Management's Discussion and Analysis
+  - Item 8: Financial Statements
+  - Item 1B: UNRESOLVED STAFF COMMENTS
+  - Item 3: LEGAL PROCEEDINGS
+  - Item 4: MINE SAFETY DISCLOSURES
+  - Item 5: MARKET FOR REGISTRANT’S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER
+  - Item 6: [RESERVED]
+  - Item 7A: QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+  - Item 9: CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL
+  - Item 9A: CONTROLS AND PROCEDURES
+  - Item 9B: OTHER INFORMATION
+  - Item 9C: DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS
+  - Item 10: DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE
+  - Item 11: EXECUTIVE COMPENSATION
+  - Item 12: SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED
+  - Item 13: CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS, AND DIRECTOR INDEPENDENCE
+  - Item 14: PRINCIPAL ACCOUNTANT FEES AND SERVICES
+  - Item 15: EXHIBITS AND FINANCIAL STATEMENT SCHEDULES
+  - Item 16: FORM 10-K SUMMARY
+
+## Valuing Oil and Gas Companies
+- **Author/editor:** Nick Antill and Robert Arnott
+- **Source type:** practitioner valuation handbook
+- **Source tier (config list):** primary
+- **Page count:** n/a
+- **Extraction status:** not provided
+- **Status detail:** Listed in SOURCE_FOLDER_OR_FILES as a primary book; full book not present in Downloads. A related OIES monograph by the same authors (Oil Company Crisis, SP15, 2003) WAS present and was extracted separately. Do not treat the monograph as a substitute for the missing book.
+
+## The Prize: The Epic Quest for Oil, Money & Power
+- **Author/editor:** Daniel Yergin
+- **Source type:** narrative / industry history
+- **Source tier (config list):** primary
+- **Page count:** n/a
+- **Extraction status:** not provided
+- **Status detail:** Listed in SOURCE_FOLDER_OR_FILES; PDF not present in the provided Downloads set. The New Map (also by Yergin) was present and extracted.
