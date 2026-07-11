@@ -5559,7 +5559,7 @@
       "reserve-based lending",
       "RBL"
     ],
-    "quick_definition": "The reserves-specific books — standardized measure/PV-10, units-of-production DD&A, the replacement scoreboard — plus RBL credit.",
+    "quick_definition": "The reserves-specific books — the tax-inclusive standardized measure (distinct from pre-tax PV-10), units-of-production DD&A, the replacement scoreboard — plus RBL credit.",
     "home_module": "sector-energy",
     "home_zone": "Z4.2",
     "contributed_by": "sector-energy",
@@ -5581,7 +5581,7 @@
       "resource nationalism",
       "petrostate"
     ],
-    "quick_definition": "State-owned producers holding ~70% of world reserves; the petrostate whose budget and statecraft ride the barrel.",
+    "quick_definition": "State-owned producers controlling a dominant share of global proved reserves and a substantial share of production; the petrostate whose budget and statecraft ride the barrel.",
     "home_module": "sector-energy",
     "home_zone": "Z5.1",
     "contributed_by": "sector-energy",
