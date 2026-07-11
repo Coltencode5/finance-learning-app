@@ -4,6 +4,10 @@ The content platform for a finance education app built on a shared knowledge
 graph: 12 modules, 292 global glossary concepts, 591 zone learning nodes,
 4,185 graph edges — all as validated, structured JSON.
 
+## Operating Roadmap
+
+[`docs/OPERATING_ROADMAP.md`](docs/OPERATING_ROADMAP.md) is the canonical source for project direction — architecture track (content milestones) and product track (P-track) sequencing, ownership, and gates.
+
 ## The one rule
 
 **`content/` (JSON) is the single source of truth.** The original markdown
