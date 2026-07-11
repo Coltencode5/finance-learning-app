@@ -1,0 +1,100 @@
+[
+  {
+    "id": "sector-energy.z1.1",
+    "local_id": "Z1.1",
+    "module": "sector-energy",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What the Energy Sector Sells: The Barrel's Journey from Rock to Road",
+    "tag": "global",
+    "global_id": "G304",
+    "quick_definition": "The energy sector finds hydrocarbons underground and moves them, step by step, to the point of use — a physical value chain with four links: upstream (find & produce the barrel), midstream (transport & store it), downstream (refine it into fuels & sell them), and oilfield services (the contractors who enable the other three).",
+    "explainer_covers": [
+      "The barrel's journey — a molecule of crude from a reservoir two miles down, up a well (upstream), through a pipeline (midstream), into a refinery and out as gasoline (downstream), with a service company having drilled the well. The four segments are the four ways to invest in energy (★G304).",
+      "The integrated major (ExxonMobil, the exhibit) owns the whole chain under one roof; pure-plays own one link (ConocoPhillips = upstream only, Valero = refining only). \"Integrated\" is the answer to \"why is Exxon in every segment?\" — it's a diversification-across-the-chain bet.",
+      "The GICS boundary — read this before you mis-shelve a company. GICS \"Energy\" is hydrocarbons only (oil & gas). Renewables mostly aren't here: solar/wind equipment sits in IT/Industrials, and the power utilities (including the biggest renewables operator, NextEra) sit in Utilities, a separate sector. \"Energy the sector\" ≠ \"energy in everyday speech.\"",
+      "Why the sector exists at all (Smil's frame): modern civilization runs on the energy density of hydrocarbons and on four material pillars downstream of them; this is the honest counterweight to \"it's all going away tomorrow,\" and it seeds Z5.2.",
+      "The full cast the rest of the module introduces: the majors, the E&P independents, the midstream operators, the service contractors, the national oil companies that actually hold most of the world's barrels (Z5.1), and the traders who move paper barrels (Z3.1)."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z2.3",
+        "note": "attachment — the bidirectional door to sector research craft"
+      },
+      {
+        "ref": "sector-energy.z2.1",
+        "note": null
+      },
+      {
+        "ref": "sector-energy.z2.2",
+        "note": null
+      },
+      {
+        "ref": "sector-energy.z2.3",
+        "note": null
+      },
+      {
+        "ref": "sector-energy.z2.4",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z1.1",
+        "note": "sibling — the sector is a stack of businesses"
+      }
+    ],
+    "connects_to_raw": "`equity-research.z2.3` (the door — ER's hub for a commodity/cyclical producer; this node points back for the research craft) · Z2.1–Z2.4 (the chain, link by link) · `sector-information-technology.z1.1` (the sibling \"the sector is a stack of businesses\" overview).",
+    "gaps": [],
+    "real_world_layer": "ExxonMobil 10-K (integrated exhibit); Smil energy-density frame; GICS Energy boundary.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z1.2",
+    "local_id": "Z1.2",
+    "module": "sector-energy",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Economics That Make Energy *Energy*: Price-Takers on a Depleting Asset",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Every energy producer sells a commodity it cannot price — a barrel is a barrel, so the market sets the price and the firm takes it — and it sells that barrel out of an asset that depletes as it produces. Those two facts, together, drive almost everything else in the sector.",
+    "explainer_covers": [
+      "Price-taker, defined by contrast. Hold this node next to sector-IT's ★G293: software's marginal cost is ~zero and the vendor sets price; a barrel's price is set by a global market and the producer accepts it. Exxon and a tiny independent sell the same crude at the same benchmark price. There is no pricing power to be had.",
+      "The brutal consequence: the only durable competitive edge is cost position. If you can't set price, you win by being the lowest-cost barrel — the producer who still makes money when the price falls survives every cycle. This is why \"where are you on the cost curve\" (Z3.1) is the sector's master question, and why \"moat\" here means cheap, not differentiated.",
+      "The depleting asset. A software company's product doesn't disappear when sold; an oil field does. Every producing well declines from its first day, so a producer must keep spending just to keep output flat — the treadmill made explicit in Z2.1 and scored in Z4.2. Value lives in a wasting resource, which is why energy valuation (Z4.1) can't assume a perpetuity.",
+      "Capital intensity + long lead times. Megaprojects cost billions and take years from sanction to first oil; capital committed at a high price arrives into a market that may have turned — the seed of the supply-lag cycle (Z3.2).",
+      "Put together — no pricing power, a wasting asset, huge slow capital — and you get a business whose fortunes are dominated by one exogenous variable, the price, which is why Zone 3 is about how that price is made and how it cycles."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-information-technology.z1.2",
+        "note": "★G293 — the deliberate economic opposite"
+      },
+      {
+        "ref": "G293",
+        "note": "zero marginal cost & pricing power — energy's opposite"
+      },
+      {
+        "ref": "sector-energy.z2.1",
+        "note": "the depleting-asset treadmill, shown"
+      },
+      {
+        "ref": "sector-energy.z3.1",
+        "note": "the cost curve — where cost position becomes a diagram"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "the cycle these economics generate"
+      },
+      {
+        "ref": "equity-research.z2.3",
+        "note": "the commodity-producer lens"
+      }
+    ],
+    "connects_to_raw": "`sector-information-technology.z1.2` (★G293 — the deliberate economic opposite) · Z2.1 (the depleting-asset treadmill, shown) · Z3.1 (the cost curve — where \"cost position\" becomes a diagram) · Z3.2 (the cycle these economics generate) · `equity-research.z2.3` (the commodity-producer lens).",
+    "gaps": [],
+    "real_world_layer": "Price-taker vs. software pricing-power contrast; depleting-asset treadmill.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

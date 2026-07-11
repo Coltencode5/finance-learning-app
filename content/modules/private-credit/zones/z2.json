@@ -570,9 +570,13 @@
       {
         "ref": "G69",
         "note": null
+      },
+      {
+        "ref": "sector-energy.z2.2",
+        "note": "midstream — fee-based take-or-pay cash flows as infrastructure debt's live exhibit"
       }
     ],
-    "connects_to_raw": "PE Z2.27 (real assets), `★ G69` Floating vs. fixed, Z5.4 (insurance capital), Z2.12. ## Branch 2F — Fund-Level & Structured",
+    "connects_to_raw": "PE Z2.27 (real assets), `★ G69` Floating vs. fixed, Z5.4 (insurance capital), Z2.12, `sector-energy.z2.2` (midstream — infrastructure debt's live exhibit). ## Branch 2F — Fund-Level & Structured",
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],

@@ -100,3 +100,17 @@ Surfaced by the IT sector inheritance pass: concepts in wide textual use across 
 | 18 | TAM / addressable market | VC z3.3/z3.4, PE z2.5, macro | VC Z3.4 | OPEN |
 
 **Related M10 seam (no PC edit):** ARR-based lending (underwriting pre-EBITDA software on recurring revenue) has no home in the Private Credit map. When PC's authoring-depth layer covers it, back-link ★G300/★G294 rather than re-defining them.
+
+## H. Backlog — unhomed concepts & forward seams (Milestone 11)
+
+Surfaced by the Energy sector inheritance pass. Same OPEN lifecycle as §G: do not mint corpus-wide or asset-class concepts inside a sector module.
+
+| # | Concept | Where used (sample) | Recommended future home | Status |
+|---|---|---|---|---|
+| 19 | Commodities (the asset class) & physical trading houses (Vitol / Glencore / Trafigura) | HF z2.1/z2.4/z2.5 (paper); macro z5.5/z5.7; FI z3.12 (EM commodity link); *The World for Sale* (physical houses — unhomed) | Commodities/derivatives asset-class module (resurfaces deferred-Derivatives) | OPEN |
+
+**Related M11 seam (no PC edit):** Reserve-based lending (RBL) — borrowing-base revolvers sized to PV of proved reserves, redetermined ~semi-annually — is taught inside `sector-energy.z4.2` / ★G311. When Private Credit gets an energy/RBL depth pass, back-link ★G305/★G311 rather than re-defining them. Mirror of M10's ARR-lending flag.
+
+**Related M11 seam (wave-two Utilities):** Natural-gas market structure, LNG, and electricity/power were kept thin in Energy (oil is the spine; GICS puts power in Utilities). Wave-two Utilities inherits this boundary cleanly.
+
+**Resolved by M11 (no backlog row):** "Normalized / mid-cycle earnings" — seven prior textual uses across PE/ER/IB/RE/sector-IT now home at ★G310.

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "sector-energy.z3.1",
+    "local_id": "Z3.1",
+    "module": "sector-energy",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "How the Oil Price Gets Made: Benchmarks, the Cost Curve & the Marginal Barrel",
+    "tag": "global",
+    "global_id": "G308",
+    "quick_definition": "The oil price isn't one number handed down — it's made, in physical and paper markets, around a handful of benchmarks, and it gravitates to the cost of the marginal barrel: the most expensive barrel the world needs to pump to meet demand.",
+    "explainer_covers": [
+      "The benchmarks. WTI (US light crude, priced at Cushing, Oklahoma) and Brent (international waterborne crude) are the two oil references; Henry Hub is the US natural-gas benchmark (★G308). The load-bearing distinction: oil is a global price (it ships anywhere, so one world price rules), while gas is regional (hard to move without liquefaction, so US, European, and Asian gas prices diverge) — which is why LNG matters and why gas isn't just \"cheap oil.\"",
+      "Physical vs paper. The price you see is set as much in futures (NYMEX) as in physical cargoes — far more oil trades on paper than is ever delivered (Blas & Farchy's \"paper barrels\"). The futures curve can be contango (future price above spot — storage economics) or backwardation (spot above future — scarcity now). Contango/backwardation and the mechanics of the curve are named here but belong to a future derivatives module — not taught in depth.",
+      "The cost curve (the sector's master diagram). Stack the world's supply from cheapest to dearest: Gulf/Saudi barrels at the bottom (single-digit-to-teens $/bbl lifting cost), then Russia and conventional fields, US shale in the middle, and deepwater, oil sands & Arctic at the top. Demand draws a vertical line; where it crosses the curve is the marginal barrel, and that barrel's cost anchors the price. This is Z1.2's \"cost position\" made visual — and it's why the low-cost producer is unkillable.",
+      "Why the price is so violent. Short-run demand is inelastic (you can't stop commuting when gasoline spikes; you can't instantly electrify a truck fleet) and short-run supply is inelastic too (barrels take time). So a small supply-demand gap forces a large price move to clear the market — the mechanical root of the cycle in Z3.2.",
+      "The gauges. Inventories (are stocks building or drawing?) and spare capacity (Z3.3) are the two dials analysts read to see which way the imbalance — and the price — is tilting.",
+      "Priced in dollars. Crude is quoted and settled in USD, so the dollar's level is an input to the oil price — the seam into macro-economics.z5.5."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-energy.z1.2",
+        "note": "cost position → the cost curve"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "inelasticity → the cycle"
+      },
+      {
+        "ref": "sector-energy.z3.3",
+        "note": "spare capacity — the cartel's lever on this price"
+      },
+      {
+        "ref": "macro-economics.z5.5",
+        "note": "the dollar that prices oil"
+      },
+      {
+        "ref": "hedge-funds.z2.4",
+        "note": "macro desks trading the benchmark"
+      },
+      {
+        "ref": "hedge-funds.z2.5",
+        "note": "macro desks trading the benchmark"
+      }
+    ],
+    "connects_to_raw": "Z1.2 (cost position → the cost curve) · Z3.2 (inelasticity → the cycle) · Z3.3 (spare capacity — the cartel's lever on this price) · `macro-economics.z5.5` (the dollar that prices oil) · `hedge-funds.z2.4` / `z2.5` (macro desks trading the benchmark).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "oil101-extraction-poor — Oil 101, the market-plumbing primer, came in with broken OCR; the benchmark/curve/trading-plumbing detail is drawn from Mu Ch. 7 and The World for Sale and is sound, but citation depth on the physical-trading mechanics is lighter than Tier A intends. Severity: low-medium.",
+        "needed_source": "Oil 101"
+      }
+    ],
+    "real_world_layer": "Mu Ch. 7; Blas & Farchy paper barrels; WTI/Brent/Henry Hub.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z3.2",
+    "local_id": "Z3.2",
+    "module": "sector-energy",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "The Oil Cycle: Boom, Bust & the Machinery You Already Know",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Energy is a cyclical sector, and its cycle is not a new object — it's the corpus's cycle machinery with a commodity accent: high prices summon capital, capital summons supply years too late, the glut breaks the price, and underinvestment sows the next shortage.",
+    "explainer_covers": [
+      "The loop, built on inherited parts. A high price → a capex boom → new supply that arrives years later (a deepwater project sanctioned today produces late this decade — this is ★G232's supply-lag structure, borrowed wholesale from real estate) → oversupply → price crash → capex slashed → underinvestment → eventual shortage → recovery. Same pendulum as ★G127, same lag as ★G232.",
+      "Demand rides the business cycle. Oil demand tracks industrial activity and mobility, so recessions gut it — the demand side is ★G237, no new teaching required. The cycle is supply lag × demand swing.",
+      "Credit is the amplifier. Cheap capital in the boom over-funds marginal (often shale) producers; when the price breaks, the leverage detonates — the 2015–16 E&P high-yield bust is ★G255 wearing a hard hat. The financeability of drilling is part of the cycle.",
+      "Shale bent the cycle. Short-cycle shale (Z2.1) responds in months, not years, so US producers now act as a fast swing supply that caps price spikes and shortens cycles — a genuine structural change to the old megaproject rhythm, not just another turn.",
+      "Capital discipline — the current regime. After destroying capital from 2014–2020, the majors and E&Ps switched from drill-for-growth to return-the-cash — dividends and buybacks (★G42), production held flat on purpose. Whether this \"discipline\" survives the next high price is the sector's live question (also Z4.1). Taught at node level; below the backlog bar to mint.",
+      "The macro seam (never re-taught). The oil→inflation→rates transmission lives in Macro (z3.7 stagflation, z3.3 cost-push, z1.8 AS shift, ★G252/★G253/★G259). Z3.2 supplies the supply-side half — why the barrel got scarce — and back-links; it does not restate the canon."
+    ],
+    "connects_to": [
+      {
+        "ref": "G127",
+        "note": "the pendulum — inherited cycle engine"
+      },
+      {
+        "ref": "G237",
+        "note": "the business cycle — demand side"
+      },
+      {
+        "ref": "G232",
+        "note": "the real-estate cycle — supply-lag twin"
+      },
+      {
+        "ref": "G255",
+        "note": "the credit cycle — amplifier"
+      },
+      {
+        "ref": "macro-economics.z3.7",
+        "note": "one-way — giving the demand-shock canon its supply-side counterpart"
+      },
+      {
+        "ref": "G42",
+        "note": "buybacks — the capital-returns regime"
+      },
+      {
+        "ref": "sector-energy.z2.4",
+        "note": "the cycle, amplified through services"
+      },
+      {
+        "ref": "hedge-funds.z2.5",
+        "note": "who trades it"
+      }
+    ],
+    "connects_to_raw": "★G127 · ★G237 · ★G232 · ★G255 (the four inherited engines this node runs on) · `macro-economics.z3.7` (one-way — giving the demand-shock canon its supply-side counterpart) · ★G42 (buybacks — the capital-returns regime) · Z2.4 (the cycle, amplified through services) · `hedge-funds.z2.5` (who trades it).",
+    "gaps": [],
+    "real_world_layer": "Yergin shale & 2020 demand collapse; 2015–16 E&P HY bust; capital-discipline regime.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z3.3",
+    "local_id": "Z3.3",
+    "module": "sector-energy",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "OPEC & the Visible Hand: Spare Capacity, Quotas & the Swing Producer",
+    "tag": "global",
+    "global_id": "G309",
+    "quick_definition": "Oil is not a free market. A producer cartel — OPEC, now OPEC+ with Russia — coordinates output to steer the price, and its ability to do so rests on spare capacity: idle production it can switch on or off.",
+    "explainer_covers": [
+      "What OPEC is and does. A group of producing states (Saudi Arabia the anchor) that sets production quotas to manage supply, controlling a large share of world output and nearly all the world's usable spare capacity (★G309). OPEC+ extended the tent to Russia and others. This is the \"visible hand\" that makes energy unlike a textbook commodity market.",
+      "Spare capacity — the shock absorber. The barrels a country could produce but isn't (overwhelmingly Saudi) are the global buffer: released, they cap a spike; withheld, they defend a price. Spare capacity is the single most-watched supply gauge (the other dial to Z3.1's inventories).",
+      "The swing producer. Whoever holds spare capacity can move the marginal barrel and thus the price — historically Saudi Arabia, increasingly contested by US shale's short-cycle swing (Z3.2). Two swing forces now share the wheel.",
+      "The cartel's inherent flaw. Quotas only work if members honor them, and the incentive is always to cheat (pump over quota while others restrain) — the classic cartel instability that periodically cracks OPEC discipline.",
+      "Price war vs price defense (the strategic switch). OPEC oscillates between defending price (cut output) and defending market share (pump hard to drive high-cost rivals out) — the 1986, 2014 and 2020 episodes were partly aimed at bankrupting US shale. Yergin's oil-shock and price-war history is the narrative spine.",
+      "Why an analyst tracks it. OPEC meeting outcomes are a standing critical factor (★G191) for any energy forecast — a scheduled, market-moving supply decision no other sector has an equivalent of."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-energy.z3.1",
+        "note": "spare capacity → the price it sets"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "OPEC vs shale — the two swing forces steering the cycle"
+      },
+      {
+        "ref": "G191",
+        "note": "the critical-factor logic OPEC-watching plugs into"
+      },
+      {
+        "ref": "sector-energy.z5.1",
+        "note": "OPEC members are petrostates & NOCs — the geopolitical face"
+      },
+      {
+        "ref": "macro-economics.z3.7",
+        "note": "OPEC supply cuts as the archetypal supply shock"
+      }
+    ],
+    "connects_to_raw": "Z3.1 (spare capacity → the price it sets) · Z3.2 (OPEC vs shale — the two swing forces steering the cycle) · ★G191 (the critical-factor logic OPEC-watching plugs into) · Z5.1 (OPEC members are petrostates & NOCs — the geopolitical face) · `macro-economics.z3.7` (OPEC supply cuts as the archetypal supply shock).",
+    "gaps": [],
+    "real_world_layer": "Mu Ch. 7 OPEC history; Yergin price-war episodes; Saudi spare capacity.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

@@ -15,6 +15,7 @@
       "investment-banking": 24,
       "hedge-funds": 19,
       "real-estate": 3,
+      "sector-energy": 1,
       "sector-financials": 1,
       "sector-information-technology": 1
     },
@@ -45,7 +46,8 @@
     },
     "private-credit": {
       "global": 181,
-      "private-equity": 27
+      "private-equity": 27,
+      "sector-energy": 1
     },
     "private-equity": {
       "global": 298
@@ -56,6 +58,19 @@
       "investment-banking": 2,
       "private-credit": 1,
       "sector-information-technology": 1
+    },
+    "sector-energy": {
+      "global": 42,
+      "macro-economics": 5,
+      "sector-information-technology": 4,
+      "equity-research": 3,
+      "hedge-funds": 3,
+      "real-estate": 3,
+      "fixed-income": 2,
+      "private-credit": 2,
+      "asset-management": 1,
+      "private-equity": 1,
+      "sector-financials": 1
     },
     "sector-financials": {
       "global": 37,
@@ -76,7 +91,8 @@
       "macro-economics": 3,
       "real-estate": 3,
       "venture-capital": 2,
-      "fixed-income": 1
+      "fixed-income": 1,
+      "sector-energy": 1
     },
     "venture-capital": {
       "global": 152,

@@ -1,15 +1,15 @@
 # Project Status
 
-**Last updated:** Milestone 10 complete (2026-07-07)
+**Last updated:** Milestone 11 complete (2026-07-10)
 
 ## Corpus totals (validated)
 
 | Metric | Value |
 |---|---|
-| Active modules | **13** |
-| Shared globals | **303** (G1–G303, contiguous) |
-| Zone nodes | **602** |
-| Graph edges | **4,308** |
+| Active modules | **14** |
+| Shared globals | **313** (G1–G313, contiguous) |
+| Zone nodes | **615** |
+| Graph edges | **4,433** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -21,7 +21,20 @@
 | 7 | Fixed Income | fixed-income | asset-class | 11 | 51 | G264–G285 | complete |
 | 8 | Sector Layer Prep | — | prep | — | — | — | complete |
 | 9 | Financials (Sector) | sector-financials | sector-layer1 | 12 | 11 | G286–G292 | complete |
-| **10** | **Information Technology (Sector)** | **sector-information-technology** | **sector-layer1** | **13** | **11** | **G293–G303** | **complete** |
+| 10 | Information Technology (Sector) | sector-information-technology | sector-layer1 | 13 | 11 | G293–G303 | complete |
+| **11** | **Energy (Sector)** | **sector-energy** | **sector-layer1** | **14** | **13** | **G304–G313** | **complete** |
+
+## Milestone 11 — Energy (Sector)
+
+- **Slug:** `sector-energy`
+- **Kind:** `sector-layer1` (ADR-003 rule 1)
+- **Zones:** Z1 Powering Everything, Pricing Nothing (2) · Z2 Four Businesses Along One Barrel's Journey (4) · Z3 The Price, the Cycle & the Cartel (3) · Z4 Going Deeper: Analyzing One (2) · Z5 The State, the Sunset & the New Map (2)
+- **New globals:** G304–G313 (10 net-new; append-only; each with exactly one `home_of`; no `hosts_globals`)
+- **Disambiguation:** G305 ↔ G209 (reserves pairwise); G306 ↔ G20/G216/G225 (partnership, first 4-way); G307 ↔ G70/G277/G286 (spread, 4-way; G103 excluded) — first migration to fire N-way retrofit twice
+- **Attachment edges:** Z1.1 ↔ `equity-research.z2.3` (bidirectional, ER commodity forward-link bullet); Z4.2 → `fixed-income.z4.8` (credit handshake as weighted back-link — template works on mid-cycle inputs + RBL); Z5.2 ↔ `sector-information-technology.z5.2` (reinvention / AI-power); Z2.2 ↔ `private-credit.z2.13` (midstream ↔ infrastructure debt)
+- **Structured GAPs:** 3 (`oil101-extraction-poor` on Z3.1; `reserves-valuation-source-absent` on Z4.2; `transition-recency` on Z5.2)
+- **Design ripple:** none — `SECTOR_LAYER_DESIGN.md` unchanged (N-way convention applied twice without modification). Commodities/trading-houses backlog + RBL→PC forward seam added to `docs/MIGRATION_DEFECTS.md`
+- **Node count note:** 615 is one above the prior derived band — four genuine segments (upstream/midstream/downstream/services) defended in the node map, not an error
 
 ## Milestone 10 — Information Technology (Sector)
 
@@ -66,10 +79,10 @@ Prep milestone (no new module content authored):
 
 ## Next gate
 
-- Next module: **sector-energy** (M11, `kind: sector-layer1`, `build_order: 14`, globals from **G304**)
-- Wave one remaining: Energy → Consumer Discretionary
+- Next module: **sector-consumer-discretionary** (M12, `kind: sector-layer1`, `build_order: 15`, globals from **G314**)
+- Wave one remaining: Consumer Discretionary
 
 ## Known defects (unchanged)
 
-- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7–M10
-- Unhomed cross-module concepts (moat / operating leverage / TAM) — see `docs/MIGRATION_DEFECTS.md` §G
+- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7–M11
+- Unhomed cross-module concepts (moat / operating leverage / TAM / commodities-as-asset-class) — see `docs/MIGRATION_DEFECTS.md` §G–§H

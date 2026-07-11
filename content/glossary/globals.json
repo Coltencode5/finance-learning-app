@@ -337,7 +337,9 @@
       "Z3",
       "Z5"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G306"
+    ],
     "status": "mapped"
   },
   {
@@ -1188,7 +1190,8 @@
       "Z5"
     ],
     "disambiguate_with": [
-      "G286"
+      "G286",
+      "G307"
     ],
     "status": "mapped"
   },
@@ -3618,7 +3621,9 @@
     "appears_in": [
       "PE"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G305"
+    ],
     "status": "mapped"
   },
   {
@@ -3731,7 +3736,8 @@
       "AM"
     ],
     "disambiguate_with": [
-      "G297"
+      "G297",
+      "G306"
     ],
     "status": "mapped"
   },
@@ -3896,7 +3902,9 @@
       "PE",
       "PC"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G306"
+    ],
     "status": "mapped"
   },
   {
@@ -4838,7 +4846,8 @@
     ],
     "disambiguate_with": [
       "G70",
-      "G286"
+      "G286",
+      "G307"
     ],
     "status": "mapped"
   },
@@ -5014,7 +5023,8 @@
     ],
     "disambiguate_with": [
       "G70",
-      "G277"
+      "G277",
+      "G307"
     ],
     "status": "mapped"
   },
@@ -5368,6 +5378,239 @@
     "appears_in": [
       "ER",
       "IB",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G304",
+    "term": "The petroleum value chain (upstream · midstream · downstream) (Z1.1)",
+    "aliases": [
+      "petroleum value chain",
+      "upstream midstream downstream",
+      "oil & gas value chain"
+    ],
+    "quick_definition": "The four-link physical chain — find, move, refine, service — that is the four ways to invest in energy.",
+    "home_module": "sector-energy",
+    "home_zone": "Z1.1",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G305",
+    "term": "Proved reserves & the depleting producing asset (Z2.1)",
+    "aliases": [
+      "proved reserves",
+      "1P reserves",
+      "oil & gas reserves"
+    ],
+    "quick_definition": "The volume of hydrocarbons a firm can profitably extract; a wasting asset it must continually replace.",
+    "home_module": "sector-energy",
+    "home_zone": "Z2.1",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "PC",
+      "PE"
+    ],
+    "disambiguate_with": [
+      "G209"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G306",
+    "term": "The master limited partnership (MLP) (Z2.2)",
+    "aliases": [
+      "MLP",
+      "master limited partnership"
+    ],
+    "quick_definition": "A publicly traded pass-through partnership (units + K-1) built for stable, fee-based midstream cash flow.",
+    "home_module": "sector-energy",
+    "home_zone": "Z2.2",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "PC",
+      "RE",
+      "AM"
+    ],
+    "disambiguate_with": [
+      "G20",
+      "G216",
+      "G225"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G307",
+    "term": "The crack spread (the refining margin) (Z2.3)",
+    "aliases": [
+      "crack spread",
+      "refining margin",
+      "3:2:1 crack"
+    ],
+    "quick_definition": "The dollar margin between refined-product prices and the crude cracked into them — refining's signature number.",
+    "home_module": "sector-energy",
+    "home_zone": "Z2.3",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "HF",
+      "FI"
+    ],
+    "disambiguate_with": [
+      "G70",
+      "G277",
+      "G286"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G308",
+    "term": "The oil price: benchmarks & how crude is priced (Z3.1)",
+    "aliases": [
+      "oil price",
+      "WTI",
+      "Brent",
+      "crude benchmarks",
+      "cost curve",
+      "marginal barrel"
+    ],
+    "quick_definition": "How the price is made — WTI/Brent/Henry Hub, physical vs paper, and the cost curve where the marginal barrel sets it.",
+    "home_module": "sector-energy",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "HF",
+      "FI"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G309",
+    "term": "OPEC, spare capacity & the swing producer (Z3.3)",
+    "aliases": [
+      "OPEC",
+      "OPEC+",
+      "spare capacity",
+      "swing producer"
+    ],
+    "quick_definition": "The producer cartel that steers supply, its spare-capacity shock absorber, and the swing producer who moves the marginal barrel.",
+    "home_module": "sector-energy",
+    "home_zone": "Z3.3",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "HF"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G310",
+    "term": "Normalized (mid-cycle) earnings & cyclical valuation (Z4.1)",
+    "aliases": [
+      "normalized earnings",
+      "mid-cycle earnings",
+      "cyclical valuation",
+      "through-the-cycle"
+    ],
+    "quick_definition": "Valuing a cyclical on through-the-cycle prices, never the spot print.",
+    "home_module": "sector-energy",
+    "home_zone": "Z4.1",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "PE",
+      "IB",
+      "RE",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G311",
+    "term": "Reserve-based valuation & the reserves disclosures (Z4.2)",
+    "aliases": [
+      "reserve-based valuation",
+      "PV-10",
+      "standardized measure",
+      "reserve-based lending",
+      "RBL"
+    ],
+    "quick_definition": "The reserves-specific books — standardized measure/PV-10, units-of-production DD&A, the replacement scoreboard — plus RBL credit.",
+    "home_module": "sector-energy",
+    "home_zone": "Z4.2",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "PC"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G312",
+    "term": "The national oil company (NOC) & resource nationalism (Z5.1)",
+    "aliases": [
+      "NOC",
+      "national oil company",
+      "resource nationalism",
+      "petrostate"
+    ],
+    "quick_definition": "State-owned producers holding ~70% of world reserves; the petrostate whose budget and statecraft ride the barrel.",
+    "home_module": "sector-energy",
+    "home_zone": "Z5.1",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "FI"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G313",
+    "term": "The energy transition & stranded assets (Z5.2)",
+    "aliases": [
+      "energy transition",
+      "stranded assets",
+      "decarbonization"
+    ],
+    "quick_definition": "Energy's unique demand-peak question and the reserves it may strand — taught as mechanism-and-tension, not forecast.",
+    "home_module": "sector-energy",
+    "home_zone": "Z5.2",
+    "contributed_by": "sector-energy",
+    "category": "Energy (Sector)",
+    "appears_in": [
+      "ER",
+      "RE",
+      "Macro",
       "AM"
     ],
     "disambiguate_with": [],

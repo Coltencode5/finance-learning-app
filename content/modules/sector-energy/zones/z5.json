@@ -1,0 +1,119 @@
+[
+  {
+    "id": "sector-energy.z5.1",
+    "local_id": "Z5.1",
+    "module": "sector-energy",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "Oil & the State: NOCs, Petrostates & Energy Security",
+    "tag": "global",
+    "global_id": "G312",
+    "quick_definition": "The listed Western majors are a minority of world oil. Most of it belongs to national oil companies — state-owned producers — sitting inside petrostates whose budgets, and whose foreign policy, run on the barrel.",
+    "explainer_covers": [
+      "The ownership reality. NOCs — Saudi Aramco, ADNOC, Petrobras, PetroChina, and peers — control roughly 70% of the world's reserves and production (★G312). The investable GICS sector floats on top of a state-dominated base, which is why the majors are price-takers: the marginal supply decision often sits with governments, not markets (the tie back to Z3.3 — OPEC is NOCs coordinating).",
+      "The petrostate & the fiscal breakeven. In a petrostate (Saudi, Russia, Nigeria, Venezuela) oil is the fiscal core; each has a fiscal-breakeven oil price it needs to fund its budget — which drives its OPEC behavior. Petrostate budget math is upstream of the price the whole sector earns.",
+      "Energy security (Yergin). Oil is strategic, not merely economic: sanctions, embargoes, and supply weaponization move it. The 2022 Russia–Ukraine rupture repriced European gas overnight and is the modern exhibit of oil-and-gas-as-statecraft.",
+      "The resource curse & petrodollars. Oil wealth can hollow out institutions and other industries (the resource curse); and oil revenue recycled through global markets (petrodollars, The World for Sale) is a macro force in its own right.",
+      "The Aramco footnote. Aramco's IPO valued the largest NOC near $2 trillion (★G53/★G102) — the biggest listing ever and a partial privatization that made the state-oil model briefly a public-market object."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-energy.z3.3",
+        "note": "OPEC — NOCs coordinating supply"
+      },
+      {
+        "ref": "macro-economics.z5.3",
+        "note": "current accounts — petrostate external balances"
+      },
+      {
+        "ref": "macro-economics.z5.4",
+        "note": "sovereign risk — the petrostate as issuer"
+      },
+      {
+        "ref": "G53",
+        "note": "the Aramco valuation footnote"
+      },
+      {
+        "ref": "G102",
+        "note": "the Aramco valuation footnote"
+      },
+      {
+        "ref": "sector-energy.z1.1",
+        "note": "the cast — NOCs named up front"
+      }
+    ],
+    "connects_to_raw": "Z3.3 (OPEC — NOCs coordinating supply) · `macro-economics.z5.3` (current accounts — petrostate external balances) · `macro-economics.z5.4` (sovereign risk — the petrostate as issuer) · ★G53 / ★G102 (the Aramco valuation footnote) · Z1.1 (the cast — NOCs named up front).",
+    "gaps": [],
+    "real_world_layer": "Yergin Oil and the State / sanctions chapters; Aramco IPO; petrostate fiscal breakevens.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z5.2",
+    "local_id": "Z5.2",
+    "module": "sector-energy",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "The Energy Transition: The Sector Prices Its Own Sunset",
+    "tag": "global",
+    "global_id": "G313",
+    "quick_definition": "Energy is the one sector whose core product may peak and decline. The energy transition — the shift toward lower-carbon energy — poses a demand question no other sector faces, and turns some booked reserves into potentially stranded assets.",
+    "explainer_covers": [
+      "The transition, defined. The multi-decade shift from hydrocarbons toward electrification and lower-carbon sources, driven by EV adoption (eating gasoline demand), policy & carbon pricing, and falling renewables cost (Yergin, Ch. 41–45) — ★G313.",
+      "Stranded assets — the balance-sheet contradiction. Reserves are booked as assets (Z2.1/★G305), but if demand falls or policy tightens, some may become unburnable or uneconomic — never produced. The sector's own books carry an asset the transition says might not be one: the direct internal tension with ★G305, and the supply-side answer to the demand-side repricing GAPs already flagged in real-estate.z5.6/z3.10.",
+      "The sector's responses. Carbon capture (CCS), renewable diesel (Z2.3's Valero pivot), hydrogen, and the services pivot (Z2.4's SLB new-energy rebrand) — the incumbents trying to own a piece of their own disruption.",
+      "The Smil counterweight (both sides, honestly). Energy transitions historically take decades, and hydrocarbons are still ~80% of primary energy — so \"the end of oil\" is a direction, not a date. The node teaches the mechanism and the tension, and deliberately does not issue a peak-demand verdict.",
+      "The AI cross-current (the live twist). Just as the transition points demand down, AI and data-center electricity demand is pushing power demand up, reviving gas and nuclear as bridge fuels — the thread that ties this node to sector-information-technology.z5.2 (the two reinvention nodes, now cross-linked both ways) and to that module's data-center power story.",
+      "The market shadow. Energy's shrinking index weight (★G137/★G138/★G140) — from mid-teens percent of the S&P decades ago to low single digits — is the transition already partly priced into the sector's footprint (and the reason the \"capital discipline\" regime in Z3.2/Z4.1 exists: why drill for growth the market may not want?)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G305",
+        "note": "the stranded-asset tension — reserves as maybe-not-an-asset"
+      },
+      {
+        "ref": "sector-information-technology.z5.2",
+        "note": "reinvention sibling + AI-power cross-current"
+      },
+      {
+        "ref": "G137",
+        "note": "the shrinking index weight"
+      },
+      {
+        "ref": "G138",
+        "note": "the shrinking index weight"
+      },
+      {
+        "ref": "G140",
+        "note": "the shrinking index weight"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "capital discipline as a transition response"
+      },
+      {
+        "ref": "sector-energy.z4.1",
+        "note": "capital discipline as a transition response"
+      },
+      {
+        "ref": "real-estate.z5.6",
+        "note": "demand-side climate-repricing flags this supply-side node answers"
+      },
+      {
+        "ref": "real-estate.z3.10",
+        "note": "demand-side climate-repricing flags this supply-side node answers"
+      }
+    ],
+    "connects_to_raw": "★G305 (the stranded-asset tension — reserves as maybe-not-an-asset) · `sector-information-technology.z5.2` (the reinvention sibling + the AI-power cross-current) · ★G137/★G138/★G140 (the shrinking index weight) · Z3.2 / Z4.1 (capital discipline as a transition response) · `real-estate.z5.6` / `z3.10` (the demand-side climate-repricing flags this supply-side node answers).",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "transition-recency — the pace and the peak-demand date are genuinely contested and post-cutoff-sensitive; the mechanism is grounded (Yergin Ch. 41–45, Smil), but the verdict is deliberately untaught. Severity: medium.",
+        "needed_source": null
+      }
+    ],
+    "real_world_layer": "Yergin Ch. 41–45; Smil transition speed; index-weight de-rating; AI/data-center power cross-current.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

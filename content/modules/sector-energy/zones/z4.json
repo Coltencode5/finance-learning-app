@@ -1,0 +1,173 @@
+[
+  {
+    "id": "sector-energy.z4.1",
+    "local_id": "Z4.1",
+    "module": "sector-energy",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Valuing an Energy Company: Normalize the Cycle, Value the Barrels",
+    "tag": "global",
+    "global_id": "G310",
+    "quick_definition": "Energy valuation is standard valuation with two non-negotiable bends: you must normalize cyclical earnings to a mid-cycle price (never capitalize the spot print), and you must value a depleting asset base (the barrels run out, so no clean perpetuity).",
+    "explainer_covers": [
+      "Duplication guard (what this node does not re-teach). The DCF/WACC/comps/multiples toolkit (★G87–★G95, ★G24–★G27) and ER's process (z3.7/z3.8) are assumed, not repeated. This node adds only the commodity overlay.",
+      "The cardinal sin: capitalizing the cycle. Spot earnings at a peak or trough are meaningless for valuation — a cyclical trough EPS looks like distress, a peak EPS looks like a growth stock. You normalize to mid-cycle: run a through-the-cycle price deck (a long-run assumption, not today's tape). This is ★G310, and it's the home the corpus's seven orphaned uses of \"normalized earnings\" were pointing at.",
+      "The depleting-base problem → NAV thinking. A standard DCF assumes a going concern into perpetuity; an oil field depletes. So energy leans on NAV (net asset value) — value the reserves and assets and run them to exhaustion — the direct cousin of ★G235's NAV machinery and real-estate.z5.3's asset-value approach. EV/boe (enterprise value per barrel of reserves) is the quick asset-value yardstick.",
+      "The sector's own multiples (Osmundsen). EV/DACF (debt-adjusted cash flow) is the headline energy multiple — it neutralizes the leverage and DD&A-method differences that make P/E incomparable across producers — alongside RoACE (return on average capital employed), the sector's signature return metric.",
+      "Growth vs. returns (Antill & Arnott / OIES). Energy's chronic valuation argument: the market rewards capital discipline and returns over production growth — a lesson the sector relearned the hard way after 2014–2020, and the analytical face of the \"capital discipline\" regime in Z3.2.",
+      "Style & rates. Energy is the market's standing deep-value / cyclical exhibit (★G149 + asset-management.z2.5) — low multiples, unloved at the trough, a value-investor hunting ground; and the discount-rate channel (★G259) applies as everywhere.",
+      "Three dialects. Hold this node against its two siblings: Financials Z4.1 (the tools partly break), sector-IT Z4.1 (the tools work but inputs mislead), here (the tools work but you normalize the cycle and deplete the base). The contrast is the lesson."
+    ],
+    "connects_to": [
+      {
+        "ref": "G87",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G88",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G89",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G90",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G91",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G92",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G93",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G94",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G95",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G24",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G25",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G26",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G27",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G235",
+        "note": "the NAV cousin"
+      },
+      {
+        "ref": "real-estate.z5.3",
+        "note": "asset-value approach — NAV cousin"
+      },
+      {
+        "ref": "sector-financials.z4.1",
+        "note": "three valuation dialects — tools partly break"
+      },
+      {
+        "ref": "sector-information-technology.z4.1",
+        "note": "three valuation dialects — tools work but inputs mislead"
+      },
+      {
+        "ref": "G149",
+        "note": "the value/cyclical style"
+      },
+      {
+        "ref": "asset-management.z2.5",
+        "note": "the value/cyclical style"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "capital discipline, the valuation regime"
+      }
+    ],
+    "connects_to_raw": "★G87–★G95 / ★G24–★G27 (the assumed toolkit) · ★G235 / `real-estate.z5.3` (the NAV cousin) · `sector-financials.z4.1` · `sector-information-technology.z4.1` (the three valuation dialects) · ★G149 / `asset-management.z2.5` (the value/cyclical style) · Z3.2 (capital discipline, the valuation regime).",
+    "gaps": [],
+    "real_world_layer": "Osmundsen EV/DACF & RoACE; Antill & Arnott OIES growth-vs-returns; Damodaran cyclical case via ER.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z4.2",
+    "local_id": "Z4.2",
+    "module": "sector-energy",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Reading the Oil Patch's Books: Reserves Disclosures, DD&A & the Credit Footnote",
+    "tag": "global",
+    "global_id": "G311",
+    "quick_definition": "Energy's financial statements carry disclosures no other sector has — a standardized value of the reserves, depreciation tied to depletion, and accounting-method choices that break comparability — and its credit rests on those same reserves.",
+    "explainer_covers": [
+      "The reserves disclosure (the standardized measure & PV-10). SEC rules require producers to report a standardized measure — the present value of future cash flows from proved reserves at fixed prescribed prices, discounted at 10% (PV-10). It's not fair value (the fixed-price rule makes it crude), but it's the comparable asset-value anchor analysts start from (COP/XOM, the exhibits) — the core of ★G311.",
+      "DD&A on units-of-production. Producers depreciate capitalized costs as they deplete reserves — DD&A per boe rises as fields age — the accounting mirror of Z2.1's treadmill.",
+      "Successful-efforts vs. full-cost (the comparability trap). Two SEC-permitted methods for capitalizing exploration cost; two otherwise-identical companies can report different earnings and asset bases depending on which they use. The analyst normalizes across the method before comparing — and watches impairments, the write-downs that hit when prices fall.",
+      "The upstream scoreboard (the treadmill's report card — folded, not minted). Reserve-replacement ratio (did you replace >100% of what you produced?), finding-&-development (F&D) cost (what a new barrel cost to add), and the recycle ratio (netback ÷ F&D — is finding barrels actually profitable?). Plus hedging disclosures — how much of next year's production is price-locked.",
+      "The credit handshake — fixed-income.z4.8 (the third and final leg of FI's deferral). FI's four-part corporate frame was deferred to the sector modules for banks (M8) and for \"energy vs. utilities\" (named in both z4.8 and z3.7); this closes it. The template applies — but on cyclical inputs. Unlike a bank (where the frame breaks), an energy producer is an ordinary corporate issuer — leverage, coverage, liquidity read normally. The catch is the inputs: run the ratios on mid-cycle (★G310) numbers, because lenders stress a price deck — a credit that's investment-grade at $80 crude is distressed at $40. The 2015–16 and 2020 E&P default waves are ★G255/Z3.2 made real.",
+      "One novel structure — reserve-based lending (RBL). Upstream revolvers are sized to a borrowing base = the lender's PV of the borrower's proved reserves (★G305/★G311), redetermined ~semi-annually. When prices crash the borrowing base is cut precisely when the borrower most needs liquidity — a pro-cyclical squeeze (the 2015–16/2020 redetermination crunches). Midstream credit is the opposite temperament — it rides contract quality (take-or-pay counterparties), the direct kinship to private-credit.z2.13."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z4.8",
+        "note": "attachment — the deferral handshake completed"
+      },
+      {
+        "ref": "fixed-income.z3.7",
+        "note": "which named \"energy\" in the market's geography"
+      },
+      {
+        "ref": "sector-energy.z2.1",
+        "note": "reserves — the asset the books and the loans both rest on"
+      },
+      {
+        "ref": "G305",
+        "note": "proved reserves — the asset the books and the loans both rest on"
+      },
+      {
+        "ref": "G310",
+        "note": "mid-cycle inputs for credit ratios"
+      },
+      {
+        "ref": "G255",
+        "note": "the default canon"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "the default canon"
+      },
+      {
+        "ref": "private-credit.z2.13",
+        "note": "midstream's infrastructure-debt lender"
+      }
+    ],
+    "connects_to_raw": "`fixed-income.z4.8` (the mandatory handshake — FI's deferral completed) · `fixed-income.z3.7` (which named \"energy\" in the market's geography) · Z2.1 / ★G305 (reserves — the asset the books and the loans both rest on) · ★G310 (mid-cycle inputs) · ★G255 / Z3.2 (the default canon) · `private-credit.z2.13` (midstream's infrastructure-debt lender).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "reserves-valuation-source-absent — Antill & Arnott's Valuing Oil and Gas Companies (the reserves-accounting/valuation handbook) was never supplied; PV-10 mechanics, successful-efforts-vs-full-cost nuance, and RBL detail are drafted from the COP/XOM 10-K disclosures, Mu, Osmundsen, the OIES monograph, and architect knowledge. Severity: medium.",
+        "needed_source": "Valuing Oil and Gas Companies"
+      }
+    ],
+    "real_world_layer": "COP/XOM reserve disclosures; Mu; Osmundsen; OIES monograph; RBL borrowing-base mechanics.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

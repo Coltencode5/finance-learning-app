@@ -1,0 +1,201 @@
+[
+  {
+    "id": "sector-energy.z2.1",
+    "local_id": "Z2.1",
+    "module": "sector-energy",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Upstream: The Treasure Hunt on a Treadmill",
+    "tag": "global",
+    "global_id": "G305",
+    "quick_definition": "Upstream — exploration & production (E&P) — finds hydrocarbons and produces them. Its balance-sheet heart is its reserves: the volume of oil & gas it can profitably extract, an asset that shrinks with every barrel produced and must be continually replaced.",
+    "explainer_covers": [
+      "Reserves, graded by certainty. Proved (1P) reserves are ~reasonably certain to be produced; add probable for 2P, possible for 3P. This is a bookable asset governed by SEC rules (the standardized measure, Z4.2) — the closest thing the sector has to inventory, except you can't see it (★G305).",
+      "The treadmill (the sector's signature dynamic). Every well's output declines from day one (steeply for shale — often 60–70% in year one). So a producer must find or buy new reserves just to keep production flat — running to stand still. Whether it's winning is the reserve-replacement question, scored in Z4.2.",
+      "Unit economics. Volumes are quoted in boe (barrels of oil equivalent; gas converted at ~6 mcf : 1 barrel). A producer's per-barrel profitability is its netback — realized price minus the lifting, transport & production costs to get that barrel sold (folded here; the number that makes cost position concrete).",
+      "The shale revolution (Yergin). Horizontal drilling + hydraulic fracturing turned upstream from decade-long megaprojects into short-cycle manufacturing — wells drilled in weeks, output in months. This made US shale the world's fast-responding supplier and reshaped the whole cycle and OPEC's problem (Z3.2/Z3.3). Fracking is taught here as the technology and in Z3.2 as the consequence — no separate global.",
+      "Who owns the barrel (fiscal-systems orbit). Under a concession/royalty regime the company owns the production and pays a royalty; under a production-sharing contract the state owns it and the company earns a share of output. This determines how much of the barrel the investor actually captures — deepened only as needed.",
+      "Two one-liners. These E&P \"independents\" (pure upstream, no refining) are not ★G195's independent broker-dealers; the mineral \"royalty\" interest here rhymes with but isn't private-credit.z2.9's royalty/IP financing. And \"reserves\" here means hydrocarbons in the ground — not ★G209's VC follow-on dry powder set aside for later rounds."
+    ],
+    "connects_to": [
+      {
+        "ref": "G209",
+        "note": "disambiguation — the other \"reserves\" (VC follow-on dry powder)"
+      },
+      {
+        "ref": "sector-energy.z1.2",
+        "note": "the depleting asset, now concrete"
+      },
+      {
+        "ref": "sector-energy.z4.2",
+        "note": "reserve disclosures, DD&A & the replacement scoreboard"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "shale as the cycle's new swing factor"
+      },
+      {
+        "ref": "private-equity.z2.27",
+        "note": "Real-Assets PE — natural resources is upstream"
+      }
+    ],
+    "connects_to_raw": "★G209 (disambiguation — the other \"reserves\") · Z1.2 (the depleting asset, now concrete) · Z4.2 (reserve disclosures, DD&A & the replacement scoreboard) · Z3.2 (shale as the cycle's new swing factor) · `private-equity.z2.27` (Real-Assets PE — \"natural resources\" is upstream).",
+    "gaps": [],
+    "real_world_layer": "ConocoPhillips 10-K (pure upstream); Mu Ch. 2–3; Yergin shale chapters.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z2.2",
+    "local_id": "Z2.2",
+    "module": "sector-energy",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Midstream: The Toll Road & the MLP",
+    "tag": "global",
+    "global_id": "G306",
+    "quick_definition": "Midstream moves and stores hydrocarbons — pipelines, storage, gathering & processing — and charges a fee for the service, not a bet on the commodity. Much of it was built inside a distinctive pass-through vehicle, the MLP.",
+    "explainer_covers": [
+      "The toll-road model. A pipeline earns a fee per barrel shipped, often under take-or-pay contracts (the shipper pays for reserved capacity whether it ships or not). So midstream cash flows track throughput and contracts, not the oil price — the least commodity-exposed link in the chain, and the reason it reads like infrastructure.",
+      "The MLP, defined. A master limited partnership (★G306) is a publicly traded partnership: it pays no corporate tax (income passes through) and distributes most of its cash flow to unitholders, who own units (not shares) and receive a K-1 (not a 1099). Built for stable, high-payout, fee-based cash — midstream's natural home.",
+      "Why it's the fourth \"partnership\" (disambiguation). The MLP is public and pass-through — unlike the private LP/LPA fund world (★G7/★G20), the VC firm-partnership (★G216), and the RE JV (★G225). The K-1/units combination is the tell.",
+      "The MLP's tradeoff and the de-MLPing wave. Tax efficiency comes with complexity (K-1s deter many investors; no index inclusion), so a wave of MLPs rolled up into C-corps for a broader investor base — a live structuring debate, not a settled fact.",
+      "Coverage & distributions (orbit). The metric that matters is distribution coverage — cash flow relative to the payout — because the vehicle's promise is the distribution; thin coverage is the midstream warning light. Midstream sits beside the REIT (★G223) and the BDC (★G64) as the third pass-through vehicle.",
+      "The credit kinship. Fee-based, contracted, asset-heavy cash flows are exactly what infrastructure debt lends against — midstream is private-credit.z2.13's live exhibit."
+    ],
+    "connects_to": [
+      {
+        "ref": "G20",
+        "note": "disambiguation — partnership family (private LPA)"
+      },
+      {
+        "ref": "G216",
+        "note": "disambiguation — partnership family (VC firm)"
+      },
+      {
+        "ref": "G225",
+        "note": "disambiguation — partnership family (RE JV)"
+      },
+      {
+        "ref": "G223",
+        "note": "REIT — the other pass-through vehicle"
+      },
+      {
+        "ref": "G64",
+        "note": "BDC — the other pass-through vehicle"
+      },
+      {
+        "ref": "private-credit.z2.13",
+        "note": "infrastructure debt — midstream's natural lender"
+      },
+      {
+        "ref": "sector-energy.z1.1",
+        "note": "the chain's middle link"
+      }
+    ],
+    "connects_to_raw": "★G20 · ★G216 · ★G225 (disambiguation — the four-way \"partnership\" family) · ★G223 / ★G64 (the REIT & BDC — the other pass-through vehicles; midstream is the third) · `private-credit.z2.13` (infrastructure debt — its natural lender) · Z1.1 (the chain's middle link).",
+    "gaps": [],
+    "real_world_layer": "Enterprise Products Partners 10-K (midstream MLP); Mu Ch. 4.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z2.3",
+    "local_id": "Z2.3",
+    "module": "sector-energy",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Downstream: Refining & the Crack Spread",
+    "tag": "global",
+    "global_id": "G307",
+    "quick_definition": "Downstream refines crude into finished products — gasoline, diesel, jet fuel — and sells them. Its signature economics are the crack spread: the margin between what the products fetch and what the crude costs.",
+    "explainer_covers": [
+      "The crack spread, defined. Refiners buy crude and sell products; their profit is the spread between the two (★G307). It's quoted as a benchmark 3:2:1 crack (3 barrels of crude → 2 of gasoline + 1 of distillate), with regional and product variants — the single number that tells you whether refining is minting money or bleeding.",
+      "The counterintuitive exposure (why this segment is not upstream). Crude is the refiner's raw-material cost, so a refiner can make more money when oil falls — the opposite of a producer. Downstream is a partial natural hedge to upstream, which is one reason integrated majors (Z1.1) hold both.",
+      "Throughput & utilization. A refinery is a high-fixed-cost plant; profitability turns on running it full (utilization %) and on throughput (barrels processed) — the operating KPIs Valero (the exhibit) reports.",
+      "Complexity (the moat that exists here). A refinery's complexity (Nelson index) is its ability to crack cheap, heavy, sour crude into valuable light products; complex refiners earn a structural margin edge. This \"complexity\" is refining-specific — not the corpus's generic use of the word.",
+      "The transition toehold. Refiners are converting some capacity to renewable diesel (Valero's pivot) — the downstream face of Z5.2.",
+      "Disambiguation. The crack spread joins the credit-spread family (★G70/★G277/★G286) as a fourth, unrelated \"spread\" — a physical processing margin, not a yield gap; distinct again from the IB underwriting spread (★G103)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G70",
+        "note": "disambiguation — spread family (credit margin)"
+      },
+      {
+        "ref": "G277",
+        "note": "disambiguation — spread family (bond spreads)"
+      },
+      {
+        "ref": "G286",
+        "note": "disambiguation — spread family (NIM)"
+      },
+      {
+        "ref": "sector-energy.z1.1",
+        "note": "the chain's downstream link"
+      },
+      {
+        "ref": "sector-energy.z2.1",
+        "note": "crude is upstream's product and downstream's cost — the inverse-exposure hinge"
+      },
+      {
+        "ref": "sector-energy.z5.2",
+        "note": "renewable diesel"
+      }
+    ],
+    "connects_to_raw": "★G70 · ★G277 · ★G286 (disambiguation — the \"spread\" family) · Z1.1 (the chain's downstream link) · Z2.1 (crude is upstream's product and downstream's cost — the inverse-exposure hinge) · Z5.2 (renewable diesel).",
+    "gaps": [],
+    "real_world_layer": "Valero 10-K (refining); Mu Ch. 5 (crack spread, complexity).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-energy.z2.4",
+    "local_id": "Z2.4",
+    "module": "sector-energy",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Oilfield Services: Selling Picks & Shovels by the Rig",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Oilfield-service companies don't own barrels — they drill the wells, frack the rock, and run the equipment for the producers who do. Their revenue is the producers' spending, which makes them the highest-torque way to play the cycle.",
+    "explainer_covers": [
+      "Derivative demand (the whole thesis). A service company (SLB, the exhibit) sells into E&P capital budgets — so its top line is literally the sum of everyone else's capex. It doesn't take price on oil directly; it takes price on activity.",
+      "Why it feels the cycle first and worst. When oil drops, producers cut capex immediately — the cheapest, fastest lever — so service revenue falls further and faster than producer revenue (roughly 2× the amplitude). Services are the cycle's accelerator, which is exactly why the module puts them next to Zone 3.",
+      "The dashboard KPI you've already met. The rig count — how many rigs are actively drilling — is the real-time gauge of service demand, and it's the KPI equity-research.z2.3 already names for this sector. Day rates and equipment utilization complete the read.",
+      "The transition pivot. SLB rebranded from \"Schlumberger\" and pushed into new-energy services (carbon capture, geothermal, lithium) — the service model applied to the energy transition (Z5.2).",
+      "Why this node mints nothing. Like sector-IT's IT-services node, oilfield services is a business model, not a term-of-art — its cyclicality is ★G127/★G237 with extra beta, its KPI is ER's, its demand is upstream's. Homing a global here would pad the count; the honest move is to teach it on inherited machinery."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-energy.z2.1",
+        "note": "its customers — the E&P capex it lives on"
+      },
+      {
+        "ref": "sector-energy.z3.2",
+        "note": "the cycle, amplified"
+      },
+      {
+        "ref": "equity-research.z2.3",
+        "note": "the rig-count KPI"
+      },
+      {
+        "ref": "G127",
+        "note": "the cycle it levers"
+      },
+      {
+        "ref": "G237",
+        "note": "the cycle it levers"
+      },
+      {
+        "ref": "sector-energy.z5.2",
+        "note": "the services pivot"
+      }
+    ],
+    "connects_to_raw": "Z2.1 (its customers — the E&P capex it lives on) · Z3.2 (the cycle, amplified) · `equity-research.z2.3` (the rig-count KPI) · ★G127 / ★G237 (the cycle it levers) · Z5.2 (the services pivot).",
+    "gaps": [],
+    "real_world_layer": "SLB 10-K (oilfield services); ER Z2.3 rig-count KPI.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

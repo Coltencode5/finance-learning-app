@@ -6727,6 +6727,198 @@
         ]
       }
     ],
+    "sector-energy": [
+      {
+        "node": "sector-energy.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-energy.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-energy.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z1.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-energy.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-energy.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-energy.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-energy.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-energy.z4.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
     "sector-financials": [
       {
         "node": "sector-financials.z1.2",

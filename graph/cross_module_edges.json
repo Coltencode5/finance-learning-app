@@ -1,7 +1,7 @@
 {
   "generated_by": "pipeline/build/build_indexes.py",
   "description": "Reference edges whose endpoints span modules (or module ↔ global).",
-  "edge_count": 2713,
+  "edge_count": 2783,
   "edges": [
     {
       "from": "asset-management.z1.1",
@@ -2155,6 +2155,12 @@
       "to": "real-estate.z5.3",
       "kind": "references",
       "note": "REIT valuation treatment — NAV & the public-private gap"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "sector-energy.z1.1",
+      "kind": "references",
+      "note": "GICS energy sector lens — understand the sector here, learn to research it in ER"
     },
     {
       "from": "equity-research.z2.3",
@@ -9982,6 +9988,12 @@
       "note": null
     },
     {
+      "from": "private-credit.z2.13",
+      "to": "sector-energy.z2.2",
+      "kind": "references",
+      "note": "midstream — fee-based take-or-pay cash flows as infrastructure debt's live exhibit"
+    },
+    {
       "from": "private-credit.z2.14",
       "to": "G1",
       "kind": "references",
@@ -14410,6 +14422,450 @@
       "note": null
     },
     {
+      "from": "sector-energy.z1.1",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "attachment — the bidirectional door to sector research craft"
+    },
+    {
+      "from": "sector-energy.z1.1",
+      "to": "sector-information-technology.z1.1",
+      "kind": "references",
+      "note": "sibling — the sector is a stack of businesses"
+    },
+    {
+      "from": "sector-energy.z1.2",
+      "to": "G293",
+      "kind": "references",
+      "note": "zero marginal cost & pricing power — energy's opposite",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z1.2",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "the commodity-producer lens"
+    },
+    {
+      "from": "sector-energy.z1.2",
+      "to": "sector-information-technology.z1.2",
+      "kind": "references",
+      "note": "★G293 — the deliberate economic opposite"
+    },
+    {
+      "from": "sector-energy.z2.1",
+      "to": "G209",
+      "kind": "references",
+      "note": "disambiguation — the other \"reserves\" (VC follow-on dry powder)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.1",
+      "to": "private-equity.z2.27",
+      "kind": "references",
+      "note": "Real-Assets PE — natural resources is upstream"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "G20",
+      "kind": "references",
+      "note": "disambiguation — partnership family (private LPA)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "G216",
+      "kind": "references",
+      "note": "disambiguation — partnership family (VC firm)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "G223",
+      "kind": "references",
+      "note": "REIT — the other pass-through vehicle",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "G225",
+      "kind": "references",
+      "note": "disambiguation — partnership family (RE JV)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "G64",
+      "kind": "references",
+      "note": "BDC — the other pass-through vehicle",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.2",
+      "to": "private-credit.z2.13",
+      "kind": "references",
+      "note": "infrastructure debt — midstream's natural lender"
+    },
+    {
+      "from": "sector-energy.z2.3",
+      "to": "G277",
+      "kind": "references",
+      "note": "disambiguation — spread family (bond spreads)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.3",
+      "to": "G286",
+      "kind": "references",
+      "note": "disambiguation — spread family (NIM)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.3",
+      "to": "G70",
+      "kind": "references",
+      "note": "disambiguation — spread family (credit margin)",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.4",
+      "to": "G127",
+      "kind": "references",
+      "note": "the cycle it levers",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.4",
+      "to": "G237",
+      "kind": "references",
+      "note": "the cycle it levers",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z2.4",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "the rig-count KPI"
+    },
+    {
+      "from": "sector-energy.z3.1",
+      "to": "hedge-funds.z2.4",
+      "kind": "references",
+      "note": "macro desks trading the benchmark"
+    },
+    {
+      "from": "sector-energy.z3.1",
+      "to": "hedge-funds.z2.5",
+      "kind": "references",
+      "note": "macro desks trading the benchmark"
+    },
+    {
+      "from": "sector-energy.z3.1",
+      "to": "macro-economics.z5.5",
+      "kind": "references",
+      "note": "the dollar that prices oil"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "G127",
+      "kind": "references",
+      "note": "the pendulum — inherited cycle engine",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "G232",
+      "kind": "references",
+      "note": "the real-estate cycle — supply-lag twin",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "G237",
+      "kind": "references",
+      "note": "the business cycle — demand side",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "G255",
+      "kind": "references",
+      "note": "the credit cycle — amplifier",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "G42",
+      "kind": "references",
+      "note": "buybacks — the capital-returns regime",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "hedge-funds.z2.5",
+      "kind": "references",
+      "note": "who trades it"
+    },
+    {
+      "from": "sector-energy.z3.2",
+      "to": "macro-economics.z3.7",
+      "kind": "references",
+      "note": "one-way — giving the demand-shock canon its supply-side counterpart"
+    },
+    {
+      "from": "sector-energy.z3.3",
+      "to": "G191",
+      "kind": "references",
+      "note": "the critical-factor logic OPEC-watching plugs into",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z3.3",
+      "to": "macro-economics.z3.7",
+      "kind": "references",
+      "note": "OPEC supply cuts as the archetypal supply shock"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G149",
+      "kind": "references",
+      "note": "the value/cyclical style",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G235",
+      "kind": "references",
+      "note": "the NAV cousin",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G24",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G25",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G26",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G27",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G87",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G88",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G89",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G90",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G91",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G92",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G93",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G94",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "G95",
+      "kind": "references",
+      "note": "assumed toolkit",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "asset-management.z2.5",
+      "kind": "references",
+      "note": "the value/cyclical style"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "real-estate.z5.3",
+      "kind": "references",
+      "note": "asset-value approach — NAV cousin"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": "three valuation dialects — tools partly break"
+    },
+    {
+      "from": "sector-energy.z4.1",
+      "to": "sector-information-technology.z4.1",
+      "kind": "references",
+      "note": "three valuation dialects — tools work but inputs mislead"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "G255",
+      "kind": "references",
+      "note": "the default canon",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "G305",
+      "kind": "references",
+      "note": "proved reserves — the asset the books and the loans both rest on",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "G310",
+      "kind": "references",
+      "note": "mid-cycle inputs for credit ratios",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "fixed-income.z3.7",
+      "kind": "references",
+      "note": "which named \"energy\" in the market's geography"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "fixed-income.z4.8",
+      "kind": "references",
+      "note": "attachment — the deferral handshake completed"
+    },
+    {
+      "from": "sector-energy.z4.2",
+      "to": "private-credit.z2.13",
+      "kind": "references",
+      "note": "midstream's infrastructure-debt lender"
+    },
+    {
+      "from": "sector-energy.z5.1",
+      "to": "G102",
+      "kind": "references",
+      "note": "the Aramco valuation footnote",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.1",
+      "to": "G53",
+      "kind": "references",
+      "note": "the Aramco valuation footnote",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.1",
+      "to": "macro-economics.z5.3",
+      "kind": "references",
+      "note": "current accounts — petrostate external balances"
+    },
+    {
+      "from": "sector-energy.z5.1",
+      "to": "macro-economics.z5.4",
+      "kind": "references",
+      "note": "sovereign risk — the petrostate as issuer"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "G137",
+      "kind": "references",
+      "note": "the shrinking index weight",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "G138",
+      "kind": "references",
+      "note": "the shrinking index weight",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "G140",
+      "kind": "references",
+      "note": "the shrinking index weight",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "G305",
+      "kind": "references",
+      "note": "the stranded-asset tension — reserves as maybe-not-an-asset",
+      "to_module": "global"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "real-estate.z3.10",
+      "kind": "references",
+      "note": "demand-side climate-repricing flags this supply-side node answers"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "real-estate.z5.6",
+      "kind": "references",
+      "note": "demand-side climate-repricing flags this supply-side node answers"
+    },
+    {
+      "from": "sector-energy.z5.2",
+      "to": "sector-information-technology.z5.2",
+      "kind": "references",
+      "note": "reinvention sibling + AI-power cross-current"
+    },
+    {
       "from": "sector-financials.z1.1",
       "to": "G244",
       "kind": "references",
@@ -15207,6 +15663,12 @@
       "to": "real-estate.z2.3",
       "kind": "references",
       "note": "attachment-adjacent — the physical footprint"
+    },
+    {
+      "from": "sector-information-technology.z5.2",
+      "to": "sector-energy.z5.2",
+      "kind": "references",
+      "note": "reinvention sibling — AI/data-center power demand as energy-transition cross-current"
     },
     {
       "from": "sector-information-technology.z5.2",

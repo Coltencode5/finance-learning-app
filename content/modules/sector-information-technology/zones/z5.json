@@ -127,8 +127,12 @@
       {
         "ref": "sector-information-technology.z1.1",
         "note": null
+      },
+      {
+        "ref": "sector-energy.z5.2",
+        "note": "reinvention sibling — AI/data-center power demand as energy-transition cross-current"
       }
     ],
-    "connects_to_raw": "★G295/★G296, Z2.2, `real-estate.z2.3`, `macro-economics.z1.12`, ★G127, `equity-research.z5.7` + `venture-capital.z2.8`, Z5.1."
+    "connects_to_raw": "★G295/★G296, Z2.2, `real-estate.z2.3`, `macro-economics.z1.12`, ★G127, `equity-research.z5.7` + `venture-capital.z2.8`, Z5.1, `sector-energy.z5.2` (reinvention sibling + AI-power cross-current)."
   }
 ]

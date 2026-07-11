@@ -1,17 +1,17 @@
 {
   "generated_by": "pipeline/build/build_indexes.py",
   "description": "Nodes with zero graph edges, low-edge nodes, and globals referenced fewer than twice.",
-  "orphan_nodes": [
+  "orphan_nodes": [],
+  "low_reference_nodes": [
     {
       "id": "real-estate.z5.6",
       "title": "The Real Estate Career & Where Real Estate Is Heading",
       "module": "real-estate",
       "zone": 5,
-      "inbound": 0,
-      "outbound": 0
-    }
-  ],
-  "low_reference_nodes": [
+      "inbound": 1,
+      "outbound": 0,
+      "total_edges": 1
+    },
     {
       "id": "private-equity.z2.17",
       "title": "Growth Equity Targets",
@@ -80,6 +80,46 @@
     {
       "id": "G303",
       "term": "Stock-based compensation (SBC) (Z4.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G304",
+      "term": "The petroleum value chain (upstream · midstream · downstream) (Z1.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G306",
+      "term": "The master limited partnership (MLP) (Z2.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G307",
+      "term": "The crack spread (the refining margin) (Z2.3)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G308",
+      "term": "The oil price: benchmarks & how crude is priced (Z3.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G309",
+      "term": "OPEC, spare capacity & the swing producer (Z3.3)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G311",
+      "term": "Reserve-based valuation & the reserves disclosures (Z4.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G312",
+      "term": "The national oil company (NOC) & resource nationalism (Z5.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G313",
+      "term": "The energy transition & stranded assets (Z5.2)",
       "inbound_references": 1
     }
   ]
