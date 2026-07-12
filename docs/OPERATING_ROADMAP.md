@@ -57,7 +57,7 @@ Cursor               →  executes artifact A          (while)
 Claude session N+1   →  produces design artifact B
 ```
 
-Concretely for the next cycle: Claude designs the lesson layer (P0), Cursor implements the lesson player from that spec **while** Claude runs the Consumer Discretionary architecture session (M12). Your attention is serial; the project is parallel. The 65/35 number becomes an emergent property of milestone sequencing rather than a daily budgeting exercise.
+Concretely for the next cycle: P0 (lesson-layer architecture + authored Fixed Income pilot + V-1…V-13 validators) is complete pending merge; after merge, Cursor implements the lesson player (P1) from that spec **while** Claude runs the Consumer Discretionary architecture session (M12). Your attention is serial; the project is parallel. The 65/35 number becomes an emergent property of milestone sequencing rather than a daily budgeting exercise.
 
 ### Track responsibilities
 
@@ -96,7 +96,7 @@ Architecture work uses `M##`; product work uses `P#`. Consumer Discretionary rem
 | | |
 |---|---|
 | **Objective** | Ratify how canonical nodes become lessons, before any player code is written |
-| **Scope** | `LESSON_LAYER_DESIGN.md` (the standing reference, peer to `SECTOR_LAYER_DESIGN.md`); ADR-004 (presentation-layer separation); JSON schemas for lesson, path, and assessment-item files; spec for two new validator checks (dangling canonical refs; assessment-item concept-tag coverage); the authored Fixed Income pilot path file and its 10 lesson files |
+| **Scope** | `LESSON_LAYER_DESIGN.md` (the standing reference, peer to `SECTOR_LAYER_DESIGN.md`); ADR-004 (presentation-layer separation); JSON schemas for lesson, path, and assessment-item files; the implemented V-1…V-13 lesson-layer validation suite; the authored Fixed Income pilot path file and its 10 lesson files |
 | **Explicit exclusions** | No app code. No player UI design beyond block-type enumeration. No mastery model. No canonical-content changes of any kind. |
 | **Owner** | Claude/Fable design session (new chat, kickoff prompt per your standard pattern) |
 | **Inputs** | This document (Section D is the pre-brief); `Fixed_Income_Module_Node_Map.md`; `five_zone_template.md`; the live tarball |
@@ -113,11 +113,11 @@ Runs exactly as M9–M11 did: kickoff prompt → Claude architecture session →
 | | |
 |---|---|
 | **Objective** | One complete, enjoyable learner journey through the Fixed Income pilot path, on a phone |
-| **Scope** | Lesson player (one idea per screen, progress bar, immediate quiz feedback with explanations); path page (completed/current/next/locked); pilot landing page; completion screen with graph-connection payoff ("you connected Duration to…"); progress via localStorage; Vercel deployment of `main` + PR previews |
-| **Explicit exclusions** | Accounts, database, streaks, daily goals, notifications, social anything, AI anything, payments, analytics infrastructure (a simple event log to localStorage is enough), review queues, any second path |
+| **Scope** | Lesson player (one idea per screen, progress bar, immediate quiz feedback with explanations); path page (completed/current/next/locked); pilot landing page; completion screen with graph-connection payoff ("you connected Duration to…"); progress via localStorage; anonymous opt-out-respecting event beacon per D5; Vercel deployment of `main` + PR previews |
+| **Explicit exclusions** | Accounts, database, streaks, daily goals, notifications, social anything, AI anything, payments, a self-owned analytics backend/database (the D5 anonymous event beacon is in scope; vendor chosen in P1), review queues, any second path |
 | **Owner** | Cursor/Sonnet, from the P0 spec. Claude reviews the built experience against the design, not the code line-by-line |
 | **Inputs** | ADR-004, schemas, pilot lesson JSON, existing `src/lib/graph/` layer |
-| **Acceptance** | You complete the full path on your own phone via the Vercel URL and would honestly show it to a friend without apologizing for it. Type-check, build, and both new validator checks pass. |
+| **Acceptance** | You complete the full path on your own phone via the Vercel URL and would honestly show it to a friend without apologizing for it. Type-check, build, and the V-1…V-13 lesson-layer validation suite pass. |
 | **Gate** | Product branch merges only after preview deployment reviewed on mobile |
 
 ### P2 — Pilot test
@@ -145,7 +145,7 @@ No content module beyond M12 is scoped until G1 resolves. That sentence is the a
 | **1. Canonical graph** | globals, zone nodes, edges, disambiguations, gaps | `content/glossary/`, `content/modules/` | Append-only via architecture track + ADRs | Yes (existing strict) |
 | **2. Presentation content** | lessons, paths, assessment items | `content/lessons/`, `content/paths/` | Authored/edited freely by product track | Yes (new checks) |
 | **3. Product configuration** | routes, UI copy, feature flags, block renderers | `src/` | Ordinary code review | Type-check + build |
-| **4. Learner state** | progress, answers, event log | localStorage (V1) → database (post-G1) | Runtime | n/a |
+| **4. Learner state** | progress, answers; anonymous product events | localStorage progress (V1) + D5 event beacon (V1) → database (post-G1) | Runtime | n/a |
 
 The critical property: layers 2–4 can be deleted wholesale and layer 1 loses nothing. That is the formal definition of "no second source of truth."
 
@@ -180,7 +180,7 @@ Separate files (or a section of the lesson file — P0 decides), each item carry
 
 ### Mastery, progress, review scheduling
 
-All layer-4. V1 stores `{lesson_id, completed_at, check_results[]}` in localStorage. A mastery model (per-concept strength derived from tagged check results) and spaced-repetition scheduling are post-G1, post-database — but the event shape above is designed so they can be computed retroactively from day-one data. Define the event log format in P0 even though V1 only writes it locally.
+All layer-4. V1 stores progress (`{lesson_id, completed_at, check_results[]}`) in localStorage and sends the approved anonymous, opt-out-respecting event beacon defined by D5. A mastery model (per-concept strength derived from tagged check results) and spaced-repetition scheduling are post-G1, post-database — but the D5 event shape is designed so they can be computed retroactively from day-one data. The event contract was defined in P0; P1 implements the beacon (not a localStorage-only event log).
 
 ### What remains immutable
 
@@ -206,7 +206,7 @@ Everything in layer 1, under existing rules: IDs, `home_of`, spines, edge semant
 
 **Required screens:** the five from your Section 10 (landing, path, player, completion, progress) — that list was right; adopt it unchanged. **Required interactions:** advance, answer-with-immediate-feedback, continue-where-left-off. Nothing else.
 
-**localStorage is the right call for V1.** The pilot question is "is this enjoyable and effective," not "does sync work." The only real costs — no cross-device progress and no server-verified streaks — don't matter for a 10-lesson, two-week test. Mitigate the one genuine loss (analytics visibility) with a one-tap "export my results" button that testers send you, plus the exit conversations.
+**localStorage is the right call for V1 progress.** The pilot question is "is this enjoyable and effective," not "does sync work." The only real costs — no cross-device progress and no server-verified streaks — don't matter for a 10-lesson, two-week test. Drop-off and usage visibility come from the D5 anonymous, opt-out-respecting event beacon (not from a localStorage-only event log); a one-tap "export my results" button remains a qualitative interview aid.
 
 **What the pilot tests:** lesson-level completion and drop-off points; check accuracy (especially on the misconception pairs — if testers ace duration-vs-maturity after lesson 7, the format is teaching); whether the connection payoff registers in exit interviews; time-per-lesson vs. target.
 
@@ -232,7 +232,7 @@ Ordered by required foundation, not by what Duolingo has. Each stage is gated on
 | 5 | leaderboards, public challenges | everything above at scale | far horizon |
 | — | graph-grounded tutor ("explain simply / test me / show my missing prerequisite") | stable lesson+path schema (P0), mastery model (stage 3), and paths as tutor-navigable artifacts | after stage 3 |
 
-Two principles govern the whole table. **Streaks count meaningful learning events** (a completed check-passing lesson), never app-opens — this falls directly out of the event definitions in P0, which is why they're designed now and built later. **Social amplifies retention that already exists; it cannot create it.** The Duolingo-streak anecdote is real signal about the ceiling, but their social layer sits on a decade-old proven solo loop. Yours is at V1. Sequence accordingly.
+Two principles govern the whole table. **Streaks count meaningful learning events** (a completed lesson: every required check attempted; correctness is not required), never app-opens — this falls directly out of the event definitions in P0, which is why they're designed now and built later. **Social amplifies retention that already exists; it cannot create it.** The Duolingo-streak anecdote is real signal about the ceiling, but their social layer sits on a decade-old proven solo loop. Yours is at V1. Sequence accordingly.
 
 ---
 
@@ -244,10 +244,10 @@ Two principles govern the whole table. **Streaks count meaningful learning event
 | **Cursor/Sonnet** | Everything mechanical, both tracks: extraction, migration, validation fixes, the entire P1 build, tests, git operations, Vercel config | Design decisions; schema rulings; anything requiring an ADR |
 | **ChatGPT** | **Deliberately shrunk.** Optional scratchpad for prompt-drafting mechanics. Strategy, scoping, and roadmap conversations move here — the three-venue strategy sprawl is the root cause of the scattered feeling. | Owning any decision or any canonical artifact |
 | **GitHub** | Canonical repo. Branch discipline below. | — |
-| **Vercel** | **Yes, connect now** — during P1, free plan. Production deploys from `main`; preview deploys per PR. It costs nearly nothing and P2 is impossible without a shareable phone-testable URL. School email / Pro is irrelevant at this scale. | Being a gate for *content* branches (they don't touch the app; the existing build check already protects them) |
+| **Vercel** | **Yes — connect during P1, after P0 merges.** Free plan. Production deploys from `main`; preview deploys per PR. Vercel is not a P0 task. It costs nearly nothing and P2 is impossible without a shareable phone-testable URL. School email / Pro is irrelevant at this scale. | Being a gate for *content* branches (they don't touch the app; the existing build check already protects them) |
 | **Figma** | **Not now.** One path, five screens, six block types — design in code against the preview deploy. Revisit only if G1 passes and a designer or a real design system enters the picture. | — |
 
-**Branch discipline:** `content/*` branches (graph migrations — existing rules unchanged) and `product/*` branches (lessons, paths, `src/`). Product-branch merge gate: type-check + build + both new validator checks + preview deployment reviewed on mobile. Content-branch gate: unchanged (strict validation + tarball verification). A branch that touches both layers is rejected by convention — split it. The dangling-reference validator check is what lets the two branch families evolve independently without drift.
+**Branch discipline:** `content/*` branches (graph migrations — existing rules unchanged) and `product/*` branches (lessons, paths, `src/`). Product-branch merge gate: type-check + build + the V-1…V-13 lesson-layer validation suite + preview deployment reviewed on mobile. Content-branch gate: unchanged (strict validation + tarball verification). A branch that touches both layers is rejected by convention — split it. The lesson-layer reference and integrity checks are what let the two branch families evolve independently without drift.
 
 **Answers to the remaining workflow questions (26–33):** the division of labor is otherwise unchanged from what has worked for eleven milestones; product experiments avoid corrupting canonical content via the one-way rule in Section B (reference-by-ID, defects-not-patches, machine-checked); premium-model spend stays on judgment, which now includes lesson *authoring* (pedagogical judgment) but not lesson *rendering* (mechanical).
 
@@ -307,7 +307,7 @@ Two permanent workstreams, two numbering namespaces, two status docs, two branch
 
 | ID | Title | Owner (design → exec) | Inputs | Deliverables | Merge / decision gate | Depends on |
 |---|---|---|---|---|---|---|
-| **P0** | Repo audit + Lesson-layer architecture | Claude (audit spec) → Cursor (read-only audit) → Claude (ADR-004 + schemas + pilot lessons) | This roadmap; live tarball; FI node map; `five_zone_template.md` | Audit report; `LESSON_LAYER_DESIGN.md`; ADR-004; lesson/path/assessment schemas; 2 validator-check specs (dangling-ref, concept-tag coverage); 10 authored FI pilot lessons | **ADR-004 ratified by you** before any P1 code | roadmap approved |
+| **P0** | Repo audit + Lesson-layer architecture | Claude (audit spec) → Cursor (read-only audit) → Claude (ADR-004 + schemas + pilot lessons) → Cursor (P0 placement + V-1…V-13) | This roadmap; live tarball; FI node map; `five_zone_template.md` | Audit report; `LESSON_LAYER_DESIGN.md`; ADR-004; lesson/path/assessment schemas; V-1…V-13 lesson-layer validation suite; 10 authored FI pilot lessons | **ADR-004 Accepted; P0 complete pending merge** before any P1 code | roadmap approved |
 | **M12** | sector-consumer-discretionary | Claude (arch session) → Cursor (extract + migrate) | Kickoff prompt; sources; live tarball | New module, `sector-layer1`, `build_order 15`, globals from G314; disambiguation retrofits; closes wave one | strict 0/0 + tarball verification | independent of P-track; runs concurrently |
 | **P1** | Fixed Income learning loop | Cursor (build from P0 spec) → Claude (review vs design) | ADR-004, schemas, pilot lessons, `src/lib/graph/` | Lesson player, path/landing/completion/progress screens, localStorage progress, anon event beacon, Vercel deploy + PR previews | mobile preview reviewed; type-check + build + validator checks pass | **P0 ratified** |
 | **P2** | Pilot test + findings | You (recruit + run) → Claude (synthesize memo) | Deployed P1 URL; event data; exit interviews | 1-page findings memo against Deliverable-4 framework | — | P1 shipped |
@@ -329,7 +329,7 @@ Five layers. Two of them are *canonical* — one for facts, one for pedagogy —
 | 2 | **Canonical learning artifacts** | lessons, paths, assessment items | `content/lessons/`, `content/paths/`, `content/assessments/` | **Pedagogy** — sequencing, framing, examples, questions | Freely authored/edited (product track); reference layer 1 by ID |
 | 3 | **Generated / runtime presentation** | connection payoff, computed progress %, rendered screens | derived at build/run | nothing stored; fully recomputable | n/a |
 | 4 | **Product configuration** | routes, feature flags, block renderers, chrome copy | `src/` | app behavior | ordinary code review |
-| 5 | **Learner data** | progress, answers, event log | localStorage (P1) → DB (post-G1) | runtime state | runtime |
+| 5 | **Learner data** | progress, answers; anonymous product events | localStorage progress (P1) + D5 event beacon (P1) → DB (post-G1) | runtime state | runtime |
 
 ### The relationship rules
 
@@ -418,20 +418,24 @@ The in-lesson vs between-lesson distinction separates "format broken" (revise) f
 
 ---
 
-## Deliverable 7 — Exact immediate workflow
+## Deliverable 7 — Exact immediate workflow *(historical — P0 workflow completed)*
 
-Audit-first (workflow A), because the project's own law is *verify from the live repo, don't design against memory*. Sequence after you finish reading this:
+Audit-first (workflow A) was the approved P0 sequence because the project's own law is *verify from the live repo, don't design against memory*. **This deliverable is retained as a historical record of the completed P0 workflow; it is not current instructions.** Current next product action: **merge P0, then begin P1.** M12 Consumer Discretionary remains the concurrent architecture milestone; no new active module after M12 is migrated before G1.
 
-1. **You** — approve or amend this pass. On approval, commit `OPERATING_PLAN.md` + this file as `docs/OPERATING_ROADMAP.md`; reference it from `README.md`. *That commit is the act that makes the roadmap canonical.* Create `PRODUCT_STATUS.md` (stub) and the branch `product/p0-lesson-layer`.
-2. **Claude (this project)** — has already produced the P0 read-only **audit prompt** (below). No design happens yet; Claude waits for audit facts.
-3. **Cursor/Sonnet** — runs the audit prompt against the live repo, **read-only, no writes, no branch changes**, and returns the structured report.
-4. **Artifact back for review:** the **audit report**. You paste it into a fresh Claude session (P0 design), which then produces `LESSON_LAYER_DESIGN.md` + ADR-004 + the three schemas + validator-check specs + the 10 FI pilot lessons — designed against real repo facts, not assumptions. ADR-004 ratification by you gates P1.
+Completed sequence (do not re-run):
+
+1. **You** — approved this pass; committed the roadmap as `docs/OPERATING_ROADMAP.md`; referenced it from `README.md`; created `PRODUCT_STATUS.md` and the product-track branch.
+2. **Claude (this project)** — produced the P0 read-only **audit prompt** (Deliverable 8, now archived).
+3. **Cursor/Sonnet** — ran the audit against the live repo and returned the structured report (`docs/P0_REPO_AUDIT.md`).
+4. **P0 design + placement** — Claude produced `LESSON_LAYER_DESIGN.md` + ADR-004 + the three schemas + validator-check specs + the 10 FI pilot lessons; Cursor placed them, implemented V-1…V-13, and ratified ADR-004 as Accepted. **P0 is complete pending merge.**
 
 Meanwhile, independently, the **M12 Consumer Discretionary** arch session can be scheduled whenever your attention frees — it shares no dependency with P0 and its Cursor migration overlaps P1's build.
 
 ---
 
-## Deliverable 8 — Paste-ready kickoff prompt (P0.2: Cursor read-only repository audit)
+## Deliverable 8 — Paste-ready kickoff prompt (P0.2: Cursor read-only repository audit) *(historical / archived)*
+
+**Status:** Historical. This prompt has already been executed; the resulting audit is `docs/P0_REPO_AUDIT.md`. Do not re-run it as current work. Retained below for provenance only.
 
 Paste the block below into Cursor. It is deliberately read-only and prescriptive about the report shape, so the audit reports *facts* and is not shaped by Cursor's own design opinions.
 
