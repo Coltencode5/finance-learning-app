@@ -14,6 +14,9 @@ export default function HomePage() {
         {modules.length} active modules, 235 globals, 478 zone nodes — loaded from
         canonical JSON at build time.
       </p>
+      <p>
+        <Link href="/learn">Start the Fixed Income learning path →</Link>
+      </p>
 
       <h2>Modules</h2>
       <ul className="card-list">

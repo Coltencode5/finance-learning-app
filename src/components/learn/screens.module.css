@@ -1,0 +1,278 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.heading {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0f1c2e;
+  border: none;
+  padding: 0;
+}
+
+.body {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1f2a37;
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5b6b7c;
+}
+
+.keyPoint {
+  padding: 1.1rem 1.15rem;
+  background: linear-gradient(160deg, #f3f7fb 0%, #e8f0f7 100%);
+  border-left: 3px solid #0b4f8a;
+  border-radius: 0 8px 8px 0;
+}
+
+.formula {
+  margin: 0.25rem 0 0;
+  padding: 0.85rem 1rem;
+  background: #0f1c2e;
+  color: #e8f0f7;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.example {
+  padding: 1.1rem 1.15rem;
+  background: #fff;
+  border: 1px solid #d7e0ea;
+  border-radius: 8px;
+}
+
+.roleBadge {
+  align-self: flex-start;
+  display: inline-block;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0b4f8a;
+  background: #e8f0fe;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .comparisonGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.comparisonSide {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #d7e0ea;
+  border-radius: 8px;
+}
+
+.sideLabel {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0b4f8a;
+  border: none;
+  padding: 0;
+}
+
+.verdict {
+  margin: 0.25rem 0 0;
+  padding: 0.85rem 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #1f2a37;
+}
+
+.misconception {
+  gap: 0.75rem;
+}
+
+.myth {
+  padding: 0.9rem 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  opacity: 0.92;
+}
+
+.reality {
+  padding: 1rem 1.05rem;
+  background: #eef6f0;
+  border-left: 3px solid #1f6b3a;
+  border-radius: 0 8px 8px 0;
+}
+
+.whyMatters {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #1f2a37;
+}
+
+.check {
+  gap: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-height: 44px;
+  padding: 0.75rem 0.85rem;
+  background: #fff;
+  border: 1.5px solid #c9d4e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.option:focus-within {
+  outline: 2px solid #0b4f8a;
+  outline-offset: 2px;
+}
+
+.option input {
+  margin-top: 0.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.optionSelected {
+  border-color: #0b4f8a;
+  background: #f3f7fb;
+}
+
+.optionCorrect {
+  border-color: #1f6b3a;
+  background: #eef6f0;
+}
+
+.optionIncorrect {
+  border-color: #a33;
+  background: #fbf1f1;
+}
+
+.optionLetter {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #5b6b7c;
+  min-width: 1.1rem;
+}
+
+.optionText {
+  flex: 1;
+  min-width: 0;
+}
+
+.submitBtn,
+.retryBtn {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0.65rem 1.15rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.submitBtn {
+  background: #0b4f8a;
+  color: #fff;
+}
+
+.submitBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.submitBtn:focus-visible,
+.retryBtn:focus-visible {
+  outline: 2px solid #0b4f8a;
+  outline-offset: 2px;
+}
+
+.retryBtn {
+  background: transparent;
+  color: #0b4f8a;
+  border: 1.5px solid #0b4f8a;
+  margin-top: 0.35rem;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.9rem 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.feedbackOk {
+  margin: 0;
+  font-weight: 700;
+  color: #1f6b3a;
+}
+
+.feedbackBad {
+  margin: 0;
+  font-weight: 700;
+  color: #8a2b2b;
+}
+
+.feedbackBody {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,237 @@
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.kicker,
+.breadcrumb {
+  margin: 0 0 0.5rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #5b6b7c;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0b4f8a;
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  line-height: 1.2;
+  color: #0f1c2e;
+}
+
+.lede {
+  margin: 0 0 1.25rem;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: #1f2a37;
+}
+
+.summary {
+  margin: 0 0 1.25rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.92rem;
+  color: #5b6b7c;
+}
+
+.pathCard {
+  padding: 1.35rem 1.2rem;
+  background: linear-gradient(165deg, #f3f7fb 0%, #ffffff 50%);
+  border: 1px solid #d7e0ea;
+  border-radius: 10px;
+}
+
+.pathTitle {
+  margin: 0 0 0.4rem;
+  font-size: 1.35rem;
+  border: none;
+  padding: 0;
+  color: #0f1c2e;
+}
+
+.tagline {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #0b4f8a;
+  font-weight: 600;
+}
+
+.body {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f2a37;
+}
+
+.metaGrid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+.metaGrid dt {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5b6b7c;
+  margin-bottom: 0.2rem;
+}
+
+.metaGrid dd {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #1f2a37;
+}
+
+.ctaRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 480px) {
+  .ctaRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.primaryCta,
+.secondaryCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.primaryCta {
+  background: #0b4f8a;
+  color: #fff;
+}
+
+.secondaryCta {
+  color: #0b4f8a;
+  border: 1.5px solid #c9d4e0;
+  background: #fff;
+}
+
+.primaryCta:focus-visible,
+.secondaryCta:focus-visible {
+  outline: 2px solid #0b4f8a;
+  outline-offset: 2px;
+}
+
+.lessonList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.lessonItem {
+  background: #fff;
+  border: 1px solid #d7e0ea;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.lessonItem[data-status="locked"] {
+  background: #f7f8fa;
+  opacity: 0.92;
+}
+
+.lessonItem[data-status="completed"] {
+  border-color: #b7d4c0;
+}
+
+.lessonItem[data-status="available"] {
+  border-color: #0b4f8a;
+}
+
+.lessonMain {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.lessonIndex {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #5b6b7c;
+  min-width: 1.5rem;
+  padding-top: 0.15rem;
+}
+
+.lessonCopy {
+  flex: 1;
+  min-width: 0;
+}
+
+.lessonTitleLink {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f1c2e;
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.lessonTitleLink:hover {
+  color: #0b4f8a;
+  text-decoration: underline;
+}
+
+.lessonTitleLocked {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #5b6b7c;
+  line-height: 1.35;
+}
+
+.lessonMeta {
+  margin: 0.35rem 0 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #5b6b7c;
+}
+
+.lockReason {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #6a4550;
+}
+
+.statusDone {
+  color: #1f6b3a;
+  font-weight: 600;
+}
+
+.statusOpen {
+  color: #0b4f8a;
+  font-weight: 600;
+}
+
+.statusLocked {
+  color: #8a6a3b;
+  font-weight: 600;
+}
