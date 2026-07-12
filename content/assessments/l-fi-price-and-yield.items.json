@@ -1,0 +1,77 @@
+{
+  "lesson": "l-fi-price-and-yield",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-price-and-yield-01",
+      "concept_ids": [
+        "G266",
+        "fixed-income.z2.1"
+      ],
+      "type": "formula-interpretation",
+      "stem": "In the pricing equation P = Σ CFₜ/(1+y)ᵗ, what happens to each discounted cash flow when y rises?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each one shrinks, so the price falls",
+          "correct": true,
+          "explanation": "Correct. A bigger denominator shrinks every term — and the far-away cash flows shrink the most. Sum smaller pieces, get a smaller price."
+        },
+        {
+          "id": "b",
+          "text": "The coupons shrink but the face value doesn't",
+          "correct": false,
+          "explanation": "Every cash flow is discounted, including the final face value — which, arriving latest, is hit hardest by a higher y."
+        },
+        {
+          "id": "c",
+          "text": "The cash flows themselves get smaller",
+          "correct": false,
+          "explanation": "The promised cash flows are contractual and don't change. Only their present value shrinks — same promise, less value today."
+        },
+        {
+          "id": "d",
+          "text": "Nothing — price and yield are set independently",
+          "correct": false,
+          "explanation": "They can't be: the equation ties them together. Fix the cash flows, and choosing a price implies the yield, and vice versa."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-price-and-yield-02",
+      "concept_ids": [
+        "G266",
+        "G248",
+        "G277"
+      ],
+      "type": "scenario",
+      "stem": "A corporate bond's yield rises even though government bond yields haven't moved at all. What most likely happened?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The risk-free base — the price of time — went up",
+          "correct": false,
+          "explanation": "That base is what government yields measure, and they didn't move. So this isn't a 'rates' story."
+        },
+        {
+          "id": "b",
+          "text": "The market now demands a bigger spread for this issuer's credit risk",
+          "correct": true,
+          "explanation": "Right. Yield ≈ risk-free base + spread. Base unchanged means the move came through the spread channel — the market repriced the issuer's risk, and the bond's price fell accordingly."
+        },
+        {
+          "id": "c",
+          "text": "The bond's coupon was increased",
+          "correct": false,
+          "explanation": "Coupons on a fixed-rate bond don't move with the market — and a higher coupon would make the bond more valuable, not push its price down."
+        },
+        {
+          "id": "d",
+          "text": "The bond's face value was reduced",
+          "correct": false,
+          "explanation": "Face value is contractual. Yields move because prices move, not because the contract is rewritten."
+        }
+      ]
+    }
+  ]
+}

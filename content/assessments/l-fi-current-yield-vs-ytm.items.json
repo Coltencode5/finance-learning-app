@@ -1,0 +1,76 @@
+{
+  "lesson": "l-fi-current-yield-vs-ytm",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-current-yield-vs-ytm-01",
+      "concept_ids": [
+        "G265",
+        "fixed-income.z2.3"
+      ],
+      "type": "comparison",
+      "stem": "A plain (non-callable) bond trades at a premium — above face value. How do its current yield and its YTM compare?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Current yield is higher than YTM",
+          "correct": true,
+          "explanation": "Right. The premium bond's price drifts DOWN to par by maturity — a built-in capital loss. Current yield shows only the fat coupon income; YTM nets out the drift, so it comes out lower."
+        },
+        {
+          "id": "b",
+          "text": "YTM is higher than current yield",
+          "correct": false,
+          "explanation": "That's the discount bond's pattern: a price below par drifts UP to face, so YTM adds a gain on top of the income. Above par, the drift works against you."
+        },
+        {
+          "id": "c",
+          "text": "They're equal — both measure the same thing",
+          "correct": false,
+          "explanation": "They coincide only for a bond trading exactly at par. Away from par, the pull to par drives a wedge between them — which is the whole point of this lesson."
+        },
+        {
+          "id": "d",
+          "text": "It depends on the coupon frequency",
+          "correct": false,
+          "explanation": "Payment frequency tweaks the arithmetic slightly but can't flip the ordering. Above par, current yield overstates and YTM corrects."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-current-yield-vs-ytm-02",
+      "concept_ids": [
+        "G265",
+        "G58"
+      ],
+      "type": "scenario",
+      "stem": "A wealth manager says a client's bond portfolio \"yields 4.5%,\" and a private-credit fund says its loans \"yield 11%.\" Why can't you compare these two numbers directly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "You can — yield is yield; the loans are simply better",
+          "correct": false,
+          "explanation": "The two numbers are constructed differently. Treating them as one scale is exactly the conflation this lesson exists to prevent."
+        },
+        {
+          "id": "b",
+          "text": "The bond figure aggregates market-quoted YTMs on continuously repriced securities; the loan figure is an underwriting construction on instruments that trade rarely, if at all",
+          "correct": true,
+          "explanation": "Exactly. The portfolio yield aggregates YTMs that reprice with the market. The loan yield stacks a floating base rate, a contractual spread, and fees on privately negotiated loans that are relatively illiquid — a lender's arithmetic, not a market observation. Same word, different objects."
+        },
+        {
+          "id": "c",
+          "text": "Bond yields include credit risk and loan yields don't",
+          "correct": false,
+          "explanation": "Both compensate credit risk — loans often more, which is part of why the number is bigger. The real difference is how each number is built and where it comes from."
+        },
+        {
+          "id": "d",
+          "text": "Private loans never trade, so they can't have a yield at all",
+          "correct": false,
+          "explanation": "They're illiquid, not untradeable — syndicated loans in particular have an active secondary market. The issue isn't that a yield can't exist; it's that this yield answers a different question."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "l-fi-rate-vs-credit-risk",
+  "title": "Rate Risk vs. Credit Risk — and the Spread",
+  "teaches": [
+    "G277"
+  ],
+  "draws_on": [
+    "fixed-income.z4.1",
+    "fixed-income.z4.4",
+    "fixed-income.z4.2",
+    "fixed-income.z2.2"
+  ],
+  "estimated_minutes": 7,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "Two ways to lose money in a bond",
+      "body": "Everything so far has been rate risk: prices moving because the price of time moved. But a bond is also a promise from a specific borrower, and promises can weaken. Credit risk is the chance you are not paid in full and on time — and the market prices it separately, continuously, in its own channel."
+    },
+    {
+      "type": "key_point",
+      "heading": "Yield decomposed",
+      "body": "A corporate bond's yield is roughly the risk-free rate for that maturity PLUS a spread — compensation for this issuer's default risk, for bearing that risk, and for the bond's lesser liquidity. Rates move the base; credit moves the spread. These are the two first-order channels through which a bond's mark-to-market value changes. They are not the whole of what you earn: income and the drift of the price along the curve also contribute, which is the final lesson's subject.",
+      "formula": "Corporate yield ≈ risk-free rate + credit spread"
+    },
+    {
+      "type": "explanation",
+      "heading": "The spread is a live price",
+      "body": "At its floor, a spread has to cover expected loss — the chance of default times how much is lost when it happens. But spreads are quotes, not formulas: they widen when the market turns fearful and grind tighter when it is calm, repricing trade by trade. Watching a bond's spread is watching the market's running opinion of one borrower's promise."
+    },
+    {
+      "type": "example",
+      "heading": "Losing 15 points without a default",
+      "body": "A rating agency downgrades a company deep into junk territory. The company hasn't missed a payment and may never miss one — but funds whose mandates require higher ratings are forced to sell, buyers demand a wider spread, and the bond drops 15 points. In traded credit, credit OPINIONS hit your price immediately; you don't have to wait for an actual default to lose money.",
+      "role": "markets"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-rate-vs-credit-risk-01"
+    },
+    {
+      "type": "comparison",
+      "heading": "Two spreads that share a word",
+      "left": {
+        "label": "Loan spread (private credit)",
+        "body": "Contractual: a margin over the floating base rate, negotiated at close and written into the loan agreement. It doesn't move with trading — it changes through an amendment, a repricing, or a pre-agreed pricing grid that steps the margin up or down with the borrower's leverage or rating."
+      },
+      "right": {
+        "label": "Bond spread (traded markets)",
+        "body": "Observed: backed out of the bond's market price against the government curve, and recomputed with every trade. It moves because the price moves — continuously, with no negotiation involved."
+      },
+      "verdict": "Same borrower, same underlying default risk — but one number is set in a negotiation and adjusted by agreement, and the other floats on a market. The gap between them is information professionals trade."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-rate-vs-credit-risk-02"
+    }
+  ],
+  "checks": [
+    "q-fi-rate-vs-credit-risk-01",
+    "q-fi-rate-vs-credit-risk-02"
+  ],
+  "connects": [
+    "G70",
+    "G276",
+    "G62",
+    "G61",
+    "G255",
+    "G248"
+  ],
+  "status": "authored"
+}

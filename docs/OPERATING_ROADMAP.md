@@ -57,7 +57,7 @@ Cursor               →  executes artifact A          (while)
 Claude session N+1   →  produces design artifact B
 ```
 
-Concretely for the next cycle: Claude designs the lesson layer (M12A), Cursor implements the lesson player from that spec **while** Claude runs the Consumer Discretionary architecture session (M12B). Your attention is serial; the project is parallel. The 65/35 number becomes an emergent property of milestone sequencing rather than a daily budgeting exercise.
+Concretely for the next cycle: Claude designs the lesson layer (P0), Cursor implements the lesson player from that spec **while** Claude runs the Consumer Discretionary architecture session (M12). Your attention is serial; the project is parallel. The 65/35 number becomes an emergent property of milestone sequencing rather than a daily budgeting exercise.
 
 ### Track responsibilities
 
@@ -89,9 +89,9 @@ This is the answer to "what product-layer decisions could corrupt the graph": th
 
 ## C. Recommended milestone sequence
 
-Numbering keeps your existing scheme. M12 splits into two half-milestones because they are owned by different tracks and can overlap at the Cursor layer.
+Architecture work uses `M##`; product work uses `P#`. Consumer Discretionary remains architecture milestone M12. Product milestones are P0 (lesson-layer architecture), P1 (learning-loop implementation), and P2 (pilot test), with decision gate G1.
 
-### M12A — Lesson & Path Architecture (design-only) ← **NEXT**
+### P0 — Repo audit + Lesson & Path Architecture (design + authored pilot) ← **COMPLETE pending merge**
 
 | | |
 |---|---|
@@ -104,35 +104,35 @@ Numbering keeps your existing scheme. M12 splits into two half-milestones becaus
 | **Acceptance** | Every lesson file validates against its schema; every referenced ID resolves against the live graph; a human read-through of two lessons confirms they read as lessons, not node dumps |
 | **Gate** | ADR-004 ratified by you before Cursor receives any implementation prompt |
 
-### M12B — sector-consumer-discretionary (content)
+### M12 — sector-consumer-discretionary (content)
 
-Runs exactly as M9–M11 did: kickoff prompt → Claude architecture session → Cursor extraction + migration → tarball verification. `kind: sector-layer1`, `build_order: 15`, globals from G314. **Closes wave one.** The only change from the documented plan is timing: the Claude session for M12B happens *after* the M12A session, and its Cursor execution overlaps with M13's Cursor execution. Expected yield based on M9–M11: ~8–13 nodes, ~8–11 net-new globals, disambiguation retrofits per the codified N-way convention.
+Runs exactly as M9–M11 did: kickoff prompt → Claude architecture session → Cursor extraction + migration → tarball verification. `kind: sector-layer1`, `build_order: 15`, globals from G314. **Closes wave one.** The only change from the documented plan is timing: the Claude session for M12 happens *after* the P0 design session, and its Cursor execution overlaps with P1's Cursor execution. Expected yield based on M9–M11: ~8–13 nodes, ~8–11 net-new globals, disambiguation retrofits per the codified N-way convention.
 
-### M13 — Learning Loop V1 (product build)
+### P1 — Learning Loop V1 (product build)
 
 | | |
 |---|---|
 | **Objective** | One complete, enjoyable learner journey through the Fixed Income pilot path, on a phone |
 | **Scope** | Lesson player (one idea per screen, progress bar, immediate quiz feedback with explanations); path page (completed/current/next/locked); pilot landing page; completion screen with graph-connection payoff ("you connected Duration to…"); progress via localStorage; Vercel deployment of `main` + PR previews |
 | **Explicit exclusions** | Accounts, database, streaks, daily goals, notifications, social anything, AI anything, payments, analytics infrastructure (a simple event log to localStorage is enough), review queues, any second path |
-| **Owner** | Cursor/Sonnet, from the M12A spec. Claude reviews the built experience against the design, not the code line-by-line |
+| **Owner** | Cursor/Sonnet, from the P0 spec. Claude reviews the built experience against the design, not the code line-by-line |
 | **Inputs** | ADR-004, schemas, pilot lesson JSON, existing `src/lib/graph/` layer |
 | **Acceptance** | You complete the full path on your own phone via the Vercel URL and would honestly show it to a friend without apologizing for it. Type-check, build, and both new validator checks pass. |
 | **Gate** | Product branch merges only after preview deployment reviewed on mobile |
 
-### M14 — Pilot test
+### P2 — Pilot test
 
 Ship the Vercel link to 10–20 real people (classmates, finance-club members — people in the target segment, not just polite friends). Two-week window. Collect the behavioral data in Section E and run short exit conversations. Deliverable: a one-page findings memo. **No building during the test window** except crash fixes.
 
 ### Gate G1 — the decision point this plan exists to install
 
-After M14, exactly one of three branches, chosen on evidence:
+After P2, exactly one of three branches, chosen on evidence:
 
-- **Loop works** (completion + qualitative bar met) → M15 = accounts + database + server-side progress, then daily goals/streaks (Section F). Content wave two gets scoped *behind* this.
-- **Loop is close but format is wrong** (people start lessons but the screens don't land) → M15 = lesson-format redesign, second pilot path (IB recruiting), re-test. Cheap, because only presentation JSON and player code change — the graph is untouched.
+- **Loop works** (completion + qualitative bar met) → post-G1 product work = accounts + database + server-side progress, then daily goals/streaks (Section F). Content wave two gets scoped *behind* this.
+- **Loop is close but format is wrong** (people start lessons but the screens don't land) → post-G1 product work = lesson-format redesign, second pilot path (IB recruiting), re-test. Cheap, because only presentation JSON and player code change — the graph is untouched.
 - **Loop fails structurally** (target users don't want lesson-ified professional finance at all) → stop product spend, re-examine the wedge (e.g., reference/graph-browser product, B2B prep-course licensing) before further investment in either track.
 
-No content module beyond M12B is scoped until G1 resolves. That sentence is the anti-inertia mechanism.
+No content module beyond M12 is scoped until G1 resolves. That sentence is the anti-inertia mechanism.
 
 ---
 
@@ -155,7 +155,7 @@ The critical property: layers 2–4 can be deleted wholesale and layer 1 loses n
 - **Not purely derived:** a good lesson needs things nodes rightly don't contain — quiz distractors with wrong-answer explanations, screen-by-screen pacing, misconception traps. Pretending these can be mechanically derived produces node dumps with a progress bar, which is precisely the failure mode to avoid.
 - **Therefore: authored presentation JSON that references canonical IDs.** It lives in `content/` (it is editorial content deserving validation and versioning, not app config), but in its own directories with its own schemas.
 
-### Lesson file shape (schema sketch for M12A to finalize)
+### Lesson file shape (schema sketch for P0 to finalize)
 
 ```
 lesson: {
@@ -168,7 +168,7 @@ lesson: {
 }
 ```
 
-Block types for V1 — deliberately only six: `explanation`, `example`, `key_point`, `comparison`, `misconception`, `check`. (`formula` renders as a styled `key_point`; `application` is an `example` with a role tag; `connection` is generated from `connects`, not authored.) Fewer block types = fewer renderers = faster M13.
+Block types for V1 — deliberately only six: `explanation`, `example`, `key_point`, `comparison`, `misconception`, `check`. (`formula` renders as a styled `key_point`; `application` is an `example` with a role tag; `connection` is generated from `connects`, not authored.) Fewer block types = fewer renderers = faster P1.
 
 ### Paths are first-class content artifacts — yes
 
@@ -176,11 +176,11 @@ Block types for V1 — deliberately only six: `explanation`, `example`, `key_poi
 
 ### Assessment items
 
-Separate files (or a section of the lesson file — M12A decides), each item carrying: the concept IDs it tests, the question type (directional-reasoning, comparison, scenario, formula-interpretation, cause-effect, ordering — your Section 12 taxonomy, minus trivia), the distractors, and a per-distractor explanation. Tagging items with concept IDs is what makes a future mastery model and review queue possible *without* re-authoring anything — that is the entire forward-compatibility story, and it costs one array field now.
+Separate files (or a section of the lesson file — P0 decides), each item carrying: the concept IDs it tests, the question type (directional-reasoning, comparison, scenario, formula-interpretation, cause-effect, ordering — your Section 12 taxonomy, minus trivia), the distractors, and a per-distractor explanation. Tagging items with concept IDs is what makes a future mastery model and review queue possible *without* re-authoring anything — that is the entire forward-compatibility story, and it costs one array field now.
 
 ### Mastery, progress, review scheduling
 
-All layer-4. V1 stores `{lesson_id, completed_at, check_results[]}` in localStorage. A mastery model (per-concept strength derived from tagged check results) and spaced-repetition scheduling are post-G1, post-database — but the event shape above is designed so they can be computed retroactively from day-one data. Define the event log format in M12A even though V1 only writes it locally.
+All layer-4. V1 stores `{lesson_id, completed_at, check_results[]}` in localStorage. A mastery model (per-concept strength derived from tagged check results) and spaced-repetition scheduling are post-G1, post-database — but the event shape above is designed so they can be computed retroactively from day-one data. Define the event log format in P0 even though V1 only writes it locally.
 
 ### What remains immutable
 
@@ -192,7 +192,7 @@ Everything in layer 1, under existing rules: IDs, `home_of`, spines, edge semant
 
 ### Fixed Income wins, and not narrowly
 
-**Target learner:** a college student or early-career candidate preparing for finance recruiting — someone who *must* learn this material, has a deadline, and can judge within one session whether the app is better than their current tools (guides, flashcards, YouTube). This is the strongest initial user for three reasons: motivation is prepaid (no habit-formation problem to solve yet), success is externally measurable (can they answer technicals?), and it is the segment where Imprint is weakest and your graph is strongest. It is also you — which makes M14 recruiting trivial and feedback honest.
+**Target learner:** a college student or early-career candidate preparing for finance recruiting — someone who *must* learn this material, has a deadline, and can judge within one session whether the app is better than their current tools (guides, flashcards, YouTube). This is the strongest initial user for three reasons: motivation is prepaid (no habit-formation problem to solve yet), success is externally measurable (can they answer technicals?), and it is the segment where Imprint is weakest and your graph is strongest. It is also you — which makes P2 recruiting trivial and feedback honest.
 
 **Why Fixed Income over the alternatives:**
 
@@ -210,9 +210,9 @@ Everything in layer 1, under existing rules: IDs, `home_of`, spines, edge semant
 
 **What the pilot tests:** lesson-level completion and drop-off points; check accuracy (especially on the misconception pairs — if testers ace duration-vs-maturity after lesson 7, the format is teaching); whether the connection payoff registers in exit interviews; time-per-lesson vs. target.
 
-**Intentionally postponed:** everything in the M13 exclusion list, plus a second path, plus any node-content changes lessons might tempt you toward.
+**Intentionally postponed:** everything in the P1 exclusion list, plus a second path, plus any node-content changes lessons might tempt you toward.
 
-### Success criteria (pre-registered now so M14 can't be rationalized later)
+### Success criteria (pre-registered now so P2 can't be rationalized later)
 
 With 10–20 testers: ≥70% complete the first 3 lessons; ≥30% complete all 10; median lesson time within 3–8 minutes; misconception-check accuracy visibly improves between first exposure and the later comparison lesson; and in exit conversations, a majority say unprompted that they'd use it during actual recruiting prep. **Redesign signals:** drop-off *inside* lessons rather than between them (screens too dense or too thin); testers guessing checks without reading (checks too shallow); "feels like flashcards" feedback (connection payoff not landing). **Structural-failure signal:** testers who complete it but say they'd still rather use their current prep guide.
 
@@ -224,15 +224,15 @@ Ordered by required foundation, not by what Duolingo has. Each stage is gated on
 
 | Stage | Mechanics | Required foundation | Earliest slot |
 |---|---|---|---|
-| 0 (V1) | progress bar, immediate feedback, continue-where-left-off, path %, completion moment | localStorage only | M13 |
-| 1 | accounts, server-side progress, cross-device sync | database, auth | M15 (only if G1 passes) |
-| 2 | daily goal, streak + calendar, weekly summary email | trusted server timestamps, activity-event definitions (already designed in M12A), notification plumbing | M16 |
+| 0 (V1) | progress bar, immediate feedback, continue-where-left-off, path %, completion moment | localStorage only | P1 |
+| 1 | accounts, server-side progress, cross-device sync | database, auth | post-G1 (only if G1 passes) |
+| 2 | daily goal, streak + calendar, weekly summary email | trusted server timestamps, activity-event definitions (already designed in P0), notification plumbing | post-G1 stage 2 |
 | 3 | review queue, weak-area tracking, achievements tied to demonstrated mastery | mastery model over concept-tagged check results | M17 |
 | 4 | friends, private weekly competitions, recruiting cohorts, head-to-head concept quizzes | social identity, invitations, anti-abuse, and — non-negotiably — evidence from stages 1–3 that solo retention works | Gate G3, not before |
 | 5 | leaderboards, public challenges | everything above at scale | far horizon |
-| — | graph-grounded tutor ("explain simply / test me / show my missing prerequisite") | stable lesson+path schema (M12A), mastery model (stage 3), and paths as tutor-navigable artifacts | after stage 3 |
+| — | graph-grounded tutor ("explain simply / test me / show my missing prerequisite") | stable lesson+path schema (P0), mastery model (stage 3), and paths as tutor-navigable artifacts | after stage 3 |
 
-Two principles govern the whole table. **Streaks count meaningful learning events** (a completed check-passing lesson), never app-opens — this falls directly out of the event definitions in M12A, which is why they're designed now and built later. **Social amplifies retention that already exists; it cannot create it.** The Duolingo-streak anecdote is real signal about the ceiling, but their social layer sits on a decade-old proven solo loop. Yours is at V1. Sequence accordingly.
+Two principles govern the whole table. **Streaks count meaningful learning events** (a completed check-passing lesson), never app-opens — this falls directly out of the event definitions in P0, which is why they're designed now and built later. **Social amplifies retention that already exists; it cannot create it.** The Duolingo-streak anecdote is real signal about the ceiling, but their social layer sits on a decade-old proven solo loop. Yours is at V1. Sequence accordingly.
 
 ---
 
@@ -241,10 +241,10 @@ Two principles govern the whole table. **Streaks count meaningful learning event
 | Tool | Owns | Explicitly does not |
 |---|---|---|
 | **Claude/Fable (this project)** | All architecture judgment (both tracks): module maps, lesson-layer design, ADRs, pilot lesson authoring, kickoff prompts, verification passes, **and — new — product strategy**. This project becomes the single strategy venue; this document is its `PROJECT_STATUS.md`-equivalent. | Repo writes during design sessions; mechanical JSON assembly; app implementation |
-| **Cursor/Sonnet** | Everything mechanical, both tracks: extraction, migration, validation fixes, the entire M13 build, tests, git operations, Vercel config | Design decisions; schema rulings; anything requiring an ADR |
+| **Cursor/Sonnet** | Everything mechanical, both tracks: extraction, migration, validation fixes, the entire P1 build, tests, git operations, Vercel config | Design decisions; schema rulings; anything requiring an ADR |
 | **ChatGPT** | **Deliberately shrunk.** Optional scratchpad for prompt-drafting mechanics. Strategy, scoping, and roadmap conversations move here — the three-venue strategy sprawl is the root cause of the scattered feeling. | Owning any decision or any canonical artifact |
 | **GitHub** | Canonical repo. Branch discipline below. | — |
-| **Vercel** | **Yes, connect now** — during M13, free plan. Production deploys from `main`; preview deploys per PR. It costs nearly nothing and M14 is impossible without a shareable phone-testable URL. School email / Pro is irrelevant at this scale. | Being a gate for *content* branches (they don't touch the app; the existing build check already protects them) |
+| **Vercel** | **Yes, connect now** — during P1, free plan. Production deploys from `main`; preview deploys per PR. It costs nearly nothing and P2 is impossible without a shareable phone-testable URL. School email / Pro is irrelevant at this scale. | Being a gate for *content* branches (they don't touch the app; the existing build check already protects them) |
 | **Figma** | **Not now.** One path, five screens, six block types — design in code against the preview deploy. Revisit only if G1 passes and a designer or a real design system enters the picture. | — |
 
 **Branch discipline:** `content/*` branches (graph migrations — existing rules unchanged) and `product/*` branches (lessons, paths, `src/`). Product-branch merge gate: type-check + build + both new validator checks + preview deployment reviewed on mobile. Content-branch gate: unchanged (strict validation + tarball verification). A branch that touches both layers is rejected by convention — split it. The dangling-reference validator check is what lets the two branch families evolve independently without drift.
@@ -255,15 +255,13 @@ Two principles govern the whole table. **Streaks count meaningful learning event
 
 ## H. Immediate next action
 
-**1. The next milestone is M12A — Lesson & Path Architecture.** A single Claude design session producing `LESSON_LAYER_DESIGN.md`, ADR-004, the three schemas, the validator-check specs, and the 10 authored Fixed Income pilot lessons.
+**1. The next product milestone after P0 merge is P1 — Fixed Income Learning Loop.** P0 (audit + ADR-004 + schemas + authored Fixed Income pilot + lesson-layer validators) is the ratified design/content gate for that build.
 
-**2. Why it comes first:** it is the only artifact that unblocks *both* tracks simultaneously. The moment it exists, Cursor can build M13 while you run the M12B Consumer Discretionary session — the parallelism this whole plan is built on. Starting M12B first instead would leave Cursor idle on the product side and delay the pilot by a full milestone for zero information gain; starting M13 without M12A would have Cursor inventing schema on the fly, which is exactly the scope-bleed your pipeline exists to prevent.
+**2. Why P0 came first:** it is the only artifact that unblocks *both* tracks simultaneously. With P0 in place, Cursor can build P1 while you run the M12 Consumer Discretionary session — the parallelism this whole plan is built on. Starting M12 first instead would leave Cursor idle on the product side and delay the pilot by a full milestone for zero information gain; starting P1 without P0 would have Cursor inventing schema on the fly, which is exactly the scope-bleed your pipeline exists to prevent.
 
-**3. What waits:** M12B waits one design session (days, not weeks). Everything in the M13 exclusion list waits for G1. Wave-two sectors wait for G1. Streaks, social, and the tutor wait for their foundations per Section F. Figma waits indefinitely.
+**3. What waits:** M12 can proceed independently of P1. Everything in the P1 exclusion list waits for G1. Wave-two sectors wait for G1. Streaks, social, and the tutor wait for their foundations per Section F. Figma waits indefinitely.
 
-**4. The exact artifact to produce immediately after ratifying this plan:** the **M12A kickoff prompt** — same format as your M9–M11 kickoffs (Division of Labor block, pre-scouted landmines, hard no-repo-writes boundary), for a fresh Claude chat. Pre-scouted landmines to front-load into it: (a) the temptation to derive lessons mechanically from nodes — the session must author, not transform; (b) block-type proliferation — six is the ceiling; (c) assessment items without concept tags — the forward-compatibility hinge; (d) the temptation to "fix" FI node prose while authoring lessons — defects go to the register; (e) schema fields for futures (mastery, SRS) — design the event shape, do not add fields the pilot won't fill; (f) `content/lessons/` vs `src/` boundary confusion — everything authored is content, everything rendered is src.
-
-Ratify or amend this plan, and I'll draft that kickoff prompt.
+**4. Immediate product next step after this P0 placement merges:** open the P1 implementation milestone (lesson player, `/learn` routes, localStorage progress, event beacon) from the ratified P0 artifacts — without inventing schema or pedagogy.
 
 ---
 

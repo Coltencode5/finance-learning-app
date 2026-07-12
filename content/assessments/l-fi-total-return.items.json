@@ -1,0 +1,75 @@
+{
+  "lesson": "l-fi-total-return",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-total-return-01",
+      "concept_ids": [
+        "fixed-income.z2.6"
+      ],
+      "type": "cause-effect",
+      "stem": "The yield curve is upward-sloping and stays perfectly still for a year. A 5-year bond you hold posts a positive price return anyway. What produced it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roll-down — the bond aged into a shorter maturity that the unchanged curve prices at a lower yield, so its price rose",
+          "correct": true,
+          "explanation": "Correct. On an upward slope, shorter maturities carry lower yields; aging INTO them is a price gain that requires no market move at all. That's why curve shape is a return engine, not just a chart."
+        },
+        {
+          "id": "b",
+          "text": "The coupon payments pushed the price up",
+          "correct": false,
+          "explanation": "Coupons are the INCOME engine — cash paid out to you, not a force lifting the price. The price gain came from somewhere else."
+        },
+        {
+          "id": "c",
+          "text": "Impossible — if the curve didn't move, no price change can occur",
+          "correct": false,
+          "explanation": "The curve stood still, but the bond moved ALONG it by aging. Its position on the curve changed even though the curve didn't."
+        },
+        {
+          "id": "d",
+          "text": "Its credit spread must have tightened",
+          "correct": false,
+          "explanation": "Possible in general, but the question gives you a cleaner mechanism that needs no spread move — and on a frozen upward-sloping curve, roll-down is the one that's guaranteed."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-total-return-02",
+      "concept_ids": [
+        "fixed-income.z2.6",
+        "G265"
+      ],
+      "type": "scenario",
+      "stem": "You buy a 10-year bond at a 5% quoted YTM and hold it to maturity, reinvesting every coupon as it arrives. Rates decline steadily throughout the decade, and the issuer pays in full. How does your realized return compare with the 5% quote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Below 5% — the coupons were reinvested at ever-lower rates than the quote assumed",
+          "correct": true,
+          "explanation": "Correct. YTM's buried assumption is that coupons are reinvested at the YTM itself. A falling-rate decade breaks that assumption downward, so the realized compound return lands under the quote — even though the bond paid everything it promised."
+        },
+        {
+          "id": "b",
+          "text": "Above 5% — falling rates always help bondholders",
+          "correct": false,
+          "explanation": "Falling rates lift interim PRICES, but you held to maturity, so the bond redeemed at par regardless. What falling rates changed for you was reinvestment — and they changed it for the worse."
+        },
+        {
+          "id": "c",
+          "text": "Exactly 5% — you held to maturity and were paid in full",
+          "correct": false,
+          "explanation": "Full payment secures the promised CASH FLOWS, not the promised compound rate. The reinvestment leg is yours to manage, and the quote assumed you'd win it at 5%."
+        },
+        {
+          "id": "d",
+          "text": "Can't say — realized return is unknowable in advance",
+          "correct": false,
+          "explanation": "In advance, fair enough — but the question tells you the rate path. Given steadily falling rates, the direction of the reinvestment drag is determinate: below the quote."
+        }
+      ]
+    }
+  ]
+}

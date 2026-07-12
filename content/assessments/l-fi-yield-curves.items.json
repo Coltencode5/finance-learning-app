@@ -1,0 +1,76 @@
+{
+  "lesson": "l-fi-yield-curves",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-yield-curves-01",
+      "concept_ids": [
+        "G269",
+        "G247"
+      ],
+      "type": "scenario",
+      "stem": "Forwards imply the short rate will be 3% one year from now. The central bank then cuts to exactly 3% on exactly that schedule. What do long-bond holders get from the cuts themselves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A windfall — rates fell, so bond prices must have jumped",
+          "correct": false,
+          "explanation": "The fall was already embedded in today's prices. Delivering the path the market had priced produces no repricing gain — a bond only jumps on the SURPRISE, not on the expected."
+        },
+        {
+          "id": "b",
+          "text": "No repricing gain from the cuts — they were already in the price; holders still earn the yield and any term premium the curve was paying",
+          "correct": true,
+          "explanation": "Right. Forwards are break-evens: gains and losses accrue relative to what was already priced. Matching the implied path means no repricing surprise — though the position still earns its carry and whatever term premium was embedded in holding longer bonds. 'No surprise' is not 'no return'."
+        },
+        {
+          "id": "c",
+          "text": "Nothing at all — an expected path means zero economic return",
+          "correct": false,
+          "explanation": "Careful: no repricing SURPRISE is not the same as no return. The bond still pays its coupons, and the curve may have been compensating holders with a term premium all along."
+        },
+        {
+          "id": "d",
+          "text": "Short-bond holders win, because they rolled at higher rates",
+          "correct": false,
+          "explanation": "The forward is precisely the rate that equalizes rolling short with holding long. Deliver the forward path and the two strategies tie — that's what 'priced in' means."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-yield-curves-02",
+      "concept_ids": [
+        "G269",
+        "G257"
+      ],
+      "type": "comparison",
+      "stem": "The yield curve inverts: 2-year government yields exceed 10-year yields. What is the market most directly saying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Long-term government bonds have become riskier than short-term ones",
+          "correct": false,
+          "explanation": "Same issuer — the credit risk didn't flip. Inversion is about the expected PATH of rates (and the premium demanded for duration), not about default risk."
+        },
+        {
+          "id": "b",
+          "text": "It primarily reflects an expectation that today's high short-term rates will fall",
+          "correct": true,
+          "explanation": "Correct, and 'primarily' is the right word. Expectations are the main reading — long yields sit below short yields when the market expects the short rate to come down. Term premium and maturity-preference effects also shape the curve, so inversion isn't produced by one mechanism alone."
+        },
+        {
+          "id": "c",
+          "text": "Bond prices are about to crash",
+          "correct": false,
+          "explanation": "If anything an inversion prices in FALLING future rates, which would lift bond prices. The gloom in an inversion is about the economy, not about bonds."
+        },
+        {
+          "id": "d",
+          "text": "The government made an error issuing too much short-term debt",
+          "correct": false,
+          "explanation": "Supply does affect yields at the margin — but inversion is driven by rate expectations and premiums, not by a clerical issuance mistake."
+        }
+      ]
+    }
+  ]
+}

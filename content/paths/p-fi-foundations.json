@@ -1,0 +1,71 @@
+{
+  "id": "p-fi-foundations",
+  "title": "Fixed Income Foundations",
+  "tagline": "Learn how the world's biggest market actually works — bonds, yields, duration, and credit.",
+  "description": "The bond market is larger than the stock market, and every corner of finance is priced off it. This path takes you from what a bond literally is to the two risk numbers professionals live by — duration and convexity — and the spread that prices credit risk. No prior fixed-income knowledge assumed; you should be comfortable with the idea of present value.",
+  "outcome": "You can explain why bond prices fall when rates rise, why duration is not maturity, what a yield quote actually assumes, and how to tell a rate loss from a credit loss — the core technical vocabulary of any fixed-income conversation, interview or desk.",
+  "audience": "Students preparing for finance recruiting and early-career professionals who need bond mechanics for real.",
+  "lessons": [
+    {
+      "lesson": "l-fi-what-a-bond-is",
+      "requires": []
+    },
+    {
+      "lesson": "l-fi-price-and-yield",
+      "requires": [
+        "l-fi-what-a-bond-is"
+      ]
+    },
+    {
+      "lesson": "l-fi-current-yield-vs-ytm",
+      "requires": [
+        "l-fi-price-and-yield"
+      ]
+    },
+    {
+      "lesson": "l-fi-price-yield-inversion",
+      "requires": [
+        "l-fi-price-and-yield"
+      ]
+    },
+    {
+      "lesson": "l-fi-yield-curves",
+      "requires": [
+        "l-fi-price-yield-inversion"
+      ]
+    },
+    {
+      "lesson": "l-fi-duration",
+      "requires": [
+        "l-fi-price-yield-inversion"
+      ]
+    },
+    {
+      "lesson": "l-fi-duration-vs-maturity",
+      "requires": [
+        "l-fi-duration"
+      ]
+    },
+    {
+      "lesson": "l-fi-convexity",
+      "requires": [
+        "l-fi-duration-vs-maturity"
+      ]
+    },
+    {
+      "lesson": "l-fi-rate-vs-credit-risk",
+      "requires": [
+        "l-fi-yield-curves",
+        "l-fi-duration"
+      ]
+    },
+    {
+      "lesson": "l-fi-total-return",
+      "requires": [
+        "l-fi-rate-vs-credit-risk",
+        "l-fi-convexity"
+      ]
+    }
+  ],
+  "status": "authored"
+}

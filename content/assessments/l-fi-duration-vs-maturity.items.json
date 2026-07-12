@@ -1,0 +1,110 @@
+{
+  "lesson": "l-fi-duration-vs-maturity",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-duration-vs-maturity-01",
+      "concept_ids": [
+        "G267",
+        "G69"
+      ],
+      "type": "comparison",
+      "stem": "Rank these by sensitivity to a change in the general level of interest rates, highest first: a 30-year zero-coupon bond, a 30-year coupon bond, a 30-year floating-rate note.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zero > coupon bond > floater",
+          "correct": true,
+          "explanation": "Correct. The zero's value all arrives at the end, giving it the highest duration of the three; coupons pull the coupon bond's duration well below 30; the floater's resets leave it with only a few months of base-rate sensitivity despite the 30-year calendar."
+        },
+        {
+          "id": "b",
+          "text": "Coupon bond > zero > floater",
+          "correct": false,
+          "explanation": "The zero outranks the coupon bond: with no early cash flows, ALL of its value is far-future value — maximum sensitivity for that maturity."
+        },
+        {
+          "id": "c",
+          "text": "All equal — they all mature in 30 years",
+          "correct": false,
+          "explanation": "That's exactly the trap this lesson breaks. Same calendar, radically different durations: rate risk follows the timing of the value, not the end date."
+        },
+        {
+          "id": "d",
+          "text": "Floater > coupon bond > zero",
+          "correct": false,
+          "explanation": "Fully inverted. The floater is the LEAST sensitive to the base rate: every coupon reset re-anchors it to current market rates."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-duration-vs-maturity-02",
+      "concept_ids": [
+        "G267",
+        "G69"
+      ],
+      "type": "scenario",
+      "stem": "In 2022 rates rose sharply. Long-dated fixed-rate bonds lost heavily on price, while floating-rate loans of similar maturity showed much smaller price declines. What is the precise reason — and what does it NOT mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their coupons reset upward with market rates, so they had very little base-rate duration — though they still carried credit and spread risk",
+          "correct": true,
+          "explanation": "Exactly right, including the caveat. A resetting coupon removes most of the sensitivity to the base rate, so long maturity coexists with near-zero duration. But the price still falls if the market demands a wider spread, the borrower's rising interest burden can make default more likely, and private loans are simply marked less often than traded bonds — less visible is not the same as less risky."
+        },
+        {
+          "id": "b",
+          "text": "Floating-rate instruments carry no risk when rates rise",
+          "correct": false,
+          "explanation": "Too strong. They shed base-rate duration, not risk. Credit risk and spread risk remain — and higher rates increase the borrower's interest cost, which can hurt exactly the credits you lent to."
+        },
+        {
+          "id": "c",
+          "text": "The loans were simply shorter maturity than the bonds",
+          "correct": false,
+          "explanation": "Many were long-dated too. Maturity wasn't the shield — the reset mechanism was, which is precisely why maturity is the wrong lens for rate risk."
+        },
+        {
+          "id": "d",
+          "text": "Rising rates are good for every lender",
+          "correct": false,
+          "explanation": "Tell that to holders of long fixed-rate bonds in 2022. Rising rates helped those whose income could rise with them — and even they took on more borrower stress."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-duration-vs-maturity-03",
+      "concept_ids": [
+        "G267"
+      ],
+      "type": "cause-effect",
+      "stem": "Which statement about a 30-year zero-coupon bond is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its Macaulay duration equals 30 years, because its single cash flow arrives at maturity — so the PV-weighted average arrival time IS the maturity",
+          "correct": true,
+          "explanation": "Correct. Macaulay duration is the PV-weighted average time of the cash flows; with only one cash flow, that average is the maturity date itself. Every coupon a bond adds pulls the average — and the duration — forward."
+        },
+        {
+          "id": "b",
+          "text": "Its modified duration equals 30 years, for the same reason",
+          "correct": false,
+          "explanation": "Close, but not right — and this is the distinction that matters. Modified duration adjusts Macaulay for the bond's yield and compounding, so at positive yields it comes out slightly BELOW 30. Only the Macaulay measure hits the maturity exactly."
+        },
+        {
+          "id": "c",
+          "text": "Its duration is near zero, because it pays no coupons",
+          "correct": false,
+          "explanation": "The opposite. Paying no coupons means NOTHING arrives early, so all the value sits at the far end — the maximum possible rate sensitivity for that maturity."
+        },
+        {
+          "id": "d",
+          "text": "Duration is undefined for a zero, since duration requires coupons",
+          "correct": false,
+          "explanation": "Duration is defined for any set of cash flows. The zero is simply the cleanest case: one cash flow, one arrival date."
+        }
+      ]
+    }
+  ]
+}

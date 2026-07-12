@@ -1,0 +1,58 @@
+{
+  "id": "l-fi-total-return",
+  "title": "Total Return: What You Actually Earn",
+  "teaches": [
+    "fixed-income.z2.6"
+  ],
+  "draws_on": [
+    "fixed-income.z2.6",
+    "fixed-income.z2.3"
+  ],
+  "estimated_minutes": 6,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "The quote is not the outcome",
+      "body": "You buy a bond quoted at a 5% yield to maturity. Will you earn 5%? Not necessarily — and understanding the gap between the quoted number and the realized one is what separates reading a screen from managing money. Total return is what actually lands in the account, and it has three parts."
+    },
+    {
+      "type": "key_point",
+      "heading": "The three engines of return",
+      "body": "Over any holding period, a bond's total return decomposes into: INCOME — the coupons you collect, net of any cost of financing the position; ROLL — the price drift that comes from the bond simply aging along the curve; and PRICE — the gains or losses from yields and spreads actually moving. Professionals attribute each period's P&L across exactly these engines."
+    },
+    {
+      "type": "example",
+      "heading": "Earning money on a frozen curve",
+      "body": "Suppose the yield curve slopes upward and never moves all year. Your 5-year bond quietly becomes a 4-year bond — and on that curve, 4-year bonds yield LESS, so its price drifts up. That's roll-down: a return harvested from pure aging, with no rate view required. Curve shape isn't only a signal; it's a return input.",
+      "role": "asset-management"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-total-return-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "The reinvestment catch",
+      "body": "Here is the YTM fine print from earlier, now with teeth. The quoted YTM assumes every coupon is reinvested at that same YTM. If rates fall over the bond's life, your coupons reinvest at worse rates and your realized return lands below the quote; if rates rise, reinvestment helps, but the bond's interim prices took the hit. The quoted yield is a well-defined convention — the realized return is the outcome of a fight between these forces."
+    },
+    {
+      "type": "explanation",
+      "heading": "The machine, assembled",
+      "body": "Step back and the path connects. Price is discounted cash flow. Yield and price are one fact in two notations. The curve prices every horizon. Modified duration and convexity size the rate channel. The spread prices the credit channel. And total return is where all of it settles into money. You now hold the core mechanics that every fixed-income conversation assumes you already have."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-total-return-02"
+    }
+  ],
+  "checks": [
+    "q-fi-total-return-01",
+    "q-fi-total-return-02"
+  ],
+  "connects": [
+    "G265",
+    "G282",
+    "G267"
+  ],
+  "status": "authored"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "l-fi-duration",
+  "title": "Duration",
+  "teaches": [
+    "G267"
+  ],
+  "draws_on": [
+    "fixed-income.z2.9",
+    "fixed-income.z2.2"
+  ],
+  "estimated_minutes": 7,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "One number for rate risk",
+      "body": "You know prices fall when yields rise. The professional question is: by how much? Duration is the answer — the number that converts a yield move into a price move. It is the master risk number of fixed income: desks, funds, and hedges are all described in its terms. The word actually covers two closely related measures, and it pays to keep them straight from the start."
+    },
+    {
+      "type": "key_point",
+      "heading": "Modified duration: the sensitivity number",
+      "body": "Modified duration is the price-sensitivity measure. A bond with modified duration 6 loses roughly 6% of its price if yields rise by one percentage point, and gains roughly 6% if they fall by one. Higher modified duration, bigger swings. Trading desks often restate the same idea in dollars per basis point (DV01), because they hedge dollars, not percentages.",
+      "formula": "%ΔPrice ≈ −Modified Duration × Δyield"
+    },
+    {
+      "type": "example",
+      "heading": "Read it off a portfolio",
+      "body": "A bond fund reports a modified duration of 6.5. Yields rise 0.5 percentage points across the board. Expected price impact: −6.5 × 0.5 ≈ −3.3%. One multiplication turns a rates headline into a P&L estimate — which is exactly how managers state their positions: 'we're half a year long duration versus the benchmark.'",
+      "role": "asset-management"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-duration-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "Where the number comes from",
+      "body": "Behind modified duration sits Macaulay duration: the present-value-weighted average time until the bond's cash flows arrive, measured in years. Distant cash flows are discounted hardest, so the further out a bond's value sits, the more a yield change moves its price. Modified duration is that average timing adjusted for the bond's yield and compounding frequency — which, at positive yields, makes it slightly smaller than the Macaulay figure. The two are close cousins and often quoted interchangeably in casual talk, but only one of them is a price sensitivity: when someone says a bond 'has a duration of 6' and means a 6% price move per point of yield, they mean modified."
+    },
+    {
+      "type": "misconception",
+      "myth": "Duration is how long you wait to get your money back — basically the bond's maturity.",
+      "reality": "Modified duration measures price SENSITIVITY to yield changes, not a waiting time. Macaulay duration IS a timing measure — the PV-weighted average arrival of the cash flows — but even it is not the maturity: a coupon-paying bond returns much of its value before the final payment, so its Macaulay duration sits well below its maturity date.",
+      "why_it_matters": "Reading duration as a calendar makes you misjudge risk in both directions. The next lesson stress-tests this exact confusion with three bonds that all mature in thirty years."
+    },
+    {
+      "type": "key_point",
+      "heading": "Coupons pull duration down",
+      "body": "Two bonds, same maturity: the one with the higher coupon has the LOWER duration, on both measures. More of its value arrives sooner, so its price cares less about the discount rate applied to the far future. Push that to the limit — a zero-coupon bond, all value in one final payment — and duration reaches its maximum for that maturity."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-duration-02"
+    }
+  ],
+  "checks": [
+    "q-fi-duration-01",
+    "q-fi-duration-02"
+  ],
+  "connects": [
+    "G268",
+    "G266",
+    "G284",
+    "G69"
+  ],
+  "status": "authored"
+}

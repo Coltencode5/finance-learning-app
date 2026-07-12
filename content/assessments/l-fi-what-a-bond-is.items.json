@@ -1,0 +1,76 @@
+{
+  "lesson": "l-fi-what-a-bond-is",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-what-a-bond-is-01",
+      "concept_ids": [
+        "G264",
+        "fixed-income.z1.2"
+      ],
+      "type": "comparison",
+      "stem": "Which of a bond's key numbers is NOT fixed in the bond's contract?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The face value",
+          "correct": false,
+          "explanation": "Face value is written into the contract — it's the amount repaid at maturity and the base coupons are computed on."
+        },
+        {
+          "id": "b",
+          "text": "The coupon rate",
+          "correct": false,
+          "explanation": "For a plain fixed-rate bond the coupon is contractual — set at issue and unchanged thereafter."
+        },
+        {
+          "id": "c",
+          "text": "The price",
+          "correct": true,
+          "explanation": "Right. Price is set by the market, not the contract — it moves every day. That's the crack through which all of bond math enters."
+        },
+        {
+          "id": "d",
+          "text": "The maturity date",
+          "correct": false,
+          "explanation": "Maturity is contractual. (A callable bond gives the issuer an option to redeem early — but the dates and terms of that option are themselves written into the contract.)"
+        }
+      ]
+    },
+    {
+      "id": "q-fi-what-a-bond-is-02",
+      "concept_ids": [
+        "G264",
+        "fixed-income.z1.3"
+      ],
+      "type": "cause-effect",
+      "stem": "A profitable company needs $500m for a new plant. Why might it issue bonds rather than new shares?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bonds never have to be repaid",
+          "correct": false,
+          "explanation": "Backwards — bonds must be repaid at maturity. It's equity that has no repayment date."
+        },
+        {
+          "id": "b",
+          "text": "Borrowing raises the cash without diluting the existing owners' stake",
+          "correct": true,
+          "explanation": "Exactly. Debt keeps ownership intact — bondholders get interest and principal, not a share of the company. That's the issuer's core reason to borrow rather than issue stock."
+        },
+        {
+          "id": "c",
+          "text": "Bond investors accept whatever terms the company sets",
+          "correct": false,
+          "explanation": "The market sets the terms: the coupon must match what investors demand for that issuer, maturity, and moment, or the deal doesn't get done."
+        },
+        {
+          "id": "d",
+          "text": "Bonds are risk-free for the company",
+          "correct": false,
+          "explanation": "Debt adds a hard obligation — miss the payments and creditors can accelerate and force a default. It's anything but risk-free for the issuer."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lesson": "l-fi-rate-vs-credit-risk",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-rate-vs-credit-risk-01",
+      "concept_ids": [
+        "G277",
+        "fixed-income.z4.1"
+      ],
+      "type": "scenario",
+      "stem": "Government yields are flat on the day, but an airline's bonds drop 4 points on news of a fare war. Which risk channel just fired, and how do you know?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rate risk — bond prices only ever move because of rates",
+          "correct": false,
+          "explanation": "The risk-free base didn't move: government yields were flat. This price move came through the other channel entirely."
+        },
+        {
+          "id": "b",
+          "text": "Credit risk — the spread widened as the market repriced the airline's ability to pay, while the risk-free base stood still",
+          "correct": true,
+          "explanation": "Correct. Decompose the yield: the base is unchanged, so the widening spread did the damage. Issuer-specific news moving a bond's price while rates sit still is the signature of the credit channel."
+        },
+        {
+          "id": "c",
+          "text": "Neither — a 4-point drop means someone made a trading error",
+          "correct": false,
+          "explanation": "Multi-point drops on bad issuer news are routine in credit markets. The market is repricing a promise, not fat-fingering an order."
+        },
+        {
+          "id": "d",
+          "text": "Both channels equally, by definition",
+          "correct": false,
+          "explanation": "The channels are separable — that's the point of the decomposition. Here one of them is observably still, so the move is attributable to the other."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-rate-vs-credit-risk-02",
+      "concept_ids": [
+        "G277",
+        "G70"
+      ],
+      "type": "comparison",
+      "stem": "The same company has a private loan priced at a contractual spread over the floating base rate, and a traded bond whose spread over the government curve is quoted in the market. Six months later, which spread has almost certainly moved — and how would the other one change if it did?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The loan's — private lenders re-quote their spreads daily",
+          "correct": false,
+          "explanation": "The loan spread is written into the agreement. It doesn't re-quote with the market; it changes only by amendment, repricing, or a pre-agreed pricing grid."
+        },
+        {
+          "id": "b",
+          "text": "The bond's — it's recomputed from the market price with every trade; the loan spread would change only through an amendment, a repricing, or a pricing grid",
+          "correct": true,
+          "explanation": "Right on both halves. The bond spread is observed, so six months of trading guarantees it has moved. The loan spread is contractual — it can change, but by agreement or a pre-set grid tied to the borrower's leverage or rating, not by trading."
+        },
+        {
+          "id": "c",
+          "text": "Both change identically — same borrower, same risk",
+          "correct": false,
+          "explanation": "Same underlying risk, different objects: one is a contract term, one is a market reading. They inform each other but move on entirely different clocks."
+        },
+        {
+          "id": "d",
+          "text": "Neither — spreads are fixed at issuance and never change",
+          "correct": false,
+          "explanation": "The bond's spread is a live market quote, and even the loan's contractual margin can be amended, repriced, or stepped by a grid."
+        }
+      ]
+    }
+  ]
+}

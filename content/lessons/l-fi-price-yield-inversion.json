@@ -1,0 +1,60 @@
+{
+  "id": "l-fi-price-yield-inversion",
+  "title": "Why Bond Prices Fall When Rates Rise",
+  "teaches": [
+    "G266"
+  ],
+  "draws_on": [
+    "fixed-income.z2.2",
+    "fixed-income.z2.3",
+    "fixed-income.z1.9"
+  ],
+  "estimated_minutes": 5,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "The see-saw",
+      "body": "The most important sentence in fixed income: when interest rates rise, existing bond prices fall — and vice versa. It isn't a market mood or a rule of thumb. It falls straight out of arithmetic you already have: fixed cash flows, discounted harder, are worth less today."
+    },
+    {
+      "type": "example",
+      "heading": "Your 3% bond in a 5% world",
+      "body": "You hold a bond paying a 3% coupon. Rates rise, and new bonds from equally safe issuers now pay 5%. Who would pay full price for your 3% stream when 5% is on the shelf beside it? Nobody — until your bond's price drops far enough that a buyer earns roughly 5% on it too. The price falls until the old bond competes.",
+      "role": "personal-investing"
+    },
+    {
+      "type": "key_point",
+      "heading": "Price adjusts until yields match",
+      "body": "The market doesn't renegotiate your bond's coupon — it reprices the bond. The price moves to the level where the old bond's yield matches what the market now demands for that issuer and maturity. The coupon is a time capsule of the rate environment at issue; the price is what reconciles that capsule with today."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-price-yield-inversion-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "The pull to par — with caveats",
+      "body": "One force runs the other way. For a plain bond that runs its course, the contract repays face value at maturity — so as maturity nears, the price walks back toward par: a discounted bond drifts up, a premium bond drifts down. Rate moves swing the price around a path that lands on 100. The caveats matter, though: a callable bond may be redeemed early at a set price, and a distressed issuer may default or restructure, in which case the bond never reaches par at all. Pull to par describes the plain, performing, non-callable case."
+    },
+    {
+      "type": "key_point",
+      "heading": "Not a straight line",
+      "body": "The see-saw isn't linear. For a given bond, a one-point fall in yields tends to lift the price a little MORE than a one-point rise cuts it. The relationship curves. Two lessons from now that curvature gets a name — convexity — and it turns out to be worth money."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-price-yield-inversion-02"
+    }
+  ],
+  "checks": [
+    "q-fi-price-yield-inversion-01",
+    "q-fi-price-yield-inversion-02"
+  ],
+  "connects": [
+    "G248",
+    "G267",
+    "G285",
+    "G259"
+  ],
+  "status": "authored"
+}
