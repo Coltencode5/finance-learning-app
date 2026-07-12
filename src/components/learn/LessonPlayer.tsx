@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import {
   bootstrapAnalytics,
@@ -48,6 +48,11 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
   const [retryClear, setRetryClear] = useState<Record<string, boolean>>({});
   const [transitioning, setTransitioning] = useState(false);
 
+  // Synchronous re-entry guard. State updates are async, so `transitioning`
+  // alone cannot stop a second tap dispatched in the same frame.
+  const navLockRef = useRef(false);
+  const transitionTimerRef = useRef<number | null>(null);
+
   useEffect(() => {
     let state = ensureProgress();
     state = bootstrapAnalytics(state);
@@ -79,6 +84,16 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
     setPhase("ready");
   }, [pathId, lesson.id, lesson.checks, screenCount]);
 
+  useEffect(() => {
+    return () => {
+      if (transitionTimerRef.current !== null) {
+        window.clearTimeout(transitionTimerRef.current);
+        transitionTimerRef.current = null;
+      }
+      navLockRef.current = false;
+    };
+  }, []);
+
   const persist = (next: ProgressState) => {
     setProgress(next);
     saveProgress(next);
@@ -101,24 +116,39 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
     !showCompletion &&
     (currentScreen?.type === "check" ? checkReady : true);
 
+  /** Claim the navigation lock. Returns false if a transition is in flight. */
+  const lockNav = (): boolean => {
+    if (navLockRef.current) return false;
+    navLockRef.current = true;
+    return true;
+  };
+
+  const unlockNav = () => {
+    navLockRef.current = false;
+  };
+
   const animateThen = (fn: () => void) => {
     const reduce =
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
       fn();
+      unlockNav();
       return;
     }
     setTransitioning(true);
-    window.setTimeout(() => {
+    transitionTimerRef.current = window.setTimeout(() => {
+      transitionTimerRef.current = null;
       fn();
       setTransitioning(false);
+      unlockNav();
     }, 180);
   };
 
   const goForward = () => {
     if (!progress || !currentScreen) return;
     if (currentScreen.type === "check" && !checkReady) return;
+    if (!lockNav()) return;
 
     trackScreenAdvanced(
       progress,
@@ -138,6 +168,7 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
     if (isLast) {
       if (!canCompleteLesson(next, lesson.id, lesson.checks)) {
         persist(next);
+        unlockNav();
         return;
       }
       const result = completeLesson(next, pathId, lesson.id, data.pathLessonIds);
@@ -159,6 +190,7 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
 
   const goBack = () => {
     if (showCompletion) {
+      if (!lockNav()) return;
       animateThen(() => {
         setShowCompletion(false);
         setScreenIndex(screenCount - 1);
@@ -166,6 +198,7 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
       return;
     }
     if (screenIndex <= 0) return;
+    if (!lockNav()) return;
     animateThen(() => setScreenIndex((i) => i - 1));
   };
 
@@ -293,7 +326,7 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
             type="button"
             className={styles.secondaryBtn}
             onClick={goBack}
-            disabled={!canGoBack || screenIndex === 0}
+            disabled={!canGoBack || screenIndex === 0 || transitioning}
           >
             Previous
           </button>
@@ -301,7 +334,7 @@ export function LessonPlayer({ data }: { data: LessonPlayerData }) {
             type="button"
             className={styles.primaryBtn}
             onClick={goForward}
-            disabled={!canContinue}
+            disabled={!canContinue || transitioning}
           >
             {screenIndex >= screenCount - 1 ? "Finish lesson" : "Continue"}
           </button>

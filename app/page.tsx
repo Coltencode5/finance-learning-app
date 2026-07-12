@@ -1,18 +1,24 @@
 import Link from "next/link";
 
-import { getActiveModules, getDraftModules, moduleHref } from "@/lib/graph";
+import {
+  getActiveModules,
+  getDraftModules,
+  getGraphTotals,
+  moduleHref,
+} from "@/lib/graph";
 
 export default function HomePage() {
   const modules = getActiveModules();
   const drafts = getDraftModules();
+  const totals = getGraphTotals();
   const showDrafts = process.env.SHOW_DRAFT_MODULES === "1";
 
   return (
     <>
       <h1>Finance Learning Graph</h1>
       <p className="muted">
-        {modules.length} active modules, 235 globals, 478 zone nodes — loaded from
-        canonical JSON at build time.
+        {totals.activeModules} active modules, {totals.globals} globals,{" "}
+        {totals.zoneNodes} zone nodes — loaded from canonical JSON at build time.
       </p>
       <p>
         <Link href="/learn">Start the Fixed Income learning path →</Link>

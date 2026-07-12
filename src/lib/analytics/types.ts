@@ -1,14 +1,26 @@
 import type { OptionId, ScreenType } from "@/lib/lessons/types";
 
-export type AnalyticsEventName =
-  | "path_started"
-  | "lesson_started"
-  | "screen_advanced"
-  | "question_answered"
-  | "lesson_completed"
-  | "session_ended"
-  | "path_completed"
-  | "return_session";
+/**
+ * The only event names permitted to leave the SDK. This array is the single
+ * source of truth: the event-name type is derived from it, and the PostHog
+ * provider enforces it in `before_send`.
+ */
+export const APPROVED_EVENTS = [
+  "path_started",
+  "lesson_started",
+  "screen_advanced",
+  "question_answered",
+  "lesson_completed",
+  "session_ended",
+  "path_completed",
+  "return_session",
+] as const;
+
+export type AnalyticsEventName = (typeof APPROVED_EVENTS)[number];
+
+export function isApprovedEvent(name: string): name is AnalyticsEventName {
+  return (APPROVED_EVENTS as readonly string[]).includes(name);
+}
 
 export interface EventEnvelopeBase {
   schema_version: 1;

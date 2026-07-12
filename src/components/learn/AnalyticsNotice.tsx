@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import { syncAnalyticsOptOut } from "@/lib/analytics/posthog";
 import {
   isAnalyticsOptedOut,
   setAnalyticsOptOut,
@@ -41,6 +42,7 @@ export function AnalyticsNotice() {
         onClick={() => {
           const next = !optedOut;
           setAnalyticsOptOut(next);
+          syncAnalyticsOptOut(next);
           setOptedOut(next);
         }}
       >
