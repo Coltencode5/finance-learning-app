@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-validate.py — the correctness gate for all canonical content.
-
-Runs five check families over content/:
+Runs check families over content/:
   1. schema        — every JSON object conforms to /schemas (jsonschema if
                      installed, otherwise a built-in structural check)
   2. ids           — G-number contiguity from G1, no duplicate G-numbers,
@@ -17,6 +15,8 @@ Runs five check families over content/:
                      module actually contains a node hosting it (warning)
   6. graph         — self-edges, orphan nodes, low-reference globals (warnings)
   7. module        — five-zone structure, new-global numbering, by_module presence
+  8. lessons       — lesson/path/assessment schemas and V-1…V-13 integrity
+                     (vacuous pass if those directories are absent)
 
 Exit code 0 = pass (warnings allowed), 1 = errors found.
 Usage: python pipeline/validate/validate.py [--repo-root PATH] [--strict]
@@ -31,6 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from checks.graph_checks import check_graph
+from checks.lesson_checks import check_lessons
 from checks.new_module_checks import check_new_modules
 from lib.module_utils import is_draft
 
@@ -188,10 +189,25 @@ def main() -> int:
     check_duplicates(globals_, errors, warnings)
     check_required(globals_, nodes, errors, warnings, draft_slugs)
     check_new_modules(root, globals_, modules, nodes, errors, warnings)
+    check_lessons(root, globals_, modules, nodes, errors, warnings)
     if not args.strict:
         check_graph(root, nodes, globals_, warnings)
 
-    print(f"content: {len(globals_)} globals, {len(modules)} modules, {len(nodes)} zone nodes")
+    lessons_dir = root / "content/lessons"
+    paths_dir = root / "content/paths"
+    assessments_dir = root / "content/assessments"
+    n_lessons = len(list(lessons_dir.glob("*.json"))) if lessons_dir.is_dir() else 0
+    n_paths = len(list(paths_dir.glob("*.json"))) if paths_dir.is_dir() else 0
+    n_assess = (
+        len(list(assessments_dir.glob("*.items.json"))) if assessments_dir.is_dir() else 0
+    )
+    lesson_note = (
+        f", {n_lessons} lessons, {n_paths} paths, {n_assess} assessment files"
+        if (lessons_dir.is_dir() or paths_dir.is_dir() or assessments_dir.is_dir())
+        else " (no lesson layer)"
+    )
+
+    print(f"content: {len(globals_)} globals, {len(modules)} modules, {len(nodes)} zone nodes{lesson_note}")
     print(f"result: {len(errors)} errors, {len(warnings)} warnings\n")
     for e in errors:
         print(f"ERROR   {e}")

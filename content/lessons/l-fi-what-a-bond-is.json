@@ -1,0 +1,72 @@
+{
+  "id": "l-fi-what-a-bond-is",
+  "title": "What a Bond Is",
+  "teaches": [
+    "G264"
+  ],
+  "draws_on": [
+    "fixed-income.z1.1",
+    "fixed-income.z1.2",
+    "fixed-income.z1.3"
+  ],
+  "estimated_minutes": 5,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "A tradable IOU",
+      "body": "A bond is borrowing turned into a security. An issuer — a government or a company — borrows from investors and puts two promises in writing: regular interest payments along the way, and the face amount back at the end. What makes it a bond rather than just a loan is that the promise is standardized and transferable: it can be sold on to someone else, and the market puts a price on it every day."
+    },
+    {
+      "type": "key_point",
+      "heading": "Three numbers in the contract, one from the market",
+      "body": "The contract fixes the face value (the amount repaid at the end, and the base the interest is computed on), the coupon rate (the contractual interest, typically paid twice a year in the US), and the maturity (the date the debt ends). The fourth number — the price — is not in the contract at all. It is whatever the market will pay today, quoted per 100 of face value."
+    },
+    {
+      "type": "example",
+      "heading": "One bond, in numbers",
+      "body": "A company issues a bond with $1,000 face value, a 5% coupon, and a 10-year maturity. As the holder, you receive $50 a year (usually as two $25 payments) for ten years, then the $1,000 face amount at the end — provided the issuer keeps paying. That schedule is fixed the day the bond is born, no matter what markets do afterward."
+    },
+    {
+      "type": "comparison",
+      "heading": "A direct loan vs. a bond",
+      "left": {
+        "label": "Direct (bilateral) loan",
+        "body": "Privately negotiated between a borrower and one lender or a small club. Terms are bespoke, the lender monitors the borrower directly, and there is usually no ready market to sell into — the lender generally expects to hold it."
+      },
+      "right": {
+        "label": "Bond",
+        "body": "A standardized security: uniform terms, many holders, and a secondary market that reprices it continuously. If you want out, you sell at whatever today's price is. Larger bonds are typically rated by public agencies, though not every bond carries a rating."
+      },
+      "verdict": "The load-bearing difference is standardization and tradability, not the act of lending. The line is a spectrum, not a wall: syndicated corporate loans sit in between — distributed to many institutional lenders and actively traded in their own secondary market."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-what-a-bond-is-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "Why both sides show up",
+      "body": "Issuers borrow this way to raise large sums without giving up ownership — debt doesn't dilute shareholders the way issuing stock does. Investors lend for predictable income and for seniority: if things go wrong, debt holders stand ahead of stockholders in the queue. Insurers, pensions, and retirees are structurally hungry for exactly this trade."
+    },
+    {
+      "type": "key_point",
+      "heading": "\"Fixed\" income still moves",
+      "body": "The payments are fixed. The price is not. Between issue and maturity, a bond reprices continuously as interest rates and the issuer's creditworthiness change. Why and how it reprices is the entire next stretch of this path."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-what-a-bond-is-02"
+    }
+  ],
+  "checks": [
+    "q-fi-what-a-bond-is-01",
+    "q-fi-what-a-bond-is-02"
+  ],
+  "connects": [
+    "G265",
+    "G266",
+    "G29",
+    "G143"
+  ],
+  "status": "authored"
+}

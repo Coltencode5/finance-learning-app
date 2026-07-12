@@ -1,0 +1,75 @@
+{
+  "lesson": "l-fi-price-yield-inversion",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-price-yield-inversion-01",
+      "concept_ids": [
+        "G266"
+      ],
+      "type": "directional-reasoning",
+      "stem": "Market interest rates fall sharply. What happens to the price of an existing fixed-coupon bond, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It rises — its fixed coupon is now more attractive than what new bonds offer",
+          "correct": true,
+          "explanation": "Correct. The old bond's above-market coupon is suddenly scarce. Buyers bid its price up until its yield falls into line with the new, lower market rate."
+        },
+        {
+          "id": "b",
+          "text": "It falls — lower rates mean the issuer is weaker",
+          "correct": false,
+          "explanation": "That mixes the channels. Rates are the price of time, not a statement about this issuer's health. A pure rate fall lifts existing bond prices."
+        },
+        {
+          "id": "c",
+          "text": "Nothing — the contract fixed all the payments",
+          "correct": false,
+          "explanation": "The payments are fixed; the price is not. The market reprices the fixed stream continuously — that gap is the core of this whole path."
+        },
+        {
+          "id": "d",
+          "text": "It rises only if the issuer raises the coupon",
+          "correct": false,
+          "explanation": "Issuers don't adjust coupons on outstanding fixed-rate bonds. The price does all the adjusting."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-price-yield-inversion-02",
+      "concept_ids": [
+        "G266",
+        "fixed-income.z1.9"
+      ],
+      "type": "cause-effect",
+      "stem": "In 2022, central banks raised rates rapidly — and highly rated bond funds posted large losses. What's the mechanism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The funds' bonds defaulted en masse",
+          "correct": false,
+          "explanation": "There was no default wave in high-grade bonds — the issuers kept paying. The losses came through prices, not broken promises."
+        },
+        {
+          "id": "b",
+          "text": "Existing fixed-coupon bonds were repriced downward so their yields matched the new, higher market rates",
+          "correct": true,
+          "explanation": "Exactly. Rising rates push every outstanding fixed-rate bond's price down — the see-saw applied to whole portfolios at once. High credit quality means low default risk, not immunity to rate moves."
+        },
+        {
+          "id": "c",
+          "text": "Investors panicked irrationally and sold below fair value",
+          "correct": false,
+          "explanation": "No panic required — the repricing is arithmetic. Discount fixed cash flows at higher rates and the fair value itself is lower."
+        },
+        {
+          "id": "d",
+          "text": "The funds' managers picked unusually bad bonds",
+          "correct": false,
+          "explanation": "The losses were market-wide, not selection error. Any portfolio of fixed-coupon bonds loses price value when rates jump — the question is how much, which is what the next lessons measure."
+        }
+      ]
+    }
+  ]
+}

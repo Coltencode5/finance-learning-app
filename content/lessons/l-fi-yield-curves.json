@@ -1,0 +1,57 @@
+{
+  "id": "l-fi-yield-curves",
+  "title": "Yield Curves",
+  "teaches": [
+    "G269"
+  ],
+  "draws_on": [
+    "fixed-income.z2.7",
+    "fixed-income.z2.8"
+  ],
+  "estimated_minutes": 7,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "One issuer, every maturity",
+      "body": "Line up one borrower's bonds — say, the US Treasury's — from shortest maturity to longest, and plot each one's yield. That line is the yield curve: the market's price of time at every horizon, in one picture. Most of the time it slopes upward — lenders want more to lock money away for longer."
+    },
+    {
+      "type": "key_point",
+      "heading": "One curve, three hats",
+      "body": "The same curve does three jobs. It is the ANCHOR: the risk-free base other assets are priced off. It is a SIGNAL: its shape carries information about the market's macro view. And it is a TOOLKIT: from its prices you can extract discount factors, spot rates, and forward rates that price any fixed cash flow. Always know which hat the curve is wearing in a given conversation."
+    },
+    {
+      "type": "explanation",
+      "heading": "The toolkit, briefly",
+      "body": "A spot rate is the pure yield for a single payment at one future date. A forward rate is the rate the curve implies for a period beginning in the future — today's 1-year and 2-year yields together imply a rate for the year starting one year from now. Extracting spots and forwards from bond prices turns the curve into a pricing machine."
+    },
+    {
+      "type": "example",
+      "heading": "\"Priced in\" is not \"predicted\"",
+      "body": "When a strategist says the market 'has cuts priced in,' they are reading forward rates. Forwards are break-evens, not forecasts: they are the future rates at which rolling short bonds and holding long bonds would pay the same. They also embed a term premium — extra compensation demanded for holding longer bonds — so the forward path and the market's genuine expected path can differ. What the curve pays you and what it predicts are two different questions.",
+      "role": "markets"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-yield-curves-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "When the curve inverts",
+      "body": "Occasionally short yields sit ABOVE long yields — an inverted curve. The primary beginner reading, and the historically useful one, is expectations: the market anticipates that today's high short rates will fall, which tends to accompany expectations of slowdown and central-bank cuts. But shape has more than one driver — a shrinking or negative term premium, and supply-and-demand pressures from investors with strong maturity preferences, can bend the curve too. Expectations first; one mechanism is not the whole story."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-yield-curves-02"
+    }
+  ],
+  "checks": [
+    "q-fi-yield-curves-01",
+    "q-fi-yield-curves-02"
+  ],
+  "connects": [
+    "G248",
+    "G257"
+  ],
+  "status": "authored"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "l-fi-convexity",
+  "title": "Convexity",
+  "teaches": [
+    "G268"
+  ],
+  "draws_on": [
+    "fixed-income.z2.10",
+    "fixed-income.z2.9"
+  ],
+  "estimated_minutes": 6,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "Modified duration is a straight-line guess",
+      "body": "Modified duration converts a yield move into a price move with one multiplication — a straight line. But the real price–yield relationship curves, as you saw two lessons ago. Duration is the tangent to that curve: accurate for small moves, and increasingly off for large ones. Convexity is the name of the bend."
+    },
+    {
+      "type": "key_point",
+      "heading": "For a plain bond, the error runs in your favour",
+      "body": "For an option-free bond, duration's error is lopsided in a helpful way: when yields drop a lot, the price rises MORE than duration predicted; when yields jump a lot, the price falls LESS than predicted. That bowed-toward-you shape is positive convexity — an asymmetry the market prices, and one worth owning when big moves are likely."
+    },
+    {
+      "type": "misconception",
+      "myth": "Duration tells you exactly how much a bond's price changes for any move in yields.",
+      "reality": "Modified duration is a linear approximation — reliable for small moves, systematically off for large ones. And the miss has a direction: for an ordinary option-free bond, the actual price beats the duration estimate on the way up and undershoots the damage on the way down. Convexity is the correction term.",
+      "why_it_matters": "Sizing a large-rate-move trade or hedge with duration alone gets the number wrong in a predictable direction — and predictable errors are exactly what markets charge for or exploit."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-convexity-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "When the curve bends the wrong way",
+      "body": "Some bonds bend AGAINST the holder. A mortgage-backed security is the classic case: when rates fall, homeowners refinance and repay early — returning your money precisely when reinvesting it is least attractive — so the price stops rising. When rates rise, refinancing dries up and the bond's expected life stretches out INTO the sell-off. Gains capped, losses extended: negative convexity. A callable corporate bond carries the same disease in miniature, since the issuer's right to redeem is a homeowner's refinancing option wearing a suit."
+    },
+    {
+      "type": "example",
+      "heading": "Two portfolios, same duration, different bend",
+      "body": "A desk can hold one medium-maturity bond (a bullet) or split the same money between a short and a long bond (a barbell) with the SAME overall duration. For small yield moves they behave alike; for large PARALLEL moves in the whole curve, the barbell — with more dispersed cash flows and therefore more convexity — comes out ahead in both directions. The caveat professionals insist on: if the curve twists rather than shifting in parallel, that comparison can flip. Convexity is a statement about a curve that moves as one.",
+      "role": "hedge-funds"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-convexity-02"
+    }
+  ],
+  "checks": [
+    "q-fi-convexity-01",
+    "q-fi-convexity-02"
+  ],
+  "connects": [
+    "G267",
+    "G280",
+    "G285"
+  ],
+  "status": "authored"
+}

@@ -1,0 +1,76 @@
+{
+  "lesson": "l-fi-convexity",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-convexity-01",
+      "concept_ids": [
+        "G268",
+        "G267"
+      ],
+      "type": "directional-reasoning",
+      "stem": "Yields fall by a full 2 percentage points. For an ordinary, option-free bond, how does the actual price change compare with the estimate from modified duration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The actual gain is larger than duration predicted",
+          "correct": true,
+          "explanation": "Correct. The price–yield curve bows toward the holder, so on a big downward move in yields, positive convexity adds to the straight-line estimate. Duration undershoots the gain."
+        },
+        {
+          "id": "b",
+          "text": "The actual gain is smaller than duration predicted",
+          "correct": false,
+          "explanation": "That's the signature of NEGATIVE convexity — prepayable or callable bonds. A plain bond's curvature works for you, not against you."
+        },
+        {
+          "id": "c",
+          "text": "Exactly what duration predicted — that's what duration is for",
+          "correct": false,
+          "explanation": "Duration is exact only in the limit of tiny moves. Two full percentage points is far outside straight-line territory; the curvature takes over."
+        },
+        {
+          "id": "d",
+          "text": "The price falls — large moves reverse the see-saw",
+          "correct": false,
+          "explanation": "The see-saw never reverses: yields down, price up. Convexity changes the SIZE of the move, never its direction."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-convexity-02",
+      "concept_ids": [
+        "G268",
+        "G285"
+      ],
+      "type": "cause-effect",
+      "stem": "Rates fall sharply, but a callable bond's price rises only slightly and then stalls, well short of comparable non-callable bonds. Why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The market expects the issuer to redeem the bond early at the call price, which caps the upside",
+          "correct": true,
+          "explanation": "Exactly. Falling rates make refinancing attractive to the ISSUER — and the issuer holds the option. The price can't rise far past the call price once redemption looks likely. Capped gains on a rate rally is negative convexity in action."
+        },
+        {
+          "id": "b",
+          "text": "Callable bonds have no duration",
+          "correct": false,
+          "explanation": "They have duration — it's their CONVEXITY that's pathological. The price still responds to rates; it just bends the wrong way as the call comes into view."
+        },
+        {
+          "id": "c",
+          "text": "The issuer's credit must have deteriorated at the same time",
+          "correct": false,
+          "explanation": "No credit event is needed — the stall is a pure structure effect. The embedded option explains it on its own."
+        },
+        {
+          "id": "d",
+          "text": "Falling rates hurt all corporate bonds",
+          "correct": false,
+          "explanation": "Falling rates lift ordinary bond prices — that's the comparison in the question. Only the embedded call explains why this one lags."
+        }
+      ]
+    }
+  ]
+}

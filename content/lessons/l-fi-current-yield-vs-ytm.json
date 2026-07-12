@@ -1,0 +1,65 @@
+{
+  "id": "l-fi-current-yield-vs-ytm",
+  "title": "Current Yield vs. Yield to Maturity",
+  "teaches": [
+    "G265"
+  ],
+  "draws_on": [
+    "fixed-income.z2.5",
+    "fixed-income.z2.3"
+  ],
+  "estimated_minutes": 7,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "One word, several numbers",
+      "body": "\"Yield\" is the most overloaded word in fixed income. The coupon is what the bond pays — a contractual rate on face value. Current yield is the coupon divided by today's price — income right now. Yield to maturity (YTM) accounts for every remaining promised cash flow at today's price. And for a callable bond, the market usually quotes yield-to-worst instead. Several different calculations, one word. Never assume which one you're being handed — ask."
+    },
+    {
+      "type": "key_point",
+      "heading": "Current yield: income now, and only income",
+      "body": "Buy a $1,000-face 5% bond at $900 and your current yield is 5.6% — you paid less, so the same $50 goes further. Simple, useful, and incomplete: it says nothing about the fact that a $900 bond is contracted to repay $1,000 at maturity.",
+      "formula": "Current yield = annual coupon / price"
+    },
+    {
+      "type": "explanation",
+      "heading": "YTM: the whole promised story in one rate",
+      "body": "Yield to maturity is the internal rate of return on the bond's promised remaining cash flows at today's price — the discount rate at which all remaining coupons plus the face value exactly equal what you're paying. It is a quote built on assumptions: that you hold to maturity, that the issuer pays in full and on time (no default, no restructuring), and that every coupon is reinvested at that same YTM. Break any of those and your realized return differs from the quote."
+    },
+    {
+      "type": "misconception",
+      "myth": "Current yield tells you the return you'll earn on a bond.",
+      "reality": "Current yield measures only today's income. It ignores the pull to par: a bond bought below face value has a built-in gain to maturity that current yield misses, and one bought above face has a built-in loss it hides. YTM accounts for both; current yield never does.",
+      "why_it_matters": "A premium bond can flash a juicy current yield while quietly locking in a capital loss to maturity. Comparing bonds on current yield is how retail investors get fooled — and it's a classic interview trap."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-current-yield-vs-ytm-01"
+    },
+    {
+      "type": "example",
+      "heading": "Same YTM is not the same bond",
+      "body": "A 7% coupon bond at 108 and a 3% coupon bond at 92 can carry the SAME yield to maturity. The premium bond pays more income and drifts down to par; the discount bond pays less and drifts up. Equal YTM, but not equal economics: they differ in when the cash arrives, how exposed you are to reinvesting coupons, how they're taxed, how much their prices move when rates move (duration and convexity — coming shortly), and whether either carries an embedded call. YTM makes them comparable on one dimension, not identical.",
+      "role": "personal-investing"
+    },
+    {
+      "type": "key_point",
+      "heading": "Which yield are you being quoted?",
+      "body": "For a plain bond, a single quoted 'yield' usually means YTM. For a callable bond, the convention is yield-to-worst: recompute the yield assuming the issuer redeems at each possible call date, and quote the lowest result. Elsewhere the same word means something else again — a fund's distribution yield, a private loan's all-in yield. The number is only as good as the question it answers."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-current-yield-vs-ytm-02"
+    }
+  ],
+  "checks": [
+    "q-fi-current-yield-vs-ytm-01",
+    "q-fi-current-yield-vs-ytm-02"
+  ],
+  "connects": [
+    "G1",
+    "G58",
+    "G285"
+  ],
+  "status": "authored"
+}

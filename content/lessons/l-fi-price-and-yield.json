@@ -1,0 +1,59 @@
+{
+  "id": "l-fi-price-and-yield",
+  "title": "Price and Yield",
+  "teaches": [
+    "G266"
+  ],
+  "draws_on": [
+    "fixed-income.z2.1",
+    "fixed-income.z2.2"
+  ],
+  "estimated_minutes": 6,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "A bond's price is just present value",
+      "body": "You already know the bond's promised cash flows — the contract fixes them. So what should you pay today for a known stream of future payments? The same answer as everywhere in finance: their present value. A dollar arriving in ten years is worth less than a dollar today, so each cash flow is discounted before you add them up."
+    },
+    {
+      "type": "key_point",
+      "heading": "The pricing equation",
+      "body": "Price equals every promised future cash flow, each discounted at the yield. The yield y is the single rate that makes the discounting reproduce the market price — one number summarizing what the market demands for waiting and for bearing this issuer's risk.",
+      "formula": "P = Σ CFₜ / (1 + y)ᵗ"
+    },
+    {
+      "type": "example",
+      "heading": "Run the machine once",
+      "body": "Take the $1,000 bond with a 5% coupon and 10 years left, and use annual coupons to keep the arithmetic clean. Discount its $50 coupons and final $1,000 at y = 5%: the pieces sum to exactly $1,000 — it prices at par. Now discount the same fixed cash flows at y = 6%: every piece shrinks, and the sum falls to roughly $926. Same bond, same contract, lower price — purely because the discount rate rose."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-price-and-yield-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "What moves the yield",
+      "body": "The yield the market demands has two main layers: the risk-free base — what government bonds of similar maturity pay, the price of pure time — plus a spread compensating for this issuer's credit risk and for the bond's liquidity. When either layer moves, y moves, and the price mechanically follows. Professionals attribute bond price moves to those two channels: 'rates' or 'spread'."
+    },
+    {
+      "type": "key_point",
+      "heading": "Yield is derived, not written",
+      "body": "Nobody decrees a bond's yield. The market sets a price; the yield is the rate that makes the pricing equation reproduce it. Price and yield are two descriptions of the same fact — quote either one and the other is implied."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-price-and-yield-02"
+    }
+  ],
+  "checks": [
+    "q-fi-price-and-yield-01",
+    "q-fi-price-and-yield-02"
+  ],
+  "connects": [
+    "G90",
+    "G265",
+    "G248",
+    "G277"
+  ],
+  "status": "authored"
+}

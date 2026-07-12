@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lesson",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "teaches",
+    "draws_on",
+    "estimated_minutes",
+    "screens",
+    "checks",
+    "connects",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^l-[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "teaches": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^(G[1-9][0-9]*|[a-z0-9-]+\\.z[1-5]\\.[0-9]+)$"
+      }
+    },
+    "draws_on": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+\\.z[1-5]\\.[0-9]+$"
+      }
+    },
+    "estimated_minutes": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 12
+    },
+    "screens": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 12,
+      "items": {
+        "$ref": "#/definitions/screen"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^q-[a-z0-9-]+-[0-9]{2}$"
+      }
+    },
+    "connects": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^G[1-9][0-9]*$"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "authored",
+        "reviewed",
+        "published"
+      ]
+    }
+  },
+  "definitions": {
+    "screen": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "body"
+          ],
+          "properties": {
+            "type": {
+              "const": "explanation"
+            },
+            "heading": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "body"
+          ],
+          "properties": {
+            "type": {
+              "const": "key_point"
+            },
+            "heading": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            },
+            "formula": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "body"
+          ],
+          "properties": {
+            "type": {
+              "const": "example"
+            },
+            "heading": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            },
+            "role": {
+              "type": "string",
+              "enum": [
+                "investment-banking",
+                "private-equity",
+                "private-credit",
+                "asset-management",
+                "wealth-management",
+                "equity-research",
+                "hedge-funds",
+                "personal-investing",
+                "markets"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "left",
+            "right"
+          ],
+          "properties": {
+            "type": {
+              "const": "comparison"
+            },
+            "heading": {
+              "type": "string"
+            },
+            "left": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "body"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "right": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "body"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "verdict": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "myth",
+            "reality"
+          ],
+          "properties": {
+            "type": {
+              "const": "misconception"
+            },
+            "myth": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reality": {
+              "type": "string",
+              "minLength": 1
+            },
+            "why_it_matters": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "item"
+          ],
+          "properties": {
+            "type": {
+              "const": "check"
+            },
+            "item": {
+              "type": "string",
+              "pattern": "^q-[a-z0-9-]+-[0-9]{2}$"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

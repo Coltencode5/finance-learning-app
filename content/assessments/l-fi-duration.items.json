@@ -1,0 +1,75 @@
+{
+  "lesson": "l-fi-duration",
+  "status": "authored",
+  "items": [
+    {
+      "id": "q-fi-duration-01",
+      "concept_ids": [
+        "G267"
+      ],
+      "type": "formula-interpretation",
+      "stem": "A bond has a modified duration of 8. Yields fall by 0.25 percentage points. Approximately what happens to its price?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It rises about 2%",
+          "correct": true,
+          "explanation": "Right: −8 × (−0.25%) ≈ +2%. Modified duration converts the yield move into the price move — sign flipped, size scaled."
+        },
+        {
+          "id": "b",
+          "text": "It falls about 2%",
+          "correct": false,
+          "explanation": "Direction error — yields FELL, so the price rises. The see-saw still runs everything; duration only sizes the move."
+        },
+        {
+          "id": "c",
+          "text": "It rises about 8%",
+          "correct": false,
+          "explanation": "That's the move for a full one-point change in yields. Scale by the actual move: 8 × 0.25 = 2, not 8."
+        },
+        {
+          "id": "d",
+          "text": "Nothing — duration only matters if you hold to maturity",
+          "correct": false,
+          "explanation": "Modified duration is about NOW: it measures how today's price responds to today's yield moves. Holding to maturity is a separate question."
+        }
+      ]
+    },
+    {
+      "id": "q-fi-duration-02",
+      "concept_ids": [
+        "G267",
+        "fixed-income.z2.9"
+      ],
+      "type": "directional-reasoning",
+      "stem": "Two bonds mature in exactly 10 years. Bond A pays an 8% coupon; Bond B pays a 2% coupon. Which price is more sensitive to a rise in yields?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bond A — bigger coupons mean bigger exposure",
+          "correct": false,
+          "explanation": "Backwards: big coupons return value EARLY, which shields the price. Rate sensitivity lives in the far future, and Bond A has less of its value parked there."
+        },
+        {
+          "id": "b",
+          "text": "Bond B — with a small coupon, most of its value arrives late, so its duration is higher",
+          "correct": true,
+          "explanation": "Correct. A low coupon back-loads the payoff, and back-loaded value is discounted hardest when yields rise. Same maturity, higher duration, bigger price swing."
+        },
+        {
+          "id": "c",
+          "text": "Identical — same maturity means same rate risk",
+          "correct": false,
+          "explanation": "This is the duration-vs-maturity trap. The maturities match; the TIMING of the value does not. Sensitivity follows the timing, not the calendar."
+        },
+        {
+          "id": "d",
+          "text": "Neither moves — coupons are fixed by contract",
+          "correct": false,
+          "explanation": "Fixed payments, moving prices — the foundational distinction of this path. Both prices move; the question is which moves more."
+        }
+      ]
+    }
+  ]
+}

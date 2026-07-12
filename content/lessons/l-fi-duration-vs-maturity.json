@@ -1,0 +1,71 @@
+{
+  "id": "l-fi-duration-vs-maturity",
+  "title": "Duration Is Not Maturity",
+  "teaches": [
+    "G267"
+  ],
+  "draws_on": [
+    "fixed-income.z2.9"
+  ],
+  "estimated_minutes": 7,
+  "screens": [
+    {
+      "type": "explanation",
+      "heading": "A date versus a risk number",
+      "body": "Maturity answers a calendar question: when does the final payment arrive? Duration answers a risk question: how hard does the price move when yields move? They rhyme — longer bonds usually do carry more rate risk — and that rhyme is exactly why people conflate them. Three bonds break the rhyme."
+    },
+    {
+      "type": "example",
+      "heading": "Three 30-year stories",
+      "body": "A 30-year COUPON bond: maturity 30 years, but duration well below that — commonly in the high teens, depending on its coupon and yield — because the coupons pull the average arrival of value forward. A 30-year ZERO-coupon bond: nothing arrives early, so its Macaulay duration is exactly 30 years, and at positive yields, its modified duration is a touch under that once the yield adjustment is applied — the most rate-sensitive of the three by a wide margin. A 30-year FLOATING-rate note: its coupon resets to market rates every few months, so its sensitivity to the base rate is roughly the time to the next reset — a fraction of a year, despite three decades on the calendar.",
+      "role": "markets"
+    },
+    {
+      "type": "misconception",
+      "myth": "A long-maturity bond is automatically a high-rate-risk bond.",
+      "reality": "Rate risk follows duration, not the calendar. The floater is the proof: thirty years of maturity, but near-zero sensitivity to the base rate, because every coupon reset re-anchors the price to current market rates. Maturity tells you when the story ends; duration tells you how violently the plot moves in the meantime.",
+      "why_it_matters": "It's why floating-rate instruments behaved so differently from long fixed-rate bonds when rates rose in 2022 — same long maturities, very different durations. Note the precision, though: low base-rate duration is not low risk. Floaters still carry credit risk and spread risk (their prices fall if the market demands a wider spread), they are often marked less frequently than traded bonds, and rising rates raise the borrower's interest burden — which can make default more likely, not less."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-duration-vs-maturity-01"
+    },
+    {
+      "type": "explanation",
+      "heading": "Why the zero is the extreme case",
+      "body": "A zero-coupon bond is the one place the two ideas touch: with a single cash flow at the end, the present-value-weighted average arrival time IS the maturity, so its Macaulay duration equals its maturity exactly. At positive yields, its modified duration — the price-sensitivity number — comes out slightly lower, because that measure divides the Macaulay figure by one plus the periodic yield. Every coupon a bond adds pulls both numbers below the maturity date, because value starts arriving early."
+    },
+    {
+      "type": "comparison",
+      "heading": "Say what you mean",
+      "left": {
+        "label": "\"Long-maturity\"",
+        "body": "A statement about the calendar: the final payment is far away. On its own it implies nothing precise about risk — you still need to know the shape of the cash flows."
+      },
+      "right": {
+        "label": "\"Long-duration\"",
+        "body": "A statement about risk: the price swings hard when yields move. This is the word professionals reach for when they mean rate exposure."
+      },
+      "verdict": "When people borrow 'duration' for other assets — growth stocks, real estate — they are borrowing the risk meaning: value concentrated far in the future, and therefore highly sensitive to the discount rate."
+    },
+    {
+      "type": "check",
+      "item": "q-fi-duration-vs-maturity-02"
+    },
+    {
+      "type": "check",
+      "item": "q-fi-duration-vs-maturity-03"
+    }
+  ],
+  "checks": [
+    "q-fi-duration-vs-maturity-01",
+    "q-fi-duration-vs-maturity-02",
+    "q-fi-duration-vs-maturity-03"
+  ],
+  "connects": [
+    "G69",
+    "G284",
+    "G268"
+  ],
+  "status": "authored"
+}
