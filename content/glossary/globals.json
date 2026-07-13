@@ -5656,9 +5656,7 @@
     "contributed_by": "sector-consumer-discretionary",
     "category": "Consumer Discretionary (Sector)",
     "appears_in": [
-      "ER",
-      "IB",
-      "VC"
+      "ER"
     ],
     "disambiguate_with": [],
     "status": "mapped"
@@ -5793,9 +5791,7 @@
     "category": "Consumer Discretionary (Sector)",
     "appears_in": [
       "ER",
-      "AM",
-      "PE",
-      "VC"
+      "AM"
     ],
     "disambiguate_with": [],
     "status": "mapped"
