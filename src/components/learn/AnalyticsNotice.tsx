@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { syncAnalyticsOptOut } from "@/lib/analytics/posthog";
+import { isAnalyticsConfigured, syncAnalyticsOptOut } from "@/lib/analytics/posthog";
 import {
   isAnalyticsOptedOut,
   setAnalyticsOptOut,
@@ -13,6 +13,7 @@ import styles from "./analytics.module.css";
 export function AnalyticsNotice() {
   const [optedOut, setOptedOut] = useState(false);
   const [ready, setReady] = useState(false);
+  const configured = isAnalyticsConfigured();
 
   useEffect(() => {
     setOptedOut(isAnalyticsOptedOut());
@@ -20,21 +21,26 @@ export function AnalyticsNotice() {
   }, []);
 
   if (!ready) {
+    return null;
+  }
+
+  if (!configured) {
     return (
-      <aside className={styles.notice} aria-hidden="true">
+      <aside className={styles.notice} aria-label="Privacy">
         <p className={styles.text}>
-          Anonymous learning events may be collected to improve this pilot.
+          Usage analytics are not active in this environment. Your progress is
+          saved locally in this browser.
         </p>
       </aside>
     );
   }
 
   return (
-    <aside className={styles.notice}>
+    <aside className={styles.notice} aria-label="Privacy and analytics">
       <p className={styles.text}>
         {optedOut
           ? "Anonymous analytics are off for this browser. Local progress still works."
-          : "Anonymous learning events are collected to improve this pilot. No names or emails."}
+          : "Anonymous learning events may be collected to improve this pilot. No names or emails."}
       </p>
       <button
         type="button"

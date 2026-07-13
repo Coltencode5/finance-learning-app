@@ -17,7 +17,7 @@ import styles from "./screens.module.css";
 
 function ExplanationRenderer({ screen }: { screen: ExplanationScreen }) {
   return (
-    <article className={styles.screen}>
+    <article className={`${styles.screen} ${styles.explanation}`}>
       {screen.heading ? <h2 className={styles.heading}>{screen.heading}</h2> : null}
       <p className={styles.body}>{screen.body}</p>
     </article>

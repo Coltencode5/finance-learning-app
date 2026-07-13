@@ -4,7 +4,7 @@ import { LearnLandingClient } from "@/components/learn/PathViews";
 import { getPath, getPathEstimatedMinutes, getPaths } from "@/lib/lessons";
 
 export const metadata: Metadata = {
-  title: "Learn — Finance Learning Graph",
+  title: "Learn",
   description:
     "Structured Fixed Income learning path — one screen at a time.",
 };

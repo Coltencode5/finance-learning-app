@@ -15,6 +15,11 @@ function getHost(): string | undefined {
   return host && host.trim() ? host.trim() : undefined;
 }
 
+/** True when public PostHog env vars are set (build-time inlined). */
+export function isAnalyticsConfigured(): boolean {
+  return Boolean(getToken() && getHost());
+}
+
 /**
  * Initialize PostHog only when it is configured AND the learner has not opted
  * out (app preference or DNT). Safe no-op otherwise.

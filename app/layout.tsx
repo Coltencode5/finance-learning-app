@@ -4,8 +4,12 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Finance Learning Graph",
-  description: "Minimal reading app over the canonical finance knowledge graph",
+  title: {
+    default: "Finance Learning",
+    template: "%s — Finance Learning",
+  },
+  description:
+    "Structured finance education — learn core concepts one screen at a time.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -14,16 +18,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="site-header">
           <Link href="/" className="site-title">
-            Finance Learning Graph
+            Finance Learning
           </Link>
-          <nav>
-            <Link href="/">Modules</Link>
+          <nav aria-label="Main">
             <Link href="/learn">Learn</Link>
+            <Link href="/">Topics</Link>
           </nav>
         </header>
         <main className="container">{children}</main>
         <footer className="site-footer">
-          <p>Milestone 4 — canonical JSON proof-of-concept. No auth, no database.</p>
+          <p>Structured finance education for curious learners.</p>
         </footer>
       </body>
     </html>

@@ -76,36 +76,61 @@ export function LearnLandingClient({
   return (
     <div className={styles.page}>
       <p className={styles.kicker}>Learn</p>
-      <h1 className={styles.title}>Fixed Income learning loop</h1>
+      <h1 className={styles.title}>Learning paths</h1>
       <p className={styles.lede}>
-        A focused path through bond mechanics — one screen at a time, with checks
-        that teach rather than score.
+        Structured lessons that build real understanding — one screen at a time,
+        with checks that teach rather than score.
       </p>
 
       <article className={styles.pathCard}>
-        <h2 className={styles.pathTitle}>{pathTitle}</h2>
-        <p className={styles.tagline}>{tagline}</p>
-        <p className={styles.body}>{description}</p>
-        <dl className={styles.metaGrid}>
-          <div>
-            <dt>Audience</dt>
-            <dd>{audience}</dd>
+        <div className={styles.pathCardHeader}>
+          <h2 className={styles.pathTitle}>{pathTitle}</h2>
+          <p className={styles.tagline}>{tagline}</p>
+        </div>
+
+        <dl className={styles.statsRow}>
+          <div className={styles.stat}>
+            <dt>Lessons</dt>
+            <dd>{lessonCount}</dd>
           </div>
-          <div>
-            <dt>Outcome</dt>
-            <dd>{outcome}</dd>
-          </div>
-          <div>
+          <div className={styles.stat}>
             <dt>Time</dt>
-            <dd>~{estimatedMinutes} minutes · {lessonCount} lessons</dd>
+            <dd>~{estimatedMinutes} min</dd>
           </div>
           {progress && started ? (
-            <div>
-              <dt>Your progress</dt>
-              <dd>{pct}% complete</dd>
+            <div className={styles.stat}>
+              <dt>Progress</dt>
+              <dd>{pct}%</dd>
             </div>
           ) : null}
         </dl>
+
+        {progress && started ? (
+          <div
+            className={styles.pathProgress}
+            role="progressbar"
+            aria-valuenow={pct}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label="Path progress"
+          >
+            <div className={styles.pathProgressFill} style={{ width: `${pct}%` }} />
+          </div>
+        ) : null}
+
+        <div className={styles.pathDetails}>
+          <div className={styles.detailBlock}>
+            <h3 className={styles.detailLabel}>Who it&apos;s for</h3>
+            <p className={styles.detailText}>{audience}</p>
+          </div>
+          <div className={styles.detailBlock}>
+            <h3 className={styles.detailLabel}>What you&apos;ll gain</h3>
+            <p className={styles.detailText}>{outcome}</p>
+          </div>
+        </div>
+
+        <p className={styles.pathDescription}>{description}</p>
+
         <div className={styles.ctaRow}>
           <Link href={ctaHref} className={styles.primaryCta}>
             {ctaLabel}
@@ -154,6 +179,9 @@ export function PathPageClient({
   const resumeId = progress
     ? findResumeLessonId(progress, steps)
     : lessons[0]?.id;
+  const completedCount = progress
+    ? lessonIds.filter((id) => Boolean(progress.lessons[id]?.completed_at)).length
+    : 0;
 
   return (
     <div className={styles.page}>
@@ -164,10 +192,55 @@ export function PathPageClient({
       </p>
       <h1 className={styles.title}>{pathTitle}</h1>
       <p className={styles.lede}>{outcome}</p>
-      <p className={styles.summary}>
-        ~{estimatedMinutes} minutes · {lessons.length} lessons
-        {progress ? ` · ${pct}% complete` : null}
-      </p>
+
+      <div className={styles.pathSummaryBar}>
+        <span className={styles.summaryItem}>
+          ~{estimatedMinutes} min
+        </span>
+        <span className={styles.summaryDot} aria-hidden="true">
+          ·
+        </span>
+        <span className={styles.summaryItem}>
+          {lessons.length} lessons
+        </span>
+        {progress ? (
+          <>
+            <span className={styles.summaryDot} aria-hidden="true">
+              ·
+            </span>
+            <span className={styles.summaryItem}>
+              {completedCount}/{lessons.length} complete
+            </span>
+          </>
+        ) : null}
+      </div>
+
+      {progress ? (
+        <div
+          className={styles.pathProgress}
+          role="progressbar"
+          aria-valuenow={pct}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label="Path progress"
+        >
+          <div className={styles.pathProgressFill} style={{ width: `${pct}%` }} />
+        </div>
+      ) : null}
+
+      {complete ? (
+        <div className={styles.pathCompleteBanner} role="status">
+          <span className={styles.pathCompleteIcon} aria-hidden="true">
+            ✓
+          </span>
+          <div>
+            <p className={styles.pathCompleteTitle}>Path complete</p>
+            <p className={styles.pathCompleteBody}>
+              You finished all {lessons.length} lessons. Review any lesson below.
+            </p>
+          </div>
+        </div>
+      ) : null}
 
       {resumeId ? (
         <div className={styles.ctaRow}>
@@ -176,7 +249,7 @@ export function PathPageClient({
             className={styles.primaryCta}
           >
             {complete
-              ? "Path complete — review a lesson"
+              ? "Review a lesson"
               : progress?.paths[pathId]
                 ? "Continue path"
                 : "Start path"}
@@ -184,7 +257,7 @@ export function PathPageClient({
         </div>
       ) : null}
 
-      <ol className={styles.lessonList}>
+      <ol className={styles.lessonList} aria-label="Lessons in this path">
         {lessons.map((lesson, index) => {
           const status: LessonAvailability = progress
             ? getLessonAvailability(progress, lesson.id, lesson.requires)
@@ -199,7 +272,9 @@ export function PathPageClient({
           return (
             <li key={lesson.id} className={styles.lessonItem} data-status={status}>
               <div className={styles.lessonMain}>
-                <span className={styles.lessonIndex}>{index + 1}</span>
+                <span className={styles.lessonIndex} aria-hidden="true">
+                  <StatusIcon status={status} index={index + 1} />
+                </span>
                 <div className={styles.lessonCopy}>
                   {status === "locked" ? (
                     <span className={styles.lessonTitleLocked}>{lesson.title}</span>
@@ -233,6 +308,22 @@ export function PathPageClient({
       <AnalyticsNotice />
     </div>
   );
+}
+
+function StatusIcon({
+  status,
+  index,
+}: {
+  status: LessonAvailability;
+  index: number;
+}) {
+  if (status === "completed") {
+    return <span className={styles.iconDone}>✓</span>;
+  }
+  if (status === "locked") {
+    return <span className={styles.iconLocked}>—</span>;
+  }
+  return <span className={styles.iconOpen}>{index}</span>;
 }
 
 function StatusLabel({ status }: { status: LessonAvailability }) {

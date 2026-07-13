@@ -358,25 +358,71 @@ function CompletionView({
   const total = data.pathLessonIds.length;
   const pathDone = completedCount >= total;
   const nextId = findNextAvailable(data, progress);
+  const pathPct = Math.round((completedCount / total) * 100);
 
   return (
-    <article className={styles.completion}>
-      <p className={styles.completionEyebrow}>Lesson complete</p>
-      <h2 className={styles.completionHeading}>You connected the dots</h2>
-      <p className={styles.completionBody}>
-        This lesson linked its subject to these concepts in the knowledge graph:
-      </p>
-      <ul className={styles.connectList}>
-        {data.connects.map((c) => (
-          <li key={c.id}>
-            <Link href={c.href}>{c.label}</Link>
-          </li>
-        ))}
-      </ul>
-      <p className={styles.pathUpdate}>
-        Path progress: {completedCount} of {total} lessons complete
-        {pathDone ? " — path finished." : "."}
-      </p>
+    <article
+      className={[
+        styles.completion,
+        pathDone ? styles.completionPathDone : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      {pathDone ? (
+        <>
+          <p className={styles.completionEyebrow}>Path complete</p>
+          <h2 className={styles.completionHeading}>
+            You finished {data.pathTitle}
+          </h2>
+          <p className={styles.completionBody}>
+            All {total} lessons complete. You built the core vocabulary for
+            any fixed-income conversation.
+          </p>
+        </>
+      ) : (
+        <>
+          <p className={styles.completionEyebrow}>Lesson complete</p>
+          <h2 className={styles.completionHeading}>Nice work — concepts connected</h2>
+          <p className={styles.completionBody}>
+            This lesson links to these ideas in the finance knowledge map:
+          </p>
+        </>
+      )}
+
+      <div className={styles.connectSection}>
+        <h3 className={styles.connectHeading}>Connected concepts</h3>
+        <ul className={styles.connectList}>
+          {data.connects.map((c) => (
+            <li key={c.id}>
+              <Link href={c.href}>{c.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className={styles.pathProgressCard}>
+        <div className={styles.pathProgressHeader}>
+          <span className={styles.pathProgressLabel}>Path progress</span>
+          <span className={styles.pathProgressCount}>
+            {completedCount} of {total}
+          </span>
+        </div>
+        <div
+          className={styles.pathProgressTrack}
+          role="progressbar"
+          aria-valuenow={pathPct}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label="Path progress"
+        >
+          <div
+            className={styles.pathProgressFill}
+            style={{ width: `${pathPct}%` }}
+          />
+        </div>
+      </div>
+
       <div className={styles.completionActions}>
         {nextId ? (
           <Link
@@ -385,13 +431,17 @@ function CompletionView({
           >
             Continue to next lesson
           </Link>
+        ) : pathDone ? (
+          <Link href={pathHref(data.pathId)} className={styles.primaryLink}>
+            Review path outline
+          </Link>
         ) : (
           <Link href={pathHref(data.pathId)} className={styles.primaryLink}>
-            View completed path
+            Return to path
           </Link>
         )}
-        <Link href={pathHref(data.pathId)} className={styles.secondaryLink}>
-          Back to path
+        <Link href="/" className={styles.secondaryLink}>
+          Explore more topics
         </Link>
       </div>
     </article>
