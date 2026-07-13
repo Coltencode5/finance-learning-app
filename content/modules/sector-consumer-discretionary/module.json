@@ -1,0 +1,78 @@
+{
+  "slug": "sector-consumer-discretionary",
+  "title": "Consumer Discretionary (Sector)",
+  "kind": "sector-layer1",
+  "build_order": 15,
+  "visibility": "active",
+  "status": "mapped",
+  "zones": [
+    {
+      "zone": 1,
+      "title": "Selling What Nobody Needs",
+      "front_door": "Z1.1"
+    },
+    {
+      "zone": 2,
+      "title": "Four Ways to Sell a Want",
+      "front_door": "Z2.1"
+    },
+    {
+      "zone": 3,
+      "title": "The Scoreboard & the Consumer's Head",
+      "front_door": "Z3.1"
+    },
+    {
+      "zone": 4,
+      "title": "The Analyst's Layer",
+      "front_door": "Z4.1"
+    },
+    {
+      "zone": 5,
+      "title": "The Cycle & the Store's Next Life",
+      "front_door": "Z5.1"
+    }
+  ],
+  "sources": [],
+  "derived": {
+    "globals_contributed": 9,
+    "global_range": "G314–G322",
+    "zone_node_count": 14,
+    "globals_reused": [
+      "G24",
+      "G25",
+      "G26",
+      "G27",
+      "G31",
+      "G34",
+      "G74",
+      "G76",
+      "G87",
+      "G88",
+      "G89",
+      "G90",
+      "G91",
+      "G92",
+      "G93",
+      "G94",
+      "G95",
+      "G127",
+      "G191",
+      "G192",
+      "G193",
+      "G196",
+      "G230",
+      "G237",
+      "G255",
+      "G275",
+      "G276",
+      "G277",
+      "G293",
+      "G294",
+      "G295",
+      "G297",
+      "G298",
+      "G310"
+    ],
+    "gap_count": 4
+  }
+}

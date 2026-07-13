@@ -58,16 +58,6 @@
       "inbound_references": 1
     },
     {
-      "id": "G297",
-      "term": "The multi-sided platform (Z3.1)",
-      "inbound_references": 1
-    },
-    {
-      "id": "G298",
-      "term": "Network effects (Z3.1)",
-      "inbound_references": 1
-    },
-    {
       "id": "G300",
       "term": "ARR (annual recurring revenue) (Z3.2)",
       "inbound_references": 1
@@ -120,6 +110,26 @@
     {
       "id": "G313",
       "term": "The energy transition & stranded assets (Z5.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G316",
+      "term": "Direct-to-consumer (DTC) & channel mix (Z2.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G318",
+      "term": "Comparable store sales (\"comps\") (Z3.1)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G319",
+      "term": "Retail inventory & the cash cycle (Z3.2)",
+      "inbound_references": 1
+    },
+    {
+      "id": "G322",
+      "term": "Omnichannel & the post-digital store (Z5.2)",
       "inbound_references": 1
     }
   ]

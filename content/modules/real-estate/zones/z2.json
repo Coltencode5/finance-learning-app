@@ -77,9 +77,13 @@
       {
         "ref": "G232",
         "note": null
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.2",
+        "note": "storefront boundary — landlord/property economics vs retailer/store strategy"
       }
     ],
-    "connects_to_raw": "Z2.1 (sector overview), ★G221 (the sector taxonomy), ★G229 (sector-specific lease structures), ★G232 (each sector's cycle position). *GAP flag:* office distress and work-from-home structural shift are post-source; the industrial/logistics cap-rate compression post-2018 and the e-commerce demand story exceed source coverage. ---",
+    "connects_to_raw": "Z2.1 (sector overview), ★G221 (the sector taxonomy), ★G229 (sector-specific lease structures), ★G232 (each sector's cycle position), `sector-consumer-discretionary.z5.2` (storefront boundary — bidirectional). *GAP flag:* office distress and work-from-home structural shift are post-source; the industrial/logistics cap-rate compression post-2018 and the e-commerce demand story exceed source coverage. ---",
     "gaps": [
       {
         "kind": "source",

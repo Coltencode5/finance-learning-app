@@ -1,0 +1,113 @@
+[
+  {
+    "id": "sector-consumer-discretionary.z1.1",
+    "local_id": "Z1.1",
+    "module": "sector-consumer-discretionary",
+    "zone": 1,
+    "ordinal": 1,
+    "title": "What Consumer Discretionary Sells: The Want, Not the Need",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Consumer Discretionary is the sector of the optional purchase — the goods and services a household buys with the money left after necessities: retail and e-commerce, apparel and home durables, restaurants and hotels, and cars. One label, four very different businesses, united by a customer who can always say \"not this year.\"",
+    "explainer_covers": [
+      "The everyday tour: this is the sector the learner already shops in — the sneaker (Nike), the latte (Starbucks), the cart (Amazon), the room (Marriott), the car (Tesla) — which makes it the easiest sector to recognize and one of the trickiest to analyze, because familiarity masquerades as insight.",
+      "The four industry groups, walked as four business models: Distribution & Retail (move other people's goods — thin margins, huge volumes, Z2.1) · Consumer Durables & Apparel (make and brand your own goods — the margin lives in the label, Z2.2) · Consumer Services (sell an experience, often through franchisees — restaurants, hotels, leisure, Z2.3) · Automobiles & Components (the sector's heavy industry, Z2.4). Four models, one wallet.",
+      "The GICS boundary — read this before you mis-shelve a company. Amazon sits here while its profit engine is platform economics taught in sector-IT; Tesla sits here while trading like a tech stock; Google/Meta/Netflix are in Communication Services; and the sector's twin, Consumer Staples (the non-deferrable purchase — toothpaste, groceries), is a separate, not-yet-built module. The label is administrative; this module teaches the economics, which travel.",
+      "What binds the four: the discretionary customer — the demand behavior Z1.2 defines, the cycle exposure Z5.1 traces, and the war for preference Z3.3/Z3.4 fight.",
+      "The door onward: this is the sector framework Equity Research's Z2.3 points to — its retailer worked contrast (\"same-store sales, traffic, and margin\") is taught in full in Zone 3. Someone who wants to analyze a consumer company starts from exactly this understanding of what the sector sells."
+    ],
+    "connects_to": [
+      {
+        "ref": "equity-research.z2.3",
+        "note": "attachment — the bidirectional door to sector research craft"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z1.2",
+        "note": "the defining economics"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.1",
+        "note": null
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.2",
+        "note": null
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.3",
+        "note": null
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.4",
+        "note": null
+      },
+      {
+        "ref": "sector-information-technology.z1.1",
+        "note": "sibling front door — and the other half of the Amazon boundary it already names"
+      }
+    ],
+    "connects_to_raw": "`equity-research.z2.3` (the door — ER's hub for a retailer on same-store sales, traffic, and margin; this node points back for the research craft) · Z1.2 (the defining economics) · Z2.1–Z2.4 (the four groups, model by model) · `sector-information-technology.z1.1` (the sibling front door — and the other half of the Amazon boundary).",
+    "gaps": [],
+    "real_world_layer": "GICS Consumer Discretionary industry groups; Nike / Starbucks / Amazon / Marriott / Tesla as everyday exhibits; ER Z2.3 retailer contrast.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z1.2",
+    "local_id": "Z1.2",
+    "module": "sector-consumer-discretionary",
+    "zone": 1,
+    "ordinal": 2,
+    "title": "The Economics of the Deferrable Purchase: Demand You Have to Win",
+    "tag": "global",
+    "global_id": "G314",
+    "quick_definition": "Discretionary demand is demand the customer can defer, downgrade, or skip — the opposite of a staple. That single fact makes the sector cyclical (the wallet shrinks first here), competitive (every want has a near-substitute), and brand-obsessed (preference must be manufactured, because necessity won't do the selling for you).",
+    "explainer_covers": [
+      "Wants vs. needs, made precise. A staple gets bought in a recession; a want waits. Discretionary purchases are funded by the residual wallet — income after necessities — so the sector's demand is a leveraged claim on household confidence: when incomes wobble, discretionary spending falls by more (the amplification Z5.1 walks through the cycle). ★G314 is that deferral option.",
+      "The deferral option is the customer's power. \"Not this year\" disciplines every business in the sector — and the bigger the ticket (cars, furniture, vacations), the stronger the option, which is why durables and autos are the sector's highest-beta corners.",
+      "The third pricing regime (the wave-one trilogy completes). Energy's producer cannot set price (a barrel is a barrel — `sector-energy.z1.2`); software sets price on zero marginal cost and lock-in (★G293); the consumer company sits between: it earns pricing power only if it wins the customer's head. Nike charges what Nike charges because it's Nike — the pricing power is real, manufactured, and perishable. This is why brand (Z3.4) is this sector's core productive asset.",
+      "Where the wallet flows when it's squeezed — the teaser. Discretionary customers don't cut evenly: they rocket in categories they love and trade down everywhere else — the polarization Z3.3 teaches as the sector's demand-structure law.",
+      "A word with two lives. \"Discretionary\" here means the customer can defer the purchase — not the fund world's \"discretionary\" (human-judgment) investing (★G131) or the advisor's discretionary mandate. Same word, unrelated axis.",
+      "The staples seam (stated, not built). The mirror sector — non-deferrable demand, defensive in downturns — is a wave-two module; when it's built, it back-links this global for the boundary rather than re-homing it."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-energy.z1.2",
+        "note": "pricing-regime trilogy — energy cannot set price"
+      },
+      {
+        "ref": "sector-information-technology.z1.2",
+        "note": "★G293 — software sets price; the deliberate economic opposite"
+      },
+      {
+        "ref": "G293",
+        "note": "zero marginal cost & pricing power — consumer sits between energy and software"
+      },
+      {
+        "ref": "G237",
+        "note": "the cycle this demand amplifies"
+      },
+      {
+        "ref": "macro-economics.z1.6",
+        "note": "the business cycle this demand amplifies"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.3",
+        "note": "where the squeezed wallet flows — polarization"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "how preference gets manufactured"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.1",
+        "note": "the cycle exposure, in full"
+      }
+    ],
+    "connects_to_raw": "`sector-energy.z1.2` · `sector-information-technology.z1.2` / ★G293 (the pricing-regime trilogy) · ★G237 / `macro-economics.z1.6` (the cycle this demand amplifies) · Z3.3 (where the squeezed wallet flows) · Z3.4 (how preference gets manufactured) · Z5.1 (the cycle exposure, in full). Prose only: ★G131 (discretionary investing — same word, unrelated axis).",
+    "gaps": [],
+    "real_world_layer": "Wants-vs-needs residual-wallet frame; pricing-regime contrast vs Energy and IT; staples seam stated only.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

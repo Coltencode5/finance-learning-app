@@ -114,3 +114,15 @@ Surfaced by the Energy sector inheritance pass. Same OPEN lifecycle as §G: do n
 **Related M11 seam (wave-two Utilities):** Natural-gas market structure, LNG, and electricity/power were kept thin in Energy (oil is the spine; GICS puts power in Utilities). Wave-two Utilities inherits this boundary cleanly.
 
 **Resolved by M11 (no backlog row):** "Normalized / mid-cycle earnings" — seven prior textual uses across PE/ER/IB/RE/sector-IT now home at ★G310.
+
+## I. Forward seams (Milestone 12)
+
+Surfaced by the Consumer Discretionary sector pass. Same OPEN lifecycle as §G–§H: do not mint these inside the sector module.
+
+| # | Concept / seam | Where noted | Recommended future home | Status |
+|---|---|---|---|---|
+| 20 | Consumer ABS (card / auto receivables) | `sector-consumer-discretionary.z4.2` (named, not built) | Fixed Income depth (ABS / consumer credit securities) | OPEN |
+| 21 | Consumer LBO (brand + cash flow + leverage) | `sector-consumer-discretionary.z4.2` (named, not built) | Private Equity depth (sector LBO application) | OPEN |
+| 22 | Deeper automobiles coverage (ICE OEM / dealer P&L / captive finance / post-2019) | `sector-consumer-discretionary.z2.4` GAP `auto-economics-source-thin` | Possible `sector-automobiles` sector-layer2 escalation (ADR-003 rule 6) if needed | OPEN |
+
+**M12 confirmation (untouched OPEN backlog):** §G #16 moat / durable competitive advantage, §G #17 operating leverage, §G #18 TAM, §H #19 commodities — all remain OPEN. G315 homes the specifically defined *retail* flywheel only; G321 homes *consumer brand equity & differentiation* only — neither claims resolution of prior generic textual diasporas, and no IB/PC/VC/WM/AM flywheel or brand nodes were retrofitted.

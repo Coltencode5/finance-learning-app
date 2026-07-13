@@ -12,9 +12,9 @@
     {
       "id": "G127",
       "term": "Market cycles & the pendulum",
-      "inbound_references": 32,
+      "inbound_references": 33,
       "home_of_edges": 3,
-      "total_inbound": 32
+      "total_inbound": 33
     },
     {
       "id": "G1",
@@ -26,9 +26,9 @@
     {
       "id": "G255",
       "term": "The credit cycle (Z4.1)",
-      "inbound_references": 23,
+      "inbound_references": 24,
       "home_of_edges": 1,
-      "total_inbound": 23
+      "total_inbound": 24
     },
     {
       "id": "G9",
@@ -68,6 +68,13 @@
     {
       "id": "G33",
       "term": "Debt stack / Funding instruments",
+      "inbound_references": 20,
+      "home_of_edges": 1,
+      "total_inbound": 20
+    },
+    {
+      "id": "G34",
+      "term": "Covenant",
       "inbound_references": 20,
       "home_of_edges": 1,
       "total_inbound": 20
@@ -115,8 +122,8 @@
       "total_inbound": 19
     },
     {
-      "id": "G34",
-      "term": "Covenant",
+      "id": "G27",
+      "term": "Valuation multiples",
       "inbound_references": 19,
       "home_of_edges": 1,
       "total_inbound": 19
@@ -133,6 +140,13 @@
       "term": "LP (Limited Partner)",
       "inbound_references": 19,
       "home_of_edges": 1,
+      "total_inbound": 19
+    },
+    {
+      "id": "G87",
+      "term": "The valuation toolkit / \"the three methodologies\"",
+      "inbound_references": 19,
+      "home_of_edges": 2,
       "total_inbound": 19
     },
     {
@@ -171,17 +185,10 @@
       "total_inbound": 18
     },
     {
-      "id": "G27",
-      "term": "Valuation multiples",
+      "id": "G90",
+      "term": "Discounted Cash Flow (DCF)",
       "inbound_references": 18,
       "home_of_edges": 1,
-      "total_inbound": 18
-    },
-    {
-      "id": "G87",
-      "term": "The valuation toolkit / \"the three methodologies\"",
-      "inbound_references": 18,
-      "home_of_edges": 2,
       "total_inbound": 18
     },
     {
@@ -189,6 +196,13 @@
       "term": "Tax-aware investing & asset location",
       "inbound_references": 17,
       "home_of_edges": 2,
+      "total_inbound": 17
+    },
+    {
+      "id": "G237",
+      "term": "The business cycle (Z1.6)",
+      "inbound_references": 17,
+      "home_of_edges": 1,
       "total_inbound": 17
     },
     {
@@ -227,13 +241,6 @@
       "total_inbound": 17
     },
     {
-      "id": "G90",
-      "term": "Discounted Cash Flow (DCF)",
-      "inbound_references": 17,
-      "home_of_edges": 1,
-      "total_inbound": 17
-    },
-    {
       "id": "G219",
       "term": "The capitalization rate (cap rate) & direct capitalization",
       "inbound_references": 16,
@@ -241,11 +248,32 @@
       "total_inbound": 16
     },
     {
+      "id": "G24",
+      "term": "EBITDA",
+      "inbound_references": 16,
+      "home_of_edges": 1,
+      "total_inbound": 16
+    },
+    {
+      "id": "G277",
+      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
+      "inbound_references": 16,
+      "home_of_edges": 1,
+      "total_inbound": 18
+    },
+    {
       "id": "G42",
       "term": "Dilution",
       "inbound_references": 16,
       "home_of_edges": 1,
       "total_inbound": 16
+    },
+    {
+      "id": "G88",
+      "term": "Comparable companies analysis (\"comps\")",
+      "inbound_references": 16,
+      "home_of_edges": 1,
+      "total_inbound": 17
     },
     {
       "id": "G197",
@@ -262,20 +290,6 @@
       "total_inbound": 16
     },
     {
-      "id": "G24",
-      "term": "EBITDA",
-      "inbound_references": 15,
-      "home_of_edges": 1,
-      "total_inbound": 15
-    },
-    {
-      "id": "G277",
-      "term": "Bond spreads (G-spread, Z-spread, OAS) (Z4.4)",
-      "inbound_references": 15,
-      "home_of_edges": 1,
-      "total_inbound": 17
-    },
-    {
       "id": "G70",
       "term": "Spread / Credit margin",
       "inbound_references": 15,
@@ -287,6 +301,13 @@
       "term": "Sell-side vs. buy-side",
       "inbound_references": 15,
       "home_of_edges": 3,
+      "total_inbound": 15
+    },
+    {
+      "id": "G94",
+      "term": "Valuation football field",
+      "inbound_references": 15,
+      "home_of_edges": 1,
       "total_inbound": 15
     },
     {
@@ -308,13 +329,6 @@
       "term": "Drawdown & volatility",
       "inbound_references": 14,
       "home_of_edges": 2,
-      "total_inbound": 14
-    },
-    {
-      "id": "G237",
-      "term": "The business cycle (Z1.6)",
-      "inbound_references": 14,
-      "home_of_edges": 1,
       "total_inbound": 14
     },
     {
@@ -348,20 +362,6 @@
     {
       "id": "G52",
       "term": "Exit",
-      "inbound_references": 14,
-      "home_of_edges": 1,
-      "total_inbound": 14
-    },
-    {
-      "id": "G88",
-      "term": "Comparable companies analysis (\"comps\")",
-      "inbound_references": 14,
-      "home_of_edges": 1,
-      "total_inbound": 14
-    },
-    {
-      "id": "G94",
-      "term": "Valuation football field",
       "inbound_references": 14,
       "home_of_edges": 1,
       "total_inbound": 14
@@ -514,6 +514,13 @@
       "total_inbound": 12
     },
     {
+      "id": "G191",
+      "term": "Critical factors (the stock's swing factors)",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
       "id": "G250",
       "term": "The monetary transmission mechanism (Z2.8)",
       "inbound_references": 12,
@@ -530,6 +537,13 @@
     {
       "id": "G51",
       "term": "Corporate governance",
+      "inbound_references": 12,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G91",
+      "term": "WACC (Weighted Average Cost of Capital)",
       "inbound_references": 12,
       "home_of_edges": 1,
       "total_inbound": 12
@@ -598,15 +612,22 @@
       "total_inbound": 11
     },
     {
-      "id": "G191",
-      "term": "Critical factors (the stock's swing factors)",
+      "id": "G196",
+      "term": "The research franchise & analyst rankings (the II survey)",
+      "inbound_references": 11,
+      "home_of_edges": 1,
+      "total_inbound": 12
+    },
+    {
+      "id": "G249",
+      "term": "The real vs. nominal interest rate (the Fisher relation) (Z2.7)",
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 11
     },
     {
-      "id": "G249",
-      "term": "The real vs. nominal interest rate (the Fisher relation) (Z2.7)",
+      "id": "G25",
+      "term": "Enterprise Value (EV)",
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 11
@@ -624,13 +645,6 @@
       "inbound_references": 11,
       "home_of_edges": 1,
       "total_inbound": 12
-    },
-    {
-      "id": "G91",
-      "term": "WACC (Weighted Average Cost of Capital)",
-      "inbound_references": 11,
-      "home_of_edges": 1,
-      "total_inbound": 11
     },
     {
       "id": "G112",
@@ -686,13 +700,6 @@
       "term": "Wealth-management fee models",
       "inbound_references": 10,
       "home_of_edges": 2,
-      "total_inbound": 10
-    },
-    {
-      "id": "G196",
-      "term": "The research franchise & analyst rankings (the II survey)",
-      "inbound_references": 10,
-      "home_of_edges": 1,
       "total_inbound": 10
     },
     {
@@ -759,8 +766,8 @@
       "total_inbound": 10
     },
     {
-      "id": "G25",
-      "term": "Enterprise Value (EV)",
+      "id": "G276",
+      "term": "Credit ratings & the rating agencies (Z4.2)",
       "inbound_references": 10,
       "home_of_edges": 1,
       "total_inbound": 10
@@ -799,6 +806,13 @@
       "inbound_references": 10,
       "home_of_edges": 1,
       "total_inbound": 10
+    },
+    {
+      "id": "G89",
+      "term": "Precedent transactions analysis (\"deal comps\")",
+      "inbound_references": 10,
+      "home_of_edges": 1,
+      "total_inbound": 11
     },
     {
       "id": "G103",
@@ -878,13 +892,6 @@
       "total_inbound": 9
     },
     {
-      "id": "G276",
-      "term": "Credit ratings & the rating agencies (Z4.2)",
-      "inbound_references": 9,
-      "home_of_edges": 1,
-      "total_inbound": 9
-    },
-    {
       "id": "G282",
       "term": "Repo & secured financing (Z5.3)",
       "inbound_references": 9,
@@ -929,6 +936,13 @@
     {
       "id": "G56",
       "term": "Co-investment",
+      "inbound_references": 9,
+      "home_of_edges": 1,
+      "total_inbound": 9
+    },
+    {
+      "id": "G92",
+      "term": "Unlevered Free Cash Flow (UFCF)",
       "inbound_references": 9,
       "home_of_edges": 1,
       "total_inbound": 9
@@ -1025,6 +1039,13 @@
       "total_inbound": 8
     },
     {
+      "id": "G230",
+      "term": "Leasing & occupancy",
+      "inbound_references": 8,
+      "home_of_edges": 1,
+      "total_inbound": 8
+    },
+    {
       "id": "G280",
       "term": "Agency MBS & prepayment (Z3.11)",
       "inbound_references": 8,
@@ -1048,6 +1069,13 @@
     {
       "id": "G37",
       "term": "Preferred equity",
+      "inbound_references": 8,
+      "home_of_edges": 1,
+      "total_inbound": 8
+    },
+    {
+      "id": "G74",
+      "term": "Coverage ratios",
       "inbound_references": 8,
       "home_of_edges": 1,
       "total_inbound": 8
@@ -1081,15 +1109,15 @@
       "total_inbound": 8
     },
     {
-      "id": "G89",
-      "term": "Precedent transactions analysis (\"deal comps\")",
+      "id": "G93",
+      "term": "Terminal value",
       "inbound_references": 8,
       "home_of_edges": 1,
       "total_inbound": 8
     },
     {
-      "id": "G92",
-      "term": "Unlevered Free Cash Flow (UFCF)",
+      "id": "G95",
+      "term": "Equity Value ↔ Enterprise Value bridge",
       "inbound_references": 8,
       "home_of_edges": 1,
       "total_inbound": 8
@@ -1165,6 +1193,20 @@
       "total_inbound": 7
     },
     {
+      "id": "G192",
+      "term": "The quarterly earnings cycle (the print, the call, the update)",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
+      "id": "G193",
+      "term": "The earnings surprise & company guidance",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
       "id": "G204",
       "term": "The funding stages & the round",
       "inbound_references": 7,
@@ -1193,15 +1235,22 @@
       "total_inbound": 7
     },
     {
-      "id": "G230",
-      "term": "Leasing & occupancy",
+      "id": "G240",
+      "term": "Unemployment & the labor market (Z1.9)",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
     },
     {
-      "id": "G240",
-      "term": "Unemployment & the labor market (Z1.9)",
+      "id": "G275",
+      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
+      "inbound_references": 7,
+      "home_of_edges": 1,
+      "total_inbound": 7
+    },
+    {
+      "id": "G293",
+      "term": "Zero marginal cost & the economics of software (Z1.2)",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
@@ -1237,27 +1286,6 @@
     {
       "id": "G71",
       "term": "Original Issue Discount (OID)",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 7
-    },
-    {
-      "id": "G74",
-      "term": "Coverage ratios",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 7
-    },
-    {
-      "id": "G93",
-      "term": "Terminal value",
-      "inbound_references": 7,
-      "home_of_edges": 1,
-      "total_inbound": 7
-    },
-    {
-      "id": "G95",
-      "term": "Equity Value ↔ Enterprise Value bridge",
       "inbound_references": 7,
       "home_of_edges": 1,
       "total_inbound": 7
@@ -1342,20 +1370,6 @@
     {
       "id": "G187",
       "term": "The published thesis (the reputation-staked call)",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
-      "id": "G192",
-      "term": "The quarterly earnings cycle (the print, the call, the update)",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
-      "id": "G193",
-      "term": "The earnings surprise & company guidance",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1452,22 +1466,8 @@
       "total_inbound": 6
     },
     {
-      "id": "G275",
-      "term": "Investment grade vs. high yield (the ratings divide) (Z4.3)",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
       "id": "G279",
       "term": "Securitization (Z3.10)",
-      "inbound_references": 6,
-      "home_of_edges": 1,
-      "total_inbound": 6
-    },
-    {
-      "id": "G293",
-      "term": "Zero marginal cost & the economics of software (Z1.2)",
       "inbound_references": 6,
       "home_of_edges": 1,
       "total_inbound": 6
@@ -1499,6 +1499,13 @@
       "inbound_references": 6,
       "home_of_edges": 2,
       "total_inbound": 7
+    },
+    {
+      "id": "G76",
+      "term": "Borrowing base",
+      "inbound_references": 6,
+      "home_of_edges": 1,
+      "total_inbound": 6
     },
     {
       "id": "G82",
@@ -1620,6 +1627,13 @@
       "total_inbound": 5
     },
     {
+      "id": "G26",
+      "term": "Equity Value",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
       "id": "G269",
       "term": "Spot, forward & par rates (the curve toolkit) (Z2.7)",
       "inbound_references": 5,
@@ -1636,6 +1650,13 @@
     {
       "id": "G278",
       "term": "The credit default swap (CDS) (Z4.7)",
+      "inbound_references": 5,
+      "home_of_edges": 1,
+      "total_inbound": 5
+    },
+    {
+      "id": "G31",
+      "term": "Working capital",
       "inbound_references": 5,
       "home_of_edges": 1,
       "total_inbound": 5
@@ -1739,13 +1760,6 @@
       "total_inbound": 4
     },
     {
-      "id": "G26",
-      "term": "Equity Value",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
       "id": "G270",
       "term": "The U.S. Treasury market (Z3.1)",
       "inbound_references": 4,
@@ -1753,8 +1767,15 @@
       "total_inbound": 4
     },
     {
-      "id": "G31",
-      "term": "Working capital",
+      "id": "G298",
+      "term": "Network effects (Z3.1)",
+      "inbound_references": 4,
+      "home_of_edges": 1,
+      "total_inbound": 4
+    },
+    {
+      "id": "G310",
+      "term": "Normalized (mid-cycle) earnings & cyclical valuation (Z4.1)",
       "inbound_references": 4,
       "home_of_edges": 1,
       "total_inbound": 4
@@ -1783,13 +1804,6 @@
     {
       "id": "G73",
       "term": "PIK (Payment-in-Kind)",
-      "inbound_references": 4,
-      "home_of_edges": 1,
-      "total_inbound": 4
-    },
-    {
-      "id": "G76",
-      "term": "Borrowing base",
       "inbound_references": 4,
       "home_of_edges": 1,
       "total_inbound": 4
@@ -1886,11 +1900,32 @@
       "total_inbound": 6
     },
     {
+      "id": "G294",
+      "term": "SaaS & the subscription model (Z2.1)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 4
+    },
+    {
+      "id": "G295",
+      "term": "Cloud computing & the hyperscalers (Z2.1)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
       "id": "G296",
       "term": "The fabless/foundry split & the semiconductor value chain (Z2.2)",
       "inbound_references": 3,
       "home_of_edges": 1,
       "total_inbound": 3
+    },
+    {
+      "id": "G297",
+      "term": "The multi-sided platform (Z3.1)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 5
     },
     {
       "id": "G299",
@@ -1905,6 +1940,13 @@
       "inbound_references": 3,
       "home_of_edges": 1,
       "total_inbound": 4
+    },
+    {
+      "id": "G321",
+      "term": "Brand equity & differentiation (Z3.4)",
+      "inbound_references": 3,
+      "home_of_edges": 1,
+      "total_inbound": 3
     },
     {
       "id": "G50",
@@ -2026,20 +2068,6 @@
       "total_inbound": 2
     },
     {
-      "id": "G294",
-      "term": "SaaS & the subscription model (Z2.1)",
-      "inbound_references": 2,
-      "home_of_edges": 1,
-      "total_inbound": 3
-    },
-    {
-      "id": "G295",
-      "term": "Cloud computing & the hyperscalers (Z2.1)",
-      "inbound_references": 2,
-      "home_of_edges": 1,
-      "total_inbound": 2
-    },
-    {
       "id": "G301",
       "term": "NRR (net revenue retention) (Z3.2)",
       "inbound_references": 2,
@@ -2047,8 +2075,29 @@
       "total_inbound": 2
     },
     {
-      "id": "G310",
-      "term": "Normalized (mid-cycle) earnings & cyclical valuation (Z4.1)",
+      "id": "G314",
+      "term": "Discretionary demand (wants vs. needs) (Z1.2)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G315",
+      "term": "The retail flywheel (Z2.1)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 2
+    },
+    {
+      "id": "G317",
+      "term": "The franchise model (Z2.3)",
+      "inbound_references": 2,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G320",
+      "term": "Trading up, trading down & death in the middle (Z3.3)",
       "inbound_references": 2,
       "home_of_edges": 1,
       "total_inbound": 2
@@ -2098,20 +2147,6 @@
     {
       "id": "G292",
       "term": "The bank run & deposit insurance (Z5.2)",
-      "inbound_references": 1,
-      "home_of_edges": 1,
-      "total_inbound": 1
-    },
-    {
-      "id": "G297",
-      "term": "The multi-sided platform (Z3.1)",
-      "inbound_references": 1,
-      "home_of_edges": 1,
-      "total_inbound": 3
-    },
-    {
-      "id": "G298",
-      "term": "Network effects (Z3.1)",
       "inbound_references": 1,
       "home_of_edges": 1,
       "total_inbound": 1
@@ -2192,6 +2227,34 @@
       "inbound_references": 1,
       "home_of_edges": 1,
       "total_inbound": 1
+    },
+    {
+      "id": "G316",
+      "term": "Direct-to-consumer (DTC) & channel mix (Z2.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G318",
+      "term": "Comparable store sales (\"comps\") (Z3.1)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 3
+    },
+    {
+      "id": "G319",
+      "term": "Retail inventory & the cash cycle (Z3.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
+    },
+    {
+      "id": "G322",
+      "term": "Omnichannel & the post-digital store (Z5.2)",
+      "inbound_references": 1,
+      "home_of_edges": 1,
+      "total_inbound": 1
     }
   ],
   "top_10": [
@@ -2205,9 +2268,9 @@
     {
       "id": "G127",
       "term": "Market cycles & the pendulum",
-      "inbound_references": 32,
+      "inbound_references": 33,
       "home_of_edges": 3,
-      "total_inbound": 32
+      "total_inbound": 33
     },
     {
       "id": "G1",
@@ -2219,9 +2282,9 @@
     {
       "id": "G255",
       "term": "The credit cycle (Z4.1)",
-      "inbound_references": 23,
+      "inbound_references": 24,
       "home_of_edges": 1,
-      "total_inbound": 23
+      "total_inbound": 24
     },
     {
       "id": "G9",

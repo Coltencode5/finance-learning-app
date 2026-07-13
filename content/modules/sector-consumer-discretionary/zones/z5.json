@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sector-consumer-discretionary.z5.1",
+    "local_id": "Z5.1",
+    "module": "sector-consumer-discretionary",
+    "zone": 5,
+    "ordinal": 1,
+    "title": "The Consumer Cycle: The Economy's Mood Ring",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Because its demand is deferrable (★G314), Consumer Discretionary swings harder than the economy it rides — spending on wants is the first thing cut and among the first to return, making the sector the market's high-beta read on household confidence. The cycle itself is inherited machinery; this node teaches the sector's exposure to it and mints nothing.",
+    "explainer_covers": [
+      "The transmission chain. Jobs and wages → confidence and the wealth effect (home equity, portfolios) → the residual wallet → discretionary volumes. Each link amplifies: a mild income shock becomes a sharp discretionary contraction, loudest at the big ticket (autos, furniture, travel — Z2.4's beta).",
+      "The credit amplifier. Much discretionary spending is borrowed — cards, auto loans, point-of-sale credit — so the credit cycle (★G255) gears the consumer cycle: easy credit pulls demand forward, tightening snaps it back. The mirror image sits in sector-financials.z3.2: their consumer loan losses are this sector's demand read from the lender's chair — one cycle, two dashboards.",
+      "The dashboard. Retail sales, consumer confidence, unemployment — the indicator layer `macro-economics.z1.10` already classifies (retail sales is on its list by name). The sector's market behavior — early-cycle leader, risk-on proxy — and the discretionary-vs-staples rotation as the market's risk dial (the staples half is a wave-two seam, stated only).",
+      "The machinery, inherited. The business cycle is `macro-economics.z1.6`/★G237; the sentiment pendulum ★G127; the credit cycle ★G255. Fourth consecutive sector to teach its cycle on the corpus's machinery and mint nothing.",
+      "The pandemic as the two-in-one exhibit. COVID was simultaneously the sector's sharpest demand shock and a structural rewiring of how the survivors sell — the hinge into Z5.2 (Stephens's \"wormhole\": not a pause, a passage)."
+    ],
+    "connects_to": [
+      {
+        "ref": "G237",
+        "note": "the business cycle — inherited machinery"
+      },
+      {
+        "ref": "macro-economics.z1.6",
+        "note": "the cycle itself — home of the machinery"
+      },
+      {
+        "ref": "G127",
+        "note": "the sentiment pendulum"
+      },
+      {
+        "ref": "G255",
+        "note": "the credit cycle — amplifier"
+      },
+      {
+        "ref": "macro-economics.z1.10",
+        "note": "the indicator dashboard — retail sales named"
+      },
+      {
+        "ref": "sector-financials.z3.2",
+        "note": "the lender's mirror — consumer loan losses"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z1.2",
+        "note": "the deferral option, cycled"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.3",
+        "note": "downturns polarize"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.4",
+        "note": "maximum beta"
+      }
+    ],
+    "connects_to_raw": "★G237 / `macro-economics.z1.6` · ★G127 · ★G255 (the inherited machinery) · `macro-economics.z1.10` (the indicator dashboard) · `sector-financials.z3.2` (the lender's mirror) · Z1.2 (the deferral option, cycled) · Z3.3 (downturns polarize) · Z2.4 (maximum beta).",
+    "gaps": [],
+    "real_world_layer": "Cycle exposure on inherited Macro/Financials machinery; pandemic as demand-shock + channel-rewiring hinge.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z5.2",
+    "local_id": "Z5.2",
+    "module": "sector-consumer-discretionary",
+    "zone": 5,
+    "ordinal": 2,
+    "title": "The Future of the Store: E-commerce, Omnichannel & the Apex Predators",
+    "tag": "global",
+    "global_id": "G322",
+    "quick_definition": "E-commerce permanently rewired retail's structure, and omnichannel is the surviving playbook: one customer relationship served across store, web, and phone as a single unified commerce system — with the physical store's job changing from distribution point to experience, media, and fulfillment node.",
+    "explainer_covers": [
+      "Omnichannel, defined against its buzzword (★G322). Channel-siloed retail organizes around the company's divisions; omnichannel organizes around the customer — buy anywhere, fulfill anywhere, return anywhere, one inventory truth. Alibaba's New Retail (Stephens/Zakkour: commerce + media + logistics + data as one ecosystem) is the maximal version, folded here as orbit.",
+      "The apex predators. Amazon, Alibaba, JD, Walmart — scale platforms whose flywheels (★G315) compounded through the pandemic and against whom the honest strategy is not imitation: Stephens's answer is archetypal depth (Z3.4's orbit) and allegiance over dependence. The platform gravity underneath is ★G297/★G298 — back-linked, not re-taught.",
+      "The store's new job. Store as media (foot traffic valued like impressions), as experience (Stephens's proposed metrics — experiences per square foot, sales per click — flagged as proposals, not standards), as fulfillment node (ship-from-store; the logistics convergence with Z2.1's fulfillment layer).",
+      "The mall question belongs to Real Estate. Mall economics, anchor-tenant math, retail-to-industrial conversion, and e-commerce's property-market pressure are `real-estate.z2.1/z2.2`'s territory — this node reads the retailer's side of the same storefront and points across.",
+      "The recency discipline. The mechanism (structural channel shift; the store's changing job) is grounded; the verdicts — mall mortality rates, permanent post-pandemic behavior claims, \"majority digital by 2033\" — are a Nov-2020 book's contested forecasts, deliberately untaught."
+    ],
+    "connects_to": [
+      {
+        "ref": "G297",
+        "note": "multi-sided platform — platform gravity under apex predators"
+      },
+      {
+        "ref": "G298",
+        "note": "network effects — platform gravity under apex predators"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.1",
+        "note": "the flywheel that got here first"
+      },
+      {
+        "ref": "G315",
+        "note": "the retail flywheel — scale that compounded through the pandemic"
+      },
+      {
+        "ref": "real-estate.z2.2",
+        "note": "storefront boundary — landlord's side of the same storefront"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "archetypal depth as the counter-strategy"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.1",
+        "note": "the pandemic hinge"
+      }
+    ],
+    "connects_to_raw": "★G297 / ★G298 (the platform gravity — IT's machinery) · Z2.1 / ★G315 (the flywheel that got here first) · `real-estate.z2.2` (the storefront boundary — property side) · Z3.4 (archetypal depth as the counter-strategy) · Z5.1 (the pandemic hinge).",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "durable omnichannel mechanisms vs contested pandemic forecasts.",
+        "needed_source": "current post-pandemic retail channel/store evidence"
+      }
+    ],
+    "real_world_layer": "Stephens Resurrecting Retail (omnichannel / New Retail / apex predators) — mechanisms grounded, pandemic forecasts contested.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]
