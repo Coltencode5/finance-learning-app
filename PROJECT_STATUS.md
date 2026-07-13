@@ -1,15 +1,15 @@
 # Project Status
 
-**Last updated:** Milestone 11 complete (2026-07-10)
+**Last updated:** Milestone 12 complete (2026-07-12)
 
 ## Corpus totals (validated)
 
 | Metric | Value |
 |---|---|
-| Active modules | **14** |
-| Shared globals | **313** (G1–G313, contiguous) |
-| Zone nodes | **615** |
-| Graph edges | **4,433** |
+| Active modules | **15** |
+| Shared globals | **322** (G1–G322, contiguous) |
+| Zone nodes | **629** |
+| Graph edges | **4,568** |
 | Validation (`--strict`) | **0 errors, 0 warnings** |
 
 ## Milestones
@@ -22,9 +22,23 @@
 | 8 | Sector Layer Prep | — | prep | — | — | — | complete |
 | 9 | Financials (Sector) | sector-financials | sector-layer1 | 12 | 11 | G286–G292 | complete |
 | 10 | Information Technology (Sector) | sector-information-technology | sector-layer1 | 13 | 11 | G293–G303 | complete |
-| **11** | **Energy (Sector)** | **sector-energy** | **sector-layer1** | **14** | **13** | **G304–G313** | **complete** |
+| 11 | Energy (Sector) | sector-energy | sector-layer1 | 14 | 13 | G304–G313 | complete |
+| **12** | **Consumer Discretionary (Sector)** | **sector-consumer-discretionary** | **sector-layer1** | **15** | **14** | **G314–G322** | **complete** |
+
+## Milestone 12 — Consumer Discretionary (Sector)
+
+- **Slug:** `sector-consumer-discretionary`
+- **Kind:** `sector-layer1` (ADR-003 rule 1)
+- **Zones:** Z1 Selling What Nobody Needs (2) · Z2 Four Ways to Sell a Want (4) · Z3 The Scoreboard & the Consumer's Head (4) · Z4 The Analyst's Layer (2) · Z5 The Cycle & the Store's Next Life (2)
+- **New globals:** G314–G322 (9 net-new; append-only; each with exactly one `home_of`; no `hosts_globals`)
+- **Disambiguation (approved only):** G318 → [G88, G89] hub-and-spoke (append G318 to each spoke; G88↔G89 remain unlinked); G317 ↔ G196 (franchise pair). **G31 left unchanged** — G319 connects via `connects_to` as a retail WC application, not `disambiguate_with`.
+- **Attachment edges:** Z1.1 ↔ `equity-research.z2.3` (bidirectional, ER retailer forward-link bullet — wave one's fourth contrast closed); Z4.2 → `fixed-income.z4.8` (credit handshake — lease-adjusted & cycle-adjusted; whole-business securitization & retail ABL named); Z2.1 ↔ `sector-information-technology.z1.1` (Amazon boundary); Z5.2 ↔ `real-estate.z2.2` (storefront boundary); Z4.1 → Financials/IT/Energy Z4.1 (valuation dialect chain, accretive only)
+- **Structured GAPs:** 4 (`ota-lodging-kpi-gap` on Z2.3; `auto-economics-source-thin` on Z2.4; `trading-up-era-data` on Z3.3; `retail-transition-recency` on Z5.2)
+- **Design ripple:** none — `SECTOR_LAYER_DESIGN.md` unchanged. Moat (§G #16), operating leverage (§G #17), TAM (§G #18) remain OPEN. No generic flywheel/brand diaspora retrofit or resolution claim.
+- **Wave one:** **closed.** Next gate: **G1**.
 
 ## Milestone 11 — Energy (Sector)
+
 
 - **Slug:** `sector-energy`
 - **Kind:** `sector-layer1` (ADR-003 rule 1)
@@ -79,10 +93,10 @@ Prep milestone (no new module content authored):
 
 ## Next gate
 
-- Next module: **sector-consumer-discretionary** (M12, `kind: sector-layer1`, `build_order: 15`, globals from **G314**)
-- Wave one remaining: Consumer Discretionary
+- **Wave one closed** (Financials → IT → Energy → Consumer Discretionary).
+- Next gate: **G1** (post-pilot, real-user evidence) before wave-two content.
 
 ## Known defects (unchanged)
 
-- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7–M11
-- Unhomed cross-module concepts (moat / operating leverage / TAM / commodities-as-asset-class) — see `docs/MIGRATION_DEFECTS.md` §G–§H
+- 26 pre-existing globals (G1–G263) have multiple `home_of` edges — logged; not worsened by M7–M12
+- Unhomed cross-module concepts (moat / operating leverage / TAM / commodities-as-asset-class) — see `docs/MIGRATION_DEFECTS.md` §G–§H — **remain OPEN**; M12 did not resolve flywheel/brand diasporas or close moat/TAM/operating leverage

@@ -64,9 +64,13 @@
       {
         "ref": "sector-information-technology.z5.1",
         "note": null
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.1",
+        "note": "Amazon boundary — GICS shelves Amazon in CD; platform/cloud economics taught here"
       }
     ],
-    "connects_to_raw": "`equity-research.z2.3` (attachment — the door, both directions), Z1.2, Z2.1–Z2.3, ★G215/★G53/★G102 (the VC pipeline), ★G137/★G138 (why everyone owns it), Z5.1."
+    "connects_to_raw": "`equity-research.z2.3` (attachment — the door, both directions), Z1.2, Z2.1–Z2.3, ★G215/★G53/★G102 (the VC pipeline), ★G137/★G138 (why everyone owns it), Z5.1, `sector-consumer-discretionary.z2.1` (Amazon boundary — bidirectional)."
   },
   {
     "gaps": [],

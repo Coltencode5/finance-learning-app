@@ -1500,7 +1500,9 @@
       "Z3",
       "Z4"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G318"
+    ],
     "status": "mapped"
   },
   {
@@ -1519,7 +1521,9 @@
       "Z3",
       "Z4"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G318"
+    ],
     "status": "mapped"
   },
   {
@@ -3403,7 +3407,9 @@
       "AM",
       "HF"
     ],
-    "disambiguate_with": [],
+    "disambiguate_with": [
+      "G317"
+    ],
     "status": "mapped"
   },
   {
@@ -5612,6 +5618,200 @@
       "RE",
       "Macro",
       "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G314",
+    "term": "Discretionary demand (wants vs. needs) (Z1.2)",
+    "aliases": [
+      "discretionary demand",
+      "wants vs needs",
+      "deferrable demand"
+    ],
+    "quick_definition": "Demand the customer can defer, downgrade, or skip — the deferral option that makes the sector cyclical, competitive, and brand-obsessed.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z1.2",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "Macro",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G315",
+    "term": "The retail flywheel (Z2.1)",
+    "aliases": [
+      "retail flywheel",
+      "selection traffic price loop"
+    ],
+    "quick_definition": "Selection → traffic → sellers → lower cost → lower prices → traffic: the specifically defined self-reinforcing scale loop of modern retail.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z2.1",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G316",
+    "term": "Direct-to-consumer (DTC) & channel mix (Z2.2)",
+    "aliases": [
+      "DTC",
+      "direct-to-consumer",
+      "channel mix",
+      "wholesale vs DTC"
+    ],
+    "quick_definition": "Selling through your own stores/digital vs through wholesale — the margin-vs-reach choice that defines a brand manufacturer.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z2.2",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "PE"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G317",
+    "term": "The franchise model (Z2.3)",
+    "aliases": [
+      "franchise model",
+      "franchised vs company-operated",
+      "royalty fee stream"
+    ],
+    "quick_definition": "Licensing your format to operators who supply the capital, and collecting recurring royalty/fee streams off their revenue.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z2.3",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "FI",
+      "RE"
+    ],
+    "disambiguate_with": [
+      "G196"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G318",
+    "term": "Comparable store sales (\"comps\") (Z3.1)",
+    "aliases": [
+      "comps",
+      "comparable store sales",
+      "same-store sales",
+      "SSS"
+    ],
+    "quick_definition": "Growth at stores open past a threshold, decomposed into traffic × ticket — the retailer's heartbeat demand metric.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z3.1",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "AM",
+      "PE"
+    ],
+    "disambiguate_with": [
+      "G88",
+      "G89"
+    ],
+    "status": "mapped"
+  },
+  {
+    "id": "G319",
+    "term": "Retail inventory & the cash cycle (Z3.2)",
+    "aliases": [
+      "retail inventory",
+      "inventory turns",
+      "markdowns",
+      "negative operating cycle",
+      "cash conversion cycle"
+    ],
+    "quick_definition": "Turns, markdowns, obsolescence and the cash conversion cycle — including scale retail's negative operating cycle.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z3.2",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "PE",
+      "FI"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G320",
+    "term": "Trading up, trading down & death in the middle (Z3.3)",
+    "aliases": [
+      "trading up",
+      "trading down",
+      "death in the middle",
+      "premiumization",
+      "New Luxury"
+    ],
+    "quick_definition": "Consumers pay premiums in chosen categories and trade down elsewhere; the poles grow and the middle dies.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z3.3",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "AM",
+      "Macro"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G321",
+    "term": "Brand equity & differentiation (Z3.4)",
+    "aliases": [
+      "brand equity",
+      "differentiation",
+      "consumer brand"
+    ],
+    "quick_definition": "The economic asset built in customers' heads, and the craft of escaping the competitive herd that erodes it.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z3.4",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "AM"
+    ],
+    "disambiguate_with": [],
+    "status": "mapped"
+  },
+  {
+    "id": "G322",
+    "term": "Omnichannel & the post-digital store (Z5.2)",
+    "aliases": [
+      "omnichannel",
+      "post-digital store",
+      "unified commerce"
+    ],
+    "quick_definition": "One customer relationship across store, web and phone — and the store's shift from distribution point to experience/media/fulfillment node.",
+    "home_module": "sector-consumer-discretionary",
+    "home_zone": "Z5.2",
+    "contributed_by": "sector-consumer-discretionary",
+    "category": "Consumer Discretionary (Sector)",
+    "appears_in": [
+      "ER",
+      "RE"
     ],
     "disambiguate_with": [],
     "status": "mapped"

@@ -140,7 +140,8 @@
       "The real-estate exception: REITs are a GICS sector, but their sector framework (property segments, FFO/AFFO, NAV) is taught in the Real Estate module itself — the sector layer back-links there rather than rebuilding it.",
       "The financials forward-link (M8 deferral, landed M9): banks and insurers get their full sector syllabus in the Financials sector module — net interest margin, credit losses, capital ratios, and the valuation bend. This hub points to sector-financials.z1.1 as the door; the sector module points back here for the full research craft.",
       "The software forward-link (landed M10): software companies get their full sector syllabus in the Information Technology sector module — SaaS economics, net revenue retention, the growth-vs-margin trade, and the platform/network-effects frame. This hub points to sector-information-technology.z1.1 as the door; the sector module points back here for the full research craft.",
-      "The commodity forward-link (landed M11): commodity/cyclical producers get their full sector syllabus in the Energy sector module — the value chain, price-taker economics, the cost curve and the cycle, and the normalized-earnings valuation bend. This hub points to `sector-energy.z1.1` as the door; the sector module points back here for the full research craft."
+      "The commodity forward-link (landed M11): commodity/cyclical producers get their full sector syllabus in the Energy sector module — the value chain, price-taker economics, the cost curve and the cycle, and the normalized-earnings valuation bend. This hub points to `sector-energy.z1.1` as the door; the sector module points back here for the full research craft.",
+      "The retailer forward-link (landed M12): retailers and consumer companies get their full sector syllabus in the Consumer Discretionary sector module — same-store sales, traffic and margin, channel mix and the franchise model, the polarized consumer and the brand, and the growth-algorithm valuation bend. This hub points to `sector-consumer-discretionary.z1.1` as the door; the sector module points back here for the full research craft."
     ],
     "connects_to": [
       {
@@ -202,9 +203,13 @@
       {
         "ref": "sector-energy.z1.1",
         "note": "GICS energy sector lens — understand the sector here, learn to research it in ER"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z1.1",
+        "note": "GICS consumer discretionary sector lens — understand the sector here, learn to research it in ER"
       }
     ],
-    "connects_to_raw": "`sector-financials.z1.1` (GICS financials sector lens — the M8 deferral landed M9) · Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*. · `sector-information-technology.z1.1` (GICS IT sector lens — landed M10) · `sector-energy.z1.1` (GICS energy sector lens — landed M11)",
+    "connects_to_raw": "`sector-financials.z1.1` (GICS financials sector lens — the M8 deferral landed M9) · Z3.2 (★G191 — the home of the critical-factors concept) · Z3.3 (★G190 — checking the sector-specific metrics) · Z3.7 (valuation method follows sector) · Z3.8 (sector-appropriate multiples, ★G88) · AM Z2.5–2.7 *(the value/growth/quality lenses that sectors cluster into)* · ★G149 style *(AM — sectors as style exposures)*. · `sector-information-technology.z1.1` (GICS IT sector lens — landed M10) · `sector-energy.z1.1` (GICS energy sector lens — landed M11) · `sector-consumer-discretionary.z1.1` (GICS consumer discretionary sector lens — landed M12)",
     "gaps": [],
     "real_world_layer": null,
     "source_refs": [],

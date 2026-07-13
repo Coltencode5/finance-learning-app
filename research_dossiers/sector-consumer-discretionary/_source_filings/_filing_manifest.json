@@ -1,0 +1,102 @@
+[
+  {
+    "requested": {
+      "key": "amazon",
+      "ticker": "AMZN",
+      "cik": "0001018724",
+      "name": "Amazon.com, Inc."
+    },
+    "status": "ok",
+    "company": "Amazon.com, Inc.",
+    "ticker": "AMZN",
+    "cik": "0001018724",
+    "form": "10-K",
+    "filingDate": "2026-02-06",
+    "reportDate": "2025-12-31",
+    "accessionNumber": "0001018724-26-000004",
+    "primaryDocument": "amzn-20251231.htm",
+    "local_binary": "_source_filings\\amazon_10k_2025-12-31_0001018724-26-000004.htm",
+    "local_text": "raw_extractions\\amazon_10k.txt",
+    "text_chars": 311539,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+    "chosen_as_alt_for": null
+  },
+  {
+    "requested": {
+      "key": "nike",
+      "ticker": "NKE",
+      "cik": "0000320187",
+      "name": "NIKE, Inc."
+    },
+    "status": "ok",
+    "company": "NIKE, Inc.",
+    "ticker": "NKE",
+    "cik": "0000320187",
+    "form": "10-K",
+    "filingDate": "2025-07-17",
+    "reportDate": "2025-05-31",
+    "accessionNumber": "0000320187-25-000047",
+    "primaryDocument": "nke-20250531.htm",
+    "local_binary": "_source_filings\\nike_10k_2025-05-31_0000320187-25-000047.htm",
+    "local_text": "raw_extractions\\nike_10k.txt",
+    "text_chars": 417250,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320187/000032018725000047/nke-20250531.htm",
+    "chosen_as_alt_for": null
+  },
+  {
+    "requested": {
+      "key": "starbucks",
+      "ticker": "SBUX",
+      "cik": "0000829224",
+      "name": "Starbucks Corporation",
+      "alt": {
+        "key": "mcdonalds",
+        "ticker": "MCD",
+        "cik": "0000063908",
+        "name": "McDonald's Corporation"
+      }
+    },
+    "status": "ok",
+    "company": "Starbucks Corporation",
+    "ticker": "SBUX",
+    "cik": "0000829224",
+    "form": "10-K",
+    "filingDate": "2025-11-14",
+    "reportDate": "2025-09-28",
+    "accessionNumber": "0000829224-25-000114",
+    "primaryDocument": "sbux-20250928.htm",
+    "local_binary": "_source_filings\\starbucks_10k_2025-09-28_0000829224-25-000114.htm",
+    "local_text": "raw_extractions\\starbucks_10k.txt",
+    "text_chars": 401928,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+    "chosen_as_alt_for": null
+  },
+  {
+    "requested": {
+      "key": "marriott",
+      "ticker": "MAR",
+      "cik": "0001048286",
+      "name": "Marriott International, Inc.",
+      "alt": {
+        "key": "booking",
+        "ticker": "BKNG",
+        "cik": "0001075531",
+        "name": "Booking Holdings Inc."
+      }
+    },
+    "status": "ok",
+    "company": "Marriott International, Inc.",
+    "ticker": "MAR",
+    "cik": "0001048286",
+    "form": "10-K",
+    "filingDate": "2026-02-10",
+    "reportDate": "2025-12-31",
+    "accessionNumber": "0001048286-26-000007",
+    "primaryDocument": "mar-20251231.htm",
+    "local_binary": "_source_filings\\marriott_10k_2025-12-31_0001048286-26-000007.htm",
+    "local_text": "raw_extractions\\marriott_10k.txt",
+    "text_chars": 295052,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm",
+    "chosen_as_alt_for": null
+  }
+]
