@@ -1,0 +1,354 @@
+.shell {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-bottom: 5.5rem;
+}
+
+.loading {
+  color: var(--color-slate-muted);
+}
+
+.topBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.exitLink {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-blue);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.exitLink:hover {
+  text-decoration: underline;
+}
+
+.exitLink:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  border-radius: 2px;
+}
+
+.progressMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-slate-muted);
+}
+
+.progressTrack {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-blue);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progressFill {
+    transition: none;
+  }
+}
+
+.lessonTitle {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.35rem, 4vw, 1.55rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+}
+
+.stage {
+  min-height: 10rem;
+}
+
+.stageIn {
+  animation: fadeIn 0.22s ease;
+}
+
+.stageOut {
+  opacity: 0.35;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stageIn {
+    animation: none;
+  }
+
+  .stageOut {
+    opacity: 1;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 0;
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 75%,
+    rgba(244, 246, 249, 0.92) 100%
+  );
+  border-top: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  min-height: 44px;
+  min-width: 7rem;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.primaryBtn {
+  background: var(--color-blue);
+  color: #fff;
+  border: none;
+  flex: 1;
+  max-width: 14rem;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background: var(--color-blue-hover);
+}
+
+.primaryBtn:disabled,
+.secondaryBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  background: var(--color-surface);
+  color: var(--color-navy);
+  border: 1.5px solid var(--color-border-strong);
+}
+
+.primaryBtn:focus-visible,
+.secondaryBtn:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+/* —— Completion —— */
+
+.completion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.35rem 1.2rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.completionPathDone {
+  border-color: var(--color-success-border);
+  background: linear-gradient(
+    165deg,
+    var(--color-success-bg) 0%,
+    var(--color-surface) 45%
+  );
+}
+
+.completionEyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-success);
+}
+
+.completionHeading {
+  margin: 0;
+  font-size: clamp(1.25rem, 3.5vw, 1.45rem);
+  line-height: 1.25;
+  color: var(--color-navy);
+}
+
+.completionBody {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-slate);
+}
+
+.connectSection {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.connectHeading {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-slate-muted);
+}
+
+.connectList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.connectList li {
+  margin: 0;
+}
+
+.connectList a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.connectList a:hover {
+  text-decoration: underline;
+}
+
+.connectList a:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  border-radius: 2px;
+}
+
+.pathProgressCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.pathProgressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.pathProgressLabel {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-slate-muted);
+}
+
+.pathProgressCount {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.pathProgressTrack {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.pathProgressFill {
+  height: 100%;
+  background: var(--color-success);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pathProgressFill {
+    transition: none;
+  }
+}
+
+.completionActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+.primaryLink,
+.secondaryLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.primaryLink {
+  background: var(--color-blue);
+  color: #fff;
+}
+
+.primaryLink:hover {
+  background: var(--color-blue-hover);
+  color: #fff;
+  text-decoration: none;
+}
+
+.secondaryLink {
+  color: var(--color-blue);
+  border: 1.5px solid var(--color-border-strong);
+  background: var(--color-surface);
+}
+
+.secondaryLink:hover {
+  border-color: var(--color-blue);
+  text-decoration: none;
+}
+
+.primaryLink:focus-visible,
+.secondaryLink:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}

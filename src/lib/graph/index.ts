@@ -22,6 +22,22 @@ export function getDraftModules(): Module[] {
   return getDraftModulesFromDisk();
 }
 
+export interface GraphTotals {
+  activeModules: number;
+  globals: number;
+  zoneNodes: number;
+}
+
+/** Headline counts, computed from canonical JSON. Zone nodes are active-only. */
+export function getGraphTotals(): GraphTotals {
+  const store = getStore();
+  return {
+    activeModules: getActiveModules().length,
+    globals: store.globals.length,
+    zoneNodes: store.nodes.length,
+  };
+}
+
 export function getModule(moduleSlug: string): Module | undefined {
   return getStore().modulesBySlug.get(moduleSlug);
 }
