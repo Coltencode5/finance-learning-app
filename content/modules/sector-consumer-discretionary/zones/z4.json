@@ -1,0 +1,189 @@
+[
+  {
+    "id": "sector-consumer-discretionary.z4.1",
+    "local_id": "Z4.1",
+    "module": "sector-consumer-discretionary",
+    "zone": 4,
+    "ordinal": 1,
+    "title": "Valuing a Consumer Company: The Growth Algorithm & the Cyclical Trap",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The standard toolkit works here — but the sector's valuation discipline is decomposition: growth must be split into new units and comps (because they carry opposite information about durability), cyclical earnings must be normalized (never capitalize the peak), and much of the enterprise value is often the brand or a fee stream rather than the operations in front of you.",
+    "explainer_covers": [
+      "The fourth dialect. Financials: the tools break. IT: the inputs mislead. Energy: normalize the cycle. Consumer: the tools work, but the growth lies unless decomposed — a 20%-growth retailer whose comps are negative is a shrinking business wearing an expansion.",
+      "The growth algorithm. Approximately, (1 + revenue growth) ≈ (1 + unit/footprint growth) × (1 + comparable-sales growth) — unit/footprint growth plus comps plus their interaction; closures, partial-year openings, mix, acquisitions, and FX can make reported growth differ from that sketch, so it is not an exact identity. Unit growth is bought (capex + a saturation ceiling); comps are earned (demand). The analyst's real object is the incremental unit's economics — the cash-on-cash return of the next store/restaurant (build cost vs mature unit volumes: the fast-casual arithmetic of an $800k build-out against $1.75M store sales) — and the honest terminal value rests on comps, because unit growth always ends. (The vocabulary rhymes with `venture-capital.z3.4`'s unit economics — back-linked, not re-derived.)",
+      "The cyclical trap (★G310, applied). Consumer cyclicals — autos and durables loudest — look cheapest at the peak: record earnings compress the multiple exactly when they're least sustainable. Mid-cycle earnings discipline is Energy's mint doing cross-sector work; this is the module's Z4 duplication guard in action (the machinery lives at ★G310 and ER Z3.7–3.8; only the consumer application is taught here).",
+      "Valuing the fee stream and the brand. Franchise royalties (Z2.3) are recurring, capital-light fee streams that often command richer multiples than owned-unit earnings — still exposed to franchisee sales, closures, contract terms, and brand health — and for brand companies, enterprise value (★G25) is substantially ★G321. Internally generated brand erosion normally shows up through weaker demand, pricing, margins, and cash flows; acquired brands, goodwill, and identifiable intangibles may require impairment testing under the applicable accounting rules — not every brand stumble auto-impairs on the books.",
+      "The Tesla problem (the boundary case as a valuation lesson). A capital-intensive manufacturer (Z2.4) priced on a software/autonomy narrative — the story-vs-numbers tension Damodaran's young/money-losing-firm lanes formalize. Not resolved here; taught as the sector's standing exhibit of GICS-label vs economics inside a valuation. (EV here = ★G25 enterprise value; in Z2.4 \"EV\" also means electric vehicle.)",
+      "The toolkit itself — ★G87–★G95, ★G24–★G27, multiples craft at `equity-research.z3.7–3.8` — back-linked wholesale, per the guard."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-financials.z4.1",
+        "note": "four-dialect chain — tools break"
+      },
+      {
+        "ref": "sector-information-technology.z4.1",
+        "note": "four-dialect chain — inputs mislead"
+      },
+      {
+        "ref": "sector-energy.z4.1",
+        "note": "four-dialect chain — normalize the cycle"
+      },
+      {
+        "ref": "G310",
+        "note": "the cyclical discipline — mid-cycle earnings"
+      },
+      {
+        "ref": "G87",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G88",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G89",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G90",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G91",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G92",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G93",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G94",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G95",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G24",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G25",
+        "note": "assumed toolkit — EV as enterprise value"
+      },
+      {
+        "ref": "G26",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "G27",
+        "note": "assumed toolkit"
+      },
+      {
+        "ref": "equity-research.z3.7",
+        "note": "inherited valuation craft"
+      },
+      {
+        "ref": "equity-research.z3.8",
+        "note": "inherited valuation craft"
+      },
+      {
+        "ref": "venture-capital.z3.4",
+        "note": "unit-economics vocabulary"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.1",
+        "note": "comps — the algorithm's second term"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.3",
+        "note": "the fee stream being valued"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "the brand — what's often actually being valued"
+      }
+    ],
+    "connects_to_raw": "`sector-financials.z4.1` · `sector-information-technology.z4.1` · `sector-energy.z4.1` (the four-dialect chain — this node points to all three; no retrofit) · ★G310 (the cyclical discipline) · ★G87–★G95 / ★G24–★G27 / `equity-research.z3.7–3.8` (the inherited toolkit) · `venture-capital.z3.4` (the unit-economics vocabulary) · Z3.1 (comps — the algorithm's second term) · Z2.3 / Z3.4 (the fee stream & the brand — what's actually being valued).",
+    "gaps": [],
+    "real_world_layer": "Growth decomposition (units × comps, approximate identity); ★G310 cyclical trap; franchise fee multiples; Tesla GICS-vs-economics exhibit.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z4.2",
+    "local_id": "Z4.2",
+    "module": "sector-consumer-discretionary",
+    "zone": 4,
+    "ordinal": 2,
+    "title": "Reading the Books: Leases, Franchises & the Credit Footnote",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "The sector's financial statements have three signature reading problems — the store fleet is an economically debt-like lease obligation, franchise accounting inflates top lines with pass-through, and inventory accounting hides judgment calls — and its credit analysis is the standard corporate template run on cycle-adjusted, lease-adjusted inputs.",
+    "explainer_covers": [
+      "Leases are the fixed obligation you almost didn't see. A 2,000-store fleet is a tower of economically debt-like fixed obligations that must be considered in leverage and fixed-charge analysis — fixed charges against cyclical revenue (Z1.2's deferral option working against the tenant). They are not legally or structurally identical to funded debt, but lease-adjusted leverage is the sector's credit arithmetic, and the lease burden is the recurring engine of retail bankruptcies: the sales leave, the rent doesn't. (The store-as-lease is the tenant's side of what Real Estate teaches from the landlord's side — `real-estate.z2.2`.)",
+      "Franchise accounting — read past the top line. Marriott's $26.2B revenue contains $19.2B of cost reimbursements (pass-through with near-zero economics); the business is the $5.4B gross-fee stack (franchise + base + incentive), netted for contract amortization. Starbucks' 83%-of-revenue company-operated mix vs 48%-of-stores licensed is the same lesson smaller: revenue mix ≠ store mix ≠ profit mix. The analyst re-cuts the statements to the fee stream Z4.1 values — recurring capital-light royalties still exposed to franchisee sales, closures, contract terms, and brand health.",
+      "Inventory's judgment calls. Obsolescence reserves (Nike's clock on $7.5B of fashion), markdown timing as an earnings lever, and each filer's self-defined comp base (Z3.1) — the footnotes where retail managements exercise discretion.",
+      "The credit footnote (D4 — the FI Z4.8 handshake, weighted back-link, two bullets). (1) Consumer credit runs FI's standard four-part corporate frame (`fixed-income.z4.8`, ★G74/★G34/★G275–★G277) — but on cycle-adjusted revenue (never underwrite peak comps) and lease-adjusted leverage (the adjustment above); the discretionary sector is where \"the cycle\" in credit work stops being abstract. (2) The sector's own structures, named not built: whole-business securitization — franchise royalty streams as bond collateral, the restaurant-brand specialty (one line) — and retail ABL on the inventory borrowing base (★G76, from Z3.2). This closes FI Z4.8's deferral for its fourth sector.",
+      "Two forward seams, named. Consumer ABS (card/auto receivables — FI's world) and the consumer LBO (PE's classic sector: brand + cash flow + leverage — PE's LBO nodes are currently generic). Both get forward-seam notes elsewhere, not content here."
+    ],
+    "connects_to": [
+      {
+        "ref": "fixed-income.z4.8",
+        "note": "D4 handshake — corporate credit frame on cycle- and lease-adjusted inputs"
+      },
+      {
+        "ref": "G74",
+        "note": "coverage — credit interface"
+      },
+      {
+        "ref": "G34",
+        "note": "covenants — credit interface"
+      },
+      {
+        "ref": "G275",
+        "note": "IG/HY — credit interface"
+      },
+      {
+        "ref": "G276",
+        "note": "ratings — credit interface"
+      },
+      {
+        "ref": "G277",
+        "note": "spreads — credit interface"
+      },
+      {
+        "ref": "G76",
+        "note": "borrowing base — retail ABL"
+      },
+      {
+        "ref": "real-estate.z2.2",
+        "note": "the landlord's side of the lease"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.2",
+        "note": "inventory & the reserves"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.3",
+        "note": "franchise economics, now in the statements"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.1",
+        "note": "the fee stream this reading feeds"
+      }
+    ],
+    "connects_to_raw": "`fixed-income.z4.8` (the D4 handshake — weighted back-link, in-node) · ★G74 / ★G34 / ★G275 / ★G276 / ★G277 (the credit interface) · ★G76 (the borrowing base) · `real-estate.z2.2` (the landlord's side of the lease) · Z3.2 (inventory & the reserves) · Z2.3 (franchise economics, now in the statements) · Z4.1 (the fee stream this reading feeds).",
+    "gaps": [],
+    "real_world_layer": "Marriott cost-reimbursement optics; Starbucks company-operated vs licensed mix; lease-adjusted leverage; retail ABL / whole-business securitization named.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

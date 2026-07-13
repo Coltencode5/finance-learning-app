@@ -1,6 +1,6 @@
 {
   "generated_by": "pipeline/build/build_graph.py",
-  "edge_count": 4433,
+  "edge_count": 4568,
   "edges": [
     {
       "from": "G102",
@@ -11,6 +11,12 @@
     {
       "from": "G132",
       "to": "G297",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G196",
+      "to": "G317",
       "kind": "disambiguates",
       "note": null
     },
@@ -177,6 +183,24 @@
       "note": null
     },
     {
+      "from": "G317",
+      "to": "G196",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G318",
+      "to": "G88",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G318",
+      "to": "G89",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
       "from": "G53",
       "to": "G102",
       "kind": "disambiguates",
@@ -203,6 +227,18 @@
     {
       "from": "G70",
       "to": "G307",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G88",
+      "to": "G318",
+      "kind": "disambiguates",
+      "note": null
+    },
+    {
+      "from": "G89",
+      "to": "G318",
       "kind": "disambiguates",
       "note": null
     },
@@ -3067,6 +3103,12 @@
       "to": "real-estate.z5.3",
       "kind": "references",
       "note": "REIT valuation treatment — NAV & the public-private gap"
+    },
+    {
+      "from": "equity-research.z2.3",
+      "to": "sector-consumer-discretionary.z1.1",
+      "kind": "references",
+      "note": "GICS consumer discretionary sector lens — understand the sector here, learn to research it in ER"
     },
     {
       "from": "equity-research.z2.3",
@@ -19401,6 +19443,12 @@
       "note": null
     },
     {
+      "from": "real-estate.z2.2",
+      "to": "sector-consumer-discretionary.z5.2",
+      "kind": "references",
+      "note": "storefront boundary — landlord/property economics vs retailer/store strategy"
+    },
+    {
       "from": "real-estate.z2.3",
       "to": "G221",
       "kind": "references",
@@ -20557,6 +20605,762 @@
       "to": "private-equity.z5.4",
       "kind": "references",
       "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "attachment — the bidirectional door to sector research craft"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-consumer-discretionary.z1.2",
+      "kind": "references",
+      "note": "the defining economics"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-consumer-discretionary.z2.1",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-consumer-discretionary.z2.2",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-consumer-discretionary.z2.3",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-consumer-discretionary.z2.4",
+      "kind": "references",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.1",
+      "to": "sector-information-technology.z1.1",
+      "kind": "references",
+      "note": "sibling front door — and the other half of the Amazon boundary it already names"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "G314",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "G237",
+      "kind": "references",
+      "note": "the cycle this demand amplifies"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "G293",
+      "kind": "references",
+      "note": "zero marginal cost & pricing power — consumer sits between energy and software"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "macro-economics.z1.6",
+      "kind": "references",
+      "note": "the business cycle this demand amplifies"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "sector-consumer-discretionary.z3.3",
+      "kind": "references",
+      "note": "where the squeezed wallet flows — polarization"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "how preference gets manufactured"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "sector-consumer-discretionary.z5.1",
+      "kind": "references",
+      "note": "the cycle exposure, in full"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "sector-energy.z1.2",
+      "kind": "references",
+      "note": "pricing-regime trilogy — energy cannot set price"
+    },
+    {
+      "from": "sector-consumer-discretionary.z1.2",
+      "to": "sector-information-technology.z1.2",
+      "kind": "references",
+      "note": "★G293 — software sets price; the deliberate economic opposite"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "G315",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "G294",
+      "kind": "references",
+      "note": "subscription one-liner — retail membership ≠ SaaS product"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "G295",
+      "kind": "references",
+      "note": "cloud/AWS — the platform half of Amazon's P&L"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "G297",
+      "kind": "references",
+      "note": "multi-sided platform — marketplace theory homed in IT"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "G298",
+      "kind": "references",
+      "note": "network effects — winner-take-most gravity homed in IT"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "sector-consumer-discretionary.z3.1",
+      "kind": "references",
+      "note": "how store-retail keeps score"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "sector-consumer-discretionary.z3.2",
+      "kind": "references",
+      "note": "negative operating cycle & inventory — the flywheel's balance-sheet trick"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "sector-consumer-discretionary.z5.2",
+      "kind": "references",
+      "note": "the store's next life"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.1",
+      "to": "sector-information-technology.z1.1",
+      "kind": "references",
+      "note": "Amazon boundary — administrative GICS shelf vs economic stack"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "G316",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "G320",
+      "kind": "references",
+      "note": "trading up / death in the middle — durables exhibit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "G321",
+      "kind": "references",
+      "note": "brand equity — what the label is economically"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "sector-consumer-discretionary.z2.4",
+      "kind": "references",
+      "note": "dealer-franchise cousin of the channel question"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "sector-consumer-discretionary.z3.2",
+      "kind": "references",
+      "note": "channel mix is a first-order margin driver; inventory risk follows the channel"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "sector-consumer-discretionary.z3.3",
+      "kind": "references",
+      "note": "premiumization — durables as the exhibit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.2",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "the brand — the asset this model monetizes"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "G317",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "G196",
+      "kind": "references",
+      "note": "disambiguation — the other franchise (research franchise)"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "G230",
+      "kind": "references",
+      "note": "leasing & occupancy — property-side machinery"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "real-estate.z2.2",
+      "kind": "references",
+      "note": "hospitality's property side — back-link, don't re-home"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "sector-consumer-discretionary.z3.1",
+      "kind": "references",
+      "note": "comps travel here — comparable-property RevPAR is lodging's traffic × ticket"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "sector-consumer-discretionary.z4.2",
+      "kind": "references",
+      "note": "franchise accounting & the pass-through optics, deepened"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.3",
+      "to": "sector-financials.z2.3",
+      "kind": "references",
+      "note": "fee-machine kinship"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "G237",
+      "kind": "references",
+      "note": "the demand cycle at maximum beta"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "G310",
+      "kind": "references",
+      "note": "mid-cycle earnings — the auto valuation discipline"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "G317",
+      "kind": "references",
+      "note": "the dealer franchise — the model's other face"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "sector-consumer-discretionary.z2.2",
+      "kind": "references",
+      "note": "direct sales as channel-mix-with-statutes"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "sector-consumer-discretionary.z4.1",
+      "kind": "references",
+      "note": "the Tesla problem — a factory priced as a platform"
+    },
+    {
+      "from": "sector-consumer-discretionary.z2.4",
+      "to": "sector-consumer-discretionary.z5.1",
+      "kind": "references",
+      "note": "autos as the cycle's loudest instrument"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G318",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G191",
+      "kind": "references",
+      "note": "critical factors — the machinery this instantiates"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G192",
+      "kind": "references",
+      "note": "KPI-before-EPS discipline"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G193",
+      "kind": "references",
+      "note": "KPI-before-EPS discipline"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G88",
+      "kind": "references",
+      "note": "disambiguation — the other comps (comparable companies analysis)"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "G89",
+      "kind": "references",
+      "note": "disambiguation — the other comps (precedent / deal comps)"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "equity-research.z2.3",
+      "kind": "references",
+      "note": "the retailer contrast, closed"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "sector-consumer-discretionary.z2.3",
+      "kind": "references",
+      "note": "RevPAR — the lodging cousin"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.1",
+      "to": "sector-consumer-discretionary.z4.1",
+      "kind": "references",
+      "note": "comps as the growth algorithm's second term"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "G319",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "G31",
+      "kind": "references",
+      "note": "retail inventory/cash cycle is sector application of WC mechanics"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "G76",
+      "kind": "references",
+      "note": "inventory as a borrowing base — retail ABL"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "sector-consumer-discretionary.z2.1",
+      "kind": "references",
+      "note": "the negative operating cycle at flywheel scale"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "sector-consumer-discretionary.z2.2",
+      "kind": "references",
+      "note": "channel mix and DTC's inventory risk"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "margin as brand power's paper trail"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.2",
+      "to": "sector-consumer-discretionary.z4.2",
+      "kind": "references",
+      "note": "reserves, markdown timing & the footnotes"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "G320",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "G314",
+      "kind": "references",
+      "note": "discretionary demand — the wallet that polarizes"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "G321",
+      "kind": "references",
+      "note": "brand equity — the trade-up's engine"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "sector-consumer-discretionary.z1.2",
+      "kind": "references",
+      "note": "the discretionary wallet doing the rocketing"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "sector-consumer-discretionary.z2.2",
+      "kind": "references",
+      "note": "durables & apparel — the exhibit categories"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "the brand is how you trade someone up"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.3",
+      "to": "sector-consumer-discretionary.z5.1",
+      "kind": "references",
+      "note": "downturns sharpen the poles"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "G321",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "G298",
+      "kind": "references",
+      "note": "network effects — the other sector's durable-advantage machinery (contrast, not family)"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "sector-consumer-discretionary.z2.2",
+      "kind": "references",
+      "note": "the brand-manufacturer model"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "sector-consumer-discretionary.z3.2",
+      "kind": "references",
+      "note": "margin — brand power's report card"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "sector-consumer-discretionary.z3.3",
+      "kind": "references",
+      "note": "polarization — brand is the trade-up's engine"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "sector-consumer-discretionary.z4.1",
+      "kind": "references",
+      "note": "what you're often actually valuing"
+    },
+    {
+      "from": "sector-consumer-discretionary.z3.4",
+      "to": "sector-information-technology.z3.1",
+      "kind": "references",
+      "note": "IT's durable-advantage machinery — contrast, not family"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G24",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G25",
+      "kind": "references",
+      "note": "assumed toolkit — EV as enterprise value"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G26",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G27",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G310",
+      "kind": "references",
+      "note": "the cyclical discipline — mid-cycle earnings"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G87",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G88",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G89",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G90",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G91",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G92",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G93",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G94",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "G95",
+      "kind": "references",
+      "note": "assumed toolkit"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "equity-research.z3.7",
+      "kind": "references",
+      "note": "inherited valuation craft"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "equity-research.z3.8",
+      "kind": "references",
+      "note": "inherited valuation craft"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-consumer-discretionary.z2.3",
+      "kind": "references",
+      "note": "the fee stream being valued"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-consumer-discretionary.z3.1",
+      "kind": "references",
+      "note": "comps — the algorithm's second term"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "the brand — what's often actually being valued"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-energy.z4.1",
+      "kind": "references",
+      "note": "four-dialect chain — normalize the cycle"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-financials.z4.1",
+      "kind": "references",
+      "note": "four-dialect chain — tools break"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "sector-information-technology.z4.1",
+      "kind": "references",
+      "note": "four-dialect chain — inputs mislead"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.1",
+      "to": "venture-capital.z3.4",
+      "kind": "references",
+      "note": "unit-economics vocabulary"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G275",
+      "kind": "references",
+      "note": "IG/HY — credit interface"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G276",
+      "kind": "references",
+      "note": "ratings — credit interface"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G277",
+      "kind": "references",
+      "note": "spreads — credit interface"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G34",
+      "kind": "references",
+      "note": "covenants — credit interface"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G74",
+      "kind": "references",
+      "note": "coverage — credit interface"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "G76",
+      "kind": "references",
+      "note": "borrowing base — retail ABL"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "fixed-income.z4.8",
+      "kind": "references",
+      "note": "D4 handshake — corporate credit frame on cycle- and lease-adjusted inputs"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "real-estate.z2.2",
+      "kind": "references",
+      "note": "the landlord's side of the lease"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "sector-consumer-discretionary.z2.3",
+      "kind": "references",
+      "note": "franchise economics, now in the statements"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "sector-consumer-discretionary.z3.2",
+      "kind": "references",
+      "note": "inventory & the reserves"
+    },
+    {
+      "from": "sector-consumer-discretionary.z4.2",
+      "to": "sector-consumer-discretionary.z4.1",
+      "kind": "references",
+      "note": "the fee stream this reading feeds"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "G127",
+      "kind": "references",
+      "note": "the sentiment pendulum"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "G237",
+      "kind": "references",
+      "note": "the business cycle — inherited machinery"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "G255",
+      "kind": "references",
+      "note": "the credit cycle — amplifier"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "macro-economics.z1.10",
+      "kind": "references",
+      "note": "the indicator dashboard — retail sales named"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "macro-economics.z1.6",
+      "kind": "references",
+      "note": "the cycle itself — home of the machinery"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "sector-consumer-discretionary.z1.2",
+      "kind": "references",
+      "note": "the deferral option, cycled"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "sector-consumer-discretionary.z2.4",
+      "kind": "references",
+      "note": "maximum beta"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "sector-consumer-discretionary.z3.3",
+      "kind": "references",
+      "note": "downturns polarize"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.1",
+      "to": "sector-financials.z3.2",
+      "kind": "references",
+      "note": "the lender's mirror — consumer loan losses"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "G322",
+      "kind": "home_of",
+      "note": null
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "G297",
+      "kind": "references",
+      "note": "multi-sided platform — platform gravity under apex predators"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "G298",
+      "kind": "references",
+      "note": "network effects — platform gravity under apex predators"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "G315",
+      "kind": "references",
+      "note": "the retail flywheel — scale that compounded through the pandemic"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "real-estate.z2.2",
+      "kind": "references",
+      "note": "storefront boundary — landlord's side of the same storefront"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "sector-consumer-discretionary.z2.1",
+      "kind": "references",
+      "note": "the flywheel that got here first"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "sector-consumer-discretionary.z3.4",
+      "kind": "references",
+      "note": "archetypal depth as the counter-strategy"
+    },
+    {
+      "from": "sector-consumer-discretionary.z5.2",
+      "to": "sector-consumer-discretionary.z5.1",
+      "kind": "references",
+      "note": "the pandemic hinge"
     },
     {
       "from": "sector-energy.z1.1",
@@ -21757,6 +22561,12 @@
       "to": "equity-research.z2.3",
       "kind": "references",
       "note": "attachment — the bidirectional door to sector research craft"
+    },
+    {
+      "from": "sector-information-technology.z1.1",
+      "to": "sector-consumer-discretionary.z2.1",
+      "kind": "references",
+      "note": "Amazon boundary — GICS shelves Amazon in CD; platform/cloud economics taught here"
     },
     {
       "from": "sector-information-technology.z1.1",

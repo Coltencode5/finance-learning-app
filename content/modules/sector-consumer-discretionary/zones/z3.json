@@ -1,0 +1,215 @@
+[
+  {
+    "id": "sector-consumer-discretionary.z3.1",
+    "local_id": "Z3.1",
+    "module": "sector-consumer-discretionary",
+    "zone": 3,
+    "ordinal": 1,
+    "title": "Comps: The Sector's Heartbeat Metric",
+    "tag": "global",
+    "global_id": "G318",
+    "quick_definition": "Comparable store sales (\"comps,\" same-store sales) measure growth at stores open past a threshold (commonly ~13 months) — stripping out new-store openings to reveal whether the existing business is actually growing. It is the retailer's heartbeat, and it decomposes into traffic and ticket: how many customers came, and what each spent.",
+    "explainer_covers": [
+      "Why comps exists (★G318). A retailer can grow revenue forever by opening stores while every existing store quietly shrinks — comps is the metric that catches it. It separates demand growth from footprint growth, which is why it anchors the growth algorithm in Z4.1.",
+      "The decomposition is the diagnosis. Starbucks FY2025: North America comparable-store sales were down 2%, driven by transactions down 4% and average ticket up 2% — fewer customers, paying more. The two components tell different stories (traffic is demand/brand health; ticket is pricing/mix), and the same print with reversed components would mean the opposite thesis. This is ★G192/★G193's KPI-before-EPS discipline with the sector's own instrument.",
+      "Every filer defines its own comp base — inclusion thresholds, FX treatment, remodels, digital attribution all vary (Nike's Direct-store comps −1% under its definition) — so the footnote is part of the metric (deepened in Z4.2).",
+      "The metric travels. Restaurants and retail use comps directly; lodging runs the same logic as comparable-property RevPAR = occupancy × ADR (Z2.3) — occupancy is lodging's traffic, ADR its ticket. One decomposition family, three industries.",
+      "The collision, defused. These comps are a demand metric. ★G88's \"comps\" (comparable-companies analysis) and ★G89's \"deal comps\" are valuation methods — peer multiples and precedent transactions. A retail analyst genuinely uses both in one sentence (\"run comps on the comps\"); the formal disambiguation family lands here.",
+      "ER's contrast, fulfilled: this node plus Z3.2 is exactly the \"same-store sales, traffic, and margin\" the hub has named since M8."
+    ],
+    "connects_to": [
+      {
+        "ref": "G88",
+        "note": "disambiguation — the other comps (comparable companies analysis)"
+      },
+      {
+        "ref": "G89",
+        "note": "disambiguation — the other comps (precedent / deal comps)"
+      },
+      {
+        "ref": "G191",
+        "note": "critical factors — the machinery this instantiates"
+      },
+      {
+        "ref": "G192",
+        "note": "KPI-before-EPS discipline"
+      },
+      {
+        "ref": "G193",
+        "note": "KPI-before-EPS discipline"
+      },
+      {
+        "ref": "equity-research.z2.3",
+        "note": "the retailer contrast, closed"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.3",
+        "note": "RevPAR — the lodging cousin"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.1",
+        "note": "comps as the growth algorithm's second term"
+      }
+    ],
+    "connects_to_raw": "★G88 / ★G89 (disambiguation — the other \"comps\") · ★G191 / ★G192 / ★G193 (the critical-factors & KPI-before-EPS machinery this instantiates) · `equity-research.z2.3` (the contrast, closed) · Z2.3 (RevPAR — the lodging cousin) · Z4.1 (comps as the growth algorithm's second term).",
+    "gaps": [],
+    "real_world_layer": "Starbucks FY2025 NA comps −2% (transactions −4%, ticket +2%); Nike Direct-store comps −1%; lodging RevPAR analogy.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z3.2",
+    "local_id": "Z3.2",
+    "module": "sector-consumer-discretionary",
+    "zone": 3,
+    "ordinal": 2,
+    "title": "Margin & Inventory: The Retail P&L's Two Pressure Points",
+    "tag": "global",
+    "global_id": "G319",
+    "quick_definition": "A consumer company's health reads through two linked gauges: gross margin (what survives after the cost of the goods — the report card of brand strength, channel mix, and discipline) and inventory (the stock of goods whose turns, markdowns, and obsolescence drive that margin — and whose management is the sector's classic failure mode).",
+    "explainer_covers": [
+      "Margin as a verdict, not a line. Nike FY2025: gross margin 42.7%, down 190 bps — the filing's own causes: discounts, channel mix, obsolescence reserves. Every driver is a decision or a demand fact; margin is where brand power (Z3.4), channel choice (Z2.2), and inventory discipline all get graded at once. Operating margin adds the cost of running the fleet (Starbucks: 7.9%, down 710 bps — the fixed-cost store base amplifying a comp decline). Amazon's honest footnote: it tells you itself that segment operating income is its meaningful lens, not gross margin — read companies in their own accounting dialect. (Gross margin is deliberately not minted — it's corpus-generic accounting; the retail inventory discipline is the sector's own science, and that's the global ★G319.)",
+      "Inventory — the sector's inventory science. Turns (how fast stock converts to sales), markdowns (the price you pay to move a buying mistake), obsolescence reserves (fashion ages; Nike holds $7.5B of inventory against exactly that clock), shrink. Stone's early-Amazon toy write-offs are the canonical cautionary tale: in retail, being wrong about demand doesn't just miss revenue — it sits in a warehouse depreciating.",
+      "The cash cycle — and the negative operating cycle. Cash conversion = days of inventory + receivables − payables. Scale retail's superpower (Stone, Ch. 2): turn inventory before paying suppliers and customers' cash funds the growth — the negative operating cycle that let Amazon expand on its vendors' float. The flywheel's balance-sheet trick.",
+      "Inventory as collateral (the credit hook). Retail's asset-based lending borrows against the inventory itself — ★G76's borrowing base with merchandise in the box; deepened with the credit reading in Z4.2.",
+      "Working-capital kinship. ★G31 is the deal-closing working-capital peg in PE; this node is the sector application of those same working-capital mechanics to retail inventory and the cash cycle — operating turns, markdowns, and float — not a separate concept family."
+    ],
+    "connects_to": [
+      {
+        "ref": "G31",
+        "note": "retail inventory/cash cycle is sector application of WC mechanics"
+      },
+      {
+        "ref": "G76",
+        "note": "inventory as a borrowing base — retail ABL"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.2",
+        "note": "channel mix and DTC's inventory risk"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.1",
+        "note": "the negative operating cycle at flywheel scale"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "margin as brand power's paper trail"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.2",
+        "note": "reserves, markdown timing & the footnotes"
+      }
+    ],
+    "connects_to_raw": "★G31 (retail inventory/cash cycle is sector application of WC mechanics) · ★G76 (inventory as a borrowing base — retail ABL) · Z2.2 (channel mix and DTC's inventory risk) · Z2.1 (the negative operating cycle at flywheel scale) · Z3.4 (margin as brand power's paper trail) · Z4.2 (reserves, markdown timing & the footnotes).",
+    "gaps": [],
+    "real_world_layer": "Nike FY2025 gross margin 42.7% (−190 bps), inventories $7.5B; Starbucks operating margin 7.9%; Stone negative operating cycle.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z3.3",
+    "local_id": "Z3.3",
+    "module": "sector-consumer-discretionary",
+    "zone": 3,
+    "ordinal": 3,
+    "title": "The Polarized Consumer: Trading Up, Trading Down & the Dying Middle",
+    "tag": "global",
+    "global_id": "G320",
+    "quick_definition": "Discretionary spending doesn't cut evenly — consumers trade up in the few categories they care about (paying real premiums for \"New Luxury\" goods within middle-class reach) while trading down everywhere else to fund it. The result is the sector's demand-structure law: the premium and value poles grow, and the middle dies.",
+    "explainer_covers": [
+      "Trading up (Silverstein & Fiske) — ★G320. Middle-market consumers pay 20–200% premiums in chosen categories — breaking the classical price-volume curve (high price and high volume). \"New Luxury\" comes in three types, folded here as orbit vocabulary: accessible superpremium (the $28 vodka), Old-Luxury brand extensions (the entry Mercedes), and masstige (prestige at a mass price point).",
+      "Rocketing and the funded trade-down. The same household buys the $3,000 golf clubs and shops at the discounter — selective intensity in 2–3 categories, ruthless value elsewhere. The trade-down is not weakness; it's the funding mechanism of the trade-up.",
+      "The benefit ladder (orbit). Winners ladder technical → functional → emotional benefits — the product has to actually be better and mean something. Emotional-only Old Luxury gets dethroned when the technical rungs rot (the book's Cadillac autopsy — a Z2.4 rhyme).",
+      "Death in the middle — the strategic law. Positioned between the poles = squeezed by both. This is the sector's map of who dies: the mid-tier department store, the unremarkable mid-price brand. For an investor, where a company sits on the polarization is often the thesis itself — premium and discount can both work; the middle is where retailers go to die.",
+      "The cycle interaction. Downturns accelerate polarization — the wallet shrinks, the rocketing gets more selective, the trade-down deepens (Z5.1's mood-ring read; Stephens's crisis-shopping psychology as the pandemic-era echo).",
+      "Why this global and not five. Masstige, rocketing, the benefit ladder, apostles — all real vocabulary, all folded into this one home rather than minted."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-consumer-discretionary.z1.2",
+        "note": "the discretionary wallet doing the rocketing"
+      },
+      {
+        "ref": "G314",
+        "note": "discretionary demand — the wallet that polarizes"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "the brand is how you trade someone up"
+      },
+      {
+        "ref": "G321",
+        "note": "brand equity — the trade-up's engine"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.2",
+        "note": "durables & apparel — the exhibit categories"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.1",
+        "note": "downturns sharpen the poles"
+      }
+    ],
+    "connects_to_raw": "Z1.2 / ★G314 (the discretionary wallet doing the rocketing) · Z3.4 / ★G321 (the brand is how you trade someone up) · Z2.2 (durables & apparel — the exhibit categories) · Z5.1 (downturns sharpen the poles).",
+    "gaps": [
+      {
+        "kind": "recency",
+        "note": "Trading Up mechanisms retained, quantitative evidence primarily 2003-08.",
+        "needed_source": "contemporary premiumization/trade-down/polarization evidence"
+      }
+    ],
+    "real_world_layer": "Trading Up (Silverstein & Fiske) — mechanisms durable, numbers era-stamped 2003–08.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z3.4",
+    "local_id": "Z3.4",
+    "module": "sector-consumer-discretionary",
+    "zone": 3,
+    "ordinal": 4,
+    "title": "Brand: The Asset You Build in the Customer's Head",
+    "tag": "global",
+    "global_id": "G321",
+    "quick_definition": "Brand equity is the economic asset a company builds in customers' heads — the accumulated meaning that lets a product command a premium, hold traffic, and survive a bad season. In a sector where the customer can always defer or substitute, brand is a core productive asset, and differentiation is the craft of building one that the competitive herd can't copy.",
+    "explainer_covers": [
+      "Brand as an asset, not an ad (★G321). The sneaker costs dollars to make; the swoosh commands the price. Brand power's paper trail runs through the module's own gauges: pricing power → gross margin (Z3.2); loyalty → traffic (Z3.1); premium positioning → the trade-up (Z3.3). An intangible with a P&L signature.",
+      "Why differentiation decays (Moon's diagnosis). The herd instinct: shared metrics and positioning maps make competitors converge; the augmentation treadmill adds features until every offering blurs (heterogeneous homogeneity — dozens of SKUs, no real choice); customers respond with category blur — loyalty erodes to the category level. Being \"better\" on the shared scorecard is how brands become invisible.",
+      "The escape typology (Moon). Reverse brands subtract what the category over-added (Google's empty page, IKEA's absent services); breakaway brands reclassify the offering so the evaluation criteria change (Swatch: watch → fashion accessory; Cirque: circus → theater); hostile brands draw a line some customers won't cross and gain identity heat from the refusal (Red Bull, MINI). Difference, not incremental betterness, is what re-earns attention.",
+      "Brand and durable advantage — the line held. Brand can be one source of durable competitive advantage in consumer businesses — but ★G321 claims the asset (brand equity and differentiation), not the corpus-wide \"moat\" concept, which remains deliberately unhomed (`MIGRATION_DEFECTS` §G #16, OPEN). Tech's version of a related advantage question is often answered by network effects (★G298) — a cross-sector contrast worth one bullet, not a family that resolves moat.",
+      "Purpose, archetypes & apostles (orbit). Stephens's ten retail archetypes and purpose-as-positioning; Silverstein's apostles (the passionate few who seed demand) — the practitioner layer folded here.",
+      "The staples seam (stated). Brand arguably matters even more where purchases repeat weekly — when the Consumer Staples module is built, it back-links this global rather than re-homing it."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-consumer-discretionary.z3.3",
+        "note": "polarization — brand is the trade-up's engine"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.2",
+        "note": "margin — brand power's report card"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.2",
+        "note": "the brand-manufacturer model"
+      },
+      {
+        "ref": "G298",
+        "note": "network effects — the other sector's durable-advantage machinery (contrast, not family)"
+      },
+      {
+        "ref": "sector-information-technology.z3.1",
+        "note": "IT's durable-advantage machinery — contrast, not family"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.1",
+        "note": "what you're often actually valuing"
+      }
+    ],
+    "connects_to_raw": "Z3.3 (polarization — brand is the trade-up's engine) · Z3.2 (margin — brand power's report card) · Z2.2 (the brand-manufacturer model) · ★G298 / `sector-information-technology.z3.1` (the other sector's durable-advantage machinery — contrast, not family) · Z4.1 (what you're often actually valuing).",
+    "gaps": [],
+    "real_world_layer": "Moon Different (herd, augmentation treadmill, reverse/breakaway/hostile); brand as P&L-visible asset — moat concept left OPEN.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]

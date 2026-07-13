@@ -6727,6 +6727,223 @@
         ]
       }
     ],
+    "sector-consumer-discretionary": [
+      {
+        "node": "sector-consumer-discretionary.z1.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z1.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z2.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z1.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z2.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z2.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z2.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z3.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z3.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z3.3",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z3.4",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.3",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z4.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.4",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z4.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z4.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z5.1",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z4.2",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z1.2",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.3",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      },
+      {
+        "node": "sector-consumer-discretionary.z5.2",
+        "suggested_prerequisites": [
+          {
+            "prerequisite": "sector-consumer-discretionary.z5.1",
+            "reason": "zone_order",
+            "confidence": "base_sequence"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z2.1",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          },
+          {
+            "prerequisite": "sector-consumer-discretionary.z3.4",
+            "reason": "connects_to_hint",
+            "confidence": "experimental"
+          }
+        ]
+      }
+    ],
     "sector-energy": [
       {
         "node": "sector-energy.z1.2",

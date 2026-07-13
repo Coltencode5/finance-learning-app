@@ -1,0 +1,221 @@
+[
+  {
+    "id": "sector-consumer-discretionary.z2.1",
+    "local_id": "Z2.1",
+    "module": "sector-consumer-discretionary",
+    "zone": 2,
+    "ordinal": 1,
+    "title": "Retail & E-commerce: The Everything Store's Economics",
+    "tag": "global",
+    "global_id": "G315",
+    "quick_definition": "Distribution & Retail moves other people's goods to the customer — broadline, specialty, and e-commerce. Its master logic is the flywheel: more selection draws more traffic, which draws more sellers, which lowers costs, which lowers prices, which draws more traffic — the self-reinforcing scale loop Amazon made the sector's operating system.",
+    "explainer_covers": [
+      "The flywheel, defined (Stone). Traffic → sellers → selection → customer experience → traffic, with lower cost structure ↔ lower prices spinning the hub (★G315). It is scale economics, not magic: each turn makes the next turn cheaper. The word flywheel also appears elsewhere in the corpus for other self-reinforcing loops. ★G315 homes only the specifically defined retail flywheel taught here; the sponsor, banking-franchise, lending-origination, capital-allocation, and VC-reputation uses remain separate generic applications and are not retrofitted to this global.",
+      "1P vs 3P — the retailer and the marketplace under one roof. First-party retail buys inventory and resells it (fat revenue, thin margin, inventory risk); the third-party marketplace lets others sell on your pages while you earn seller-services fees whose structure varies by category and service (thin revenue recognition relative to GMV, attractive economics when inventory risk sits with the seller). Amazon runs both, and the marketplace insight — win with the definitive product page, offers beside retail — is Stone's pivotal chapter. The marketplace is a multi-sided platform: the theory (★G297) and its winner-take-most gravity (★G298) are homed in IT and back-linked, not re-taught.",
+      "Fulfillment — the moat you can touch. Amazon spent $109.1B on fulfillment in FY2025 (~15.2% of net sales); FBA attaches third-party inventory to that network, deepening both the flywheel and seller-services economics. Logistics is the e-commerce cost line the way COGS is the store's.",
+      "The price posture: EDLP and Get Big Fast (orbit, Stone). Everyday-low-prices (the Costco lesson: cut ads, fund price) versus promo-driven retail; and the scale-first land-grab that trades near-term profit for the flywheel's mass.",
+      "Prime and the membership model (orbit). Membership (Prime, Costco, RH) buys perks and lock-in that feed the flywheel — not ★G294's SaaS subscription, where the subscription is the product itself. Amazon's FY2025 $68.6B advertising-services revenue is a high-margin line that rides the same traffic machine — platform economics back-linked to IT, not re-taught here as a separate retail-media KPI.",
+      "The honest Amazon ledger (the boundary, quantified). FY2025: $716.9B net sales, of which AWS is $128.7B of revenue but $45.6B of the $80.0B operating income — the retail flywheel builds the empire, the platform half funds it. AWS is one sentence here (★G295); the split is the GICS-boundary lesson.",
+      "Where the physical store fits — broadline and specialty retail still dominate volume; their reinvention under e-commerce pressure is Z5.2's story, and the apex predators frame (Stephens: Amazon/Alibaba/JD/Walmart) previews there."
+    ],
+    "connects_to": [
+      {
+        "ref": "G297",
+        "note": "multi-sided platform — marketplace theory homed in IT"
+      },
+      {
+        "ref": "G298",
+        "note": "network effects — winner-take-most gravity homed in IT"
+      },
+      {
+        "ref": "G295",
+        "note": "cloud/AWS — the platform half of Amazon's P&L"
+      },
+      {
+        "ref": "sector-information-technology.z1.1",
+        "note": "Amazon boundary — administrative GICS shelf vs economic stack"
+      },
+      {
+        "ref": "G294",
+        "note": "subscription one-liner — retail membership ≠ SaaS product"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.2",
+        "note": "negative operating cycle & inventory — the flywheel's balance-sheet trick"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.1",
+        "note": "how store-retail keeps score"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.2",
+        "note": "the store's next life"
+      }
+    ],
+    "connects_to_raw": "★G297 / ★G298 / ★G295 (the platform half — homed in IT, back-linked) · `sector-information-technology.z1.1` (the Amazon boundary) · ★G294 (the subscription one-liner) · Z3.2 (the negative operating cycle & inventory) · Z3.1 (how store-retail keeps score) · Z5.2 (the store's next life).",
+    "gaps": [],
+    "real_world_layer": "Amazon FY2025 10-K (net sales by activity, fulfillment, AWS mix); Stone Everything Store flywheel / 1P–3P / FBA.",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z2.2",
+    "local_id": "Z2.2",
+    "module": "sector-consumer-discretionary",
+    "zone": 2,
+    "ordinal": 2,
+    "title": "Brands, Apparel & Durables: Selling the Label, Not Just the Thing",
+    "tag": "global",
+    "global_id": "G316",
+    "quick_definition": "Consumer Durables & Apparel companies make and brand their own goods — sneakers, handbags, appliances, furniture. Their defining choice is channel mix: sell wholesale (through retailers, for reach) or direct-to-consumer (own stores + digital, for margin, data, and control of the brand experience).",
+    "explainer_covers": [
+      "The business model in one line: manufacture (usually outsourced), brand (the actual asset — Z3.4), distribute (the choice this node teaches). The margin lives in the label: the product costs dollars, the meaning commands the price (Trading Up's Belvedere-vs-Absolut arithmetic).",
+      "DTC, defined (★G316). Selling through your own channels — branded stores and e-commerce — instead of (or alongside) wholesale. The trade: DTC captures the retail markup and the customer relationship, but takes on the retailer's burdens — stores, inventory risk, traffic generation. Wholesale rents someone else's traffic at the cost of the margin and the shelf.",
+      "The exhibit (Nike, FY2025). NIKE Direct $18.8B (~42% of brand revenue) vs wholesale $25.9B — and the year shows the model's risk: Direct fell 13% (digital −20%), gross margin compressed 190 bps on discounts, channel mix, and obsolescence reserves. Channel mix is a lever, not a free lunch; the DTC pivot is a strategy debate, not a settled law.",
+      "Durables — the trade-up exhibit (orbit, Trading Up). The home chapters (Whirlpool's Duet shattering the $1,000 appliance ceiling; Williams-Sonoma) show premiumization working in the sector's biggest-ticket goods — the demand structure Z3.3 formalizes. Era flag: book-era numbers; the mechanism, not the data, is the cargo (GAP registered at Z3.3).",
+      "Two boundary clauses. This DTC is the product channel — not wealth-management.z5.3's direct-to-consumer advice channel. And the auto industry's \"direct sales\" fight (Z2.4) is this same channel question wearing dealer-franchise law — a legally distinct cousin."
+    ],
+    "connects_to": [
+      {
+        "ref": "sector-consumer-discretionary.z3.4",
+        "note": "the brand — the asset this model monetizes"
+      },
+      {
+        "ref": "G321",
+        "note": "brand equity — what the label is economically"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.3",
+        "note": "premiumization — durables as the exhibit"
+      },
+      {
+        "ref": "G320",
+        "note": "trading up / death in the middle — durables exhibit"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.2",
+        "note": "channel mix is a first-order margin driver; inventory risk follows the channel"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.4",
+        "note": "dealer-franchise cousin of the channel question"
+      }
+    ],
+    "connects_to_raw": "Z3.4 / ★G321 (the brand — the asset this model monetizes) · Z3.3 / ★G320 (premiumization — durables as the exhibit) · Z3.2 (channel mix is a first-order margin driver, and inventory risk follows the channel) · Z2.4 (the dealer-franchise cousin of the channel question).",
+    "gaps": [],
+    "real_world_layer": "Nike FY2025 10-K (NIKE Direct vs wholesale, gross margin bridge); Trading Up durables chapters (era-stamped).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z2.3",
+    "local_id": "Z2.3",
+    "module": "sector-consumer-discretionary",
+    "zone": 2,
+    "ordinal": 3,
+    "title": "Restaurants & Hotels: The Franchise Machine",
+    "tag": "global",
+    "global_id": "G317",
+    "quick_definition": "Consumer Services sells experiences — meals, rooms, leisure — and its signature structure is the franchise model: the brand owner licenses its format to operators who put up the capital, and collects royalties and fees off their revenue. One brand, two businesses: operating units (own the sales and the costs) and franchising them (own a fee stream).",
+    "explainer_covers": [
+      "The model, defined (★G317). Company-operated units book full revenue and full costs; franchised/licensed units book only the royalty and fees — lower revenue, higher margin, substantially less capital than company-operated units. Franchising converts a restaurant or hotel company toward recurring, capital-light royalty and fee streams — still exposed to franchisee sales, closures, contract terms, and brand health.",
+      "The exhibit pair. Starbucks (FY2025): 21,514 company-operated (52%) vs 19,476 licensed (48%) stores — yet company-operated stores are 83% of revenue and licensed only 12%, the accounting asymmetry that makes mix-reading essential (licensed: lower gross-margin line, higher operating-margin economics). Marriott (2025): the full asset-light endgame — franchise fees $3.3B + base $1.3B + incentive $0.8B = gross fees $5.4B, against a $26.2B top line of which $19.2B is cost-reimbursement pass-through (huge revenue, thin economics — the optics trap Z4.2 deepens). \"System-wide sales\" as a single QSR KPI is thin in the Starbucks pull — flagged, not faked (GAP).",
+      "Hotels keep their own score (orbit, back-linked). RevPAR = occupancy × ADR (Marriott systemwide US/Canada 2025: $132.35 = 69.5% × $190.33) — the lodging cousin of retail's traffic and ticket (Z3.1). The property-side machinery — occupancy as a leasing concept, hotels as an asset class — is Real Estate's territory (★G230, `real-estate.z2.2`); this node reads the KPIs, RE owns the real estate. The OTA layer (Booking-style gross bookings and take rates) is a named absence (GAP).",
+      "The fee-machine kinship. Asset-light fee streams on other people's assets is a pattern the corpus already teaches in finance form — `sector-financials.z2.3`'s fee machines — pointed at, not re-derived.",
+      "The homonym. This franchise — the licensed store, and Z2.4's franchised dealer — is not ★G196's research franchise (an analyst's reputation asset), nor the deposit franchise in `sector-financials.z2.1`'s title (a bank's sticky funding base). Formal pair with G196; prose clauses for the rest."
+    ],
+    "connects_to": [
+      {
+        "ref": "G196",
+        "note": "disambiguation — the other franchise (research franchise)"
+      },
+      {
+        "ref": "real-estate.z2.2",
+        "note": "hospitality's property side — back-link, don't re-home"
+      },
+      {
+        "ref": "G230",
+        "note": "leasing & occupancy — property-side machinery"
+      },
+      {
+        "ref": "sector-financials.z2.3",
+        "note": "fee-machine kinship"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z3.1",
+        "note": "comps travel here — comparable-property RevPAR is lodging's traffic × ticket"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.2",
+        "note": "franchise accounting & the pass-through optics, deepened"
+      }
+    ],
+    "connects_to_raw": "★G196 (disambiguation — the other \"franchise\") · `real-estate.z2.2` / ★G230 (hospitality's property side — back-link, don't re-home) · `sector-financials.z2.3` (the fee-machine kinship) · Z3.1 (comps travel here: comparable-property RevPAR is lodging's traffic × ticket) · Z4.2 (franchise accounting & the pass-through optics, deepened).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "OTA gross bookings/take rates thin; Starbucks system-wide-sales/restaurant KPI depth thin.",
+        "needed_source": "Booking Holdings filing and/or stronger restaurant-franchise disclosure"
+      }
+    ],
+    "real_world_layer": "Starbucks FY2025 10-K (company-operated vs licensed mix); Marriott FY2025 10-K (fee stack, cost reimbursement, systemwide RevPAR).",
+    "source_refs": [],
+    "status": "mapped"
+  },
+  {
+    "id": "sector-consumer-discretionary.z2.4",
+    "local_id": "Z2.4",
+    "module": "sector-consumer-discretionary",
+    "zone": 2,
+    "ordinal": 4,
+    "title": "Automobiles: The Hardest Business in the Sector",
+    "tag": "core",
+    "global_id": null,
+    "quick_definition": "Automobiles & Components is the sector's heavy industry: capital-intensive, low-margin, brutally cyclical manufacturing with a century-long graveyard of failed entrants — currently being torn open by the EV transition and by one company (Tesla) that trades like it belongs in a different sector.",
+    "explainer_covers": [
+      "Why making cars is hard (Ludicrous, Ch. 3–5, 14). Billions in plant before the first sale; single-digit-ppm quality norms colliding with tolerance stack-ups; demand that evaporates in recessions while the fixed costs stay (the big-ticket deferral of Z1.2 at maximum strength). Over a thousand defunct US automakers is the base rate a new entrant faces.",
+      "The EV disruption, honestly scoped. Tesla's arc — the Master-Plan product ladder (sports car funds the affordable car), production hell (automation and new-factory learning curves increasing chaos before reducing cost), Gigafactory vertical integration (insourcing the battery), and the Autopilot/software narrative that overlays a tech valuation on a manufacturer (the Z4.1 exhibit). Charging networks and swap experiments as product adjuncts.",
+      "Distribution is a legal battlefield (orbit, episodic in-source). Factory direct sales vs the franchised-dealer system — state dealer-franchise laws vs the DTC logic of Z2.2, the same channel question wearing statute. The dealer franchise is the third live sense of \"franchise.\"",
+      "The cyclical-valuation hook. Autos are the sector's clearest case for mid-cycle discipline — never capitalize peak SAAR earnings — which is ★G310's machinery, applied in Z4.1, not re-taught here.",
+      "One acronym clause. In this node \"EV\" is the electric vehicle; in Z4.1 it's ★G25 enterprise value. Both appear in one analysis of Tesla, deliberately.",
+      "What this node refuses to fake. ICE OEM cost curves, dealer-network P&L at scale, captive-finance arms, and post-2019 industry depth are not taught from general knowledge — the source set doesn't cover them (the GAP below), and the honest node teaches what's grounded and names what isn't."
+    ],
+    "connects_to": [
+      {
+        "ref": "G310",
+        "note": "mid-cycle earnings — the auto valuation discipline"
+      },
+      {
+        "ref": "G237",
+        "note": "the demand cycle at maximum beta"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z4.1",
+        "note": "the Tesla problem — a factory priced as a platform"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z2.2",
+        "note": "direct sales as channel-mix-with-statutes"
+      },
+      {
+        "ref": "G317",
+        "note": "the dealer franchise — the model's other face"
+      },
+      {
+        "ref": "sector-consumer-discretionary.z5.1",
+        "note": "autos as the cycle's loudest instrument"
+      }
+    ],
+    "connects_to_raw": "★G310 (mid-cycle earnings — the auto valuation discipline) · ★G237 (the demand cycle at maximum beta) · Z4.1 (the Tesla problem — a factory priced as a platform) · Z2.2 (direct sales as channel-mix-with-statutes) · ★G317 (the dealer franchise — the model's other face) · Z5.1 (autos as the cycle's loudest instrument).",
+    "gaps": [
+      {
+        "kind": "source",
+        "note": "ICE OEM, scaled dealer, captive finance, post-2019 thin.",
+        "needed_source": "GM or Ford 10-K plus current industry/OEM material"
+      }
+    ],
+    "real_world_layer": "Niedermeyer Ludicrous (Tesla/EV, production hell, VI, direct-sales conflict, software overlay); auto GAP explicit.",
+    "source_refs": [],
+    "status": "mapped"
+  }
+]
