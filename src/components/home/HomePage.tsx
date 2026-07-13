@@ -102,8 +102,7 @@ export function HomePageClient({
             Explore topics
           </h2>
           <p className={styles.sectionLead}>
-            Browse the finance corpus by topic. Each module connects concepts
-            across the knowledge map.
+            Explore core finance topics and see how the ideas connect.
           </p>
         </div>
 

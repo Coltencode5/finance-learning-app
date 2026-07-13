@@ -80,6 +80,9 @@ a:focus-visible {
 }
 
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: -0.01em;
@@ -107,7 +110,7 @@ a:focus-visible {
   color: var(--color-slate);
   padding: 0.4rem 0.65rem;
   border-radius: var(--radius-sm);
-  min-height: 36px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
 }

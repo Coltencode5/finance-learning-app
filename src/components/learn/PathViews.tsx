@@ -135,9 +135,15 @@ export function LearnLandingClient({
           <Link href={ctaHref} className={styles.primaryCta}>
             {ctaLabel}
           </Link>
-          <Link href={pathHref(pathId)} className={styles.secondaryCta}>
-            View path outline
-          </Link>
+          {complete ? (
+            <Link href="/" className={styles.secondaryCta}>
+              Explore topics
+            </Link>
+          ) : (
+            <Link href={pathHref(pathId)} className={styles.secondaryCta}>
+              View path outline
+            </Link>
+          )}
         </div>
       </article>
 

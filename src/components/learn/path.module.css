@@ -357,6 +357,9 @@
 }
 
 .lessonTitleLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 1.02rem;
   font-weight: 700;
   color: var(--color-navy);
