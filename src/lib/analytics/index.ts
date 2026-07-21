@@ -10,6 +10,7 @@ import {
   type ProgressState,
 } from "@/lib/progress";
 
+import { buildEventPayload } from "./buildPayload";
 import { captureApprovedEvent, initPostHog } from "./posthog";
 import { shouldSendAnalytics } from "./preferences";
 import type {
@@ -109,16 +110,10 @@ function emit<T extends AnalyticsEventName>(
 ): void {
   if (!shouldSendAnalytics()) return;
 
-  const payload = {
-    schema_version: 1 as const,
+  const payload = buildEventPayload(context, props, {
     event_id: newId(),
-    session_id: context.session_id,
-    anon_id: context.anon_id,
     ts: new Date().toISOString(),
-    path_id: context.path_id,
-    lesson_id: context.lesson_id,
-    props,
-  };
+  });
 
   captureApprovedEvent(event, {
     ...payload,

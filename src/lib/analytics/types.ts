@@ -50,7 +50,7 @@ export type EventPropsMap = {
 };
 
 export type AnalyticsEvent<T extends AnalyticsEventName = AnalyticsEventName> =
-  EventEnvelopeBase & {
-    event: T;
-    props: EventPropsMap[T];
-  };
+  EventEnvelopeBase &
+    EventPropsMap[T] & {
+      event: T;
+    };
